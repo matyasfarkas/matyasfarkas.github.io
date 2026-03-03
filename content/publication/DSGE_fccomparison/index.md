@@ -1,6 +1,6 @@
 ---
 title: "Forecasting the Great Recession in the United States:First Results from a Model Comparison Exercise"
-authors: [ "Michael Binder", "Mátyás Farkas", "John B. Taylor", "Volker Wieland", "Maik Wolters"]
+authors: [ "Michael Binder", "Mátyás Farkas", "John B. Taylor", "Zexi Sun", "Volker Wieland", "Maik Wolters"]
 date: "2022-08-01T00:00:00Z"
 doi: ""   
 
