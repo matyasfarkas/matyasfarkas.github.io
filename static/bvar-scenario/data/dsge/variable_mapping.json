@@ -1,0 +1,17 @@
+{
+  "bvar_to_dsge": {
+    "JGDP": "inflation",
+    "JCXFE": "inflation",
+    "GDPH": "outputgap",
+    "LR": "lab"
+  },
+  "dsge_to_display": {
+    "inflation": "Inflation",
+    "outputgap": "Output Gap",
+    "interest": "Interest Rate",
+    "output": "Output",
+    "c": "Consumption",
+    "inve": "Investment",
+    "lab": "Labour"
+  }
+}

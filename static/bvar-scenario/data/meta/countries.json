@@ -1,0 +1,50 @@
+[
+  {
+    "code": "US",
+    "name": "United States",
+    "dataSource": "FRED",
+    "active": true,
+    "nVars": 16,
+    "lags": 3
+  },
+  {
+    "code": "EA",
+    "name": "Euro Area",
+    "dataSource": "FRED",
+    "active": true,
+    "nVars": 24,
+    "lags": 3
+  },
+  {
+    "code": "UK",
+    "name": "United Kingdom",
+    "dataSource": "FRED",
+    "active": true,
+    "nVars": 24,
+    "lags": 3
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "dataSource": "FRED",
+    "active": true,
+    "nVars": 24,
+    "lags": 3
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "dataSource": "FRED",
+    "active": true,
+    "nVars": 24,
+    "lags": 3
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "dataSource": "IMF IFS/WEO",
+    "active": true,
+    "nVars": 23,
+    "lags": 2
+  }
+]
