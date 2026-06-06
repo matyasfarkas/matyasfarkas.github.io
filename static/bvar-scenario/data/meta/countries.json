@@ -8,14 +8,6 @@
     "lags": 3
   },
   {
-    "code": "DE",
-    "name": "Germany (FSAP)",
-    "dataSource": "Haver / Staff",
-    "active": true,
-    "nVars": 67,
-    "lags": 3
-  },
-  {
     "code": "EA",
     "name": "Euro Area",
     "dataSource": "FRED",
