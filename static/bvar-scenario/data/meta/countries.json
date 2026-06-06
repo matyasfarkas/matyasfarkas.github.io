@@ -12,7 +12,7 @@
     "name": "Euro Area",
     "dataSource": "FRED",
     "active": true,
-    "nVars": 24,
+    "nVars": 15,
     "lags": 3
   },
   {
@@ -28,7 +28,7 @@
     "name": "Japan",
     "dataSource": "FRED",
     "active": true,
-    "nVars": 24,
+    "nVars": 15,
     "lags": 3
   },
   {

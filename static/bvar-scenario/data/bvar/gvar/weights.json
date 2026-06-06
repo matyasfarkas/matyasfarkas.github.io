@@ -1,0 +1,30 @@
+{
+  "source": "IMF IMTS (International Trade in Goods, by partner country) \u2014 api.imf.org SDMX 2.1, flow IMF.STA:IMTS(1.0.0)",
+  "indicators": [
+    "XG_FOB_USD",
+    "MG_CIF_USD"
+  ],
+  "euro_area_code": "G163",
+  "window": "2021-2023 average",
+  "blocs": [
+    "US",
+    "EA",
+    "JP"
+  ],
+  "bloc_codes": {
+    "US": "USA",
+    "EA": "G163",
+    "JP": "JPN"
+  },
+  "note": "Row-normalized over the pilot blocs (zero diagonal). US is a closed economy (no RoW block). Adding CN/UK later: extend BLOCS and re-run.",
+  "weights": {
+    "EA": {
+      "US": 0.856811,
+      "JP": 0.143189
+    },
+    "JP": {
+      "US": 0.626125,
+      "EA": 0.373875
+    }
+  }
+}
