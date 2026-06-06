@@ -4,7 +4,7 @@
     "name": "United States",
     "dataSource": "FRED",
     "active": true,
-    "nVars": 16,
+    "nVars": 36,
     "lags": 3
   },
   {
@@ -20,7 +20,7 @@
     "name": "United Kingdom",
     "dataSource": "FRED",
     "active": true,
-    "nVars": 24,
+    "nVars": 22,
     "lags": 3
   },
   {
@@ -36,15 +36,15 @@
     "name": "Canada",
     "dataSource": "FRED",
     "active": true,
-    "nVars": 24,
+    "nVars": 22,
     "lags": 3
   },
   {
     "code": "CN",
     "name": "China",
-    "dataSource": "IMF IFS/WEO",
+    "dataSource": "FRED",
     "active": true,
-    "nVars": 23,
-    "lags": 2
+    "nVars": 17,
+    "lags": 3
   }
 ]
