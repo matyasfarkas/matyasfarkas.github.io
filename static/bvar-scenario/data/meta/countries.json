@@ -10,41 +10,41 @@
   {
     "code": "EA",
     "name": "Euro Area",
-    "dataSource": "FRED",
+    "dataSource": "Eurostat + FRED",
     "active": true,
-    "nVars": 15,
+    "nVars": 13,
     "lags": 3
   },
   {
     "code": "UK",
     "name": "United Kingdom",
-    "dataSource": "FRED",
-    "active": true,
-    "nVars": 22,
-    "lags": 3
-  },
-  {
-    "code": "JP",
-    "name": "Japan",
-    "dataSource": "FRED",
+    "dataSource": "ONS + FRED",
     "active": true,
     "nVars": 15,
     "lags": 3
   },
   {
+    "code": "JP",
+    "name": "Japan",
+    "dataSource": "e-Stat/ESRI + FRED",
+    "active": true,
+    "nVars": 13,
+    "lags": 3
+  },
+  {
     "code": "CA",
     "name": "Canada",
-    "dataSource": "FRED",
+    "dataSource": "StatCan + FRED",
     "active": true,
-    "nVars": 22,
+    "nVars": 15,
     "lags": 3
   },
   {
     "code": "CN",
     "name": "China",
-    "dataSource": "FRED",
+    "dataSource": "NBS/IMF + FRED",
     "active": true,
-    "nVars": 17,
+    "nVars": 10,
     "lags": 3
   }
 ]
