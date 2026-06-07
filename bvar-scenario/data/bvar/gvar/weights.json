@@ -9,22 +9,55 @@
   "blocs": [
     "US",
     "EA",
-    "JP"
+    "JP",
+    "UK",
+    "CA",
+    "CN"
   ],
   "bloc_codes": {
     "US": "USA",
     "EA": "G163",
-    "JP": "JPN"
+    "JP": "JPN",
+    "UK": "GBR",
+    "CA": "CAN",
+    "CN": "CHN"
   },
-  "note": "Row-normalized over the pilot blocs (zero diagonal). US is a closed economy (no RoW block). Adding CN/UK later: extend BLOCS and re-run.",
+  "note": "Row-normalized over the 6 GVAR blocs (zero diagonal). US is the closed anchor (no RoW block / no incoming row). These trade weights define each bloc's ROWDEM/ROWINF/ROWFIN star aggregates and match the hardcoded W in app/src/lib/compute/gvarSolve.ts. Provenance only \u2014 the app does not load this file at runtime.",
   "weights": {
     "EA": {
-      "US": 0.856811,
-      "JP": 0.143189
+      "US": 0.359157,
+      "JP": 0.060022,
+      "UK": 0.220189,
+      "CA": 0.032371,
+      "CN": 0.328261
     },
     "JP": {
-      "US": 0.626125,
-      "EA": 0.373875
+      "US": 0.309114,
+      "EA": 0.18458,
+      "UK": 0.024762,
+      "CA": 0.03312,
+      "CN": 0.448423
+    },
+    "UK": {
+      "US": 0.172411,
+      "EA": 0.646954,
+      "JP": 0.023357,
+      "CA": 0.021003,
+      "CN": 0.136275
+    },
+    "CA": {
+      "US": 0.761686,
+      "EA": 0.083926,
+      "JP": 0.028789,
+      "UK": 0.020982,
+      "CN": 0.104617
+    },
+    "CN": {
+      "US": 0.371994,
+      "EA": 0.351462,
+      "JP": 0.177815,
+      "UK": 0.053414,
+      "CA": 0.045316
     }
   }
 }
