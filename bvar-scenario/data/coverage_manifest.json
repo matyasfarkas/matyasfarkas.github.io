@@ -9107,300 +9107,297 @@
     },
     {
       "code": "US",
-      "lastHistQuarter": "2026Q1",
-      "lastBalancedObs": "2026Q1",
-      "nPeriods": 41,
-      "blocFlags": [
-        "ragged-edge: last quarter 2026Q1 (panel default 2025Q4)"
-      ],
+      "lastHistQuarter": "2025Q4",
+      "lastBalancedObs": "2025Q4",
+      "nPeriods": 40,
       "variables": [
         {
           "id": "GDPH",
           "displayName": "Real Gross Domestic Product",
           "source": "FRED:GDPC1",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "CH",
           "displayName": "Real Personal Consumption Expenditures",
           "source": "FRED:PCECC96",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "FRH",
           "displayName": "Real Private Residential Fixed Investment (nom/deflator)",
           "source": "FRED:PRFI/GDPDEF",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "FNH",
           "displayName": "Real Private Nonresidential Fixed Investment (nom/deflator)",
           "source": "FRED:PNFI/GDPDEF",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "XH",
           "displayName": "Real Exports of Goods & Services",
           "source": "FRED:EXPGSC1",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "MH",
           "displayName": "Real Imports of Goods & Services",
           "source": "FRED:IMPGSC1",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "GH",
           "displayName": "Real Government Consumption Expenditures & Gross Investment",
           "source": "FRED:GCEC1",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "JGDP",
           "displayName": "Gross Domestic Product: Chain Price Index",
           "source": "FRED:GDPDEF",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "JC",
           "displayName": "Personal Consumption Expenditures: Chain Price Index",
           "source": "FRED:PCEPI",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "JCXFE",
           "displayName": "PCE less Food & Energy: Chain Price Index",
           "source": "FRED:PCEPILFE",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "UI",
           "displayName": "CPI-U: All Items",
           "source": "FRED:CPIAUCSL",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "UIXFDG",
           "displayName": "CPI-U: All Items Less Food & Energy",
           "source": "FRED:CPILFESL",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "LXBC",
           "displayName": "Business Sector: Compensation Per Hour (nominal)",
           "source": "FRED:HCOMPBS",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "LANAGRA",
           "displayName": "All Employees: Total Nonfarm",
           "source": "FRED:PAYEMS",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "LR",
           "displayName": "Civilian Unemployment Rate: 16 yr +",
           "source": "FRED:UNRATE",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "IP",
           "displayName": "Industrial Production Index",
           "source": "FRED:INDPRO",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "CUMFG",
           "displayName": "Capacity Utilization: Manufacturing [SIC]",
           "source": "FRED:MCUMFN",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "HST",
           "displayName": "Housing Starts",
           "source": "FRED:HOUST",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "YPDH",
           "displayName": "Real Disposable Personal Income",
           "source": "FRED:DPIC96",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "CSENT",
           "displayName": "University of Michigan: Consumer Sentiment",
           "source": "FRED:UMCSENT",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "POLRATE",
           "displayName": "Effective Federal Funds Rate (policy rate)",
           "source": "FRED:FEDFUNDS",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "FCM2",
           "displayName": "2-Year Treasury Note Yield at Constant Maturity",
           "source": "FRED:DGS2",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "FCM5",
           "displayName": "5-Year Treasury Note Yield at Constant Maturity",
           "source": "FRED:DGS5",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "GLB_USLR",
           "displayName": "10-Year Treasury Note Yield at Constant Maturity",
           "source": "FRED:DGS10",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "FAAA",
           "displayName": "Moodys Seasoned Aaa Corporate Bond Yield",
           "source": "FRED:AAA",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "GLB_USBAA",
           "displayName": "Moodys Seasoned Baa Corporate Bond Yield",
           "source": "FRED:BAA",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "FXTWM",
           "displayName": "Nominal Trade-Weighted Exch Value of US$ vs AFE Currencies",
           "source": "FRED:DTWEXAFEGS+DTWEXM",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "GLB_USEQ",
           "displayName": "Equity Price Index (OECD US share prices / S&P, public)",
           "source": "FRED:SPASTT01USM661N",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "PZTEXP",
           "displayName": "Spot Oil Price: West Texas Intermediate",
           "source": "FRED:WTISPLC",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "GSNE",
           "displayName": "Non-Fuel Commodity Price Index (IMF, non-energy proxy)",
           "source": "FRED:PNFUELINDEXM",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "SP500VOL",
           "displayName": "CBOE Volatility Index for S&P 500 Stock Price Index",
           "source": "FRED:VIXCLS",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "HP",
           "displayName": "House Price",
           "source": "FRED:CSUSHPISA",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "LEV",
           "displayName": "Real nonfinancial business debt",
           "source": "FRED:BCNSDODNS/GDPDEF",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "FREV_GDP",
           "displayName": "Federal Receipts (% of GDP)",
           "source": "FRED:FGRECPT/GDP",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "FPEXP_GDP",
           "displayName": "Federal Primary Expenditure (% of GDP)",
           "source": "FRED:(FGEXPND-A091RC1Q027SBEA)/GDP",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "EFFI",
           "displayName": "Federal Effective Interest Rate (% p.a.)",
           "source": "FRED:A091RC1Q027SBEA/GFDEGDQ188S",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "SFA",
@@ -9416,8 +9413,8 @@
           "displayName": "WTI crude oil, WTISPLC q-avg ($/bbl)",
           "source": "FRED:WTISPLC",
           "coverageStart": "2016Q1",
-          "coverageEnd": "2026Q1",
-          "lastObs": "2026Q1"
+          "coverageEnd": "2025Q4",
+          "lastObs": "2025Q4"
         },
         {
           "id": "ROWDEM_US",
