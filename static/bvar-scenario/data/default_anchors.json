@@ -28,7 +28,10 @@
   "CA": {
     "GDP_CA": 1.7,
     "CPI_CA": 2,
-    "LR_CA": 6
+    "LR_CA": 6,
+    "EFFI": 4.0,
+    "FREV_GDP": 40.5,
+    "FPEXP_GDP": 41.5
   },
   "CH": {
     "GDP_CH": 1.3,
@@ -45,7 +48,8 @@
   "CN": {
     "GDP_CN": 4,
     "POLRATE_CN": 3,
-    "FPEXP_GDP": 29.1
+    "FPEXP_GDP": 32.0,
+    "FREV_GDP": 25.5
   },
   "CO": {
     "GDP_CO": 3,
@@ -67,6 +71,13 @@
     "GDP_DE": 0.8,
     "HICP_DE": 2,
     "LR_DE": 3.5
+  },
+  "EA": {
+    "GDP_EA": 1.0,
+    "HICP_EA": 2.0,
+    "EFFI": 2.9,
+    "FREV_GDP": 45.8,
+    "FPEXP_GDP": 48.0
   },
   "DK": {
     "GDP_DK": 1.5,
@@ -136,8 +147,9 @@
     "CPI_JP": 2,
     "LR_JP": 2.5,
     "YIELD10_JP": 2,
-    "FPEXP_GDP": 33.3,
-    "FREV_GDP": 35
+    "FPEXP_GDP": 35.0,
+    "FREV_GDP": 33.5,
+    "EFFI": 2.0
   },
   "KR": {
     "GDP_KR": 2,
@@ -271,16 +283,19 @@
     "CPI_UK": 2,
     "POLRATE_UK": 2.75,
     "LR_UK": 4.5,
-    "EFFI": 3.5,
-    "YIELD10_UK": 3.75
+    "EFFI": 4.0,
+    "YIELD10_UK": 3.75,
+    "FREV_GDP": 39.0,
+    "FPEXP_GDP": 41.5
   },
   "US": {
     "GDPH": 1.9,
     "JGDP": 2,
     "UI": 2.3,
     "LR": 4.2,
-    "EFFI": 3.5,
-    "FPEXP_GDP": 17.88
+    "EFFI": 5.0,
+    "FPEXP_GDP": 21.5,
+    "FREV_GDP": 17.5
   },
   "ZA": {
     "GDP_ZA": 1.5,
