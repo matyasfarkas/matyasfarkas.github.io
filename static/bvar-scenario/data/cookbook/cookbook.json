@@ -4,21 +4,25 @@
     "title": "1 · Credit crunch / spread shock",
     "countries": ["US", "EA", "CN"],
     "tags": ["credit", "financial", "spread"],
-    "rationale": "A credit crunch is a widening of the corporate risk spread that tightens financing for firms without an offsetting move in the risk-free curve.\n\nNAIVE STAGE — Condition the corporate bond yield up (+150bp over the first year, fading thereafter) and leave everything else free. The model reads this through its estimated correlations: a corporate-yield jump co-moves with the whole curve, so the unconditional response lets the 10y government yield DRIFT UP ALONGSIDE it (the model sees a generic 'rates tightening', not a spread move) and growth softens through the higher level of rates. That is the model's 'rates read' — it cannot tell a pure credit dislocation apart from a broad rate shift.\n\nRESTRICTED STAGE — Add a pin holding the 10y government yield UNCHANGED (deviation 0, active) while the corporate yield is still up. This pins the safe 10y FLAT while the corporate spread stays wide, isolating a PURE SPREAD widening: the cost of risk-bearing rises while the safe rate is fixed, i.e. a genuine credit-supply contraction rather than a level shift in rates. The restriction is what turns a generic 'rates correlation' into the specific credit-crunch shock — and with the safe rate held, the model now eases the short policy rate and the output hit is far deeper.\n\nCOUNTRY NOTES — US: corp = FAAA (Aaa), safe rate = GLB_USLR (10y UST). EA: corp = EACORP (IG 10y), safe rate = YIELD10_EA. CN has NO separate corporate yield — CORP_CN is the 10y sovereign and doubles as the credit benchmark, so the 'pure spread' restriction is not identifiable; the CN override instead holds the 3M interbank rate (RATE_CN) unchanged while CORP_CN widens, isolating a term/credit-premium move at the long end with the short policy-controlled rate fixed.",
+    "rationale": "SOURCE — Federal Reserve, 2020 Severely Adverse supervisory scenario (Feb 2020), the macro-financial backbone of US bank stress testing and of the IMF United States FSAP 2020 (Country Report 20/242), which documents a wave of corporate-sector defaults amplified by record NFC debt/GDP.\n\nA credit crunch is a corporate-credit-SUPPLY contraction: default risk on highly-levered firms is repriced, the corporate risk spread blows out, and external finance becomes scarce and dear EVEN AS the risk-free curve FALLS on flight-to-safety. Documented shock: the investment-grade corporate-to-Treasury spread widens to 5.5pp by 2020Q3 (+400bp vs 2019Q4); equity prices fall 50% through end-2020 (VIX 70); the 10y Treasury yield falls to 0.75% in 2020Q1 on flight-to-safety and re-steepens thereafter while the 3-month bill is cut to ~zero; real GDP falls ~8.5% peak-to-trough and unemployment rises to 10% by 2021Q3; CPI inflation falls to ~1.25% (the crunch is DISINFLATIONARY); house/CRE prices fall ~28%/35%; the USD appreciates ex-JPY and EA/UK/JP enter severe recessions.\n\nNAIVE STAGE — Condition only the corporate yield up to the documented +400bp peak (front-loaded to 2020Q1–Q3, fading over ~2yr). The model's estimated comovement drags the whole curve up together — a generic 'rates tightening' — and because business-cycle comovement is demand-led it can read the move with the wrong, mildly INFLATIONARY sign. The model cannot, unaided, tell a pure credit dislocation from a broad rate shift.\n\nRESTRICTED STAGE — Add the documented credit-crunch co-movement: push the safe 10y DOWN (flight-to-safety, to ~0.75% on impact — NOT flat), output DOWN (~−8.5% peak-to-trough), inflation DOWN (disinflation), equity DOWN −50%, and the policy rate cut to the floor. These restrictions identify a credit-SUPPLY shock — the cost of risk-bearing rises WHILE the safe rate falls — rather than a level shift in rates. Same headline corporate-yield jump, but only the restricted version reproduces the recessionary, disinflationary, flight-to-safety signature of an actual crunch.\n\nCOUNTRY NOTES — US: corp = FAAA, safe 10y = GLB_USLR, equity = GLB_USEQ (global), policy = POLRATE. EA: corp = EACORP, safe 10y = YIELD10_EA, policy = POLRATE_EA (EA enters severe recession in the scenario). CN: CORP_CN is the sovereign 10y and doubles as the credit benchmark, so a 'pure IG spread' is not identifiable; the override widens CORP_CN to a smaller +250bp (managed, lower beta) and holds the 3M policy-controlled rate RATE_CN flat — isolating a term/credit-premium move at the long end with the short rate fixed — plus the shared global equity decline.",
     "stages": {
       "naive": {
-        "label": "Corporate yield up (model's demand read)",
-        "note": "Corporate yield +150bp first year, fading; nothing else pinned — the safe rate is free to drift down (flight-to-quality).",
+        "label": "Corporate yield +400bp (model's rates read)",
+        "note": "FAAA up to the Fed-2020 +400bp adverse peak (front-loaded, fading ~2yr); nothing else pinned — the model drags the whole curve up (generic 'rates tightening') and may read it as mildly inflationary.",
         "pins": [
-          { "varId": "FAAA", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.2, 0.9, 0.6, 0.3], "active": [true, true, true, true, true, true, true] }
+          { "varId": "FAAA", "kind": "lin", "values": [2.5, 4.0, 4.0, 3.5, 3.0, 2.0, 1.0, 0.5], "active": [true, true, true, true, true, true, true, true] }
         ]
       },
       "restricted": {
-        "label": "+ hold 10y government yield flat (pure spread)",
-        "note": "Same corporate-yield path, but the 10y safe rate is pinned UNCHANGED — isolating a pure credit-spread widening (no flight-to-quality).",
+        "label": "+ safe 10y DOWN, output/inflation/equity down (credit-supply crunch)",
+        "note": "Same +400bp spread; ADD the Fed-2020 signature — 10y safe yield DOWN (flight-to-safety, to ~0.75%), GDP −8.5% peak-to-trough, inflation DOWN (disinflation), equity −50%, policy rate cut to the floor.",
         "pins": [
-          { "varId": "FAAA", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.2, 0.9, 0.6, 0.3], "active": [true, true, true, true, true, true, true] },
-          { "varId": "GLB_USLR", "kind": "lin", "values": [0, 0, 0, 0, 0, 0, 0], "active": [true, true, true, true, true, true, true] }
+          { "varId": "FAAA", "kind": "lin", "values": [2.5, 4.0, 4.0, 3.5, 3.0, 2.0, 1.0, 0.5], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "GLB_USLR", "kind": "lin", "values": [-1.0, -1.25, -1.0, -0.75, -0.5, -0.25, 0, 0.25], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "GDPH", "kind": "log", "values": [-6, -8, -8, -6, -4, -2], "active": [true, true, true, true, true, true] },
+          { "varId": "JGDP", "kind": "log", "values": [-0.75, -0.75, -0.75, -0.75], "active": [true, true, true, true] },
+          { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-50, -69, -69, -55, -40, -25, -12, -5], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "POLRATE", "kind": "lin", "values": [-1.5, -2.25, -2.25, -2.25], "active": [true, true, true, true] }
         ]
       }
     },
@@ -26,26 +30,32 @@
       "EA": {
         "naive": {
           "pins": [
-            { "varId": "EACORP", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.2, 0.9, 0.6, 0.3], "active": [true, true, true, true, true, true, true] }
+            { "varId": "EACORP", "kind": "lin", "values": [2.5, 4.0, 4.0, 3.5, 3.0, 2.0, 1.0, 0.5], "active": [true, true, true, true, true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "EACORP", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.2, 0.9, 0.6, 0.3], "active": [true, true, true, true, true, true, true] },
-            { "varId": "YIELD10_EA", "kind": "lin", "values": [0, 0, 0, 0, 0, 0, 0], "active": [true, true, true, true, true, true, true] }
+            { "varId": "EACORP", "kind": "lin", "values": [2.5, 4.0, 4.0, 3.5, 3.0, 2.0, 1.0, 0.5], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "YIELD10_EA", "kind": "lin", "values": [-1.0, -1.25, -1.0, -0.75, -0.5, -0.25, 0, 0.25], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "GDP_EA", "kind": "log", "values": [-6, -8, -8, -6, -4, -2], "active": [true, true, true, true, true, true] },
+            { "varId": "HICP_EA", "kind": "log", "values": [-0.75, -0.75, -0.75, -0.75], "active": [true, true, true, true] },
+            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-50, -69, -69, -55, -40, -25, -12, -5], "active": [true, true, true, true, true, true, true, true] }
           ]
         }
       },
       "CN": {
         "naive": {
           "pins": [
-            { "varId": "CORP_CN", "kind": "lin", "values": [0.8, 1.2, 1.2, 1.0, 0.7, 0.4, 0.2], "active": [true, true, true, true, true, true, true] }
+            { "varId": "CORP_CN", "kind": "lin", "values": [1.5, 2.5, 2.5, 2.0, 1.5, 1.0, 0.5, 0.25], "active": [true, true, true, true, true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "CORP_CN", "kind": "lin", "values": [0.8, 1.2, 1.2, 1.0, 0.7, 0.4, 0.2], "active": [true, true, true, true, true, true, true] },
-            { "varId": "RATE_CN", "kind": "lin", "values": [0, 0, 0, 0, 0, 0, 0], "active": [true, true, true, true, true, true, true] }
+            { "varId": "CORP_CN", "kind": "lin", "values": [1.5, 2.5, 2.5, 2.0, 1.5, 1.0, 0.5, 0.25], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "RATE_CN", "kind": "lin", "values": [0, 0, 0, 0, 0, 0, 0, 0], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "GDP_CN", "kind": "log", "values": [-4, -5, -5, -4, -3, -1.5], "active": [true, true, true, true, true, true] },
+            { "varId": "CPI_CN", "kind": "log", "values": [-0.5, -0.5, -0.5, -0.5], "active": [true, true, true, true] },
+            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-50, -69, -69, -55, -40, -25, -12, -5], "active": [true, true, true, true, true, true, true, true] }
           ]
         }
       }
@@ -56,22 +66,24 @@
     "title": "2 · Energy supply shock (global)",
     "countries": ["US", "EA", "CN"],
     "tags": ["energy", "supply", "global", "oil"],
-    "rationale": "An oil-supply disruption raises the crude price. Because GLB_OIL is a GLOBAL-block variable, conditioning it propagates to EVERY bloc automatically at solve time — this recipe is global by construction.\n\nNAIVE STAGE — Push the oil price up ~+40% (a 100·log level deviation of +33.6, held for the first year then partially unwinding) and leave the domestic block free. The model's estimated comovement is dominated by DEMAND-driven oil episodes (booms that pull oil and output up together), so the unconditional read can show output RISING with the oil price — clearly wrong for a supply disruption. That is the demand read.\n\nRESTRICTED STAGE — Keep the oil-price path and ADD two short-run domestic pins for the first two quarters: real GDP growth DOWN (−3 q/q-ann, a stagflationary output hit) and inflation UP (+1.5 q/q-ann). These restrictions impose the supply-shock co-movement (output down, prices up) that the unconditional model misses, identifying an ADVERSE SUPPLY shock rather than a demand-led boom.\n\nCOUNTRY NOTES — gdp = GDPH (US) / GDP_EA / GDP_CN; infl = JGDP (US GDP deflator) / HICP_EA / CPI_CN. CN's GDP_CN is NOMINAL, so the real-output restriction is interpreted as a nominal-activity slowdown; the CN override uses slightly smaller magnitudes given China's lower oil intensity per unit of (nominal) GDP and managed pass-through.",
+    "rationale": "SOURCE — IMF World Economic Outlook, April 2026 ('Global Economy in the Shadow of War', Ch.1) ADVERSE Middle-East energy-supply scenario; transmission elasticity from ECB Working Paper No. 2905 (2024, gas-price shocks and euro-area inflation); historical anchor the 1973–74 OPEC embargo (Federal Reserve History).\n\nAn energy-supply disruption raises the energy price and, for energy-IMPORTING blocs, squeezes real income while pushing up costs — the classic stagflation signature. The IMF WEO Apr-2026 adverse scenario: oil +80% (gas +160%) from 2026Q2, mostly unwinding through 2027, with corporate risk premia +50bp (advanced)/+100bp (EM ex-China), EM sovereign spreads +50bp and a drift in inflation expectations — net global growth cut to 2.6% (oil averaging ~$110/bbl) and headline inflation up to 5.4%. Because GLB_OIL is a GLOBAL-block variable, conditioning it propagates to every bloc at solve time, so the recipe is global by construction.\n\nNAIVE STAGE — Push oil up +80% (GLB_OIL +58.8 = 100·log(1.80)), a ~2-year hump that unwinds, and leave domestic blocs free. The model's estimated oil co-movement is dominated by DEMAND-driven episodes (booms that pull oil and output up together), so the unconditional read can show output RISING — the wrong sign for a supply disruption. That is the demand read.\n\nRESTRICTED STAGE — Keep the oil path and ADD the supply + financial-conditions co-movement the WEO scenario specifies: (i) real GDP DOWN (US ~−3.5, EA ~−4, CN ~−2.5 q/q-ann, decaying over ~2yr) and inflation UP (anchored to ECB WP 2905: a +10% gas SUPPLY shock raises euro-area HICP ~+0.6pp after one year, scaled to gas +160%), imposing the stagflation that identifies an ADVERSE SUPPLY (not demand-led) shock; and (ii) the financial leg — corporate spreads +50bp (US/EA advanced)/+100bp (China), equity DOWN ~−12% (energy-importer margin compression and repricing of long-duration earnings). Historical anchor: the 1973–74 OPEC embargo quadrupled oil and delivered US CPI 12.3% (1974) with real GDP −2.1% (1974)/−0.5% (1975).\n\nCOUNTRY NOTES — gdp = GDPH/GDP_EA/GDP_CN; infl = JGDP/HICP_EA/CPI_CN; corp spread = FAAA/EACORP/CORP_CN (CN sovereign 10y doubling as the credit benchmark); equity = GLB_USEQ (global). EA is the most oil-import-intensive bloc, so its output/inflation hit is deepest; CN is also an importer but its managed/subsidised pass-through and (real) GDP_CN warrant a cushioned calibration. A 'severe' variant maps to the WEO severe leg: oil +100% sustained (GLB_OIL +69.3), premia +100bp (AE+China)/+200bp (EM ex-China), growth cut ~−1.1pp.",
     "stages": {
       "naive": {
-        "label": "Oil price +40% (model's demand read)",
-        "note": "GLB_OIL pushed up ~+40% (level-display, 100·log +33.6), domestic block free. The model's oil co-movement is demand-led, so output may rise.",
+        "label": "Oil price +80% (model's demand read)",
+        "note": "GLB_OIL +58.8 (=+80%, WEO Apr-2026 adverse), ~1yr hump then unwinding; domestic block free. The model's oil co-movement is demand-led, so output may rise (wrong sign).",
         "pins": [
-          { "varId": "GLB_OIL", "kind": "levelDisplay", "values": [33.6, 33.6, 33.6, 33.6, 25.0, 16.0, 8.0], "active": [true, true, true, true, true, true, true] }
+          { "varId": "GLB_OIL", "kind": "levelDisplay", "values": [58.8, 58.8, 58.8, 58.8, 44.0, 29.0, 15.0, 7.0], "active": [true, true, true, true, true, true, true, true] }
         ]
       },
       "restricted": {
-        "label": "+ output down & inflation up (adverse supply)",
-        "note": "Same oil path; ADD GDP −3 q/q-ann and inflation +1.5 q/q-ann for the first 2 quarters — imposing the stagflationary supply co-movement.",
+        "label": "+ output down, inflation up, spreads up, equity down (adverse supply)",
+        "note": "Same oil path; ADD the WEO adverse macro-financial leg — GDP −3.5 q/q-ann (decaying), inflation +2.0, corp spread +50bp, equity ~−12% — the stagflationary supply signature.",
         "pins": [
-          { "varId": "GLB_OIL", "kind": "levelDisplay", "values": [33.6, 33.6, 33.6, 33.6, 25.0, 16.0, 8.0], "active": [true, true, true, true, true, true, true] },
-          { "varId": "GDPH", "kind": "log", "values": [-3, -3], "active": [true, true] },
-          { "varId": "JGDP", "kind": "log", "values": [1.5, 1.5], "active": [true, true] }
+          { "varId": "GLB_OIL", "kind": "levelDisplay", "values": [58.8, 58.8, 58.8, 58.8, 44.0, 29.0, 15.0, 7.0], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "GDPH", "kind": "log", "values": [-3.5, -3.5, -3.5, -3.5, -2, -1], "active": [true, true, true, true, true, true] },
+          { "varId": "JGDP", "kind": "log", "values": [2, 2, 2, 2, 1, 1], "active": [true, true, true, true, true, true] },
+          { "varId": "FAAA", "kind": "lin", "values": [0.5, 0.5, 0.5, 0.4, 0.3, 0.2], "active": [true, true, true, true, true, true] },
+          { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-12.8, -12.8, -9.0, -6.0, -3.0], "active": [true, true, true, true, true] }
         ]
       }
     },
@@ -79,18 +91,22 @@
       "EA": {
         "restricted": {
           "pins": [
-            { "varId": "GLB_OIL", "kind": "levelDisplay", "values": [33.6, 33.6, 33.6, 33.6, 25.0, 16.0, 8.0], "active": [true, true, true, true, true, true, true] },
-            { "varId": "GDP_EA", "kind": "log", "values": [-3, -3], "active": [true, true] },
-            { "varId": "HICP_EA", "kind": "log", "values": [1.5, 1.5], "active": [true, true] }
+            { "varId": "GLB_OIL", "kind": "levelDisplay", "values": [58.8, 58.8, 58.8, 58.8, 44.0, 29.0, 15.0, 7.0], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "GDP_EA", "kind": "log", "values": [-4, -4, -4, -4, -2.5, -1], "active": [true, true, true, true, true, true] },
+            { "varId": "HICP_EA", "kind": "log", "values": [2.5, 2.5, 2.5, 2.5, 1.5, 1], "active": [true, true, true, true, true, true] },
+            { "varId": "EACORP", "kind": "lin", "values": [0.7, 0.7, 0.7, 0.5, 0.3], "active": [true, true, true, true, true] },
+            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-12.8, -12.8, -9.0, -6.0, -3.0], "active": [true, true, true, true, true] }
           ]
         }
       },
       "CN": {
         "restricted": {
           "pins": [
-            { "varId": "GLB_OIL", "kind": "levelDisplay", "values": [33.6, 33.6, 33.6, 33.6, 25.0, 16.0, 8.0], "active": [true, true, true, true, true, true, true] },
-            { "varId": "GDP_CN", "kind": "log", "values": [-2, -2], "active": [true, true] },
-            { "varId": "CPI_CN", "kind": "log", "values": [1.0, 1.0], "active": [true, true] }
+            { "varId": "GLB_OIL", "kind": "levelDisplay", "values": [58.8, 58.8, 58.8, 58.8, 44.0, 29.0, 15.0, 7.0], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "GDP_CN", "kind": "log", "values": [-2.5, -2.5, -2.5, -2.5, -1.5, -0.5], "active": [true, true, true, true, true, true] },
+            { "varId": "CPI_CN", "kind": "log", "values": [1.0, 1.0, 1.0, 1.0, 0.5, 0.5], "active": [true, true, true, true, true, true] },
+            { "varId": "CORP_CN", "kind": "lin", "values": [1.0, 1.0, 1.0, 0.7, 0.4], "active": [true, true, true, true, true] },
+            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-12.8, -12.8, -9.0, -6.0, -3.0], "active": [true, true, true, true, true] }
           ]
         }
       }
@@ -101,23 +117,24 @@
     "title": "3 · Fiscal loosening → twin deficits",
     "countries": ["US", "EA", "CN"],
     "tags": ["fiscal", "external", "twin-deficits", "demand"],
-    "rationale": "A discretionary fiscal expansion: primary spending rises and revenue falls as a share of GDP.\n\nNAIVE STAGE — Condition primary expenditure UP +2pp of GDP and revenue DOWN −1pp of GDP (a ~3pp primary-balance loosening), held for ~2 years then fading. With nothing else pinned the model reads this as a DEMAND stimulus: output and inflation rise, and — through the fiscal accounting block — the debt/GDP path turns UP. This is the headline 'stimulus' read.\n\nRESTRICTED STAGE — Keep the fiscal pins and ADD a short-run aggregate-demand pin: GDP growth UP +2 q/q-ann for the first 2 quarters, making the demand impulse explicit rather than relying on the model's average fiscal multiplier. The point of the recipe is to OBSERVE the joint deterioration: debt/GDP rises (fiscal block) AND — once the external/NFA satellite is live — the trade balance and net foreign-asset position worsen (the loose-fiscal → external-deterioration 'twin deficits' link). The external read-through is the pedagogical payload.\n\nCOUNTRY NOTES — FREV_GDP / FPEXP_GDP exist in all three blocs with identical IDs. CN's automatic stabilisers and managed external account make the external read-through weaker; the CN override uses a smaller revenue cut and demand impulse.",
+    "rationale": "SOURCE — IMF 2018 Article IV Consultation (Country Report No. 18/207, July 2018) and the 2018 External Sector Report, assessing the 2018 US Tax Cuts and Jobs Act + Bipartisan Budget Act.\n\nA procyclical fiscal expansion on top of an economy already at full employment. PER THE IMF: the loosening widened the general-government structural primary deficit by ~1pp of potential GDP (−2.7%→−3.8% of potential GDP, 2017→2019) and the headline GG balance to −5.5%, lifting GG gross debt from ~106% toward ~113% of GDP; it gave a near-term growth boost of ~+0.9pp (real GDP 2.3%→2.9% in 2018, vs ~2% potential) and nudged inflation up (GDP deflator 1.8%→2.8%).\n\nNAIVE STAGE — Condition primary spending UP ~+1pp of GDP and revenue DOWN ~−0.5pp (a ~1.5pp primary loosening, matched to the episode and fading after ~2 years). With nothing else pinned the model reads a generic DEMAND stimulus: output and inflation rise and, through the fiscal-accounting block, debt/GDP turns up. This is the headline 'stimulus' read — but the model does not, on its own, reproduce the EXTERNAL leg.\n\nRESTRICTED STAGE — This is where the IMF's twin-deficits MECHANISM is identified. Add (a) a ~+0.9 q/q-ann GDP impulse for ~1 year (the documented above-potential boost) and (b) the procyclical-at-full-employment restriction the IMF stressed: the central bank must 'raise policy rates at a faster pace' (POLRATE up ~+50bp), which, with the demand pull, drives UPWARD pressure on the dollar (judged 8–16% overvalued). Through that stronger currency plus stronger demand, IMPORTS rise and the CURRENT-ACCOUNT deficit widens to ~3½% of GDP by 2019–20 with the NIIP falling ~8pp over five years — the saving-investment identity CA = Sprivate + Sgov − I made concrete. The pedagogical payload is the JOINT deterioration: debt/GDP up (fiscal block) AND trade balance / net-foreign-assets down (external/NFA block, once live).\n\nCOUNTRY NOTES — FREV_GDP / FPEXP_GDP, GDP (GDPH/GDP_EA/GDP_CN) and the policy rate (POLRATE/POLRATE_EA/POLRATE_CN) exist in all three blocs. Magnitudes are rescaled to the 2018 US episode; CN uses smaller fiscal, demand and policy-rate moves given its automatic stabilisers and managed external account (ESR CA norm −¼% for China vs −¾% for the US), so its twin-deficits read-through is deliberately weaker.",
     "stages": {
       "naive": {
         "label": "Spending up, revenue down (stimulus)",
-        "note": "FPEXP_GDP +2pp, FREV_GDP −1pp (a ~3pp primary loosening). The model reads demand stimulus; the fiscal block shows debt/GDP rising.",
+        "note": "FPEXP_GDP +1pp, FREV_GDP −0.5pp (a ~1.5pp primary loosening matched to the 2018 US episode, fading after ~2yr). The model reads demand stimulus; the fiscal block shows debt/GDP rising.",
         "pins": [
-          { "varId": "FPEXP_GDP", "kind": "lin", "values": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.5, 1.0, 0.5], "active": [true, true, true, true, true, true, true, true, true] },
-          { "varId": "FREV_GDP", "kind": "lin", "values": [-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -0.75, -0.5, -0.25], "active": [true, true, true, true, true, true, true, true, true] }
+          { "varId": "FPEXP_GDP", "kind": "lin", "values": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.75, 0.5, 0.25], "active": [true, true, true, true, true, true, true, true, true] },
+          { "varId": "FREV_GDP", "kind": "lin", "values": [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.4, -0.25, -0.1], "active": [true, true, true, true, true, true, true, true, true] }
         ]
       },
       "restricted": {
-        "label": "+ demand impulse (observe debt ↑ and external ↓)",
-        "note": "Same fiscal pins; ADD GDP +2 q/q-ann for 2 quarters to make the demand impulse explicit. Watch debt/GDP (fiscal block) AND trade balance / NFA (external block) both deteriorate.",
+        "label": "+ demand impulse & faster policy rate (twin-deficits identification)",
+        "note": "Same fiscal pins; ADD GDP +0.9 q/q-ann for ~1yr (the documented above-potential boost) and POLRATE up ~+50bp (the Fed 'raises at a faster pace' → upward dollar pressure → wider CA). Watch debt/GDP AND the external block deteriorate.",
         "pins": [
-          { "varId": "FPEXP_GDP", "kind": "lin", "values": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.5, 1.0, 0.5], "active": [true, true, true, true, true, true, true, true, true] },
-          { "varId": "FREV_GDP", "kind": "lin", "values": [-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -0.75, -0.5, -0.25], "active": [true, true, true, true, true, true, true, true, true] },
-          { "varId": "GDPH", "kind": "log", "values": [2, 2], "active": [true, true] }
+          { "varId": "FPEXP_GDP", "kind": "lin", "values": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.75, 0.5, 0.25], "active": [true, true, true, true, true, true, true, true, true] },
+          { "varId": "FREV_GDP", "kind": "lin", "values": [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.4, -0.25, -0.1], "active": [true, true, true, true, true, true, true, true, true] },
+          { "varId": "GDPH", "kind": "log", "values": [0.9, 0.9, 0.9, 0.9], "active": [true, true, true, true] },
+          { "varId": "POLRATE", "kind": "lin", "values": [0.25, 0.5, 0.5, 0.5, 0.4, 0.3, 0.2], "active": [true, true, true, true, true, true, true] }
         ]
       }
     },
@@ -125,24 +142,26 @@
       "EA": {
         "restricted": {
           "pins": [
-            { "varId": "FPEXP_GDP", "kind": "lin", "values": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.5, 1.0, 0.5], "active": [true, true, true, true, true, true, true, true, true] },
-            { "varId": "FREV_GDP", "kind": "lin", "values": [-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -0.75, -0.5, -0.25], "active": [true, true, true, true, true, true, true, true, true] },
-            { "varId": "GDP_EA", "kind": "log", "values": [2, 2], "active": [true, true] }
+            { "varId": "FPEXP_GDP", "kind": "lin", "values": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.75, 0.5, 0.25], "active": [true, true, true, true, true, true, true, true, true] },
+            { "varId": "FREV_GDP", "kind": "lin", "values": [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.4, -0.25, -0.1], "active": [true, true, true, true, true, true, true, true, true] },
+            { "varId": "GDP_EA", "kind": "log", "values": [0.9, 0.9, 0.9, 0.9], "active": [true, true, true, true] },
+            { "varId": "POLRATE_EA", "kind": "lin", "values": [0.25, 0.5, 0.5, 0.5, 0.4, 0.3, 0.2], "active": [true, true, true, true, true, true, true] }
           ]
         }
       },
       "CN": {
         "naive": {
           "pins": [
-            { "varId": "FPEXP_GDP", "kind": "lin", "values": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.5, 1.0, 0.5], "active": [true, true, true, true, true, true, true, true, true] },
-            { "varId": "FREV_GDP", "kind": "lin", "values": [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.4, -0.3, -0.15], "active": [true, true, true, true, true, true, true, true, true] }
+            { "varId": "FPEXP_GDP", "kind": "lin", "values": [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.6, 0.4, 0.2], "active": [true, true, true, true, true, true, true, true, true] },
+            { "varId": "FREV_GDP", "kind": "lin", "values": [-0.3, -0.3, -0.3, -0.3, -0.3, -0.3, -0.25, -0.15, -0.1], "active": [true, true, true, true, true, true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "FPEXP_GDP", "kind": "lin", "values": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.5, 1.0, 0.5], "active": [true, true, true, true, true, true, true, true, true] },
-            { "varId": "FREV_GDP", "kind": "lin", "values": [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.4, -0.3, -0.15], "active": [true, true, true, true, true, true, true, true, true] },
-            { "varId": "GDP_CN", "kind": "log", "values": [1.5, 1.5], "active": [true, true] }
+            { "varId": "FPEXP_GDP", "kind": "lin", "values": [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.6, 0.4, 0.2], "active": [true, true, true, true, true, true, true, true, true] },
+            { "varId": "FREV_GDP", "kind": "lin", "values": [-0.3, -0.3, -0.3, -0.3, -0.3, -0.3, -0.25, -0.15, -0.1], "active": [true, true, true, true, true, true, true, true, true] },
+            { "varId": "GDP_CN", "kind": "log", "values": [0.9, 0.9, 0.9, 0.9], "active": [true, true, true, true] },
+            { "varId": "POLRATE_CN", "kind": "lin", "values": [0.15, 0.25, 0.25, 0.25, 0.2, 0.15, 0.1], "active": [true, true, true, true, true, true, true] }
           ]
         }
       }
@@ -153,23 +172,22 @@
     "title": "4 · Monetary behind-the-curve / risk-off",
     "countries": ["US", "EA", "CN"],
     "tags": ["monetary", "risk-off", "policy", "de-anchoring"],
-    "rationale": "Two related financial-conditions scenarios share this recipe.\n\nNAIVE STAGE (behind-the-curve) — Condition inflation UP +2 q/q-ann for a year while leaving the policy rate free. The model lets the policy rate respond endogenously (its estimated reaction function), so the unconditional read shows the central bank LEANING against inflation. This is the 'policy responds' baseline.\n\nRESTRICTED STAGE (risk-off + policy held) — Impose a market risk-off AND a behind-the-curve policy stance simultaneously: (i) equity DOWN ~−20% (GLB_USEQ level-display −22.3), (ii) the corporate spread UP +100bp, (iii) the safe 10y yield DOWN (safe-haven bid, −50bp), and (iv) the POLICY RATE pinned UNCHANGED while inflation is still elevated — i.e. the central bank does NOT respond. Pinning the policy rate flat against rising inflation is the restriction that creates a de-anchoring / behind-the-curve risk the endogenous reaction function would otherwise neutralise.\n\nCOUNTRY NOTES — equity = GLB_USEQ (global, all blocs); corp spread = FAAA (US) / EACORP (EA); safe 10y = GLB_USLR (US) / YIELD10_EA (EA); policy rate = POLRATE (US) / POLRATE_EA (EA) / POLRATE_CN (CN). CN has no traded IG corporate spread (CORP_CN is sovereign), so the CN override drops the corporate-spread leg and uses CORP_CN (sovereign 10y) for the safe-haven leg; equity for CN risk-off is still the global GLB_USEQ common.",
+    "rationale": "SOURCE — Federal Reserve 2020 Severely Adverse scenario (released 6 Feb 2020), the published macro-financial path underlying the IMF FSAP United States 2020 bank solvency stress test (Country Report No. 20/247, Aug 2020).\n\nIn that scenario an abrupt decline in risk appetite repriced risk premia simultaneously: equity prices fell 50% (VIX to 70), the investment-grade corporate bond spread widened to 5.5pp (an increase of +4.0pp), and — in a flight to safety — the 10-year Treasury yield dropped immediately to 0.75% before recovering; the result was a deep, DISINFLATIONARY recession (real GDP −8.5%, unemployment to 10%, house prices −28%).\n\nNAIVE STAGE — Condition only the headline lever — the corporate spread UP (~+200bp peak) — with policy and everything else free. The model returns its generic 'financial-conditions tightening' read: output and inflation soften and the policy rate eases endogenously via its estimated reaction function. This is the unconditional risk-off read.\n\nRESTRICTED STAGE — Identify the full structural risk-premium shock by imposing the joint co-movement the scenario specifies — equity DOWN ~−25%, corporate spread UP, the safe 10y yield DOWN (flight-to-safety) — AND pin the POLICY RATE FLAT. Holding the policy rate unchanged against a sharp tightening of financial conditions is the restriction: it forces the central bank to under-react ('behind the curve'), so the financial-conditions tightening transmits fully to demand and the recession is deeper than the endogenous reaction function would allow. NOTE on the economics: a flight-to-safety risk-off shock is DISINFLATIONARY, so inflation is left FREE (and falls) rather than pinned up — the prior recipe's inflation-up pin contradicted its own risk-off block and is removed.\n\nCOUNTRY NOTES — equity = GLB_USEQ (global, all blocs); corp spread = FAAA (US)/EACORP (EA); safe 10y = GLB_USLR (US)/YIELD10_EA (EA); policy rate = POLRATE/POLRATE_EA/POLRATE_CN. CN has no traded IG corporate spread (CORP_CN is the sovereign 10y), so the CN block uses CORP_CN with a POSITIVE sign — in a global risk-off, EM sovereign yields RISE via capital outflow and a sovereign-risk-premium channel, the opposite of the advanced-economy safe-haven bid — and takes equity from the global GLB_USEQ. Magnitudes are scaled to roughly half the full Fed crisis severity (a sharp risk-off repricing, not a once-in-a-generation crash) while preserving the source's signs and ordering.",
     "stages": {
       "naive": {
-        "label": "Inflation up, policy free (policy responds)",
-        "note": "Inflation +2 q/q-ann for a year, policy rate free. The model's reaction function leans against it — the 'policy responds' read.",
+        "label": "Corporate spread up (model's tightening read)",
+        "note": "FAAA up ~+200bp peak (scaled below the Fed +400bp crisis), policy and everything else free. The model reads generic 'financial-conditions tightening' and eases the policy rate endogenously; inflation falls on its own.",
         "pins": [
-          { "varId": "JGDP", "kind": "log", "values": [2, 2, 2, 2], "active": [true, true, true, true] }
+          { "varId": "FAAA", "kind": "lin", "values": [2.0, 2.0, 1.2, 0.6], "active": [true, true, true, true] }
         ]
       },
       "restricted": {
-        "label": "+ risk-off & policy rate held (de-anchoring)",
-        "note": "Equity −20%, corp spread +100bp, safe 10y −50bp (haven bid), and the POLICY RATE pinned flat while inflation is up — the bank does not respond.",
+        "label": "+ equity down, safe 10y down, policy held flat (identified risk-off)",
+        "note": "Equity ~−25%, corp spread up, safe 10y DOWN (flight-to-safety), and the POLICY RATE pinned FLAT — the bank under-reacts ('behind the curve'). Inflation is left free (it falls — the shock is disinflationary).",
         "pins": [
-          { "varId": "JGDP", "kind": "log", "values": [2, 2, 2, 2], "active": [true, true, true, true] },
-          { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-22.3, -22.3, -16.0, -8.0], "active": [true, true, true, true] },
-          { "varId": "FAAA", "kind": "lin", "values": [1.0, 1.0, 0.7, 0.4], "active": [true, true, true, true] },
-          { "varId": "GLB_USLR", "kind": "lin", "values": [-0.5, -0.5, -0.3, -0.15], "active": [true, true, true, true] },
+          { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-28.8, -28.8, -19.8, -10.5], "active": [true, true, true, true] },
+          { "varId": "FAAA", "kind": "lin", "values": [2.0, 2.0, 1.2, 0.6], "active": [true, true, true, true] },
+          { "varId": "GLB_USLR", "kind": "lin", "values": [-1.0, -1.0, -0.6, -0.3], "active": [true, true, true, true] },
           { "varId": "POLRATE", "kind": "lin", "values": [0, 0, 0, 0], "active": [true, true, true, true] }
         ]
       }
@@ -178,15 +196,14 @@
       "EA": {
         "naive": {
           "pins": [
-            { "varId": "HICP_EA", "kind": "log", "values": [2, 2, 2, 2], "active": [true, true, true, true] }
+            { "varId": "EACORP", "kind": "lin", "values": [2.0, 2.0, 1.2, 0.6], "active": [true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "HICP_EA", "kind": "log", "values": [2, 2, 2, 2], "active": [true, true, true, true] },
-            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-22.3, -22.3, -16.0, -8.0], "active": [true, true, true, true] },
-            { "varId": "EACORP", "kind": "lin", "values": [1.0, 1.0, 0.7, 0.4], "active": [true, true, true, true] },
-            { "varId": "YIELD10_EA", "kind": "lin", "values": [-0.5, -0.5, -0.3, -0.15], "active": [true, true, true, true] },
+            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-28.8, -28.8, -19.8, -10.5], "active": [true, true, true, true] },
+            { "varId": "EACORP", "kind": "lin", "values": [2.0, 2.0, 1.2, 0.6], "active": [true, true, true, true] },
+            { "varId": "YIELD10_EA", "kind": "lin", "values": [-1.0, -1.0, -0.6, -0.3], "active": [true, true, true, true] },
             { "varId": "POLRATE_EA", "kind": "lin", "values": [0, 0, 0, 0], "active": [true, true, true, true] }
           ]
         }
@@ -194,14 +211,13 @@
       "CN": {
         "naive": {
           "pins": [
-            { "varId": "CPI_CN", "kind": "log", "values": [2, 2, 2, 2], "active": [true, true, true, true] }
+            { "varId": "CORP_CN", "kind": "lin", "values": [0.8, 0.8, 0.5, 0.25], "active": [true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "CPI_CN", "kind": "log", "values": [2, 2, 2, 2], "active": [true, true, true, true] },
-            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-22.3, -22.3, -16.0, -8.0], "active": [true, true, true, true] },
-            { "varId": "CORP_CN", "kind": "lin", "values": [-0.4, -0.4, -0.25, -0.1], "active": [true, true, true, true] },
+            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-28.8, -28.8, -19.8, -10.5], "active": [true, true, true, true] },
+            { "varId": "CORP_CN", "kind": "lin", "values": [0.5, 0.5, 0.3, 0.15], "active": [true, true, true, true] },
             { "varId": "POLRATE_CN", "kind": "lin", "values": [0, 0, 0, 0], "active": [true, true, true, true] }
           ]
         }
@@ -213,22 +229,22 @@
     "title": "5 · AI productivity boost",
     "countries": ["US", "EA", "CN"],
     "tags": ["supply", "productivity", "ai", "disinflation"],
-    "rationale": "A positive supply shock: a productivity acceleration (e.g. AI diffusion) raises potential output.\n\nNAIVE STAGE — Condition real GDP growth UP +3 q/q-ann for two years, leaving prices free. The model's average comovement is DEMAND-led (output and inflation rise together over the business cycle), so the unconditional read shows inflation RISING with output — the wrong sign for a productivity (supply) expansion. That is the demand read.\n\nRESTRICTED STAGE — Keep the output pins and ADD an inflation pin holding prices FLAT-to-DOWN (−0.5 q/q-ann) plus an equity pin UP +15% (GLB_USEQ +14.0), capitalising the higher earnings stream. Pinning inflation down WHILE output is up is the restriction that flips the identification from a demand boom to a POSITIVE SUPPLY shock: output up, inflation down, equity up — the classic productivity-miracle signature.\n\nCOUNTRY NOTES — gdp = GDPH / GDP_EA / GDP_CN; infl = JGDP / HICP_EA / CPI_CN; equity = GLB_USEQ (global). CN's GDP_CN is nominal, so 'output up, prices flat' there means real-activity-led nominal growth with contained CPI; the magnitudes are kept identical for comparability across blocs.",
+    "rationale": "SOURCE — IMF Working Paper WP/25/76, 'The Global Impact of AI: Mind the Gap' (Cerutti et al., April 2025), whose GIMF-GVC simulations put the 10-year output-level gain at ~+5.4–5.6% for the US and ~+4% globally in the high-TFP scenario (underlying global TFP +2.4%), with smaller gains in emerging markets (~+3.0–3.5%) — AI widens the cross-country gap, advanced-economy impact >2x low-income. The closest documented historical analogue is the 1995–2004 US ICT boom (McKinsey 2001; FRBSF Economic Letter 2015-04), when US labour-productivity growth roughly doubled to ~2.5%/yr (acceleration ~1pp/yr), about half from ICT, alongside an equity boom and contained inflation.\n\nA positive supply (TFP) shock. AI diffusion raises total factor productivity, lifting potential output; the higher future earnings stream is capitalised immediately into EQUITY and pulls forward INVESTMENT. On the price side the channel is TWO-PHASE: short run, investment/wealth effects lift demand before capacity installs, so inflation ticks UP modestly and central banks tighten modestly; medium run, productivity expands supply faster than demand and inflation DECLINES (output up WHILE inflation falls = the supply signature).\n\nNAIVE STAGE — Condition real GDP growth UP by a REALISTIC ~+1pp/yr (US +1.0, EA +0.8, CN +0.6 q/q-ann for 2 years), prices free. Because the model's average comovement is DEMAND-led, the unconditional read shows inflation rising with output — the wrong sign for a supply expansion. That is the demand read.\n\nRESTRICTED STAGE — Keep the output pins and ADD (i) an inflation pin with the IMF's documented TWO-PHASE shape: a small SHORT-RUN overshoot (demand outpaces supply, central banks tighten modestly) that turns to disinflation by ~quarter 4 as AI lifts supply capacity; and (ii) an equity pin UP ~+14% (GLB_USEQ), capitalising the higher earnings stream. Output up WHILE inflation ends down is the restriction that flips identification from a demand boom to a POSITIVE SUPPLY shock.\n\nCOUNTRY NOTES — gdp = GDPH/GDP_EA/GDP_CN; infl = JGDP/HICP_EA/CPI_CN; equity = GLB_USEQ (global). Magnitudes are ASYMMETRIC, reflecting the paper's 'gap' result (US > EA ≳ CN), replacing the old identical-across-blocs convention; output was cut from +3 to ~+1 pp/yr to match the IMF decade path and the 1995–2004 acceleration, and the inflation restriction reshaped from flat-down to up-then-down to capture the short-run demand overshoot. CN's GDP_CN is real, so 'output up, CPI contained' reads directly as a real supply shock.",
     "stages": {
       "naive": {
-        "label": "Output up, prices free (model's demand read)",
-        "note": "GDP +3 q/q-ann for 2 years, prices free. The model's demand-led co-movement lets inflation rise with output (wrong sign for supply).",
+        "label": "Output up ~+1pp/yr, prices free (model's demand read)",
+        "note": "GDP +1.0 q/q-ann for 2 years (the IMF/1995-2004 realistic acceleration), prices free. The model's demand-led co-movement lets inflation rise with output — the wrong sign for supply.",
         "pins": [
-          { "varId": "GDPH", "kind": "log", "values": [3, 3, 3, 3, 3, 3, 3, 3], "active": [true, true, true, true, true, true, true, true] }
+          { "varId": "GDPH", "kind": "log", "values": [1, 1, 1, 1, 1, 1, 1, 1], "active": [true, true, true, true, true, true, true, true] }
         ]
       },
       "restricted": {
-        "label": "+ inflation flat/down & equity up (positive supply)",
-        "note": "Same output path; ADD inflation −0.5 q/q-ann (prices contained) and equity +15% — flipping identification to a positive SUPPLY shock.",
+        "label": "+ two-phase inflation (up then down) & equity up (positive supply)",
+        "note": "Same output path; ADD inflation with the IMF up-then-down shape (small overshoot, then disinflation by q4) and equity +14% — flipping identification to a positive SUPPLY shock.",
         "pins": [
-          { "varId": "GDPH", "kind": "log", "values": [3, 3, 3, 3, 3, 3, 3, 3], "active": [true, true, true, true, true, true, true, true] },
-          { "varId": "JGDP", "kind": "log", "values": [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5], "active": [true, true, true, true, true, true, true, true] },
-          { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [7.0, 10.5, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0], "active": [true, true, true, true, true, true, true, true] }
+          { "varId": "GDPH", "kind": "log", "values": [1, 1, 1, 1, 1, 1, 1, 1], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "JGDP", "kind": "log", "values": [0.4, 0.2, 0, -0.3, -0.5, -0.5, -0.5, -0.5], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [6, 9, 12, 13, 14, 14, 14, 14], "active": [true, true, true, true, true, true, true, true] }
         ]
       }
     },
@@ -236,28 +252,28 @@
       "EA": {
         "naive": {
           "pins": [
-            { "varId": "GDP_EA", "kind": "log", "values": [3, 3, 3, 3, 3, 3, 3, 3], "active": [true, true, true, true, true, true, true, true] }
+            { "varId": "GDP_EA", "kind": "log", "values": [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8], "active": [true, true, true, true, true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "GDP_EA", "kind": "log", "values": [3, 3, 3, 3, 3, 3, 3, 3], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "HICP_EA", "kind": "log", "values": [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [7.0, 10.5, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0], "active": [true, true, true, true, true, true, true, true] }
+            { "varId": "GDP_EA", "kind": "log", "values": [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "HICP_EA", "kind": "log", "values": [0.3, 0.15, 0, -0.3, -0.5, -0.5, -0.5, -0.5], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [6, 9, 12, 13, 14, 14, 14, 14], "active": [true, true, true, true, true, true, true, true] }
           ]
         }
       },
       "CN": {
         "naive": {
           "pins": [
-            { "varId": "GDP_CN", "kind": "log", "values": [3, 3, 3, 3, 3, 3, 3, 3], "active": [true, true, true, true, true, true, true, true] }
+            { "varId": "GDP_CN", "kind": "log", "values": [0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6], "active": [true, true, true, true, true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "GDP_CN", "kind": "log", "values": [3, 3, 3, 3, 3, 3, 3, 3], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "CPI_CN", "kind": "log", "values": [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [7.0, 10.5, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0], "active": [true, true, true, true, true, true, true, true] }
+            { "varId": "GDP_CN", "kind": "log", "values": [0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "CPI_CN", "kind": "log", "values": [0.2, 0.1, 0, -0.2, -0.4, -0.4, -0.4, -0.4], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [6, 9, 12, 13, 14, 14, 14, 14], "active": [true, true, true, true, true, true, true, true] }
           ]
         }
       }
@@ -268,22 +284,22 @@
     "title": "6 · Structural supply-chain collapse",
     "countries": ["US", "EA", "CN"],
     "tags": ["supply", "trade", "stagflation", "persistent"],
-    "rationale": "A persistent adverse supply shock to global production networks (a pandemic-style or geopolitical input-availability collapse): intermediate imports become scarce, output falls and prices rise, and the disruption is PERSISTENT rather than a one-quarter blip.\n\nNAIVE STAGE — Condition real imports DOWN (−8 q/q-ann for a year — a sustained volume contraction) and leave the rest free. The model's unconditional read treats falling imports as a DEMAND signal (weak imports usually accompany a downturn that PULLS inflation down), so it can show prices SOFTENING — the wrong sign for a supply-driven bottleneck.\n\nRESTRICTED STAGE — Keep the import contraction and ADD persistent supply pins: real GDP DOWN (−4 q/q-ann) and inflation UP (+2 q/q-ann), both sustained over 6+ quarters. Imposing output-down-with-prices-up over a long window is the restriction that identifies a PERSISTENT ADVERSE SUPPLY shock and separates it from a demand-led import slump.\n\nCOUNTRY NOTES — imports = MH (US) / IMP_EA / IMP_CN; gdp = GDPH / GDP_EA / GDP_CN; infl = JGDP / HICP_EA / CPI_CN. China sits UPSTREAM in many supply chains, so a global bottleneck is felt more through its EXPORTS than imports; the CN override conditions exports (EXP_CN) down as the primary channel alongside the output/price restriction.",
+    "rationale": "SOURCE — Liu & Nguyen, 'Global Supply Chain Pressures and U.S. Inflation', FRBSF Economic Letter 2023-14 (June 2023); output side from Kemp, Portillo & Santoro, IMF Working Paper No. 2023/042 (Feb 2023) and the IMF WEO Update (Jan 2022). The episode: the 2021–22 pandemic global supply-chain bottleneck.\n\nA goods-demand surge meets constrained supply — port congestion, intermediate-input/semiconductor shortages, and upstream Asian production stoppages (2021–22 China port closures, the 2022 Shanghai lockdown). Scarce inputs propagate downstream through production networks, lifting input and import prices (Liu-Nguyen: a 1-SD GSCPI shock raises US headline PCE inflation ~+0.5pp and goods inflation up to ~+1.5pp; GSCPI shocks contributed ~+2.5pp to headline inflation at the 2021–22 peak, ~60% of the above-trend run-up) while curtailing output (Kemp-Portillo-Santoro: 2021 disruptions subtracted 0.5–1.2% from global value added; WEO Jan-2022 marked down 2021 growth by −1.2pp in the US, −0.8pp in China, −0.4pp in the euro area). The net is STAGFLATIONARY: output DOWN, prices UP — a SUPPLY shock, not a demand slump. CRUCIALLY the effect is ~1 YEAR with decay (Liu-Nguyen: 'statistically vanishing about a year after the impact'), NOT multi-year.\n\nNAIVE STAGE — Condition only the trade lever (US/EA imports modestly DOWN ~−3 q/q-ann for 3 quarters; China, the upstream source, exports DOWN ~−6). The model's unconditional read treats weak trade as a DEMAND signal and tends to pull inflation DOWN — the wrong sign for a bottleneck.\n\nRESTRICTED STAGE — Add the supply identification, scaled to the evidence: output DOWN by the documented (modest) amounts — US GDP ~−1.2pp, EA ~−0.4 to −0.5pp, CN ~−0.8pp — together with inflation UP and goods-led (US/EA ~+1.5 to +2.5 q/q-ann peak), all decaying inside ~4–5 quarters. Output-down-WITH-prices-up identifies an adverse SUPPLY shock and separates it from a demand-led downturn.\n\nCOUNTRY NOTES — imports = MH (US)/IMP_EA; China sits UPSTREAM, so its EXPORT/production stoppage (EXP_CN) is the front-line channel and a SOURCE of others' import-price spikes — but China itself ran near-zero/disinflationary CPI in 2021–22 (it EXPORTED disinflation), so the CN block holds output down with prices flat (no domestic inflation-up restriction). gdp = GDPH/GDP_EA/GDP_CN; infl = JGDP/HICP_EA. Magnitudes are cut sharply from the prior recipe (GDP −4 → −1.2; imports −8 → −3; horizon 6+q → ~4q) to match the documented modest, ~1-year episode.",
     "stages": {
       "naive": {
-        "label": "Imports collapse (model's demand read)",
-        "note": "Real imports −8 q/q-ann for a year, rest free. The model reads weak imports as soft demand — inflation may fall (wrong sign).",
+        "label": "Trade collapses (model's demand read)",
+        "note": "Imports −3 q/q-ann for 3 quarters (a believable trade slowdown, not a −8 collapse). With only the trade lever pinned the model reads weak trade as soft demand — inflation may fall (wrong sign).",
         "pins": [
-          { "varId": "MH", "kind": "log", "values": [-8, -8, -8, -8], "active": [true, true, true, true] }
+          { "varId": "MH", "kind": "log", "values": [-3, -3, -3], "active": [true, true, true] }
         ]
       },
       "restricted": {
-        "label": "+ persistent output down & inflation up (supply)",
-        "note": "Same import collapse; ADD GDP −4 and inflation +2 q/q-ann, sustained 6+ quarters — a persistent adverse-supply bottleneck.",
+        "label": "+ output down & goods inflation up, ~1yr (adverse supply)",
+        "note": "Same trade lever; ADD GDP ~−1.2pp (the documented US growth markdown, NOT −4) and goods-led inflation up to ~+2.5 q/q-ann peak, decaying inside ~4 quarters per the ~1-year GSCPI persistence finding.",
         "pins": [
-          { "varId": "MH", "kind": "log", "values": [-8, -8, -8, -8], "active": [true, true, true, true] },
-          { "varId": "GDPH", "kind": "log", "values": [-4, -4, -4, -4, -3, -2], "active": [true, true, true, true, true, true] },
-          { "varId": "JGDP", "kind": "log", "values": [2, 2, 2, 2, 1.5, 1], "active": [true, true, true, true, true, true] }
+          { "varId": "MH", "kind": "log", "values": [-3, -3, -3], "active": [true, true, true] },
+          { "varId": "GDPH", "kind": "log", "values": [-1.2, -1.2, -1, -0.6], "active": [true, true, true, true] },
+          { "varId": "JGDP", "kind": "log", "values": [2, 2.5, 2, 1], "active": [true, true, true, true] }
         ]
       }
     },
@@ -291,28 +307,27 @@
       "EA": {
         "naive": {
           "pins": [
-            { "varId": "IMP_EA", "kind": "log", "values": [-8, -8, -8, -8], "active": [true, true, true, true] }
+            { "varId": "IMP_EA", "kind": "log", "values": [-3, -3, -3], "active": [true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "IMP_EA", "kind": "log", "values": [-8, -8, -8, -8], "active": [true, true, true, true] },
-            { "varId": "GDP_EA", "kind": "log", "values": [-4, -4, -4, -4, -3, -2], "active": [true, true, true, true, true, true] },
-            { "varId": "HICP_EA", "kind": "log", "values": [2, 2, 2, 2, 1.5, 1], "active": [true, true, true, true, true, true] }
+            { "varId": "IMP_EA", "kind": "log", "values": [-3, -3, -3], "active": [true, true, true] },
+            { "varId": "GDP_EA", "kind": "log", "values": [-0.5, -0.5, -0.4, -0.2], "active": [true, true, true, true] },
+            { "varId": "HICP_EA", "kind": "log", "values": [1.5, 1.5, 1, 0.5], "active": [true, true, true, true] }
           ]
         }
       },
       "CN": {
         "naive": {
           "pins": [
-            { "varId": "EXP_CN", "kind": "log", "values": [-8, -8, -8, -8], "active": [true, true, true, true] }
+            { "varId": "EXP_CN", "kind": "log", "values": [-6, -6, -4], "active": [true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "EXP_CN", "kind": "log", "values": [-8, -8, -8, -8], "active": [true, true, true, true] },
-            { "varId": "GDP_CN", "kind": "log", "values": [-4, -4, -4, -4, -3, -2], "active": [true, true, true, true, true, true] },
-            { "varId": "CPI_CN", "kind": "log", "values": [1.5, 1.5, 1.5, 1.5, 1, 0.5], "active": [true, true, true, true, true, true] }
+            { "varId": "EXP_CN", "kind": "log", "values": [-6, -6, -4], "active": [true, true, true] },
+            { "varId": "GDP_CN", "kind": "log", "values": [-0.8, -0.8, -0.5], "active": [true, true, true] }
           ]
         }
       }
@@ -323,23 +338,23 @@
     "title": "7 · Deglobalization / trade compression",
     "countries": ["US", "EA", "CN"],
     "tags": ["trade", "external", "structural", "tariffs"],
-    "rationale": "A structural retreat from trade integration (tariffs, friend-shoring, fragmentation): BOTH exports and imports compress permanently, and reduced foreign competition adds mild upward pressure on domestic prices.\n\nNAIVE STAGE — Condition exports AND imports DOWN (−5 q/q-ann, persistent and not unwinding) with prices free. The model reads a symmetric trade contraction largely as a wash for activity and may leave inflation little changed — it does not capture the loss-of-competition price effect.\n\nRESTRICTED STAGE — Keep the trade compression and ADD a modest, PERSISTENT inflation pin (+1 q/q-ann): less import competition and re-shored, higher-cost production raise the domestic price level over time. This restriction makes the 'fragmentation is mildly inflationary' channel explicit. The recipe also READS THROUGH to the external block — symmetric export/import compression rebalances the trade balance and the net-foreign-asset path (visible once the external satellite is live).\n\nCOUNTRY NOTES — exports = XH (US) / EXP_EA / EXP_CN; imports = MH (US) / IMP_EA / IMP_CN; infl = JGDP / HICP_EA / CPI_CN. China, as the largest trade-surplus exporter, is hit harder on the export leg; the CN override deepens the export compression relative to imports.",
+    "rationale": "SOURCE — IMF Staff Discussion Note SDN/2023/001, 'Geoeconomic Fragmentation and the Future of Multilateralism' (Aiyar et al., Jan 2023); FDI channel from IMF WEO Apr 2023, Ch.4; price pass-through from Amiti, Redding & Weinstein (JEP 2019) on the 2018-19 US-China trade war.\n\nThe SDN estimates that trade fragmentation ALONE permanently lowers global GDP by 0.2% (limited strategic decoupling) to ~7% (severe split into two non-trading blocs), with a baseline ~1.2%; technological decoupling raises EM losses to 8–12%. Cross-bloc FDI curtailment adds ~2% to long-run global output loss (WEO Apr 2023, Ch.4). Higher cross-bloc barriers curtail both export demand and import supply (trade volumes compress permanently), re-shoring raises the price LEVEL of tradables, and commodity-market segmentation is inflationary specifically for the import-dependent advanced bloc while the surplus exporter faces a demand/output loss that is closer to disinflationary — hence the inflation effect is ASYMMETRIC.\n\nNAIVE STAGE — Condition exports AND imports DOWN, front-loaded then easing (cumulative ~−9% trade volume; CN export leg deeper, since the surplus exporter is hit hardest per the SDN). Prices free. The model reads a symmetric trade contraction largely as a wash for activity and leaves inflation little changed — it does NOT capture the loss-of-competition / re-shoring price effect, nor the bloc-asymmetric inflation.\n\nRESTRICTED STAGE — Keep the trade compression and ADD a modest, FRONT-LOADED-then-FADING price-LEVEL step in the IMPORT-DEPENDENT advanced blocs only (US deflator and EA HICP, ~+1.3–1.5% cumulative over six quarters then reverting): less import competition and higher-cost re-shored/commodity-segmented supply raise the domestic price LEVEL. This is a one-off pass-through step (Amiti-Redding-Weinstein find COMPLETE pass-through of 2018 tariffs into US prices) — NOT a permanent +1pp inflation rate. Crucially China is NOT pinned up on inflation: as the surplus exporter facing a demand/output loss, its domestic price effect is ambiguous-to-disinflationary, so the CN block applies a small NEGATIVE deviation.\n\nCOUNTRY NOTES — exports = XH (US)/EXP_EA/EXP_CN; imports = MH (US)/IMP_EA/IMP_CN; infl = JGDP/HICP_EA/CPI_CN. The trade magnitudes map to the SDN's severe two-bloc tail; the CN override deepens the export compression (surplus exporter hit hardest) and removes/negates the inflation pin to reflect the SDN's bloc-asymmetric inflation finding. The recipe also reads through to the external block. Key fix vs the prior recipe: the inflation pin changed from a permanent +1pp inflation RATE applied uniformly to all blocs, to a front-loaded one-off price-LEVEL step in the advanced blocs only, with China disinflationary.",
     "stages": {
       "naive": {
         "label": "Exports & imports compress (model's read)",
-        "note": "Exports −5 and imports −5 q/q-ann, persistent, prices free. A symmetric trade contraction — the model leaves inflation little changed.",
+        "note": "Exports and imports DOWN, front-loaded then easing (cumulative ~−9% volume), prices free. A symmetric trade contraction — the model leaves inflation little changed.",
         "pins": [
-          { "varId": "XH", "kind": "log", "values": [-5, -5, -5, -5, -5, -5, -5, -5], "active": [true, true, true, true, true, true, true, true] },
-          { "varId": "MH", "kind": "log", "values": [-5, -5, -5, -5, -5, -5, -5, -5], "active": [true, true, true, true, true, true, true, true] }
+          { "varId": "XH", "kind": "log", "values": [-6, -6, -5, -5, -4, -4, -3, -3], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "MH", "kind": "log", "values": [-6, -6, -5, -5, -4, -4, -3, -3], "active": [true, true, true, true, true, true, true, true] }
         ]
       },
       "restricted": {
-        "label": "+ mildly higher inflation (loss of competition)",
-        "note": "Same trade compression; ADD inflation +1 q/q-ann (persistent) — less foreign competition and re-shoring raise prices. Read through to the external block.",
+        "label": "+ price-level step (import-dependent blocs only)",
+        "note": "Same trade compression; ADD a FRONT-LOADED-then-FADING price-LEVEL step (~+1.3–1.5% cumulative, six quarters then reverting) in the import-dependent advanced bloc — a one-off pass-through, NOT a permanent inflation rate. China is disinflationary, not pinned up.",
         "pins": [
-          { "varId": "XH", "kind": "log", "values": [-5, -5, -5, -5, -5, -5, -5, -5], "active": [true, true, true, true, true, true, true, true] },
-          { "varId": "MH", "kind": "log", "values": [-5, -5, -5, -5, -5, -5, -5, -5], "active": [true, true, true, true, true, true, true, true] },
-          { "varId": "JGDP", "kind": "log", "values": [1, 1, 1, 1, 1, 1, 1, 1], "active": [true, true, true, true, true, true, true, true] }
+          { "varId": "XH", "kind": "log", "values": [-6, -6, -5, -5, -4, -4, -3, -3], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "MH", "kind": "log", "values": [-6, -6, -5, -5, -4, -4, -3, -3], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "JGDP", "kind": "log", "values": [1.5, 1.5, 1, 1, 0.5, 0.5, 0, 0], "active": [true, true, true, true, true, true, false, false] }
         ]
       }
     },
@@ -347,30 +362,30 @@
       "EA": {
         "naive": {
           "pins": [
-            { "varId": "EXP_EA", "kind": "log", "values": [-5, -5, -5, -5, -5, -5, -5, -5], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "IMP_EA", "kind": "log", "values": [-5, -5, -5, -5, -5, -5, -5, -5], "active": [true, true, true, true, true, true, true, true] }
+            { "varId": "EXP_EA", "kind": "log", "values": [-6, -6, -5, -5, -4, -4, -3, -3], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "IMP_EA", "kind": "log", "values": [-6, -6, -5, -5, -4, -4, -3, -3], "active": [true, true, true, true, true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "EXP_EA", "kind": "log", "values": [-5, -5, -5, -5, -5, -5, -5, -5], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "IMP_EA", "kind": "log", "values": [-5, -5, -5, -5, -5, -5, -5, -5], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "HICP_EA", "kind": "log", "values": [1, 1, 1, 1, 1, 1, 1, 1], "active": [true, true, true, true, true, true, true, true] }
+            { "varId": "EXP_EA", "kind": "log", "values": [-6, -6, -5, -5, -4, -4, -3, -3], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "IMP_EA", "kind": "log", "values": [-6, -6, -5, -5, -4, -4, -3, -3], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "HICP_EA", "kind": "log", "values": [1.5, 1.5, 1, 1, 0.5, 0.5, 0, 0], "active": [true, true, true, true, true, true, false, false] }
           ]
         }
       },
       "CN": {
         "naive": {
           "pins": [
-            { "varId": "EXP_CN", "kind": "log", "values": [-8, -8, -8, -8, -8, -8, -8, -8], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "IMP_CN", "kind": "log", "values": [-5, -5, -5, -5, -5, -5, -5, -5], "active": [true, true, true, true, true, true, true, true] }
+            { "varId": "EXP_CN", "kind": "log", "values": [-9, -9, -8, -8, -6, -6, -5, -5], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "IMP_CN", "kind": "log", "values": [-6, -6, -5, -5, -4, -4, -3, -3], "active": [true, true, true, true, true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "EXP_CN", "kind": "log", "values": [-8, -8, -8, -8, -8, -8, -8, -8], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "IMP_CN", "kind": "log", "values": [-5, -5, -5, -5, -5, -5, -5, -5], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "CPI_CN", "kind": "log", "values": [1, 1, 1, 1, 1, 1, 1, 1], "active": [true, true, true, true, true, true, true, true] }
+            { "varId": "EXP_CN", "kind": "log", "values": [-9, -9, -8, -8, -6, -6, -5, -5], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "IMP_CN", "kind": "log", "values": [-6, -6, -5, -5, -4, -4, -3, -3], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "CPI_CN", "kind": "log", "values": [-0.5, -0.5, 0, 0, 0, 0, 0, 0], "active": [true, true, false, false, false, false, false, false] }
           ]
         }
       }
@@ -381,21 +396,21 @@
     "title": "8 · Inflation de-anchoring",
     "countries": ["US", "EA", "CN"],
     "tags": ["inflation", "expectations", "term-premium", "persistent"],
-    "rationale": "The question of whether an inflation surprise is transitory or whether expectations come un-anchored.\n\nNAIVE STAGE — Condition inflation UP +3 q/q-ann in the FIRST YEAR ONLY, then let it run free. The model's mean-reversion brings inflation back toward its long-run anchor on its own — the unconditional read is a TRANSITORY spike that fades. This is the 'well-anchored' baseline.\n\nRESTRICTED STAGE — Extend the inflation pin to a SUSTAINED elevation (+2 q/q-ann maintained through the long horizon, e.g. quarters 5–16) AND add a long-yield pin RISING (+100bp building over time): a higher inflation-risk / term premium. Forcing inflation to STAY high at the long horizon together with a rising term premium is the restriction that represents UN-ANCHORED expectations — a regime the mean-reverting model would not produce on its own. The contrast between the two stages is the whole pedagogy: same near-term spike, radically different medium-term outcome depending on whether expectations hold.\n\nCOUNTRY NOTES — infl = JGDP / HICP_EA / CPI_CN; long yield (gov10y) = GLB_USLR (US) / YIELD10_EA (EA) / CORP_CN (CN sovereign 10y). All exist per bloc; magnitudes are held identical for cross-bloc comparability.",
+    "rationale": "SOURCE — EBA/ECB 2023 EU-wide banking-sector stress-test ADVERSE scenario (ECB-PUBLIC, Jan 2023), a documented wage-price-spiral / inflation-de-anchoring path; cross-checked against the IMF GFSR Oct 2023 global stress test and the China 2024 FSSA stagflation case.\n\nThe question of whether an inflation surprise is transitory or whether expectations come UN-ANCHORED. In the EBA/ECB 2023 adverse scenario an energy/commodity supply shock (oil +54%, gas to 180 EUR/MWh; 53% of the HICP impact) collides with a labour-market wage-price spiral: real-income losses drive higher wage claims, firms pass costs into prices (second-round effects ~60% of the HICP-level rise), inflation expectations and wage claims ratchet up, and EA HICP stays at 9.7% (2023), 5.3% (2024), 3.8% (2025) — persistently above target even as growth turns negative (stagflation). 'The increase in current and expected inflation … leads to higher market interest rates' — de-anchored expectations get priced into the long end as a higher term/inflation-risk premium (EA 10y 2.79%→5.42%→4.54%; US 10y 3.62%→5.82%→4.87%; curves invert).\n\nNAIVE STAGE — Condition inflation UP +4 q/q-ann in the FIRST YEAR ONLY, then let it run free. The model's mean reversion pulls inflation back toward its long-run anchor on its own — the unconditional read is a TRANSITORY spike that fades. This is the 'well-anchored' baseline: an inflation surprise without a regime change.\n\nRESTRICTED STAGE — Identify a COST-PUSH supply shock that de-anchors expectations (NOT a demand shock): hold inflation at +2 q/q-ann through the long horizon (matching the ~+1.8pp yr-3 residual above target) AND impose the term-premium repricing the source describes as an ABRUPT, FRONT-LOADED jump (not a slow build): EA 10y +260bp in year 1 easing to +175bp; US 10y +220bp easing to +125bp; CN sovereign a MUTED +100bp→+75bp (the China FSSA stagflation case is an imported oil supply shock with a smaller, partly de-coupled domestic rate response). The contrast is the whole pedagogy: same near-term spike, radically different medium-term outcomes — a fading surprise vs a self-perpetuating wage-price spiral the bond market reprices as a permanent inflation-risk/term premium.\n\nCOUNTRY NOTES — infl = JGDP/HICP_EA/CPI_CN; long yield (gov10y) = GLB_USLR (US)/YIELD10_EA (EA)/CORP_CN (CN sovereign-10y proxy). Magnitudes are bloc-specific (calibrated to the EBA adverse 10y paths and the IMF China FSSA), NOT held identical. Key fixes vs the prior recipe: the naive spike was raised from +3 to +4 (the EBA peak was 9.7%); the long-yield pin was raised from a gradual +100bp to an abrupt, front-loaded +220–260bp (the documented de-anchoring repricing).",
     "stages": {
       "naive": {
-        "label": "Inflation spike, then free (transitory)",
-        "note": "Inflation +3 q/q-ann in year 1 only, then free. The model mean-reverts on its own — a transitory spike.",
+        "label": "Inflation spike, then free (transitory / anchored)",
+        "note": "Inflation +4 q/q-ann in year 1 only, then free. The model mean-reverts on its own — a transitory spike toward the long-run anchor.",
         "pins": [
-          { "varId": "JGDP", "kind": "log", "values": [3, 3, 3, 3], "active": [true, true, true, true] }
+          { "varId": "JGDP", "kind": "log", "values": [4, 4, 4, 4], "active": [true, true, true, true] }
         ]
       },
       "restricted": {
-        "label": "+ sustained inflation & rising term premium (un-anchored)",
-        "note": "Inflation kept at +2 q/q-ann through the long horizon AND the 10y yield rising +100bp (term premium) — un-anchored expectations.",
+        "label": "+ sustained inflation & abrupt term-premium jump (un-anchored)",
+        "note": "Inflation held at +2 q/q-ann through the long horizon AND the 10y yield jumps ABRUPTLY +220bp (front-loaded) easing to +125bp — the EBA de-anchoring repricing of a permanent inflation-risk/term premium.",
         "pins": [
-          { "varId": "JGDP", "kind": "log", "values": [3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] },
-          { "varId": "GLB_USLR", "kind": "lin", "values": [0.25, 0.5, 0.75, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] }
+          { "varId": "JGDP", "kind": "log", "values": [4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] },
+          { "varId": "GLB_USLR", "kind": "lin", "values": [1.32, 2.2, 2.2, 2.2, 1.6, 1.6, 1.6, 1.6, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] }
         ]
       }
     },
@@ -403,26 +418,26 @@
       "EA": {
         "naive": {
           "pins": [
-            { "varId": "HICP_EA", "kind": "log", "values": [3, 3, 3, 3], "active": [true, true, true, true] }
+            { "varId": "HICP_EA", "kind": "log", "values": [4, 4, 4, 4], "active": [true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "HICP_EA", "kind": "log", "values": [3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] },
-            { "varId": "YIELD10_EA", "kind": "lin", "values": [0.25, 0.5, 0.75, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] }
+            { "varId": "HICP_EA", "kind": "log", "values": [4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] },
+            { "varId": "YIELD10_EA", "kind": "lin", "values": [1.56, 2.6, 2.6, 2.6, 1.95, 1.95, 1.95, 1.95, 1.75, 1.75, 1.75, 1.75, 1.75, 1.75, 1.75, 1.75], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] }
           ]
         }
       },
       "CN": {
         "naive": {
           "pins": [
-            { "varId": "CPI_CN", "kind": "log", "values": [3, 3, 3, 3], "active": [true, true, true, true] }
+            { "varId": "CPI_CN", "kind": "log", "values": [4, 4, 4, 4], "active": [true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "CPI_CN", "kind": "log", "values": [3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] },
-            { "varId": "CORP_CN", "kind": "lin", "values": [0.25, 0.5, 0.75, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] }
+            { "varId": "CPI_CN", "kind": "log", "values": [4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] },
+            { "varId": "CORP_CN", "kind": "lin", "values": [0.6, 1.0, 1.0, 1.0, 0.9, 0.9, 0.9, 0.9, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75], "active": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true] }
           ]
         }
       }
@@ -433,22 +448,23 @@
     "title": "9 · Fiscal default likelihood ↑ (sovereign risk premium)",
     "countries": ["US", "EA", "CN"],
     "tags": ["fiscal", "sovereign", "risk-premium", "default"],
-    "rationale": "A rise in perceived sovereign-default risk: the dormant risk-premium channel is made explicit through conditioning.\n\nNAIVE STAGE — Condition the 10y GOVERNMENT yield UP +150bp (a sovereign risk-premium widening) and leave the rest free. The model reads a higher safe rate largely as TIGHTER MONETARY conditions (a level shift in the curve), not as default risk — output softens modestly through the usual rate channel, but the distress signature is absent.\n\nRESTRICTED STAGE — Keep the sovereign-yield pin and ADD the distress co-movement: the CORPORATE spread UP +150bp (risk repricing spills to private credit) and real GDP DOWN (−3 q/q-ann, the activity hit from a fiscal-stress / confidence shock). Pinning corporate spreads and output together with the sovereign yield is the restriction that turns a generic 'rates up' into a SOVEREIGN-DISTRESS shock — and the higher EFFI / debt-service it implies reads through to the fiscal block, worsening the debt dynamics (the self-reinforcing risk-premium → debt loop).\n\nCOUNTRY NOTES — gov10y = GLB_USLR (US) / YIELD10_EA (EA) / CORP_CN (CN sovereign); corp = FAAA (US) / EACORP (EA). CN's CORP_CN IS the sovereign yield and there is no separate corporate spread, so the CN override applies the risk premium to CORP_CN and drops the corporate-spread leg, keeping the output-down distress restriction.",
+    "rationale": "SOURCE — IMF GFSR October 2025 ('Shifting Ground beneath the Calm', Ch.1) + Fiscal Monitor April 2026 on the erosion of the US Treasury safety/convenience premium (deficit 7–8% of GDP, gross debt heading to ~142% by 2031 and ~156% by 2055); the macro-financial distress co-movement calibrated from the Fed 2024 Severely Adverse scenario; the sovereign-spike-with-distress + sovereign-bank-loop pattern from the euro-area sovereign crisis 2010-12 (Italy's 10y 4%→7%, Spain >7%) and the IMF Spain 2024 FSSA (cumulative −7pp real GDP, two-year adverse path).\n\nA rise in perceived sovereign-default risk: as default risk rises, the bond loses its safe-haven status, so the 10y govt yield rises via a higher term/risk premium EVEN AS activity weakens — it does NOT fall in the usual flight-to-quality way (the identifying signature; in the Fed's 2024 severely-adverse generic recession the 10y FALLS 3.7pp). The sovereign risk premium passes through to private credit (corporate, esp. lower-rated Baa/BBB, spreads widen; banks holding sovereign debt take losses and tighten), and higher debt-service feeds the self-reinforcing risk-premium → debt loop.\n\nNAIVE STAGE — Condition the 10y GOVERNMENT yield UP (a persistent ~+200bp risk-premium widening, only partly decaying — a level shift, not a fade) and leave the rest free. The model reads a higher safe rate largely as TIGHTER MONETARY conditions, so output softens modestly through the usual rate channel, but the distress signature is absent. Critically, in an ordinary severe recession the safe yield FALLS in a flight-to-quality — so the naive read looks like an unexplained tightening.\n\nRESTRICTED STAGE — Keep the sovereign-yield pin and ADD the fiscal-distress co-movement that IDENTIFIES the shock: the CORPORATE spread UP (Baa/BBB — toward the Fed-2024 +430bp tail (BBB spread 1.5→5.8pp)), EQUITY DOWN (~−35–55%, the confidence hit), and real GDP DOWN (a deeper, −8.5%-style contraction sustained 6+ quarters). The identifying restriction is that the SAFE sovereign yield rises WHILE equity and output collapse — i.e. the sovereign bond is NO LONGER a haven (safety-premium erosion) — which separates a fiscal-default-risk shock from a flight-to-quality recession. The higher EFFI / debt-service reads through to the fiscal block, worsening debt/GDP.\n\nCOUNTRY NOTES — gov10y = GLB_USLR (US)/YIELD10_EA (EA)/CORP_CN (CN sovereign); corp = GLB_USBAA (US Baa — SWITCHED from FAAA/Aaa, the more credit-sensitive and Fed-BBB-consistent lever)/EACORP (EA). Equity = GLB_USEQ (global). CN's CORP_CN IS the sovereign yield with no separate corporate spread, so the CN override applies the risk premium to CORP_CN and drops the corporate-spread leg, keeping equity and output-down distress (sized smaller given China's managed market and capital-account frictions). EA magnitudes are deeper than the US, reflecting the periphery sovereign-spike / sovereign-bank-loop documented in 2010-12 and the Spain 2024 FSSA. Key fixes vs the prior recipe: the corp lever switched FAAA→GLB_USBAA; spread/GDP magnitudes raised toward the documented tail; equity-down added as the falsifiable distress identifier; GDP lengthened to 6 quarters.",
     "stages": {
       "naive": {
         "label": "Sovereign yield up (model reads as tightening)",
-        "note": "10y government yield +150bp, rest free. The model reads a higher safe rate as tighter policy, not default risk — distress signature absent.",
+        "note": "10y government yield up ~+200bp peak, persistent (a level shift, not a fade), rest free. The model reads a higher safe rate as tighter policy — but unlike a flight-to-quality recession (where the safe 10y FALLS), this looks like an unexplained tightening.",
         "pins": [
-          { "varId": "GLB_USLR", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.5, 1.3, 1.0, 0.7, 0.4], "active": [true, true, true, true, true, true, true, true] }
+          { "varId": "GLB_USLR", "kind": "lin", "values": [1.5, 2.0, 2.0, 2.0, 2.0, 1.8, 1.6, 1.4], "active": [true, true, true, true, true, true, true, true] }
         ]
       },
       "restricted": {
-        "label": "+ corporate spread up & output down (distress)",
-        "note": "Same sovereign-yield path; ADD corp spread +150bp (spillover to private credit) and GDP −3 q/q-ann (the activity hit) — sovereign distress. Reads through to the fiscal block.",
+        "label": "+ corp spread up, equity down, output down (sovereign distress, NOT haven)",
+        "note": "Same sovereign-yield path; ADD Baa corp spread up (toward the Fed-2024 +430bp tail (BBB spread 1.5→5.8pp)), equity ~−35–55%, GDP −8.5%-style for 6+ quarters. The SAFE yield rises WHILE equity and output fall = the sovereign is no longer a haven (the falsifiable fiscal-default signature). Reads through to the fiscal block.",
         "pins": [
-          { "varId": "GLB_USLR", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.5, 1.3, 1.0, 0.7, 0.4], "active": [true, true, true, true, true, true, true, true] },
-          { "varId": "FAAA", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.5, 1.3, 1.0, 0.7, 0.4], "active": [true, true, true, true, true, true, true, true] },
-          { "varId": "GDPH", "kind": "log", "values": [-3, -3, -3, -3], "active": [true, true, true, true] }
+          { "varId": "GLB_USLR", "kind": "lin", "values": [1.5, 2.0, 2.0, 2.0, 2.0, 1.8, 1.6, 1.4], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "GLB_USBAA", "kind": "lin", "values": [2.0, 3.0, 3.5, 3.5, 3.0, 2.5, 2.0, 1.5], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-22.3, -44.6, -44.6, -44.6, -33.6, -22.3, -11.0, -5.0], "active": [true, true, true, true, true, true, true, true] },
+          { "varId": "GDPH", "kind": "log", "values": [-4, -4, -4, -3, -2, -1], "active": [true, true, true, true, true, true] }
         ]
       }
     },
@@ -456,27 +472,29 @@
       "EA": {
         "naive": {
           "pins": [
-            { "varId": "YIELD10_EA", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.5, 1.3, 1.0, 0.7, 0.4], "active": [true, true, true, true, true, true, true, true] }
+            { "varId": "YIELD10_EA", "kind": "lin", "values": [1.5, 2.5, 3.0, 3.0, 2.8, 2.5, 2.2, 2.0], "active": [true, true, true, true, true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "YIELD10_EA", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.5, 1.3, 1.0, 0.7, 0.4], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "EACORP", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.5, 1.3, 1.0, 0.7, 0.4], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "GDP_EA", "kind": "log", "values": [-3, -3, -3, -3], "active": [true, true, true, true] }
+            { "varId": "YIELD10_EA", "kind": "lin", "values": [1.5, 2.5, 3.0, 3.0, 2.8, 2.5, 2.2, 2.0], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "EACORP", "kind": "lin", "values": [1.5, 2.5, 3.0, 3.0, 2.5, 2.0, 1.5, 1.0], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-22.3, -44.6, -44.6, -44.6, -33.6, -22.3, -11.0, -5.0], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "GDP_EA", "kind": "log", "values": [-4, -4, -4, -3, -2, -1], "active": [true, true, true, true, true, true] }
           ]
         }
       },
       "CN": {
         "naive": {
           "pins": [
-            { "varId": "CORP_CN", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.5, 1.3, 1.0, 0.7, 0.4], "active": [true, true, true, true, true, true, true, true] }
+            { "varId": "CORP_CN", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.5, 1.3, 1.0, 0.8, 0.6], "active": [true, true, true, true, true, true, true, true] }
           ]
         },
         "restricted": {
           "pins": [
-            { "varId": "CORP_CN", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.5, 1.3, 1.0, 0.7, 0.4], "active": [true, true, true, true, true, true, true, true] },
-            { "varId": "GDP_CN", "kind": "log", "values": [-3, -3, -3, -3], "active": [true, true, true, true] }
+            { "varId": "CORP_CN", "kind": "lin", "values": [1.0, 1.5, 1.5, 1.5, 1.3, 1.0, 0.8, 0.6], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "GLB_USEQ", "kind": "levelDisplay", "values": [-15.0, -30.0, -30.0, -22.3, -15.0, -8.0, -4.0, -2.0], "active": [true, true, true, true, true, true, true, true] },
+            { "varId": "GDP_CN", "kind": "log", "values": [-3, -3, -3, -2, -1, -0.5], "active": [true, true, true, true, true, true] }
           ]
         }
       }
