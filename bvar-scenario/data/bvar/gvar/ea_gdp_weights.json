@@ -1,0 +1,24 @@
+{
+  "source": "Eurostat namq_10_gdp, current-price GDP (CP_MEUR, SCA), 4q-trailing member share of EA20",
+  "asof": "2026-Q1",
+  "note": "Member share of euro-area GDP, used as the pass-through weight for the contagious sovereign-spread channel (ΔYIELD10_EA = w_member · Δspread). Sum = 0.9902; the ~1% residual is HR/CY/MT (not modelled as members). Real values, not fabricated — regenerate via pipeline namq_10_gdp CP_MEUR.",
+  "weights": {
+    "DE": 0.28290,
+    "FR": 0.18868,
+    "IT": 0.14254,
+    "ES": 0.10733,
+    "NL": 0.07470,
+    "BE": 0.04059,
+    "IE": 0.03834,
+    "AT": 0.03248,
+    "PT": 0.01953,
+    "FI": 0.01782,
+    "GR": 0.01573,
+    "SK": 0.00872,
+    "LU": 0.00566,
+    "LT": 0.00536,
+    "SI": 0.00449,
+    "LV": 0.00273,
+    "EE": 0.00265
+  }
+}
