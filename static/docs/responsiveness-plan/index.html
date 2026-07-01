@@ -1,0 +1,1390 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>BVAR Scenario Tool — Responsiveness Fix Plan - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bvar-scenario-tool-responsiveness-fix-plan" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              BVAR Scenario Tool — Responsiveness Fix Plan
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-ranked-fix-table-highest-impact-per-effort-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Ranked fix table (highest impact-per-effort first)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-two-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Two tiers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Two tiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-wins-low-effort-low-risk-do-now-independent-of-delta-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QUICK WINS — low-effort, low-risk, do now (independent of delta-c)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="bvar-scenario-tool-responsiveness-fix-plan">BVAR Scenario Tool — Responsiveness Fix Plan<a class="headerlink" href="#bvar-scenario-tool-responsiveness-fix-plan" title="Permanent link">&para;</a></h1>
+<p><strong>Branch context:</strong> live = <code>improve-live @ 89c4501</code>. A concurrent <strong>delta-c</strong> workflow is editing
+<code>ChartGrid.tsx</code>, <code>useStore.ts</code>, <code>gvarSolve.ts</code>, <code>ControlPanel.tsx</code>. Fixes touching those files are
+flagged <strong>[overlaps delta-c → sequence after]</strong>; everything else is <strong>[independent → do now]</strong>.</p>
+<p>This plan is the synthesis of 5 profiling dimensions: React re-render, compute/solve floor, Plotly
+rendering, bundle/load, and end-to-end interaction latency. All file sizes and claims below were
+spot-verified against the working tree (companion US = 34,167,515 B → gzip 13,161,101 B = 2.6×;
+scenario_priors = 559 MB; zero <code>scattergl</code>; no <code>uirevision</code> on <code>&lt;Plot&gt;</code>; <code>setBvarData(null)</code> on switch;
+<code>LazyChart</code> defined at ChartGrid.tsx:2270, used 0×).</p>
+<hr />
+<h2 id="1-ranked-fix-table-highest-impact-per-effort-first">1. Ranked fix table (highest impact-per-effort first)<a class="headerlink" href="#1-ranked-fix-table-highest-impact-per-effort-first" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Fix</th>
+<th>Win</th>
+<th>Effort</th>
+<th>Risk</th>
+<th>Impact/Effort</th>
+<th>delta-c</th>
+<th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Pre-gzip <code>companion_draws.json</code> + fetch <code>.gz</code> w/ DecompressionStream</strong></td>
+<td>34→13 MB US wire on every Compute (2.6×); deploy −~310 MB</td>
+<td>M</td>
+<td>low</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td><strong>independent</strong></td>
+<td><code>loader.ts:34-50</code>; build step; <code>public/.../companion_draws.json.gz</code></td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Prune <code>scenario_priors/</code> from deploy</strong> (dead weight, 0 runtime refs)</td>
+<td>deploy −559 MB; removes 1 GB-Pages-limit risk</td>
+<td>S</td>
+<td>low</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>independent (deploy)</td>
+<td><code>public/data/bvar/*/scenario_priors</code></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Custom scatter-only Plotly bundle</strong> via <code>createPlotlyComponent</code></td>
+<td>lazy Plotly chunk ~3.5→~1 MB; faster first chart + country-switch parse</td>
+<td>M</td>
+<td>low</td>
+<td>⭐⭐⭐⭐</td>
+<td>independent</td>
+<td><code>package.json:20</code>; new factory; <code>ChartGrid.tsx:22-28</code> (import target only)</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Don't unmount ChartGrid on country switch</strong> (overlay instead of <code>bvarData=null</code>)</td>
+<td>removes 35-panel cold <code>Plotly.newPlot</code> storm from switch critical path</td>
+<td>M</td>
+<td>med</td>
+<td>⭐⭐⭐⭐</td>
+<td>independent</td>
+<td><code>page.tsx:20</code>, <code>page.tsx:60-62</code></td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Memoize layout + hoist config/style consts in DraggableChartImpl</strong></td>
+<td>kills full <code>Plotly.react</code> relayout on every re-rendered panel (~35 on horizon/Compute)</td>
+<td>S</td>
+<td>low</td>
+<td>⭐⭐⭐⭐</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>ChartGrid.tsx:2464-2487</code></td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Add <code>uirevision</code> (+ optional <code>datarevision</code>) to <code>&lt;Plot&gt;</code></strong></td>
+<td>preserves axis/UI state, skips layout re-solve on touched-panel repaint</td>
+<td>S</td>
+<td>low</td>
+<td>⭐⭐⭐⭐</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>ChartGrid.tsx:2464-2487</code></td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Solve-result LRU cache (worker-side, key = modelSig+pinsSig+mode+H)</strong></td>
+<td>return-to-state interactions instant (drag-out-and-back, undo, country re-select)</td>
+<td>S</td>
+<td>low</td>
+<td>⭐⭐⭐⭐</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>runGvarSolve.ts:47-115</code>, <code>useGvarForecast.ts:156,208-241</code></td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Idle-prefetch US <code>companion_draws.gz</code> after first paint</strong></td>
+<td>first US Compute fetch hidden behind reading time</td>
+<td>S</td>
+<td>low</td>
+<td>⭐⭐⭐</td>
+<td>independent</td>
+<td><code>page.tsx:18-49</code> (post #1)</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td><strong>Parallelize the 3 serial optional loads in loadBVARData</strong></td>
+<td>−2 serial round-trips per country switch</td>
+<td>S</td>
+<td>low</td>
+<td>⭐⭐⭐</td>
+<td>independent</td>
+<td><code>loader.ts:21-23</code></td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td><strong>Don't clone the ~95 MB coupling artifact into worker on full solves</strong></td>
+<td>−~2-3 s structured-clone per Compute / full solve</td>
+<td>M</td>
+<td>med</td>
+<td>⭐⭐⭐</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>useGvarForecast.ts:223</code>, <code>gvarLoader.ts:100-120</code></td>
+</tr>
+<tr>
+<td><strong>11</strong></td>
+<td><strong>Per-bloc selectors instead of bare <code>useStore()</code></strong> (siblings + ChartGrid root)</td>
+<td>stops monolithic re-render on unrelated store writes</td>
+<td>S–M</td>
+<td>med</td>
+<td>⭐⭐⭐</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>ChartGrid.tsx:309-312</code>, <code>ControlPanel.tsx:16-19</code>, <code>TopBar.tsx:17</code>, <code>ScenarioBar.tsx:236</code></td>
+</tr>
+<tr>
+<td><strong>12</strong></td>
+<td><strong>rAF-coalesce ControlPanel slider onChange; collapse double-write</strong></td>
+<td>caps slider-drag work at paint rate, not per-input-event</td>
+<td>S</td>
+<td>low</td>
+<td>⭐⭐⭐</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>ControlPanel.tsx:514-535,526-533</code></td>
+</tr>
+<tr>
+<td><strong>13</strong></td>
+<td><strong>History shading: <code>layout.shapes</code> rect, not <code>fill:'toself'</code> trace</strong></td>
+<td>−1 trace/panel (~35 app-wide); off the trace-diff/hover/autorange path</td>
+<td>S</td>
+<td>low</td>
+<td>⭐⭐</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>ChartGrid.tsx:1568-1582</code></td>
+</tr>
+<tr>
+<td><strong>14</strong></td>
+<td><strong>Memoize customdata/offsetLabel once per (lastHist, xAll)</strong></td>
+<td>removes per-frame array+string alloc on dragged panel</td>
+<td>S</td>
+<td>low</td>
+<td>⭐⭐</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>ChartGrid.tsx:2320-2340</code></td>
+</tr>
+<tr>
+<td><strong>15</strong></td>
+<td><strong>Concurrency-limit / manifest-drive loadGVARModels (132 fetches)</strong></td>
+<td>fewer 404s + HOL blocking on first GVAR visit; coupling .gz starts earlier</td>
+<td>M</td>
+<td>med</td>
+<td>⭐⭐</td>
+<td>independent</td>
+<td><code>gvarLoader.ts:123-135</code></td>
+</tr>
+<tr>
+<td><strong>16</strong></td>
+<td><strong>Lift grid-wide values to props; collapse 35× find() selectors</strong></td>
+<td>−~70 array scans/keystroke</td>
+<td>M</td>
+<td>med</td>
+<td>⭐⭐</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>ChartGrid.tsx:2308-2312</code></td>
+</tr>
+<tr>
+<td><strong>17</strong></td>
+<td><strong>Don't re-clone draws into band worker each Compute</strong> (cache worker-side)</td>
+<td>−~20 MB main-thread clone/Compute (US)</td>
+<td>M</td>
+<td>med</td>
+<td>⭐⭐</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>ChartGrid.tsx:495-513</code></td>
+</tr>
+<tr>
+<td><strong>S1</strong></td>
+<td><strong>Band per-draw on affine kernel fast path</strong> (hoist partner kernels + M)</td>
+<td>EA/JP band wall-clock ÷4–÷10; US band ~÷2</td>
+<td>L</td>
+<td>med</td>
+<td>⭐⭐⭐ (structural)</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>runGvarBandSolve.ts:108-181</code>, <code>gvarSolve.ts:536,344-363</code>, <code>affineBlocKernels</code></td>
+</tr>
+<tr>
+<td><strong>S2</strong></td>
+<td><strong>Reuse affine baseLvl; preallocate drawCompanion scratch</strong></td>
+<td>−1 full smoother pass/draw + GC relief (depends on S1)</td>
+<td>M</td>
+<td>low</td>
+<td>⭐⭐ (structural)</td>
+<td>independent</td>
+<td><code>runGvarBandSolve.ts:114-124</code>, <code>gvarSolve.ts:344-363</code></td>
+</tr>
+<tr>
+<td><strong>S3</strong></td>
+<td><strong>Kalman: cache Tᵀ per bloc, in-place matmul, reuse scratch</strong></td>
+<td>~1.3–2× on every conditionalForecast (multiplies through all paths)</td>
+<td>M</td>
+<td>med</td>
+<td>⭐⭐ (structural)</td>
+<td>independent</td>
+<td><code>kalman.ts:179,196,199,235-250,469,478</code>, <code>matrix.ts:39-52</code></td>
+</tr>
+<tr>
+<td><strong>S4</strong></td>
+<td><strong>Virtualize/stagger panel mount (revive <code>LazyChart</code> or IntersectionObserver)</strong></td>
+<td>first interactive after ~1 row of inits, not ~40 synchronous <code>newPlot</code></td>
+<td>M</td>
+<td>med</td>
+<td>⭐⭐ (structural)</td>
+<td>independent</td>
+<td><code>ChartGrid.tsx:2270-2287</code> (revive), grid maps <code>2109-2229</code></td>
+</tr>
+<tr>
+<td><strong>S5</strong></td>
+<td><strong>Per-panel memoized trace build (split monolithic <code>rawCharts</code>)</strong></td>
+<td>per-edit JS build ~35→~1-2 panels; smooths fast drag/slider</td>
+<td>L</td>
+<td>med</td>
+<td>⭐⭐ (structural)</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>ChartGrid.tsx:1379-1905,1913-1920</code></td>
+</tr>
+<tr>
+<td><strong>A1</strong></td>
+<td><strong>Audit live 50-bloc topology never hits <code>buildGVARCoupling</code>/<code>spectralRadius</code></strong></td>
+<td>confirms no multi-second ρ(M)/dense-inverse spike on live path</td>
+<td>S</td>
+<td>low</td>
+<td>verify-only</td>
+<td><strong>[overlaps → after]</strong></td>
+<td><code>gvarSolve.ts:827-857,885-896,1511-1516,1686</code></td>
+</tr>
+</tbody>
+</table>
+<p>⭐ = impact-per-effort (5 = highest). "Win" is the realized latency or size reduction.</p>
+<hr />
+<h2 id="2-two-tiers">2. Two tiers<a class="headerlink" href="#2-two-tiers" title="Permanent link">&para;</a></h2>
+<h3 id="quick-wins-low-effort-low-risk-do-now-independent-of-delta-c">QUICK WINS — low-effort, low-risk, <strong>do now</strong> (independent of delta-c)<a class="headerlink" href="#quick-wins-low-effort-low-risk-do-now-independent-of-delta-c" title="Permanent link">&para;</a></h3>
+<p>These can land immediately, in parallel with the delta-c slider work, with no merge contention:</p>
+<ol>
+<li><strong>#1 Pre-gzip <code>companion_draws.json</code></strong> — the single biggest byte-for-effort win on the Compute
+   path. Reuses the proven coupling-artifact <code>.gz</code> + <code>DecompressionStream</code> pattern. Also cuts the
+   deploy ~310 MB.</li>
+<li><strong>#2 Prune <code>scenario_priors/</code></strong> — 559 MB of pure dead deploy weight, zero runtime references. One
+   deploy-pipeline change; removes the dominant 1 GB-Pages-limit risk.</li>
+<li><strong>#3 Custom scatter-only Plotly bundle</strong> — app emits only <code>type:'scatter'</code> (verified: 0
+   <code>scattergl</code>, 0 other trace types). Drops ~2–2.5 MB of download+parse with zero visual change.</li>
+<li><strong>#8 Idle-prefetch US draws</strong> — warms <code>_drawsCache</code> while the user reads default charts; first
+   Compute becomes near-instant. (Land after #1 so it prefetches the <code>.gz</code>.)</li>
+<li><strong>#9 Parallelize loadBVARData optional fetches</strong> — fold the 3 serial <code>baseline_levels</code> /
+   <code>historical_levels</code> / <code>fiscal_meta</code> awaits into the existing <code>Promise.all</code> (use <code>allSettled</code> for
+   404 tolerance). −2 serial round-trips per switch.</li>
+<li><strong>#15 Throttle the 132-fetch loadGVARModels burst</strong> — concurrency pool of ~6-8 and/or a shipped
+   manifest to stop probing 33 blocs with 404s; start the coupling <code>.gz</code> download in parallel.</li>
+</ol>
+<blockquote>
+<h1 id="4-no-unmount-on-switch-is-also-independent-of-delta-c-but-is-rated-mmed-touches">4 (no-unmount-on-switch) is <strong>also independent of delta-c</strong> but is rated <strong>M/med</strong> (touches<a class="headerlink" href="#4-no-unmount-on-switch-is-also-independent-of-delta-c-but-is-rated-mmed-touches" title="Permanent link">&para;</a></h1>
+<p><code>page.tsx</code> render gating + a loading-overlay), so it sits just above the structural tier rather than
+in the trivially-safe quick-wins list. Strongly recommended as the next thing after the byte wins.</p>
+</blockquote>
+<h3 id="structural-higher-effortrisk-schedule-deliberately">STRUCTURAL — higher effort/risk, schedule deliberately<a class="headerlink" href="#structural-higher-effortrisk-schedule-deliberately" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>S1 Band on affine fast path</strong> — the remaining <em>compute floor</em>. The mean solve already has a
+  closed-form affine path (<code>solveGVARDirect</code>/<code>affineBlocKernels</code>, ~10-20× faster, byte-equal); the
+  band per-draw loop pointedly does NOT use it. Partner kernels + coupling <code>M</code> are draw-invariant →
+  build once outside the loop; per draw rebuild only the <em>viewed</em> bloc's kernels. EA/JP band ÷4–÷10.
+  <strong>Overlaps <code>gvarSolve.ts</code> (delta-c) — sequence after.</strong></li>
+<li><strong>S2/S3</strong> — second smoother-pass removal + Kalman constant-factor wins. S3 multiplies through
+  <em>every</em> solve/band/kernel call, so it compounds with S1. Both touch <code>gvarSolve.ts</code>/<code>kalman.ts</code>;
+  S3's <code>matrix.ts</code>/<code>kalman.ts</code> work is <strong>independent</strong> of the delta-c files.</li>
+<li><strong>S4 Virtualized/staggered grid mount</strong> — <code>LazyChart</code> (the index×100ms staggered mounter) is
+  defined but <strong>wired into 0 grids</strong> (verified). Reviving it (or an IntersectionObserver gate) breaks
+  the ~40-panel synchronous <code>newPlot</code> storm into frames. Pairs naturally with #4.</li>
+<li><strong>S5 Per-panel memoized trace build</strong> — the structural ceiling under the per-render redraw fixes.
+  <code>rawCharts</code> rebuilds all ~35 panels' trace arrays on any <code>scenarios</code> change even though
+  <code>reconcileCharts</code> then repaints only 1. Split the builder so only the touched variable's panel
+  rebuilds. Heavy; <strong>overlaps <code>ChartGrid.tsx</code></strong>.</li>
+</ul>
+<hr />
+<h2 id="3-concrete-fileline-changes-per-fix">3. Concrete file:line changes per fix<a class="headerlink" href="#3-concrete-fileline-changes-per-fix" title="Permanent link">&para;</a></h2>
+<p><strong>#1 companion_draws gzip</strong> — <code>app/src/lib/data/loader.ts:34-50</code> (<code>loadCompanionDraws</code>): fetch
+<code>companion_draws.json.gz</code> first, <code>res.body.pipeThrough(new DecompressionStream('gzip'))</code> → text →
+<code>JSON.parse</code> → existing <code>Float64Array.from</code>; 404-fallback to plain <code>.json</code>. Mirror
+<code>gvarLoader.ts:100-120</code> (<code>loadCouplingArtifact</code>). Add a build/CI step to emit the <code>.gz</code> beside each
+<code>app/public/data/bvar/&lt;C&gt;/companion_draws.json</code>.</p>
+<p><strong>#2 scenario_priors prune</strong> — no <code>src/</code> change (0 refs). Deploy step: prune
+<code>out/data/bvar/*/scenario_priors</code> before publish, or move the dir out of <code>public/</code>. Hand to deploy
+owner.</p>
+<p><strong>#3 scatter-only Plotly</strong> — <code>app/package.json:20</code> keep <code>plotly.js</code> core; new factory module:
+<code>import Plotly from 'plotly.js/lib/core'; import scatter from 'plotly.js/lib/scatter'; Plotly.register([scatter]); export default createPlotlyComponent(Plotly)</code> (from <code>react-plotly.js/factory</code>).
+Point <code>app/src/components/charts/ChartGrid.tsx:22-28</code> <code>dynamic()</code> at the new factory module.</p>
+<p><strong>#4 no-unmount on switch</strong> — <code>app/src/app/page.tsx:20</code> remove <code>setBvarData(null)</code> (or set a
+<code>pending</code> flag instead); <code>page.tsx:60-62</code> render <code>&lt;ChartGrid/&gt;</code> always, layer a translucent loading
+overlay (pattern exists at <code>ChartGrid.tsx:2037</code>, <code>uncertaintyComputing</code>) until new data lands → panels
+diff-update via <code>Plotly.react</code> instead of remount.</p>
+<p><strong>#5 memo layout / hoist config+style</strong> — <code>app/src/components/charts/ChartGrid.tsx</code>: hoist
+module-level <code>const PLOT_CONFIG = { responsive:true, displayModeBar:false, scrollZoom:false }</code> and
+<code>const PLOT_STYLE = { width:'100%' }</code> (currently inline literals at <code>2485</code>/<code>2486</code>); wrap <code>layout</code>
+(<code>2466-2484</code>) in <code>useMemo</code> keyed <code>[chart.title, scenarioName, chart.yUnit, xAxisTicks, showLegend]</code>.
+<code>plotData</code> already memoized at <code>2320</code>.</p>
+<p><strong>#6 uirevision</strong> — <code>app/src/components/charts/ChartGrid.tsx:2464-2487</code> add
+<code>uirevision={country + ':' + scenarioId}</code> to <code>&lt;Plot&gt;</code> (no <code>uirevision</code>/<code>datarevision</code> present today —
+verified). Optional <code>datarevision</code> keyed to a trace-content hash for cheap int-compare diffs.</p>
+<p><strong>#7 solve-result LRU</strong> — <code>app/src/lib/compute/runGvarSolve.ts:47-115</code>: tiny worker-side LRU (8-16
+entries), key = <code>modelSig + pinsSig + mode + horizon</code> for mean (<code>pinsSig</code> already computed at
+<code>useGvarForecast.ts:156</code>); separate band key <code>modelSig+pinsSig+nDraws+viewed</code>. Hit → post back
+immediately.</p>
+<p><strong>#8 idle-prefetch</strong> — <code>app/src/app/page.tsx:18-49</code>: after initial render,
+<code>requestIdleCallback(() =&gt; loadCompanionDraws('US'))</code> to warm <code>_drawsCache</code> (post-#1 → fetches <code>.gz</code>).</p>
+<p><strong>#9 parallel optional loads</strong> — <code>app/src/lib/data/loader.ts:21-23</code>: fold <code>baseline_levels</code>,
+<code>historical_levels</code>, <code>fiscal_meta</code> into the <code>Promise.all</code> (or a sibling <code>Promise.allSettled</code>) so all
+seven requests are in flight at once; keep 404 tolerance.</p>
+<p><strong>#10 no coupling clone on full solve</strong> — <code>app/src/lib/compute/useGvarForecast.ts:223</code>: post the
+coupling artifact to the worker once (cache worker-side by <code>modelSig</code>), or include it only when
+<code>runGvarSolve</code> will actually seed it (<code>runGvarSolve.ts:73-77</code> — <code>artifact.pinStructure</code> matches
+request); else use <code>withoutCoupling</code> for full solves too and rebuild <code>M</code> from the warm kernel cache.</p>
+<p><strong>#11 per-bloc selectors</strong> — replace bare <code>useStore()</code> destructures: <code>ChartGrid.tsx:309-312</code>,
+<code>ControlPanel.tsx:16-19</code>, <code>TopBar.tsx:17</code>, <code>ScenarioBar.tsx:236</code> → <code>useShallow</code> tuples / per-field
+selectors of only the fields each reads.</p>
+<p><strong>#12 slider rAF</strong> — <code>app/src/components/controls/ControlPanel.tsx:514-535</code>: coalesce range <code>onChange</code>
+to one store write per <code>requestAnimationFrame</code> (mirror <code>ChartGrid.tsx:2399-2411</code>
+<code>handleOverlayMouseDown</code>); collapse the double <code>updateScenario</code> at <code>526-533</code>; commit on pointer-up.</p>
+<p><strong>#13 history shape</strong> — <code>app/src/components/charts/ChartGrid.tsx:1568-1582</code>: move the grey history
+rect from a <code>fill:'toself'</code> scatter trace into the memoized <code>layout.shapes</code> (<code>type:'rect'</code>,
+<code>yref:'paper'</code>, <code>layer:'below'</code>).</p>
+<p><strong>#14 customdata memo</strong> — <code>app/src/components/charts/ChartGrid.tsx:2320-2340</code>: precompute the
+<code>offsetLabel</code> customdata array once per <code>(lastHist, xAll)</code> at grid level (x offsets are a fixed <code>0..H</code>
+range shared by all panels); reuse on y-only changes.</p>
+<p><strong>#15 throttle GVAR fetches</strong> — <code>app/src/lib/data/gvarLoader.ts:124-135</code>: concurrency pool (~6-8) over
+<code>GVAR_BLOC_CANDIDATES</code>, prefer a shipped manifest over probing 33 blocs; start
+<code>loadCouplingArtifact()</code> in <code>Promise.all</code> with the bloc fetches, not strictly after (<code>:133</code>).</p>
+<p><strong>#16 lift grid-wide values</strong> — <code>app/src/components/charts/ChartGrid.tsx:2308-2312</code>: lift
+<code>activeScenarioId</code>/<code>scenarioName</code>/<code>showCounterfactual</code>/<code>growthDisplay</code>/<code>country</code> to ChartGrid once,
+thread as <strong>primitive</strong> props into <code>MemoDraggableChart</code> (keeps shallow <code>React.memo</code> skip).</p>
+<p><strong>#17 band-worker draws clone</strong> — <code>app/src/components/charts/ChartGrid.tsx:495-513</code>: cache draws
+worker-side per country (post once), send only pins/opts after; or transfer a subsampled slice
+(<code>nDraws</code> rows, not 500).</p>
+<p><strong>S1 band affine path</strong> — <code>app/src/lib/compute/runGvarBandSolve.ts:108-181</code>: hoist partner kernels +
+coupling <code>M</code> build out of the draw loop (from <code>meanModels</code>); inside the loop build only the viewed
+bloc's kernels via <code>affineBlocKernels</code> (already exported) + the <code>solveGVARDirect</code> matvec
+reconstruction, replacing <code>solveViewedScenLvl</code>→<code>solveGVAR</code> (<code>:146</code>, <code>gvarSolve.ts:536</code>).</p>
+<p><strong>S2 baseLvl reuse / scratch</strong> — <code>runGvarBandSolve.ts:114-124</code>: reuse the affine pass's <code>Sc</code> baseline
+as <code>baseLvl</code> instead of a separate <code>makeCountryModel</code>/<code>conditionalForecast</code> (<code>gvarSolve.ts:344-363</code>);
+back <code>drawCompanion</code> with preallocated <code>Float64Array</code> scratch reused across draws.</p>
+<p><strong>S3 Kalman kernel</strong> — <code>app/src/lib/compute/kalman.ts</code>: cache <code>Tᵀ</code> per bloc on the StateSpace
+(<code>:179</code> rebuilds it per call); <code>multiplyInto(out,a,b)</code> in-place variants for <code>:196</code> and <code>:469/:478</code>;
+reuse scratch <code>PPred</code>/<code>PZ</code> across the t-loop (<code>:199</code> clone, <code>:235-250</code>); <code>matrix.ts:39-52</code> naive O(n³)
+matmul allocates a fresh Matrix each call.</p>
+<p><strong>S4 virtualize mount</strong> — <code>app/src/components/charts/ChartGrid.tsx</code>: revive <code>LazyChart</code> (<code>2270-2287</code>,
+currently 0 usages) or an IntersectionObserver around <code>MemoDraggableChart</code> in the grid maps
+(<code>2109-2229</code>); triad + fiscal row mount first, below-the-fold on scroll/<code>requestIdleCallback</code>.</p>
+<p><strong>S5 per-panel trace memo</strong> — <code>app/src/components/charts/ChartGrid.tsx:1379-1905</code>: split per-panel
+trace building into a memo keyed on that var's slice of <code>effective</code>/<code>scenario</code>; narrow <code>scenarios</code>
+out of read-only RoW/global panels' deps so one path edit rebuilds 1-2 panels, not 35.</p>
+<p><strong>A1 topology audit</strong> — <code>app/src/lib/compute/gvarSolve.ts</code>: confirm the live 50-bloc panel uses the
+endo closed-form (<code>:1686</code>, <code>withRho=false</code>) and never reaches
+<code>buildGVARCoupling</code>/<code>solveGVARLinear('direct')</code> (<code>:885-896</code>) which calls <code>spectralRadius</code>
+(<code>:827-857</code>, dim≈2060) and builds the dense <code>(I−M)⁻¹</code>. If any live path hits it, gate behind a
+<code>withRho</code> flag (export-time only).</p>
+<hr />
+<h2 id="4-single-highest-leverage-change-for-perceived-responsiveness">4. Single highest-leverage change for <em>perceived</em> responsiveness<a class="headerlink" href="#4-single-highest-leverage-change-for-perceived-responsiveness" title="Permanent link">&para;</a></h2>
+<p><strong>#4 — Stop unmounting <code>ChartGrid</code> on country switch</strong> (<code>page.tsx:20</code> <code>setBvarData(null)</code> +
+<code>page.tsx:60-62</code> gate).</p>
+<p>Rationale: country switch is the most-felt "frozen" action. Today it tears down all ~35 react-plotly
+panels and cold-restarts them — ~35 serialized <code>Plotly.newPlot</code> + axis/WebGL inits on the main thread,
+<em>layered on top of</em> the data fetch. Keeping the grid mounted under a loading overlay (the
+<code>uncertaintyComputing</code> overlay pattern already exists) makes panels diff-update via <code>Plotly.react</code>
+instead of remounting, so the switch becomes <strong>fetch-bound only</strong>. It is independent of the delta-c
+files and pairs naturally with S4.</p>
+<blockquote>
+<p><strong>Byte caveat:</strong> for raw <em>download/deploy</em> leverage the top pick is <strong>#1 (companion gzip, −21 MB US
+per Compute) + #2 (scenario_priors prune, −559 MB)</strong> — both independent, both quick. #4 is the top
+pick for <em>interaction-latency feel</em>; #1+#2 are the top picks for <em>load/deploy</em>. Land all three first.</p>
+</blockquote>
+<hr />
+<h2 id="5-delta-c-sequencing-note">5. Delta-c sequencing note<a class="headerlink" href="#5-delta-c-sequencing-note" title="Permanent link">&para;</a></h2>
+<p>The concurrent delta-c (drift-slider) workflow owns <code>ChartGrid.tsx</code>, <code>useStore.ts</code>, <code>gvarSolve.ts</code>,
+<code>ControlPanel.tsx</code>. <strong>Do now (no contention):</strong> #1, #2, #3, #4, #8, #9, #15, S2 (<code>runGvarBandSolve</code>,
+not in delta-c set), S3 (<code>kalman.ts</code>/<code>matrix.ts</code>), S4 (<code>LazyChart</code>/grid-map region). <strong>Sequence after
+delta-c merges:</strong> #5, #6, #7, #10, #11, #12, #13, #14, #16, #17, S1, S5, A1. When delta-c lands, rebase
+the ChartGrid-local fixes (#5/#6/#13/#14 are all inside <code>DraggableChartImpl</code>, a region delta-c is
+unlikely to touch — fast to reapply).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

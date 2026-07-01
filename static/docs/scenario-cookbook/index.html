@@ -1,0 +1,1724 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../MFM_User_Manual.pdf">
+      
+      
+        <link rel="next" href="../euro-cross-border/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Scenario Cookbook - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#scenario-cookbook" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Scenario Cookbook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it works (mechanics)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-credit-crunch-spread-shock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 · Credit crunch / spread shock
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-energy-supply-shock-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 · Energy supply shock (global)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fiscal-loosening-twin-deficits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 · Fiscal loosening → twin deficits
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-monetary-behind-the-curve-risk-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 · Monetary behind-the-curve / risk-off
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ai-productivity-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 · AI productivity boost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-structural-supply-chain-collapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 · Structural supply-chain collapse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-deglobalization-trade-compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 · Deglobalization / trade compression
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-inflation-de-anchoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 · Inflation de-anchoring
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-fiscal-default-likelihood-sovereign-risk-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 · Fiscal default likelihood ↑ (sovereign risk premium)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-a-recipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using a recipe
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it works (mechanics)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-credit-crunch-spread-shock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 · Credit crunch / spread shock
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-energy-supply-shock-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 · Energy supply shock (global)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fiscal-loosening-twin-deficits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 · Fiscal loosening → twin deficits
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-monetary-behind-the-curve-risk-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 · Monetary behind-the-curve / risk-off
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ai-productivity-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 · AI productivity boost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-structural-supply-chain-collapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 · Structural supply-chain collapse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-deglobalization-trade-compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 · Deglobalization / trade compression
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-inflation-de-anchoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 · Inflation de-anchoring
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-fiscal-default-likelihood-sovereign-risk-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 · Fiscal default likelihood ↑ (sovereign risk premium)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-a-recipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using a recipe
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="scenario-cookbook">Scenario Cookbook<a class="headerlink" href="#scenario-cookbook" title="Permanent link">&para;</a></h1>
+<p>The <strong>Scenario Cookbook</strong> is an instant-load library of named, documented conditioning recipes,
+reachable from the <strong>Cookbook ▾</strong> button in the Control Panel's scenario header (next to <strong>Save</strong> /
+<strong>Load</strong>). It replaces the old download-only <em>Example</em> link: instead of downloading a spreadsheet and
+re-importing it, you pick a recipe and load its conditioning into the active scenario with one click.</p>
+<p>Each recipe is authored for the three fully-instrumented blocs — <strong>US</strong>, <strong>EA</strong>, <strong>CN</strong> — with
+bloc-specific variable IDs and restriction counts, and embodies a deliberate two-stage pedagogy:</p>
+<ul>
+<li><strong>Load naive</strong> — condition the <em>head</em> variable(s) alone and let the model fill in everything else.
+  The result is the model's <em>own</em> read of that single move, which is usually <strong>demand-led</strong> (the BVAR's
+  estimated business-cycle co-movement dominates). This is frequently the <em>wrong</em> economic story — the
+  point is to expose it.</li>
+<li><strong>Load + restriction</strong> — add a small number of short-run pins that <em>restrict</em> the joint response into
+  the economically-meaningful shock (e.g. force output down while prices rise → a <em>supply</em> shock). The
+  contrast between the two stages is the entire lesson: same head move, qualitatively different — often
+  sign-flipped — outcome once the identification is imposed.</li>
+</ul>
+<blockquote>
+<p><strong>Every recipe is grounded in a real, citable source.</strong> Magnitudes and signs are calibrated to a
+published IMF/FSAP adverse stress scenario or a well-documented historical episode (cited in each
+section). The numbers are economically defensible, not illustrative placeholders — but they remain
+<em>authored</em> (a designer's reading of the cited path into this model's deviation space), surfaced here
+for the user (an IMF economist) to review and retune. The <em>structure</em> (which variables, naive vs
+restricted) is the fixed design.</p>
+</blockquote>
+<h2 id="how-it-works-mechanics">How it works (mechanics)<a class="headerlink" href="#how-it-works-mechanics" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Recipes live in <code>app/public/data/cookbook/cookbook.json</code>, fetched once at load (like
+  <code>default_anchors.json</code>). Each recipe is keyed by <strong>spec variable ID</strong> — <em>not</em> column index, because
+  indices differ across blocs — and resolved against the active bloc's <code>spec.json</code> at click time
+  (<code>app/src/lib/data/cookbook.ts</code>, <code>resolveVarId</code> → <code>resolveRecipeStage</code>).</li>
+<li>A pin's <code>values</code> are stored <strong>as-is in the store's deviation space</strong>, exactly the convention the
+  conditioning sliders and the Excel-import path use:</li>
+<li><code>kind: "log"</code> — a <strong>q/q-annualized growth deviation</strong> (e.g. GDP <code>−3</code> = −3 % q/q annualized off
+    baseline for that quarter).</li>
+<li><code>kind: "lin"</code> — a <strong>level deviation</strong> (yields/rates in pp; fiscal ratios in pp of GDP;
+    <code>0</code> with <code>active: true</code> = <em>pinned unchanged</em>).</li>
+<li><code>kind: "levelDisplay"</code> — a <strong>direct 100·log level deviation</strong> for level-displayed globals
+    (<code>GLB_OIL</code>, <code>GLB_USEQ</code>); e.g. oil <code>+58.8</code> ≈ +80 % in price, equity <code>−22.3</code> ≈ −20 %.</li>
+<li>Loading a stage calls <code>updateScenario</code>, which <strong>REPLACES</strong> (not merges) the conditioning fields, so
+  any prior pins are wiped — identical to the Excel-import behaviour. A variable referenced by a recipe
+  but absent from the current bloc is <strong>skipped and surfaced</strong> in a small transient note (it is never
+  silently dropped).</li>
+<li><code>GLB_OIL</code> is a <code>global</code>-block variable: conditioning it propagates to <strong>every</strong> bloc automatically at
+  solve time (<code>gvarSolve.ts</code> <code>applyGlobalPins</code>), so the energy recipe is global by construction.</li>
+<li><strong>Cross-country spillovers (v1 scope).</strong> A recipe writes only the <strong>active bloc's</strong> pins. To see the
+  cross-country answer, press <strong>Solve full GVAR</strong> after loading (the existing ChartGrid mirror effect
+  propagates the active pins into <code>gvarPins</code>). Multi-bloc-in-one-click recipes are a deferred follow-up.</li>
+</ul>
+<p>The variable-ID map across the three blocs:</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>US</th>
+<th>EA</th>
+<th>CN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Corporate yield / spread</td>
+<td><code>FAAA</code> (Aaa)</td>
+<td><code>EACORP</code> (IG 10y)</td>
+<td>— (<code>CORP_CN</code> <em>is</em> the sovereign)</td>
+</tr>
+<tr>
+<td>US Baa corporate spread</td>
+<td><code>GLB_USBAA</code> (Moody's Baa)</td>
+<td><code>GLB_USBAA</code> (shared)</td>
+<td><code>GLB_USBAA</code> (shared)</td>
+</tr>
+<tr>
+<td>Government 10y / safe rate</td>
+<td><code>GLB_USLR</code></td>
+<td><code>YIELD10_EA</code></td>
+<td><code>CORP_CN</code> (sovereign 10y)</td>
+</tr>
+<tr>
+<td>Policy rate</td>
+<td><code>POLRATE</code></td>
+<td><code>POLRATE_EA</code></td>
+<td><code>POLRATE_CN</code></td>
+</tr>
+<tr>
+<td>Short interbank rate</td>
+<td>—</td>
+<td>—</td>
+<td><code>RATE_CN</code></td>
+</tr>
+<tr>
+<td>Inflation</td>
+<td><code>JGDP</code> (GDP deflator)</td>
+<td><code>HICP_EA</code></td>
+<td><code>CPI_CN</code></td>
+</tr>
+<tr>
+<td>Real GDP</td>
+<td><code>GDPH</code></td>
+<td><code>GDP_EA</code></td>
+<td><code>GDP_CN</code> (real)</td>
+</tr>
+<tr>
+<td>Exports</td>
+<td><code>XH</code></td>
+<td><code>EXP_EA</code></td>
+<td><code>EXP_CN</code></td>
+</tr>
+<tr>
+<td>Imports</td>
+<td><code>MH</code></td>
+<td><code>IMP_EA</code></td>
+<td><code>IMP_CN</code></td>
+</tr>
+<tr>
+<td>Fiscal revenue / primary spending</td>
+<td><code>FREV_GDP</code> / <code>FPEXP_GDP</code></td>
+<td>same IDs</td>
+<td>same IDs</td>
+</tr>
+<tr>
+<td>Oil price (global)</td>
+<td><code>GLB_OIL</code></td>
+<td><code>GLB_OIL</code></td>
+<td><code>GLB_OIL</code></td>
+</tr>
+<tr>
+<td>Equity (global)</td>
+<td><code>GLB_USEQ</code></td>
+<td><code>GLB_USEQ</code></td>
+<td><code>GLB_USEQ</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-credit-crunch-spread-shock">1 · Credit crunch / spread shock<a class="headerlink" href="#1-credit-crunch-spread-shock" title="Permanent link">&para;</a></h2>
+<p><strong>Source.</strong> Federal Reserve, <em>2020 Severely Adverse</em> supervisory scenario (Feb 2020) — the
+macro-financial backbone of US bank stress testing and of the <strong>IMF United States FSAP 2020</strong>
+(Country Report 20/242), which documents a wave of corporate-sector defaults amplified by record
+NFC debt/GDP.</p>
+<p><strong>Transmission.</strong> A corporate-credit-<strong>supply</strong> contraction. Default risk on highly-levered firms is
+repriced, so the IG corporate-to-Treasury spread blows out (<strong>to 5.5 pp by 2020Q3, +400 bp</strong> vs
+2019Q4), and external finance becomes scarce and dear. Simultaneously a <strong>flight to safety</strong> bids up
+Treasuries so the <strong>risk-FREE 10y FALLS</strong> (to 0.75 % on impact) and the policy rate is cut to ~zero —
+the entire move is in the <em>spread</em> (risk premium), not the safe curve. The higher cost of risk-bearing
+chokes investment and hiring; output collapses (<strong>−8.5 %</strong> peak-to-trough), unemployment rises to 10 %,
+and the shortfall is <strong>disinflationary</strong> (CPI to ~1.25 %). Equity falls −50 % (VIX 70); house/CRE
+−28 %/−35 %; the USD appreciates ex-JPY and EA/UK/JP enter severe recessions.</p>
+<ul>
+<li><strong>Naive</strong> — corporate yield up to the documented <strong>+400 bp</strong> peak (<code>FAAA</code>, front-loaded to
+  2020Q1–Q3, fading ~2 yr), nothing else pinned. The model's estimated comovement drags the <em>whole
+  curve</em> up together — a generic <strong>rate tightening</strong> — and, because business-cycle comovement is
+  demand-led, can even read it with the wrong, mildly <strong>inflationary</strong> sign.</li>
+<li><strong>Restricted</strong> — same +400 bp spread, <strong>plus</strong> the documented credit-crunch co-movement: the safe
+  10y <strong>DOWN</strong> (<code>GLB_USLR</code> flight-to-safety, to ~0.75 % on impact — <em>not</em> flat), output <strong>down</strong>
+  (<code>GDPH</code>, ~−8.5 % peak-to-trough), inflation <strong>down</strong> (<code>JGDP</code>, disinflation), equity <strong>−50 %</strong>
+  (<code>GLB_USEQ</code>), and the policy rate <strong>cut to the floor</strong> (<code>POLRATE</code>). Spread WIDE <strong>while</strong> the safe
+  rate FALLS is the credit-SUPPLY identification — the cost of risk-bearing rises as the safe curve
+  drops, not a level shift in rates.</li>
+</ul>
+<p><em>Verified on the live US engine:</em> naive drags the 10y <strong>up</strong> (+2.45 pp avg q0–7) with the corp shock;
+the restriction pushes the safe 10y <strong>down</strong> (−0.56 pp, flight-to-safety) while the spread stays wide
+(+2.56 pp) and the output hit deepens sharply (−7.3 % vs +0.3 %).</p>
+<p><strong>Country notes.</strong> US: corp = <code>FAAA</code>, safe 10y = <code>GLB_USLR</code>, equity = <code>GLB_USEQ</code>, policy = <code>POLRATE</code>.
+EA: corp = <code>EACORP</code>, safe 10y = <code>YIELD10_EA</code>, policy = <code>POLRATE_EA</code> (EA enters a severe recession in
+the scenario). <strong>CN has no separate corporate yield</strong> — <code>CORP_CN</code> <em>is</em> the sovereign 10y, so a "pure IG
+spread" is not identifiable; the CN override widens <code>CORP_CN</code> to a smaller <strong>+250 bp</strong> (managed, lower
+beta) and holds the <strong>3M interbank rate (<code>RATE_CN</code>) unchanged</strong>, isolating a term/credit-premium move at
+the long end with the short rate fixed, plus the shared global equity decline.</p>
+<blockquote>
+<p><strong>What changed vs the prior recipe.</strong> The spread was rescaled <strong>+150 bp → +400 bp</strong> (the documented
+adverse move), and the restricted safe-rate leg was <strong>corrected</strong> from "hold 10y flat" to "safe 10y
+DOWN on flight-to-safety" — the prior flat pin contradicted the defining feature of a documented
+credit crunch (the safe long rate FALLS). Output-down / disinflation / equity-down / policy-cut legs
+were added so the supply identification is unambiguous.</p>
+</blockquote>
+<hr />
+<h2 id="2-energy-supply-shock-global">2 · Energy supply shock (global)<a class="headerlink" href="#2-energy-supply-shock-global" title="Permanent link">&para;</a></h2>
+<p><strong>Source.</strong> IMF <strong>World Economic Outlook, April 2026</strong> ("Global Economy in the Shadow of War", Ch.1),
+ADVERSE Middle-East energy-supply scenario; transmission elasticity from <strong>ECB Working Paper No. 2905</strong>
+(2024); historical anchor the <strong>1973–74 OPEC embargo</strong> (Federal Reserve History).</p>
+<p><strong>Transmission.</strong> An adverse-supply (cost-push) shock. A crude/gas-supply disruption raises the energy
+import bill → first-round pass-through to headline inflation (ECB WP 2905: ~+0.6 pp HICP per +10 % gas
+<em>supply</em> shock at 1 yr) and a terms-of-trade / real-income squeeze for energy <strong>importers</strong> that
+compresses real demand → <strong>output down while prices are up</strong> (stagflation; cf. 1973–74: oil ~4×, US CPI
+12.3 % in 1974, real GDP −2.1 %). The WEO adverse scenario adds a <strong>financial-conditions leg</strong>:
+corporate risk premia <strong>+50 bp</strong> (advanced)/<strong>+100 bp</strong> (EM ex-China), EM sovereign spreads +50 bp,
+equity down, inflation-expectations drift — net global growth cut <strong>3.1 % → 2.5 %</strong>, inflation <strong>4.4 %
+→ 5.4 %</strong>. The BVAR's unconditional oil comovement is dominated by <em>demand-led</em> oil episodes, so
+conditioning oil alone gives the wrong-signed "demand read" (output up).</p>
+<ul>
+<li><strong>Naive</strong> — oil up <strong>+80 %</strong> (<code>GLB_OIL</code> level-display <strong>+58.8</strong> = 100·log 1.80, ~1 yr hump then
+  unwinding), domestic block free. The demand-led comovement can show <strong>output rising</strong> — clearly wrong
+  for a supply disruption.</li>
+<li><strong>Restricted</strong> — keep the oil path and <strong>add</strong> the supply + financial-conditions co-movement: real
+  GDP <strong>down</strong> (US ~−3.5, EA ~−4, CN ~−2.5 q/q-ann, decaying over ~2 yr), inflation <strong>up</strong> (anchored to
+  ECB WP 2905, scaled to gas +160 %), corporate spread <strong>+50 bp</strong> (<code>FAAA</code>/<code>EACORP</code>; +100 bp for <code>CORP_CN</code>),
+  and equity <strong>~−12 %</strong> (<code>GLB_USEQ</code>). This converts a textbook goods-market oil shock into the full
+  macro-FINANCIAL adverse scenario.</li>
+</ul>
+<p><em>Verified on the live US engine:</em> naive (oil-only) output <strong>+0.4 %</strong> q0–3 (demand read); restricted
+output <strong>down</strong> (&lt; −0.3 %) with inflation higher — the restriction <strong>flips the output sign</strong>.</p>
+<p><strong>Country notes.</strong> gdp = <code>GDPH</code>/<code>GDP_EA</code>/<code>GDP_CN</code>; infl = <code>JGDP</code>/<code>HICP_EA</code>/<code>CPI_CN</code>; corp = <code>FAAA</code>/<code>EACORP</code>/<code>CORP_CN</code>;
+equity = <code>GLB_USEQ</code>. <strong>EA is the most oil-import-intensive bloc</strong>, so its output/inflation hit is
+deepest; <strong>CN's <code>GDP_CN</code> is real</strong> and its managed/subsidised pass-through warrants a cushioned
+calibration. A <em>severe</em> variant maps to the WEO severe leg: oil +100 % sustained (<code>GLB_OIL</code> +69.3),
+premia +100 bp (AE+China)/+200 bp (EM ex-China), growth cut ~−1.1 pp.</p>
+<blockquote>
+<p><strong>What changed.</strong> Oil rescaled <strong>+40 % → +80 %</strong> (the WEO adverse path); the GDP/inflation horizon
+lengthened from 2 q to the ~2-year energy hump; and the <strong>financial leg</strong> (corporate spreads + equity)
+was added — the WEO scenario is explicitly macro-<em>financial</em>, which the prior pure-goods-market recipe
+omitted.</p>
+</blockquote>
+<hr />
+<h2 id="3-fiscal-loosening-twin-deficits">3 · Fiscal loosening → twin deficits<a class="headerlink" href="#3-fiscal-loosening-twin-deficits" title="Permanent link">&para;</a></h2>
+<p><strong>Source.</strong> IMF <strong>2018 Article IV Consultation</strong> (Country Report No. 18/207, July 2018) and the <strong>2018
+External Sector Report</strong>, assessing the 2018 US Tax Cuts and Jobs Act + Bipartisan Budget Act.</p>
+<p><strong>Transmission.</strong> A procyclical fiscal expansion onto an economy already at <strong>full employment</strong>. The
+loosening widened the GG <strong>structural primary deficit by ~1 pp</strong> of potential GDP (−2.7 % → −3.8 %,
+2017→2019) and lifted GG gross debt ~106 % → ~113 % of GDP. With demand outrunning supply, the Fed
+must "raise policy rates at a faster pace", which together with the demand pull puts <strong>upward pressure
+on the dollar</strong> (judged 8–16 % overvalued), so imports rise and the <strong>current-account deficit widens to
+~3½ % of GDP</strong> by 2019–20, the NIIP falling ~8 pp / 5 yr — the saving-investment identity
+<em>CA = Sprivate + Sgov − I</em> made concrete (twin deficits). Near-term growth boost ~<strong>+0.9 pp</strong> (real GDP
+2.3 % → 2.9 %), deflator 1.8 % → 2.8 %.</p>
+<ul>
+<li><strong>Naive</strong> — primary expenditure <strong>up ~+1 pp</strong> of GDP (<code>FPEXP_GDP</code>) and revenue <strong>down ~−0.5 pp</strong>
+  (<code>FREV_GDP</code>), a ~1.5 pp primary loosening matched to the episode, fading after ~2 yr. The model reads
+  a generic <strong>demand stimulus</strong>: output/inflation rise and the fiscal block turns <strong>debt/GDP up</strong> — but
+  it does <em>not</em>, on its own, reproduce the external leg.</li>
+<li><strong>Restricted</strong> — keep the fiscal pins and <strong>add</strong> the IMF twin-deficits identification: a
+  <strong>+0.9 q/q-ann GDP impulse</strong> for ~1 yr (the documented above-potential boost) <strong>and</strong> the
+  procyclical-at-full-employment restriction — the <strong>policy rate up ~+50 bp</strong> (<code>POLRATE</code>, the Fed
+  "raises at a faster pace" → upward dollar pressure → wider CA). The pedagogical payload is the
+  <strong>joint</strong> deterioration: debt/GDP up (fiscal block) <strong>and</strong>, once the external/NFA satellite is live,
+  trade balance / net-foreign-assets down.</li>
+</ul>
+<p><em>Verified on the live US engine:</em> the fiscal drivers are conditioned in <strong>both</strong> stages (the debt
+read-through is the payload); the explicit demand + policy-rate restriction lifts output vs the naive
+fiscal-ratio read (restricted &gt; naive by a material margin).</p>
+<p><strong>Country notes.</strong> <code>FREV_GDP</code> / <code>FPEXP_GDP</code>, GDP (<code>GDPH</code>/<code>GDP_EA</code>/<code>GDP_CN</code>) and the policy rate
+(<code>POLRATE</code>/<code>POLRATE_EA</code>/<code>POLRATE_CN</code>) exist in all three blocs. CN uses smaller fiscal, demand and
+policy-rate moves given its automatic stabilisers and managed external account (ESR CA norm −¼ % for
+China vs −¾ % for the US), so its twin-deficits read-through is deliberately weaker.</p>
+<blockquote>
+<p><strong>What changed.</strong> Fiscal magnitude rescaled from a <strong>~3 pp</strong> primary loosening (+2 / −1) to the
+documented <strong>~1.5 pp</strong> (+1 / −0.5); the demand impulse softened from +2 (2 q) to <strong>+0.9 (~4 q)</strong>; and
+a <strong>policy-rate-up restriction</strong> was added — the missing monetary leg that actually <em>identifies</em> the
+twin-deficit channel (stronger dollar → wider CA), rather than relying on an outsized demand impulse
+alone.</p>
+</blockquote>
+<hr />
+<h2 id="4-monetary-behind-the-curve-risk-off">4 · Monetary behind-the-curve / risk-off<a class="headerlink" href="#4-monetary-behind-the-curve-risk-off" title="Permanent link">&para;</a></h2>
+<p><strong>Source.</strong> Federal Reserve <strong>2020 Severely Adverse</strong> scenario (released 6 Feb 2020) — the published
+macro-financial path underlying the <strong>IMF FSAP United States 2020</strong> bank solvency stress test
+(Country Report No. 20/247, Aug 2020).</p>
+<p><strong>Transmission.</strong> An abrupt collapse in risk appetite reprices the equity <em>and</em> credit risk premia
+simultaneously: equities crash <strong>−50 %</strong> (VIX 70), the IG corporate spread widens <strong>to 5.5 pp (+4.0 pp)</strong>,
+and a <strong>flight to safety</strong> pushes the safe 10y <strong>DOWN</strong> (to 0.75 %). The widening external-finance
+premium chokes investment/consumption → a deep, <strong>disinflationary</strong> recession (GDP −8.5 %, unemployment
+10 %). The identifying restriction for a <em>behind-the-curve</em> variant is to <strong>pin the policy rate flat</strong>
+against this tightening — forcing the central bank to under-respond, which makes the recession deeper
+than the endogenous reaction function would deliver.</p>
+<ul>
+<li><strong>Naive</strong> — condition only the headline lever, the <strong>corporate spread up ~+200 bp</strong> (<code>FAAA</code>, scaled
+  below the full Fed +400 bp crisis), with policy and everything else free. The model returns its
+  generic "financial-conditions tightening" read: output/inflation soften and the policy rate eases
+  endogenously. <strong>Inflation is left free and falls</strong> — the shock is disinflationary.</li>
+<li><strong>Restricted</strong> — impose the full identified risk-off: equity <strong>~−25 %</strong> (<code>GLB_USEQ</code>), corporate
+  spread <strong>up</strong>, the safe 10y <strong>DOWN</strong> (<code>GLB_USLR</code>, flight-to-safety), <strong>and the policy rate pinned
+  flat</strong> (<code>POLRATE</code> = 0, active) — the bank under-reacts ("behind the curve"), so the tightening
+  transmits fully to demand.</li>
+</ul>
+<p><strong>Country notes.</strong> equity = <code>GLB_USEQ</code> (global); corp spread = <code>FAAA</code> (US) / <code>EACORP</code> (EA); safe 10y =
+<code>GLB_USLR</code> (US) / <code>YIELD10_EA</code> (EA); policy rate = <code>POLRATE</code> / <code>POLRATE_EA</code> / <code>POLRATE_CN</code>. <strong>CN has no
+traded IG corporate spread</strong> (<code>CORP_CN</code> is the sovereign 10y), so the CN block uses <code>CORP_CN</code> with a
+<strong>POSITIVE</strong> sign — in a global risk-off EM sovereign yields <strong>rise</strong> via capital outflow and a
+sovereign-risk-premium channel, the opposite of the AE safe-haven bid — and takes equity from the
+global <code>GLB_USEQ</code>. Magnitudes are ~half the full Fed crisis severity (a sharp repricing, not a
+once-in-a-generation crash).</p>
+<blockquote>
+<p><strong>What changed.</strong> The recipe was previously internally <strong>incoherent</strong> — it pinned inflation <strong>up</strong>
+(a behind-the-curve <em>inflationary</em> story) while imposing a flight-to-safety <em>disinflationary</em> risk-off
+block. The inflation-up pin is <strong>removed</strong> (inflation now free, and falls); naive is reframed as the
+bare headline (corp spread up); magnitudes rescaled toward the cited source (equity −20 % → −25 %,
+safe 10y −50 bp → ~−100 bp); and the CN safe-haven leg <strong>sign-flipped</strong> to a positive EM
+sovereign-yield move.</p>
+</blockquote>
+<hr />
+<h2 id="5-ai-productivity-boost">5 · AI productivity boost<a class="headerlink" href="#5-ai-productivity-boost" title="Permanent link">&para;</a></h2>
+<p><strong>Source.</strong> IMF Working Paper <strong>WP/25/76, "The Global Impact of AI: Mind the Gap"</strong> (Cerutti et al.,
+April 2025) — GIMF-GVC simulations of an AI-driven TFP shock; historical analogue the <strong>1995–2004 US
+ICT boom</strong> (McKinsey 2001; FRBSF Economic Letter 2015-04).</p>
+<p><strong>Transmission.</strong> A positive <strong>supply (TFP)</strong> shock. AI diffusion raises total factor productivity,
+lifting potential output and capitalising higher future earnings into equity. The price side is
+<strong>two-phase</strong> (the heart of the identification): (i) <em>short run</em> — investment/wealth effects lift
+demand before capacity installs, so inflation ticks <strong>up</strong> modestly and central banks tighten modestly;
+(ii) <em>medium run</em> — productivity expands supply faster than demand and inflation <strong>declines</strong> (output
+up <em>while</em> inflation falls = the supply signature). The paper's central result is a <strong>gap</strong>: 10-yr
+output gain ~<strong>+5.4–5.6 %</strong> (US) and ~+4 % (global) high-TFP, with EM gains ~+3.0–3.5 % — advanced
+economies gain &gt;2× low-income.</p>
+<ul>
+<li><strong>Naive</strong> — real GDP growth <strong>up by a realistic ~+1 pp/yr</strong> (US +1.0, EA +0.8, CN +0.6 q/q-ann for
+  2 yr), prices free. The model's demand-led comovement shows <strong>inflation rising</strong> with output — the
+  wrong sign for a supply expansion.</li>
+<li><strong>Restricted</strong> — keep the output pins and <strong>add</strong> (i) an inflation pin with the documented
+  <strong>two-phase</strong> shape — a small short-run <strong>overshoot</strong> that turns to <strong>disinflation</strong> by ~q4 (<code>JGDP</code>
+  from +0.4 to −0.5) — and (ii) an equity pin <strong>up ~+14 %</strong> (<code>GLB_USEQ</code>). Output up <em>while</em> inflation
+  ends down flips identification from a demand boom to a <strong>positive supply shock</strong>.</li>
+</ul>
+<p><em>Verified on the live US engine:</em> restricted output <strong>up</strong> (&gt; +1 % q2–7), medium-horizon inflation
+<strong>negative</strong> and below the naive read, equity <strong>up</strong> — a clean positive supply shock.</p>
+<p><strong>Country notes.</strong> gdp = <code>GDPH</code>/<code>GDP_EA</code>/<code>GDP_CN</code>; infl = <code>JGDP</code>/<code>HICP_EA</code>/<code>CPI_CN</code>; equity = <code>GLB_USEQ</code>.
+Magnitudes are <strong>asymmetric</strong> (US &gt; EA ≳ CN), reflecting the paper's "gap" result. <strong>CN's <code>GDP_CN</code> is
+real</strong>, so "output up, CPI contained" reads directly as a real supply shock.</p>
+<blockquote>
+<p><strong>What changed.</strong> Output rescaled <strong>+3 → ~+1 pp/yr</strong> (the old +3 for 8 q compounded to ~+6 % in 2 yr,
+~5–6× the IMF decade path); the inflation restriction reshaped from <strong>flat-down</strong> to <strong>up-then-down</strong>
+(capturing the documented short-run demand overshoot); and magnitudes made <strong>asymmetric</strong> across blocs
+instead of identical.</p>
+</blockquote>
+<hr />
+<h2 id="6-structural-supply-chain-collapse">6 · Structural supply-chain collapse<a class="headerlink" href="#6-structural-supply-chain-collapse" title="Permanent link">&para;</a></h2>
+<p><strong>Source.</strong> Liu &amp; Nguyen, <strong>"Global Supply Chain Pressures and U.S. Inflation", FRBSF Economic Letter
+2023-14</strong> (June 2023); output side from Kemp, Portillo &amp; Santoro, <strong>IMF Working Paper No. 2023/042</strong>
+(Feb 2023) and the <strong>IMF WEO Update (Jan 2022)</strong>. The episode: the <strong>2021–22 pandemic supply-chain
+bottleneck</strong>.</p>
+<p><strong>Transmission.</strong> A goods-demand surge meets constrained supply — port congestion, intermediate-input/
+semiconductor shortages, upstream Asian production stoppages (2021–22 China port closures, 2022 Shanghai
+lockdown). Scarce inputs propagate downstream, lifting input/import prices (Liu-Nguyen: a 1-SD GSCPI
+shock raises US headline PCE ~+0.5 pp, goods inflation up to ~+1.5 pp; GSCPI shocks added <strong>~+2.5 pp</strong> to
+headline inflation at the 2021–22 peak, ~60 % of the above-trend run-up) while curtailing output
+(Kemp-Portillo-Santoro: 2021 disruptions subtracted <strong>0.5–1.2 %</strong> from global value added; WEO Jan-2022
+growth markdowns <strong>−1.2 pp US, −0.8 pp China, −0.4 pp euro area</strong>). Net <strong>stagflationary</strong> — output down,
+prices up. Crucially the effect is <strong>~1 year with decay</strong> (Liu-Nguyen: "statistically vanishing about a
+year after the impact"), <em>not</em> multi-year.</p>
+<ul>
+<li><strong>Naive</strong> — condition only the trade lever (US/EA imports <strong>down ~−3</strong> q/q-ann for 3 q; China, the
+  upstream source, exports <strong>down ~−6</strong>). The model treats weak trade as a <strong>demand</strong> signal and tends
+  to pull inflation <strong>down</strong> — the wrong sign for a bottleneck.</li>
+<li><strong>Restricted</strong> — add the supply identification, <strong>scaled to the evidence</strong>: output down by the
+  documented (modest) amounts — US GDP <strong>~−1.2 pp</strong>, EA <strong>~−0.4/−0.5 pp</strong>, CN <strong>~−0.8 pp</strong> — with
+  inflation <strong>up and goods-led</strong> (US/EA ~+1.5 to +2.5 q/q-ann peak), all decaying inside <strong>~4–5
+  quarters</strong>.</li>
+</ul>
+<p><strong>Country notes.</strong> imports = <code>MH</code> (US) / <code>IMP_EA</code>; gdp = <code>GDPH</code>/<code>GDP_EA</code>/<code>GDP_CN</code>; infl = <code>JGDP</code>/<code>HICP_EA</code>.
+<strong>China sits upstream</strong>, so its <strong>export/production stoppage (<code>EXP_CN</code>)</strong> is the front-line channel and a
+<em>source</em> of others' import-price spikes — but China itself ran <strong>near-zero/disinflationary CPI</strong> in
+2021–22 (it <em>exported</em> disinflation), so the CN block holds output down with <strong>prices flat (no domestic
+inflation-up restriction)</strong>, sharpening the "China exports disinflation while bottlenecking supply"
+lesson.</p>
+<blockquote>
+<p><strong>What changed.</strong> Magnitudes cut sharply to the documented modest, ~1-year episode: GDP <strong>−4 → −1.2</strong>,
+imports <strong>−8 → −3</strong>, horizon <strong>6+ q → ~4 q</strong>. The naive import-volume drop was trimmed (in 2021 US
+goods <em>imports rose</em> — the problem was prices/congestion, not collapsing volumes), and the <strong>CN
+inflation-up pin was removed</strong> (China was disinflationary, not a domestic-inflation recipient).</p>
+</blockquote>
+<hr />
+<h2 id="7-deglobalization-trade-compression">7 · Deglobalization / trade compression<a class="headerlink" href="#7-deglobalization-trade-compression" title="Permanent link">&para;</a></h2>
+<p><strong>Source.</strong> IMF Staff Discussion Note <strong>SDN/2023/001, "Geoeconomic Fragmentation and the Future of
+Multilateralism"</strong> (Aiyar et al., Jan 2023); FDI channel from <strong>IMF WEO Apr 2023, Ch.4</strong>; price
+pass-through from <strong>Amiti, Redding &amp; Weinstein (JEP 2019)</strong> on the 2018-19 US-China trade war.</p>
+<p><strong>Transmission.</strong> A structural retreat from trade integration. Higher cross-bloc barriers curtail both
+export demand and import supply (trade volumes compress <strong>permanently</strong>); the SDN estimates trade
+fragmentation alone lowers global GDP <strong>0.2 % → ~7 %</strong> (baseline ~1.2 %; technological decoupling raises
+EM losses to 8–12 %), with cross-bloc FDI curtailment adding ~2 % (WEO Ch.4). Re-shoring raises the
+<strong>price LEVEL</strong> of tradables (Amiti-Redding-Weinstein: <strong>complete pass-through</strong> of 2018 tariffs into US
+prices — a one-off level step), and commodity-market segmentation is inflationary specifically for the
+<strong>import-dependent advanced bloc</strong> while the surplus exporter faces a demand/output loss that is closer
+to <strong>disinflationary</strong> — so the inflation effect is <strong>asymmetric</strong>, not uniform.</p>
+<ul>
+<li><strong>Naive</strong> — exports <strong>and</strong> imports <strong>down</strong>, front-loaded then easing (cumulative ~−9 % volume; the
+  CN export leg deeper at ~−14 %, since the surplus exporter is hit hardest), prices free. The model
+  reads a symmetric trade contraction largely as a wash for activity and leaves inflation little
+  changed.</li>
+<li><strong>Restricted</strong> — keep the trade compression and <strong>add</strong> a modest, <strong>front-loaded-then-fading
+  price-LEVEL step</strong> in the <strong>import-dependent advanced blocs only</strong> (US <code>JGDP</code> / EA <code>HICP_EA</code>,
+  ~+1.3–1.5 % cumulative over six quarters then reverting) — a one-off pass-through step, <strong>NOT</strong> a
+  permanent +1 pp inflation rate. <strong>China is not pinned up</strong> on inflation: as the surplus exporter
+  facing a demand/output loss, its domestic price effect is ambiguous-to-disinflationary, so the CN
+  block applies a small <strong>negative</strong> deviation.</li>
+</ul>
+<p><strong>Country notes.</strong> exports = <code>XH</code>/<code>EXP_EA</code>/<code>EXP_CN</code>; imports = <code>MH</code>/<code>IMP_EA</code>/<code>IMP_CN</code>; infl =
+<code>JGDP</code>/<code>HICP_EA</code>/<code>CPI_CN</code>. The CN override deepens the export compression (surplus exporter hit hardest)
+and removes/negates the inflation pin. The recipe also <strong>reads through to the external block</strong>.</p>
+<blockquote>
+<p><strong>What changed.</strong> The inflation pin changed from a <strong>permanent +1 pp inflation RATE applied uniformly
+to all blocs</strong> (which compounds the price level ~+8 % over 8 q and mis-signs China) to a
+<strong>front-loaded one-off price-LEVEL step in the advanced blocs only, with China disinflationary</strong> —
+matching the documented complete-pass-through <em>level</em> effect and the SDN's bloc-asymmetric inflation
+finding. Trade magnitudes are anchored to the SDN severe two-bloc tail.</p>
+</blockquote>
+<hr />
+<h2 id="8-inflation-de-anchoring">8 · Inflation de-anchoring<a class="headerlink" href="#8-inflation-de-anchoring" title="Permanent link">&para;</a></h2>
+<p><strong>Source.</strong> <strong>EBA/ECB 2023 EU-wide banking-sector stress-test ADVERSE scenario</strong> (ECB-PUBLIC, Jan
+2023) — a documented wage-price-spiral / de-anchoring path; cross-checked against the <strong>IMF GFSR Oct
+2023</strong> global stress test and the <strong>China 2024 FSSA</strong> stagflation case.</p>
+<p><strong>Transmission.</strong> A <strong>cost-push</strong> energy/commodity supply shock (oil +54 %, gas to 180 EUR/MWh; 53 % of
+the HICP impact) collides with a <strong>wage-price spiral</strong>: real-income losses drive higher wage claims,
+firms pass costs into prices (second-round effects ~60 % of the HICP-level rise), expectations and wage
+claims ratchet up, and <strong>EA HICP stays 9.7 % (2023) → 5.3 % (2024) → 3.8 % (2025)</strong> — persistently above
+target even as growth turns negative (stagflation). "The increase in current and expected inflation …
+leads to higher market interest rates": de-anchored expectations are priced into the long end as a
+higher term/inflation-risk premium — <strong>EA 10y 2.79 % → 5.42 % → 4.54 %; US 10y 3.62 % → 5.82 % → 4.87 %</strong>
+(curves invert). It is a <em>cost-push</em> shock that de-anchors expectations, <strong>not</strong> a demand shock — which
+is why inflation does not mean-revert and the term premium rises.</p>
+<ul>
+<li><strong>Naive</strong> — inflation <strong>up +4 q/q-ann in the first year only</strong>, then free (<code>JGDP</code>/<code>HICP_EA</code>/<code>CPI_CN</code>).
+  The model's mean-reversion pulls inflation back toward its anchor — a <strong>transitory spike</strong> that fades.
+  The "well-anchored" baseline.</li>
+<li><strong>Restricted</strong> — hold inflation <strong>+2 q/q-ann through the long horizon</strong> (matching the ~+1.8 pp yr-3
+  residual above target) <strong>and</strong> impose the term-premium repricing as an <strong>abrupt, front-loaded jump</strong>
+  (not a slow build): <strong>EA 10y +260 bp</strong> in yr 1 easing to +175 bp (<code>YIELD10_EA</code>); <strong>US 10y +220 bp</strong>
+  easing to +125 bp (<code>GLB_USLR</code>); <strong>CN sovereign a muted +100 bp → +75 bp</strong> (<code>CORP_CN</code>, the China FSSA
+  imported-oil-supply case with a smaller, partly de-coupled domestic rate response).</li>
+</ul>
+<p><em>Verified on the live US engine:</em> naive long-horizon inflation fades (transitory); restricted
+<strong>persists</strong> (&gt; +1.5 % q10–15) and lifts the long 10y yield vs naive (the term premium).</p>
+<p><strong>Country notes.</strong> infl = <code>JGDP</code>/<code>HICP_EA</code>/<code>CPI_CN</code>; long yield = <code>GLB_USLR</code> (US) / <code>YIELD10_EA</code> (EA) /
+<code>CORP_CN</code> (CN sovereign-10y proxy). Magnitudes are <strong>bloc-specific</strong> (calibrated to the EBA adverse 10y
+paths and the IMF China FSSA), not held identical.</p>
+<blockquote>
+<p><strong>What changed.</strong> The naive spike was raised <strong>+3 → +4</strong> (the EBA peak was 9.7 %), and the long-yield
+pin was raised from a <strong>gradual +100 bp</strong> to an <strong>abrupt, front-loaded +220–260 bp</strong> — the documented
+de-anchoring repricing is a sudden term-premium jump, not a slow build, and the prior pin understated
+the peak ~2× and mistimed it.</p>
+</blockquote>
+<hr />
+<h2 id="9-fiscal-default-likelihood-sovereign-risk-premium">9 · Fiscal default likelihood ↑ (sovereign risk premium)<a class="headerlink" href="#9-fiscal-default-likelihood-sovereign-risk-premium" title="Permanent link">&para;</a></h2>
+<p><strong>Source.</strong> <strong>IMF GFSR October 2025</strong> ("Shifting Ground beneath the Calm", Ch.1) + <strong>Fiscal Monitor
+April 2026</strong> on the erosion of the US Treasury <strong>safety/convenience premium</strong> (deficit 7–8 % of GDP,
+gross debt → ~142 % by 2031 / ~156 % by 2055); the distress co-movement calibrated from the <strong>Fed 2024
+Severely Adverse</strong> scenario; the sovereign-spike-with-distress + sovereign-bank loop from the <strong>euro-area
+sovereign crisis 2010-12</strong> (Italy 10y 4 % → 7 %, Spain &gt; 7 %) and the <strong>IMF Spain 2024 FSSA</strong> (cumulative
+−7 pp real GDP).</p>
+<p><strong>Transmission.</strong> As perceived sovereign-default risk rises, the bond <strong>loses its safe-haven status</strong>, so
+the 10y govt yield rises via a higher term/risk premium <strong>EVEN AS activity weakens</strong> — it does <strong>not</strong>
+fall in the usual flight-to-quality way. <em>This is the identifying signature</em>: in the Fed's 2024
+severely-adverse generic recession the 10y <strong>falls 3.7 pp</strong>, the opposite of the fiscal-risk leg. The
+sovereign risk premium passes through to private credit (corporate, esp. lower-rated <strong>Baa/BBB</strong>, spreads
+widen; banks holding sovereign debt take losses and tighten — the sovereign-bank loop), and higher
+debt-service feeds the self-reinforcing <strong>risk-premium → debt → risk-premium</strong> loop.</p>
+<ul>
+<li><strong>Naive</strong> — the 10y <strong>government</strong> yield <strong>up ~+200 bp</strong> peak, persistent (a <em>level shift</em>, only partly
+  decaying — <code>GLB_USLR</code>/<code>YIELD10_EA</code>/<code>CORP_CN</code>), rest free. The model reads a higher safe rate as
+  <strong>tighter monetary</strong> conditions — but unlike a flight-to-quality recession (where the safe 10y
+  <em>falls</em>), this looks like an <em>unexplained tightening</em>.</li>
+<li><strong>Restricted</strong> — keep the sovereign-yield pin and <strong>add</strong> the fiscal-distress co-movement that
+  <em>identifies</em> the shock: the <strong>corporate spread up</strong> (US <code>GLB_USBAA</code>, Moody's Baa — toward the Fed-2024
+  +410 bp tail; EA <code>EACORP</code>), <strong>equity down</strong> ~−35–55 % (<code>GLB_USEQ</code>), and real GDP <strong>down</strong> (a deeper,
+  −8.5 %-style contraction sustained <strong>6+ quarters</strong>). The identifying restriction is that the <strong>safe
+  sovereign yield rises WHILE equity and output collapse</strong> — the sovereign is no longer a haven
+  (safety-premium erosion). Reads through to the <strong>fiscal block</strong>, worsening debt/GDP.</li>
+</ul>
+<p><strong>Country notes.</strong> gov10y = <code>GLB_USLR</code> (US) / <code>YIELD10_EA</code> (EA) / <code>CORP_CN</code> (CN sovereign); corp =
+<code>GLB_USBAA</code> (US <strong>Baa</strong> — the more credit-sensitive, Fed-BBB-consistent lever) / <code>EACORP</code> (EA); equity =
+<code>GLB_USEQ</code>. <strong>CN's <code>CORP_CN</code> IS the sovereign yield</strong> with no separate corporate spread, so the CN
+override applies the risk premium to <code>CORP_CN</code>, drops the corporate-spread leg, and keeps equity +
+output-down distress sized smaller (managed market, capital-account frictions). <strong>EA magnitudes are
+deeper than the US</strong> (periphery sovereign-spike / sovereign-bank loop, 2010-12 + Spain 2024 FSSA).</p>
+<blockquote>
+<p><strong>What changed.</strong> The US corp lever switched <strong><code>FAAA</code> (Aaa) → <code>GLB_USBAA</code> (Baa)</strong> — the more
+credit-sensitive, Fed-BBB-consistent grade; spread/GDP magnitudes raised toward the documented tail
+(+150 bp → +350 bp Baa peak; GDP −3 % → ~−8.5 % over 6 q); and an <strong>equity-down</strong> leg added as the
+falsifiable distress identifier (safe yield up <em>while</em> equity/output collapse = the sovereign is no
+longer a haven).</p>
+</blockquote>
+<hr />
+<h2 id="using-a-recipe">Using a recipe<a class="headerlink" href="#using-a-recipe" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Pick the bloc (US / EA / CN) in the top bar.</li>
+<li>Open <strong>Cookbook ▾</strong> in the scenario header. The list is filtered to recipes applicable to the active
+   bloc; expand any row to read its rationale.</li>
+<li>Press <strong>Load naive</strong> to see the model's own (usually demand-led) read, then <strong>Load + restriction</strong> to
+   see the identified shock. Compare the two — the qualitative flip is the lesson.</li>
+<li>For the cross-country answer, press <strong>Solve full GVAR</strong> after loading (v1 writes the active bloc's pins
+   only).</li>
+<li><strong>Save</strong> / <strong>Load</strong> still export/import a scenario to/from Excel exactly as before; the cookbook does
+   not change that workflow.</li>
+</ol>
+<p>Recipes #3 (fiscal loosening) and #7 (deglobalization) explicitly <em>read through</em> to the external / NFA
+satellite once that block ships, and #3 / #9 to the fiscal block; the cookbook is the demand side of
+those satellites' pedagogy.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

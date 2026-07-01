@@ -1,0 +1,270 @@
+\begin{thebibliography}{40}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ba\'nbura et~al.(2015)Ba\'nbura, Giannone, and
+  Lenza]{BanburaGiannoneLenza2015}
+Marta Ba\'nbura, Domenico Giannone, and Michele Lenza.
+\newblock Conditional forecasts and scenario analysis with vector
+  autoregressions for large cross-sections.
+\newblock \emph{International Journal of Forecasting}, 31\penalty0
+  (3):\penalty0 739--756, 2015.
+
+\bibitem[Barnichon and Mesters(2023)]{BarnichonMesters2023}
+Regis Barnichon and Geert Mesters.
+\newblock A sufficient statistics approach for macro policy evaluation.
+\newblock \emph{American Economic Review}, 113\penalty0 (11):\penalty0
+  2809--2845, 2023.
+
+\bibitem[Berkowitz(2001)]{Berkowitz2001}
+Jeremy Berkowitz.
+\newblock Testing density forecasts, with applications to risk management.
+\newblock \emph{Journal of Business \& Economic Statistics}, 19\penalty0
+  (4):\penalty0 465--474, 2001.
+
+\bibitem[Bohn(1998)]{Bohn1998}
+Henning Bohn.
+\newblock The behavior of {U.S.} public debt and deficits.
+\newblock \emph{The Quarterly Journal of Economics}, 113\penalty0 (3):\penalty0
+  949--963, 1998.
+
+\bibitem[Christiano et~al.(2005)Christiano, Eichenbaum, and Evans]{CEE2005}
+Lawrence~J. Christiano, Martin Eichenbaum, and Charles~L. Evans.
+\newblock Nominal rigidities and the dynamic effects of a shock to monetary
+  policy.
+\newblock \emph{Journal of Political Economy}, 113\penalty0 (1):\penalty0
+  1--45, 2005.
+
+\bibitem[Chudik and Pesaran(2016)]{ChudikPesaran2016}
+Alexander Chudik and M.~Hashem Pesaran.
+\newblock Theory and practice of {GVAR} modelling.
+\newblock \emph{Journal of Economic Surveys}, 30\penalty0 (1):\penalty0
+  165--197, 2016.
+
+\bibitem[Clark and West(2007)]{ClarkWest2007}
+Todd~E. Clark and Kenneth~D. West.
+\newblock Approximately normal tests for equal predictive accuracy in nested
+  models.
+\newblock \emph{Journal of Econometrics}, 138\penalty0 (1):\penalty0 291--311,
+  2007.
+
+\bibitem[Coenen et~al.(2012)Coenen, Erceg, Freedman, Furceri, Kumhof, Lalonde,
+  Laxton, Lind\'e, Mourougane, Muir, Mursula, de~Resende, Roberts, Roeger,
+  Snudden, Trabandt, and in't Veld]{Coenen2012}
+G\"unter Coenen, Christopher~J. Erceg, Charles Freedman, Davide Furceri,
+  Michael Kumhof, Ren\'e Lalonde, Douglas Laxton, Jesper Lind\'e, Annabelle
+  Mourougane, Dirk Muir, Susanna Mursula, Carlos de~Resende, John Roberts,
+  Werner Roeger, Stephen Snudden, Mathias Trabandt, and Jan in't Veld.
+\newblock Effects of fiscal stimulus in structural models.
+\newblock \emph{American Economic Journal: Macroeconomics}, 4\penalty0
+  (1):\penalty0 22--68, 2012.
+
+\bibitem[Dees et~al.(2007)Dees, {di Mauro}, Pesaran, and
+  Smith]{DeesDiMauroPesaranSmith2007}
+Stephane Dees, Filippo {di Mauro}, M.~Hashem Pesaran, and L.~Vanessa Smith.
+\newblock Exploring the international linkages of the euro area: a global {VAR}
+  analysis.
+\newblock \emph{Journal of Applied Econometrics}, 22\penalty0 (1):\penalty0
+  1--38, 2007.
+
+\bibitem[Dempster et~al.(1977)Dempster, Laird, and
+  Rubin]{DempsterLairdRubin1977}
+A.~P. Dempster, N.~M. Laird, and D.~B. Rubin.
+\newblock Maximum likelihood from incomplete data via the {EM} algorithm.
+\newblock \emph{Journal of the Royal Statistical Society, Series B},
+  39\penalty0 (1):\penalty0 1--38, 1977.
+
+\bibitem[Diebold and Mariano(1995)]{DieboldMariano1995}
+Francis~X. Diebold and Roberto~S. Mariano.
+\newblock Comparing predictive accuracy.
+\newblock \emph{Journal of Business \& Economic Statistics}, 13\penalty0
+  (3):\penalty0 253--263, 1995.
+
+\bibitem[Diebold and Yilmaz(2009)]{DieboldYilmaz2009}
+Francis~X. Diebold and Kamil Yilmaz.
+\newblock Measuring financial asset return and volatility spillovers, with
+  application to global equity markets.
+\newblock \emph{The Economic Journal}, 119\penalty0 (534):\penalty0 158--171,
+  2009.
+
+\bibitem[Diebold and Yilmaz(2012)]{DieboldYilmaz2012}
+Francis~X. Diebold and Kamil Yilmaz.
+\newblock Better to give than to receive: Predictive directional measurement of
+  volatility spillovers.
+\newblock \emph{International Journal of Forecasting}, 28\penalty0
+  (1):\penalty0 57--66, 2012.
+
+\bibitem[Doan et~al.(1984)Doan, Litterman, and Sims]{DoanLittermanSims1984}
+Thomas Doan, Robert Litterman, and Christopher Sims.
+\newblock Forecasting and conditional projection using realistic prior
+  distributions.
+\newblock \emph{Econometric Reviews}, 3:\penalty0 1--100, 1984.
+
+\bibitem[Durbin and Koopman(2002)]{DurbinKoopman2002}
+James Durbin and Siem~Jan Koopman.
+\newblock A simple and efficient simulation smoother for state space time
+  series analysis.
+\newblock \emph{Biometrika}, 89\penalty0 (3):\penalty0 603--616, 2002.
+
+\bibitem[Durbin and Koopman(2012)]{DurbinKoopman2012}
+James Durbin and Siem~Jan Koopman.
+\newblock \emph{Time Series Analysis by State Space Methods}.
+\newblock Oxford University Press, Oxford, 2nd edition, 2012.
+
+\bibitem[Escolano(2010)]{Escolano2010}
+Julio Escolano.
+\newblock A practical guide to public debt dynamics, fiscal sustainability, and
+  cyclical adjustment of budgetary aggregates.
+\newblock IMF Technical Notes and Manuals 2010/02, International Monetary Fund,
+  2010.
+
+\bibitem[Farkas and Jakab(2026)]{FarkasJakab2026}
+M\'aty\'as Farkas and Zolt\'an Jakab.
+\newblock Scenario priors for {B}ayesian {SVARs}.
+\newblock \emph{Working Paper}, 2026.
+
+\bibitem[Giacomini and White(2006)]{GiacominiWhite2006}
+Raffaella Giacomini and Halbert White.
+\newblock Tests of conditional predictive ability.
+\newblock \emph{Econometrica}, 74\penalty0 (6):\penalty0 1545--1578, 2006.
+
+\bibitem[Giannone et~al.(2015)Giannone, Lenza, and Primiceri]{Giannone2015}
+Domenico Giannone, Michele Lenza, and Giorgio~E. Primiceri.
+\newblock Prior selection for vector autoregressions.
+\newblock \emph{The Review of Economics and Statistics}, 97\penalty0
+  (2):\penalty0 436--451, 2015.
+
+\bibitem[Giannone et~al.(2019)Giannone, Lenza, and
+  Primiceri]{GiannoneLenzaPrimiceri2019}
+Domenico Giannone, Michele Lenza, and Giorgio~E. Primiceri.
+\newblock Priors for the long run.
+\newblock \emph{Journal of the American Statistical Association}, 114\penalty0
+  (526):\penalty0 565--580, 2019.
+
+\bibitem[Gneiting and Raftery(2007)]{GneitingRaftery2007}
+Tilmann Gneiting and Adrian~E. Raftery.
+\newblock Strictly proper scoring rules, prediction, and estimation.
+\newblock \emph{Journal of the American Statistical Association}, 102\penalty0
+  (477):\penalty0 359--378, 2007.
+
+\bibitem[Hansen et~al.(2011)Hansen, Lunde, and Nason]{HansenLundeNason2011}
+Peter~R. Hansen, Asger Lunde, and James~M. Nason.
+\newblock The model confidence set.
+\newblock \emph{Econometrica}, 79\penalty0 (2):\penalty0 453--497, 2011.
+
+\bibitem[Harvey et~al.(1997)Harvey, Leybourne, and
+  Newbold]{HarveyLeybourneNewbold1997}
+David Harvey, Stephen Leybourne, and Paul Newbold.
+\newblock Testing the equality of prediction mean squared errors.
+\newblock \emph{International Journal of Forecasting}, 13\penalty0
+  (2):\penalty0 281--291, 1997.
+
+\bibitem[{International Monetary Fund}(2013)]{IMF2013DSA}
+{International Monetary Fund}.
+\newblock Staff guidance note for public debt sustainability analysis in
+  market-access countries.
+\newblock Policy paper, International Monetary Fund, 2013.
+
+\bibitem[Lenza and Primiceri(2022)]{LenzaPrimiceri2022}
+Michele Lenza and Giorgio~E. Primiceri.
+\newblock How to estimate a vector autoregression after {M}arch 2020.
+\newblock \emph{Journal of Applied Econometrics}, 37\penalty0 (4):\penalty0
+  688--699, 2022.
+
+\bibitem[Litterman(1986)]{Litterman1986}
+Robert~B. Litterman.
+\newblock Forecasting with {B}ayesian vector autoregressions --- five years of
+  experience.
+\newblock \emph{Journal of Business \& Economic Statistics}, 4\penalty0
+  (1):\penalty0 25--38, 1986.
+
+\bibitem[Marcellino et~al.(2006)Marcellino, Stock, and
+  Watson]{MarcellinoStockWatson2006}
+Massimiliano Marcellino, James~H. Stock, and Mark~W. Watson.
+\newblock A comparison of direct and iterated multistep ar methods for
+  forecasting macroeconomic time series.
+\newblock \emph{Journal of Econometrics}, 135\penalty0 (1--2):\penalty0
+  499--526, 2006.
+
+\bibitem[Pesaran and Shin(1998)]{PesaranShin1998}
+H.~Hashem Pesaran and Yongcheol Shin.
+\newblock Generalized impulse response analysis in linear multivariate models.
+\newblock \emph{Economics Letters}, 58\penalty0 (1):\penalty0 17--29, 1998.
+
+\bibitem[Pesaran et~al.(2004)Pesaran, Schuermann, and
+  Weiner]{PesaranSchuermannWeiner2004}
+M.~Hashem Pesaran, Til Schuermann, and Scott~M. Weiner.
+\newblock Modeling regional interdependencies using a global error-correcting
+  macroeconometric model.
+\newblock \emph{Journal of Business \& Economic Statistics}, 22\penalty0
+  (2):\penalty0 129--162, 2004.
+
+\bibitem[Robertson et~al.(2005)Robertson, Tallman, and
+  Whiteman]{RobertsonTallmanWhiteman2005}
+John~C. Robertson, Ellis~W. Tallman, and Charles~H. Whiteman.
+\newblock Forecasting using relative entropy.
+\newblock \emph{Journal of Money, Credit and Banking}, 37\penalty0
+  (3):\penalty0 383--401, 2005.
+
+\bibitem[Romano and Wolf(2005)]{RomanoWolf2005}
+Joseph~P. Romano and Michael Wolf.
+\newblock Stepwise multiple testing as formalized data snooping.
+\newblock \emph{Econometrica}, 73\penalty0 (4):\penalty0 1237--1282, 2005.
+
+\bibitem[Sims and Zha(1998)]{simszha1998}
+Christopher~A. Sims and Tao Zha.
+\newblock Bayesian methods for dynamic multivariate models.
+\newblock \emph{International Economic Review}, 39\penalty0 (4):\penalty0
+  949--968, 1998.
+
+\bibitem[Smets and Wouters(2007)]{SmetsWouters2007}
+Frank Smets and Rafael Wouters.
+\newblock Shocks and frictions in {US} business cycles: A {B}ayesian {DSGE}
+  approach.
+\newblock \emph{American Economic Review}, 97\penalty0 (3):\penalty0 586--606,
+  2007.
+
+\bibitem[Tanner and Wong(1987)]{TannerWong1987}
+Martin~A. Tanner and Wing~Hung Wong.
+\newblock The calculation of posterior distributions by data augmentation.
+\newblock \emph{Journal of the American Statistical Association}, 82\penalty0
+  (398):\penalty0 528--540, 1987.
+
+\bibitem[Taylor(1993)]{Taylor1993}
+John~B. Taylor.
+\newblock Discretion versus policy rules in practice.
+\newblock \emph{Carnegie-Rochester Conference Series on Public Policy},
+  39:\penalty0 195--214, 1993.
+
+\bibitem[Villani(2009)]{Villani2009}
+Mattias Villani.
+\newblock Steady-state priors for vector autoregressions.
+\newblock \emph{Journal of Applied Econometrics}, 24\penalty0 (4):\penalty0
+  630--650, 2009.
+
+\bibitem[Waggoner and Zha(1999)]{WaggonerZha1999}
+Daniel~F. Waggoner and Tao Zha.
+\newblock Conditional forecasts in dynamic multivariate models.
+\newblock \emph{Review of Economics and Statistics}, 81\penalty0 (4):\penalty0
+  639--651, 1999.
+
+\bibitem[Wieland et~al.(2012)Wieland, Cwik, M\"uller, Schmidt, and
+  Wolters]{WielandCwikMuellerSchmidtWolters2012}
+Volker Wieland, Tobias Cwik, Gernot~J. M\"uller, Sebastian Schmidt, and Maik
+  Wolters.
+\newblock A new comparative approach to macroeconomic modeling and policy
+  analysis.
+\newblock \emph{Journal of Economic Behavior \& Organization}, 83\penalty0
+  (3):\penalty0 523--541, 2012.
+
+\bibitem[Wieland et~al.(2016)Wieland, Afanasyeva, Kuete, and
+  Yoo]{WielandAfanasyevaYooKuete2016}
+Volker Wieland, Elena Afanasyeva, Meguy Kuete, and Jinhyuk Yoo.
+\newblock New methods for macro-financial model comparison and policy analysis.
+\newblock In John~B. Taylor and Harald Uhlig, editors, \emph{Handbook of
+  Macroeconomics}, volume~2. North Holland/Elsevier, 2016.
+
+\end{thebibliography}

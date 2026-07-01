@@ -1,0 +1,3632 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../PIPELINE/">
+      
+      
+        <link rel="next" href="../DATA_SCHEMA/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Modules & API - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-api-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modules & API
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#module-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Module map
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiscal-stationary-prior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fiscal stationary prior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coherence-fixes-companion-to-the-refit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coherence fixes (companion to the refit)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matrixts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        matrix.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="matrix.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-exports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kalmants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kalman.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="kalman.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditionalforecast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        conditionalForecast
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#affineblockernels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        affineBlocKernels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numerical-thresholds-kalmants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numerical thresholds (kalman.ts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-single-bloc-conditional-forecast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — single-bloc conditional forecast
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-linear-combination-pin-fiscal-primary-balance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — linear-combination pin (fiscal primary balance)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gvarsolvets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gvarSolve.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="gvarSolve.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#star-variables-and-link-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Star variables and link convention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topology-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Topology configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solvers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solvers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-build-and-coupling-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M build and coupling cache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us_endogenous-augmented-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US_ENDOGENOUS augmented state
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spectral-radius-by-panel-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spectral radius by panel size
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Call sites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#result-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result shapes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numerical-thresholds-gvarsolvets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numerical thresholds (gvarSolve.ts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-propagate-a-us-rate-shock-through-the-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — propagate a US rate shock through the panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiscalaccountingts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fiscalAccounting.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="fiscalAccounting.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#units-the-main-bug-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Units (the main bug source)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-recursion-per-quarter-lagged-debt-d1-live-displayed-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The recursion (per quarter, lagged debt d₋₁) — LIVE / displayed path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#driver-provenance-the-stationary-prior-matters-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Driver provenance — the stationary prior matters here
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-two-parametrisations-debt-service-vs-effective-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The two parametrisations (debt service vs effective rate)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-derive-the-fiscal-block-from-a-gvar-scenario-level-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — derive the fiscal block from a GVAR scenario level path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-required-primary-balance-debt-inversion-dsa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — required-primary-balance debt inversion (DSA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taylor-rulets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        taylor-rule.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="taylor-rule.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#barnichon-mestersts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        barnichon-mesters.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="barnichon-mesters.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#longruntiltts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        longRunTilt.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="longRunTilt.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-long-run-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The long-run moment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataloaderts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        data/loader.ts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datagvarloaderts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        data/gvarLoader.ts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datacountriests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        data/countries.ts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditioneddotyts-optimistic-conditioned-point-dot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        conditionedDotY.ts — optimistic conditioned-point dot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computegvardragstatets-dragcompute-signal-bus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        compute/gvarDragState.ts — drag/compute signal bus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usegvarforecastts-drag-aware-two-tier-gvar-solve-hook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        useGvarForecast.ts — drag-aware two-tier GVAR solve hook
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#render-memoization-in-chartgrid-reconcilecharts-chartdeepequal-reactmemo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render memoization in ChartGrid (reconcileCharts + chartDeepEqual + React.memo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empirical-evaluation-companion-repo-in-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Empirical evaluation (companion repo — in progress)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues-limitations-flagged-for-fix-not-yet-fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known issues &amp; limitations (flagged-for-fix, NOT yet fixed)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build &amp; test
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#module-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Module map
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiscal-stationary-prior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fiscal stationary prior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coherence-fixes-companion-to-the-refit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coherence fixes (companion to the refit)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matrixts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        matrix.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="matrix.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-exports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kalmants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kalman.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="kalman.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditionalforecast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        conditionalForecast
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#affineblockernels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        affineBlocKernels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numerical-thresholds-kalmants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numerical thresholds (kalman.ts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-single-bloc-conditional-forecast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — single-bloc conditional forecast
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-linear-combination-pin-fiscal-primary-balance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — linear-combination pin (fiscal primary balance)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gvarsolvets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gvarSolve.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="gvarSolve.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#star-variables-and-link-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Star variables and link convention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topology-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Topology configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solvers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solvers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-build-and-coupling-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M build and coupling cache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us_endogenous-augmented-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US_ENDOGENOUS augmented state
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spectral-radius-by-panel-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spectral radius by panel size
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Call sites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#result-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result shapes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numerical-thresholds-gvarsolvets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numerical thresholds (gvarSolve.ts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-propagate-a-us-rate-shock-through-the-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — propagate a US rate shock through the panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiscalaccountingts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fiscalAccounting.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="fiscalAccounting.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#units-the-main-bug-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Units (the main bug source)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-recursion-per-quarter-lagged-debt-d1-live-displayed-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The recursion (per quarter, lagged debt d₋₁) — LIVE / displayed path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#driver-provenance-the-stationary-prior-matters-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Driver provenance — the stationary prior matters here
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-two-parametrisations-debt-service-vs-effective-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The two parametrisations (debt service vs effective rate)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-derive-the-fiscal-block-from-a-gvar-scenario-level-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — derive the fiscal block from a GVAR scenario level path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-required-primary-balance-debt-inversion-dsa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — required-primary-balance debt inversion (DSA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taylor-rulets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        taylor-rule.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="taylor-rule.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#barnichon-mestersts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        barnichon-mesters.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="barnichon-mesters.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#longruntiltts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        longRunTilt.ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="longRunTilt.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-long-run-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The long-run moment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataloaderts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        data/loader.ts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datagvarloaderts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        data/gvarLoader.ts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datacountriests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        data/countries.ts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditioneddotyts-optimistic-conditioned-point-dot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        conditionedDotY.ts — optimistic conditioned-point dot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computegvardragstatets-dragcompute-signal-bus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        compute/gvarDragState.ts — drag/compute signal bus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usegvarforecastts-drag-aware-two-tier-gvar-solve-hook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        useGvarForecast.ts — drag-aware two-tier GVAR solve hook
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#render-memoization-in-chartgrid-reconcilecharts-chartdeepequal-reactmemo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render memoization in ChartGrid (reconcileCharts + chartDeepEqual + React.memo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empirical-evaluation-companion-repo-in-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Empirical evaluation (companion repo — in progress)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues-limitations-flagged-for-fix-not-yet-fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known issues &amp; limitations (flagged-for-fix, NOT yet fixed)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build &amp; test
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="module-api-reference">Module &amp; API Reference<a class="headerlink" href="#module-api-reference" title="Permanent link">&para;</a></h1>
+<p>A per-module reference for the browser-side compute engine in <code>app/src/lib/compute/*</code> and the
+JSON data loaders in <code>app/src/lib/data/*</code>. Each section lists the module's responsibility, its
+key exported signatures with input/output shapes, the numerical thresholds and unit conventions
+that matter, and where it is called.</p>
+<p>This page is a navigable reference, not a tutorial. For the architecture overview, the per-bloc
+file contract, and the estimation pipeline see:</p>
+<ul>
+<li><a href="../ARCHITECTURE_FOR_AI/">Architecture for AI</a> — end-to-end data flow and the 8-file bloc contract</li>
+<li><a href="../ADDING_A_COUNTRY/">Adding a country</a> and <a href="../REESTIMATING_MODELS/">Re-estimating models</a></li>
+<li><a href="../fiscal-block-methodology/">Fiscal block methodology</a> — the budget-identity recursion in detail</li>
+<li><a href="../DATA_SCHEMA/">Data contracts &amp; JSON schemas</a> — the 8 per-bloc JSON files, including the
+  <code>spec.json</code> <code>prior</code> / <code>transformation</code> / <code>isFinancial</code> tags this engine reads</li>
+<li><a href="../PIPELINE/">Pipeline</a> — the MATLAB GVAR-EM estimator and Python data builders that <strong>produce</strong>
+  the artifacts the modules below consume</li>
+</ul>
+<p>The two estimation-side facts that the browser engine inherits and must be read alongside the
+module reference:</p>
+<ul>
+<li><strong>Per-variable prior tag.</strong> Each <code>spec.json</code> variable carries <code>prior</code> ∈ <code>{"RW","WN"}</code>. <code>RW</code>
+  (random walk) is the default own-first-lag prior mean of <code>1</code>; <code>WN</code> (white-noise / stationary)
+  sets the own-first-lag prior mean to <code>0</code> so the series <strong>mean-reverts</strong>. This is a property of
+  the MATLAB estimator (<code>bvarGLPmf.m</code>, §<a href="#fiscal-stationary-prior">Fiscal stationary prior</a>), not
+  the TS engine, but it changes the <strong>shape of the baselines</strong> the engine loads — the fiscal
+  GDP-ratios (<code>FREV_GDP</code>, <code>FPEXP_GDP</code>, <code>SFA</code>) now revert to their in-sample mean instead of
+  drifting at the long horizon. See <a href="../DATA_SCHEMA/#3-specjson--the-variable-manifest">DATA_SCHEMA §3</a>
+  for the field and <a href="../PIPELINE/#5-the-gvar-em-loop-export_bvar_gvar24_loopm">PIPELINE §5</a> for how
+  it is set.</li>
+<li><strong><code>isFinancial</code> and COVID masking.</strong> A variable with <code>isFinancial:true</code> is kept <strong>observed</strong>
+  through the 2020Q2–Q4 COVID-as-missing window (only macro columns + the two macro stars are
+  masked). The global commons <code>GLB_USEQ</code> (US equity) and <code>GLB_OIL</code> (oil) are <code>isFinancial:true</code>
+  everywhere, so they condition the imputation rather than being imputed.</li>
+</ul>
+<p>All matrices in this engine are flat row-major <code>Float64Array</code>s wrapped as
+<code>{ data, rows, cols }</code> (see <code>matrix.ts</code>). All BVAR data is in <strong>companion space</strong>: <code>100·log</code>
+levels for <code>log</code> variables, the raw value/rate for <code>lin</code> variables. A quarter-on-quarter
+annualized growth rate is <code>4·Δ(level)</code> for a <code>log</code> variable.</p>
+<hr />
+<h2 id="module-map">Module map<a class="headerlink" href="#module-map" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Responsibility</th>
+<th>Primary callers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>matrix.ts</code></td>
+<td>Flat-array linear algebra (LU solve, Cholesky, inverse, Toeplitz)</td>
+<td>every other compute module</td>
+</tr>
+<tr>
+<td><code>kalman.ts</code></td>
+<td>DK filter/smoother, <code>conditionalForecast</code>, <code>affineBlocKernels</code>, forecast draws</td>
+<td><code>gvarSolve.ts</code>, <code>useConditionalForecast.ts</code>, <code>ChartGrid.tsx</code>, <code>runGvarBandSolve.ts</code></td>
+</tr>
+<tr>
+<td><code>gvarSolve.ts</code></td>
+<td>GVAR topology + cross-country closed-form / Gauss-Seidel solver</td>
+<td><code>runGvarSolve.ts</code>, <code>gvarWorker.ts</code>, <code>runGvarBandSolve.ts</code>, <code>useGvarForecast.ts</code></td>
+</tr>
+<tr>
+<td><code>fiscalAccounting.ts</code></td>
+<td>Budget-identity debt recursion, debt inversion</td>
+<td><code>useConditionalForecast.ts</code>, <code>ChartGrid.tsx</code>, <code>runGvarBandSolve.ts</code></td>
+</tr>
+<tr>
+<td><code>taylor-rule.ts</code></td>
+<td>Taylor-rule rate path + MMB coefficient translation</td>
+<td>(dormant — no current importer)</td>
+</tr>
+<tr>
+<td><code>barnichon-mesters.ts</code></td>
+<td>Optimal-policy QP (B&amp;M 2023 sufficient statistics)</td>
+<td><code>ControlPanel.tsx</code></td>
+</tr>
+<tr>
+<td><code>longRunTilt.ts</code></td>
+<td>Entropic tilt / PLR long-run anchors + weighted bands</td>
+<td><code>ChartGrid.tsx</code></td>
+</tr>
+<tr>
+<td><code>compute/gvarDragState.ts</code></td>
+<td>Module-level signal bus: drag begin/end + compute-in-flight flags (off the zustand store, so a drag does not re-render the grid)</td>
+<td><code>ChartGrid.tsx</code> (drag handler + badge), <code>useGvarForecast.ts</code> (defer the heavy solve to drag-end)</td>
+</tr>
+<tr>
+<td><code>conditionedDotY.ts</code></td>
+<td>Optimistic conditioned-dot display↔stored mapping (an exact inverse pair) so a pinned marker snaps to the click instantly</td>
+<td><code>ChartGrid.tsx</code> (drag + right-click plant + dot render)</td>
+</tr>
+<tr>
+<td><code>useGvarForecast.ts</code></td>
+<td>Debounced, drag-aware, stale-guarded GVAR worker solve (two-tier direct/full)</td>
+<td><code>ChartGrid.tsx</code></td>
+</tr>
+<tr>
+<td><code>data/loader.ts</code></td>
+<td>Per-country single-bloc JSON fetch + LRU draws cache + <code>fiscal_meta</code></td>
+<td>single-country views, <code>ChartGrid.tsx</code></td>
+</tr>
+<tr>
+<td><code>data/gvarLoader.ts</code></td>
+<td>Multi-bloc GVAR bundle fetch, topology self-config, coupling artifact</td>
+<td>GVAR mode</td>
+</tr>
+<tr>
+<td><code>data/countries.ts</code></td>
+<td>Static country registry (dropdown)</td>
+<td><code>TopBar</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The compute modules are pure functions over the loaded JSON. The two sections below document the
+<strong>estimation-side</strong> mechanisms (MATLAB / <code>pipeline/*</code>) that determine the <em>content</em> of the JSON the
+engine consumes; they belong here because a reader debugging a baseline shape needs them, and
+because the <code>prior</code> / <code>isFinancial</code> tags are read by <code>gvarSolve.ts</code> and the loaders.</p>
+</blockquote>
+<hr />
+<h2 id="fiscal-stationary-prior">Fiscal stationary prior<a class="headerlink" href="#fiscal-stationary-prior" title="Permanent link">&para;</a></h2>
+<p><strong>Where it lives.</strong> <code>BVAR/MFBVAR/GLPreplicationWeb/bvarGLPmf.m</code> (the GLP/Minnesota prior builder),
+threaded through <code>BVAR/MFBVAR/cgl_bvarV5.m</code> (the COVID-as-missing data-augmentation Gibbs), driven
+by the two estimators <code>pipeline/export_bvar_gvar24_loop.m</code> (GVAR) and
+<code>pipeline/export_bvar_euro_fsap.m</code> (euro-area financial blocks).</p>
+<p><strong>The problem it fixes.</strong> Under the default random-walk own-lag prior (mean <code>1</code>) the fiscal
+GDP-ratios <code>FREV_GDP</code>, <code>FPEXP_GDP</code>, <code>SFA</code> inherit a near-unit-root and <strong>drift</strong> at the long
+horizon — e.g. US revenue stuck near the last-observed ~19% of GDP rather than reverting toward its
+in-sample ~17.4% mean. A GDP-<em>ratio</em> is economically stationary, so a random-walk prior is the
+wrong shrinkage target.</p>
+<p><strong>The mechanism.</strong> GLP shrinks each equation's own-first-lag coefficient toward a per-variable prior
+mean held on the diagonal of the prior-mean matrix <code>b</code>. <code>bvarGLPmf.m</code> builds it from a vector
+<code>diagb</code>, and the <code>pos</code> argument zeroes the selected entries:</p>
+<div class="highlight"><pre><span></span><code><span class="c">% BVAR/MFBVAR/GLPreplicationWeb/bvarGLPmf.m  (lines 193–195)</span>
+<span class="n">diagb</span><span class="w">        </span><span class="p">=</span><span class="w"> </span><span class="nb">ones</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">diagb</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span><span class="w">   </span><span class="p">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">   </span><span class="c">% own-first-lag prior mean = 0 for the WN (stationary) variables in pos</span>
+<span class="n">b</span><span class="p">(</span><span class="mi">2</span><span class="p">:</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,:)</span><span class="w">   </span><span class="p">=</span><span class="w"> </span><span class="nb">diag</span><span class="p">(</span><span class="n">diagb</span><span class="p">);</span>
+</code></pre></div>
+<p><code>pos</code> is the <strong>3rd positional argument</strong> of <code>cgl_bvarV5</code> (named <code>stationary</code> in its signature):</p>
+<div class="highlight"><pre><span></span><code><span class="c">% BVAR/MFBVAR/cgl_bvarV5.m</span>
+<span class="k">function</span><span class="w"> </span>[Xcond,storeP,BETA,SU,X_interp0,Dforecast]<span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nf">cgl_bvarV5</span><span class="p">(</span>x,p,stationary,nDraws,nBurn,MCMCconst,hz,varargin<span class="p">)</span>
+<span class="n">pos</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">stationary</span><span class="p">;</span><span class="w">                       </span><span class="c">% line 19</span>
+<span class="k">...</span>
+<span class="n">r</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">bvarGLPmf</span><span class="p">(</span><span class="n">xx</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="n">lastFull</span><span class="p">,:),</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="k">...</span><span class="c">, &#39;pos&#39;, pos);   % line 54</span>
+</code></pre></div>
+<p><strong>How the estimators set <code>pos</code>.</strong> Each reads the per-variable <code>prior</code> string from the spec and
+selects the <code>WN</code> columns of the <strong>kept domestic block</strong> (stars are appended <em>after</em> the domestic
+columns and are always <code>RW</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="c">% pipeline/export_bvar_gvar24_loop.m</span>
+<span class="n">statCols</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">find</span><span class="p">(</span><span class="n">Spec</span><span class="p">.</span><span class="n">Prior</span><span class="p">(</span><span class="n">keep</span><span class="p">)</span><span class="o">==</span><span class="s">&quot;WN&quot;</span><span class="p">)</span><span class="o">&#39;</span><span class="p">;</span><span class="w">   </span><span class="c">% domestic WN columns; [] for the 44 non-fiscal blocs</span>
+<span class="k">...</span>
+<span class="p">[</span><span class="n">Xcond</span><span class="p">,</span><span class="o">~</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">S</span><span class="p">,</span><span class="o">~</span><span class="p">,</span><span class="n">Dfc</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">cgl_bvarV5</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">lags</span><span class="p">,</span><span class="w"> </span><span class="n">Dc</span><span class="p">.</span><span class="n">statCols</span><span class="p">,</span><span class="w"> </span><span class="n">nDraws</span><span class="p">,</span><span class="w"> </span><span class="n">nBurn</span><span class="p">,</span><span class="w"> </span><span class="n">MCMCconst</span><span class="p">,</span><span class="w"> </span><span class="n">H</span><span class="p">,</span><span class="w"> </span><span class="k">...</span><span class="c">);</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c">% pipeline/export_bvar_euro_fsap.m</span>
+<span class="n">Prior</span><span class="w">    </span><span class="p">=</span><span class="w"> </span><span class="n">priorsfrom</span><span class="p">(</span><span class="n">J</span><span class="p">.</span><span class="n">variables</span><span class="p">);</span><span class="w">         </span><span class="c">% per-variable &quot;RW&quot;/&quot;WN&quot; string array, RW default</span>
+<span class="n">statCols</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">find</span><span class="p">(</span><span class="n">Prior</span><span class="o">==</span><span class="s">&quot;WN&quot;</span><span class="p">)</span><span class="o">&#39;</span><span class="p">;</span>
+<span class="p">[</span><span class="o">~</span><span class="p">,</span><span class="w"> </span><span class="n">storeP</span><span class="p">,</span><span class="w"> </span><span class="n">BETA</span><span class="p">,</span><span class="w"> </span><span class="n">SU</span><span class="p">,</span><span class="w"> </span><span class="o">~</span><span class="p">,</span><span class="w"> </span><span class="n">Dforecast</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">cgl_bvarV5</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">lags</span><span class="p">,</span><span class="w"> </span><span class="n">statCols</span><span class="p">,</span><span class="w"> </span><span class="n">nDraws</span><span class="p">,</span><span class="w"> </span><span class="n">nBurn</span><span class="p">,</span><span class="w"> </span><span class="n">MCMCconst</span><span class="p">,</span><span class="w"> </span><span class="n">H</span><span class="p">,</span><span class="w"> </span><span class="n">ARGS</span><span class="p">{:});</span>
+</code></pre></div>
+<p><code>priorsfrom</code> is deliberately robust to MATLAB's <code>jsondecode</code> dropping a <code>prior</code> field that is
+present on only <em>some</em> variable objects (a heterogeneous struct array collapses the field); an
+absent field ⇒ all-<code>RW</code> (the historical behaviour).</p>
+<p><strong>Which variables are <code>WN</code>.</strong> Only the three fiscal GDP-ratios, in the six fiscal blocs
+(<code>US, EA, JP, UK, CA, CN</code>). <code>EFFI</code> (the effective rate, <code>isFinancial:true</code>) <strong>stays <code>RW</code></strong> — a rate
+level is not a mean-reverting ratio. The shipped <code>US/spec.json</code> confirms exactly three <code>WN</code> tags:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>transformation</th>
+<th>prior</th>
+<th>financial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FREV_GDP</code> (revenue/GDP)</td>
+<td><code>lin</code></td>
+<td><strong><code>WN</code></strong></td>
+<td>macro</td>
+</tr>
+<tr>
+<td><code>FPEXP_GDP</code> (primary exp/GDP)</td>
+<td><code>lin</code></td>
+<td><strong><code>WN</code></strong></td>
+<td>macro</td>
+</tr>
+<tr>
+<td><code>SFA</code> (stock-flow adj/GDP)</td>
+<td><code>lin</code></td>
+<td><strong><code>WN</code></strong></td>
+<td>macro</td>
+</tr>
+<tr>
+<td><code>EFFI</code> (effective rate, % p.a.)</td>
+<td><code>lin</code></td>
+<td><code>RW</code></td>
+<td>financial</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Effect and scope.</strong> The fiscal ratios now mean-revert to their in-sample means at the long end
+(US revenue → ~17.4% instead of ~19%). The change is <strong>byte-identical</strong> (a no-op) for the 44
+non-fiscal blocs, whose <code>statCols</code> is empty. Committed in <code>6f0161a</code> (prior change),
+<code>22250be</code> / <code>e38673a</code> (full 33-bloc refit + port). The browser engine reads the resulting
+mean-reverting baselines unchanged — there is no TS-side code for the prior.</p>
+<hr />
+<h2 id="coherence-fixes-companion-to-the-refit">Coherence fixes (companion to the refit)<a class="headerlink" href="#coherence-fixes-companion-to-the-refit" title="Permanent link">&para;</a></h2>
+<p>Shipped alongside the fiscal-prior refit (<code>22250be</code> / <code>e38673a</code>); they change the <em>content</em> of the
+loaded JSON, not the engine:</p>
+<ul>
+<li><strong><code>GLB_USEQ</code> and <code>GLB_OIL</code> are <code>isFinancial:true</code> everywhere.</strong> Both are now kept <strong>observed</strong>
+  through the COVID-as-missing window (2020Q2–Q4) instead of being imputed as macro columns, so the
+  US-equity and oil paths condition the imputation of the masked macro block. Verified in
+  <code>US/spec.json</code> (<code>GLB_USEQ → log·RW·fin</code>, <code>GLB_OIL → log·RW·fin</code>).</li>
+<li><strong>Canada <code>IP_CA</code> rebuilt as a log-LEVEL.</strong> Chained from the discontinued FRED level index +
+  growth to 2025Q4, so <code>IP_CA</code> carries <code>transformation:"log"</code> (a level the engine differences to a
+  growth rate) rather than a pre-differenced series. Verified in <code>CA/spec.json</code>.</li>
+<li><strong>Per-economy variable table.</strong> A transformation · prior · financial table was added to the
+  user manual; all <strong>1048</strong> variables across the <strong>50</strong> shipped specs were audited coherent.</li>
+</ul>
+<blockquote>
+<p>⚠️ The illustrative <code>spec.json</code> example in <a href="../DATA_SCHEMA/#3-specjson--the-variable-manifest">DATA_SCHEMA §3</a>
+predates this refit (it shows <code>FREV_GDP</code>/<code>SFA</code> as <code>RW</code> and <code>GLB_OIL</code> as <code>isFinancial:false</code>). The
+<strong>shipped</strong> <code>US/spec.json</code> is the authority: <code>FREV_GDP</code>/<code>FPEXP_GDP</code>/<code>SFA</code> are <code>WN</code>, and
+<code>GLB_OIL</code>/<code>GLB_USEQ</code> are <code>isFinancial:true</code>.</p>
+</blockquote>
+<hr />
+<h2 id="matrixts"><code>matrix.ts</code><a class="headerlink" href="#matrixts" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> Core dense linear algebra over flat <code>Float64Array</code>s, row-major. No external
+dependency. Every other compute module imports from here.</p>
+<h3 id="type">Type<a class="headerlink" href="#type" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">Matrix</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Float64Array</span><span class="p">;</span><span class="w"> </span><span class="nx">rows</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">cols</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h3 id="key-exports">Key exports<a class="headerlink" href="#key-exports" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Signature</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mat</code></td>
+<td><code>(rows, cols, values?: number[]) =&gt; Matrix</code></td>
+<td>row-major; <code>values</code> optional</td>
+</tr>
+<tr>
+<td><code>eye</code> / <code>zeros</code></td>
+<td><code>(n) =&gt; Matrix</code> / <code>(rows, cols) =&gt; Matrix</code></td>
+<td>identity / zero</td>
+</tr>
+<tr>
+<td><code>get</code> / <code>set</code></td>
+<td><code>(a, i, j) =&gt; number</code> / <code>(a, i, j, v) =&gt; void</code></td>
+<td>element access</td>
+</tr>
+<tr>
+<td><code>multiply</code></td>
+<td><code>(a, b) =&gt; Matrix</code></td>
+<td>skips zero entries of <code>a</code> (sparse-friendly)</td>
+</tr>
+<tr>
+<td><code>multiplyVec</code></td>
+<td><code>(a: Matrix, v: Float64Array) =&gt; Float64Array</code></td>
+<td>matrix·vector</td>
+</tr>
+<tr>
+<td><code>transpose</code>, <code>add</code>, <code>subtract</code>, <code>scale</code>, <code>symmetrize</code></td>
+<td>shape-preserving</td>
+<td><code>add</code>/<code>subtract</code> throw on dimension mismatch</td>
+</tr>
+<tr>
+<td><code>submatrix</code> / <code>setSubmatrix</code></td>
+<td>block read / write</td>
+<td></td>
+</tr>
+<tr>
+<td><code>solve</code></td>
+<td><code>(A: Matrix, b: Float64Array) =&gt; Float64Array</code></td>
+<td>LU with partial pivoting; <strong>throws <code>solve: singular matrix</code> when the pivot magnitude <code>&lt; 1e-15</code></strong></td>
+</tr>
+<tr>
+<td><code>solveMatrix</code></td>
+<td><code>(A, B: Matrix) =&gt; Matrix</code></td>
+<td>solves <code>A·X = B</code> column by column</td>
+</tr>
+<tr>
+<td><code>inverse</code></td>
+<td><code>(A) =&gt; Matrix</code></td>
+<td><code>solveMatrix(A, eye)</code></td>
+</tr>
+<tr>
+<td><code>cholesky</code></td>
+<td><code>(A) =&gt; Matrix</code></td>
+<td>lower-triangular <code>L</code>, <code>A = L·Lᵀ</code>; <strong>throws when a diagonal <code>≤ 1e-14</code> (not positive definite)</strong></td>
+</tr>
+<tr>
+<td><code>toeplitzLower</code></td>
+<td><code>(irf: number[], horizons) =&gt; Matrix</code></td>
+<td>lower-triangular impulse-response convolution matrix for B&amp;M</td>
+</tr>
+<tr>
+<td><code>vecAdd</code> / <code>vecSub</code> / <code>vecScale</code></td>
+<td><code>Float64Array</code> helpers</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Numerical thresholds.</strong> LU singularity pivot floor <code>1e-15</code>; Cholesky positive-definite floor
+<code>1e-14</code>. These are the two failure modes consumers must guard (the smoother and the simulation
+draw catch a failed Cholesky and fall back to a diagonal sqrt).</p>
+<hr />
+<h2 id="kalmants"><code>kalman.ts</code><a class="headerlink" href="#kalmants" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> Companion-form state-space construction and the Durbin–Koopman (DK) filter +
+smoother for conditional forecasting of a single BVAR bloc. Ported from MATLAB
+<code>conforekf.m</code> / <code>VARcf_DKcks.m</code> / <code>runKF_DK.m</code>. This is the affine engine the GVAR solver probes.</p>
+<p>State-space form (state <code>a_t = [y_t; y_{t-1}; …; y_{t-p+1}]</code>, dimension <code>n·p</code>):</p>
+<div class="highlight"><pre><span></span><code>a_t = T·a_{t-1} + c2 + u_t,   u_t ~ N(0, Q)
+y_t = Z·a_t + c1 + e_t,        e_t ~ N(0, R)
+</code></pre></div>
+<h3 id="core-types">Core types<a class="headerlink" href="#core-types" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">BVARParams</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">betahat</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">;</span><span class="w"> </span><span class="nx">sigmahat</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">;</span><span class="w"> </span><span class="nx">n</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">lags</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span>
+<span class="c1">// betahat is (1 + n·lags, n): row 0 = constant, rows 1..n·lags = lag coefficients</span>
+<span class="c1">// sigmahat is (n, n) innovation covariance</span>
+
+<span class="kd">interface</span><span class="w"> </span><span class="nx">LinObs</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">h</span><span class="o">:</span><span class="w"> </span><span class="kt">Float64Array</span><span class="p">;</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="w">  </span><span class="c1">// linear-combination pin: h&#39;·y_t = value</span>
+</code></pre></div>
+<h3 id="key-exports_1">Key exports<a class="headerlink" href="#key-exports_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Signature (abbreviated)</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>buildStateSpace</code></td>
+<td><code>(params: BVARParams) =&gt; StateSpace</code></td>
+<td>companion <code>T, Z, Q, R, c1, c2</code>; <strong><code>R = 1e-12·I</code></strong> (tiny measurement noise)</td>
+</tr>
+<tr>
+<td><code>initState</code></td>
+<td><code>(data: Matrix, lags) =&gt; { a0, P0 }</code></td>
+<td>last <code>p</code> rows stacked; <strong><code>P0 = 1e-7·I</code></strong></td>
+</tr>
+<tr>
+<td><code>kalmanFilter</code></td>
+<td><code>(ss, Y, a0, P0, linObs?) =&gt; { filteredA, filteredP, predictedA, predictedP, innovations, ZF }</code></td>
+<td>forward pass; <code>Y</code> is <code>(n, T_fwd)</code>, NaN = missing</td>
+</tr>
+<tr>
+<td><code>kalmanSmoother</code></td>
+<td><code>(ss, predictedA, predictedP, filteredA, innovations, ZF, Y, linObs?) =&gt; Matrix</code></td>
+<td>DK backward pass <code>(n·p, T_fwd)</code></td>
+</tr>
+<tr>
+<td><code>conditionalForecast</code></td>
+<td>see below</td>
+<td>the production single-bloc forecast</td>
+</tr>
+<tr>
+<td><code>affineBlocKernels</code></td>
+<td>see below</td>
+<td>the 18× GVAR perf path</td>
+</tr>
+<tr>
+<td><code>dkSimulationDraw</code></td>
+<td><code>(params, hist, condPaths) =&gt; { smoothed, forward }</code></td>
+<td>one DK simulation-smoother draw (band loop)</td>
+</tr>
+<tr>
+<td><code>bvarForecastDraw</code></td>
+<td><code>(params, hist, H, addInnovation=false) =&gt; Matrix</code></td>
+<td>iterated VAR forecast; <code>addInnovation</code> toggles parameter-only vs predictive bands</td>
+</tr>
+</tbody>
+</table>
+<h3 id="conditionalforecast"><code>conditionalForecast</code><a class="headerlink" href="#conditionalforecast" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">conditionalForecast</span><span class="p">(</span>
+<span class="w">  </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="kt">BVARParams</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">historicalData</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">,</span><span class="w">                 </span><span class="c1">// (T_hist, n), companion space</span>
+<span class="w">  </span><span class="nx">condPaths</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">,</span><span class="w">                      </span><span class="c1">// (H, n), NaN = free (to be forecast)</span>
+<span class="w">  </span><span class="nx">linConstraints</span><span class="o">?:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">t</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">h</span><span class="o">:</span><span class="w"> </span><span class="kt">Float64Array</span><span class="p">;</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}[]</span>
+<span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">mean</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">;</span><span class="w"> </span><span class="nx">variance</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">[]</span><span class="w"> </span><span class="p">}</span><span class="w">   </span><span class="c1">// mean (H, n); variance is H × (n, n)</span>
+</code></pre></div>
+<p>Given history and a partially-observed future path, returns the smoothed forecast for <strong>all</strong>
+variables. Per-variable pins live in <code>condPaths</code> (set a cell, leave others NaN); the optional
+<code>linConstraints</code> pin a linear combination <code>h'·y_t = value</code> at quarter <code>t</code> (used for the fiscal
+primary-balance constraint <code>revenue − primaryExp = target</code>). The forecast is <strong>affine in the
+pinned values for a fixed pin mask</strong> — the property the GVAR solver exploits.</p>
+<p><strong>Convention invariant.</strong> An all-NaN <code>condPaths</code> reproduces <code>baseline_levels.mean</code> to ~<code>1e-11</code>.
+This is the canary that the engine and the shipped data agree.</p>
+<blockquote>
+<p>⚠️ <strong>The returned <code>variance</code> is the FILTERED state covariance, not the DK-smoothed one</strong> (it is
+<code>submatrix(filteredP[t], …)</code>, <code>kalman.ts:405</code>). The MEAN is smoothed; the variance is not — so the
+conditional band is <strong>overstated</strong> for quarters that precede a future pin (a later observation would
+tighten them). Known issue #4.</p>
+</blockquote>
+<p>Called from <code>useConditionalForecast.ts</code> (single-bloc path), <code>ChartGrid.tsx</code>, <code>gvarSolve.ts</code>
+(baseline + every probe), and <code>runGvarBandSolve.ts</code>.</p>
+<h3 id="affineblockernels"><code>affineBlocKernels</code><a class="headerlink" href="#affineblockernels" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">affineBlocKernels</span><span class="p">(</span>
+<span class="w">  </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="kt">BVARParams</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">historicalData</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">condPaths</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">,</span><span class="w">    </span><span class="c1">// (H, n) probe BASELINE: pin mask + baseline values</span>
+<span class="w">  </span><span class="nx">cells</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[]</span><span class="w">       </span><span class="c1">// variable columns to bump (one kernel set per column)</span>
+<span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Sc</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">;</span><span class="w"> </span><span class="nx">kernels</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">[][]</span><span class="w"> </span><span class="p">}</span>
+<span class="c1">// Sc = baseline smoothed mean (H, n)</span>
+<span class="c1">// kernels[ci][tp] = (H, n) smoothed-mean response to condPaths[tp, cells[ci]] += 1</span>
+</code></pre></div>
+<p>The <strong>exact perf path</strong> for the GVAR coupling build. Because <code>conditionalForecast</code> is affine in
+the pinned values for a fixed mask, the filter/smoother factors (<code>PPred_t</code>, gain <code>PZF_t</code>,
+smoother <code>L_t</code>, <code>ZF_t</code>) are value-independent. <code>affineBlocKernels</code> computes them <strong>once</strong> (one
+full filter+smoother pass on <code>condPaths</code>), then evaluates each unit-bump kernel as a cheap delta
+forward/backward recursion (pure matvecs). The arithmetic is <strong>byte-equal</strong> to running
+<code>conditionalForecast</code> once per <code>(cell, tp)</code> probe, at a large constant-factor win
+(~10–20× on the <code>n=41</code>, <code>lags=3</code>, <code>H=20</code> endogenous US bloc). Used inside <code>gvarSolve.ts</code>'s <code>blocKernels</code>.</p>
+<h3 id="numerical-thresholds-kalmants">Numerical thresholds (kalman.ts)<a class="headerlink" href="#numerical-thresholds-kalmants" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Value</th>
+<th>Site</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Measurement noise <code>R</code></td>
+<td><code>1e-12·I</code></td>
+<td><code>buildStateSpace</code> (<code>set(R,i,i,1e-12)</code>)</td>
+<td>near-exact observation; keeps the filter conditioned</td>
+</tr>
+<tr>
+<td>Initial state cov <code>P0</code></td>
+<td><code>1e-7·I</code></td>
+<td><code>initState</code> / <code>dkSimulationDraw</code></td>
+<td>tight diffuse prior on the seeded last-<code>p</code> rows</td>
+</tr>
+<tr>
+<td>Cholesky innovation floor</td>
+<td><code>max(Σ_ii, 1e-12)</code></td>
+<td><code>dkSimulationDraw</code> / <code>bvarForecastDraw</code></td>
+<td>diagonal-sqrt fallback when the full <code>cholesky(Σ)</code> is not positive definite</td>
+</tr>
+</tbody>
+</table>
+<p>These compose with <code>matrix.ts</code>'s <code>solve</code> (singular pivot <code>&lt; 1e-15</code>) and <code>cholesky</code> (PD diagonal
+<code>≤ 1e-14</code>): a failed <code>cholesky(Σ)</code> in a simulation draw is caught and replaced by the diagonal
+square root above, so a marginally non-PD posterior <code>Σ</code> degrades gracefully rather than throwing.</p>
+<h3 id="worked-example-single-bloc-conditional-forecast">Worked example — single-bloc conditional forecast<a class="headerlink" href="#worked-example-single-bloc-conditional-forecast" title="Permanent link">&para;</a></h3>
+<p>Pin US revenue to a fixed 18% of GDP over the first four quarters and read the smoothed forecast of
+<em>every</em> variable (the rest free):</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">conditionalForecast</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@/lib/compute/kalman&#39;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">mat</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@/lib/compute/matrix&#39;</span>
+
+<span class="c1">// params: BVARParams parsed from companion_mean.json (n, lags, betahat, sigmahat)</span>
+<span class="c1">// historical: (T_hist, n) Matrix in companion space (100·log levels / raw lin)</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">H</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">params</span><span class="p">.</span><span class="nx">n</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">condPaths</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">mat</span><span class="p">(</span><span class="nx">H</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="p">)</span><span class="w">                 </span><span class="c1">// mat() zero-fills; &quot;free&quot; cells must be NaN, so:</span>
+<span class="nx">condPaths</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">fill</span><span class="p">(</span><span class="kc">NaN</span><span class="p">)</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">FREV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">idx</span><span class="p">.</span><span class="nx">revenue</span><span class="w">                    </span><span class="c1">// column of FREV_GDP in this bloc</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span><span class="w"> </span><span class="nx">t</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="nx">condPaths</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">FREV</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">18.0</span><span class="w">   </span><span class="c1">// pin 18% of GDP, q0..q3</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">mean</span><span class="p">,</span><span class="w"> </span><span class="nx">variance</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">conditionalForecast</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span><span class="w"> </span><span class="nx">historical</span><span class="p">,</span><span class="w"> </span><span class="nx">condPaths</span><span class="p">)</span>
+<span class="c1">// mean: (H, n) smoothed forecast; mean.data[t*n + col] is variable `col` at horizon t</span>
+<span class="c1">// variance: H entries, each an (n, n) Matrix (filtered/smoothed state cov at that horizon)</span>
+</code></pre></div>
+<p>The all-NaN canary that proves the engine and the shipped data agree:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">free</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">mat</span><span class="p">(</span><span class="nx">H</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="p">);</span><span class="w"> </span><span class="nx">free</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">fill</span><span class="p">(</span><span class="kc">NaN</span><span class="p">)</span>
+<span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">mean</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">conditionalForecast</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span><span class="w"> </span><span class="nx">historical</span><span class="p">,</span><span class="w"> </span><span class="nx">free</span><span class="p">)</span>
+<span class="c1">// mean ≈ baseline_levels.mean to ~1e-11, column by column</span>
+</code></pre></div>
+<h3 id="worked-example-linear-combination-pin-fiscal-primary-balance">Worked example — linear-combination pin (fiscal primary balance)<a class="headerlink" href="#worked-example-linear-combination-pin-fiscal-primary-balance" title="Permanent link">&para;</a></h3>
+<p>The fiscal "required primary balance" path is conditioned as <code>revenue − primaryExp = pb_t</code>, a
+linear combination across two columns at each quarter — exactly the <code>linConstraints</code> channel:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Float64Array</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w">               </span><span class="c1">// selector h&#39;·y_t</span>
+<span class="nx">h</span><span class="p">[</span><span class="nx">idx</span><span class="p">.</span><span class="nx">revenue</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">h</span><span class="p">[</span><span class="nx">idx</span><span class="p">.</span><span class="nx">primaryExp</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="w">  </span><span class="c1">// revenue − primaryExp</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">linConstraints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pbPath</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">t</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">t</span><span class="p">,</span><span class="w"> </span><span class="nx">h</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="p">}))</span><span class="w">   </span><span class="c1">// value = required pb at q t</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">mean</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">conditionalForecast</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span><span class="w"> </span><span class="nx">historical</span><span class="p">,</span><span class="w"> </span><span class="nx">free</span><span class="w"> </span><span class="cm">/* all-NaN */</span><span class="p">,</span><span class="w"> </span><span class="nx">linConstraints</span><span class="p">)</span>
+</code></pre></div>
+<p>This is how <code>useConditionalForecast.ts</code> / <code>fiscalAccounting.ts</code>'s <code>requiredPrimaryBalance</code> output is
+fed back into the BVAR (caller iterates 1–2 passes; see <code>fiscalAccounting.ts</code> below).</p>
+<hr />
+<h2 id="gvarsolvets"><code>gvarSolve.ts</code><a class="headerlink" href="#gvarsolvets" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> The cross-country GVAR scenario solver. Each bloc is an independent
+single-country BVAR whose <strong>baseline</strong> is computed once; cross-country coupling enters only
+through the <strong>scenario delta</strong>, which propagates via three trade-weighted "RoW" star variables
+(plus, when the US is endogenous, the US global commons). Reuses <code>kalman.ts</code> unchanged.</p>
+<p>The delta system is a <strong>linear fixed point</strong> <code>x = M·x + d</code> (<code>x</code> = stacked star pin-deltas,
+optionally augmented with US-global deltas). It is solved two ways that agree to <code>~1e-6</code>:</p>
+<ol>
+<li><strong>Gauss-Seidel sweeps</strong> (<code>solveGVAR</code>) — sums the Neumann series <code>Σ Mᵏ d</code>.</li>
+<li><strong>Direct closed form</strong> (<code>solveGVARLinear</code> / <code>solveGVARClosedForm</code>) — <code>(I−M)⁻¹d</code> or the
+   inverse-free Neumann fixed point, with <code>M</code> cached across scenarios that share a pin structure.</li>
+</ol>
+<h3 id="star-variables-and-link-convention">Star variables and link convention<a class="headerlink" href="#star-variables-and-link-convention" title="Permanent link">&para;</a></h3>
+<p>Each non-US (and endogenous-US) spec carries three <code>block:'row'</code> stars, all <code>lin</code> in the receiver:</p>
+<table>
+<thead>
+<tr>
+<th>Star</th>
+<th>Meaning</th>
+<th>Linked partner series</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ROWDEM</code> (<code>DEM</code>)</td>
+<td>trade-weighted foreign GDP growth, % q/q ann</td>
+<td>partner GDP (<code>log</code>)</td>
+</tr>
+<tr>
+<td><code>ROWINF</code> (<code>INF</code>)</td>
+<td>trade-weighted foreign inflation, % q/q ann</td>
+<td>partner deflator/CPI (<code>log</code>)</td>
+</tr>
+<tr>
+<td><code>ROWFIN</code> (<code>FIN</code>)</td>
+<td>trade-weighted foreign short rate, %</td>
+<td>partner policy rate (<code>lin</code>)</td>
+</tr>
+</tbody>
+</table>
+<p><code>gdp</code>/<code>price</code> deltas are <code>4·Δ(level-gap)</code> growth operators (t=0 anchored to the shared
+in-sample last level, whose delta is 0); <code>rate</code> deltas are the level gap. Rate-less blocs
+(<code>CH</code>, <code>NO</code>) drop out of <code>FIN</code>; hyperinflation blocs (<code>AR</code>) drop out of <code>INF</code> and <code>FIN</code>.
+(<code>NOMINAL_GDP_BLOCS</code> is empty since the 2026-06 CN-only re-estimate — CN now ships real GDP, so its
+<code>DEM</code> reads <code>gdp</code> directly rather than <code>gdp − price</code>.)</p>
+<h3 id="topology-configuration">Topology configuration<a class="headerlink" href="#topology-configuration" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">configureGVARTopology</span><span class="p">(</span><span class="nx">specs</span><span class="o">:</span><span class="w"> </span><span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">Record</span><span class="o">&lt;</span><span class="nx">CountryCode</span><span class="p">,</span><span class="w"> </span><span class="nx">SpecJSON</span><span class="o">&gt;&gt;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">CountryCode</span><span class="p">[]</span>
+</code></pre></div>
+<p>(Re)configures the module from loaded <code>spec.json</code>s + <code>weights_24bloc.json</code>. A country is an
+active RoW bloc iff its spec carries <code>block:'row'</code> stars <strong>and</strong> it has a weights row; the US is
+the closed anchor unless its own spec carries stars (then <code>US_ENDOGENOUS = true</code>). Mutates these
+live module exports <strong>in place</strong> (importers hold references):</p>
+<ul>
+<li><code>ROW_COUNTRIES</code> — every active bloc except US.</li>
+<li><code>COUPLED_COUNTRIES</code> — the blocs in the fixed point (<code>ROW_COUNTRIES</code>, US prepended when endogenous).</li>
+<li><code>US_ENDOGENOUS</code> — boolean.</li>
+<li><code>IDX: Record&lt;CountryCode, BlocIdx&gt;</code> — per-bloc column indices (<code>gdp</code>, <code>price</code>, <code>rate</code>, <code>n</code>,
+  <code>row</code>, <code>dem</code>, <code>glob</code>), derived by <code>deriveBlocIdx</code>.</li>
+<li><code>W</code> — trade weights, renormalized per active panel so each row sums to 1 (zero diagonal).</li>
+</ul>
+<p><code>deriveBlocIdx(code, spec)</code> mirrors the estimator's column resolution: <code>gdp = GDP_&lt;CC&gt;</code> else
+<code>GDPH</code>; <code>price = HICP_&lt;CC&gt;</code> else <code>CPI_&lt;CC&gt;</code> else <code>JGDP</code>; <code>rate = RATE_&lt;CC&gt;</code> else <code>POLRATE</code> else
+<code>YIELD10_&lt;CC&gt;</code> (optional → <code>-1</code>). <code>resetGVARTopologyToDefault()</code> restores the shipped 6-bloc set
+(<code>US, EA, JP, UK, CA, CN</code>) and runs at module load.</p>
+<h3 id="model-container">Model container<a class="headerlink" href="#model-container" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">makeCountryModel</span><span class="p">(</span><span class="nx">code</span><span class="p">,</span><span class="w"> </span><span class="nx">companionMean</span><span class="p">,</span><span class="w"> </span><span class="nx">historicalLevels</span><span class="p">,</span><span class="w"> </span><span class="nx">horizon</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">CountryModel</span>
+<span class="c1">// CountryModel = { code, params, histMat, histLastLvl, baseLvl, H, n }</span>
+<span class="c1">// baseLvl: (H, n) UNCONDITIONAL level forecast, computed ONCE via all-NaN conditionalForecast</span>
+</code></pre></div>
+<p><code>buildParams(cm)</code> parses a <code>companion_mean.json</code> into <code>BVARParams</code>.</p>
+<h3 id="solvers">Solvers<a class="headerlink" href="#solvers" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Strategy</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>solveGVAR(models, scenarioPins, opts?)</code></td>
+<td>Gauss-Seidel; <code>tol</code> default <code>1e-4</code>, <code>maxSweeps</code> default <code>12</code>. US frozen unless endogenous.</td>
+<td><code>GVARResult</code> (<code>scenLvl</code>, <code>delta</code>, <code>sweepCount</code>, <code>residuals</code>, <code>rhoEmpirical</code>)</td>
+</tr>
+<tr>
+<td><code>solveViewedScenLvl(models, pins, viewed, opts?)</code></td>
+<td>single-bloc shortcut: a US-only view (frozen US) needs one forecast, not the full sweep</td>
+<td><code>Matrix</code></td>
+</tr>
+<tr>
+<td><code>solveGVARLinear(models, pins, opts?)</code></td>
+<td>direct <code>(I−M)⁻¹d</code> or Smith/doubling; accepts cached <code>coupling</code></td>
+<td><code>GVARLinearResult</code> (adds <code>M</code>, <code>d</code>, <code>rhoSpectral</code>, <code>method</code>)</td>
+</tr>
+<tr>
+<td><code>solveGVARClosedForm(models, pins, modelSig?)</code></td>
+<td><strong>production path</strong>: cached <code>M</code>, inverse-free Neumann; routes to the endogenous augmented form when <code>US_ENDOGENOUS</code></td>
+<td><code>GVARResult</code></td>
+</tr>
+<tr>
+<td><code>solveGVARDirect(models, pins, modelSig)</code></td>
+<td>first-order one-hop preview (<code>x = d</code>), pure cached-kernel matvecs, sub-50 ms; falls back to the full solve when the kernel cache is cold</td>
+<td><code>GVARResult</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>ScenarioPins = Partial&lt;Record&lt;CountryCode, Matrix&gt;&gt;</code>; each pin is <code>(H, n)</code>, NaN = free.</p>
+<h3 id="m-build-and-coupling-cache"><code>M</code> build and coupling cache<a class="headerlink" href="#m-build-and-coupling-cache" title="Permanent link">&para;</a></h3>
+<p><code>M</code> depends on the models and the conditioning <strong>structure</strong> (which cells are pinned) but <strong>not</strong>
+on the pinned values, so it is cached and reused across the dominant drag-a-pin UI flow. The
+relevant exports:</p>
+<ul>
+<li><code>buildGVARCoupling</code> / <code>buildGVARCouplingEndo</code> — assemble <code>M</code>, <code>(I−M)⁻¹</code>, <code>ρ(M)</code> (frozen / endogenous).</li>
+<li><code>buildGVARCouplingM</code> / <code>buildGVARCouplingMEndo</code> — assemble <code>M</code> and <code>ρ</code> <strong>without</strong> the inverse,
+  for the export-time precompute that inverts <code>(I−M)</code> in MATLAB BLAS (<code>precompute_gvar_coupling.mjs</code>
+  shells out to <code>invert_coupling.m</code>; <code>invert_coupling.py</code> is a NumPy fallback). The in-JS <code>O(dim³)</code>
+  inverse was measured at ~46 min at the frozen-anchor <code>dim≈1380</code>, and is larger at the endogenous
+  <code>dim=2060</code>, so it is never built live.</li>
+<li><code>gvarPinStructureSignature(pins)</code> — stable key over pinned cells; frozen-anchor topology excludes
+  US pins, endogenous includes them.</li>
+<li><code>seedGVARCouplingCache</code> / <code>hydrateGVARCoupling</code> — load the pre-shipped artifact into the module cache.</li>
+<li><code>prewarmGVARKernels</code> / <code>prewarmGVARKernelsChunk</code> — warm the per-bloc kernel cache off the critical
+  path (so the first US-pin solve re-probes only the US bloc; the RoW blocs hit the cache).</li>
+<li><code>resetGVARCouplingCache</code> / <code>resetGVARKernelCache</code> — test hooks.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">GVARCouplingArtifact</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">modelSig</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">pinStructure</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">dim</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">rhoSpectral</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">M</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][];</span><span class="w"> </span><span class="nx">invImM</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>This is the shape of <code>app/public/data/bvar/gvar/coupling_default.json(.gz)</code>, produced by
+<code>app/scripts/precompute_gvar_coupling.mjs</code> and consumed by <code>runGvarSolve.ts</code>.</p>
+<h3 id="us_endogenous-augmented-state"><code>US_ENDOGENOUS</code> augmented state<a class="headerlink" href="#us_endogenous-augmented-state" title="Permanent link">&para;</a></h3>
+<p>When the US is a coupled bloc it both receives partner spillovers (its own <code>ROW*_US</code> stars) and
+<strong>drives every RoW bloc's global commons</strong> (oil / US 10Y / US BAA / US equity), which RoW blocs
+pin to <code>own-base + US-global-delta</code>. The compact state is therefore augmented:</p>
+<div class="highlight"><pre><span></span><code>x = [ star pin-deltas s_{c,v,t} for every coupled bloc c (US included) ]
+    ++ [ US global-column deltas gΔ_{p,t} ]
+</code></pre></div>
+<p>with three coupling families assembled in <code>buildLinearSystemEndo</code>: (1) star ← star, (2) US-global
+← US-star (definition row), (3) RoW-star ← US-global. <code>solveGVARClosedFormEndo</code> solves
+<code>x = (I−M)⁻¹d</code> (cached inverse) or the inverse-free Neumann fixed point (<code>maxIt = 2000</code>, tolerance
+<code>1e-10</code>), then reconstructs each bloc with one final <code>conditionalForecast</code>.</p>
+<blockquote>
+<p>⚠️ <strong>No <code>ρ(M) &lt; 1</code> divergence guard on the live solve (known issue #3).</strong> The Neumann iteration
+(<code>gvarSolve.ts:1296</code>) stops at <code>maxIt</code>/tolerance but never checks <code>ρ(M) &lt; 1</code>. A refit producing
+<code>ρ ≥ 1</code> would diverge silently and return a confident-wrong forecast. <code>ρ</code> is shipped in the artifact
+(currently 0.924) but not read as a guard. See
+<a href="#known-issues--limitations-flagged-for-fix-not-yet-fixed">Known issues #3</a>.</p>
+</blockquote>
+<h3 id="spectral-radius-by-panel-size">Spectral radius by panel size<a class="headerlink" href="#spectral-radius-by-panel-size" title="Permanent link">&para;</a></h3>
+<p><code>spectralRadius(M)</code> power-iterates <code>M²</code> (deterministic seed, 400 iters) and takes the sqrt
+(<code>M</code> is block-off-diagonal, so raw power iteration oscillates). Representative <code>ρ(M)</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Panel</th>
+<th><code>ρ(M)</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6-bloc</td>
+<td>~0.59</td>
+</tr>
+<tr>
+<td>24-bloc, US frozen</td>
+<td>~0.726</td>
+</tr>
+<tr>
+<td>33-bloc, US endogenous (<code>dim≈2060</code>)</td>
+<td><strong>0.924041</strong> (live <code>coupling_default.json.gz</code>; moves with each refit, stays <code>&lt; 1</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="call-sites">Call sites<a class="headerlink" href="#call-sites" title="Permanent link">&para;</a></h3>
+<p><code>runGvarSolve.ts</code> (the orchestrator: seeds the artifact, prewarms kernels, routes to
+<code>solveGVARDirect</code> preview vs <code>solveGVARClosedForm</code>), <code>gvarWorker.ts</code>, <code>runGvarBandSolve.ts</code>
+(per-draw bands), and <code>useGvarForecast.ts</code>. The closed-form ≡ Gauss-Seidel equivalence and the
+shipped-artifact match are enforced by canary tests (<code>gvar-convergence</code>, <code>gvar-coupling-artifact</code>).</p>
+<h3 id="result-shapes">Result shapes<a class="headerlink" href="#result-shapes" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">GVARResult</span><span class="w"> </span><span class="p">{</span><span class="w">                       </span><span class="c1">// solveGVAR / solveGVARClosedForm / solveGVARDirect</span>
+<span class="w">  </span><span class="nx">scenLvl</span><span class="o">:</span><span class="w"> </span><span class="kt">Record</span><span class="o">&lt;</span><span class="nx">CountryCode</span><span class="p">,</span><span class="w"> </span><span class="nx">Matrix</span><span class="o">&gt;</span><span class="w">       </span><span class="c1">// converged scenario LEVEL path per bloc, each (H, n)</span>
+<span class="w">  </span><span class="nx">delta</span><span class="o">:</span><span class="w">   </span><span class="kt">Record</span><span class="o">&lt;</span><span class="nx">CountryCode</span><span class="p">,</span><span class="w"> </span><span class="nx">Matrix</span><span class="o">&gt;</span><span class="w">       </span><span class="c1">// scenLvl − baseLvl per bloc, each (H, n)</span>
+<span class="w">  </span><span class="nx">sweepCount</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w">                         </span><span class="c1">// Gauss-Seidel sweeps used (closed form reports 1)</span>
+<span class="w">  </span><span class="nx">residuals</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[]</span><span class="w">                        </span><span class="c1">// per-sweep max |Δ change| over {EA, JP}</span>
+<span class="w">  </span><span class="nx">rhoEmpirical</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w">                       </span><span class="c1">// empirical ρ(M) (geometric decay of residuals)</span>
+<span class="p">}</span>
+<span class="kd">interface</span><span class="w"> </span><span class="nx">GVARLinearResult</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Pick</span><span class="o">&lt;</span><span class="nx">GVARResult</span><span class="p">,</span><span class="s1">&#39;scenLvl&#39;</span><span class="o">|</span><span class="s1">&#39;delta&#39;</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">M</span><span class="o">:</span><span class="w"> </span><span class="kt">Matrix</span><span class="p">;</span><span class="w"> </span><span class="nx">d</span><span class="o">:</span><span class="w"> </span><span class="kt">Float64Array</span><span class="p">;</span><span class="w"> </span><span class="nx">rhoSpectral</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;direct&#39;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s1">&#39;doubling&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><code>ScenarioPins = Partial&lt;Record&lt;CountryCode, Matrix&gt;&gt;</code>, each pin <code>(H, n)</code> with NaN = free.</p>
+<h3 id="numerical-thresholds-gvarsolvets">Numerical thresholds (gvarSolve.ts)<a class="headerlink" href="#numerical-thresholds-gvarsolvets" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Value</th>
+<th>Site</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gauss-Seidel <code>tol</code></td>
+<td><code>1e-4</code></td>
+<td><code>solveGVAR</code> default</td>
+<td>sweep stops when max level-change <code>&lt; tol</code></td>
+</tr>
+<tr>
+<td>Gauss-Seidel <code>maxSweeps</code></td>
+<td><code>12</code></td>
+<td><code>solveGVAR</code> default</td>
+<td>sweep cap (<code>ρ(M) &lt; 1</code> ⇒ a handful suffice)</td>
+</tr>
+<tr>
+<td>Closed-form ≡ iterative</td>
+<td><code>~1e-6</code></td>
+<td>canary <code>gvar-convergence</code></td>
+<td>the two solve paths must agree</td>
+</tr>
+<tr>
+<td>Endogenous Neumann <code>maxIt</code></td>
+<td><code>2000</code></td>
+<td><code>solveGVARClosedFormEndo</code></td>
+<td>inverse-free fixed-point cap</td>
+</tr>
+<tr>
+<td>Endogenous Neumann tol</td>
+<td><code>1e-10·(1+‖x‖)</code></td>
+<td><code>solveGVARClosedFormEndo</code></td>
+<td>relative fixed-point convergence</td>
+</tr>
+<tr>
+<td>In-JS <code>(I−M)⁻¹</code> cost</td>
+<td>~46 min measured at frozen <code>dim≈1380</code>; larger at endogenous <code>dim=2060</code></td>
+<td><code>buildGVARCoupling</code></td>
+<td>why the inverse is <strong>precomputed</strong>, never built live</td>
+</tr>
+</tbody>
+</table>
+<h3 id="worked-example-propagate-a-us-rate-shock-through-the-panel">Worked example — propagate a US rate shock through the panel<a class="headerlink" href="#worked-example-propagate-a-us-rate-shock-through-the-panel" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">runGVARSolve</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@/lib/compute/runGvarSolve&#39;</span>
+
+<span class="c1">// raw: GVARModelsRaw from loadGVARModels() (specs + companion_mean + levels + coupling artifact)</span>
+<span class="c1">// Pin the US policy rate +100 bp over q0..q3 (companion space: a lin rate, so pin the LEVEL).</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">usIdx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">IDX</span><span class="p">[</span><span class="s1">&#39;US&#39;</span><span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">H</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usIdx</span><span class="p">.</span><span class="nx">n</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">usPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">mat</span><span class="p">(</span><span class="nx">H</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="p">);</span><span class="w"> </span><span class="nx">usPin</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">fill</span><span class="p">(</span><span class="kc">NaN</span><span class="p">)</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span><span class="w"> </span><span class="nx">t</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="nx">usPin</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">usIdx</span><span class="p">.</span><span class="nx">rate</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">baselineUSRate</span><span class="p">[</span><span class="nx">t</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1.0</span><span class="w">  </span><span class="c1">// +100 bp</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">runGVARSolve</span><span class="p">({</span><span class="w"> </span><span class="nx">raw</span><span class="p">,</span><span class="w"> </span><span class="nx">scenarioPins</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">US</span><span class="o">:</span><span class="w"> </span><span class="kt">usPin</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
+<span class="c1">// result.scenLvl[&#39;EA&#39;], result.delta[&#39;JP&#39;], ... : (H, n) coupled responses</span>
+<span class="c1">// US frozen-anchor mode: US delta is exactly the pinned path; RoW deltas come via the stars.</span>
+<span class="c1">// US endogenous mode (US_ENDOGENOUS): US ALSO receives RoW feedback + drives the global commons.</span>
+</code></pre></div>
+<p><code>runGvarSolve.ts</code> seeds the shipped coupling artifact (<code>seedGVARCouplingCache</code>), keys it by
+<code>gvarSignature(raw)</code> + <code>gvarPinStructureSignature(pins)</code>, and routes to the sub-50 ms first-hop
+preview (<code>solveGVARDirect</code>) or the full <code>solveGVARClosedForm</code>. Prewarm the per-bloc kernels off the
+critical path first:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">prewarmGVAR</span><span class="p">(</span><span class="nx">raw</span><span class="p">)</span><span class="w">                 </span><span class="c1">// warms RoW bloc kernels; first US-pin solve then re-probes only US</span>
+</code></pre></div>
+<hr />
+<h2 id="fiscalaccountingts"><code>fiscalAccounting.ts</code><a class="headerlink" href="#fiscalaccountingts" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> Derives the public-finance reporting variables (primary/overall balance,
+deficit, interest, debt-to-GDP, gross financing needs, snowball) from the BVAR-estimated fiscal
+<strong>drivers</strong> via the IMF FPP / CBO budget identity. <strong>Debt is derived, never estimated.</strong> See
+<a href="../fiscal-block-methodology/">fiscal block methodology</a>.</p>
+<h3 id="units-the-main-bug-source">Units (the main bug source)<a class="headerlink" href="#units-the-main-bug-source" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>revenue</code>, <code>primaryExp</code>, <code>sfa</code>, <code>amortization</code>, debt-service-to-GDP</td>
+<td>% of GDP, <strong>annual</strong> ratio</td>
+</tr>
+<tr>
+<td><code>effRate</code></td>
+<td>% per <strong>annum</strong> (effective rate on the debt stock)</td>
+</tr>
+<tr>
+<td><code>gNomQ</code></td>
+<td>% per <strong>quarter</strong> (nominal GDP growth)</td>
+</tr>
+<tr>
+<td><code>d0</code>, debt</td>
+<td>debt-to-GDP, %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-recursion-per-quarter-lagged-debt-d1-live-displayed-path">The recursion (per quarter, lagged debt <code>d₋₁</code>) — LIVE / displayed path<a class="headerlink" href="#the-recursion-per-quarter-lagged-debt-d1-live-displayed-path" title="Permanent link">&para;</a></h3>
+<p>This is <code>computeFiscalBlock</code> (<code>fiscalAccounting.ts:163</code>), the <strong>only</strong> fiscal recursion wired to the
+displayed debt-to-GDP charts and bands (called from <code>ChartGrid.tsx</code> and <code>runGvarBandSolve.ts</code>). It is a
+<strong>passive accounting recursion</strong> — no debt-feedback term:</p>
+<div class="highlight"><pre><span></span><code>pb_t      = rev_t − primexp_t                             // primary balance (NO Bohn term)
+i_eff_t   = effRate_t                                     // effective rate (NO risk premium)
+int_t     = i_eff_t · d₋₁ / 100                           // interest / debt service, % GDP
+deficit_t = int_t − pb_t
+d_t       = d₋₁·(1 + i_eff_t/400)/(1 + gNomQ_t/100) − pb_t/4 + sfa_t/4
+gfn_t     = deficit_t + amortization_t
+</code></pre></div>
+<p>All four drivers (<code>rev</code>, <code>primexp</code>, <code>effRate</code>, <code>sfa</code>) are BVAR-forecast; debt/GDP is a <strong>derived
+accounting identity</strong>, never a BVAR variable. <code>sfa_t</code> in the deployed roll is the <strong>structural constant</strong>
+<code>sfaDefault</code> (not the per-quarter forecast SFA column — that gets dragged to extremes by the long-run
+anchors). There is <strong>no</strong> debt→primary-balance reaction and <strong>no</strong> debt→yield risk premium in anything the
+user sees.</p>
+<blockquote>
+<p>⚠️ <strong>The <code>γ</code>/<code>β</code> (Bohn FRF + risk-premium) levers are DORMANT / test-only.</strong> A <em>separate</em> function
+<code>runFiscalRecursion</code> (<code>fiscalAccounting.ts:66</code>) adds the optional terms
+<code>pb_t += γ·(d₋₁ − d*)</code> (Bohn, default <code>0.03</code>) and <code>i_eff_t += β·max(0, d₋₁ − d*)</code> (risk premium,
+default <code>0</code>), gated by <code>feedbackOn</code>. <strong><code>runFiscalRecursion</code> has ZERO production callers</strong> — it is
+invoked only by <code>__tests__/compute/fiscalAccounting.test.ts</code> and <code>fiscal-backcast.test.ts</code>. No UI
+control sets <code>γ</code>/<code>β</code>/<code>feedbackOn</code>. They are documented and validated but <strong>not in the live path</strong>; a
+possible future endogenous-debt-feedback extension, not current behaviour. See
+<a href="../fiscal-block-methodology/"><code>fiscal-block-methodology.md</code></a>.</p>
+<p>✅ <strong>CN inflation double-count — RESOLVED (2026-06).</strong> <code>computeFiscalBlock</code> forms <code>gNomQ</code> as
+<code>Δ(level[idx.gdp]) + Δ(level[idx.deflator])</code>. The CN block previously shipped a nominal <code>GDP_CN</code>, so
+the price term was double-counted; the <strong>surgical CN-only re-estimate</strong> replaced it with real GDP
+(<code>idx.gdpIsNominal = false</code>), so CN's roll-forward now matches US/EA/JP/UK/CA. CN-only graft; the other
+32 blocs are byte-identical.</p>
+</blockquote>
+<h3 id="key-exports_2">Key exports<a class="headerlink" href="#key-exports_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Input → output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>runFiscalRecursion(input: FiscalRecursionInput)</code></td>
+<td>driver arrays → <code>FiscalRecursionResult</code>. If <code>dsvc</code> (estimated debt-service-to-GDP) is supplied it <strong>is</strong> the interest and the effective rate is backed out; else the effective-rate form is used.</td>
+</tr>
+<tr>
+<td><code>computeFiscalBlock(input: FiscalBlockInput)</code></td>
+<td>reads drivers off a <strong>level-space</strong> <code>(H × n)</code> forecast via <code>FiscalBlockIndices</code> (<code>gdp</code>, <code>deflator</code>, <code>revenue</code>, <code>primaryExp</code>, <code>effRate</code>, optional <code>debtService</code>, optional <code>sfa</code>); rolls the same identity forward → <code>FiscalRecursionResult</code>. <code>gQ</code> = q/q nominal growth = <code>Δ(real 100·log) + Δ(deflator 100·log)</code>.</td>
+</tr>
+<tr>
+<td><code>requiredPrimaryBalance(input: DebtInversionInput)</code></td>
+<td>inverts the recursion: the annual primary balance per quarter required to make debt follow <code>targetDebt</code> (IMF DSA "required primary balance"). <code>pb = 4·[(d₋₁ + int/4)/(1+gQ) − d_t] + sfa</code>. The caller conditions the BVAR on this path via the <code>revenue − primExp</code> linear constraint, iterating 1–2 passes.</td>
+</tr>
+</tbody>
+</table>
+<p><code>FiscalRecursionResult</code> carries <code>primaryBalance</code>, <code>effectiveRate</code>, <code>interest</code>, <code>overallBalance</code>,
+<code>deficit</code>, <code>debt</code>, <code>dDebtGdp</code> (<code>= debt[t] − debt[t-1]</code>, derived), <code>gfn</code>, <code>snowball</code> — each a
+length-<code>H</code> array.</p>
+<h3 id="driver-provenance-the-stationary-prior-matters-here">Driver provenance — the stationary prior matters here<a class="headerlink" href="#driver-provenance-the-stationary-prior-matters-here" title="Permanent link">&para;</a></h3>
+<p>The three estimated drivers <code>computeFiscalBlock</code> reads off the level path — <code>revenue</code> (<code>FREV_GDP</code>),
+<code>primaryExp</code> (<code>FPEXP_GDP</code>) and <code>sfa</code> (<code>SFA</code>) — are exactly the variables now carried with the
+<strong>stationary <code>WN</code> prior</strong> (§<a href="#fiscal-stationary-prior">Fiscal stationary prior</a>). So the level path
+this module differences and rolls forward now <strong>mean-reverts</strong> at the long end rather than drifting;
+the derived debt-to-GDP trajectory inherits that. <code>effRate</code> (<code>EFFI</code>) stays <code>RW</code>. The recursion code
+is unchanged — only the <em>shape of the forecast it consumes</em> changed.</p>
+<h3 id="the-two-parametrisations-debt-service-vs-effective-rate">The two parametrisations (debt service vs effective rate)<a class="headerlink" href="#the-two-parametrisations-debt-service-vs-effective-rate" title="Permanent link">&para;</a></h3>
+<p>Both <code>runFiscalRecursion</code> and <code>computeFiscalBlock</code> branch on whether an estimated
+<strong>debt-service-to-GDP</strong> column is supplied:</p>
+<table>
+<thead>
+<tr>
+<th>Supplied</th>
+<th>Interest <code>intₜ</code> (% of GDP)</th>
+<th>Effective rate (% p.a.)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dsvc</code> / <code>idx.debtService</code> set</td>
+<td><code>= dsvcₜ</code> directly (the BVAR forecast)</td>
+<td><strong>backed out</strong>: <code>intₜ·100/d₋₁</code></td>
+</tr>
+<tr>
+<td>not set (fallback)</td>
+<td><code>= effRateₜ · d₋₁ / 100</code></td>
+<td><code>= effRateₜ</code> (the estimated <code>EFFI</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>The quarterly roll-forward <code>iQ = effRate/400 = intₜ/(4·d₋₁)</code> is identical either way (this keeps the
+effRate-only callers byte-identical and fixes a ~100× over-statement of interest on the DSVC path).</p>
+<h3 id="worked-example-derive-the-fiscal-block-from-a-gvar-scenario-level-path">Worked example — derive the fiscal block from a GVAR scenario level path<a class="headerlink" href="#worked-example-derive-the-fiscal-block-from-a-gvar-scenario-level-path" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">computeFiscalBlock</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@/lib/compute/fiscalAccounting&#39;</span>
+
+<span class="c1">// levelPaths: H×n (number[][]) US scenario LEVEL forecast (e.g. scenLvl[&#39;US&#39;] unpacked row-major)</span>
+<span class="c1">// prevLevelRow: the last historical level row (for the t=0 growth diff)</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">computeFiscalBlock</span><span class="p">({</span>
+<span class="w">  </span><span class="nx">levelPaths</span><span class="p">,</span><span class="w"> </span><span class="nx">prevLevelRow</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">idx</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w">                                  </span><span class="c1">// FiscalBlockIndices — column positions in the level path</span>
+<span class="w">    </span><span class="nx">gdp</span><span class="o">:</span><span class="w"> </span><span class="kt">usIdx.gdp</span><span class="p">,</span><span class="w"> </span><span class="nx">deflator</span><span class="o">:</span><span class="w"> </span><span class="kt">usIdx.price</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">revenue</span><span class="o">:</span><span class="w"> </span><span class="kt">cRev</span><span class="p">,</span><span class="w"> </span><span class="nx">primaryExp</span><span class="o">:</span><span class="w"> </span><span class="kt">cPexp</span><span class="p">,</span><span class="w"> </span><span class="nx">effRate</span><span class="o">:</span><span class="w"> </span><span class="kt">cEffi</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">sfa</span><span class="o">:</span><span class="w"> </span><span class="kt">cSfa</span><span class="p">,</span><span class="w">                            </span><span class="c1">// ESTIMATED SFA column (WN-prior) → per-quarter, with bands</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">d0</span><span class="o">:</span><span class="w"> </span><span class="kt">122.3</span><span class="p">,</span><span class="w">                              </span><span class="c1">// initial debt/GDP (%) for the US</span>
+<span class="p">})</span>
+<span class="c1">// result.debt[t]    : derived debt-to-GDP (%), budget-identity roll-forward</span>
+<span class="c1">// result.deficit[t] : interest − primary balance (% of GDP, annual)</span>
+<span class="c1">// result.snowball[t]: ((1+iQ)/(1+gQ) − 1)·d₋₁  (the interest-growth differential, pp)</span>
+<span class="c1">//   where gQ = q/q nominal growth = Δ(real 100·log) + Δ(deflator 100·log), over 100</span>
+</code></pre></div>
+<p>This is the exact call <code>runGvarBandSolve.ts</code> makes per draw (line ~163, <code>req.fiscal.sfa.slice(0,Hf)</code>)
+to band the US debt path, and the single-bloc <code>useConditionalForecast.ts</code> / <code>ChartGrid.tsx</code> make for
+the central path.</p>
+<h3 id="worked-example-required-primary-balance-debt-inversion-dsa">Worked example — required-primary-balance debt inversion (DSA)<a class="headerlink" href="#worked-example-required-primary-balance-debt-inversion-dsa" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">requiredPrimaryBalance</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@/lib/compute/fiscalAccounting&#39;</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">pb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requiredPrimaryBalance</span><span class="p">({</span>
+<span class="w">  </span><span class="nx">targetDebt</span><span class="p">,</span><span class="w">          </span><span class="c1">// desired debt/GDP path, % (length H) — e.g. a flat 100% anchor</span>
+<span class="w">  </span><span class="nx">effRate</span><span class="p">,</span><span class="w"> </span><span class="nx">gNomQ</span><span class="p">,</span><span class="w">      </span><span class="c1">// read off the current forecast (% p.a. and % per QUARTER)</span>
+<span class="w">  </span><span class="nx">d0</span><span class="o">:</span><span class="w"> </span><span class="kt">122.3</span><span class="p">,</span><span class="w"> </span><span class="nx">sfa</span><span class="p">,</span>
+<span class="p">})</span>
+<span class="c1">// pb[t] = annual primary balance (% of GDP) per quarter that makes debt follow targetDebt:</span>
+<span class="c1">//   pb = 4·[(d₋₁ + int/4)/(1+gQ) − d_t] + sfa,  d₋₁ taken along the TARGET path.</span>
+<span class="c1">// Feed pb back via the revenue − primaryExp linConstraints of conditionalForecast (see kalman.ts),</span>
+<span class="c1">// then re-read effRate/gNomQ and re-invert — 1–2 passes converge (rate &amp; growth respond via the BVAR).</span>
+</code></pre></div>
+<p>Called from <code>useConditionalForecast.ts</code> and <code>ChartGrid.tsx</code> (single-bloc) and from
+<code>runGvarBandSolve.ts</code> (GVAR mode — the per-draw US fiscal block).</p>
+<hr />
+<h2 id="taylor-rulets"><code>taylor-rule.ts</code><a class="headerlink" href="#taylor-rulets" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> Helpers for a rule-based mode: an implied policy-rate path from a 3-parameter
+Taylor rule, plus translation to the Macroeconomic Model Database (MMB) 33-coefficient rule format.
+<strong>No component currently imports this module</strong> (no callers in <code>src/</code>, no test) — it is a standalone,
+self-contained API kept for the rule-based path.</p>
+<div class="highlight"><pre><span></span><code>r_t = ρ·r_{t-1} + (1-ρ)·[r* + φ_π·(π_t − π*) + φ_y·y_t]
+</code></pre></div>
+<h3 id="key-exports_3">Key exports<a class="headerlink" href="#key-exports_3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Input → output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>computeTaylorRule(params: TaylorRuleParams, baselineRate, inflationDev, outputDev)</code></td>
+<td>applies the rule in deviations from baseline → <code>{ ratePath: Float64Array, rateDeviation: Float64Array }</code>. <code>params</code> = <code>{ rho, phiPi, phiY, rStar, piStar }</code> (<code>rStar</code>/<code>piStar</code> default <code>2.0</code>). All deviation arrays length <code>H</code>.</td>
+</tr>
+<tr>
+<td><code>taylorToMMBCoefficients(params)</code></td>
+<td>→ <code>number[33]</code>: <code>coeffs[0] = ρ</code>; <code>coeffs[4..7] = φ_π·(1−ρ)/4</code> (annual inflation split over 4 quarters); <code>coeffs[13] = φ_y·(1−ρ)</code>; <code>coeffs[31]=1</code>, <code>coeffs[32]=0.25</code> (rate std).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="barnichon-mestersts"><code>barnichon-mesters.ts</code><a class="headerlink" href="#barnichon-mestersts" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> Optimal monetary policy via the Barnichon &amp; Mesters (2023 AER) sufficient-
+statistics approach: given DSGE IRFs to a policy shock, find the shock sequence minimizing the
+central bank's loss, as a regularized least-squares QP <code>min (H·ε − b)ᵀ W (H·ε − b)</code>,
+<code>ε* = (HᵀWH)⁻¹ HᵀWb</code>.</p>
+<h3 id="key-exports_4">Key exports<a class="headerlink" href="#key-exports_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Input → output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>optimizePolicy(irfs: DSGEIRFs, targetInflation, targetOutput, lambdaPi, lambdaY)</code></td>
+<td><code>irfs = { inflation, outputgap, interest }</code> (number[] IRFs); targets are <code>Float64Array(H)</code> deviations. → <code>BMOptimizationResult</code> (<code>optimalShocks</code>, <code>policyPath</code>, <code>impliedInflation</code>, <code>impliedOutput</code>, <code>loss</code>). Builds Toeplitz convolution matrices via <code>matrix.toeplitzLower</code>; normal equations regularized with <strong>Tikhonov <code>α = 1e-6</code></strong> on the diagonal.</td>
+</tr>
+<tr>
+<td><code>computeCounterfactualDeltas(irfs: Record&lt;string, number[]&gt;, rateDeviation: Float64Array)</code></td>
+<td>back out the shock sequence from a desired rate deviation (forward substitution on the lower-triangular interest IRF), then convolve every IRF → <code>Record&lt;string, Float64Array&gt;</code> of per-variable deltas. Reads <code>irfs['interest']</code> or <code>irfs['interest_']</code>; <strong>throws</strong> if neither is present or if the impact effect <code>|interestIRF[0]| &lt; 1e-6</code>.</td>
+</tr>
+</tbody>
+</table>
+<p><code>optimizePolicy</code> is called from <code>components/controls/ControlPanel.tsx</code>. <code>computeCounterfactualDeltas</code>
+is currently only exercised by <code>barnichon-mesters.test.ts</code>.</p>
+<hr />
+<h2 id="longruntiltts"><code>longRunTilt.ts</code><a class="headerlink" href="#longruntiltts" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> After-estimation entropic tilting toward a "Prior for the Long Run" (PLR)
+restriction (Giannone–Lenza–Primiceri 2019). It does <strong>not</strong> re-estimate: it takes the existing
+posterior draws and computes per-draw importance weights <code>w_i ∝ exp(γ'·g_i)</code> so the weighted mean
+of each long-run moment hits a target, then the band loop applies them as weighted quantiles.
+Ported from <code>pipeline/_verify/entropic_tilt.m</code>.</p>
+<h3 id="the-long-run-moment">The long-run moment<a class="headerlink" href="#the-long-run-moment" title="Permanent link">&para;</a></h3>
+<p>Default <code>mode: 'forecast'</code> — <code>g = h'·E[y_{T+H}]</code>, the <code>H</code>-step mean forecast (default
+<code>horizon = 40 ≈ 10y</code>). The alternative <code>mode: 'steadyState'</code> (<code>g = h'·(I−ΣB_l)⁻¹c</code>) is <strong>opt-in
+and only valid for genuinely stationary combinations</strong>: on the I(1) <code>100·log</code>-level real VARs
+<code>(I−ΣB_l)</code> is near-singular and the steady state diverges (verified <code>−21103</code> vs an <code>H≈40</code> forecast
+of <code>+35</code>), so <code>forecast</code> is the default.</p>
+<h3 id="key-exports_5">Key exports<a class="headerlink" href="#key-exports_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Input → output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>computeLongRunMoments(draws, historicalData, restrictions, opts?)</code></td>
+<td>per draw, per restriction → <code>gByDraw[r] = Float64Array(nDraws)</code></td>
+</tr>
+<tr>
+<td><code>solveEntropicTilt(gByDraw, restrictions, opts?)</code></td>
+<td>Newton dual with backtracking line search → <code>LongRunTiltResult</code> (<code>weights</code>, <code>ess</code>, <code>tiltedMean</code>, <code>priorMean</code>, <code>gamma</code>, <code>converged</code>, <code>maxResidual</code>). <code>maxIter</code> default <code>200</code>, gradient <code>tol</code> default <code>1e-10</code>.</td>
+</tr>
+<tr>
+<td><code>longRunTilt(...)</code></td>
+<td>convenience wrapper: moments + tilt</td>
+</tr>
+<tr>
+<td><code>computeLongRunTilt(draws, historicalData, anchors: AnchorSpec[], opts?)</code></td>
+<td><strong>the function <code>ChartGrid</code> consumes</strong>: display-unit variable anchors → <code>LongRunTiltDiagResult</code> (<code>weights</code>, <code>ess</code>, <code>nDraws</code>, <code>tiltedMean</code>, <code>priorMean</code>, <code>maxResidual</code>, <code>converged</code>). Empty anchors → uniform weights / full ESS.</td>
+</tr>
+<tr>
+<td><code>computeAnchorMoments(draws, historicalData, anchors)</code></td>
+<td>one mean-forecast pass per draw; <code>log</code> anchor → <code>4·Δ</code> annualized growth at <code>H</code>, <code>lin</code> anchor → level at <code>H</code></td>
+</tr>
+<tr>
+<td><code>weightedQuantile(values, weights, q)</code></td>
+<td>weighted quantile (drops non-finite, renormalizes)</td>
+</tr>
+<tr>
+<td><code>weightedBands(drawPaths, weights, H, n, qLo=0.16, qHi=0.84)</code></td>
+<td>per-draw paths → <code>{ q16, q84 }</code>, each <code>(H × n)</code></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">AnchorSpec</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">varIdx</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">isLog</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span><span class="w"> </span><span class="nx">target</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">horizon?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p><code>PosteriorDraws</code> is the flat draws layout <code>beta[draw*k*nv + j*k + i]</code>, <code>beta_shape = [k, nv, nDraws]</code>
+— the same layout <code>loadCompanionDraws</code> produces. <strong>ESS = <code>1/Σwᵢ² ∈ [1, nDraws]</code></strong>; a joint
+multi-constraint tilt can degenerate (<code>ESS → 1</code>) at low draw counts, so <code>computeLongRunTilt</code>
+std-scales each anchor by its own sample standard deviation for conditioning.</p>
+<blockquote>
+<p>⚠️ <strong>Non-finite long-run moments are NOT filtered before the Newton dual (known issue #2).</strong>
+<code>solveEntropicTilt</code> builds <code>Gc</code> straight from <code>gByDraw</code> and the softmax <code>exp(Σ Gc·γ)</code> will <code>NaN</code> if
+any draw's moment is non-finite (an unstable draw whose long-horizon forecast diverged), silently
+emptying the anchor band. The scaling pre-pass skips non-finite values, but the matrix fed to the dual
+does not. See <a href="#known-issues--limitations-flagged-for-fix-not-yet-fixed">Known issues #2</a>.</p>
+</blockquote>
+<hr />
+<h2 id="dataloaderts"><code>data/loader.ts</code><a class="headerlink" href="#dataloaderts" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> Per-country single-bloc JSON fetch for the standalone (non-GVAR) views, plus
+the DSGE catalog/IRF loaders. Fetch base is <code>${NEXT_PUBLIC_BASE_PATH || ''}/data</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>loadJSON&lt;T&gt;(path)</code></td>
+<td><code>fetch</code> + parse; throws on non-OK</td>
+</tr>
+<tr>
+<td><code>loadBVARData(country)</code></td>
+<td><code>{ spec, companion, baseline, historical, companionDraws: null, baselineLevels, historicalLevels, fiscalMeta }</code>. <code>baseline_levels</code> / <code>historical_levels</code> / <code>fiscal_meta</code> are optional (404 → null). <code>companion_draws</code> is <strong>not</strong> fetched here (loaded lazily).</td>
+</tr>
+<tr>
+<td><code>loadCompanionDraws(country)</code></td>
+<td>the heavy draws file (US <code>beta</code> ~2M doubles). <strong>Converts <code>beta</code>/<code>sigma</code> from boxed <code>number[]</code> to <code>Float64Array</code> once</strong> (faster indexing + memcpy into the worker). 404 → null.</td>
+</tr>
+<tr>
+<td><code>loadDSGECatalog()</code> / <code>loadModelIRFs(modelName, ruleName)</code></td>
+<td>DSGE catalog + per-rule IRFs</td>
+</tr>
+</tbody>
+</table>
+<p>The draws cache is a <strong>bounded LRU</strong> (<code>_DRAWS_CACHE_MAX = 4</code>): each <code>companion_draws</code> is
+~7–26 MB, so browsing all ~50 economies would otherwise retain hundreds of MB; eviction is
+transparent (a miss re-fetches).</p>
+<hr />
+<h2 id="datagvarloaderts"><code>data/gvarLoader.ts</code><a class="headerlink" href="#datagvarloaderts" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> Multi-bloc GVAR bundle fetch + self-configuring topology. Tries every
+candidate bloc in <code>weights_24bloc.json</code> (US first), tolerates 404s, and keeps a bloc iff its spec
+carries <code>block:'row'</code> stars (US always kept as anchor). The qualifying set re-configures the
+solver topology via <code>configureGVARTopology</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Export</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GVAR_COUNTRIES</code></td>
+<td>active GVAR codes, US first; mutated in place by <code>qualifyGVARRaw</code></td>
+</tr>
+<tr>
+<td><code>isGvarCountry(country)</code></td>
+<td>the single GVAR-membership predicate</td>
+</tr>
+<tr>
+<td><code>loadGVARModels()</code></td>
+<td>fetches the 4 engine files per bloc (<code>companion_mean</code>, <code>historical_levels</code>, <code>baseline_levels</code>, <code>spec</code>) — <strong>not</strong> the heavy <code>companion_draws</code> — plus the 404-tolerant coupling artifact → <code>GVARModelsRaw</code></td>
+</tr>
+<tr>
+<td><code>qualifyGVARRaw(raw)</code></td>
+<td>configures topology + drops non-qualifying blocs; idempotent</td>
+</tr>
+<tr>
+<td><code>gvarSignature(raw)</code></td>
+<td>cheap stable signature (codes, <code>n</code>, <code>lags</code>, <code>horizon</code>, a few betahat/sigmahat entries) keying the model + coupling caches</td>
+</tr>
+<tr>
+<td><code>buildGVARCountryModels(raw)</code></td>
+<td>builds (and caches by signature) the <code>CountryModel</code>s; each runs the unconditional smoother once</td>
+</tr>
+</tbody>
+</table>
+<p><code>loadCouplingArtifact()</code> tries the <strong>gzipped</strong> <code>coupling_default.json.gz</code> first (decompressed via
+the native <code>DecompressionStream</code>, no dependency — the plain JSON exceeds GitHub's 100 MB limit at
+the full panel), then falls back to plain JSON. <code>GVARModelsRaw</code> is plain JSON so it round-trips
+through zustand and the Web Worker.</p>
+<hr />
+<h2 id="datacountriests"><code>data/countries.ts</code><a class="headerlink" href="#datacountriests" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> The static country registry backing the dropdown (<code>TopBar</code>). <code>COUNTRIES</code> is a
+<code>CountryEntry[]</code> (<code>{ code, name, group }</code>); <code>group</code> (<code>'core' | 'oecd' | 'em'</code>) is only a coarse
+geographic tag for sorting — <strong>GVAR membership is data-driven</strong> via <code>isGvarCountry</code> /
+<code>GVAR_BLOC_CANDIDATES</code>, not this field. Adding a country = add an entry here and drop its
+<code>app/public/data/bvar/&lt;code&gt;/</code> files. Convenience filters: <code>CORE_COUNTRIES</code>, <code>OECD_COUNTRIES</code>,
+<code>EM_COUNTRIES</code>.</p>
+<hr />
+<h2 id="conditioneddotyts-optimistic-conditioned-point-dot"><code>conditionedDotY.ts</code> — optimistic conditioned-point dot<a class="headerlink" href="#conditioneddotyts-optimistic-conditioned-point-dot" title="Permanent link">&para;</a></h2>
+<p><strong>Path.</strong> <code>app/src/lib/conditionedDotY.ts</code> (it lives directly under <code>lib/</code>, <strong>not</strong> under <code>lib/compute/</code>).</p>
+<p><strong>Responsibility.</strong> Convert between the <strong>clicked display value</strong> and the <strong>stored conditioning-path
+deviation</strong>, as an exact inverse pair, so a pinned marker (the "dot") snaps to the just-clicked value
+<strong>instantly</strong> — without waiting for the ~700 ms forecast recompute. The dot is sourced from the
+conditioning path the click writes (instant); the forecast line + uncertainty bands still come from the
+solve and reconcile a moment later. Two functions, exact inverses (<code>conditionedDotDisplayY ∘
+conditioningDeviationFromDisplayY = id</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>conditioningDeviationFromDisplayY(displayY, baseMeanVal, baseLevelVal, specVarId)</code> (<code>conditionedDotY.ts:62</code>)</td>
+<td><strong>display → stored</strong>. Level-display vars (oil/FX/equity/house): <code>dev = indexLevelToLog(displayY) − baseLevelVal</code>. Other vars (growth-displayed <code>log</code> / <code>lin</code>): <code>dev = displayY − baseMeanVal</code>.</td>
+</tr>
+<tr>
+<td><code>conditionedDotDisplayY(dev, baseMeanVal, baseLevelVal, specVarId)</code> (<code>conditionedDotY.ts:34</code>)</td>
+<td><strong>stored → display</strong> (the inverse). Level vars: <code>logToIndexLevel(baseLevelVal + dev)</code>. Other vars: <code>baseMeanVal + dev</code>.</td>
+</tr>
+</tbody>
+</table>
+<p><code>isLevelDisplay(specVarId)</code> (from <code>displayUnits.ts</code>) decides the branch. The forward map is the
+<strong>single source of truth</strong> for both <code>handleDrag</code> (drag a pin) and the right-click "plant a bullet at the
+cursor" activation — keeping them beside each other guarantees a conditioned point always round-trips to
+the cursor for every variable type (no transform double-applied). Used in <code>ChartGrid.tsx</code>:
+<code>conditioningDeviationFromDisplayY</code> at the drag/right-click write (lines ~1230, ~1300) and
+<code>conditionedDotDisplayY</code> at the dot render (line ~1656, where active+conditioned quarters override the
+scenario forecast <code>y</code> with the reconstructed click value). Pinned by <code>conditioned-dot-optimistic.test.ts</code>
+and <code>right-click-plant-at-cursor.test.ts</code>.</p>
+<hr />
+<h2 id="computegvardragstatets-dragcompute-signal-bus"><code>compute/gvarDragState.ts</code> — drag/compute signal bus<a class="headerlink" href="#computegvardragstatets-dragcompute-signal-bus" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> A tiny <strong>module-level</strong> signal bus shared between the chart drag handler
+(<code>ChartGrid.tsx</code>) and the GVAR solve hook (<code>useGvarForecast.ts</code>). It exists <strong>off the zustand store on
+purpose</strong>: the drag begin/end and in-flight flags are pure UI signals that must NOT enter the
+scenario/pins state — putting them in the store would re-render the whole grid on every
+pointer-down/up. <code>useSyncExternalStore</code> lets only the badge subscribe to the in-flight flag, while
+<code>useGvarForecast</code> reads the drag flag imperatively + subscribes to drag-END.</p>
+<table>
+<thead>
+<tr>
+<th>Export</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>beginGvarDrag()</code> / <code>endGvarDrag()</code></td>
+<td>mark pointer-down / pointer-up; <code>endGvarDrag</code> notifies the drag-END subscribers so a <strong>held</strong> structure-change solve fires exactly once for the committed pin</td>
+</tr>
+<tr>
+<td><code>isGvarDragging()</code> / <code>getGvarDragging()</code></td>
+<td>imperative read of the drag flag</td>
+</tr>
+<tr>
+<td><code>onGvarDragEnd(fn)</code></td>
+<td>subscribe to pointer-up (returns an unsubscribe); the channel <code>useGvarForecast</code> uses to dispatch the deferred solve</td>
+</tr>
+<tr>
+<td><code>subscribeGvarDragging(fn)</code></td>
+<td><code>useSyncExternalStore</code> subscribe to the drag FLAG (begin + end) — lets <code>ChartGrid</code>'s <code>effective</code> memo reactively swap the viewed bloc's line between the frozen GVAR path (idle) and the cheap live <code>condForecast</code> (dragging)</td>
+</tr>
+<tr>
+<td><code>setGvarComputing(on)</code> / <code>subscribeGvarComputing(fn)</code> / <code>getGvarComputing()</code></td>
+<td>the "computing…" badge state (only the badge re-renders)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why two listener sets.</strong> <code>_dragFlagListeners</code> fires on begin AND end (drives the line fallback);
+<code>_dragEndListeners</code> fires only on pointer-up (dispatches the held solve). Sharing one would either
+re-render on every begin or fail to dispatch on end. Tested by <code>gvar-drag-scheduling.test.ts</code> and
+<code>gvar-drag-line-band.test.ts</code>.</p>
+<hr />
+<h2 id="usegvarforecastts-drag-aware-two-tier-gvar-solve-hook"><code>useGvarForecast.ts</code> — drag-aware two-tier GVAR solve hook<a class="headerlink" href="#usegvarforecastts-drag-aware-two-tier-gvar-solve-hook" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> The React hook that turns the active bloc's own-pins into a propagated GVAR
+forecast, <strong>keeping the heavy solve off the live drag path</strong>. It owns a module Worker (main-thread
+fallback), a stale-response <code>reqId</code> guard, and two timers (a live debounce + a separate drag-release
+macrotask). The <strong>load-bearing perf fact</strong> (verified in the code, <code>useGvarForecast.ts:279</code>): on the
+live 50-bloc US-endogenous panel <strong>every</strong> mean solve — direct OR full — is <strong>~4571 ms warm /
+~13327 ms cold</strong> (the US-pinned structure misses the shipped <em>empty</em>-<code>pinStructure</code> coupling artifact
+and falls to the dim-2060 Neumann fixed point + one Kalman smoother per coupled bloc).</p>
+<p>The drag boundary (<code>useGvarForecast.ts:287</code>):</p>
+<ul>
+<li><strong>While a drag is in progress (<code>isGvarDragging()</code>): ZERO solves fire</strong> — neither value-only nor
+  structure-change. The hook marks <code>pendingReleaseSolveRef = true</code> and bails. The dragged bloc's own
+  line still follows the cursor live because <code>ChartGrid</code>'s <code>effective</code> falls back to the single-country
+  <code>condForecast</code> (a ~1–5 ms DK smoother) while <code>gvarFc</code> is frozen at the last solve.</li>
+<li><strong>On pointer-up (<code>onGvarDragEnd</code>)</strong>: exactly <strong>one</strong> <code>direct</code> solve is dispatched, deferred to a
+  ~100 ms macrotask (coalesces back-to-back gestures + lands after the final store write flushes into
+  <code>dataRef</code>). <code>direct</code> is used so the ~95 MB coupling artifact is <strong>stripped</strong> (<code>withoutCoupling</code>) from
+  the worker post — <code>solveGVARDirect</code> rebuilds/caches <code>M</code> from the per-bloc kernel cache and never
+  consumes the inverse.</li>
+<li><strong>Non-drag edits</strong> (numeric/programmatic pin entry, Reset, scenario switch) dispatch live: <code>full</code>
+  solves immediately (explicit user action — <code>solveFullToken</code> bumped via Compute / "Solve full GVAR"),
+  <code>direct</code> previews after a 120 ms debounce.</li>
+</ul>
+<p>So the full cross-country fixed point (<code>mode:'full'</code>, hydrated <code>(I−M)⁻¹</code>) fires <strong>only</strong> on the explicit
+Compute / "Solve full GVAR" token bump; everything else is the <code>direct</code> one-hop preview. Pinned by
+<code>gvar-drag-scheduling.test.ts</code>.</p>
+<hr />
+<h2 id="render-memoization-in-chartgrid-reconcilecharts-chartdeepequal-reactmemo">Render memoization in <code>ChartGrid</code> (<code>reconcileCharts</code> + <code>chartDeepEqual</code> + <code>React.memo</code>)<a class="headerlink" href="#render-memoization-in-chartgrid-reconcilecharts-chartdeepequal-reactmemo" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility (Phase-2 render optimization, issue #68).</strong> A single conditioning edit changes
+<code>scenarios</code>, re-running the monolithic <code>charts</code> <code>useMemo</code> → every chart object gets a fresh identity →
+absent memoization, Plotly would repaint <strong>all ~35 panels</strong>. Two levers (in <code>ChartGrid.tsx</code>) make one
+edit repaint ≈1 panel:</p>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Where</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>chartDeepEqual(a, b)</code></td>
+<td><code>ChartGrid.tsx:173</code></td>
+<td>tight structural equality over the chart objects (plain objects / arrays / primitives — no Maps/Sets/Dates/functions appear in a chart object)</td>
+</tr>
+<tr>
+<td><code>reconcileCharts(next, prev, onRebuilt?)</code></td>
+<td><code>ChartGrid.tsx:205</code></td>
+<td>reuses the PRIOR render's object reference for any panel whose freshly-built content is deep-equal (keyed by <code>chartVar.bvarIdx</code>, so a panel maps to its prior self even if list order/length shifts on a country switch); returns the prior array when <em>every</em> element kept its reference (stable outer identity, no <code>[charts]</code> effect churn)</td>
+</tr>
+<tr>
+<td><code>MemoDraggableChart = memo(DraggableChart)</code></td>
+<td><code>ChartGrid.tsx:2523</code></td>
+<td>so a stable chart reference + the grid's <code>useCallback</code>'d handler props mean an unchanged panel does not re-render / repaint</td>
+</tr>
+</tbody>
+</table>
+<p>The math/builder is untouched: <code>reconcileCharts</code> only swaps a NEW object for an EQUAL old one, so the
+rendered data is byte-identical; it just preserves reference identity where the content did not move. Two
+test-only instrumentation counters (<code>chartRebuildCounter</code>, <code>draggableChartRenderCounter</code>, both exported,
+~zero production cost) let <code>chartgrid-render-memo.test.ts</code> assert that one conditioning edit rebuilds ≈1
+panel and re-renders only the touched panel(s), not all ~35.</p>
+<hr />
+<h2 id="empirical-evaluation-companion-repo-in-progress">Empirical evaluation (companion repo — in progress)<a class="headerlink" href="#empirical-evaluation-companion-repo-in-progress" title="Permanent link">&para;</a></h2>
+<p>A separate repository — <strong><code>em-bayesian-gvar-eval</code></strong> (sibling to this one) — turns the deployed
+engine + the MATLAB estimator into a publishable evaluation. It does <strong>not</strong> ship in the app; it is
+the empirical core of the paper. The full design is final in
+<code>em-bayesian-gvar-eval/docs/EMPIRICAL_PROTOCOL.md</code>; results are <strong>preliminary / forthcoming</strong>.</p>
+<p>It races two <strong>proposed</strong> models against six benchmarks (model codes are the registry in
+<code>eval/tables.py</code> / <code>eval/score.py</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Model</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>emgvar_endo</code></td>
+<td>EM-Bayesian GVAR, US <strong>endogenous</strong></td>
+<td>proposed (headline)</td>
+</tr>
+<tr>
+<td><code>emgvar_frozen</code></td>
+<td>EM-Bayesian GVAR, frozen US anchor</td>
+<td>proposed</td>
+</tr>
+<tr>
+<td><code>rw</code></td>
+<td>driftless Random Walk (+ sample-mean "climatology" anchor)</td>
+<td>universal reference</td>
+</tr>
+<tr>
+<td><code>arp</code></td>
+<td>AR(p), <code>p</code> by AIC over <code>{1..4}</code>, iterated <strong>and</strong> direct</td>
+<td>strong univariate</td>
+</tr>
+<tr>
+<td><code>sbvar</code></td>
+<td>single-country Bayesian VAR (stars dropped, same prior)</td>
+<td>isolates <strong>coupling</strong></td>
+</tr>
+<tr>
+<td><code>cgvar_a</code></td>
+<td>textbook OLS Pesaran–Schuermann–Weiner / Dees GVAR (no COVID-as-missing)</td>
+<td>literature GVAR</td>
+</tr>
+<tr>
+<td><code>cgvar_b</code></td>
+<td>single-pass Bayesian GVAR (<code>MAXIT=1</code>, COVID-as-missing)</td>
+<td>isolates <strong>EM completion</strong></td>
+</tr>
+<tr>
+<td><code>dfm</code></td>
+<td>Bayesian dynamic factor model</td>
+<td>non-GVAR global benchmark</td>
+</tr>
+</tbody>
+</table>
+<p>Nesting map (stated in the paper): <code>sbvar ⊂ cgvar_b ⊂ emgvar_*</code>; RW/AR nested in every VAR.</p>
+<p><strong>Design (final).</strong> Recursive <strong>expanding window</strong>, origins <strong>2010Q1–2024Q4</strong> (drop the 2020
+COVID origins from the headline); <strong>rolling as-of-<code>t0</code></strong> trade weights (leak-free — built from IMTS
+bilateral trade with <code>endPeriod ≤ year(t0)</code>; the shipped 2021–2023 <code>weights_full.json</code> is
+<strong>forbidden</strong> in the OOS sweep, as it would inject future trade structure); targets <code>{real GDP
+growth, inflation, short rate}</code> for <code>US/EA/JP/UK/CA/CN</code>; horizons <code>h ∈ {1, 2, 4, 8}</code> (each scored
+only where a ≤2025Q4 realization exists). COVID-as-missing reapplies <strong>in-sample</strong> at every origin
+where 2020Q2–Q4 ≤ <code>t0</code>.</p>
+<p><strong>Scoring.</strong> <strong>CRPS</strong> is the primary density score (ensemble estimator, robust at the modest draw
+counts); a parametric Gaussian/skew-t <strong>log-score</strong> corroborates; <strong>PIT / coverage</strong> for
+calibration. Significance: <strong>Giacomini–White</strong> is the headline test (valid under nesting <em>and</em> the
+recursive scheme), <strong>Clark–West</strong> for nested point/MSE comparisons, <strong>Diebold–Mariano</strong> (HAC,
+HLN-corrected) for non-nested pairs only; multiplicity handled with <strong>Romano–Wolf</strong> + the <strong>Model
+Confidence Set</strong> per (variable, horizon).</p>
+<p><strong>Part 2 — spillovers.</strong> Tier A (ships now, zero new estimator code): the <strong>conditional-scenario</strong>
+endogenous-vs-frozen US contrast, driven through the shipped <code>gvarSolve.ts</code> (<code>x = Mx + d</code>) — its
+driver is <code>em-bayesian-gvar-eval/eval/tier_a_scenario.mjs</code>, specified to be exercised from the main
+repo via a vitest harness (<code>app/src/__tests__/eval/tierA_spillover.test.ts</code>, planned). Tier B (new
+<code>gvar_girf</code> module, constructible from the exported <code>betahat</code>/<code>Σ</code> + coupling <code>M</code>): GIRF /
+generalized FEVD / Diebold–Yilmaz index.
+The protocol is explicit that <code>gvarSolve.ts</code> computes <strong>conditional-mean scenario deltas, not
+GIRFs/FEVD</strong> — the only <code>spillover</code> strings in this repo are UI labels.</p>
+<p><strong>Headline result (first full pass — <code>results/tables.{txt,json}</code>, 56 origins, 9 models).</strong> AR(p)/DFM
+have the lowest point CRPS, but the <strong>90% Model Confidence Set</strong> is the publishable signal:
+<code>emgvar_endo</code> is <strong>in the inflation MCS at all horizons</strong> and the <strong>short-rate MCS at h=1,2,4</strong>
+(indistinguishable from the best on the nominal block), <strong>out of the growth MCS at h=1 &amp; h=8</strong>;
+<code>emgvar_endo ⪰ emgvar_frozen</code> across the MCS; and the EM-Bayesian treatment <strong>decisively beats the
+textbook OLS classical GVAR</strong> (<code>cgvar_a</code> is removed from most sets). The unconditional point leader for
+inflation h=1 is the univariate <strong>AR(p) (relRMSE 0.641)</strong>; <code>emgvar_endo</code> (relRMSE <strong>0.799</strong>) is the best
+<strong>among the EM/GVAR family</strong>, not the overall best. <strong>Honest caveats:</strong> the draw-based densities are <strong>over-confident</strong> (PIT cov90
+~0.73–0.83 vs 0.90), and the parametric log-score column is <strong>numerically broken</strong> (CRPS + MCS are the
+robust primaries). Tier-A (<code>results/tierA/us_rate_100bp.json</code>) shows non-trivial endogenous-only
+cross-country feedback the frozen anchor omits, <strong>but</strong> the magnitudes are large/sign-flipping and it is a
+<strong>multi-period conditional projection, NOT a causal IRF</strong> — needs a validation pass before being
+headlined. The <strong>design is final</strong>; see <code>em-bayesian-gvar-eval/docs/EMPIRICAL_PROTOCOL.md</code>.</p>
+<hr />
+<h2 id="known-issues-limitations-flagged-for-fix-not-yet-fixed">Known issues &amp; limitations (flagged-for-fix, NOT yet fixed)<a class="headerlink" href="#known-issues-limitations-flagged-for-fix-not-yet-fixed" title="Permanent link">&para;</a></h2>
+<p>Documented honestly so a reader does not mistake a known bias for a verified result. Each is
+<strong>flagged-but-unfixed</strong> at the current deployment; cite this section, do not silently rely on the
+affected output.</p>
+<ol>
+<li>
+<p><strong>CN fiscal debt — inflation double-count (<code>fiscalAccounting.ts</code>). RESOLVED (2026-06).</strong> The CN
+   debt-snowball roll-forward computes nominal growth as <code>gQ = Δ(level[idx.gdp]) + Δ(level[idx.deflator])</code>.
+   CN previously shipped a <strong>nominal</strong> <code>GDP_CN</code>, so the price term was double-counted and the CN
+   debt-to-GDP path was biased. The <strong>surgical CN-only re-estimate</strong> replaced <code>GDP_CN</code> with real GDP
+   (<code>spec.json</code> var 0 = "CN Real GDP (quarterly, chain-linked SA volume index, base 2011Q1=100)",
+   <code>fiscal_meta.json idx.gdpIsNominal = false</code>), so the snowball now reads the correct real-GDP + deflator
+   nominal growth, matching US/EA/JP/UK/CA. The fix re-estimated <strong>CN only</strong>; the other 32 GVAR blocs are
+   byte-identical to the prior working model.</p>
+</li>
+<li>
+<p><strong>Entropic long-run tilt does not filter non-finite moments (<code>longRunTilt.ts</code>).</strong>
+   <code>solveEntropicTilt</code> builds the centered/scaled constraint matrix <code>Gc.push(col)</code> directly from the
+   per-draw moments <code>gByDraw</code> (<code>longRunTilt.ts:~254</code>) and never drops non-finite draws. The Newton dual
+   then evaluates <code>z[i] = Σ Gc[r][i]·γ_r</code> and <code>exp(z[i] − zmax)</code> (<code>:284</code>–<code>:289</code>): a single non-finite
+   <code>Gc[r][i]</code> (from an <strong>unstable draw</strong> whose long-horizon forecast diverged) makes <code>z[i]=NaN</code>,
+   <code>exp(NaN)=NaN</code>, which poisons <code>wsum</code> and <strong>silently empties the anchor band</strong> (all weights NaN). The
+   scaling pre-pass <em>does</em> skip non-finite values when computing each anchor's mean/std (<code>:529</code>–<code>:532</code>),
+   but the matrix fed to the dual is not filtered. Fix: drop the non-finite draws (and renormalize)
+   before the Newton iteration, as <code>weightedQuantile</code> already does at the band step.</p>
+</li>
+<li>
+<p><strong>No <code>ρ(M) &lt; 1</code> divergence guard on the live closed-form solve (<code>gvarSolve.ts</code>).</strong> The endogenous
+   Neumann fixed point <code>x ← d + M·x</code> (<code>gvarSolve.ts:1296</code>) iterates to <code>maxIt = 2000</code> or a relative
+   tolerance <code>1e-10·(1+‖x‖)</code> — but there is <strong>no check that <code>ρ(M) &lt; 1</code></strong>. If a refit produced a <code>M</code> with
+   <code>ρ ≥ 1</code> (a non-stationary coupling), the iteration would diverge (or stop at <code>maxIt</code> far from a fixed
+   point) and the solver would return a <strong>confident-wrong</strong> forecast with no warning. <code>ρ</code> <em>is</em> computed
+   at export time and shipped in the artifact (and is currently 0.924), but the live solve does not read
+   it as a guard. Fix: assert <code>coupling.rhoSpectral &lt; 1</code> (or estimate <code>ρ</code> and bail/flag) before trusting
+   the iterate.</p>
+</li>
+<li>
+<p><strong>Conditional band uses the FILTERED, not DK-smoothed, covariance (<code>kalman.ts</code>).</strong>
+   <code>conditionalForecast</code> returns the smoothed MEAN but extracts the per-horizon variance from the
+   <strong>filtered</strong> state covariance: <code>variances.push(submatrix(filteredP[t], 0, 0, n, n))</code>
+   (<code>kalman.ts:405</code>–<code>:409</code>, the comment says "Extract forecast variances from filtered covariances"). The
+   DK smoother would tighten the covariance for quarters that <em>precede</em> a future pin (a later observation
+   reduces earlier-quarter uncertainty); using the filtered covariance does not apply that reduction, so
+   the conditional band is <strong>overstated</strong> for the quarters before a future pin. The mean is correct; only
+   the band is conservative.</p>
+</li>
+<li>
+<p><strong>The porter does not regenerate <code>fiscal_meta.json</code> — STALE-POSITIONAL-INDEX
+   (<code>port_gvar_exports.py</code>).</strong> <code>fiscal_meta.json</code>'s six <code>idx</code> values are positional column offsets, but
+   <code>pipeline/port_gvar_exports.py</code> ports the file verbatim. Any variable-order change (the 33-bloc
+   GVAR-EM refit inserted variables ahead of the fiscal block in every spec except US) silently
+   re-points them — EA's <code>effRate</code> once landed on the equity index (~col 537) and <strong>debt/GDP exploded</strong>.
+   <strong>Mitigation (mandatory after any re-port):</strong> run <code>node pipeline/fix_fiscal_meta_indices.mjs</code>, which
+   re-resolves all six indices BY VARIABLE ID from the deployed <code>spec.json</code> (idempotent, preserves
+   <code>d0</code>/<code>sfaDefault</code>). <code>fiscal-meta-indices.test.ts</code> is the guard that blocks a deploy with stale
+   indices. See <a href="../DATA_SCHEMA/">DATA_SCHEMA §9</a> and <a href="../ARCHITECTURE_FOR_AI/">ARCHITECTURE §7</a>.</p>
+</li>
+</ol>
+<hr />
+<h2 id="build-test">Build &amp; test<a class="headerlink" href="#build-test" title="Permanent link">&para;</a></h2>
+<p>From <code>app/</code>:</p>
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>tsc<span class="w"> </span>--noEmit<span class="w">     </span><span class="c1"># type check</span>
+npm<span class="w"> </span><span class="nb">test</span><span class="w">             </span><span class="c1"># FAST suite (vitest run minus the heavy solver --exclude globs)</span>
+npm<span class="w"> </span>run<span class="w"> </span>test:heavy<span class="w">   </span><span class="c1"># HEAVY solver/perf canaries (1 fork) — BOTH halves gate the deploy</span>
+npm<span class="w"> </span>run<span class="w"> </span>build<span class="w">        </span><span class="c1"># static export</span>
+</code></pre></div>
+<p>Compute-engine tests live in <code>app/src/__tests__/compute/</code>. The suite is <strong>split</strong> — <code>npm test</code> is
+<code>vitest run</code> minus seven heavy <code>--exclude</code> patterns; <code>npm run test:heavy</code> runs exactly those serialised
+to one fork; <code>npm run test:all</code> sweeps everything (see <a href="../BUILD_AND_CI/">BUILD_AND_CI.md</a>). The
+deploy-blocking canaries (all in the <strong>fast</strong> suite) are <code>scenario-scale-convention</code>, <code>gvar-convergence</code>
+(Gauss-Seidel ≡ closed-form), <code>gvar-coupling-artifact</code> (the shipped <code>.gz</code> matches a live build at the
+current <code>modelSig</code>), and <code>fiscal-meta-indices</code> (the STALE-POSITIONAL-INDEX guard above).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

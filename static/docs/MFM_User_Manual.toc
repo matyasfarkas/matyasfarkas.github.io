@@ -1,0 +1,228 @@
+\contentsline {section}{\numberline {1}Introduction}{7}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Notation}{8}{subsection.1.1}%
+\contentsline {section}{\numberline {2}BVAR Estimation}{10}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Reduced-Form VAR}{10}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Data Transformations}{10}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Reporting Units}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Hierarchical Minnesota Prior}{11}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Per-variable own-lag prior mean: random walk vs.\ stationary}{11}{subsection.2.5}%
+\contentsline {paragraph}{The mechanism (\texttt {pos}/\texttt {stationary}).}{12}{section*.3}%
+\contentsline {paragraph}{Prior, not constraint.}{12}{section*.4}%
+\contentsline {section}{\numberline {3}Companion-Form State Space}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}State Vector}{13}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Transition Equation}{13}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Observation Equation}{13}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}State-Noise Covariance}{14}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Kalman Filter and Smoother}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Conditioning via Partial Observations}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Forward Pass: Kalman Filter}{14}{subsection.4.2}%
+\contentsline {paragraph}{Algorithm: Kalman Filter with Partial Observations.}{14}{section*.5}%
+\contentsline {subsection}{\numberline {4.3}Backward Pass: Durbin--Koopman Smoother}{15}{subsection.4.3}%
+\contentsline {paragraph}{Algorithm: Durbin--Koopman Fixed-Interval Smoother.}{15}{section*.7}%
+\contentsline {paragraph}{Simulation smoother (draws, not just means).}{15}{section*.8}%
+\contentsline {subsection}{\numberline {4.4}Conditional Forecast Computation}{16}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Delta-Based Display}{17}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Uncertainty Quantification}{17}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Policy Counterfactuals}{18}{section.5}%
+\contentsline {subsection}{\numberline {5.1}DSGE Impulse Response Functions}{18}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Monetary Policy Shock Inversion}{18}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Three Conditioning Modes}{19}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Optimal Policy: Barnichon--Mesters}{20}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Global VAR (GVAR) and Global Commons}{21}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Architecture: an endogenous US and 32 partner blocs}{21}{subsection.6.1}%
+\contentsline {paragraph}{The US is now endogenous, not a frozen anchor.}{22}{section*.10}%
+\contentsline {subsection}{\numberline {6.2}Trade-weighted star variables}{22}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Trade weights}{23}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}EM estimation of the coupled system: iterative completion of the star variables}{23}{subsection.6.4}%
+\contentsline {paragraph}{Why the stars cannot be formed directly.}{24}{section*.11}%
+\contentsline {paragraph}{Relation to EM and data augmentation.}{24}{section*.12}%
+\contentsline {paragraph}{Notation.}{25}{section*.13}%
+\contentsline {paragraph}{E-step (completion).}{25}{section*.14}%
+\contentsline {paragraph}{M-step (re-estimation).}{25}{section*.15}%
+\contentsline {paragraph}{Outer fixed-point iteration.}{26}{section*.16}%
+\contentsline {paragraph}{Convergence criterion.}{26}{section*.17}%
+\contentsline {paragraph}{Numerical specifics.}{26}{section*.18}%
+\contentsline {paragraph}{Contrast with classical fixed-weight OLS GVAR.}{28}{section*.20}%
+\contentsline {subsection}{\numberline {6.5}Coupling at solve time, not estimation}{29}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Two-tier solve: live preview vs.\ the full fixed point}{32}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Global commons: US-determined common shocks}{32}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Relation to the fiscal and counterfactual layers}{33}{subsection.6.8}%
+\contentsline {section}{\numberline {7}Fiscal Blocks: Estimated Drivers and Debt Accounting}{34}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Estimated Fiscal Drivers}{34}{subsection.7.1}%
+\contentsline {paragraph}{The stock-flow adjustment as an estimated variable.}{35}{section*.22}%
+\contentsline {paragraph}{A stationary prior for the fiscal ratios.}{35}{section*.23}%
+\contentsline {subsection}{\numberline {7.2}The Budget-Identity Recursion}{36}{subsection.7.2}%
+\contentsline {paragraph}{Snowball decomposition.}{38}{section*.25}%
+\contentsline {subsection}{\numberline {7.3}Debt-Feedback Channels (dormant; possible future extension)}{38}{subsection.7.3}%
+\contentsline {paragraph}{Bohn fiscal-reaction function ($\gamma $) --- not wired in.}{39}{section*.26}%
+\contentsline {paragraph}{Risk-premium channel ($\beta $) --- not wired in.}{39}{section*.27}%
+\contentsline {paragraph}{Stock-flow-adjustment closure (the genuine SFA term).}{39}{section*.28}%
+\contentsline {subsection}{\numberline {7.4}Debt-Targeting Inversion}{40}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Display Layout}{40}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Data Treatment: the U.K.\ Index-Linked-Gilt Spike}{41}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Long-Run Targets: In-Prior Prior vs the Forward-Pass Drift Setter}{41}{section.8}%
+\contentsline {subsection}{\numberline {8.1}In-Prior Long-Run Prior (PLR)}{42}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}The Forward-Pass Drift Setter ($\delta c$)}{42}{subsection.8.2}%
+\contentsline {paragraph}{The finite-horizon response operator.}{43}{section*.29}%
+\contentsline {paragraph}{One slider, one equation.}{43}{section*.30}%
+\contentsline {paragraph}{Joint long-run restriction.}{43}{section*.31}%
+\contentsline {paragraph}{Rigid band translation.}{44}{section*.32}%
+\contentsline {paragraph}{Responsiveness.}{44}{section*.33}%
+\contentsline {paragraph}{The policy rate.}{44}{section*.34}%
+\contentsline {subsection}{\numberline {8.3}When to Use Which}{45}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Economy Coverage, Data Sources, and Estimation}{46}{section.9}%
+\contentsline {subsection}{\numberline {9.1}The GVAR System: 33 Integrated Blocs}{46}{subsection.9.1}%
+\contentsline {paragraph}{Trade weights.}{47}{section*.36}%
+\contentsline {paragraph}{Rate-optional blocs.}{47}{section*.37}%
+\contentsline {paragraph}{Cross-country coupling.}{47}{section*.38}%
+\contentsline {subsection}{\numberline {9.2}Standalone Single-Country Blocs}{48}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Data Sources}{48}{subsection.9.3}%
+\contentsline {paragraph}{Source families.}{48}{section*.39}%
+\contentsline {paragraph}{Coverage and last-observation conventions.}{49}{section*.40}%
+\contentsline {paragraph}{Provenance flags surfaced for the reader.}{50}{section*.41}%
+\contentsline {subsection}{\numberline {9.4}COVID-as-Missing Estimation}{50}{subsection.9.4}%
+\contentsline {paragraph}{Window selection.}{51}{section*.43}%
+\contentsline {paragraph}{Fixed window and macro-only masking in the production GVAR loop.}{52}{section*.44}%
+\contentsline {subsection}{\numberline {9.5}Common-Vintage Harmonization and the 2026Q1 Observed Refresh}{52}{subsection.9.5}%
+\contentsline {paragraph}{Step 1 --- estimation-build harmonization to 2025Q4.}{52}{section*.45}%
+\contentsline {paragraph}{Step 2 --- the 2026Q1 observed-data refresh (no re-estimation).}{54}{section*.46}%
+\contentsline {paragraph}{The ragged edge (panel default 2026Q1; three exceptions).}{54}{section*.47}%
+\contentsline {subsection}{\numberline {9.6}Predictive Uncertainty Bands}{54}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}US Specification}{55}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Variable Transformations, Priors, and Financial Tags by Economy}{57}{subsection.9.8}%
+\contentsline {paragraph}{Cross-economy coherence matrix.}{57}{section*.48}%
+\contentsline {paragraph}{The 33 GVAR blocs.}{57}{section*.50}%
+\contentsline {paragraph}{The 17 euro-area standalones.}{76}{section*.51}%
+\contentsline {paragraph}{Coherence review.}{87}{section*.52}%
+\contentsline {section}{\numberline {10}Per-Country Data Sources and Transformations}{87}{section.10}%
+\contentsline {paragraph}{Transformation and COVID conventions (system-wide).}{88}{section*.53}%
+\contentsline {paragraph}{The new credit block (flagged throughout).}{88}{section*.54}%
+\contentsline {subsection}{\numberline {10.1}Per-Economy Data Documentation: the Six Core Blocs}{88}{subsection.10.1}%
+\contentsline {paragraph}{Transformation and COVID conventions.}{88}{section*.55}%
+\contentsline {paragraph}{The new credit block (flagged).}{89}{section*.56}%
+\contentsline {subsection}{\numberline {10.2}United States (US)}{89}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Euro Area (EA)}{92}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Japan (JP)}{94}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}United Kingdom (UK)}{96}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}Canada (CA)}{97}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}China (CN)}{99}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}Euro-core single-country BVARs (AT, BE, DE, FR, NL)}{101}{subsection.10.8}%
+\contentsline {paragraph}{Transformation conventions.}{101}{section*.57}%
+\contentsline {paragraph}{COVID treatment.}{102}{section*.58}%
+\contentsline {paragraph}{Imputation of ragged edges.}{102}{section*.59}%
+\contentsline {paragraph}{The credit block (NEW).}{102}{section*.60}%
+\contentsline {subsection}{\numberline {10.9}Austria (AT)}{103}{subsection.10.9}%
+\contentsline {subsection}{\numberline {10.10}Belgium (BE)}{105}{subsection.10.10}%
+\contentsline {subsection}{\numberline {10.11}Germany (DE)}{108}{subsection.10.11}%
+\contentsline {subsection}{\numberline {10.12}France (FR)}{111}{subsection.10.12}%
+\contentsline {subsection}{\numberline {10.13}Netherlands (NL)}{114}{subsection.10.13}%
+\contentsline {subsection}{\numberline {10.14}Euro-area periphery: data conventions (ES, IT, IE, PT, GR)}{117}{subsection.10.14}%
+\contentsline {paragraph}{Transformation and COVID conventions (all five blocs).}{117}{section*.61}%
+\contentsline {subsection}{\numberline {10.15}Spain (ES)}{118}{subsection.10.15}%
+\contentsline {subsection}{\numberline {10.16}Italy (IT)}{121}{subsection.10.16}%
+\contentsline {subsection}{\numberline {10.17}Ireland (IE)}{123}{subsection.10.17}%
+\contentsline {subsection}{\numberline {10.18}Portugal (PT)}{126}{subsection.10.18}%
+\contentsline {subsection}{\numberline {10.19}Greece (GR)}{129}{subsection.10.19}%
+\contentsline {subsection}{\numberline {10.20}Euro-area small members: data conventions}{131}{subsection.10.20}%
+\contentsline {paragraph}{The new credit block (flagged).}{132}{section*.62}%
+\contentsline {subsection}{\numberline {10.21}Estonia (EE)}{132}{subsection.10.21}%
+\contentsline {subsection}{\numberline {10.22}Finland (FI)}{134}{subsection.10.22}%
+\contentsline {subsection}{\numberline {10.23}Luxembourg (LU)}{136}{subsection.10.23}%
+\contentsline {subsection}{\numberline {10.24}Latvia (LV)}{138}{subsection.10.24}%
+\contentsline {subsection}{\numberline {10.25}Lithuania (LT)}{140}{subsection.10.25}%
+\contentsline {subsection}{\numberline {10.26}Slovakia (SK)}{142}{subsection.10.26}%
+\contentsline {subsection}{\numberline {10.27}Slovenia (SI)}{144}{subsection.10.27}%
+\contentsline {subsection}{\numberline {10.28}EU non-euro and hard-gap small blocs: data conventions}{146}{subsection.10.28}%
+\contentsline {paragraph}{The new credit block (flagged).}{147}{section*.63}%
+\contentsline {subsection}{\numberline {10.29}Czechia (CZ)}{147}{subsection.10.29}%
+\contentsline {subsection}{\numberline {10.30}Hungary (HU)}{149}{subsection.10.30}%
+\contentsline {subsection}{\numberline {10.31}Poland (PL)}{151}{subsection.10.31}%
+\contentsline {subsection}{\numberline {10.32}Costa Rica (CR)}{152}{subsection.10.32}%
+\contentsline {subsection}{\numberline {10.33}Iceland (IS)}{154}{subsection.10.33}%
+\contentsline {subsection}{\numberline {10.34}Advanced-Economy Blocs: Per-Variable Data Provenance}{156}{subsection.10.34}%
+\contentsline {paragraph}{Conventions used in every table.}{156}{section*.64}%
+\contentsline {paragraph}{The new credit block (all eight economies).}{157}{section*.65}%
+\contentsline {subsection}{\numberline {10.35}Australia (AU)}{157}{subsection.10.35}%
+\contentsline {subsection}{\numberline {10.36}Switzerland (CH)}{159}{subsection.10.36}%
+\contentsline {subsection}{\numberline {10.37}Denmark (DK)}{160}{subsection.10.37}%
+\contentsline {subsection}{\numberline {10.38}Norway (NO)}{162}{subsection.10.38}%
+\contentsline {subsection}{\numberline {10.39}Sweden (SE)}{163}{subsection.10.39}%
+\contentsline {subsection}{\numberline {10.40}New Zealand (NZ)}{164}{subsection.10.40}%
+\contentsline {subsection}{\numberline {10.41}Korea (KR)}{166}{subsection.10.41}%
+\contentsline {subsection}{\numberline {10.42}Israel (IL)}{167}{subsection.10.42}%
+\contentsline {paragraph}{Summary of data flags (advanced-economy blocs).}{169}{section*.66}%
+\contentsline {subsection}{\numberline {10.43}Emerging-market blocs I: BR, MX, CL, CO, IN, ID}{169}{subsection.10.43}%
+\contentsline {paragraph}{The new credit block (all six blocs).}{170}{section*.67}%
+\contentsline {subsection}{\numberline {10.44}Brazil (BR)}{170}{subsection.10.44}%
+\contentsline {subsection}{\numberline {10.45}Mexico (MX)}{171}{subsection.10.45}%
+\contentsline {subsection}{\numberline {10.46}Chile (CL)}{173}{subsection.10.46}%
+\contentsline {subsection}{\numberline {10.47}Colombia (CO)}{174}{subsection.10.47}%
+\contentsline {subsection}{\numberline {10.48}India (IN)}{176}{subsection.10.48}%
+\contentsline {subsection}{\numberline {10.49}Indonesia (ID)}{178}{subsection.10.49}%
+\contentsline {paragraph}{Caveats and provenance flags for this group.}{179}{section*.68}%
+\contentsline {subsection}{\numberline {10.50}Emerging markets II: data conventions (TR, ZA, SA, AR, RU, TH, MY, TW)}{180}{subsection.10.50}%
+\contentsline {paragraph}{Transformation and COVID conventions.}{180}{section*.69}%
+\contentsline {paragraph}{The new credit block.}{180}{section*.70}%
+\contentsline {subsection}{\numberline {10.51}T\"urkiye (TR)}{180}{subsection.10.51}%
+\contentsline {subsection}{\numberline {10.52}South Africa (ZA)}{182}{subsection.10.52}%
+\contentsline {subsection}{\numberline {10.53}Saudi Arabia (SA)}{183}{subsection.10.53}%
+\contentsline {subsection}{\numberline {10.54}Argentina (AR)}{185}{subsection.10.54}%
+\contentsline {subsection}{\numberline {10.55}Russia (RU)}{186}{subsection.10.55}%
+\contentsline {subsection}{\numberline {10.56}Thailand (TH)}{188}{subsection.10.56}%
+\contentsline {subsection}{\numberline {10.57}Malaysia (MY)}{189}{subsection.10.57}%
+\contentsline {subsection}{\numberline {10.58}Taiwan, Province of China (TW)}{191}{subsection.10.58}%
+\contentsline {subsection}{\numberline {10.59}Country\,$\times $\,Variable Coverage Matrix}{192}{subsection.10.59}%
+\contentsline {section}{\numberline {11}User Interface Guide}{196}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Top Bar}{196}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Chart Panel}{196}{subsection.11.2}%
+\contentsline {paragraph}{GVAR solve badge and the ``Solve full GVAR'' button.}{197}{section*.71}%
+\contentsline {subsection}{\numberline {11.3}Control Panel (Sidebar)}{197}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Scenario Section}{197}{subsubsection.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.3.2}Policy Counterfactual Section}{197}{subsubsection.11.3.2}%
+\contentsline {subsubsection}{\numberline {11.3.3}Long-Run Targets Section}{197}{subsubsection.11.3.3}%
+\contentsline {subsubsection}{\numberline {11.3.4}Cross-Border Spillovers Section}{198}{subsubsection.11.3.4}%
+\contentsline {subsection}{\numberline {11.4}Export}{199}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.4.1}Multi-Scenario Support}{199}{subsubsection.11.4.1}%
+\contentsline {section}{\numberline {12}Technical Notes}{200}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Client-Side Computation}{200}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Performance Optimizations}{200}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Interactive GVAR Architecture: keeping the heavy solve off the drag path}{200}{subsection.12.3}%
+\contentsline {paragraph}{No solve during drag; exactly one cheap solve on release.}{200}{section*.72}%
+\contentsline {paragraph}{Optimistic conditioned-point dot.}{201}{section*.73}%
+\contentsline {paragraph}{Per-chart render memoization.}{201}{section*.74}%
+\contentsline {subsection}{\numberline {12.4}Numerical Conventions}{201}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Identifiability and Weak Exogeneity}{201}{subsection.12.5}%
+\contentsline {paragraph}{Weak exogeneity of the star variables.}{202}{section*.75}%
+\contentsline {paragraph}{Fiscal identification: a triangular budget identity.}{202}{section*.76}%
+\contentsline {paragraph}{Euro-area monetary identification.}{203}{section*.77}%
+\contentsline {section}{\numberline {13}Reproducibility and Replication}{203}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Repository and Folder Map}{203}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Software Dependencies}{204}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}End-to-End Replication Recipe}{204}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}Model-Signature Versioning}{205}{subsection.13.4}%
+\contentsline {section}{\numberline {14}Empirical Results}{206}{section.14}%
+\contentsline {subsection}{\numberline {14.1}In-sample diagnostics}{206}{subsection.14.1}%
+\contentsline {paragraph}{EM convergence.}{206}{section*.79}%
+\contentsline {paragraph}{Spectral radius of the coupling operator.}{206}{section*.81}%
+\contentsline {subsection}{\numberline {14.2}Out-of-sample forecast horse race}{207}{subsection.14.2}%
+\contentsline {subsubsection}{\numberline {14.2.1}Model set}{207}{subsubsection.14.2.1}%
+\contentsline {subsubsection}{\numberline {14.2.2}Scheme: recursive expanding window}{209}{subsubsection.14.2.2}%
+\contentsline {paragraph}{Look-ahead invariants (leak-free by construction).}{209}{section*.83}%
+\contentsline {paragraph}{Predictive-density caveat (stated, not hidden).}{209}{section*.84}%
+\contentsline {subsubsection}{\numberline {14.2.3}Scoring and inference}{210}{subsubsection.14.2.3}%
+\contentsline {subsubsection}{\numberline {14.2.4}Results}{211}{subsubsection.14.2.4}%
+\contentsline {paragraph}{Run configuration.}{211}{section*.85}%
+\contentsline {paragraph}{Headline finding.}{211}{section*.86}%
+\contentsline {paragraph}{Honest caveats.}{211}{section*.87}%
+\contentsline {subsection}{\numberline {14.3}Endogenous-US spillover analysis}{212}{subsection.14.3}%
+\contentsline {paragraph}{What the solver actually computes.}{213}{section*.91}%
+\contentsline {paragraph}{Tier A --- the worked scenario contrast (headline).}{214}{section*.92}%
+\contentsline {paragraph}{Tier A --- realized scenario contrast.}{214}{section*.93}%
+\contentsline {paragraph}{Tier B --- GIRF, FEVD, and connectedness (structural extension).}{215}{section*.95}%
+\contentsline {section}{\numberline {15}Discussion}{215}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Design Philosophy}{215}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Limitations}{216}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Known issues flagged for fix}{217}{subsection.15.3}%
+\contentsline {subsection}{\numberline {15.4}Directions for Future Work}{218}{subsection.15.4}%
+\contentsline {section}{\numberline {A}Glossary of terms}{218}{appendix.A}%
+\contentsline {section}{Acknowledgments}{221}{section*.96}%

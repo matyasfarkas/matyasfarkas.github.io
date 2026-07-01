@@ -1,0 +1,2915 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../MFM_User_Manual.pdf">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>User Guide - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#monetary-financial-model-user-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              User Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-country" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing a country
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-the-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading the layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-conditional-forecasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Conditional Forecasting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Conditional Forecasting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activating-conditioning-on-a-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activating conditioning on a variable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-the-conditioned-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting the conditioned path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-optimistic-pin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The optimistic pin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels-vs-deviations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels vs. deviations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-quarter-toggles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-quarter toggles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-conditioned-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing a conditioned variable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resetting-everything" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resetting everything
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-reading-the-charts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Reading the Charts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Reading the Charts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#row-1-macro-triad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Row 1 -- macro triad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#row-2-estimated-fiscal-drivers-us-and-the-gvar-fiscal-blocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Row 2 -- estimated fiscal drivers (US and the GVAR fiscal blocs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#row-3-fiscal-block-derived-by-accounting-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Row 3 -- Fiscal block (derived by accounting identity)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remaining-domestic-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remaining domestic variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels-vs-growth-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels vs. growth display
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trace-colors-and-styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trace colors and styles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#light-shaded-history-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Light-shaded history region
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#growth-rate-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Growth rate display
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variable definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-policy-counterfactual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Policy Counterfactual
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Policy Counterfactual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-counterfactual-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enabling counterfactual mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-dsge-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing a DSGE model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-policy-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing a policy rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-based-vs-optimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rule-based vs. Optimal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macro-response-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macro response modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rate-adjustment-sliders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rate adjustment sliders
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fiscal-adjustment-sliders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fiscal adjustment sliders
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-uncertainty-bands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Uncertainty Bands
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Uncertainty Bands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Computing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-bands-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When bands reset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-multiple-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Multiple Scenarios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Multiple Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding a scenario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switching-between-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switching between scenarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing a scenario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-export-and-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Export and Import
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Export and Import">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-scenario-save-control-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-scenario Save (Control Panel)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-scenario-load-control-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-scenario Load (Control Panel)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-session-export-top-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full-session Export (Top Bar)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-excel-file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Excel File Format
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Excel File Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-scenario-export-save-button-5-sheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-scenario export (Save button) -- 5 sheets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-export-bottom-bar-4-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data export (bottom bar) -- 4 formats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-session-export-export-button-1-sheet-per-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full-session export (Export button) -- 1 sheet per scenario
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-scenario-cookbook-and-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Scenario Cookbook and Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Scenario Cookbook and Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-cookbook-instant-load-recipes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario Cookbook (instant-load recipes)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloadable-example-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloadable example scenario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-it-contains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What it contains
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to use it
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-your-own-scenario-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating your own scenario files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-keyboard-and-interaction-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Keyboard and Interaction Tips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-the-us-fiscal-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. The US Fiscal Block
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-global-var-cross-country-linkage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Global VAR Cross-Country Linkage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Global VAR Cross-Country Linkage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-two-cross-border-spillover-switches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The two cross-border spillover switches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-long-run-targets-per-variable-drift-sliders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Long-Run Targets (per-variable drift sliders)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-country" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing a country
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-the-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading the layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-conditional-forecasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Conditional Forecasting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Conditional Forecasting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activating-conditioning-on-a-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activating conditioning on a variable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-the-conditioned-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting the conditioned path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-optimistic-pin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The optimistic pin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels-vs-deviations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels vs. deviations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-quarter-toggles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-quarter toggles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-conditioned-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing a conditioned variable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resetting-everything" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resetting everything
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-reading-the-charts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Reading the Charts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Reading the Charts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#row-1-macro-triad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Row 1 -- macro triad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#row-2-estimated-fiscal-drivers-us-and-the-gvar-fiscal-blocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Row 2 -- estimated fiscal drivers (US and the GVAR fiscal blocs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#row-3-fiscal-block-derived-by-accounting-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Row 3 -- Fiscal block (derived by accounting identity)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remaining-domestic-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remaining domestic variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels-vs-growth-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels vs. growth display
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trace-colors-and-styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trace colors and styles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#light-shaded-history-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Light-shaded history region
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#growth-rate-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Growth rate display
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variable definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-policy-counterfactual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Policy Counterfactual
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Policy Counterfactual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-counterfactual-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enabling counterfactual mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-dsge-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing a DSGE model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-policy-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing a policy rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-based-vs-optimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rule-based vs. Optimal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macro-response-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macro response modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rate-adjustment-sliders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rate adjustment sliders
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fiscal-adjustment-sliders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fiscal adjustment sliders
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-uncertainty-bands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Uncertainty Bands
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Uncertainty Bands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Computing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-bands-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When bands reset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-multiple-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Multiple Scenarios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Multiple Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding a scenario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switching-between-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switching between scenarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing a scenario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-export-and-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Export and Import
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Export and Import">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-scenario-save-control-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-scenario Save (Control Panel)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-scenario-load-control-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-scenario Load (Control Panel)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-session-export-top-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full-session Export (Top Bar)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-excel-file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Excel File Format
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Excel File Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-scenario-export-save-button-5-sheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-scenario export (Save button) -- 5 sheets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-export-bottom-bar-4-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data export (bottom bar) -- 4 formats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-session-export-export-button-1-sheet-per-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full-session export (Export button) -- 1 sheet per scenario
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-scenario-cookbook-and-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Scenario Cookbook and Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Scenario Cookbook and Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-cookbook-instant-load-recipes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario Cookbook (instant-load recipes)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloadable-example-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloadable example scenario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-it-contains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What it contains
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to use it
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-your-own-scenario-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating your own scenario files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-keyboard-and-interaction-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Keyboard and Interaction Tips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-the-us-fiscal-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. The US Fiscal Block
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-global-var-cross-country-linkage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Global VAR Cross-Country Linkage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Global VAR Cross-Country Linkage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-two-cross-border-spillover-switches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The two cross-border spillover switches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-long-run-targets-per-variable-drift-sliders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Long-Run Targets (per-variable drift sliders)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="monetary-financial-model-user-guide">Monetary-Financial Model -- User Guide<a class="headerlink" href="#monetary-financial-model-user-guide" title="Permanent link">&para;</a></h1>
+<h2 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
+<p>The Monetary-Financial Model (a global projection and scenario tool) produces conditional macroeconomic forecasts built on a Bayesian Vector Autoregression (BVAR) baseline and lets you explore "what-if" policy counterfactuals using DSGE impulse-response functions from the Macroeconomic Model Database (MMB). You select a country, condition the BVAR forecast on paths you choose for any subset of variables, and optionally overlay a DSGE-based policy counterfactual to see how alternative interest-rate paths would propagate through the economy.</p>
+<h2 id="2-getting-started">2. Getting Started<a class="headerlink" href="#2-getting-started" title="Permanent link">&para;</a></h2>
+<p>When the application loads it shows a top bar, a left-hand control panel, a chart grid occupying the main area, and a scenario bar pinned to the bottom of the screen.</p>
+<h3 id="choosing-a-country">Choosing a country<a class="headerlink" href="#choosing-a-country" title="Permanent link">&para;</a></h3>
+<p>In the top bar, use the <strong>Country</strong> dropdown to select one of roughly <strong>50 economies</strong> — 6 core majors (US, Euro Area, UK, Japan, Canada, China), 34 OECD members, and 10 non-OECD emerging markets, grouped in the dropdown. Switching the country loads a new BVAR specification; conditioning, scenarios, and uncertainty bands are reset for that country.</p>
+<p>The <strong>United States</strong> carries a fiscal block (see <em>The US Fiscal Block</em> below). <strong>33 of the economies are linked into a Global VAR (GVAR)</strong> — the US plus 32 other blocs (the Euro Area as one aggregate + 31 Rest-of-World blocs) — so conditioning one of them propagates to all the others (see <em>Global VAR Cross-Country Linkage</em> below). The <strong>US is a fully endogenous coupled bloc</strong>: it drives the rest of the world <em>and</em> now also receives spillback feedback from it. The remaining economies (including the 17 individual euro-area members) are standalone single-country models: useful on their own, but not part of the cross-country spillover system.</p>
+<h3 id="reading-the-layout">Reading the layout<a class="headerlink" href="#reading-the-layout" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Top bar</strong> -- country selector, uncertainty controls, full-session Export button.</li>
+<li><strong>Control panel</strong> (left sidebar) -- scenario conditioning sliders, policy counterfactual settings, per-scenario Save/Load/Reset.</li>
+<li><strong>Chart grid</strong> (center) -- one chart per variable, arranged in a 3-column grid.</li>
+<li><strong>Scenario bar</strong> (bottom) -- tabs for each scenario, Add Scenario button, format-export stubs.</li>
+</ul>
+<h2 id="3-conditional-forecasting">3. Conditional Forecasting<a class="headerlink" href="#3-conditional-forecasting" title="Permanent link">&para;</a></h2>
+<p>Conditional forecasting answers the question: "If variable X follows a path I specify, what does the BVAR imply for all other variables?"</p>
+<h3 id="activating-conditioning-on-a-variable">Activating conditioning on a variable<a class="headerlink" href="#activating-conditioning-on-a-variable" title="Permanent link">&para;</a></h3>
+<p>Each chart has a small <strong>"condition"</strong> button next to its title. Click it to add that variable to the conditioning set. The button changes to <strong>"CONDITIONED"</strong> and the chart border highlights in blue. Click again to remove conditioning.</p>
+<p><strong>Right-click to plant a pin at the cursor.</strong> You can also <strong>right-click directly on a forecast chart</strong> to condition it: the right-click both turns conditioning on for that variable (if it was off) <strong>and plants the conditioned point exactly at the cursor</strong> — the value you clicked becomes the pinned target for that quarter. (Left-clicking the "condition" button toggles conditioning on without moving any point.) This is the fastest way to drop a single pin at a specific value.</p>
+<h3 id="setting-the-conditioned-path">Setting the conditioned path<a class="headerlink" href="#setting-the-conditioned-path" title="Permanent link">&para;</a></h3>
+<p>Once a variable is conditioned you can set its path in three ways:</p>
+<ol>
+<li>
+<p><strong>Drag directly on the chart.</strong> The forecast portion of the chart (quarters 0-19) shows draggable markers. Click and drag any marker vertically to set the value for that quarter. Dragging is continuous -- hold the mouse button and sweep across quarters to draw an entire path quickly. The marker (the conditioned dot) <strong>snaps to your click instantly</strong> — it tracks the value you set without waiting for the forecast to recompute (see <em>The optimistic pin</em> below).</p>
+</li>
+<li>
+<p><strong>Right-click to plant a pin at the cursor</strong> (above) — drops a single conditioned point exactly where you click.</p>
+</li>
+<li>
+<p><strong>Use the sliders in the control panel.</strong> Each conditioned variable appears in the Scenario section of the left sidebar with 20 quarter-level sliders (labeled NC, t+1, t+2, ... , t+19). Each slider ranges from -3 to +3 (percentage-point deviation from baseline). The numeric value is shown to the right of each slider.</p>
+</li>
+</ol>
+<h3 id="the-optimistic-pin">The optimistic pin<a class="headerlink" href="#the-optimistic-pin" title="Permanent link">&para;</a></h3>
+<p>When you click, drag, or right-click to set a conditioned point, the <strong>dot snaps to your chosen value immediately</strong> — it is read straight from the target you just set, not from the model solve. The smoothed forecast <strong>line</strong> and the <strong>uncertainty bands</strong> then catch up a moment later, once the conditional forecast finishes computing, and reconcile around the pinned point. So the pin always sits exactly where you put it, even while the rest of the curve is still updating. (On a GVAR economy the cross-country solve is heavier, so the line/band reconciliation can take a beat longer — the dot still snaps instantly.)</p>
+<h3 id="levels-vs-deviations">Levels vs. deviations<a class="headerlink" href="#levels-vs-deviations" title="Permanent link">&para;</a></h3>
+<p>A toggle in the control panel ("Show deviations" / "Show levels") switches the numeric display between:</p>
+<ul>
+<li><strong>Levels</strong> -- the absolute value (baseline + deviation).</li>
+<li><strong>Deviations</strong> -- the signed deviation from baseline (e.g., +0.5).</li>
+</ul>
+<p>The underlying data is always stored as deviations; this toggle only affects how values are displayed in the sidebar and exported.</p>
+<h3 id="per-quarter-toggles">Per-quarter toggles<a class="headerlink" href="#per-quarter-toggles" title="Permanent link">&para;</a></h3>
+<p>Each quarter label (NC, t+1, ...) is a clickable button. Click it to disable conditioning for that single quarter -- the label grays out and the slider becomes inactive. The BVAR will treat that quarter as unconditioned, allowing it to be determined freely by the model dynamics. Click again to re-enable. The <strong>"All"</strong> button above the sliders toggles all 20 quarters on or off at once.</p>
+<h3 id="removing-a-conditioned-variable">Removing a conditioned variable<a class="headerlink" href="#removing-a-conditioned-variable" title="Permanent link">&para;</a></h3>
+<p>Click <strong>"remove"</strong> next to the variable name in the sidebar, or click the <strong>"CONDITIONED"</strong> button on the chart.</p>
+<h3 id="resetting-everything">Resetting everything<a class="headerlink" href="#resetting-everything" title="Permanent link">&para;</a></h3>
+<p>The <strong>Reset</strong> link at the top of the Scenario section clears all conditioning paths, rate adjustments, and conditioned variables back to baseline.</p>
+<h2 id="4-reading-the-charts">4. Reading the Charts<a class="headerlink" href="#4-reading-the-charts" title="Permanent link">&para;</a></h2>
+<p>The chart grid is arranged in a 3-column grid, top to bottom, in this order: the macro triad (row 1),
+the estimated fiscal drivers (row 2, where present), the derived fiscal block (row 3, where present),
+then the remaining domestic variables, and finally the cross-country blocks (Rest-of-World and Global
+commons) for GVAR economies.</p>
+<h3 id="row-1-macro-triad">Row 1 -- macro triad<a class="headerlink" href="#row-1-macro-triad" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Chart</th>
+<th>Variable</th>
+<th>Draggable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inflation</td>
+<td>Headline CPI/HICP/GDP deflator</td>
+<td>Yes (when conditioned)</td>
+</tr>
+<tr>
+<td>Policy Rate</td>
+<td>Short-term interest rate</td>
+<td>Yes (when conditioned, or in counterfactual mode)</td>
+</tr>
+<tr>
+<td>GDP Growth</td>
+<td>Real GDP growth</td>
+<td>Yes (when conditioned)</td>
+</tr>
+</tbody>
+</table>
+<p>For <strong>euro-area members</strong> (DE, FR, IT, …) the first row also carries the <strong>ECB Policy Rate</strong>, the
+<strong>EA Long Yield (Bund)</strong>, and the <strong>Sovereign Spread (vs Bund)</strong>. The ECB rate is common -- it reads the
+same across the EA aggregate and every member, and conditioning it anywhere is an area-wide shock.
+Conditioning a member's sovereign spread is a country-specific stress that spills to the rest of the
+area by GDP weight. A US or EA scenario reaches the members when you press <strong>Solve full GVAR</strong>. See
+<a href="../euro-cross-border/">Euro-area Spillover &amp; Harmonization</a> for the full picture.</p>
+<h3 id="row-2-estimated-fiscal-drivers-us-and-the-gvar-fiscal-blocs">Row 2 -- estimated fiscal drivers (US and the GVAR fiscal blocs)<a class="headerlink" href="#row-2-estimated-fiscal-drivers-us-and-the-gvar-fiscal-blocs" title="Permanent link">&para;</a></h3>
+<p>Revenue (% of GDP), Primary Expenditure (% of GDP), and the Effective Rate on debt (% p.a.) -- the
+three estimated drivers of the fiscal accounting. Shown only for economies that carry a fiscal block.</p>
+<h3 id="row-3-fiscal-block-derived-by-accounting-identity">Row 3 -- Fiscal block (derived by accounting identity)<a class="headerlink" href="#row-3-fiscal-block-derived-by-accounting-identity" title="Permanent link">&para;</a></h3>
+<p>Primary Balance, Δ Debt-to-GDP, and Debt-to-GDP -- <strong>derived</strong> by rolling the budget identity forward
+from the row-2 drivers (debt is not estimated directly). This block now sits immediately under the
+fiscal drivers so the estimated inputs and their accounting outputs read together. Primary Balance and
+Debt-to-GDP are conditionable on a trajectory (right-click to pin, drag to set a target); Δ Debt-to-GDP
+is read-only. See <em>The US Fiscal Block</em> below.</p>
+<h3 id="remaining-domestic-variables">Remaining domestic variables<a class="headerlink" href="#remaining-domestic-variables" title="Permanent link">&para;</a></h3>
+<p>Gov. Spending, Core Inflation, Unemployment, Consumption, Investment, and any country-specific series --
+all conditionable via the right-click button but not pre-wired for dragging.</p>
+<h3 id="levels-vs-growth-display">Levels vs. growth display<a class="headerlink" href="#levels-vs-growth-display" title="Permanent link">&para;</a></h3>
+<p>Most series are shown as q/q annualized growth (for <code>log</code> variables) or as a level (for rates and
+ratios). A handful of index/price series are shown as <strong>price levels</strong> instead of growth -- including
+the <strong>oil price</strong> ($/bbl), the US equity index, exchange-rate indices and house prices.</p>
+<h3 id="trace-colors-and-styles">Trace colors and styles<a class="headerlink" href="#trace-colors-and-styles" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Gray dotted line</strong> -- BVAR unconditional baseline (no conditioning applied).</li>
+<li><strong>Gray shaded band</strong> -- Baseline 16th-84th percentile credible interval (always shown).</li>
+<li><strong>Blue solid line</strong> -- Active scenario (the conditional forecast, i.e., baseline + your conditioning). The first scenario uses blue (#0067B9); additional scenarios use orange-red, green, and purple.</li>
+<li><strong>Red/orange dashed line</strong> -- Policy counterfactual (only appears when counterfactual mode is on and a rate adjustment is applied). Shown with diamond markers on the interest-rate chart.</li>
+<li><strong>Light colored band around scenario line</strong> -- Scenario-specific uncertainty (only shown after clicking Compute; see Section 6).</li>
+</ul>
+<h3 id="light-shaded-history-region">Light-shaded history region<a class="headerlink" href="#light-shaded-history-region" title="Permanent link">&para;</a></h3>
+<p>A faint blue-gray rectangle marks the last 3 quarters of actual historical data to the left of quarter 0. Most economies' panels now end in <strong>2026 Q1</strong> (the observed data was refreshed one quarter past the 2025 Q4 estimation vintage, with no re-estimation), so the first forecast — or "nowcast" — quarter is <strong>2026 Q2</strong>. A few blocs have a <em>ragged edge</em> where genuine source data lags and is never fabricated forward: <strong>China and India end 2025 Q4</strong> and <strong>Israel ends 2024 Q4</strong>, so each of those begins forecasting from the quarter right after its own last observation. The x-axis is dated by calendar quarter on hover, with year ticks.</p>
+<h3 id="growth-rate-display">Growth rate display<a class="headerlink" href="#growth-rate-display" title="Permanent link">&para;</a></h3>
+<p>Above the chart grid, a toggle lets you switch growth-rate variables between <strong>q/q ann.</strong> (quarter-on-quarter annualized) and <strong>y/y</strong> (year-on-year).</p>
+<h3 id="variable-definition">Variable definition<a class="headerlink" href="#variable-definition" title="Permanent link">&para;</a></h3>
+<p>Below each chart, a small label shows the BVAR variable ID, name, and transformation (e.g., "JGDP -- Inflation (q/q ann. growth)").</p>
+<h2 id="5-policy-counterfactual">5. Policy Counterfactual<a class="headerlink" href="#5-policy-counterfactual" title="Permanent link">&para;</a></h2>
+<p>The counterfactual layer answers: "If the central bank had set rates differently from what the BVAR scenario implies, what would have happened to the rest of the economy?"</p>
+<h3 id="enabling-counterfactual-mode">Enabling counterfactual mode<a class="headerlink" href="#enabling-counterfactual-mode" title="Permanent link">&para;</a></h3>
+<p>In the control panel, under <strong>Policy Counterfactual</strong>, click <strong>"Policy counterfactual"</strong>. The button turns orange to indicate the mode is active. Click <strong>"Exit counterfactual mode"</strong> to return to pure BVAR conditioning.</p>
+<h3 id="choosing-a-dsge-model">Choosing a DSGE model<a class="headerlink" href="#choosing-a-dsge-model" title="Permanent link">&para;</a></h3>
+<p>When counterfactual mode is active, a <strong>DSGE Model</strong> section appears. It shows the currently selected model (default: US_SW07). Click <strong>"Browse..."</strong> to open a searchable catalog of models from the Macroeconomic Model Database, organized by category. You can type to filter by model name, author, or reference. Select a model to load its impulse-response functions.</p>
+<h3 id="choosing-a-policy-rule">Choosing a policy rule<a class="headerlink" href="#choosing-a-policy-rule" title="Permanent link">&para;</a></h3>
+<p>Below the model selector, a <strong>Policy rule</strong> dropdown lists all available rules (e.g., Taylor, GR, CEE, SW). Rules that have pre-computed IRFs for the selected model are enabled; others are shown as "(no IRFs)" and are disabled.</p>
+<h3 id="rule-based-vs-optimal">Rule-based vs. Optimal<a class="headerlink" href="#rule-based-vs-optimal" title="Permanent link">&para;</a></h3>
+<p>Two small buttons switch between:</p>
+<ul>
+<li><strong>Rule-based</strong> -- You directly parameterize a Taylor-type rule with three sliders:</li>
+<li>Smoothing (rho): 0 to 0.95 (default 0.8). Degree of interest-rate inertia.</li>
+<li>Inflation coefficient (phi_pi): 0 to 4 (default 1.5). Response to the inflation gap.</li>
+<li>Output gap coefficient (phi_y): 0 to 3 (default 0.5). Response to the output gap.</li>
+</ul>
+<p>The rule formula is displayed: r = rho * r(-1) + (1 - rho) * [r<em> + phi_pi * (pi - pi</em>) + phi_y * y].</p>
+<ul>
+<li><strong>Optimal</strong> -- Barnichon and Mesters (2023) optimal policy. A single slider trades off between the two mandates: slide left to weight price stability (inflation at 2%), slide right to weight full employment.</li>
+</ul>
+<h3 id="macro-response-modes">Macro response modes<a class="headerlink" href="#macro-response-modes" title="Permanent link">&para;</a></h3>
+<p>The <strong>Macro response</strong> dropdown controls how the counterfactual interest-rate path feeds back into other variables:</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hold conditioned paths fixed</strong></td>
+<td>Your conditioned variables stay exactly where you set them. Only unconditioned variables respond to the rate change. Use this to ask: "given my macro scenario, what would a different rate path imply for unconditioned variables?"</td>
+</tr>
+<tr>
+<td><strong>IRF-consistent (scenario + DSGE deltas)</strong></td>
+<td>The tool computes the interest-rate shock sequence needed to match your rate adjustment, applies the DSGE model's impulse-response functions to translate those shocks into effects on all variables, then re-conditions the BVAR to produce an internally consistent path. This is the default and most complete mode. If no IRFs are available for the chosen model/rule pair, it falls back to BVAR-only re-conditioning (a warning is displayed).</td>
+</tr>
+<tr>
+<td><strong>Let all variables adjust</strong></td>
+<td>All variables -- including ones you previously conditioned -- are free to respond to the altered rate path. Your conditioning is released.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rate-adjustment-sliders">Rate adjustment sliders<a class="headerlink" href="#rate-adjustment-sliders" title="Permanent link">&para;</a></h3>
+<p>Below the macro-response dropdown, 12 quarter-level sliders (Q1-Q12) let you specify the interest-rate deviation from the scenario path, in percentage points, ranging from -2 to +2 in 0.05 pp increments. You can also drag the interest-rate line directly on the Policy Rate chart when counterfactual mode is active -- the chart shows diamond markers for the counterfactual rate.</p>
+<h3 id="fiscal-adjustment-sliders">Fiscal adjustment sliders<a class="headerlink" href="#fiscal-adjustment-sliders" title="Permanent link">&para;</a></h3>
+<p>Below the monetary rate adjustment, a second set of 12 sliders controls <strong>autonomous government spending</strong> shocks, in percentage-point deviations from the scenario path (-3 to +3 in 0.1 pp steps). Fiscal counterfactuals use the <code>fiscal_</code> impulse response functions from the selected DSGE model.</p>
+<p>Not all DSGE models include fiscal shocks. 60 of the 132 available models have <code>fiscal_</code> IRFs (including US_SW07, EA_SW03, EA_QUEST3, US_CMR14noFA). If the selected model lacks fiscal IRFs, the fiscal sliders will have no effect on the counterfactual.</p>
+<p>Monetary and fiscal adjustments can be combined: the tool computes separate shock sequences for each instrument, then sums the DSGE-implied deltas on inflation, output, and the interest rate before re-conditioning the BVAR.</p>
+<h2 id="6-uncertainty-bands">6. Uncertainty Bands<a class="headerlink" href="#6-uncertainty-bands" title="Permanent link">&para;</a></h2>
+<h3 id="modes">Modes<a class="headerlink" href="#modes" title="Permanent link">&para;</a></h3>
+<p>The top bar offers three uncertainty settings:</p>
+<ul>
+<li><strong>None</strong> -- No uncertainty computation. Only the baseline credible interval is shown (gray band).</li>
+<li><strong>Quick</strong> -- Draws 50 posterior samples for a fast approximation of the scenario-conditional uncertainty.</li>
+<li><strong>Full</strong> -- Draws 200 posterior samples for a more precise estimate.</li>
+</ul>
+<h3 id="computing">Computing<a class="headerlink" href="#computing" title="Permanent link">&para;</a></h3>
+<p>Select Quick or Full, then click the <strong>Compute</strong> button. A loading overlay ("Computing scenario uncertainty (50/200 draws)...") appears while the tool runs the Durbin-Koopman simulation smoother across posterior draws. When finished, colored uncertainty bands appear around the active scenario line on every chart.</p>
+<h3 id="when-bands-reset">When bands reset<a class="headerlink" href="#when-bands-reset" title="Permanent link">&para;</a></h3>
+<p>Scenario uncertainty bands are cleared whenever you switch the active scenario, change the country, or change the uncertainty mode. You must click Compute again to regenerate them. Modifying conditioning paths does not automatically recompute bands.</p>
+<h2 id="7-multiple-scenarios">7. Multiple Scenarios<a class="headerlink" href="#7-multiple-scenarios" title="Permanent link">&para;</a></h2>
+<h3 id="adding-a-scenario">Adding a scenario<a class="headerlink" href="#adding-a-scenario" title="Permanent link">&para;</a></h3>
+<p>Click <strong>"+ Add Scenario"</strong> in the bottom scenario bar. Up to 4 scenarios can exist simultaneously. Each is assigned a distinct color (blue, orange-red, green, purple).</p>
+<h3 id="switching-between-scenarios">Switching between scenarios<a class="headerlink" href="#switching-between-scenarios" title="Permanent link">&para;</a></h3>
+<p>Click a scenario tab in the bottom bar to make it active. The control panel updates to show that scenario's conditioning paths, model, rule, and counterfactual settings. Only the active scenario is fully computed with the DK smoother; inactive scenarios show approximate paths.</p>
+<h3 id="removing-a-scenario">Removing a scenario<a class="headerlink" href="#removing-a-scenario" title="Permanent link">&para;</a></h3>
+<p>Click the <strong>"x"</strong> on a scenario tab. At least one scenario must remain.</p>
+<h3 id="visibility">Visibility<a class="headerlink" href="#visibility" title="Permanent link">&para;</a></h3>
+<p>Each scenario's line is plotted on the charts as long as it is visible. All visible scenarios appear simultaneously so you can compare conditioning assumptions side by side.</p>
+<h2 id="8-export-and-import">8. Export and Import<a class="headerlink" href="#8-export-and-import" title="Permanent link">&para;</a></h2>
+<h3 id="per-scenario-save-control-panel">Per-scenario Save (Control Panel)<a class="headerlink" href="#per-scenario-save-control-panel" title="Permanent link">&para;</a></h3>
+<p>Click <strong>Save</strong> in the Scenario section header. This exports the active scenario as an Excel file named:</p>
+<div class="highlight"><pre><span></span><code>scenario_{COUNTRY}_{ScenarioName}_{timestamp}.xlsx
+</code></pre></div>
+<p>For example: <code>scenario_US_Scenario_1_2026-05-30T14-22-05.xlsx</code>.</p>
+<h3 id="per-scenario-load-control-panel">Per-scenario Load (Control Panel)<a class="headerlink" href="#per-scenario-load-control-panel" title="Permanent link">&para;</a></h3>
+<p>Click <strong>Load</strong> and select a file. Accepts:</p>
+<ul>
+<li><strong>.xlsx / .xls</strong> -- Restores all settings, conditioning paths, active quarters, rate adjustments, and (if saved) the country. If the file was saved for a different country, the tool switches countries first.</li>
+<li><strong>.json</strong> -- Legacy format. If the JSON contains a <code>scenarios</code> array (full-session export), the first scenario is restored.</li>
+</ul>
+<h3 id="full-session-export-top-bar">Full-session Export (Top Bar)<a class="headerlink" href="#full-session-export-top-bar" title="Permanent link">&para;</a></h3>
+<p>The <strong>Export</strong> button in the top-right corner of the top bar exports all scenarios at once into a single Excel file:</p>
+<div class="highlight"><pre><span></span><code>calibration_{COUNTRY}_{timestamp}.xlsx
+</code></pre></div>
+<p>Each scenario becomes a separate sheet.</p>
+<h2 id="9-excel-file-format">9. Excel File Format<a class="headerlink" href="#9-excel-file-format" title="Permanent link">&para;</a></h2>
+<h3 id="per-scenario-export-save-button-5-sheets">Per-scenario export (Save button) -- 5 sheets<a class="headerlink" href="#per-scenario-export-save-button-5-sheets" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Sheet</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Settings</strong></td>
+<td>Key-value pairs: scenario name, country, model, rule, mode (rule-based/optimal), all policy-rule parameters (rho, phiPi, phiY, lambdaPi, lambdaY, piStar, yStar), showCounterfactual flag, counterfactualMode, input format (levels/deviations), export timestamp.</td>
+</tr>
+<tr>
+<td><strong>Conditioning</strong></td>
+<td>One column per conditioned variable, 20 rows (NC, t+1 ... t+19). Values are in whatever format was active at export time (levels or deviations). Inactive quarters are left blank.</td>
+</tr>
+<tr>
+<td><strong>Active Quarters</strong></td>
+<td>Same layout as Conditioning but with 1/0 flags indicating which quarters are active for each variable.</td>
+</tr>
+<tr>
+<td><strong>Rate Adjustment</strong></td>
+<td>20 rows of rate adjustment values in percentage points.</td>
+</tr>
+<tr>
+<td><strong>Variable Map</strong></td>
+<td>Maps column names to BVAR variable IDs and indices so the file can be re-imported even if the BVAR specification changes. Columns: Column (name), Variable Name, Variable ID, BVAR Index.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-export-bottom-bar-4-formats">Data export (bottom bar) -- 4 formats<a class="headerlink" href="#data-export-bottom-bar-4-formats" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Format</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CSV</strong></td>
+<td><code>.csv</code></td>
+<td>All variables: Baseline, Scenario, Deviation columns per variable. Includes 3 quarters of history.</td>
+</tr>
+<tr>
+<td><strong>Excel</strong></td>
+<td><code>.xlsx</code></td>
+<td>One sheet per variable with Q16, Baseline (Median), Q84, Scenario, Deviation columns side by side. Plus a Summary sheet.</td>
+</tr>
+<tr>
+<td><strong>PNG</strong></td>
+<td><code>.zip</code></td>
+<td>All charts as high-resolution PNG images (1200x500) bundled in a single ZIP file. Each chart includes the scenario name in the title.</td>
+</tr>
+<tr>
+<td><strong>PDF</strong></td>
+<td><code>.pdf</code></td>
+<td>All charts combined in a single multi-page PDF (one chart per page, landscape orientation).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="full-session-export-export-button-1-sheet-per-scenario">Full-session export (Export button) -- 1 sheet per scenario<a class="headerlink" href="#full-session-export-export-button-1-sheet-per-scenario" title="Permanent link">&para;</a></h3>
+<p>Each sheet contains a header block (country, timestamp), a settings block (same key-value pairs), a conditioning table, and a rate-adjustment table, all in a single vertically stacked layout.</p>
+<h2 id="10-scenario-cookbook-and-examples">10. Scenario Cookbook and Examples<a class="headerlink" href="#10-scenario-cookbook-and-examples" title="Permanent link">&para;</a></h2>
+<h3 id="scenario-cookbook-instant-load-recipes">Scenario Cookbook (instant-load recipes)<a class="headerlink" href="#scenario-cookbook-instant-load-recipes" title="Permanent link">&para;</a></h3>
+<p>The <strong>Cookbook ▾</strong> button in the scenario header (next to <strong>Save</strong> / <strong>Load</strong>) opens an instant-load library of named, documented conditioning recipes — it replaces the old download-only <em>Example</em> link. Pick the bloc (<strong>US</strong>, <strong>EA</strong>, or <strong>CN</strong>), open the cookbook, expand a recipe to read its rationale, and load its conditioning into the active scenario with one click. No download or re-import needed.</p>
+<p>Every recipe is built around a deliberate <strong>two-stage pedagogy</strong>:</p>
+<ul>
+<li><strong>Load naive</strong> — condition the <em>head</em> variable(s) alone and let the model fill in the rest. The result is the model's own read, which is usually <strong>demand-led</strong> and often the economically <em>wrong</em> story — the point is to expose it.</li>
+<li><strong>Load + restriction</strong> — add a few short-run pins that <em>restrict</em> the joint response into the meaningful shock (e.g. force output down while prices rise → a <em>supply</em> shock). The contrast between the two stages — often a <strong>sign flip</strong> — is the entire lesson.</li>
+</ul>
+<p>The nine recipes are: (1) credit crunch / spread shock, (2) energy supply shock, (3) fiscal loosening → twin deficits, (4) monetary behind-the-curve / risk-off, (5) AI productivity boost, (6) supply-chain collapse, (7) deglobalization, (8) inflation de-anchoring, (9) fiscal default risk. Loading a recipe <strong>replaces</strong> the active scenario's conditioning (like an Excel import); any recipe variable not present in the current bloc is skipped and reported in a short note. Recipes write the <strong>active bloc's</strong> pins only — press <strong>Solve full GVAR</strong> afterwards for the cross-country answer. See the full per-recipe write-up (rationale, naive vs restricted pins, country-specific notes) in the <a href="../scenario-cookbook/">Scenario Cookbook</a> methodology page.</p>
+<h3 id="downloadable-example-scenario">Downloadable example scenario<a class="headerlink" href="#downloadable-example-scenario" title="Permanent link">&para;</a></h3>
+<p>The app also still ships a built-in example scenario (<code>example_scenario_inflation_surge.xlsx</code>) for the <strong>Load</strong> workflow, available from <code>public/data/example_scenario_inflation_surge.xlsx</code>.</p>
+<h3 id="what-it-contains">What it contains<a class="headerlink" href="#what-it-contains" title="Permanent link">&para;</a></h3>
+<p>The scenario models a severe inflation surge in the US -- inflation hitting 10% q/q annualized -- with an aggressive monetary policy tightening response based on the Smets-Wouters (2007) estimated rule:</p>
+<p><strong>Conditioning (Inflation, JGDP):</strong>
+- +7.7 pp deviation in the nowcast quarter (NC), pushing inflation from ~2.3% to ~10%
+- Concave decay over 16 quarters (4 years) back to baseline
+- Quarters t+16 through t+19 are unconditioned (the BVAR fills them freely)</p>
+<p><strong>Policy counterfactual (Rate Adjustment):</strong>
+- +300 bp rate adjustment in quarters NC through t+3
+- +200 bp in quarters t+4 through t+7
+- +100 bp in quarters t+8 through t+11
+- 0 thereafter (policy reverts to the scenario path)</p>
+<p><strong>Settings:</strong>
+- Model: US_SW07 (Smets-Wouters 2007)
+- Rule: SW (Smets-Wouters estimated rule, rho=0.81, phi_pi=2.04, phi_y=0.08)
+- Counterfactual mode: IRF-consistent</p>
+<h3 id="how-to-use-it">How to use it<a class="headerlink" href="#how-to-use-it" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click <strong>Load</strong> in the Scenario section of the control panel</li>
+<li>Select the downloaded <code>example_scenario_inflation_surge.xlsx</code></li>
+<li>The tool will restore all conditioning paths, rate adjustments, and model/rule settings</li>
+<li>The charts will immediately show the conditioned scenario (blue line diverging from baseline)</li>
+<li>Enable the <strong>Policy Counterfactual</strong> toggle to see the tightening response (red dashed line)</li>
+</ol>
+<h3 id="creating-your-own-scenario-files">Creating your own scenario files<a class="headerlink" href="#creating-your-own-scenario-files" title="Permanent link">&para;</a></h3>
+<p>You can create scenario Excel files manually or programmatically. The minimum required structure is:</p>
+<ul>
+<li><strong>Settings sheet</strong>: at least <code>Country</code> and <code>Name</code> rows</li>
+<li><strong>Conditioning sheet</strong>: <code>Quarter</code> column + one column per conditioned variable, with deviation values</li>
+</ul>
+<p>The <code>Active Quarters</code> and <code>Variable Map</code> sheets are optional but improve import reliability. If omitted, the importer infers active quarters from non-empty cells and matches variable names against the BVAR specification.</p>
+<h2 id="11-keyboard-and-interaction-tips">11. Keyboard and Interaction Tips<a class="headerlink" href="#11-keyboard-and-interaction-tips" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Drag on charts</strong>: Click and hold on the forecast region of any conditioned variable's chart to set values by dragging. The cursor changes to a crosshair over draggable areas. A small badge reading "drag to set path" (or "drag to adjust policy" for the rate chart) confirms the chart is interactive.</p>
+</li>
+<li>
+<p><strong>Sweeping paths</strong>: Hold the mouse button down and move horizontally across quarters to draw an entire path in one gesture rather than clicking quarter by quarter.</p>
+</li>
+<li>
+<p><strong>Quick conditioning workflow</strong>: Click "condition" on the chart, then immediately drag to set the path. This is faster than using the sidebar sliders for exploratory work.</p>
+</li>
+<li>
+<p><strong>Right-click to drop a pin at the cursor</strong>: Right-clicking on a forecast chart conditions that variable (if needed) and plants the conditioned point exactly where you clicked — a one-gesture way to set a single target value. The dot snaps to the cursor instantly.</p>
+</li>
+<li>
+<p><strong>Fine-tuning with sliders</strong>: After dragging a rough path on the chart, switch to the sidebar sliders for precise numeric adjustments (0.1 pp resolution).</p>
+</li>
+<li>
+<p><strong>Per-quarter on/off</strong>: Use the quarter labels in the sidebar as toggles to "punch holes" in your conditioning -- for example, condition quarters 1-4 and 8-12 but leave 5-7 unconditioned to let the model interpolate freely.</p>
+</li>
+<li>
+<p><strong>Compare scenarios quickly</strong>: Add a second scenario, set different conditioning, and both lines appear on every chart simultaneously.</p>
+</li>
+<li>
+<p><strong>Hover for values</strong>: Hover over any point on any trace to see its numeric value in a tooltip (formatted to 2 decimal places).</p>
+</li>
+<li>
+<p><strong>Save early, save often</strong>: The Save button is instant and timestamped. Export your scenario before making large changes so you can Load it back if needed.</p>
+</li>
+<li>
+<p><strong>Growth rate toggle</strong>: Switch between q/q annualized and y/y above the chart grid depending on which convention your analysis requires.</p>
+</li>
+</ul>
+<h2 id="12-the-us-fiscal-block">12. The US Fiscal Block<a class="headerlink" href="#12-the-us-fiscal-block" title="Permanent link">&para;</a></h2>
+<p>When the country is the <strong>United States</strong>, a <em>Fiscal block (derived)</em> group appears below the
+standard charts. It implements public-finance projection the way the CBO and IMF
+financial-programming frameworks do: the BVAR estimates the fiscal <strong>drivers</strong> and the
+<strong>reporting</strong> variables are derived from them by an accounting identity, never freely estimated.</p>
+<p><strong>Estimated drivers (conditionable).</strong> Two fiscal driver charts behave like any other variable --
+you can condition them by dragging or with the sidebar sliders:</p>
+<ul>
+<li><strong>Government revenue</strong> -- general-government current receipts as a ratio to GDP.</li>
+<li><strong>Primary expenditure</strong> -- government primary (non-interest) spending as a ratio to GDP.</li>
+</ul>
+<p><strong>Derived reporting variables (not draggable).</strong> These are computed from the drivers plus the
+macro forecast by the budget-identity recursion, and are labelled as derived:</p>
+<ul>
+<li><strong>Primary balance</strong> -- revenue minus primary expenditure (positive = surplus).</li>
+<li><strong>Debt-to-GDP</strong> -- accumulated from the change in the debt ratio, seeded at the latest observed
+  level. The path responds to the primary balance and to the snowball term (the gap between the
+  effective interest rate and nominal GDP growth).</li>
+</ul>
+<p>Because the reporting variables are derived, conditioning a driver flows straight through to them:
+impose a tighter revenue path and the primary balance improves and the debt-to-GDP path bends down
+accordingly. The effective interest rate is backed out of the budget identity so the stock and the
+flows always stay mutually consistent; for that reason the effective-rate, interest (debt-service),
+and overall-deficit charts are intentionally not shown (under the change-in-debt/GDP parametrization
+they collapse to a residual close to nominal growth and are not independently informative).</p>
+<h2 id="13-global-var-cross-country-linkage">13. Global VAR Cross-Country Linkage<a class="headerlink" href="#13-global-var-cross-country-linkage" title="Permanent link">&para;</a></h2>
+<p><strong>33 economies</strong> are linked into a Global VAR (GVAR) layer — the United States plus 32 other blocs
+(the Euro Area as a single aggregate plus 31 Rest-of-World blocs: Japan, the UK, Canada, China, and a
+wide set of OECD and emerging-market economies). Together they cover roughly <strong>90% of global demand</strong>.
+Each bloc carries a <em>Rest-of-World</em> chart group of three trade-weighted "star" variables -- foreign
+demand, foreign inflation, and foreign policy/financial conditions -- that summarize its trading
+partners, plus a shared set of global commons (oil and US financial conditions) common to every
+bloc. Unlike earlier versions where the US was a closed anchor, the <strong>US is now a fully endogenous
+bloc</strong>: it carries its own Rest-of-World stars, so it both drives the rest of the world <em>and</em> receives
+spillback feedback from it.</p>
+<p><strong>What this means in practice.</strong> Condition a path on any GVAR economy (for example a US policy-rate
+or GDP path), then switch to another linked economy. Its forecast already embeds the spillover: the
+tool solves the whole set of countries as a single cross-country system, so the shock flows from one
+bloc to the others through their Rest-of-World blocks (and the shared oil / US-financial-conditions
+commons), with the responses feeding back on each other until the system settles.</p>
+<p><strong>Global commons (oil and US financial conditions).</strong> Below the Rest-of-World block each GVAR bloc
+shows a <strong>Global commons</strong> chart group: the oil price (WTI, plotted as a price level in $/bbl), the US
+10-year Treasury yield, the US BAA corporate yield, and the US equity index. These four are
+<em>US-determined</em>: the United States carries them as its own variables, and every other bloc receives
+the <strong>same</strong> path. You set them on the <strong>United States</strong> screen — condition the oil price (or any of
+them) there, and the change is carried over identically to every other economy, where the chart is
+read-only and labelled <em>carried over from the US path</em>. Each bloc's domestic variables then respond
+to the common shock through that bloc's own estimated relationships. Economically this captures oil
+and US financial conditions as genuinely global drivers: a US-set oil-price scenario moves activity,
+inflation and rates in every linked economy at once.</p>
+<p><strong>Why it stays fast, and where the "Solve full GVAR" button comes in.</strong> At 33 blocs — with the US now
+endogenous — the full cross-country solve is large (it takes a few seconds), so the tool keeps the
+<strong>drag itself instant</strong> and defers the heavy solve to an explicit button:</p>
+<ul>
+<li><strong>While you drag, nothing heavy runs.</strong> Dragging or planting a pin updates the chart from a cheap
+  local preview — the conditioned dot snaps to your value immediately (see <em>The optimistic pin</em>) and the
+  drag stays smooth at the screen's frame rate. <strong>No cross-country solve fires during the drag.</strong></li>
+<li><strong>On release, one fast preview solve fires.</strong> When you let go of the mouse, the tool runs a single
+  cheap "direct" preview — the first-order, one-hop cross-country channels — so the lines settle to a
+  reasonable propagated path.</li>
+<li><strong>Click "Solve full GVAR" for the complete answer.</strong> A <strong>"Solve full GVAR"</strong> button (and the top-bar
+  Compute) runs the <em>complete</em> cross-country fixed point — every feedback loop, including the new
+  Rest-of-World → US spillback — plus the uncertainty bands. This is the heavy step, so it is gated
+  behind the button rather than fired on every drag. A small pill shows whether you are viewing the fast
+  <strong>DIRECT preview</strong> or the <strong>full solve</strong>, and a "computing…" badge appears while the full solve runs.</li>
+</ul>
+<p>The UI also shows a small read-out (sweeps, the spectral radius, and the solve time in milliseconds).</p>
+<p><strong>Uncertainty in GVAR mode.</strong> By default the scenario uncertainty band is the model's own
+(unconditional) forecast density centred on the propagated (spillover-adjusted) scenario path — it
+keeps the full forecast width and sits around the displayed line rather than on the baseline. If you
+turn on <strong>Experimental features</strong> (the toggle in the lower-left corner), the band instead re-solves
+the whole cross-country system for every posterior draw — the <em>conditional</em> cloud, which pinches
+tightly at the points you have pinned and is slower to compute. The default is recommended for most
+uses; the experimental mode is there if you specifically want the conditional pinching behaviour.</p>
+<p>The <strong>United States</strong> is now a <strong>fully endogenous</strong> member of the system, not a closed anchor: it
+carries its own Rest-of-World block (three trade-weighted stars built from a US trade-weights row), so
+it drives the rest of the system <em>and</em> is driven back by it. Conditioning another economy therefore
+feeds back onto the US forecast through the full "Solve full GVAR" solution (the fast direct preview
+shows only the one-hop channels).</p>
+<h3 id="the-two-cross-border-spillover-switches">The two cross-border spillover switches<a class="headerlink" href="#the-two-cross-border-spillover-switches" title="Permanent link">&para;</a></h3>
+<p>On a GVAR-linked bloc the sidebar carries a <strong>Cross-border spillovers</strong> section with <strong>two independent
+switches</strong>, both <strong>off by default</strong>. They act through <em>different</em> mechanisms and control different
+things — keep them straight:</p>
+<ul>
+<li><strong>Scenario spillovers (GVAR solve)</strong> — store flag <code>gvarScenarioSpillover</code>. Controls whether a
+  <strong>conditioning scenario</strong> (the pins you drag) on one economy propagates to its trade partners through
+  the <strong>live coupled GVAR solve</strong> (the fixed point <code>x = M·x + d</code>). <em>Off</em> (default): the conditioned
+  forecast stays <strong>local</strong> — trade partners are frozen — which keeps dragging fast; press <strong>Solve full
+  GVAR</strong> when you want the complete cross-country answer. <em>On</em>: the cross-country preview engages on
+  every pin edit.</li>
+<li><strong>Long-run target spillovers (GVAR constant shifts)</strong> — store flag <code>spilloverEnabled</code>. Controls
+  whether the <strong>long-run-target</strong> shifts (the <code>δc</code> drift setter of Section 14) propagate cross-country
+  through the <strong>precomputed <code>(I − M)⁻¹</code></strong> coupling (no live solve). <em>Off</em> (default): a long-run target
+  moves <strong>only its own economy</strong> (the viewed bloc's own target always applies locally). <em>On</em>: every
+  active bloc's long-run target is injected into the GVAR and propagated to the rest of the world. In
+  both modes a target left at the model estimate (<code>δc = 0</code>) is an exact no-op.</li>
+</ul>
+<p>In short: the first switch propagates <strong>scenario pins</strong> via the <strong>solve</strong>; the second propagates
+<strong>long-run constants</strong> via the <strong>precomputed inverse</strong>. Both persist across a country switch and reset
+to off with <strong>Reset all</strong>.</p>
+<blockquote>
+<p><strong>Note (naming).</strong> These are the precise mechanism names. The in-app captions currently read
+"Long-run target spillovers (GVAR constants)" for the <em>scenario/solve</em> switch and "Long-run trend
+spillovers" for the <em>long-run constant</em> switch; a caption rename to match the names above is flagged
+as a follow-up. The mechanisms behave exactly as described here.</p>
+</blockquote>
+<h2 id="14-long-run-targets-per-variable-drift-sliders">14. Long-Run Targets (per-variable drift sliders)<a class="headerlink" href="#14-long-run-targets-per-variable-drift-sliders" title="Permanent link">&para;</a></h2>
+<p>In the control panel, the <strong>Long-run targets</strong> section lets you set a variable's long-run
+(≈H-quarter, the chart horizon) forecast to a target value <em>in the chart's display units</em>. <strong>Every</strong>
+forecastable variable has its own slider with a ±0.1 number input; drag the slider or type a target.
+The change is <strong>instant and exact</strong> — there is <strong>no Compute, no re-estimation, and no draw
+reweighting</strong>. Each slider defaults to the model's own current terminal forecast, and its arrows step
+±0.1 from that estimate, so an unmoved slider (or one snapped back to the estimate) is an exact no-op
+(it changes nothing).</p>
+<p><strong>What it does, in one sentence.</strong> It shifts the model's <em>drift</em> (the companion constant) for the
+chosen variable's own equation by exactly the amount needed for that variable's terminal forecast to
+land on your target, and lets the <strong>estimated</strong> model dynamics drag every other variable along
+coherently. Mechanically the deviation is <code>ΔY = S_h[:, j]·δc_j</code>, where <code>S_h</code> is the model's own
+partial companion-power sum (computed once in the browser from the shipped companion) and <code>δc_j</code> is
+the single drift shift that hits your target. Setting several targets superposes linearly.</p>
+<p>This is the tool for imposing a structural long-run view that per-quarter conditioning cannot easily
+express — anchoring long-run inflation to 2%, or trend real growth to a target — without
+re-estimating. Because the shift is added <strong>identically</strong> to the central path and to <strong>every</strong>
+confidence band (q05/q16/q50/q84/q95), the baseline and scenario fans translate <strong>rigidly</strong>: the band
+<em>widths</em> are unchanged and the bands never cross. The targets persist until you remove them; the panel
+badge reads <code>N targets · exact</code> because the terminal forecast hits the target by construction (the
+achieved value equals the target to numerical precision).</p>
+<p>This drift setter <strong>replaces</strong> the earlier <em>entropic-tilt</em> long-run mechanism, which reweighted the
+posterior draws toward the target. The tilt was correct in principle but degenerated in practice — as
+a target was pushed away from the draw cloud the effective sample size collapsed and the pinned band
+rested on a handful of draws. The drift setter is deterministic and exact at any target, so it never
+degenerates, and it is instant (no draw loop to reweight).</p>
+<p><strong>Read the labels.</strong>
+- This sets the long-run <strong>drift, not persistence</strong> — it moves where the path <em>glides to</em>, not how
+  fast it gets there.
+- The <strong>cross-variable response</strong> (other variables moving when you set one target) is a <strong>real model
+  side effect</strong>, not a bug — it is the model's own estimated dynamics responding to the shifted drift.
+- The <strong>real-growth target owns the debt direction</strong> (it drives the (i−g) snowball in the fiscal
+  block). It is labelled distinctly. It is <strong>not</strong> a structural debt fix — it changes the growth
+  assumption that the debt path inherits.</p>
+<p><strong>Near-singular variables are disabled.</strong> For a few variables the model's terminal sensitivity to a
+drift shift is too small to invert reliably (a tiny <code>δc</code> would imply an enormous, ill-posed move).
+Those sliders are <strong>disabled</strong> (greyed out, with a "near-singular response" tooltip) and cannot be
+targeted. This is the <code>|sensitivity| &lt; 0.3</code> guard; it is expected behaviour, not a fault — pick a
+better-behaved variable (for example target <em>growth</em> rather than a near-unit-root level).</p>
+<p><strong>Availability and the GVAR caveat.</strong> Long-run targets apply to <strong>every model — single-country and
+GVAR alike</strong>, and are computed entirely from each model's own shipped companion. On a <strong>GVAR bloc</strong>
+the target is <strong>marginal</strong>: it shifts <em>that bloc's own</em> long-run forecast, but the trade partners and
+the US-determined global commons are <strong>not</strong> re-solved, so the realised <em>joint</em> long-run value may
+differ from the target. The control panel shows this amber caveat explicitly when a GVAR bloc is
+selected.</p>
+<p><strong>Model-based vs. with-judgement (per variable).</strong> Every variable is, by default, <strong>model-based</strong>: its
+slider sits at the model's own terminal estimate (the <code>est</code> reference shown next to it), so its forecast
+is exactly what the BVAR/GVAR produces with no user input. The moment you move a slider — or apply the
+consensus preset below — that variable becomes <strong>with-judgement</strong>: its target is highlighted, a <code>↺</code>
+reset-to-estimate control appears next to it, and the panel footer badge reads <code>N targets · exact</code>. The
+distinction is <strong>per-country and per-variable</strong>: within a single chart grid some series can be left
+purely model-based while others carry your judgement, and switching country resets every variable back
+to model-based (targets reference the old model's variables, so they are cleared on a country switch).
+Pressing <code>↺</code> on a row, or <strong>reset all to estimate</strong>, returns the chosen variable(s) to model-based with
+no residue (the default <em>is</em> the model estimate, so a cleared slider is byte-exact).</p>
+<p><strong>Consensus anchors (optional preset, OFF by default).</strong> When a bloc has a set of publicly-defensible
+long-run values, a <strong>Consensus anchors</strong> panel appears at the top of the section with an <strong>Apply
+consensus anchors</strong> button. It is <strong>opt-in and off by default</strong> — the raw model estimate stays the
+default view until you click it. The preset loads public-knowledge defaults for the bloc's
+well-conditioned variables: the central bank's <strong>inflation target</strong> (or band mid-point), <strong>potential
+growth</strong> (IMF-WEO / OECD), a <strong>neutral policy rate</strong> (<code>r* + π*</code>), and <strong>structural/NAIRU
+unemployment</strong>. It deliberately <strong>omits</strong> any variable whose slider is near-singular/perverse (for
+example the BE/CA/CZ policy-rate sliders), so the one-click preset never ships an unreliable thumb.
+Once applied, the button shows <code>✓ Consensus applied</code>; <strong>Clear</strong> (or <strong>reset all to estimate</strong>) reverts
+every variable to model-based. These values are a transparent starting point for discussion, not an IMF
+forecast — they are the same anchors documented in <code>docs/pre-ship-smoke-test.md</code> §2 and shipped in
+<code>app/public/data/default_anchors.json</code>.</p>
+<blockquote>
+<p><strong>Note (policy-rate row).</strong> The policy rate is an ordinary variable of the model, so it carries its
+own long-run-target slider like every other series — set its terminal value directly. There is no
+separate Taylor-rule rate overlay; the rate's long run is governed solely by its own slider.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
