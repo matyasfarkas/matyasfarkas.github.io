@@ -1,0 +1,1492 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>2026Q1 Data-Refresh Feasibility (no re-estimation) - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2026q1-data-refresh-feasibility-no-re-estimation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2026Q1 Data-Refresh Feasibility (no re-estimation)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal recap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-the-current-panel-looks-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the current panel looks like
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources-access-verified-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sources &amp; access (verified live)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#live-query-results-latest-available-obs-as-of-2026-06-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Live query results (latest available obs as of 2026-06-22)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readiness-matrix-source-economy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Readiness matrix (source × economy)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caveats-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caveats found
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bottom-line-realistic-as-of-for-a-refresh-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bottom line — realistic 'as-of' for a refresh TODAY
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2026q1-data-refresh-feasibility-no-re-estimation">2026Q1 Data-Refresh Feasibility (no re-estimation)<a class="headerlink" href="#2026q1-data-refresh-feasibility-no-re-estimation" title="Permanent link">&para;</a></h1>
+<p><strong>Date of check:</strong> 2026-06-22 · <strong>Branch:</strong> <code>improve-live</code> · <strong>Mode:</strong> READ-ONLY availability probe (no data/code edited, nothing committed).</p>
+<h2 id="goal-recap">Goal recap<a class="headerlink" href="#goal-recap" title="Permanent link">&para;</a></h2>
+<p>Extend the OBSERVED panel by one quarter (2025Q4 → 2026Q1) and let the forecast <strong>re-anchor</strong> from the new last-observed state. The model companion (<code>companion_mean</code> / <code>companion_draws</code>) stays <strong>fixed</strong> — same post-estimation philosophy as the δc long-run sliders. This note only answers: <em>is 2026Q1 published yet, source-by-source, economy-by-economy?</em></p>
+<h2 id="what-the-current-panel-looks-like">What the current panel looks like<a class="headerlink" href="#what-the-current-panel-looks-like" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Estimated/shipped BVAR panels (<code>app/public/data/bvar/&lt;C&gt;/historical.json</code>) end at <strong>2025Q4</strong> (<code>n_periods=40</code>, US). Dates aren't stored in the shipped matrices; anchor comes from <code>build_gvar_2025q4.py</code> (common 2025Q4 endpoint).</li>
+<li>Committed raw JSONs (<code>pipeline/country_rawdata/DataRaw_&lt;CC&gt;.json</code>) are already <strong>ragged</strong>: CA &amp; JP at <strong>2026Q1</strong>, EA/UK/BR/MX/ZA at <strong>2025Q4</strong>, CN &amp; IN only at <strong>2025Q2</strong> (these EMs lag and are back-filled to 2025Q4 via WEO-annual + Denton disaggregation in <code>build_gvar_2025q4.py</code> — i.e. already partly synthetic at quarterly freq).</li>
+</ul>
+<h2 id="sources-access-verified-live">Sources &amp; access (verified live)<a class="headerlink" href="#sources-access-verified-live" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>FRED</strong> — key <code>8ce324fcfb4663bfef63d3d44fbdbc73</code> (hardcoded in <code>pipeline/build_country_data.py:19</code>, <code>build_fiscal_us_gg.py</code>, <code>build_credit_*.py</code>, etc.). All US series + EA HICP + several EM real-GDP series resolve here.</li>
+<li><strong>Eurostat</strong> SDMX 2.1 (<code>build_oecd_eurostat.py</code>): <code>namq_10_gdp</code> real GDP, <code>prc_hicp_midx</code> HICP, etc. — used for EU/EFTA OECD members' <strong>real GDP</strong>.</li>
+<li>Note: EA-aggregate <strong>HICP</strong> is sourced from <strong>FRED</strong> (<code>CP0000EZ19M086NEST</code>), <em>not</em> the Eurostat HICP endpoint (<code>build_ea_eurostat.py:27</code>).</li>
+</ul>
+<h2 id="live-query-results-latest-available-obs-as-of-2026-06-22">Live query results (latest available obs as of 2026-06-22)<a class="headerlink" href="#live-query-results-latest-available-obs-as-of-2026-06-22" title="Permanent link">&para;</a></h2>
+<p><strong>US (FRED) — 2026Q1 fully published:</strong>
+| Series | FRED ID | Latest | 2026Q1? |
+|---|---|---|---|
+| Real GDP | GDPC1 | 2026Q1 (upd 2026-05-28) | ✅ |
+| GDP deflator | GDPDEF | 2026Q1 | ✅ |
+| PCE price index | PCEPI | 2026Q1 (2026Q2 still <code>.</code>) | ✅ |
+| Fed funds | FEDFUNDS | 2026-05 (monthly) | ✅ |
+| Unemployment | UNRATE | 2026-05 (monthly) | ✅ |
+| Fiscal revenue | W066RC1Q027SBEA | 2026Q1 | ✅ |
+| Fiscal expenditure | W068RCQ027SBEA | 2026Q1 | ✅ |
+| Fiscal interest | A180RC1Q027SBEA | 2026Q1 | ✅ |
+| Debt %GDP | GFDEGDQ188S | 2026Q1 | ✅ |</p>
+<p><strong>Real GDP, other economies:</strong>
+| Economy | Source | Latest | 2026Q1? |
+|---|---|---|---|
+| EA20 / DE / FR / IT / ES / NL | Eurostat namq_10_gdp | <strong>2026Q1</strong> | ✅ |
+| UK | FRED NGDPRSAXDCGBQ | 2026Q1 | ✅ |
+| JP | FRED JPNRGDPEXP | 2026Q1 | ✅ |
+| CA | FRED NGDPRSAXDCCAQ | 2026Q1 | ✅ |
+| BR | FRED NGDPRSAXDCBRQ | 2026Q1 | ✅ |
+| MX | FRED NGDPRSAXDCMXQ | 2026Q1 | ✅ |
+| ZA | FRED NGDPRSAXDCZAQ | 2026Q1 | ✅ |
+| CN | mixed (nominal GDP/IP, BIS-on-FRED) | raw json ends <strong>2025Q2</strong> | ⚠️ lags |
+| IN | mixed (OECD/FRED real GDP) | raw json ends <strong>2025Q2</strong> | ⚠️ lags |</p>
+<p><strong>Prices / rates (timely):</strong>
+| Series | Source | Latest | 2026Q1? |
+|---|---|---|---|
+| EA HICP | FRED CP0000EZ19M086NEST | <strong>2026-05</strong> (upd 2026-06-17) | ✅ |
+| EA HICP (Eurostat direct) | prc_hicp_midx / prc_hicp_manr | <strong>2025-12</strong> (API not refreshed) | ❌ for this endpoint |
+| US PCE / deflator | FRED | 2026Q1 | ✅ |
+| Policy/short rates | FRED, ECB | through 2026-05 | ✅ |</p>
+<h2 id="readiness-matrix-source-economy">Readiness matrix (source × economy)<a class="headerlink" href="#readiness-matrix-source-economy" title="Permanent link">&para;</a></h2>
+<p>Legend: ✅ 2026Q1 ready · ⚠️ partial/lags · ❌ not available today</p>
+<table>
+<thead>
+<tr>
+<th>Economy</th>
+<th>Real GDP</th>
+<th>Prices (CPI/HICP/defl)</th>
+<th>Rates</th>
+<th>Fiscal</th>
+<th>Refresh to 2026Q1?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US</td>
+<td>✅ FRED</td>
+<td>✅ FRED</td>
+<td>✅ FRED</td>
+<td>✅ FRED</td>
+<td><strong>YES</strong></td>
+</tr>
+<tr>
+<td>EA</td>
+<td>✅ Eurostat</td>
+<td>✅ FRED (HICP)</td>
+<td>✅</td>
+<td>n/a here</td>
+<td><strong>YES</strong></td>
+</tr>
+<tr>
+<td>DE / FR / IT / ES / NL</td>
+<td>✅ Eurostat</td>
+<td>via FRED EA-HICP mirror ✅</td>
+<td>✅</td>
+<td>—</td>
+<td><strong>YES</strong> (GDP), verify member-CPI source per build</td>
+</tr>
+<tr>
+<td>UK</td>
+<td>✅ FRED</td>
+<td>per UK build (ONS/FRED) — CPI timely</td>
+<td>✅</td>
+<td>✅</td>
+<td><strong>YES (likely)</strong> — confirm UK CPI build series</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>✅ FRED</td>
+<td>per JP build — CPI timely</td>
+<td>✅</td>
+<td>✅</td>
+<td><strong>YES (likely)</strong></td>
+</tr>
+<tr>
+<td>CA</td>
+<td>✅ FRED</td>
+<td>per CA build — CPI timely</td>
+<td>✅</td>
+<td>✅</td>
+<td><strong>YES (likely)</strong></td>
+</tr>
+<tr>
+<td>BR / MX / ZA</td>
+<td>✅ FRED</td>
+<td>per EM build — CPI usually timely</td>
+<td>✅</td>
+<td>—</td>
+<td><strong>YES (GDP)</strong></td>
+</tr>
+<tr>
+<td>CN</td>
+<td>⚠️ raw 2025Q2</td>
+<td>⚠️</td>
+<td>⚠️</td>
+<td>—</td>
+<td><strong>NO clean 2026Q1</strong> (lags; WEO back-fill only)</td>
+</tr>
+<tr>
+<td>IN</td>
+<td>⚠️ raw 2025Q2</td>
+<td>⚠️</td>
+<td>⚠️</td>
+<td>—</td>
+<td><strong>NO clean 2026Q1</strong> (lags; WEO back-fill only)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="caveats-found">Caveats found<a class="headerlink" href="#caveats-found" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Eurostat HICP endpoint is stale</strong> in the direct API (ends 2025-12) — but it's a non-issue: EA HICP is pulled from <strong>FRED</strong> (<code>CP0000EZ19M086NEST</code>, current to 2026-05). For <em>euro-member</em> CPI inputs, confirm each member build's price source isn't the stale Eurostat HICP path.</li>
+<li><strong>Discontinued OECD-on-FRED CPI mirrors</strong>: <code>GBRCPIALLMINMEI</code>, <code>CPALTT01CAM659N</code> both end 2025-03 (discontinued) — these are NOT the pipeline's UK/CA price sources, but a refresh script must avoid them.</li>
+<li><strong>CN / IN</strong> are the structural laggards: real source data ends 2025Q2; the panel only reaches 2025Q4 via WEO-annual disaggregation. A genuine 2026Q1 observed point is not available today; refreshing them would mean another round of back-fill, not real data.</li>
+<li><code>FREV</code> / <code>FPEXP</code> are <strong>internal variable names</strong>, not FRED IDs — the real FRED fiscal IDs are W066…/W068…/A180…/GFDEGDQ188S (all ✅).</li>
+<li>Rates/CPI are monthly and already run into 2026-04/05; quarterly aggregation for 2026Q1 (Jan–Mar) is complete.</li>
+</ol>
+<h2 id="bottom-line-realistic-as-of-for-a-refresh-today">Bottom line — realistic 'as-of' for a refresh TODAY<a class="headerlink" href="#bottom-line-realistic-as-of-for-a-refresh-today" title="Permanent link">&para;</a></h2>
+<p><strong>A clean, no-re-estimation refresh to 2026Q1 is feasible for the advanced economies</strong> — US (incl. all fiscal), the euro area + EU/EFTA members (real GDP from Eurostat, HICP from FRED), UK, JP, CA, and the FRED-sourced EMs (BR, MX, ZA). For these, 2026Q1 macro is published and the forecast can simply re-anchor from the new last-observed state.</p>
+<p><strong>The binding constraint is the EM laggards (CN, IN)</strong> whose real source data still ends ~2025Q2 and which only reach 2025Q4 through WEO-annual disaggregation — no genuine 2026Q1 observation exists for them today.</p>
+<p><strong>Recommended as-of quarter: 2026Q1</strong> for the AE + FRED-EM blocs (the bulk of the system), while <strong>CN/IN remain at their back-filled 2025Q4</strong> (or are extended again by the same WEO mechanism, flagged as synthetic). If a single common balanced endpoint is required across <em>all</em> blocs, the honest common observed endpoint is still <strong>2025Q4</strong>; 2026Q1 is achievable as a deliberately ragged-edge refresh with CN/IN flagged.</p>
+<hr />
+<h1 id="part-2-refresh-mechanics-automation-no-re-estimation">Part 2 — Refresh MECHANICS &amp; Automation (no re-estimation)<a class="headerlink" href="#part-2-refresh-mechanics-automation-no-re-estimation" title="Permanent link">&para;</a></h1>
+<p><em>Complements Part 1 (data availability). This part answers: given the data, exactly HOW does a
+no-re-estimation refresh work — what re-projects vs what's a static artifact, which JSONs must be
+regenerated, whether δc/conditioning/plotting follow, and a one-command automation sketch.</em></p>
+<h2 id="1-how-the-displayed-baseline-is-produced-split-brain-precomputed-and-re-projected">(1) How the displayed BASELINE is produced — split brain (precomputed <em>and</em> re-projected)<a class="headerlink" href="#1-how-the-displayed-baseline-is-produced-split-brain-precomputed-and-re-projected" title="Permanent link">&para;</a></h2>
+<p>There are <strong>two distinct baseline objects</strong>, and the refresh story depends on which:</p>
+<p><strong>A. The SCENARIO / DEVIATION engine RE-PROJECTS in-browser (no JSON dependence).</strong>
+<code>makeCountryModel</code> (<code>gvarSolve.ts:344-363</code>) computes <code>baseLvl</code> <strong>at load time</strong> via
+<code>conditionalForecast(params, histMat, allNaN)</code> — the DK smoother projecting the <strong>fixed</strong> companion
+(<code>companion_mean.betahat/sigmahat</code>) forward from <code>historical_levels.data</code>. It does <strong>not</strong> read
+<code>baseline_levels.json</code>. The single-country path is identical: <code>useConditionalForecast.ts:199-203</code>
+re-runs the unconditional smoother and explicitly uses <em>"SMOOTHER's unconditional as reference (not
+stored baseline)"</em> so deviation=0 ⇒ delta=0. ⇒ Every conditioning result, GVAR cross-country solve,
+δc overlay, and scenario band <strong>already re-anchors from <code>historical_levels</code> + <code>companion_mean</code></strong> the
+instant the history changes — no MATLAB, no JSON regen.</p>
+<p><strong>B. The displayed BASELINE LINE + always-on BANDS are PRECOMPUTED MATLAB artifacts.</strong>
+The grey baseline central line and its fan are read <strong>directly from static JSON</strong>: q/q view from
+<code>baseline.json</code> <code>.mean/.q16/.q84</code> (<code>ChartGrid.tsx:1396,1491-1492</code>); level view from
+<code>baseline_levels.json</code> (<code>ChartGrid.tsx:1399-1402,1539-1540</code>). These come from
+<code>export_bvar_gvar24_loop.m:218,233-234</code>: <code>meanLvl = VARcf_DKcks([Xc;nan(H,n)],lags,Gam,sm,0)</code>
+(deterministic DK mean of the fixed posterior-mean companion — byte-identical to the browser's
+<code>conditionalForecast(allNaN)</code>, memory invariant "~1e-11"); bands = <code>quantile(R.Dfc,…)</code> where <code>R.Dfc</code>
+is the predictive density <code>cgl_bvarV5</code> produced <em>during estimation</em> from the <strong>old</strong> last-observed state.</p>
+<p><strong>Settled:</strong> the <em>engine</em> re-projects (JSON-independent); the <em>displayed baseline line+band</em> is a
+precomputed artifact. A refresh that re-anchors only the engine but leaves <code>baseline*.json</code> stale
+shows the <strong>scenario</strong> on the new vintage while the <strong>grey baseline fan stays on the old anchor</strong> —
+visibly inconsistent. So <code>baseline*.json</code> MUST be regenerated.</p>
+<h2 id="2-minimal-refresh-exact-regen-list-per-bloc">(2) Minimal refresh — exact regen list (per bloc)<a class="headerlink" href="#2-minimal-refresh-exact-regen-list-per-bloc" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Refresh?</th>
+<th>How / why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>historical_levels.json</code></td>
+<td><strong>REGEN</strong> (append 1 row)</td>
+<td>observed 100·log levels; engine state anchor</td>
+</tr>
+<tr>
+<td><code>historical.json</code></td>
+<td><strong>REGEN</strong> (append 1 row)</td>
+<td>q/q-ann display history = <code>gh(levels)</code> (4·Δlog)</td>
+</tr>
+<tr>
+<td><code>baseline.json</code></td>
+<td><strong>REGEN</strong> (mean+bands)</td>
+<td>mean = re-project fixed companion (deterministic); bands = re-project <code>companion_draws</code> β,Σ from the new state</td>
+</tr>
+<tr>
+<td><code>baseline_levels.json</code></td>
+<td><strong>REGEN</strong> (mean+bands)</td>
+<td>same, in level space</td>
+</tr>
+<tr>
+<td><code>fiscal_meta.json</code></td>
+<td><strong>REGEN <code>d0</code> only</strong> (US/EA/JP/UK/CA/CN)</td>
+<td><code>d0</code> = last-observed debt level (US=122.568, 100·log) = debt-recursion seed; <code>sfaDefault</code>/<code>idx</code> unchanged</td>
+</tr>
+<tr>
+<td><code>companion_mean.json</code></td>
+<td><strong>UNCHANGED</strong></td>
+<td>estimated model — frozen</td>
+</tr>
+<tr>
+<td><code>companion_draws.json(.gz)</code></td>
+<td><strong>UNCHANGED</strong></td>
+<td>posterior β,Σ — frozen (re-used to re-project bands)</td>
+</tr>
+<tr>
+<td><code>spec.json</code>, <code>transformations.json</code></td>
+<td><strong>UNCHANGED</strong></td>
+<td>frozen</td>
+</tr>
+<tr>
+<td><code>bvar/gvar/coupling_default.json.gz</code>, <code>weights_*.json</code></td>
+<td><strong>UNCHANGED</strong></td>
+<td>(I−M)⁻¹ depends on betahats+trade weights, not data vintage → no 19-min rebuild, no 100MB issue</td>
+</tr>
+<tr>
+<td>DSGE catalog/IRFs</td>
+<td><strong>UNCHANGED</strong></td>
+<td>independent of BVAR vintage</td>
+</tr>
+</tbody>
+</table>
+<p>App <strong>recomputes for itself</strong> (no regen): all conditioning/deviation paths, the GVAR solve, scenario
+bands (<code>runGvarBandSolve.ts</code> re-runs each <code>companion_draws</code> draw through the solver from the refreshed
+history), and the δc drift cache.</p>
+<p><strong>Bands — the one real "need MATLAB?" question → NO.</strong> Today's baseline bands come from <code>cgl_bvarV5</code>'s
+<code>R.Dfc</code>. But <code>companion_draws.json</code> ships the full per-draw (β,Σ), and the browser already re-projects
+bands from them via <code>conditionalForecast</code> per draw (<code>runGvarBandSolve.ts:64-70</code>, <code>drawCompanion</code>). So
+the baseline band can be <strong>regenerated in pure JS/Python</strong> by looping the shipped draws through the
+same DK projector from the new state. (The app's band is parameter-only by documented design —
+<code>runGvarBandSolve.ts:11-14</code> — so reproducing it parameter-only is the intended, consistent choice;
+<code>R.Dfc</code> additionally carried DK simulation shocks, which the live app does not display anyway.)</p>
+<h2 id="3-c-overlay-conditioning-on-the-refreshed-baseline-yes-both-still-work">(3) δc overlay + conditioning on the refreshed baseline — YES, both still work<a class="headerlink" href="#3-c-overlay-conditioning-on-the-refreshed-baseline-yes-both-still-work" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>δc drift:</strong> the drift cache is built from <code>betahat/n/lags</code> (fixed companion) and re-anchors off
+  <code>baseline.mean</code>'s terminal (<code>ChartGrid.tsx:1062-1087</code>). Post-baseline by construction — feed it the
+  refreshed <code>baseline.json</code> and it re-anchors automatically. No code change.</li>
+<li><strong>Conditioning:</strong> the engine reference is the <em>recomputed</em> unconditional smoother (§1A), so
+  pins/scenarios re-anchor with zero changes; bands re-run draws from the new history. Fiscal
+  conditioning seeds the debt recursion from <code>fiscal_meta.d0</code> — hence <code>d0</code> is in the regen list.</li>
+</ul>
+<h2 id="4-plotting-dates-one-hardcoded-constant-blocks-the-auto-extend">(4) Plotting / dates — ONE hardcoded constant blocks the auto-extend<a class="headerlink" href="#4-plotting-dates-one-hardcoded-constant-blocks-the-auto-extend" title="Permanent link">&para;</a></h2>
+<p>X-axis is <strong>numeric offsets</strong> (x=−1 last hist, x=0 first forecast) mapped to calendar quarters by
+<code>lastHistOf(country)</code> (<code>dates.ts</code>). Forecast-start is <strong>not</strong> derived from <code>historical.json</code> length —
+it hangs off one constant:</p>
+<div class="highlight"><pre><span></span><code>dates.ts:38   export const DEFAULT_LAST_HIST_DATE = &#39;2025-10-01&#39;   // 2025 Q4 — common panel end
+</code></pre></div>
+<p>Every dated label (<code>offsetLabel</code>/<code>offsetYQ</code> → <code>ChartGrid.tsx:2328,2338,2345</code>, <code>ScenarioBar.tsx</code>, CSV
+export <code>ChartGrid.tsx:24</code>) flows from this. Left at <code>2025-10-01</code>, an appended 2026Q1 obs would be
+<strong>mis-dated</strong> (new point labelled as a forecast quarter; whole fan slides one quarter into the past).
+<strong>Fix:</strong> bump <code>DEFAULT_LAST_HIST_DATE → '2026-01-01'</code>; advance the per-bloc <code>LAST_HIST_DATE</code> overrides
+only for blocs that actually got a new quarter (CN/IN, if held at 2025Q4, get an override). <strong>Horizon
+stays 20</strong> (<code>H = min(horizon, baseline.mean.length)</code>) — not auto-extended, so the forecast END recedes
+one quarter (2031Q1), which is the desired re-anchor. <strong>No other hardcoded dates/horizons</strong> found in
+<code>app/src</code> (grep <code>2025Q4</code>/<code>2025-12</code>/<code>2025-10</code>/<code>forecastStart</code>/<code>lastObserved</code>). Stale comments to fix
+(not load-bearing): <code>ScenarioBar.tsx:10</code>, <code>ChartGrid.tsx:2327</code>, <code>dates.ts:31-37</code>.</p>
+<h2 id="5-automation-one-command-no-matlab">(5) Automation — one command, NO MATLAB<a class="headerlink" href="#5-automation-one-command-no-matlab" title="Permanent link">&para;</a></h2>
+<p>All four projected artifacts reduce to <strong>append + DK-project the shipped companion</strong>, a computation
+the codebase already implements in pure TS (<code>kalman.ts:conditionalForecast</code>, validated to 1e-11 vs
+MATLAB). A Node refresher reuses the production engine verbatim; MATLAB is needed only to re-estimate
+β,Σ (out of scope).</p>
+<div class="highlight"><pre><span></span><code>refresh-quarter.mjs — for each bloc C in weights_full.json:
+ 1. PULL 2026Q1 for C from the SAME sources build_*.py use (FRED hardcoded key, Eurostat keys,
+    WEO/raw JSON); reuse each build&#39;s series map, fetch only the latest obs.
+ 2. APPEND → rebuild the 100·log level row exactly as the build script does (same transforms,
+    COVID-as-missing, window policy); push onto historical_levels.data; historical.json = gh(levels).
+ 3. RE-PROJECT (pure JS, FIXED companion — import kalman.ts/conditionalForecast):
+      params  = companion_mean.json  (UNCHANGED)
+      histMat = refreshed historical_levels
+      baseline_levels.mean = conditionalForecast(params, histMat, allNaN).mean   # = VARcf_DKcks(…,0)
+      baseline.mean        = gh(baseline_levels.mean)
+      bands: for each draw (β_d,Σ_d) in companion_draws:
+               Lfc_d = conditionalForecast({β_d,Σ_d}, histMat, allNaN).mean
+             baseline_levels.q16/84/05/95 = quantile_d(level);  baseline.q16/… = quantile_d(gh(Lfc_d))
+ 4. FISCAL blocs: fiscal_meta.d0 = refreshed last-observed debt level.
+ 5. WRITE historical.json, historical_levels.json, baseline.json, baseline_levels.json, (fiscal_meta).
+ 6. ONE-TIME: dates.ts DEFAULT_LAST_HIST_DATE → &#39;2026-01-01&#39; (+ per-bloc overrides for laggards).
+</code></pre></div>
+<ul>
+<li><strong>Cost:</strong> band re-projection = <code>nDraws × conditionalForecast</code> per bloc (US: ~500 × one 20q smoother
+  over 41×41) — exactly what <code>runGvarBandSolve</code> does in the worker; offline it's seconds/bloc.
+  Companion + coupling untouched → no (I−M)⁻¹ rebuild, no GitHub 100MB issue.</li>
+<li><strong>MATLAB-free:</strong> YES for a pure data refresh; required ONLY for re-estimation.</li>
+<li><strong>Validate before shipping:</strong> match each <code>build_*.py</code> source map + the COVID-as-missing /
+  WEO-extension / window rules so the appended row reproduces the harmonised panel byte-for-byte
+  (the panel was built to a <em>common</em> endpoint with held-last/truncate — Part 1; the refresher must
+  apply the same window policy, and treat CN/IN per Part 1's ragged-edge recommendation).</li>
+</ul>
+<h2 id="bottom-line-mechanics">Bottom line (mechanics)<a class="headerlink" href="#bottom-line-mechanics" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Baseline source:</strong> split — engine re-projects from <code>companion_mean</code>+<code>historical_levels</code>
+  (JSON-independent); the displayed line+band is precomputed <code>baseline*.json</code>.</li>
+<li><strong>Regen exactly:</strong> <code>historical.json</code>, <code>historical_levels.json</code>, <code>baseline.json</code>,
+  <code>baseline_levels.json</code> (+ <code>fiscal_meta.d0</code> for fiscal blocs). UNCHANGED: <code>companion_mean/draws</code>,
+  <code>spec</code>, <code>transformations</code>, coupling, weights.</li>
+<li><strong>δc + conditioning:</strong> unaffected (post-baseline, auto re-anchor).</li>
+<li><strong>Plotting:</strong> one constant <code>dates.ts:DEFAULT_LAST_HIST_DATE</code> 2025-10-01→2026-01-01; rest is
+  offset-based. Horizon stays 20 (forecast end recedes one quarter — desired).</li>
+<li><strong>Automation:</strong> single Node script (append → DK-project the shipped companion for mean AND per-draw
+  bands → write 4 JSONs → bump the date constant) refreshes the whole panel <strong>without MATLAB</strong>.</li>
+</ul>
+<hr />
+<h1 id="part-3-synthesis-verdict-risks-and-the-build-plan">Part 3 — Synthesis: verdict, risks, and the build plan<a class="headerlink" href="#part-3-synthesis-verdict-risks-and-the-build-plan" title="Permanent link">&para;</a></h1>
+<p><em>Consolidates Parts 1–2 into the six deliverables. Parts 1–2 stand as the evidence; this part is the
+decision-ready answer plus the actual implementation plan for later review on <code>improve-live</code>.</em></p>
+<h2 id="1-feasibility-verdict">(1) FEASIBILITY VERDICT<a class="headerlink" href="#1-feasibility-verdict" title="Permanent link">&para;</a></h2>
+<p><strong>YES — a no-re-estimation refresh to 2026Q1 is feasible today</strong>, for the bulk of the system, and it
+is exactly the post-estimation "re-anchor the fixed model from a new last-observed state" operation the
+δc sliders already embody. The companion (<code>companion_mean</code>/<code>companion_draws</code>) never changes; only the
+observed panel extends by one quarter and the forecast re-projects forward from it.</p>
+<p><strong>Realistic as-of quarter:</strong>
+- <strong>2026Q1</strong> for the advanced economies + FRED-sourced EMs — US (incl. all fiscal), EA + EU/EFTA
+  members (real GDP Eurostat, HICP FRED), UK, JP, CA, BR, MX, ZA. 2026Q1 macro is published; monthly
+  rates/CPI already run to 2026-04/05 so the quarterly aggregate is complete.
+- <strong>2025Q4 (held / WEO-synthetic)</strong> for <strong>CN and IN</strong> — their real source data still ends ~2025Q2 and
+  only reaches 2025Q4 via WEO-annual disaggregation; no genuine 2026Q1 observation exists today.
+- ⇒ <strong>Deliberately ragged-edge refresh:</strong> ship 2026Q1 for the AE+FRED-EM blocs, hold CN/IN at
+  back-filled 2025Q4 (flagged synthetic). The honest <em>common balanced</em> endpoint across all blocs
+  remains 2025Q4; 2026Q1 is a ragged edge, which the panel already tolerates (raw JSONs are ragged
+  today: CA/JP at 2026Q1, EA/UK at 2025Q4, CN/IN at 2025Q2).</p>
+<h2 id="2-automation-design-one-command-matlab-free-recap">(2) AUTOMATION DESIGN (one command, MATLAB-free) — recap<a class="headerlink" href="#2-automation-design-one-command-matlab-free-recap" title="Permanent link">&para;</a></h2>
+<p><code>refresh-quarter.mjs</code>: <strong>pull → append → re-project the FIXED companion → regen JSONs → bump one date
+constant.</strong> Mean = <code>conditionalForecast(companion_mean, refreshedHist, allNaN)</code> (the production
+TS DK smoother, validated 1e-11 vs <code>VARcf_DKcks(…,0)</code>); bands = the same projector looped over the
+shipped per-draw <code>companion_draws</code> (β,Σ) — identical to what <code>runGvarBandSolve</code> already does in the
+worker. Companion + coupling untouched ⇒ <strong>no (I−M)⁻¹ rebuild, no MATLAB, seconds/bloc</strong>. Full sketch
+in Part 2 §5.</p>
+<h2 id="3-json-regen-list-who-re-projects">(3) JSON REGEN LIST + who re-projects<a class="headerlink" href="#3-json-regen-list-who-re-projects" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Regen by script?</th>
+<th>App auto-reprojects?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>historical_levels.json</code>, <code>historical.json</code></td>
+<td><strong>YES</strong> (append 1 row)</td>
+<td>— (these ARE the new state)</td>
+</tr>
+<tr>
+<td><code>baseline.json</code>, <code>baseline_levels.json</code> (mean + bands)</td>
+<td><strong>YES</strong></td>
+<td>engine ignores them, but the <strong>displayed grey line+fan reads them</strong> → must regen</td>
+</tr>
+<tr>
+<td><code>fiscal_meta.d0</code> (US/EA/JP/UK/CA/CN)</td>
+<td><strong>YES</strong> (debt-recursion seed only)</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>companion_mean/draws</code>, <code>spec</code>, <code>transformations</code>, <code>coupling_default</code>, <code>weights_*</code>, DSGE</td>
+<td><strong>NO — frozen</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Conditioning / deviation / GVAR solve / scenario bands / δc cache</td>
+<td><strong>NO</strong></td>
+<td><strong>YES — re-anchors automatically</strong> from <code>historical_levels</code>+<code>companion_mean</code> at load</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The split-brain rule (Part 2 §1):</strong> the <em>engine</em> re-projects itself JSON-independently the instant
+history changes; the <em>static baseline line+band</em> does NOT. So regen <code>baseline*.json</code> or the grey fan
+sits on the stale anchor while scenarios move on the new vintage.</p>
+<h2 id="4-plotting-changes">(4) PLOTTING CHANGES<a class="headerlink" href="#4-plotting-changes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>One load-bearing constant:</strong> <code>dates.ts:38 DEFAULT_LAST_HIST_DATE = '2025-10-01'</code> → <strong><code>'2026-01-01'</code></strong>.
+  Everything dated flows from it via numeric offsets + <code>lastHistOf()</code>; left stale, the appended 2026Q1
+  point is mis-labelled and the whole fan slides one quarter into the past.</li>
+<li><strong>Per-bloc overrides</strong> in <code>LAST_HIST_DATE</code> only for blocs that did NOT advance (add a <code>2025-10-01</code>
+  override for <strong>CN/IN</strong> so they stay correctly dated at 2025Q4).</li>
+<li><strong>Horizon unchanged</strong> (<code>H = min(horizon, baseline.mean.length)</code>, =20): forecast END recedes one
+  quarter (→2031Q1) — the intended re-anchor.</li>
+<li><strong>No other hardcoded 2025Q4/2025-12/forecastStart</strong> in <code>app/src</code>. Stale comments to tidy
+  (cosmetic): <code>ScenarioBar.tsx:10</code>, <code>ChartGrid.tsx:2327</code>, <code>dates.ts:31-37</code>.</li>
+</ul>
+<h2 id="5-risks-what-to-verify">(5) RISKS + WHAT TO VERIFY<a class="headerlink" href="#5-risks-what-to-verify" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Risk</th>
+<th>Mitigation / verification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td><strong>Panel-build mismatch</strong> — appended row not built byte-identically to the harmonised panel (transforms, COVID-as-missing, WEO-extension, window/truncate policy) ⇒ a level discontinuity at the seam.</td>
+<td>Replay each <code>build_*.py</code> source map + transform exactly; <strong>diff the re-derived 2025Q4 row against the shipped <code>historical_levels</code> last row → must match to ~1e-9</strong> before trusting the appended 2026Q1 row.</td>
+</tr>
+<tr>
+<td>R2</td>
+<td><strong>Stale-anchor inconsistency</strong> — regen the engine but not <code>baseline*.json</code> ⇒ grey fan on old anchor, scenarios on new.</td>
+<td>Always regen all four JSONs together; visual check that grey baseline central line == unconditional smoother at deviation 0.</td>
+</tr>
+<tr>
+<td>R3</td>
+<td><strong>Date misalignment</strong> — forget the <code>DEFAULT_LAST_HIST_DATE</code> bump ⇒ fan slides one quarter.</td>
+<td>After bump, eyeball the x-axis: last hist tick = 2026Q1, first forecast = 2026Q2 (AE blocs), CN/IN still 2025Q4.</td>
+</tr>
+<tr>
+<td>R4</td>
+<td><strong>Band reproduction drift</strong> — JS per-draw projection ≠ original <code>cgl_bvarV5 R.Dfc</code> band.</td>
+<td>Expected &amp; acceptable: the live app's band is parameter-only <strong>by design</strong> (<code>runGvarBandSolve.ts:11-14</code>); regen the same parameter-only way → consistent with what users already see. Sanity: new bands ⊇ central path, widen with horizon, no NaN.</td>
+</tr>
+<tr>
+<td>R5</td>
+<td><strong>CN/IN ragged edge</strong> — accidentally extending them with fake 2026Q1.</td>
+<td>Explicitly exclude CN/IN from the 2026Q1 pull; hold at 2025Q4; flag as synthetic in UI/notes.</td>
+</tr>
+<tr>
+<td>R6</td>
+<td><strong>FRED ID traps</strong> — discontinued OECD-on-FRED CPI mirrors (<code>GBRCPIALLMINMEI</code>, <code>CPALTT01CAM659N</code> end 2025-03), <code>FREV</code>/<code>FPEXP</code> are internal names not FRED IDs, stale Eurostat HICP endpoint (ends 2025-12).</td>
+<td>Use only the build scripts' <em>actual</em> series IDs; pull EA/member HICP from FRED, never the Eurostat HICP path.</td>
+</tr>
+<tr>
+<td>R7</td>
+<td><strong>δc / conditioning regression</strong> — sliders or pins anchor to the wrong terminal after refresh.</td>
+<td>Post-refresh smoke test: δc=0 ⇒ overlay == baseline; a single pin re-solves; fiscal pin uses refreshed <code>d0</code> (debt recursion continuous).</td>
+</tr>
+<tr>
+<td>R8</td>
+<td><strong>Vintage-drift sanity</strong> — a refreshed bloc looks crazy (units, sign, 4·log scale).</td>
+<td>Per-bloc: 2026Q1 q/q-ann within plausible range vs 2025Q4; level continuous; debt %GDP continuous; spot-check 2–3 blocs by hand against the source print.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-build-plan-later-on-improve-live-for-user-review">(6) BUILD PLAN (later, on <code>improve-live</code>, for user review)<a class="headerlink" href="#6-build-plan-later-on-improve-live-for-user-review" title="Permanent link">&para;</a></h2>
+<p>Read-only today; this is the implementation sequence to propose:</p>
+<ul>
+<li><strong>Phase 0 — Scaffold &amp; lock sources.</strong> Inventory each bloc's exact source map from <code>build_*.py</code>
+  (series IDs, transforms, COVID/WEO/window rules). Define the bloc set: AE+FRED-EM → 2026Q1; CN/IN → hold.</li>
+<li><strong>Phase 1 — Replay/validate the LAST row (gate).</strong> For each bloc, re-derive the existing <strong>2025Q4</strong>
+  row from live sources and diff against shipped <code>historical_levels</code> (~1e-9). <strong>Gate:</strong> must match
+  before any append — proves the refresher reproduces the panel's transform/window policy.</li>
+<li><strong>Phase 2 — Append 2026Q1 + re-project (core).</strong> Pull 2026Q1, append the 100·log row, run
+  <code>conditionalForecast(companion_mean,…)</code> for the mean and loop <code>companion_draws</code> for bands; write
+  <code>historical*.json</code>, <code>baseline*.json</code>, and <code>fiscal_meta.d0</code>. Reuse <code>kalman.ts</code>/<code>gh</code> verbatim (no
+  re-implementation of the projector).</li>
+<li><strong>Phase 3 — Plotting.</strong> Bump <code>DEFAULT_LAST_HIST_DATE → '2026-01-01'</code>; add CN/IN per-bloc overrides;
+  tidy the stale comments.</li>
+<li><strong>Phase 4 — Verify (the gate to ship).</strong> Run R1–R8 checks: seam continuity, grey-fan vs smoother,
+  axis dates, band sanity, δc=0==baseline, single-pin + fiscal-pin re-solve, 2–3 hand spot-checks.
+  Green-gate + diff review before any commit.</li>
+<li><strong>Phase 5 — Ship as ragged edge.</strong> Commit the regen'd JSONs + the one date change; CN/IN flagged.
+  Document the as-of (2026Q1 ragged; common balanced 2025Q4). Re-runnable each quarter (the script is
+  the quarterly-refresh tool, not a one-off).</li>
+</ul>
+<p><strong>One-line cost:</strong> <code>nDraws × conditionalForecast</code> per bloc (seconds), companion/coupling frozen — the
+whole refresh is minutes, MATLAB-free.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1233 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>MP Committee — Live Demo Script (15 min, laptop only, no slides) - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mp-committee-live-demo-script-15-min-laptop-only-no-slides" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MP Committee — Live Demo Script (15 min, laptop only, no slides)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-flight-checklist-do-this-before-the-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-flight checklist (do this before the room)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#000030-what-it-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (0:00–0:30) — What it is
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#030400-unconditional-central-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (0:30–4:00) — UNCONDITIONAL / central projection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(0:30–4:00) — UNCONDITIONAL / central projection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monetary-block-030200" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monetary block (0:30–2:00)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fiscal-satellite-200315" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fiscal satellite (2:00–3:15)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excel-export-315400" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Excel export (3:15–4:00)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#400800-case-1-gfc-corporate-yield-shock-waggonerzha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (4:00–8:00) — CASE 1: GFC corporate-yield shock (Waggoner–Zha)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(4:00–8:00) — CASE 1: GFC corporate-yield shock (Waggoner–Zha)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-corporate-up-10y-free-400600" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 — corporate up, 10Y FREE (4:00–6:00)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-10y-held-unchanged-600800" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 — ADD 10Y held UNCHANGED (6:00–8:00)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8001130-case-2-ea-yield-shock-us-global-spillovers-gvar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (8:00–11:30) — CASE 2: EA-yield shock → US &amp; global spillovers (GVAR)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11301430-case-3-us-oilenergy-demand-vs-supply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (11:30–14:30) — CASE 3: US oil/energy — demand vs supply
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(11:30–14:30) — CASE 3: US oil/energy — demand vs supply">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-oil-up-alone-demand-dominant-11301300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 — oil UP alone → DEMAND-dominant (11:30–13:00)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-sign-restrictions-adverse-supply-13001430" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 — add sign restrictions → ADVERSE SUPPLY (13:00–14:30)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14301500-close-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (14:30–15:00) — Close + Excel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-asked-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "If asked" — FAQ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refined-boss-reply-4-sentences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Refined boss-reply (4 sentences)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="mp-committee-live-demo-script-15-min-laptop-only-no-slides">MP Committee — Live Demo Script (15 min, laptop only, no slides)<a class="headerlink" href="#mp-committee-live-demo-script-15-min-laptop-only-no-slides" title="Permanent link">&para;</a></h1>
+<p>A timed, click-by-click runbook for the live tool demo. Each segment gives the <strong>exact clicks</strong>, the <strong>one-line econometric point</strong> to say out loud, and the <strong>expected on-screen result</strong>. Language rule: every conditional path is <em>"the most likely projection given the conditioning assumptions"</em> (a Waggoner–Zha / DK conditional forecast). <strong>Never say "entropic tilting."</strong></p>
+<hr />
+<h2 id="pre-flight-checklist-do-this-before-the-room">Pre-flight checklist (do this before the room)<a class="headerlink" href="#pre-flight-checklist-do-this-before-the-room" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[ ] Tool open in the browser, live build loaded (production <code>bvarscenario/main</code>).</li>
+<li>[ ] <strong>Country = United States</strong> (top-right Country dropdown, GVAR optgroup; US is the default on load).</li>
+<li>[ ] <strong>Units toggle = "q/q ann."</strong> — NOT "% vs baseline" (that view is read-only and disables dragging).</li>
+<li>[ ] <strong>Anchors confirmed ON</strong>: left ControlPanel → "Long-run targets" header reads "(7 set)". If the debt path looks flat, anchors haven't seeded yet (async fetch of <code>default_anchors.json</code>) — refresh and wait a beat.</li>
+<li>[ ] <strong>Clean scenario</strong>: ControlPanel header → "Reset all" → "Yes, reset all" once, so no stray pins and spillover switches are OFF.</li>
+<li>[ ] Know where the financial charts live: <strong>10Y (GLB_USLR), Baa (GLB_USBAA), oil (GLB_OIL), equity (GLB_USEQ)</strong> are in the <strong>"Global commons"</strong> section near the bottom. <strong>Aaa corporate (FAAA)</strong> and <strong>domestic WTI (PZTEXP)</strong> are in the <strong>"Country-specific variables"</strong> section. Scroll down once now so you can find them fast.</li>
+<li>[ ] Between cases use <strong>"Reset"</strong> (clears this scenario's pins, keeps anchors). Only use "Reset all" when you want spillover switches OFF too.</li>
+</ul>
+<hr />
+<h2 id="000030-what-it-is">(0:00–0:30) — What it is<a class="headerlink" href="#000030-what-it-is" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>"This is a multi-country Bayesian VAR forecasting tool with a fiscal satellite and a GVAR cross-country layer. Everything you'll see is live: I open the central projection, then build scenarios by conditioning, and export the whole thing to Excel."</p>
+</blockquote>
+<hr />
+<h2 id="030400-unconditional-central-projection">(0:30–4:00) — UNCONDITIONAL / central projection<a class="headerlink" href="#030400-unconditional-central-projection" title="Permanent link">&para;</a></h2>
+<h3 id="monetary-block-030200">Monetary block (0:30–2:00)<a class="headerlink" href="#monetary-block-030200" title="Permanent link">&para;</a></h3>
+<p><strong>Clicks:</strong> The grid is already on US. Row 1 (macro triad) holds <strong>Inflation</strong> (source <code>JGDP</code>, "GDP Chain Price Index"), <strong>Policy Rate</strong> (<code>POLRATE</code>, "Effective Federal Funds Rate"), and <strong>GDP Growth</strong> (<code>GDPH</code>).</p>
+<p><strong>Say (one-liner — rates vs levels):</strong> "Price indices like <code>JGDP</code> are modeled as <strong>100·log price <em>levels</em></strong> with a Minnesota / Litterman random-walk prior; what you see on the <em>Inflation</em> chart is a <em>display transform</em> — 4·Δ of that log level, i.e. q/q annualized. The policy rate and yields, by contrast, are modeled <strong>directly as levels in percent</strong>. So inflation is a transform of a modeled price level; the policy rate is a modeled level itself."</p>
+<p><strong>Also say (prior + COVID, one line each):</strong> "Estimation is GLP — Giannone–Lenza–Primiceri — Minnesota prior shrinking toward a random walk. And the 2020 COVID quarters are treated as <strong>missing data</strong>, imputed inside the Gibbs sampler, so the pandemic outliers don't contaminate the dynamics."</p>
+<p><strong>Expected on screen:</strong> Inflation glides to ~2%, policy rate toward neutral. Frame it: <strong>"the central projection with long-run targets anchored to consensus"</strong> — the consensus long-run anchors (the δc forward-pass: inflation→2%, policy→neutral, fiscal→OBR/IMF/CBO) are <strong>ON by default</strong> and are a deterministic drift, <strong>separate</strong> from any scenario conditioning. (If asked to show the raw BVAR: in a panel click "reset all to estimate" — inflation/debt revert to the drifting RW path; re-apply with "Apply consensus anchors.")</p>
+<h3 id="fiscal-satellite-200315">Fiscal satellite (2:00–3:15)<a class="headerlink" href="#fiscal-satellite-200315" title="Permanent link">&para;</a></h3>
+<p><strong>Clicks:</strong> Scroll to Row 2 — the <strong>4 estimated BVAR fiscal variables</strong>, each its own chart: <strong>Revenue</strong> (<code>FREV_GDP</code>), <strong>Primary Expenditure</strong> (<code>FPEXP_GDP</code>), <strong>Effective Interest Rate</strong> (<code>EFFI</code>), <strong>Stock-Flow Adjustment</strong> (<code>SFA</code>). Directly under them: the header <strong>"Fiscal block — derived by accounting identity"</strong> with 3 <strong>derived</strong> charts: <strong>Primary Balance</strong>, <strong>Δ Debt-to-GDP</strong>, <strong>Debt-to-GDP</strong>.</p>
+<p><strong>Say (one-liner — the satellite):</strong> "Government debt is <strong>not</strong> a BVAR variable. The BVAR estimates only these four — revenue, primary spending, the effective interest rate on the stock, and the stock-flow-adjustment residual. Debt is <strong>derived</strong> by rolling them through the budget identity: dₜ = dₜ₋₁·(1+i)/(1+g) − pb/4 + sfa/4, seeded at d₀ = 122.6% of GDP."</p>
+<p><strong>Say (the snowball, one line):</strong> "(1+i)/(1+g) is the <strong>snowball</strong> — when the effective rate exceeds nominal growth, debt rises even with a balanced primary budget; <strong>pb</strong> = revenue − primary spending is the discretionary effort; <strong>SFA</strong> is the deficit-debt residual — below-the-line and valuation items the headline deficit misses."</p>
+<p><strong>Expected on screen:</strong> Debt-to-GDP <strong>rises realistically</strong> (not a flat degenerate path) — because the consensus anchors hold inflation at ~2%, the effective rate near neutral (EFFI 5.0), and revenue/spending at CBO ratios. The four <code>WN</code>-prior fiscal ratios mean-revert (revenue ~17.5%) rather than drift, which is what keeps the path defensible.</p>
+<h3 id="excel-export-315400">Excel export (3:15–4:00)<a class="headerlink" href="#excel-export-315400" title="Permanent link">&para;</a></h3>
+<p><strong>Clicks:</strong> First set <strong>Uncertainty = Quick</strong> (TopBar) and press <strong>Compute</strong> so the bands populate. Then on the bottom <strong>ScenarioBar</strong> click the <strong>Excel</strong> button.</p>
+<p><strong>Say:</strong> "It downloads <code>forecast_US_&lt;name&gt;_&lt;timestamp&gt;.xlsx</code> — <strong>one sheet per variable</strong>, columns <em>Quarter | Date | Uncond. Q16 | Baseline (median) | Uncond. Q84 | scenario Q16 | scenario median | scenario Q84 | Deviation</em>, plus a Summary sheet and a Notes sheet documenting each source variable and unit."</p>
+<p><strong>Expected on screen:</strong> File downloads; every monetary and fiscal variable (including derived Debt-to-GDP) has its own tab. (Scenario columns are blank until a scenario is computed — that comes next.)</p>
+<hr />
+<h2 id="400800-case-1-gfc-corporate-yield-shock-waggonerzha">(4:00–8:00) — CASE 1: GFC corporate-yield shock (Waggoner–Zha)<a class="headerlink" href="#400800-case-1-gfc-corporate-yield-shock-waggonerzha" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Story: pull the <strong>corporate</strong> yield up. First <strong>without</strong> pinning the govt 10Y (flight-to-quality), then <strong>with</strong> it pinned unchanged (clean credit-spread shock).</p>
+</blockquote>
+<h3 id="step-1-corporate-up-10y-free-400600">Step 1 — corporate up, 10Y FREE (4:00–6:00)<a class="headerlink" href="#step-1-corporate-up-10y-free-400600" title="Permanent link">&para;</a></h3>
+<p><strong>Clicks:</strong> Scroll to <strong>"Country-specific variables"</strong> → <strong>Moody's Seasoned Aaa Corporate Bond Yield</strong> (<code>FAAA</code>). Click the panel's <strong>"condition"</strong> button (turns blue → "CONDITIONED"). <strong>Drag the line UP</strong> ~+150–200 bp in the early quarters (t+1..t+4), or <strong>right-click</strong> a quarter to plant the bullet exactly at the cursor value. <strong>Do not touch the 10Y.</strong> Press <strong>Compute</strong> (Quick).</p>
+<p><strong>Say (one-liner):</strong> "Only the corporate yield is pinned, so the Treasury 10Y is <strong>free</strong>. This is the most likely projection given that one conditioning assumption — and the model pulls the risk-free 10Y <strong>down</strong>: flight-to-quality, with output and inflation softening. A recession read."</p>
+<p><strong>Expected on screen:</strong> Corporate yield up where you pinned it; the 10Y (<code>GLB_USLR</code>, Global commons) drifts <strong>down</strong>; growth/inflation soften.</p>
+<h3 id="step-2-add-10y-held-unchanged-600800">Step 2 — ADD 10Y held UNCHANGED (6:00–8:00)<a class="headerlink" href="#step-2-add-10y-held-unchanged-600800" title="Permanent link">&para;</a></h3>
+<p><strong>Clicks:</strong> Scroll to <strong>"Global commons"</strong> → <strong>10-Year Treasury Note Yield</strong> (<code>GLB_USLR</code>; conditionable because Country==US). Click its <strong>"condition"</strong> button but <strong>do not move the line</strong> — a fresh condition starts at the baseline (zero-deviation), which <em>is</em> "held unchanged." Press <strong>Compute</strong> again.</p>
+<p><strong>Say (one-liner):</strong> "Now <strong>both</strong> yields are pinned — corporate up, risk-free curve held flat. That isolates a pure <strong>credit-spread / financial-conditions</strong> shock with no flight-to-quality offset. The clean scenario."</p>
+<p><strong>Expected on screen:</strong> Corporate up, 10Y flat at baseline; the spread blowout is now the whole story. (Tip: per-quarter sliders in the left ControlPanel "Conditioning" section let you pin only the early impact window and leave the tail free; "All" toggles all 20 quarters.)</p>
+<hr />
+<h2 id="8001130-case-2-ea-yield-shock-us-global-spillovers-gvar">(8:00–11:30) — CASE 2: EA-yield shock → US &amp; global spillovers (GVAR)<a class="headerlink" href="#8001130-case-2-ea-yield-shock-us-global-spillovers-gvar" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>"Reset, switch to the Euro Area, shock the <strong>same yield</strong> there, and watch it reach the US through the cross-country coupling."</p>
+</blockquote>
+<p><strong>Clicks:</strong>
+1. ControlPanel header → <strong>"Reset all"</strong> → "Yes, reset all" (clean, not stacked on the GFC; also returns spillover switches to OFF — we turn them back on deliberately).
+2. Top-bar <strong>Country</strong> dropdown → <strong>Euro Area</strong> (GVAR-linked section).
+3. Shock the same yield you used for the US: <strong>EA 10Y Gov Bond Yield</strong> (<code>YIELD10_EA</code>) for the govt version, or <strong>EA IG Corporate Bond Yield</strong> (<code>EACORP</code>) for the corporate version. <strong>Right-click</strong> the chart at the target quarter/level (right-click conditions AND plants the bullet in one step), then drag up ~+100–150 bp across the first few quarters.
+4. Left ControlPanel → <strong>"Cross-border spillovers"</strong> → set <strong>"Scenario spillovers (GVAR solve)"</strong> to <strong>On</strong>.
+5. Click <strong>"▶ Solve full GVAR"</strong> for the complete coupled fixed point (all feedback loops, RoW→US).</p>
+<p><strong>Say (one-liner):</strong> "The GVAR links blocs through three trade-weighted RoW star variables per country — foreign demand, foreign inflation, foreign short rate. The EA shock raises EA's contribution to every partner's stars, and the solver iterates the coupled fixed point <strong>x = Mx + d</strong>. A single-country EA BVAR would hold the US fixed; the GVAR lets EA tightening pull on US financial conditions and global activity. This is where the cross-country coupling shines."</p>
+<p><strong>Expected on screen (two read-outs):</strong>
+- <strong>Stay on EA</strong> and watch the in-model <strong>Global commons</strong> charts move: <strong>US 10Y</strong> (<code>GLB_USLR</code>), <strong>US BAA</strong> (<code>GLB_USBAA</code>), <strong>US equity / S&amp;P 500</strong> (<code>GLB_USEQ</code>), <strong>WTI oil</strong> (<code>GLB_OIL</code>).
+- <strong>Switch Country → United States</strong> — the EA pins <strong>persist</strong> across the switch (separate store slice), so the full US bloc (growth, inflation, policy rate, yields) shows the EA→US spillover even though the US has no own pins.</p>
+<p><strong>Gotcha to remember:</strong> without turning the spillover switch On (or pressing Solve full GVAR), EA moves <strong>alone</strong> and the US/global charts won't budge — this is the #1 thing to not forget. A full 50-bloc solve is ~4.5s warm; press once and let it land.</p>
+<hr />
+<h2 id="11301430-case-3-us-oilenergy-demand-vs-supply">(11:30–14:30) — CASE 3: US oil/energy — demand vs supply<a class="headerlink" href="#11301430-case-3-us-oilenergy-demand-vs-supply" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>"Reset first — this is NOT on top of the GFC. Condition only on higher oil → demand dominates. Then add short-term Cholesky-type sign restrictions to flip it to an adverse supply shock."</p>
+</blockquote>
+<p><strong>Setup clicks:</strong> Country back to <strong>United States</strong>. ControlPanel header → <strong>"Reset"</strong> (clears this scenario's pins; keeps the consensus anchors — exactly what we want). Confirm all "condition" buttons are grey.</p>
+<h3 id="step-1-oil-up-alone-demand-dominant-11301300">Step 1 — oil UP alone → DEMAND-dominant (11:30–13:00)<a class="headerlink" href="#step-1-oil-up-alone-demand-dominant-11301300" title="Permanent link">&para;</a></h3>
+<p><strong>Clicks:</strong> Use the US-domestic oil series <strong>Spot Oil Price: West Texas Intermediate</strong> (<code>PZTEXP</code>, "Country-specific variables"). Click <strong>"condition"</strong>, then <strong>drag the line UP</strong> to a higher level (e.g. ~<span class="arithmatex">\(70 → ~\)</span>100). It's a <strong>level-display</strong> var, so you're setting a <strong>$/bbl level</strong>, not a growth rate — drag to the actual target price. Press <strong>Compute</strong> (Quick).</p>
+<p><strong>Say (one-liner):</strong> "With <strong>only</strong> oil pinned, the conditional solve reads the historical oil–output covariance as <strong>demand-driven</strong> — so US output <strong>rises</strong> with the oil price. The demand-dominant response."</p>
+<p><strong>Expected on screen:</strong> Oil at the pinned level; US output <strong>up</strong>.</p>
+<h3 id="step-2-add-sign-restrictions-adverse-supply-13001430">Step 2 — add sign restrictions → ADVERSE SUPPLY (13:00–14:30)<a class="headerlink" href="#step-2-add-sign-restrictions-adverse-supply-13001430" title="Permanent link">&para;</a></h3>
+<p><strong>Clicks:</strong> Keep oil conditioned up. Now also condition <strong>GDP Growth</strong> (<code>GDPH</code>) and drag it <strong>DOWN</strong> at t+1..t+2; condition <strong>Inflation</strong> (<code>JGDP</code>) and drag it <strong>UP</strong> at t+1..t+2. Use the per-quarter sliders / "All"-off-then-enable-early so <strong>only t+1..t+2</strong> are active and the tail stays free. Press <strong>Compute</strong>.</p>
+<p><strong>Say (one-liner):</strong> "The 'Cholesky-type' move here is multi-variable Waggoner–Zha conditioning that pins the <strong>early signs</strong>: output down, inflation up in the impact window. That forces the <strong>supply-shock</strong> identification — a stagflationary response — instead of the demand read. The later quarters stay free, so the model fills in the dynamics."</p>
+<p><strong>Expected on screen:</strong> Same oil rise, but now output <strong>down</strong> and inflation <strong>up</strong> early — stagflation. The contrast with Step 1 is the whole point.</p>
+<hr />
+<h2 id="14301500-close-excel">(14:30–15:00) — Close + Excel<a class="headerlink" href="#14301500-close-excel" title="Permanent link">&para;</a></h2>
+<p><strong>Clicks:</strong> After the final Compute, hit the ScenarioBar <strong>Excel</strong> button once more.</p>
+<p><strong>Say:</strong> "Every case exports the same way — <strong>one sheet per variable, organized by date</strong>, with the unconditional baseline and ±1-s.d. band sitting <strong>next to</strong> the conditional path, band and deviation — including the satellite's derived Debt-to-GDP. The Summary tab lines all variables up. That's the full forecasting system: a central projection anchored to consensus, scenario conditioning on top, cross-country spillovers via the GVAR, and a one-click Excel hand-off."</p>
+<hr />
+<h2 id="if-asked-faq">"If asked" — FAQ<a class="headerlink" href="#if-asked-faq" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>The prior?</strong> "Minnesota / Litterman, GLP (Giannone–Lenza–Primiceri) implementation, shrinking toward a random walk on the macro and financial variables. The three fiscal <strong>ratios</strong> — revenue, primary spending, SFA — instead carry a <strong>white-noise</strong> prior so they revert to a long-run mean rather than drift; that's what keeps revenue at ~17.5% and stops the debt path running away."</li>
+<li><strong>Weak exogeneity of the RoW stars?</strong> "Each bloc's three trade-weighted foreign aggregates (ROWDEM/ROWINF/ROWFIN) enter as <strong>weakly exogenous</strong> regressors in the country VAR — standard Pesaran-type GVAR identification. At solve time the blocs are coupled and the foreign aggregates become endogenous to the system; we solve the fixed point x = Mx + d (closed form (I−M)⁻¹d), so consistency holds across the coupled solution. The US is endogenous in the live system with its own RoW stars."</li>
+<li><strong>COVID treatment?</strong> "2020 quarters are treated as <strong>missing data</strong>, imputed inside the Gibbs sampler — data augmentation in <code>cgl_bvarV5</code>, <strong>not</strong> Lenza–Primiceri volatility scaling. The outliers never enter the likelihood for the dynamics or the prior."</li>
+<li><strong>Anchors on vs raw?</strong> "The consensus long-run anchors are a deterministic δc forward-pass drift to publicly-defensible targets (inflation→2%, policy→neutral, fiscal→OBR/IMF/CBO). They're <strong>on by default</strong>, <strong>separate</strong> from the Waggoner–Zha conditioning, and toggle off via the 'Long-run targets' panel ('reset all to estimate') to show the raw drifting RW-BVAR."</li>
+<li><strong>Does the BVAR forecast debt?</strong> "No — it forecasts the <strong>four</strong> fiscal drivers; the satellite <strong>accumulates</strong> debt by the budget identity. The debt/PB bands come from running the recursion per-draw."</li>
+</ul>
+<hr />
+<h2 id="refined-boss-reply-4-sentences">Refined boss-reply (4 sentences)<a class="headerlink" href="#refined-boss-reply-4-sentences" title="Permanent link">&para;</a></h2>
+<p>The 15-minute script is written to <code>docs/mp-presentation-prep.md</code> and follows your exact flow: (0:30–4:00) the unconditional US central projection — monetary block (inflation as a 4·Δ display transform of a 100·log price <em>level</em> vs the policy rate modeled directly as a level, Minnesota/GLP prior, COVID-as-missing) and the fiscal satellite (4 BVAR drivers → snowball/primary-balance/SFA debt recursion, now rising realistically with consensus anchors on by default), plus the per-variable Excel export. Case 1 is the GFC corporate-yield Waggoner–Zha scenario — <code>FAAA</code> up with the 10Y free (flight-to-quality), then <code>GLB_USLR</code> pinned unchanged (clean credit-spread shock); Case 2 is the EA-yield shock (<code>YIELD10_EA</code>/<code>EACORP</code>) with the GVAR spillover switch and "Solve full GVAR" showing the US/global response via the trade-weighted RoW stars; Case 3 resets and runs US oil (<code>PZTEXP</code>) demand-dominant alone, then early-quarter output↓/inflation↑ sign restrictions to flip it to an adverse supply shock. Throughout it's framed as "the most likely projection given the conditioning assumptions" — never entropic tilting — with the anchors kept separate from the scenario layer, and it ends on the per-variable/per-date Excel hand-off. A pre-flight checklist (tool open, anchors-on confirmed, clean reset between cases) and an "if asked" FAQ (prior, weak exogeneity, COVID, anchors-on vs raw) are appended.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

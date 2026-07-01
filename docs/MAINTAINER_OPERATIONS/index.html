@@ -1,0 +1,3674 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../BUILD_AND_CI/">
+      
+      
+        <link rel="next" href="../ADDING_A_COUNTRY/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Operations - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#maintainers-guide-manually-updating-a-country-model" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Operations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-decision-tree-what-kind-of-update-is-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Decision tree — what kind of update is this?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-change-the-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Change the DATASET
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A. Change the DATASET">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a1-pick-the-right-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A1. Pick the right builder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2-where-the-raw-data-lives-and-the-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A2. Where the raw data lives, and the precedence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a3-add-swap-a-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A3. Add / swap a series
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a4-reflect-it-in-the-spec-block-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A4. Reflect it in the spec block tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-estimation-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. ESTIMATION SETTINGS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B. ESTIMATION SETTINGS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b1-env-knobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B1. Env knobs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b2-priors-lambda-mu-and-the-bvar-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B2. Priors (lambda / mu) and the BVAR call
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b3-the-covid-window-macro-only-masking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B3. The COVID window + macro-only masking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b4-exogeneity-the-external-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B4. Exogeneity / the external block
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b5-change-a-variables-prior-rw-wn-stationary-and-re-estimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5. Change a variable's PRIOR (RW ↔ WN stationary) and re-estimate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B5. Change a variable&#39;s PRIOR (RW ↔ WN stationary) and re-estimate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b51-what-wn-does-mechanically-verified" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5.1 What WN does, mechanically (verified)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b52-current-production-state-verified-in-the-deployed-specs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5.2 Current production state (verified in the deployed specs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b53-how-to-change-a-prior-copy-paste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5.3 How to change a prior — copy-paste
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b6-isfinancial-glb_-and-the-covid-mask-coherence-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6. isFinancial / GLB_* and the COVID mask — coherence rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B6. isFinancial / GLB_* and the COVID mask — coherence rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b61-the-four-globals-are-all-financial-coherence-fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6.1 The four globals are ALL financial (coherence fix)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b62-canada-ip_ca-rebuilt-as-a-log-level-coherence-fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6.2 Canada IP_CA rebuilt as a log-LEVEL (coherence fix)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b63-changing-an-isfinancial-flag-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6.3 Changing an isFinancial flag — checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b7-targeted-single-bloc-re-estimation-when-a-change-touches-one-bloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B7. Targeted single-bloc re-estimation (when a change touches one bloc)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B7. Targeted single-bloc re-estimation (when a change touches one bloc)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b71-what-bvar_gvar_blocsus-cc-actually-does-verified" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B7.1 What BVAR_GVAR_BLOCS="US &lt;CC&gt;" actually does (verified)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b72-the-three-legitimate-single-bloc-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B7.2 The three legitimate single-bloc jobs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-check-the-matlab-8-file-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. CHECK the MATLAB 8-file output
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. CHECK the MATLAB 8-file output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c1-the-8-file-contract-verified-exportbloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C1. The 8-file contract (verified exportbloc)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c2-convergence-mc-floor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2. Convergence + MC floor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c3-n-spec-companion-dim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C3. n == spec == companion dim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c4-fiscal-closure-fiscal-blocs-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C4. Fiscal closure (fiscal blocs only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d-store-the-jsons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. STORE the JSONs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="D. STORE the JSONs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d1-port-6-sig-fig-compaction-the-deployed-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D1. Port (6-sig-fig compaction — the deployed convention)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d2-copy-the-fiscal-meta-fiscal-blocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D2. Copy the fiscal meta (fiscal blocs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d2b-re-index-the-fiscal-meta-mandatory-rule-after-any-variable-order-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D2b. RE-INDEX the fiscal meta (MANDATORY RULE after any variable-order change)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d3-regenerate-the-coupling-artifact-mandatory-after-any-coupled-bloc-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D3. Regenerate the coupling artifact (MANDATORY after any coupled bloc change)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e-edit-the-checks-the-green-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E. EDIT the CHECKS — the green gate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="E. EDIT the CHECKS — the green gate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e1-canary-tests-block-deploy-treat-any-change-as-a-red-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E1. Canary tests (block deploy — treat any change as a red flag)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e2-feature-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E2. Feature tests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e3-when-n-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E3. When n changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f-publish-deploy-to-the-live-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F. PUBLISH (deploy to the live site)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F. PUBLISH (deploy to the live site)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f1-the-deploy-chain-verified-githubworkflowsdeploy-to-websiteyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F.1 The deploy chain (verified .github/workflows/deploy-to-website.yml)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f2-the-push-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F.2 The push command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f3-what-to-commit-before-pushing-a-coupled-re-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F.3 What to commit before pushing (a coupled re-estimation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g-the-long-run-target-overlay-c-drift-sliders-what-the-operator-needs-to-know" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G. The long-run-target overlay (δc drift sliders) — what the operator needs to know
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="G. The long-run-target overlay (δc drift sliders) — what the operator needs to know">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g1-what-it-is-operator-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G1. What it is (operator summary)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g2-interpreting-disabling-a-variable-the-sens03-guard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G2. Interpreting / disabling a variable (the |sens|&lt;0.3 guard)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g3-caveats-to-relay-to-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G3. Caveats to relay to users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g4-the-policy-rate-taylor-overlay-removed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G4. The policy rate (Taylor overlay removed)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g5-operator-troubleshooting-overlay-specific" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G5. Operator troubleshooting (overlay-specific)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g6-model-based-vs-with-judgement-and-the-consensus-anchor-preset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G6. Model-based vs. with-judgement, and the consensus-anchor preset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acknowledgments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#green-gate-priority-list-in-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Green-gate priority list (in order)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues-limitations-flagged-not-yet-fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known issues / limitations (flagged, NOT yet fixed)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-file-map-what-one-country-update-touches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick file map — what one country update touches
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empirical-evaluation-where-it-lives-and-what-it-does-not-touch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Empirical evaluation — where it lives, and what it does NOT touch
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-decision-tree-what-kind-of-update-is-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Decision tree — what kind of update is this?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-change-the-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Change the DATASET
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A. Change the DATASET">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a1-pick-the-right-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A1. Pick the right builder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2-where-the-raw-data-lives-and-the-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A2. Where the raw data lives, and the precedence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a3-add-swap-a-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A3. Add / swap a series
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a4-reflect-it-in-the-spec-block-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A4. Reflect it in the spec block tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-estimation-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. ESTIMATION SETTINGS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B. ESTIMATION SETTINGS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b1-env-knobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B1. Env knobs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b2-priors-lambda-mu-and-the-bvar-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B2. Priors (lambda / mu) and the BVAR call
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b3-the-covid-window-macro-only-masking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B3. The COVID window + macro-only masking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b4-exogeneity-the-external-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B4. Exogeneity / the external block
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b5-change-a-variables-prior-rw-wn-stationary-and-re-estimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5. Change a variable's PRIOR (RW ↔ WN stationary) and re-estimate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B5. Change a variable&#39;s PRIOR (RW ↔ WN stationary) and re-estimate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b51-what-wn-does-mechanically-verified" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5.1 What WN does, mechanically (verified)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b52-current-production-state-verified-in-the-deployed-specs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5.2 Current production state (verified in the deployed specs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b53-how-to-change-a-prior-copy-paste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5.3 How to change a prior — copy-paste
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b6-isfinancial-glb_-and-the-covid-mask-coherence-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6. isFinancial / GLB_* and the COVID mask — coherence rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B6. isFinancial / GLB_* and the COVID mask — coherence rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b61-the-four-globals-are-all-financial-coherence-fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6.1 The four globals are ALL financial (coherence fix)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b62-canada-ip_ca-rebuilt-as-a-log-level-coherence-fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6.2 Canada IP_CA rebuilt as a log-LEVEL (coherence fix)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b63-changing-an-isfinancial-flag-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6.3 Changing an isFinancial flag — checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b7-targeted-single-bloc-re-estimation-when-a-change-touches-one-bloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B7. Targeted single-bloc re-estimation (when a change touches one bloc)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B7. Targeted single-bloc re-estimation (when a change touches one bloc)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b71-what-bvar_gvar_blocsus-cc-actually-does-verified" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B7.1 What BVAR_GVAR_BLOCS="US &lt;CC&gt;" actually does (verified)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b72-the-three-legitimate-single-bloc-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B7.2 The three legitimate single-bloc jobs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-check-the-matlab-8-file-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. CHECK the MATLAB 8-file output
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. CHECK the MATLAB 8-file output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c1-the-8-file-contract-verified-exportbloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C1. The 8-file contract (verified exportbloc)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c2-convergence-mc-floor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2. Convergence + MC floor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c3-n-spec-companion-dim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C3. n == spec == companion dim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c4-fiscal-closure-fiscal-blocs-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C4. Fiscal closure (fiscal blocs only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d-store-the-jsons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. STORE the JSONs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="D. STORE the JSONs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d1-port-6-sig-fig-compaction-the-deployed-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D1. Port (6-sig-fig compaction — the deployed convention)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d2-copy-the-fiscal-meta-fiscal-blocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D2. Copy the fiscal meta (fiscal blocs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d2b-re-index-the-fiscal-meta-mandatory-rule-after-any-variable-order-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D2b. RE-INDEX the fiscal meta (MANDATORY RULE after any variable-order change)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d3-regenerate-the-coupling-artifact-mandatory-after-any-coupled-bloc-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D3. Regenerate the coupling artifact (MANDATORY after any coupled bloc change)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e-edit-the-checks-the-green-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E. EDIT the CHECKS — the green gate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="E. EDIT the CHECKS — the green gate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e1-canary-tests-block-deploy-treat-any-change-as-a-red-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E1. Canary tests (block deploy — treat any change as a red flag)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e2-feature-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E2. Feature tests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e3-when-n-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E3. When n changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f-publish-deploy-to-the-live-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F. PUBLISH (deploy to the live site)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F. PUBLISH (deploy to the live site)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f1-the-deploy-chain-verified-githubworkflowsdeploy-to-websiteyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F.1 The deploy chain (verified .github/workflows/deploy-to-website.yml)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f2-the-push-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F.2 The push command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f3-what-to-commit-before-pushing-a-coupled-re-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F.3 What to commit before pushing (a coupled re-estimation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g-the-long-run-target-overlay-c-drift-sliders-what-the-operator-needs-to-know" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G. The long-run-target overlay (δc drift sliders) — what the operator needs to know
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="G. The long-run-target overlay (δc drift sliders) — what the operator needs to know">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g1-what-it-is-operator-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G1. What it is (operator summary)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g2-interpreting-disabling-a-variable-the-sens03-guard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G2. Interpreting / disabling a variable (the |sens|&lt;0.3 guard)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g3-caveats-to-relay-to-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G3. Caveats to relay to users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g4-the-policy-rate-taylor-overlay-removed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G4. The policy rate (Taylor overlay removed)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g5-operator-troubleshooting-overlay-specific" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G5. Operator troubleshooting (overlay-specific)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g6-model-based-vs-with-judgement-and-the-consensus-anchor-preset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G6. Model-based vs. with-judgement, and the consensus-anchor preset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acknowledgments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#green-gate-priority-list-in-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Green-gate priority list (in order)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues-limitations-flagged-not-yet-fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known issues / limitations (flagged, NOT yet fixed)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-file-map-what-one-country-update-touches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick file map — what one country update touches
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empirical-evaluation-where-it-lives-and-what-it-does-not-touch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Empirical evaluation — where it lives, and what it does NOT touch
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="maintainers-guide-manually-updating-a-country-model">Maintainer's Guide — Manually Updating a Country Model<a class="headerlink" href="#maintainers-guide-manually-updating-a-country-model" title="Permanent link">&para;</a></h1>
+<p>This is the <strong>core human runbook</strong> for taking <em>one</em> country model end-to-end: change its data,
+re-estimate it, check the MATLAB output, store the JSONs, regenerate the coupling artifact, and run
+the green gate. It is written to be <strong>copy-paste followable</strong> with exact paths and commands.</p>
+<blockquote>
+<p>Read this <em>with</em>, not instead of:
+<a href="../ADDING_A_COUNTRY/"><code>ADDING_A_COUNTRY.md</code></a> (full data/spec/registry mechanics, the worked US
+example, the fiscal-block builder), <a href="../REESTIMATING_MODELS/"><code>REESTIMATING_MODELS.md</code></a> (the
+re-estimation/port/coupling/gate sequence with the env-knob tables), and
+<a href="../ARCHITECTURE_FOR_AI/"><code>ARCHITECTURE_FOR_AI.md</code></a> (the compute engine, data-space conventions,
+topology). <strong>This page does not re-derive those — it links to them and adds the per-country
+maintenance angle</strong>: the decision tree, the file-by-file edit map, the verification checks, and a
+troubleshooting table.</p>
+</blockquote>
+<p>The platform today: <strong>~50 economies = 33 GVAR-coupled blocs</strong> (a fully <strong>endogenous US</strong> dominant unit
++ an <code>EA</code> aggregate + 31 Rest-of-World blocs) <strong>+ 17 euro-area FSAP standalones</strong>. Data is harmonized to
+a common <strong>2025Q4</strong> vintage from FRED / Eurostat / BIS / ECB. Live at the <code>/bvar-scenario</code> path of the
+academic website, hosted on <strong>GitHub Pages</strong> (the <code>matyasfarkas/starter-hugo-academic</code> Hugo Academic site).</p>
+<p><strong>Repo root</strong> in every command below is the absolute path
+<code>"/home/farkas/github/BVAR Policy Calibration Tool"</code> (quote it — it has spaces).</p>
+<hr />
+<h2 id="0-decision-tree-what-kind-of-update-is-this">0. Decision tree — what kind of update is this?<a class="headerlink" href="#0-decision-tree-what-kind-of-update-is-this" title="Permanent link">&para;</a></h2>
+<p>Pick the <em>smallest</em> job that covers your change. The rough times assume the production hardware (MATLAB
+with the Parallel Computing Toolbox).</p>
+<table>
+<thead>
+<tr>
+<th>You changed…</th>
+<th>Job</th>
+<th>What you run</th>
+<th>Re-estimate?</th>
+<th>Coupling regen?</th>
+<th>Rough time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A fiscal driver only</strong> (revenue/expenditure/debt grid) for a fiscal bloc</td>
+<td><strong>Fiscal-only refresh</strong></td>
+<td><code>build_fiscal_&lt;cc&gt;_4var.py</code> → re-estimate that bloc → port → coupling</td>
+<td>yes (the bloc)</td>
+<td>yes</td>
+<td>minutes (build) + the bloc's estimation</td>
+</tr>
+<tr>
+<td><strong>Macro data of one euro-area FSAP standalone</strong> (the 17 euro members: <code>AT BE DE EE ES FI FR GR IE IT LT LU LV NL PT SI SK</code>)</td>
+<td><strong>Single-country re-estimate</strong></td>
+<td>the country builder → <code>export_bvar_euro_fsap.m</code> (FSAP two-country, writes <code>/tmp/euro_fsap_export/</code>) → <code>GVAR_EXPORT_DIR=/tmp/euro_fsap_export</code> port → gate</td>
+<td>yes (that bloc only)</td>
+<td><strong>no</strong> (not in the coupled GVAR — no weights row)</td>
+<td>~minutes</td>
+</tr>
+<tr>
+<td><strong>Macro data of one <em>coupled</em> bloc</strong> (US / EA / any RoW)</td>
+<td><strong>Full GVAR re-estimate</strong></td>
+<td><code>build_*</code> → <code>export_bvar_gvar24_loop.m</code> (<code>US_ENDOGENOUS=1</code>) → port → <strong>coupling</strong> → gate</td>
+<td>yes (<strong>all 33</strong> — stars change for everyone)</td>
+<td><strong>yes</strong></td>
+<td><strong>hours</strong></td>
+</tr>
+<tr>
+<td><strong>A variable's PRIOR</strong> (RW↔WN stationary) on <strong>one bloc</strong></td>
+<td><strong>Prior-change re-estimate</strong></td>
+<td>tag the prior in the raw <code>_glob.json</code> (<code>tag_fiscal_wn.py</code> for the 6 fiscal blocs, else edit by hand) → re-estimate <strong>that bloc</strong> → port → (coupling if coupled) → gate (§B5)</td>
+<td>yes (the bloc)</td>
+<td><strong>only if coupled</strong></td>
+<td>the bloc's estimation</td>
+</tr>
+<tr>
+<td><strong>A <code>GLB_*</code> / variable <code>isFinancial</code> flag</strong> (COVID-mask membership)</td>
+<td><strong>Coherence re-estimate</strong></td>
+<td>fix the flag in the builder + raw <code>_glob.json</code> → re-estimate the affected bloc(s) → port → coupling → gate (§B6)</td>
+<td>yes</td>
+<td>yes (coupled)</td>
+<td>the bloc(s)</td>
+</tr>
+<tr>
+<td><strong>Add a brand-new country</strong></td>
+<td><strong>Add-country</strong></td>
+<td>follow <a href="../ADDING_A_COUNTRY/"><code>ADDING_A_COUNTRY.md</code></a> §B; if GVAR, add a weights row → full re-estimate</td>
+<td>yes</td>
+<td>yes (if GVAR)</td>
+<td>hours</td>
+</tr>
+<tr>
+<td><strong>App/compute code only</strong> (no data)</td>
+<td><strong>Code change</strong></td>
+<td>edit → <code>tsc</code> + <code>vitest</code> + build</td>
+<td>no</td>
+<td>no</td>
+<td>~minutes</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Why a coupled-bloc refresh re-estimates everyone.</strong> Each bloc's RoW "stars" are trade-weighted
+averages of <em>partners'</em> DK-completed series. Touch one bloc's data and every partner's star moves, so
+<code>export_bvar_gvar24_loop.m</code> re-estimates the whole 33-bloc set to the cross-country fixed point. There
+is no "just re-estimate the US" path for a coupled bloc. (Verified in
+<code>pipeline/export_bvar_gvar24_loop.m</code>: with <code>US_ENDOGENOUS</code>, <code>rowB = blocs</code> — the full set iterates.)</p>
+<p><strong>When <em>is</em> a single-bloc re-estimate legitimate?</strong> Three cases, and only three:
+1. <strong>A euro-area FSAP standalone</strong> (<code>AT BE DE EE ES FI FR GR IE IT LT LU LV NL PT SI SK</code>) — it has <strong>no
+   weights row</strong>, no partner reads its series, so re-estimating it alone is exact. Use
+   <code>export_bvar_euro_fsap.m</code>; <strong>no</strong> coupling regen.
+2. <strong>A change that does not move the stars</strong> — e.g. flipping a <em>domestic</em> variable's <code>prior</code> (RW↔WN) or
+   a non-star <code>isFinancial</code> flag on a coupled bloc. The bloc's <em>own</em> betahat changes, but the <strong>stars it
+   exports to partners are unaffected</strong> only if the changed column is neither a target (<code>gdp/price/rate</code>,
+   which feed <code>ROWDEM/ROWINF/ROWFIN</code>) nor the COVID-mask membership of a target. <strong>In practice the safe,
+   audited path is still the full loop</strong> — see the caveat in §B5. A genuine one-bloc shortcut is the
+   <code>BVAR_GVAR_BLOCS="US &lt;CC&gt;"</code> + <code>MAXIT=1</code> <em>separated</em> run (§B7), which <strong>freezes</strong> every other
+   bloc's stars at their last value; it is exact <strong>only</strong> when no partner's star depends on the changed
+   bloc (or you accept frozen partner stars for a quick check, then do the full run before deploy).
+3. <strong>App/compute code</strong> — no estimation at all.</p>
+<p>The honest rule of thumb: <strong>if the bloc is coupled and the change can move any of its three target
+columns, do the full loop.</strong> The single-bloc path is for euro standalones, code, and <em>quick local
+checks</em> — not for a production deploy of a coupled bloc.</p>
+</blockquote>
+<hr />
+<h2 id="a-change-the-dataset">A. Change the DATASET<a class="headerlink" href="#a-change-the-dataset" title="Permanent link">&para;</a></h2>
+<h3 id="a1-pick-the-right-builder">A1. Pick the right builder<a class="headerlink" href="#a1-pick-the-right-builder" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Country class</th>
+<th>Builder (<code>pipeline/</code>)</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FRED majors (EA/UK/JP/CA …)</td>
+<td><code>build_country_data.py</code></td>
+<td>raw matrix from FRED</td>
+</tr>
+<tr>
+<td>US (macro + fiscal drivers)</td>
+<td><code>build_us_auto.py</code></td>
+<td>US glob + fiscal drivers</td>
+</tr>
+<tr>
+<td>OECD EU/EFTA (Eurostat)</td>
+<td><code>build_oecd_eurostat.py</code> / <code>build_oecd_batch.py</code></td>
+<td>OECD economies</td>
+</tr>
+<tr>
+<td>GVAR globals/stars assembly</td>
+<td><code>build_gvar_2025q4.py</code>, <code>build_globals_new_blocs.py</code></td>
+<td><code>DataRaw_&lt;CC&gt;_glob.json</code> (domestic + 4 <code>GLB_*</code>)</td>
+</tr>
+<tr>
+<td>Euro policy-rate + house prices</td>
+<td><code>build_euro_polrate_hpi.py</code></td>
+<td>rate + HPI columns</td>
+</tr>
+<tr>
+<td>Euro shared financial block</td>
+<td><code>build_euro_financial_block.py</code></td>
+<td>EA corp/rates</td>
+</tr>
+<tr>
+<td>Fiscal block (4-var)</td>
+<td><code>build_fiscal_&lt;cc&gt;_4var.py</code> (cc ∈ us/ea/jp/uk/ca/cn)</td>
+<td>edits glob + <code>fiscal_meta</code></td>
+</tr>
+</tbody>
+</table>
+<p>The FRED key is now a <strong>hardcoded fallback</strong> in the scripts, but always pass your own to be safe:
+<code>FRED_API_KEY=&lt;your_key&gt; python3 pipeline/&lt;builder&gt;.py</code>. Never commit a key (<code>app/.env.local</code> is
+git-ignored).</p>
+<h3 id="a2-where-the-raw-data-lives-and-the-precedence">A2. Where the raw data lives, and the precedence<a class="headerlink" href="#a2-where-the-raw-data-lives-and-the-precedence" title="Permanent link">&para;</a></h3>
+<p>The estimator reads <strong>one</strong> raw file per bloc, in this precedence (first that exists wins — verified in
+<code>pipeline/export_bvar_gvar24_loop.m</code>):</p>
+<div class="highlight"><pre><span></span><code>pipeline/country_rawdata/DataRaw_&lt;CC&gt;_glob.json   # 1st — globals-augmented (domestic + 4 GLB_* commons)
+pipeline/country_rawdata/DataRaw_&lt;CC&gt;_2025q4.json # 2nd — the dated vintage
+pipeline/country_rawdata/DataRaw_&lt;CC&gt;.json        # 3rd — legacy
+</code></pre></div>
+<blockquote>
+<p><strong>Precedence trap.</strong> If a <code>*_glob.json</code> exists, an edit to <code>*_2025q4.json</code> or the bare file is
+<strong>invisible</strong> to the estimator. For a GVAR bloc, always edit/rebuild the <code>_glob.json</code> — it is the file
+with the 4 <code>GLB_*</code> commons the loop needs.</p>
+</blockquote>
+<h3 id="a3-add-swap-a-series">A3. Add / swap a series<a class="headerlink" href="#a3-add-swap-a-series" title="Permanent link">&para;</a></h3>
+<p>A series is a tuple in the builder's <code>COUNTRIES</code> block (mirror an existing entry, e.g. EA in
+<code>build_country_data.py</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="s2">&quot;FRED_ID&quot;</span><span class="p">,</span> <span class="s2">&quot;GDP_XX&quot;</span><span class="p">,</span> <span class="s2">&quot;XX Real GDP&quot;</span><span class="p">,</span> <span class="s2">&quot;log&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="c1"># (fred_id, internal_id, display_name, transformation, is_financial)</span>
+</code></pre></div>
+<ul>
+<li><strong><code>transformation</code></strong>: <code>'log'</code> = stored as <code>100·log(level)</code>, displayed as <code>4·Δ</code> (q/q annualized
+  growth) — real GDP, prices, indices, FX, equity. <code>'lin'</code> = pass-through — rates, ratios, unemployment.</li>
+<li><strong><code>is_financial</code></strong>: groups under the "financial" header <strong>and</strong> is load-bearing for COVID masking —
+  financial columns stay <strong>observed</strong> through COVID (only macro/<code>isFinancial==false</code> columns are NaN'd;
+  see §B3).</li>
+<li>After editing, run the builder (A1) to repull/rebuild the raw matrix.</li>
+</ul>
+<h3 id="a4-reflect-it-in-the-spec-block-tags">A4. Reflect it in the spec block tags<a class="headerlink" href="#a4-reflect-it-in-the-spec-block-tags" title="Permanent link">&para;</a></h3>
+<p>The <code>spec.json</code> <code>block</code> tag is what the engine routes on (verified in
+<code>app/src/lib/compute/gvarSolve.ts</code> <code>deriveBlocIdx</code>/<code>configureGVARTopology</code> and <code>exportbloc</code> in the
+loop):</p>
+<table>
+<thead>
+<tr>
+<th><code>block</code></th>
+<th>Meaning</th>
+<th>Where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>domestic</code></td>
+<td>the bloc's own variables</td>
+<td>from the <code>_glob</code> build (GVAR) / the bare <code>DataRaw</code> (euro FSAP)</td>
+</tr>
+<tr>
+<td><code>global</code></td>
+<td>the 4 shared commons <code>GLB_OIL</code>/<code>GLB_USLR</code>/<code>GLB_USBAA</code>/<code>GLB_USEQ</code> (identical across blocs, US-determined)</td>
+<td>the <code>_glob</code> build (GVAR) / the US-block commons <code>WTI_US</code>/<code>FCM10_US</code>/<code>FBAA_US</code>/<code>EQ_US</code> (euro FSAP)</td>
+</tr>
+<tr>
+<td><code>row</code></td>
+<td>the 3 trade-weighted stars <code>ROW{DEM,INF,FIN}_&lt;CC&gt;</code> (<strong>GVAR blocs only</strong>)</td>
+<td><strong>appended at export time</strong> by <code>exportbloc</code> — do not hand-add</td>
+</tr>
+<tr>
+<td><code>fiscal</code></td>
+<td>the 4 fiscal drivers <code>FREV_GDP</code>/<code>FPEXP_GDP</code>/<code>EFFI</code>/<code>SFA</code> (6 fiscal blocs)</td>
+<td>the fiscal builder</td>
+</tr>
+<tr>
+<td><code>us</code> / <code>external</code></td>
+<td>the <strong>exogenous US block</strong> of a euro <strong>FSAP</strong> standalone (jointly estimated, hidden from charts, non-conditionable)</td>
+<td><code>export_bvar_euro_fsap.m</code></td>
+</tr>
+</tbody>
+</table>
+<p>There is <strong>no plain non-GVAR OECD/EM standalone</strong> in the deployed set — every non-euro bloc is a GVAR
+bloc. The 17 euro members are <strong>FSAP two-country</strong> standalones whose foreign block is <code>us</code>/<code>external</code>
+(plus the 4 <code>global</code> commons), <strong>not</strong> all-<code>domestic</code>. <strong><code>block:'row'</code> is what marks a bloc GVAR-active</strong>
+(plus a weights row), so a <em>new</em> GVAR bloc needs a row in
+<code>app/public/data/bvar/gvar/weights_24bloc.json</code> (the filename is historical — it now holds <strong>33</strong> blocs,
+US first; verified: <code>blocs: 33</code>, <code>has US weights row: True</code>).</p>
+<p>The variable list for <code>spec.json</code> is reflected in <code>pipeline/country_specs.ts</code>; the dropdown registry is
+<code>app/src/lib/data/countries.ts</code>. (Full mechanics: <a href="../ADDING_A_COUNTRY/"><code>ADDING_A_COUNTRY.md</code></a> §B2–B3.)</p>
+<hr />
+<h2 id="b-estimation-settings">B. ESTIMATION SETTINGS<a class="headerlink" href="#b-estimation-settings" title="Permanent link">&para;</a></h2>
+<p>The estimator is <code>pipeline/export_bvar_gvar24_loop.m</code> (GVAR-EM loop). Knobs are <strong>env vars</strong> (no code
+edit). All values below are verified against the script.</p>
+<h3 id="b1-env-knobs">B1. Env knobs<a class="headerlink" href="#b1-env-knobs" title="Permanent link">&para;</a></h3>
+<p>The script hardcodes its own repo <code>root</code> and the absolute <code>country_rawdata</code>/export paths, so it can be
+launched from anywhere — only the <code>run(...)</code> argument is a path. Use the absolute script path:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Production full run (33 blocs, US endogenous). HOURS.</span>
+<span class="nv">US_ENDOGENOUS</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;run(&#39;/home/farkas/github/BVAR Policy Calibration Tool/pipeline/export_bvar_gvar24_loop.m&#39;)&quot;</span>
+
+<span class="c1"># Fast smoke (validate BEFORE the multi-hour run): 3 blocs, few draws, 1 sweep (separated).</span>
+<span class="nv">BVAR_GVAR_BLOCS</span><span class="o">=</span><span class="s2">&quot;US EA JP&quot;</span><span class="w"> </span><span class="nv">NDRAWS</span><span class="o">=</span><span class="m">200</span><span class="w"> </span><span class="nv">MAXIT</span><span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="nv">US_ENDOGENOUS</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;run(&#39;/home/farkas/github/BVAR Policy Calibration Tool/pipeline/export_bvar_gvar24_loop.m&#39;)&quot;</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Env</th>
+<th>Default (in-script)</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>US_ENDOGENOUS</code></td>
+<td>unset (anchor)</td>
+<td><code>1</code> ⇒ US is a coupled bloc with its own <code>ROW*_US</code> stars (needs a <code>US</code> weights row). <strong>Set for production.</strong></td>
+</tr>
+<tr>
+<td><code>BVAR_GVAR_BLOCS</code></td>
+<td>all blocs in weights file</td>
+<td>space-separated subset, <strong>US first</strong></td>
+</tr>
+<tr>
+<td><code>NDRAWS</code></td>
+<td><code>nDraws=1000</code> (<code>nBurn=500</code>)</td>
+<td>total MCMC draws; burn auto-set to <code>NDRAWS/2</code>. <strong>Exported <code>n_draws</code> = post-burn = <code>NDRAWS − nBurn</code></strong> (500 by default). The inner GLP sampler's <code>'Ndraws',1000</code> keyword is a <em>separate</em>, fixed knob in the <code>cgl_bvarV5</code> call — <code>NDRAWS</code> does not change it.</td>
+</tr>
+<tr>
+<td><code>MAXIT</code></td>
+<td><code>12</code></td>
+<td>convergence sweeps; <code>MAXIT=1</code> ⇒ single-country / separated (no coupling)</td>
+</tr>
+<tr>
+<td><code>TOL</code></td>
+<td><code>0.03</code></td>
+<td>convergence tol on <code>max|Δstar|</code> (MC noise floor ≈ 0.13)</td>
+</tr>
+<tr>
+<td><code>GVAR_WEIGHTS_FILE</code></td>
+<td><code>weights_full.json</code> else <code>weights_24bloc.json</code></td>
+<td>which weights / bloc list</td>
+</tr>
+</tbody>
+</table>
+<p>Fixed in-script (don't "fix" without re-validating): <code>lags=3</code>, <code>H=20</code>, <code>MCMCconst=1</code>.</p>
+<h3 id="b2-priors-lambda-mu-and-the-bvar-call">B2. Priors (lambda / mu) and the BVAR call<a class="headerlink" href="#b2-priors-lambda-mu-and-the-bvar-call" title="Permanent link">&para;</a></h3>
+<p>Each bloc is estimated by <code>cgl_bvarV5([domestic | 3 stars])</code> — the <strong>COVID-as-missing</strong> Gibbs sampler.
+The call (verified, both the US bootstrap and the <code>parfor</code> body):</p>
+<div class="highlight"><pre><span></span><code><span class="n">cgl_bvarV5</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">lags</span><span class="p">,</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="n">nDraws</span><span class="p">,</span><span class="w"> </span><span class="n">nBurn</span><span class="p">,</span><span class="w"> </span><span class="n">MCMCconst</span><span class="p">,</span><span class="w"> </span><span class="n">H</span><span class="p">,</span><span class="w"> </span><span class="k">...</span>
+<span class="w">  </span><span class="s">&#39;mcmc&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s">&#39;MNpsi&#39;</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s">&#39;sur&#39;</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s">&#39;noc&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s">&#39;Ndraws&#39;</span><span class="p">,</span><span class="mi">1000</span><span class="p">,</span><span class="s">&#39;Ndrawsdiscard&#39;</span><span class="p">,</span><span class="mi">500</span><span class="p">);</span>
+</code></pre></div>
+<ul>
+<li><strong><code>lambda</code>/<code>mu</code> are empirical-Bayes</strong> (MH on the completed-data marginal likelihood) — <em>not</em> pinned.
+  With COVID imputed the optimum is well-behaved (estimated ~0.24–0.56).</li>
+<li><strong><code>sur=0</code>, <code>noc=1</code>, <code>MNpsi=0</code></strong> — mirror these <strong>exactly</strong> when porting any other estimator.</li>
+<li><strong>Do not pin <code>lamfix</code>.</strong> If you must, keep <code>noc=1</code> <em>or</em> <code>sur=1</code> <strong>free</strong> — pinning <code>lambda</code> with both
+  <code>noc</code> and <code>sur</code> fixed degenerates <code>lambda</code> to <code>NaN</code>.</li>
+</ul>
+<p>Model-selection guidance for <code>lambda</code> (the empirical-Bayes prior tightness) by bloc size:</p>
+<table>
+<thead>
+<tr>
+<th>Bloc size <code>n</code></th>
+<th>Typical <code>lambda</code></th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>small (<code>n</code>≈14–20: most RoW — e.g. CR <code>14</code>, RU <code>15</code>, TR/BR <code>18</code>, CN/MX/IN <code>20</code>)</td>
+<td>looser, ~0.3–0.5</td>
+<td>fewer params, less shrinkage needed</td>
+</tr>
+<tr>
+<td>medium (<code>n</code>≈23–25: JP <code>23</code>, EA <code>24</code>, UK/CA <code>25</code>)</td>
+<td>~0.25–0.4</td>
+<td></td>
+</tr>
+<tr>
+<td>large (US <code>n=41</code>)</td>
+<td>tighter, ~0.24–0.3</td>
+<td>many params (124×41 betahat) ⇒ more shrinkage</td>
+</tr>
+</tbody>
+</table>
+<p>These are <em>observed empirical-Bayes optima</em>, not knobs you set; they are a <strong>sanity range</strong> — a
+post-run <code>lambda</code> far outside it flags a data problem.</p>
+<h3 id="b3-the-covid-window-macro-only-masking">B3. The COVID window + macro-only masking<a class="headerlink" href="#b3-the-covid-window-macro-only-masking" title="Permanent link">&para;</a></h3>
+<p>Verified in the loop: the COVID window is <strong>fixed 2020Q2–2020Q4 (3 quarters)</strong> — <code>find(ismember(dts,
+["2020-Q2","2020-Q3","2020-Q4"]))</code>. Over that window <strong>only macro columns</strong> (<code>isFinancial==false</code>) are
+NaN'd: domestic macro + <code>ROWDEM</code> + <code>ROWINF</code>. The <strong>financial</strong> domestic columns and the foreign-rate
+star <code>ROWFIN</code> stay <strong>observed</strong>, so the DK smoother imputes the macro holes <em>conditioned on the observed
+financials</em>. This is why <code>is_financial</code> (A3) is load-bearing.</p>
+<blockquote>
+<p>An older path auto-detected the GDP-trough window; it could misfire on other crises (KR's 2008Q4 GFC
+drop). The current script uses the <strong>fixed</strong> 3-quarter window. Leave it.</p>
+</blockquote>
+<h3 id="b4-exogeneity-the-external-block">B4. Exogeneity / the external block<a class="headerlink" href="#b4-exogeneity-the-external-block" title="Permanent link">&para;</a></h3>
+<p>A bloc's foreign variables are <strong>weakly exogenous regressors</strong>: the 3 stars (<code>block:'row'</code>) and the 4
+globals (<code>block:'global'</code>). The stars are <strong>trade-weighted</strong> over partners present each quarter
+(unbalanced panel, renormalized), built by <code>buildstars</code> in the loop. Special cases baked in (mirror the
+engine — see <code>ARCHITECTURE_FOR_AI.md</code> §5):</p>
+<ul>
+<li><strong>CN GDP is real</strong> (since the 2026-06 surgical CN-only re-estimate; <code>NOMINAL_GDP_BLOCS</code> is now empty) →
+  CN's DEM reads <code>gdp</code> directly, no longer the deflated <code>X_g − X_p</code>. (Historically <code>GDP_CN</code> was nominal
+  and deflated by subtraction.)</li>
+<li><strong>Rate-less blocs</strong> (CH/NO) have no own short rate → excluded from partners' <code>ROWFIN</code>.</li>
+<li><strong>AR hyperinflation</strong> → excluded from partners' <code>ROWINF</code>/<code>ROWFIN</code> (kept in <code>ROWDEM</code>).</li>
+<li>Leading-<code>NaN</code> star columns are <strong>back-filled</strong> with the first valid value (a <code>NaN</code>-prefix gives a
+  singular <code>SIGMA</code>).</li>
+</ul>
+<hr />
+<h2 id="b5-change-a-variables-prior-rw-wn-stationary-and-re-estimate">B5. Change a variable's PRIOR (RW ↔ WN stationary) and re-estimate<a class="headerlink" href="#b5-change-a-variables-prior-rw-wn-stationary-and-re-estimate" title="Permanent link">&para;</a></h2>
+<p>This is the <strong>per-variable Minnesota/GLP prior-mean</strong> knob: it sets the <strong>own-first-lag prior mean</strong> to
+<strong>1</strong> (random walk, the historical default) or <strong>0</strong> (white noise / stationary). It is <em>not</em> an env var
+— it travels on the <strong>raw <code>_glob.json</code></strong> as a per-variable <code>prior</code> field, and the estimators read it.</p>
+<h3 id="b51-what-wn-does-mechanically-verified">B5.1 What WN does, mechanically (verified)<a class="headerlink" href="#b51-what-wn-does-mechanically-verified" title="Permanent link">&para;</a></h3>
+<p>The GLP prior in <code>BVAR/MFBVAR/GLPreplicationWeb/bvarGLPmf.m</code> builds the prior coefficient block as a
+diagonal of ones, then <strong>zeros the rows named in <code>pos</code></strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="c">% bvarGLPmf.m (verified, lines ~193–195)</span>
+<span class="n">diagb</span><span class="p">=</span><span class="nb">ones</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">diagb</span><span class="p">(</span><span class="n">pos</span><span class="p">)=</span><span class="mi">0</span><span class="p">;</span><span class="w">          </span><span class="c">% own-first-lag prior mean -&gt; 0 for the WN (stationary) columns</span>
+<span class="n">b</span><span class="p">(</span><span class="mi">2</span><span class="p">:</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,:)=</span><span class="nb">diag</span><span class="p">(</span><span class="n">diagb</span><span class="p">);</span>
+</code></pre></div>
+<p><code>pos</code> is the <strong>3rd positional argument</strong> of <code>cgl_bvarV5.m</code> (<code>pos=stationary;</code>, verified line 19) — the
+COVID-as-missing Gibbs sampler threads it straight into <code>bvarGLPmf</code> and into every <code>logMLMFVAR</code>/<code>BVAR</code>
+call. So:</p>
+<table>
+<thead>
+<tr>
+<th><code>prior</code> tag</th>
+<th><code>pos</code> membership</th>
+<th>own-lag prior mean</th>
+<th>Behaviour at the long end</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RW</code> (default)</td>
+<td><strong>not</strong> in <code>pos</code></td>
+<td><strong>1</strong></td>
+<td>random walk — the variable <strong>drifts</strong>, no mean reversion</td>
+</tr>
+<tr>
+<td><code>WN</code> (stationary)</td>
+<td><strong>in</strong> <code>pos</code></td>
+<td><strong>0</strong></td>
+<td>white noise — the variable <strong>mean-reverts</strong> to its in-sample mean</td>
+</tr>
+</tbody>
+</table>
+<p>The estimators build <code>pos</code> from the spec's per-variable <code>prior</code>:</p>
+<ul>
+<li><code>export_bvar_gvar24_loop.m</code>: <code>statCols = find(Spec.Prior(keep)=="WN")'</code> (verified ~line 60) — indices
+  into the <strong>kept domestic block</strong>; stars are appended <strong>after</strong> and are <strong>always RW</strong>.</li>
+<li><code>export_bvar_euro_fsap.m</code>: <code>statCols = find(Prior=="WN")'</code> (verified ~line 110).</li>
+<li>Both pass <code>statCols</code> as the 3rd positional arg of <code>cgl_bvarV5</code> and <strong>write the real <code>prior</code> back into
+  <code>spec.json</code></strong> (<code>v.prior='WN'|'RW'</code>), so the deployed spec is self-describing.</li>
+</ul>
+<blockquote>
+<p><strong>No-op for non-WN blocs (byte-identical).</strong> When no variable is tagged <code>WN</code>, <code>statCols</code> is empty and
+<code>pos=zeros(1,0)</code>, which indexes identically to the historical <code>pos=[]</code> in <code>diagb(pos)=0</code>. The 44
+non-fiscal blocs are therefore <strong>bit-for-bit unchanged</strong> by the prior machinery (verified: commit
+<code>6f0161a</code> notes "byte-identical for non-fiscal blocs"; confirmed in code by the empty-index path).</p>
+</blockquote>
+<h3 id="b52-current-production-state-verified-in-the-deployed-specs">B5.2 Current production state (verified in the deployed specs)<a class="headerlink" href="#b52-current-production-state-verified-in-the-deployed-specs" title="Permanent link">&para;</a></h3>
+<p>The <strong>fiscal GDP-ratios mean-revert; the effective rate drifts.</strong> All <strong>6 fiscal blocs</strong>
+(<code>US EA JP UK CA CN</code>) ship with:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th><code>prior</code></th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FREV_GDP</code> (revenue/GDP)</td>
+<td><strong><code>WN</code></strong></td>
+<td>a ratio — must mean-revert to its in-sample level, not drift</td>
+</tr>
+<tr>
+<td><code>FPEXP_GDP</code> (primary exp./GDP)</td>
+<td><strong><code>WN</code></strong></td>
+<td>a ratio — same</td>
+</tr>
+<tr>
+<td><code>SFA</code> (stock-flow adjustment)</td>
+<td><strong><code>WN</code></strong></td>
+<td>a residual flow — mean-reverts to <code>sfaDefault</code></td>
+</tr>
+<tr>
+<td><code>EFFI</code> (effective interest rate)</td>
+<td><strong><code>RW</code></strong></td>
+<td>a rate level — <strong>stays RW</strong> (drifts with the rate environment)</td>
+</tr>
+</tbody>
+</table>
+<p>Verified across all six (<code>app/public/data/bvar/&lt;CC&gt;/spec.json</code>): every fiscal bloc shows
+<code>FREV_GDP/FPEXP_GDP/SFA → WN</code>, <code>EFFI → RW</code>. <strong>Effect:</strong> US revenue now mean-reverts toward its in-sample
+mean (≈17.4% over the full sample; the deployed 40-quarter baseline ends ≈17.9% vs the last observed
+≈18.8% and the old RW path stuck near ≈19%), instead of drifting at the long horizon. Committed
+<code>6f0161a</code> / <code>22250be</code> / <code>e38673a</code>.</p>
+<h3 id="b53-how-to-change-a-prior-copy-paste">B5.3 How to change a prior — copy-paste<a class="headerlink" href="#b53-how-to-change-a-prior-copy-paste" title="Permanent link">&para;</a></h3>
+<p><strong>Step 1 — tag the raw <code>_glob.json</code>.</strong> For the <strong>6 fiscal blocs</strong>, use the idempotent helper
+(<code>pipeline/tag_fiscal_wn.py</code>); it writes <code>prior</code> on <strong>every</strong> variable object (WN on
+<code>FREV_GDP/FPEXP_GDP/SFA</code>, RW on the rest incl. <code>EFFI</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/home/farkas/github/BVAR Policy Calibration Tool&quot;</span>
+python3<span class="w"> </span>pipeline/tag_fiscal_wn.py<span class="w">     </span><span class="c1"># idempotent; format-preserving; re-runnable after any rebuild</span>
+</code></pre></div>
+<p>For <strong>any other variable</strong>, edit the variable object in
+<code>pipeline/country_rawdata/DataRaw_&lt;CC&gt;_glob.json</code> to add <code>"prior":"WN"</code> (or <code>"RW"</code>). <strong>Critical: tag
+EVERY variable object in that file, not just the one you change</strong> — MATLAB's <code>jsondecode</code> returns
+<code>J.variables</code> as a <strong>struct array</strong> only when <em>all</em> objects share the same field set; a <code>prior</code> field on
+<em>some</em> objects makes it a <strong>cell array</strong> and breaks the estimators' <code>arrayfun(@(v)v.id, …)</code> calls. (The
+estimators' <code>priorsfrom</code> helper <em>tolerates</em> the cell-array shape, but the safe, audited convention is
+homogeneous tagging — exactly what <code>tag_fiscal_wn.py</code> does.)</p>
+<p><strong>Step 2 — re-estimate the bloc.</strong></p>
+<ul>
+<li><strong>Coupled bloc (US/EA/RoW):</strong> the spec change is local, but the <strong>audited deploy path is the full
+  loop</strong> (§B1) so the stars stay at the cross-country fixed point:
+  <div class="highlight"><pre><span></span><code><span class="nv">US_ENDOGENOUS</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;run(&#39;/home/farkas/github/BVAR Policy Calibration Tool/pipeline/export_bvar_gvar24_loop.m&#39;)&quot;</span>
+</code></pre></div>
+  For a <strong>quick local check</strong> of <em>just</em> the changed bloc (frozen partner stars — not for deploy):
+  <div class="highlight"><pre><span></span><code><span class="nv">BVAR_GVAR_BLOCS</span><span class="o">=</span><span class="s2">&quot;US &lt;CC&gt;&quot;</span><span class="w"> </span><span class="nv">MAXIT</span><span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="nv">US_ENDOGENOUS</span><span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="nv">NDRAWS</span><span class="o">=</span><span class="m">400</span><span class="w"> </span>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;run(&#39;/home/farkas/github/BVAR Policy Calibration Tool/pipeline/export_bvar_gvar24_loop.m&#39;)&quot;</span>
+</code></pre></div></li>
+<li><strong>Euro FSAP standalone:</strong> re-estimate only that bloc (no coupling):
+  <div class="highlight"><pre><span></span><code><span class="nv">GVAR_EXPORT_DIR</span><span class="o">=</span>/tmp/euro_fsap_export<span class="w"> </span>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;run(&#39;/home/farkas/github/BVAR Policy Calibration Tool/pipeline/export_bvar_euro_fsap.m&#39;)&quot;</span>
+</code></pre></div></li>
+</ul>
+<p><strong>Step 3 — confirm the prior landed in the export, then port + (coupling) + gate</strong> (C–E):</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import json,sys; cc=sys.argv[1]; \</span>
+<span class="s2"> s=json.load(open(f&#39;/tmp/gvar24_export/{cc}/spec.json&#39;)); \</span>
+<span class="s2"> print(cc, [(v[&#39;id&#39;],v[&#39;prior&#39;]) for v in s[&#39;variables&#39;] if v.get(&#39;block&#39;)==&#39;fiscal&#39;])&quot;</span><span class="w"> </span>US
+<span class="c1"># expect: US [(&#39;FREV_GDP&#39;,&#39;WN&#39;),(&#39;FPEXP_GDP&#39;,&#39;WN&#39;),(&#39;EFFI&#39;,&#39;RW&#39;),(&#39;SFA&#39;,&#39;WN&#39;)]</span>
+</code></pre></div>
+<p><strong>Step 4 — sanity-check the mean reversion.</strong> A WN ratio should bend back toward its in-sample mean over
+the horizon; an RW one drifts. After porting, the baseline's end-of-horizon value of a WN ratio should
+sit <strong>inside</strong> its history's range, not extrapolate past it. (For the fiscal closure invariant after a
+fiscal change, run C4 — the prior change does <strong>not</strong> touch the SFA-closure assertion, which is purely an
+accounting identity on the <em>observed</em> debt path.)</p>
+<blockquote>
+<p><strong>Pitfall: WN on a true level.</strong> Only tag <code>WN</code> on series that genuinely mean-revert (ratios, spreads,
+gaps). Tagging a <strong>level</strong> (real GDP in 100·log, a price index, the effective rate) <code>WN</code> would pull its
+own-lag toward 0 and <strong>kill the unit root</strong>, forcing the level itself to revert — wrong. That is why
+<code>EFFI</code> stays <code>RW</code>. When in doubt, leave <code>RW</code>.</p>
+</blockquote>
+<hr />
+<h2 id="b6-isfinancial-glb_-and-the-covid-mask-coherence-rules">B6. <code>isFinancial</code> / <code>GLB_*</code> and the COVID mask — coherence rules<a class="headerlink" href="#b6-isfinancial-glb_-and-the-covid-mask-coherence-rules" title="Permanent link">&para;</a></h2>
+<p><code>isFinancial</code> is <strong>load-bearing</strong>, not cosmetic: it is the COVID-mask membership test (§B3). Over
+2020Q2–Q4 the loop NaN's <strong>only</strong> <code>isFinancial==false</code> columns (<code>macroCols=find(fin==0)</code>, verified) so
+the DK smoother imputes the macro holes <strong>conditioned on the observed financials</strong>. A mis-flagged column
+is silently mistreated through COVID, which contaminates every partner's stars.</p>
+<h3 id="b61-the-four-globals-are-all-financial-coherence-fix">B6.1 The four globals are ALL financial (coherence fix)<a class="headerlink" href="#b61-the-four-globals-are-all-financial-coherence-fix" title="Permanent link">&para;</a></h3>
+<p>The 4 shared commons are forced financial at build time so a future rebuild cannot drift:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># pipeline/build_globals_new_blocs.py (verified)</span>
+<span class="n">GLB_IDS</span>       <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;GLB_OIL&quot;</span><span class="p">,</span> <span class="s2">&quot;GLB_USLR&quot;</span><span class="p">,</span> <span class="s2">&quot;GLB_USBAA&quot;</span><span class="p">,</span> <span class="s2">&quot;GLB_USEQ&quot;</span><span class="p">]</span>
+<span class="n">GLB_FINANCIAL</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;GLB_OIL&quot;</span><span class="p">,</span> <span class="s2">&quot;GLB_USLR&quot;</span><span class="p">,</span> <span class="s2">&quot;GLB_USBAA&quot;</span><span class="p">,</span> <span class="s2">&quot;GLB_USEQ&quot;</span><span class="p">}</span>   <span class="c1"># ALL four -&gt; isFinancial=true</span>
+</code></pre></div>
+<p><code>GLB_USLR</code> (US 10Y) and <code>GLB_USBAA</code> (BAA) were always financial; the <strong>coherence fix</strong> added
+<strong><code>GLB_USEQ</code></strong> (US equity) and <strong><code>GLB_OIL</code></strong> (oil) — both are market prices, so both must stay
+<strong>observed</strong> through COVID, not imputed. Verified in the deployed <code>US/spec.json</code>: <code>GLB_USEQ</code> (<code>log</code>) and
+<code>GLB_OIL</code> (<code>log</code>) both carry <code>isFinancial:true</code> in the <code>global</code> block.</p>
+<blockquote>
+<p><strong>Why this matters for the mask.</strong> A market price (equity, oil) collapsed and rebounded sharply in
+2020 — that is <em>real, observed</em> information. Masking it as "macro" and letting the DK smoother
+interpolate would erase the signal and bias the imputed macro holes that are conditioned on it. Keeping
+the financials observed is the whole point of the COVID-as-missing design (§B3).</p>
+</blockquote>
+<h3 id="b62-canada-ip_ca-rebuilt-as-a-log-level-coherence-fix">B6.2 Canada <code>IP_CA</code> rebuilt as a log-LEVEL (coherence fix)<a class="headerlink" href="#b62-canada-ip_ca-rebuilt-as-a-log-level-coherence-fix" title="Permanent link">&para;</a></h3>
+<p><code>IP_CA</code> was stored as a <strong>y/y growth rate</strong> (<code>transformation:"lin"</code>) — incoherent with the US/UK IP blocs
+(stored as <strong>log levels</strong>). <code>pipeline/build_ca_ip_level.py</code> rebuilds it as a quarterly <strong>level index</strong>
+(chained from the discontinued FRED level <code>CANPROINDMISMEI</code> to 2023Q4, then forward with the q/q growth
+<code>PRINTO01CAQ657S</code> to 2025Q4), setting <code>transformation:"log"</code>, <code>isFinancial:false</code>, <code>prior:"RW"</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/home/farkas/github/BVAR Policy Calibration Tool&quot;</span>
+python3<span class="w"> </span>pipeline/build_ca_ip_level.py<span class="w">     </span><span class="c1"># splices a log-LEVEL IP_CA into DataRaw_CA_glob.json</span>
+<span class="c1"># then re-estimate the coupled set (CA is a coupled bloc) -&gt; port -&gt; coupling -&gt; gate</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Coherence audit.</strong> A per-economy <strong>variable table</strong> (transformation · prior · <code>isFinancial</code> per
+variable) is now in the user manual; all <strong>1048</strong> variables across the <strong>50</strong> deployed blocs were
+audited coherent (transform matches the series type; financials flagged; ratios <code>WN</code>). To re-derive the
+total yourself:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import json,glob; t=0; b=0; [ (t:=t+json.load(open(f))[&#39;n&#39;], b:=b+1) for f in glob.glob(&#39;app/public/data/bvar/*/spec.json&#39;) ]; print(&#39;blocs&#39;,b,&#39;vars&#39;,t)&quot;</span>
+<span class="c1"># expect: blocs 50 vars 1048</span>
+</code></pre></div>
+</blockquote>
+<h3 id="b63-changing-an-isfinancial-flag-checklist">B6.3 Changing an <code>isFinancial</code> flag — checklist<a class="headerlink" href="#b63-changing-an-isfinancial-flag-checklist" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Fix it in the builder</strong> (so a rebuild stays coherent) <strong>and</strong> in the raw <code>_glob.json</code> (so the next
+   estimate sees it). For a <code>GLB_*</code> common, edit <code>pipeline/build_globals_new_blocs.py</code>'s <code>GLB_FINANCIAL</code>.
+   For a domestic var, edit its tuple in the country builder (A3) <strong>and</strong> the <code>_glob.json</code> column meta.</li>
+<li><strong>Re-estimate</strong> the affected bloc(s). A <code>GLB_*</code> flag change affects <strong>every coupled bloc</strong> (the
+   commons are shared) ⇒ <strong>full loop</strong>. A domestic flag change affects <strong>that bloc</strong> (full loop if
+   coupled, for the audited star fixed point).</li>
+<li><strong>Port → coupling (if coupled) → gate.</strong></li>
+<li><strong>Verify the flag landed</strong> in the export spec:
+   <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import json; s=json.load(open(&#39;/tmp/gvar24_export/US/spec.json&#39;)); \</span>
+<span class="s2"> print([(v[&#39;id&#39;],v[&#39;isFinancial&#39;]) for v in s[&#39;variables&#39;] if v[&#39;block&#39;]==&#39;global&#39;])&quot;</span>
+<span class="c1"># expect all four GLB_* -&gt; True</span>
+</code></pre></div></li>
+</ol>
+<hr />
+<h2 id="b7-targeted-single-bloc-re-estimation-when-a-change-touches-one-bloc">B7. Targeted single-bloc re-estimation (when a change touches one bloc)<a class="headerlink" href="#b7-targeted-single-bloc-re-estimation-when-a-change-touches-one-bloc" title="Permanent link">&para;</a></h2>
+<p>Use this when you want to re-estimate <strong>one</strong> bloc — a prior flip, an <code>isFinancial</code> fix, a data patch —
+without paying the multi-hour full-loop cost. <strong>Read §B7.1 first: a subset run is a <em>restricted</em> GVAR,
+not the full GVAR with the other blocs frozen.</strong> Getting this wrong silently changes everyone's stars.</p>
+<h3 id="b71-what-bvar_gvar_blocsus-cc-actually-does-verified">B7.1 What <code>BVAR_GVAR_BLOCS="US &lt;CC&gt;"</code> actually does (verified)<a class="headerlink" href="#b71-what-bvar_gvar_blocsus-cc-actually-does-verified" title="Permanent link">&para;</a></h3>
+<p>The loop loads <strong>only the listed blocs</strong> into <code>D</code> (<code>for bi=1:nB</code> over <code>blocs</code>, verified ~lines 46–81).
+<code>buildstars</code> then trade-weights <strong>only the partners present in <code>D</code></strong>
+(<code>parts = parts(ismember(parts, blocs))</code>, verified ~line 178) and <strong>renormalizes</strong> over them. So:</p>
+<ul>
+<li>A subset run does <strong>not</strong> freeze the absent partners at their full-run values — it <strong>drops them
+  entirely</strong> and recomputes the listed blocs' stars from <strong>only the listed partners</strong> (US + <code>&lt;CC&gt;</code>).</li>
+<li>The listed blocs' seed <code>comp</code> panels are built fresh from their own raw <code>_glob.json</code> (line 78), <strong>not</strong>
+  loaded from <code>/tmp/gvar24_workspace.mat</code>. There is no "load the last full run and re-estimate one bloc"
+  path in the script.</li>
+</ul>
+<p><strong>Consequence:</strong> <code>BVAR_GVAR_BLOCS="US &lt;CC&gt;"</code> gives the <em>correct</em> US/<code>&lt;CC&gt;</code> betahat <strong>only</strong> if <code>&lt;CC&gt;</code>'s
+stars genuinely depend on no third country — i.e. essentially never for a real RoW bloc (its <code>ROWDEM</code>
+etc. trade-weight many partners). It is a <strong>fast local check</strong>, not a deploy-grade estimate of a coupled
+bloc. <strong>The deploy-grade path for any coupled bloc is the full loop (§B1).</strong></p>
+<h3 id="b72-the-three-legitimate-single-bloc-jobs">B7.2 The three legitimate single-bloc jobs<a class="headerlink" href="#b72-the-three-legitimate-single-bloc-jobs" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Command</th>
+<th>Coupling regen?</th>
+<th>Deploy-grade?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Euro FSAP standalone</strong> (<code>AT BE DE EE ES FI FR GR IE IT LT LU LV NL PT SI SK</code>) — no weights row, no partner reads it</td>
+<td><code>export_bvar_euro_fsap.m</code> (writes <code>/tmp/euro_fsap_export/</code>)</td>
+<td><strong>no</strong></td>
+<td><strong>yes</strong> — exact, it is genuinely standalone</td>
+</tr>
+<tr>
+<td><strong>Quick local check</strong> of a coupled bloc (frozen/restricted stars)</td>
+<td><code>BVAR_GVAR_BLOCS="US &lt;CC&gt;" MAXIT=1 US_ENDOGENOUS=1 NDRAWS=400</code> full-loop script</td>
+<td>n/a (don't deploy)</td>
+<td><strong>no</strong> — restricted-GVAR stars</td>
+</tr>
+<tr>
+<td><strong>Deploy a coupled bloc</strong></td>
+<td>full loop (§B1), all 33</td>
+<td><strong>yes</strong></td>
+<td><strong>yes</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Euro standalone (deploy-grade), copy-paste:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/home/farkas/github/BVAR Policy Calibration Tool&quot;</span>
+python3<span class="w"> </span>pipeline/build_oecd_eurostat.py<span class="w">            </span><span class="c1"># or the relevant builder for that member (A1)</span>
+<span class="nv">GVAR_EXPORT_DIR</span><span class="o">=</span>/tmp/euro_fsap_export<span class="w"> </span>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;run(&#39;/home/farkas/github/BVAR Policy Calibration Tool/pipeline/export_bvar_euro_fsap.m&#39;)&quot;</span>
+<span class="nv">GVAR_PORT_BLOCS</span><span class="o">=</span><span class="s2">&quot;&lt;CC&gt;&quot;</span><span class="w"> </span><span class="nv">GVAR_EXPORT_DIR</span><span class="o">=</span>/tmp/euro_fsap_export<span class="w"> </span>python3<span class="w"> </span>pipeline/port_gvar_exports.py
+<span class="c1"># NO coupling regen (not in the coupled GVAR); then the gate (E):</span>
+<span class="nb">cd</span><span class="w"> </span>app<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npx<span class="w"> </span>tsc<span class="w"> </span>--noEmit<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npx<span class="w"> </span>vitest<span class="w"> </span>run
+</code></pre></div>
+<p>A euro standalone change <strong>does not</strong> need <code>precompute_gvar_coupling.mjs</code> (it has no weights row, so it
+is absent from <code>M</code>). The coupling <code>modelSig</code> only keys on the coupled blocs — re-running it would be a
+no-op for a euro-only change.</p>
+<p><strong>Quick local check of a coupled bloc (NOT for deploy):</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nv">BVAR_GVAR_BLOCS</span><span class="o">=</span><span class="s2">&quot;US &lt;CC&gt;&quot;</span><span class="w"> </span><span class="nv">MAXIT</span><span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="nv">US_ENDOGENOUS</span><span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="nv">NDRAWS</span><span class="o">=</span><span class="m">400</span><span class="w"> </span>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;run(&#39;/home/farkas/github/BVAR Policy Calibration Tool/pipeline/export_bvar_gvar24_loop.m&#39;)&quot;</span>
+<span class="c1"># inspect /tmp/gvar24_export/&lt;CC&gt;/ (C1–C3). When it looks right, do the FULL loop for the real deploy.</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Rule.</strong> Deploy a coupled bloc only from a <strong>full-loop</strong> export. The subset run is for <em>inspecting</em>
+the effect of your edit on the changed bloc cheaply — its stars (and therefore its betahat) are not the
+production fixed point.</p>
+</blockquote>
+<hr />
+<h2 id="c-check-the-matlab-8-file-output">C. CHECK the MATLAB 8-file output<a class="headerlink" href="#c-check-the-matlab-8-file-output" title="Permanent link">&para;</a></h2>
+<p>The loop writes the full <strong>8-file contract</strong> per bloc to <strong><code>/tmp/gvar24_export/&lt;CC&gt;/</code></strong> and saves the
+estimation state to <strong><code>/tmp/gvar24_workspace.mat</code></strong> <em>before</em> export (an export bug is then a cheap
+re-export, not a re-estimation). <strong>Inspect <code>/tmp/gvar24_export/</code> before porting — never overwrite live
+data blind.</strong></p>
+<h3 id="c1-the-8-file-contract-verified-exportbloc">C1. The 8-file contract (verified <code>exportbloc</code>)<a class="headerlink" href="#c1-the-8-file-contract-verified-exportbloc" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Shape (verified on <code>US</code>)</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>spec.json</code></td>
+<td><code>{ n, variables:[{id,name,transformation,isFinancial,prior,block}] }</code>; US <code>n=41</code>, last 3 ids <code>ROW{DEM,INF,FIN}_US</code>, blocks <code>{domestic,fiscal,global,row}</code></td>
+<td><code>n</code> matches your expectation</td>
+</tr>
+<tr>
+<td><code>companion_mean.json</code></td>
+<td><code>{ betahat[n·lags+1][n], sigmahat[n][n], n, lags }</code>; US betahat <code>124×41</code>, sigmahat <code>41×41</code>, lags <code>3</code></td>
+<td><strong>spec <code>n</code> == companion dim</strong></td>
+</tr>
+<tr>
+<td><code>companion_draws.json</code></td>
+<td><code>{ n_draws, n, lags, beta_shape, beta, sigma_shape, sigma }</code> flat; US <code>beta_shape=[124,41,500]</code></td>
+<td><code>n_draws</code> == <code>NDRAWS − nBurn</code> (= post-burn draws; default <code>1000−500 = 500</code>)</td>
+</tr>
+<tr>
+<td><code>baseline.json</code></td>
+<td><code>{ mean[H][n], q16/q84/q05/q95 }</code> (growth/display)</td>
+<td><code>mean[0]</code> sane (<code>GDP1q</code>)</td>
+</tr>
+<tr>
+<td><code>baseline_levels.json</code></td>
+<td><code>{ mean[H][n], q16/q84/q05/q95 }</code> (levels)</td>
+<td>monotone-ish levels</td>
+</tr>
+<tr>
+<td><code>historical.json</code></td>
+<td><code>{ data[~40][n] }</code> (growth)</td>
+<td>last ~40q</td>
+</tr>
+<tr>
+<td><code>historical_levels.json</code></td>
+<td><code>{ data[~40][n] }</code> (levels) — <strong>observed</strong> domestic + completed stars</td>
+<td>fits the data</td>
+</tr>
+<tr>
+<td><code>transformations.json</code></td>
+<td><code>{ transformations:['log'|'lin',…] }</code></td>
+<td>length == <code>n</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="c2-convergence-mc-floor">C2. Convergence + MC floor<a class="headerlink" href="#c2-convergence-mc-floor" title="Permanent link">&para;</a></h3>
+<p>Watch the console:</p>
+<ul>
+<li>Each iteration prints <code>=== iter k: max star change X.XXXX (tol 0.030) [parfor N blocs] ===</code>. The
+  metric must fall <strong>below <code>TOL</code></strong> and print <code>CONVERGED.</code> (convergence is only tested from <code>it&gt;1</code>). If
+  it plateaus <em>above</em> <code>TOL</code> near ~0.13, that is the <strong>Monte-Carlo noise floor</strong> — raise <code>NDRAWS</code> to push
+  the floor down, do <strong>not</strong> chase it with more iterations.</li>
+<li>Each export prints <code>exported &lt;CC&gt;: n=… (dom+3row|anchor) nd=… GDP1q=…</code>. Confirm <code>GDP1q</code> is a <strong>sane
+  number</strong>, not <code>NaN</code> or a collapsed flat line (<code>nd</code> = post-burn draws, C1).</li>
+</ul>
+<h3 id="c3-n-spec-companion-dim">C3. <code>n</code> == spec == companion dim<a class="headerlink" href="#c3-n-spec-companion-dim" title="Permanent link">&para;</a></h3>
+<p>The single most common breakage. Verify per bloc:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import json,sys; cc=sys.argv[1]; \</span>
+<span class="s2"> s=json.load(open(f&#39;/tmp/gvar24_export/{cc}/spec.json&#39;)); \</span>
+<span class="s2"> c=json.load(open(f&#39;/tmp/gvar24_export/{cc}/companion_mean.json&#39;)); \</span>
+<span class="s2"> print(cc,&#39;spec.n&#39;,s[&#39;n&#39;],&#39;len(vars)&#39;,len(s[&#39;variables&#39;]),&#39;comp.n&#39;,c[&#39;n&#39;], \</span>
+<span class="s2"> &#39;betahat&#39;,len(c[&#39;betahat&#39;]),&#39;x&#39;,len(c[&#39;betahat&#39;][0]),&#39;lags&#39;,c[&#39;lags&#39;]); \</span>
+<span class="s2"> assert s[&#39;n&#39;]==len(s[&#39;variables&#39;])==c[&#39;n&#39;]==len(c[&#39;betahat&#39;][0]), &#39;N MISMATCH&#39;; \</span>
+<span class="s2"> assert len(c[&#39;betahat&#39;])==c[&#39;n&#39;]*c[&#39;lags&#39;]+1, &#39;betahat rows != n*lags+1&#39;&quot;</span><span class="w"> </span>US
+</code></pre></div>
+<h3 id="c4-fiscal-closure-fiscal-blocs-only">C4. Fiscal closure (fiscal blocs only)<a class="headerlink" href="#c4-fiscal-closure-fiscal-blocs-only" title="Permanent link">&para;</a></h3>
+<p>Run <strong>before</strong> re-estimating if the fiscal data changed (the <code>SFA</code> column lives in the same
+<code>DataRaw_&lt;CC&gt;_glob.json</code> the loop reads):</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>pipeline/build_fiscal_&lt;cc&gt;_4var.py<span class="w">    </span><span class="c1"># cc ∈ us ea jp uk ca cn — edits glob + fiscal_meta in place</span>
+</code></pre></div>
+<p><code>SFA</code> is the <strong>exact one-step residual</strong> that closes the app debt recursion on the observed gross-debt
+path (the recursion is <code>app/src/lib/compute/fiscalAccounting.ts</code> <code>computeFiscalBlock</code>):</p>
+<div class="highlight"><pre><span></span><code>d_t = d_{t-1}·(1 + EFFI_t/400)/(1 + gNomQ_t/100) − pb_t/4 + sfa_t/4
+pb     = FREV_GDP − FPEXP_GDP
+gNomQ  = 100·Δlog(realGDP) + 100·Δlog(deflator)          # off the SAME glob columns the app reads
+SFA_t  = 4·(d_obs_t − d_{t-1} − snowball_t + pb_t/4)
+</code></pre></div>
+<p>The build <strong>asserts</strong> closure <code>|d_obs_t − recon_t| &lt; 1e-6</code> for every non-COVID quarter and <strong>aborts on
+failure</strong>. It prints <code>backcastMaxErrPP</code> (must be ~<code>1e-13</code>), the SFA range, and the chosen <code>sfaDefault</code>.
+COVID quarters are set <strong>NaN</strong> (an interpolated value can never equal the residual). Sanity benchmarks
+after a rebuild (<code>sfaDefault</code>, % GDP) — US <code>1.75</code>, EA <code>0.33</code>, JP <code>2.23</code>, UK <code>3.15</code>, CA <code>3.19</code>, CN
+<code>4.02</code>. (US <code>fiscal_meta.json</code> verified: <code>idx={gdp:0,deflator:7,revenue:33,primaryExp:34,effRate:35,
+sfa:36}</code>, <code>d0=122.57</code>, <code>sfaDefault=1.75</code>.) Full math:
+<a href="../fiscal-block-methodology/"><code>fiscal-block-methodology.md</code></a> and
+<a href="../REESTIMATING_MODELS/"><code>REESTIMATING_MODELS.md</code></a> §2.</p>
+<hr />
+<h2 id="d-store-the-jsons">D. STORE the JSONs<a class="headerlink" href="#d-store-the-jsons" title="Permanent link">&para;</a></h2>
+<h3 id="d1-port-6-sig-fig-compaction-the-deployed-convention">D1. Port (6-sig-fig compaction — the deployed convention)<a class="headerlink" href="#d1-port-6-sig-fig-compaction-the-deployed-convention" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/home/farkas/github/BVAR Policy Calibration Tool&quot;</span>
+python3<span class="w"> </span>pipeline/port_gvar_exports.py<span class="w">                 </span><span class="c1"># ALL blocs → app/public/data/bvar/&lt;CC&gt; (6 sig figs)</span>
+<span class="c1"># subset / dry-run (verified flags):</span>
+<span class="nv">GVAR_PORT_BLOCS</span><span class="o">=</span><span class="s2">&quot;US EA JP&quot;</span><span class="w"> </span>python3<span class="w"> </span>pipeline/port_gvar_exports.py
+python3<span class="w"> </span>pipeline/port_gvar_exports.py<span class="w"> </span>--dry-run
+</code></pre></div>
+<p>This compacts <code>/tmp/gvar24_export/&lt;CC&gt;/*.json</code> → <code>app/public/data/bvar/&lt;CC&gt;/*.json</code> at <strong>6 significant
+figures</strong> (<code>sig6</code> in <code>port_gvar_exports.py</code>).</p>
+<h3 id="d2-copy-the-fiscal-meta-fiscal-blocs">D2. Copy the fiscal meta (fiscal blocs)<a class="headerlink" href="#d2-copy-the-fiscal-meta-fiscal-blocs" title="Permanent link">&para;</a></h3>
+<p>The app reads <code>fiscal_meta</code> per country — porting the bloc JSON alone is <strong>not</strong> enough:</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>cc<span class="w"> </span><span class="k">in</span><span class="w"> </span>US<span class="w"> </span>EA<span class="w"> </span>JP<span class="w"> </span>UK<span class="w"> </span>CA<span class="w"> </span>CN<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">  </span>cp<span class="w"> </span><span class="s2">&quot;pipeline/fiscal_meta/</span><span class="nv">$cc</span><span class="s2">.json&quot;</span><span class="w"> </span><span class="s2">&quot;app/public/data/bvar/</span><span class="nv">$cc</span><span class="s2">/fiscal_meta.json&quot;</span>
+<span class="k">done</span>
+</code></pre></div>
+<h3 id="d2b-re-index-the-fiscal-meta-mandatory-rule-after-any-variable-order-change">D2b. RE-INDEX the fiscal meta (MANDATORY RULE after any variable-order change)<a class="headerlink" href="#d2b-re-index-the-fiscal-meta-mandatory-rule-after-any-variable-order-change" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>RULE: after any re-estimation/port that can change a fiscal bloc's variable ORDER or COUNT, run
+<code>node pipeline/fix_fiscal_meta_indices.mjs</code>.</strong></p>
+</blockquote>
+<p><code>fiscal_meta.json</code> stores the fiscal-driver columns <strong>by POSITION</strong> (<code>idx = {gdp, deflator, revenue,
+primaryExp, effRate, sfa}</code>), and the debt recursion (<code>fiscalAccounting.ts</code> <code>computeFiscalBlock</code>) reads the
+level path at exactly those positional indices. A change to a bloc's variable order/count silently
+re-points them at the WRONG columns. <strong>This is the cause of the recent EA/UK debt explosion:</strong> the 33-bloc
+GVAR-EM refit inserted variables ahead of the fiscal block in every spec <strong>except US</strong>, re-pointing (e.g.)
+EA's <code>effRate</code> onto the equity index (~col 537), so the debt-to-GDP path blew up. The porter does <strong>not</strong>
+regenerate the meta — the stale indices ship unless you fix them.</p>
+<p><code>pipeline/fix_fiscal_meta_indices.mjs</code> re-resolves the indices <strong>by variable id</strong> from the deployed
+<code>spec.json</code> (order-independent) and rewrites <code>fiscal_meta.json</code> for all six fiscal blocs, <strong>preserving the
+model parameters <code>d0</code>/<code>sfaDefault</code></strong> (it only touches <code>meta.idx</code>). It is idempotent.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/home/farkas/github/BVAR Policy Calibration Tool&quot;</span>
+node<span class="w"> </span>pipeline/fix_fiscal_meta_indices.mjs
+<span class="c1"># per bloc:  US: ok {…}  |  EA: FIXED {old} -&gt; {new}  …  |  N fiscal_meta.json files corrected.</span>
+</code></pre></div>
+<p>Run it <strong>after every port</strong> that touches a fiscal bloc. The fiscal canaries (E2) are the backstop, but a
+green <code>tsc</code>/<code>build</code> with stale indices still ships a wrong debt path — re-indexing is the actual fix.</p>
+<h3 id="d3-regenerate-the-coupling-artifact-mandatory-after-any-coupled-bloc-change">D3. Regenerate the coupling artifact (MANDATORY after any <em>coupled</em> bloc change)<a class="headerlink" href="#d3-regenerate-the-coupling-artifact-mandatory-after-any-coupled-bloc-change" title="Permanent link">&para;</a></h3>
+<p>The browser solves the cross-country fixed point <code>x = (I−M)⁻¹d</code> from a <strong>pre-shipped</strong> artifact. At
+this scale the in-browser inverse is many minutes — pre-shipping is mandatory, not an optimisation. The
+artifact is keyed to the data by <strong><code>modelSig</code></strong>; a mismatch makes the app fall back to the slow path.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/home/farkas/github/BVAR Policy Calibration Tool/app&quot;</span>
+npx<span class="w"> </span>vite-node<span class="w"> </span>scripts/precompute_gvar_coupling.mjs
+</code></pre></div>
+<p>Verified behaviour (<code>scripts/precompute_gvar_coupling.mjs</code>): builds <code>M</code> in JS
+(<code>buildGVARCouplingMEndo</code> when <code>US_ENDOGENOUS</code>), inverts <code>(I−M)</code> via <strong>MATLAB BLAS</strong>
+(<code>scripts/invert_coupling.m</code>, shelled <code>matlab -batch</code> — a ~2 s LAPACK solve that replaces the in-JS
+<code>O(dim³)</code> inverse, which the code clocks at ~46 min at <code>dim≈1380</code>; it grows with <code>dim</code>), and writes the
+<strong>gzipped</strong> <code>app/public/data/bvar/gvar/coupling_default.json.gz</code>
+(<code>{modelSig, pinStructure:'', dim, rhoSpectral, M, invImM}</code>, 6-sig-fig). The plain <code>.json</code> is <strong>removed</strong>
+(at ~50 blocs it would exceed GitHub's 100 MB per-file limit; the shipped <code>.gz</code> is ≈ 31 MB). The loader
+decompresses in-browser via the native <code>DecompressionStream</code>. <strong>No MATLAB on PATH?</strong> The script shells
+<code>matlab</code> directly and will error — use the NumPy fallback <code>scripts/invert_coupling.py</code> (run the M-build
+and inverse by hand, or swap the <code>execFileSync</code> call); see the troubleshooting row.</p>
+<p><strong>Verify the shipped artifact header</strong> (the file is gzipped — decompress to read it):</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/home/farkas/github/BVAR Policy Calibration Tool/app&quot;</span>
+node<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;const z=require(&#39;zlib&#39;),fs=require(&#39;fs&#39;);const o=JSON.parse(z.gunzipSync(fs.readFileSync(&#39;public/data/bvar/gvar/coupling_default.json.gz&#39;)));console.log(&#39;dim&#39;,o.dim,&#39;rho&#39;,o.rhoSpectral,&#39;pin&#39;,JSON.stringify(o.pinStructure),&#39;sig&#39;,o.modelSig.slice(0,20))&quot;</span>
+<span class="c1"># expect: dim 2060 rho 0.924041 pin &quot;&quot; sig US:41_3_20_6.121870e</span>
+</code></pre></div>
+<p>The maintained, automated equivalent (modelSig-fresh + inverse-is-inverse + ρ) is
+<code>gvar-coupling-artifact.test.ts</code>, run by <code>npx vitest run</code> (E).</p>
+<p>Spectral radius by topology (a stale/wrong value is a red flag):</p>
+<table>
+<thead>
+<tr>
+<th>Topology</th>
+<th><code>dim</code></th>
+<th><code>ρ(M)</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6-bloc pilot</td>
+<td>—</td>
+<td>0.59</td>
+</tr>
+<tr>
+<td>24-bloc frozen anchor</td>
+<td>~1380</td>
+<td>0.726</td>
+</tr>
+<tr>
+<td><strong>33-bloc endogenous US (current)</strong></td>
+<td><strong>2060</strong></td>
+<td><strong>0.924041</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The deployed artifact's stored <code>rhoSpectral</code> is <strong><code>0.924041</code></strong> (verified in
+<code>coupling_default.json.gz</code> — read it off the header per D3). Earlier docs quoted <code>0.8958</code> / <code>0.896156</code>
+from an <strong>older refit</strong>; the current shipped artifact (a later consistent re-estimation, with a
+different <code>modelSig</code>) is <code>0.924041</code>, still comfortably <code>&lt; 1</code>. The <strong>frozen-anchor</strong> coupling dim is
+<code>(#RoW)·3·H</code>; with the <strong>US endogenous</strong> the augmented state adds the US's own stars + US-global
+channels, giving the larger <code>dim = 2060</code> (the value <code>verify_gvar24.mjs</code> checks against the artifact).
+<strong>Always read the live value off the header (D3) — do not trust a number copied into prose.</strong></p>
+</blockquote>
+<hr />
+<h2 id="e-edit-the-checks-the-green-gate">E. EDIT the CHECKS — the green gate<a class="headerlink" href="#e-edit-the-checks-the-green-gate" title="Permanent link">&para;</a></h2>
+<p>The <strong>authoritative gate is <code>vitest</code></strong> (the canaries below read the shipped <code>.gz</code> artifact and the
+deployed models directly). Run from <code>app/</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/home/farkas/github/BVAR Policy Calibration Tool/app&quot;</span>
+npx<span class="w"> </span>tsc<span class="w"> </span>--noEmit<span class="w">                       </span><span class="c1"># types</span>
+npx<span class="w"> </span>vitest<span class="w"> </span>run<span class="w">                         </span><span class="c1"># the gate — ALL must pass; the canaries (E1) block deploy</span>
+<span class="nv">BASE_PATH</span><span class="o">=</span>/bvar-scenario<span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>build<span class="w"> </span><span class="c1"># static export with the deploy base path (writes app/out/)</span>
+</code></pre></div>
+<blockquote>
+<p><strong><code>verify_gvar24.mjs</code> is a <em>legacy fast helper</em>, not the gate.</strong> Two gotchas before you trust it:
+(1) it <code>readJSON</code>s the <strong>plain</strong> <code>coupling_default.json</code>, but the precompute ships only the <strong><code>.gz</code></strong>
+— so you must gunzip it first; (2) two of its checks (<code>dim = (#RoW)·3·H</code> and the oil-common assertion)
+are written for the <strong>frozen-anchor</strong> topology and report FAIL on the current <strong>US-endogenous</strong> model
+(<code>dim=2060</code>) even when the artifact is correct. Use it only for the modelSig/inverse/ρ checks, and
+only after:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/home/farkas/github/BVAR Policy Calibration Tool/app&quot;</span>
+gunzip<span class="w"> </span>-kc<span class="w"> </span>public/data/bvar/gvar/coupling_default.json.gz<span class="w"> </span>&gt;<span class="w"> </span>public/data/bvar/gvar/coupling_default.json
+<span class="nv">NODE_OPTIONS</span><span class="o">=</span>--max-old-space-size<span class="o">=</span><span class="m">8192</span><span class="w"> </span>npx<span class="w"> </span>tsx<span class="w"> </span>scripts/verify_gvar24.mjs<span class="w">   </span><span class="c1"># checks 1/2/3 authoritative</span>
+rm<span class="w"> </span>public/data/bvar/gvar/coupling_default.json<span class="w">                            </span><span class="c1"># never commit the ~96 MB plain file</span>
+</code></pre></div>
+<p>The maintained equivalent of every one of its checks lives in <code>gvar-coupling-artifact.test.ts</code>
+(E1), which gunzips the <code>.gz</code> itself — prefer that.</p>
+</blockquote>
+<h3 id="e1-canary-tests-block-deploy-treat-any-change-as-a-red-flag">E1. Canary tests (block deploy — treat any change as a red flag)<a class="headerlink" href="#e1-canary-tests-block-deploy-treat-any-change-as-a-red-flag" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Canary</th>
+<th>What it pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>scenario-scale-convention.test.ts</code></td>
+<td>the <code>100·log</code> / <code>4·diff</code> display convention</td>
+</tr>
+<tr>
+<td><code>gvar-convergence.test.ts</code></td>
+<td>Gauss–Seidel ≡ closed-form <code>(I−M)⁻¹d</code>; reports <code>ρ(M)</code></td>
+</tr>
+<tr>
+<td><code>gvar-coupling-artifact.test.ts</code></td>
+<td>the shipped gzipped artifact hydrates and matches a fresh build; <code>modelSig</code></td>
+</tr>
+<tr>
+<td><code>gvar-closed-form-routing.test.ts</code></td>
+<td>closed form ≡ iterative; cache-hit ≡ cold rebuild; pin-structure → new <code>M</code></td>
+</tr>
+<tr>
+<td><code>gvar-derived-topology.test.ts</code></td>
+<td><code>configureGVARTopology</code>/<code>deriveBlocIdx</code> + <code>US_ENDOGENOUS</code> from spec+weights</td>
+</tr>
+</tbody>
+</table>
+<h3 id="e2-feature-tests">E2. Feature tests<a class="headerlink" href="#e2-feature-tests" title="Permanent link">&para;</a></h3>
+<p><code>fiscalAccounting.test.ts</code>, <code>fiscal-backcast.test.ts</code>, <code>fiscal-conditioning-integration.test.ts</code>,
+<code>gvar-us-endogenous.test.ts</code>, <code>gvar-globals.test.ts</code>, <code>gvar-direct-coupling-strip-equivalence.test.ts</code>,
+<code>gvar-band-solve.test.ts</code>, <code>gvar-ui-linkage.test.ts</code>, <code>longRunTilt.test.ts</code>,
+<code>conditioning-wysiwyg.test.ts</code>.</p>
+<h3 id="e3-when-n-changed">E3. When <code>n</code> changed<a class="headerlink" href="#e3-when-n-changed" title="Permanent link">&para;</a></h3>
+<p>The scale canary <code>scenario-scale-convention.test.ts</code> may carry a fixture pinned to the old layout.
+Regenerate the ground truth with <code>pipeline/_verify/gt.m</code> (it resolves columns <strong>by variable id</strong>, so it
+is layout-robust) and re-run:</p>
+<div class="highlight"><pre><span></span><code>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="s2">&quot;run(&#39;/home/farkas/github/BVAR Policy Calibration Tool/pipeline/_verify/gt.m&#39;)&quot;</span>
+</code></pre></div>
+<p>Everything else in the engine is <strong>index-agnostic</strong> — it reads <code>n</code> from <code>companion_mean.json</code>, fiscal
+indices from <code>fiscal_meta.json</code>, and GVAR indices from <code>IDX</code> at runtime. <strong>Never hardcode an index or a
+bloc subset.</strong></p>
+<p><strong>Done = <code>tsc</code> clean, all <code>vitest</code> green (canaries first), <code>npm run build</code> succeeds</strong> (the artifact and
+modelSig are then validated by <code>gvar-coupling-artifact.test.ts</code>). <strong>Publishing is §F</strong> — do it only after
+the gate is green and only with explicit confirmation.</p>
+<hr />
+<h2 id="f-publish-deploy-to-the-live-site">F. PUBLISH (deploy to the live site)<a class="headerlink" href="#f-publish-deploy-to-the-live-site" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>This is a live deploy. Do NOT push without explicit per-action confirmation from the maintainer.</strong>
+(Repo memory rule: never trigger an irreversible/live action — Pages/DNS/secrets/force-push/deploy —
+without confirmation.) Publish <strong>only</strong> when the gate (E) is fully green.</p>
+</blockquote>
+<h3 id="f1-the-deploy-chain-verified-githubworkflowsdeploy-to-websiteyml">F.1 The deploy chain (verified <code>.github/workflows/deploy-to-website.yml</code>)<a class="headerlink" href="#f1-the-deploy-chain-verified-githubworkflowsdeploy-to-websiteyml" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>push app/** to bvarscenario:main
+   └─ GitHub Action &quot;Deploy BVAR Scenario Tool to Website&quot; (on: push to main, paths app/** | netlify.toml)
+        1. npm ci &amp;&amp; npm run build      (BASE_PATH=/bvar-scenario)  -&gt; Next.js STATIC export -&gt; app/out/
+        2. checkout matyasfarkas/starter-hugo-academic  (token: secret WEBSITE_DEPLOY_TOKEN)
+        3. rm -rf website/static/bvar-scenario/*  &amp;&amp;  cp -r app/out/* website/static/bvar-scenario/
+        4. commit + push the website repo  (only if there is a diff)
+   └─ the website repo&#39;s OWN Hugo pipeline rebuilds (separate downstream stage; the Hugo 0.122.0 pin
+      lives there, not here) and GitHub Pages serves it under /bvar-scenario
+</code></pre></div>
+<p>Key facts (all verified in the workflow):</p>
+<ul>
+<li><strong>Trigger:</strong> <code>push</code> to <strong><code>main</code></strong> whose changeset touches <strong><code>app/**</code></strong> or <strong><code>netlify.toml</code></strong>. A data/coupling
+  change under <code>app/public/data/**</code> <em>is</em> under <code>app/**</code>, so it triggers. A change confined to <code>pipeline/**</code>
+  or <code>docs/**</code> does <strong>not</strong> trigger a deploy — only the <code>app/</code> tree ships.</li>
+<li>The Action runs <code>npm ci</code> (clean install from <code>app/package-lock.json</code>) then <code>npm run build</code> with
+  <code>BASE_PATH=/bvar-scenario</code>; the build is a <strong>Next.js static export</strong> to <code>app/out/</code>.</li>
+<li>It then checks out <code>matyasfarkas/starter-hugo-academic</code>, wipes <code>static/bvar-scenario/</code>, copies
+  <code>app/out/*</code> in, and commits+pushes <strong>only if there is a diff</strong> (<code>git diff --cached --quiet</code>).</li>
+<li>The <strong>Hugo build is downstream</strong> in the website repo — this repo's workflow does not run Hugo.</li>
+</ul>
+<h3 id="f2-the-push-command">F.2 The push command<a class="headerlink" href="#f2-the-push-command" title="Permanent link">&para;</a></h3>
+<p>The deploy remote is <code>bvarscenario</code> (<code>matyasfarkas/BVARScenarioTool</code>); the Action lives on <strong>its <code>main</code></strong>.
+You are typically on a feature branch (e.g. <code>feature/oecd-expansion</code>). Push your current HEAD to the
+remote's <code>main</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/home/farkas/github/BVAR Policy Calibration Tool&quot;</span>
+
+<span class="c1"># 0. CONFIRM with the maintainer first. Verify what you are about to ship:</span>
+git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>-5<span class="w">                                  </span><span class="c1"># the commits going out</span>
+git<span class="w"> </span>status<span class="w">                                            </span><span class="c1"># working tree clean? (commit data+coupling+app changes)</span>
+git<span class="w"> </span>remote<span class="w"> </span>-v<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>bvarscenario<span class="w">                     </span><span class="c1"># -&gt; matyasfarkas/BVARScenarioTool.git</span>
+
+<span class="c1"># 1. (optional, recommended) dry-run to see exactly what the push would update:</span>
+git<span class="w"> </span>push<span class="w"> </span>--dry-run<span class="w"> </span>bvarscenario<span class="w"> </span>HEAD:main
+
+<span class="c1"># 2. the deploy push (current branch HEAD -&gt; bvarscenario main; triggers the Action):</span>
+git<span class="w"> </span>push<span class="w"> </span>bvarscenario<span class="w"> </span>HEAD:main
+</code></pre></div>
+<ul>
+<li><code>HEAD:main</code> pushes your <strong>current</strong> branch's HEAD to the remote <code>main</code> ref (no local branch switch
+  needed). If <code>main</code> has diverged, <strong>do not</strong> <code>--force</code> — reconcile first (the memory rule forbids
+  unconfirmed force-push).</li>
+<li>After pushing, watch the Action:
+  <div class="highlight"><pre><span></span><code>gh<span class="w"> </span>run<span class="w"> </span>list<span class="w"> </span>--repo<span class="w"> </span>matyasfarkas/BVARScenarioTool<span class="w"> </span>--workflow<span class="w"> </span><span class="s2">&quot;Deploy BVAR Scenario Tool to Website&quot;</span><span class="w"> </span>--limit<span class="w"> </span><span class="m">3</span>
+gh<span class="w"> </span>run<span class="w"> </span>watch<span class="w"> </span>--repo<span class="w"> </span>matyasfarkas/BVARScenarioTool<span class="w">   </span><span class="c1"># follow the latest run to completion</span>
+</code></pre></div></li>
+<li>The live page (<code>…/bvar-scenario</code>) updates after <strong>both</strong> the Action <strong>and</strong> the downstream Hugo/Pages
+  build finish (the Pages rebuild on the website repo can lag by a few minutes).</li>
+</ul>
+<h3 id="f3-what-to-commit-before-pushing-a-coupled-re-estimation">F.3 What to commit before pushing (a coupled re-estimation)<a class="headerlink" href="#f3-what-to-commit-before-pushing-a-coupled-re-estimation" title="Permanent link">&para;</a></h3>
+<p>A coupled re-estimation changes <strong>many</strong> files under <code>app/public/data/bvar/</code>. Stage <strong>all</strong> of them or
+the deploy ships a half-updated model:</p>
+<table>
+<thead>
+<tr>
+<th>Must be committed</th>
+<th>Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>every re-estimated bloc's 8-file contract (6-sig-fig)</td>
+<td><code>app/public/data/bvar/&lt;CC&gt;/*.json</code> (all 33 coupled, + euro standalones if touched)</td>
+</tr>
+<tr>
+<td>fiscal meta (if a fiscal bloc changed)</td>
+<td><code>app/public/data/bvar/&lt;CC&gt;/fiscal_meta.json</code></td>
+</tr>
+<tr>
+<td>the coupling artifact (gzipped)</td>
+<td><code>app/public/data/bvar/gvar/coupling_default.json.gz</code></td>
+</tr>
+<tr>
+<td>weights (if topology changed)</td>
+<td><code>app/public/data/bvar/gvar/weights_24bloc.json</code> (33 blocs, US first)</td>
+</tr>
+<tr>
+<td>any compute/spec/test change</td>
+<td><code>app/src/**</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Never</strong> commit the un-gzipped <code>coupling_default.json</code> (~96 MB, over GitHub's 100 MB per-file limit) — D3
+already removes it; confirm it is absent (<code>git status</code> should show only the <code>.gz</code>).</p>
+<blockquote>
+<p><strong>Confirmation gate (repeat).</strong> Pushing to <code>bvarscenario:main</code> is the live deploy. Confirm with the
+maintainer before running <code>git push bvarscenario HEAD:main</code>. Full CI chain + the website-repo side in
+<a href="../BUILD_AND_CI/"><code>BUILD_AND_CI.md</code></a>.</p>
+</blockquote>
+<hr />
+<h2 id="g-the-long-run-target-overlay-c-drift-sliders-what-the-operator-needs-to-know">G. The long-run-target overlay (δc drift sliders) — what the operator needs to know<a class="headerlink" href="#g-the-long-run-target-overlay-c-drift-sliders-what-the-operator-needs-to-know" title="Permanent link">&para;</a></h2>
+<p>The control panel's <strong>"Long-run targets"</strong> section is a <strong>runtime, in-browser overlay</strong>. As a
+maintainer the one thing to internalise is: <strong>it is NOT part of the estimation / port / coupling / gate
+pipeline.</strong> There is nothing to rebuild, re-estimate, re-index, or commit when this feature changes the
+display — it computes everything from the <strong>already-shipped</strong> <code>companion_mean.json</code> of the bloc the user
+is viewing. A data refresh (§A–§F) ships it for free; a data refresh does <strong>not</strong> need any extra step
+for it.</p>
+<h3 id="g1-what-it-is-operator-summary">G1. What it is (operator summary)<a class="headerlink" href="#g1-what-it-is-operator-summary" title="Permanent link">&para;</a></h3>
+<p>Each slider sets one variable's <strong>long-run (≈H-quarter) target</strong> in the chart's <strong>display units</strong>
+(<code>4·Δlevel</code> = q/q-annualised growth for <code>log</code> vars; the level for <code>lin</code> vars). Setting a target shifts
+that variable's <strong>drift</strong> — the companion constant of its <strong>own</strong> equation — by the single amount <code>δc_j</code>
+needed for its terminal forecast to hit the target, and the <strong>estimated</strong> model dynamics carry every
+other variable along. It is:</p>
+<ul>
+<li><strong>Deterministic and exact</strong> — <code>δc_j = (target − currentTerminalForecast) / sens_j</code>; the terminal
+  forecast lands on the target by construction (the panel badge reads <code>applied · exact</code>). An <em>unmoved</em>
+  slider ⇒ <code>δc=0</code> ⇒ a <strong>byte-exact no-op</strong> (it defaults to the model's own terminal forecast).</li>
+<li><strong>Instant</strong> — no Compute, <strong>no re-estimation</strong>, no GVAR re-solve, no draw reweighting. The deviation
+  is <code>ΔY = S_h[:, j]·δc_j</code>, where <code>S_h</code> (the partial companion-power sum <code>Σ_{k&lt;h} T^k</code>) is built <strong>once
+  per bloc in the browser</strong> from the shipped companion and cached; each slider change is then a cheap
+  mat-vec add (computed in <code>app/src/lib/compute/driftSetter.ts</code>).</li>
+<li><strong>Band-coherent</strong> — <code>ΔY</code> is added <strong>identically</strong> to the central path and to <strong>every</strong> quantile
+  (q05/q16/q50/q84/q95), so the fan translates <strong>rigidly</strong>: band widths are invariant and quantiles
+  cannot cross. Safe to apply on top of the precomputed bands.</li>
+</ul>
+<p>This <strong>replaced</strong> the old entropic-tilt long-run-anchor mechanism (<code>longRunTilt.ts</code>), which reweighted
+posterior draws, needed a Compute, and <strong>degenerated</strong> (ESS→1) on a joint multi-target tilt. The drift
+overlay has none of those failure modes (see the superseded known-issue note below).</p>
+<h3 id="g2-interpreting-disabling-a-variable-the-sens03-guard">G2. Interpreting / disabling a variable (the <code>|sens|&lt;0.3</code> guard)<a class="headerlink" href="#g2-interpreting-disabling-a-variable-the-sens03-guard" title="Permanent link">&para;</a></h3>
+<p>The slider's <strong>sensitivity</strong> <code>sens_j</code> is how far the variable's terminal <em>display</em> value moves per unit
+of drift (<code>4·(S_H[j,j] − S_{H-1}[j,j])</code> for <code>log</code>; <code>S_H[j,j]</code> for <code>lin</code>). When <code>|sens_j| &lt; 0.3</code>
+(<code>SENS_GUARD</code> in <code>driftSetter.ts</code>) the response is <strong>near-singular</strong> — a tiny <code>δc</code> would imply an
+enormous, ill-posed move — so the variable is <strong>disabled</strong>: it shows in the dropdown as
+<strong>"(near-singular — unavailable)"</strong> and cannot be targeted. <strong>This is expected, not a fault.</strong> It
+typically hits a near-unit-root <em>level</em> (where the finite-horizon drift barely moves the terminal
+display). Operator guidance: target the <strong>growth/ratio</strong> form rather than the level, or pick another
+variable. Do <strong>not</strong> try to "fix" it by lowering the guard — the guard is what keeps the overlay
+well-posed.</p>
+<h3 id="g3-caveats-to-relay-to-users">G3. Caveats to relay to users<a class="headerlink" href="#g3-caveats-to-relay-to-users" title="Permanent link">&para;</a></h3>
+<ul>
+<li>It shifts the long-run <strong>drift, not persistence</strong> — label/treat it as a <em>long-run target</em>, not a path
+  controller.</li>
+<li>The <strong>cross-variable response</strong> (other variables moving) is a <strong>real estimated-model side effect</strong>,
+  not a bug.</li>
+<li>The <strong>real-growth target owns the debt direction</strong> (the (i−g) snowball) — it is <strong>not</strong> a structural
+  debt fix; it changes the growth assumption the debt path inherits.</li>
+<li><strong>GVAR bloc → marginal.</strong> It shifts <em>that bloc's own</em> long-run forecast only; trade partners and the
+  US-determined global commons are <strong>not</strong> re-solved, so the realised <em>joint</em> long-run value may differ
+  from the target. The panel surfaces this amber caveat automatically for a GVAR bloc.</li>
+</ul>
+<h3 id="g4-the-policy-rate-taylor-overlay-removed">G4. The policy rate (Taylor overlay removed)<a class="headerlink" href="#g4-the-policy-rate-taylor-overlay-removed" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>The policy rate is an ordinary <code>lin</code> variable of the VAR, so it carries its <strong>own</strong> long-run-target
+slider like every other series — set its terminal value directly through the drift setter. There is
+<strong>no</strong> separate Taylor-rule overlay: an earlier <code>taylorOverlay</code> toggle (policy-rate row,
+<code>i = r* + π_fc + φ_π(π_fc − π*)</code>) was <strong>removed</strong>, and no <code>taylorOverlay</code> / <code>setTaylorOverlay</code> symbol
+remains in <code>ControlPanel.tsx</code> or <code>useStore.ts</code>. (The surviving "Taylor" code in <code>taylor-rule.ts</code> is the
+unrelated DSGE policy-rule counterfactual, not a forecast overlay.)</p>
+</blockquote>
+<h3 id="g5-operator-troubleshooting-overlay-specific">G5. Operator troubleshooting (overlay-specific)<a class="headerlink" href="#g5-operator-troubleshooting-overlay-specific" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A variable is greyed out "(near-singular — unavailable)"</strong></td>
+<td><code>\|sens_j\| &lt; 0.3</code> — the finite-horizon drift barely moves its terminal display (near-unit-root level)</td>
+<td>expected; target its growth/ratio form or another variable (G2) — do <strong>not</strong> lower the guard</td>
+</tr>
+<tr>
+<td><strong>Setting one target moved other variables too</strong></td>
+<td>the cross-variable response <code>S_h[:, j]</code> drags partners along the <strong>estimated</strong> dynamics</td>
+<td>expected, not a bug (G3); it is the model's own response to the shifted drift</td>
+</tr>
+<tr>
+<td><strong>GVAR bloc — realised long-run ≠ my target</strong></td>
+<td>marginal overlay; partners + global commons not re-solved</td>
+<td>expected (G3); for a joint re-anchoring you must re-estimate (out of scope for the overlay)</td>
+</tr>
+<tr>
+<td><strong>Band looks the same width after setting a target</strong></td>
+<td>by design — <code>ΔY</code> is a rigid translation added to mean <strong>and</strong> every quantile</td>
+<td>correct behaviour (G1); widths are provably invariant</td>
+</tr>
+<tr>
+<td><strong>Setting a target back to the default did not perfectly revert</strong></td>
+<td>the default IS the model's terminal forecast ⇒ <code>δc=0</code> ⇒ exact no-op; a non-revert means a stale/edited target value</td>
+<td>clear the target (the <code>clear all</code> / <code>remove</code> control) — an unmoved/cleared slider is byte-exact</td>
+</tr>
+<tr>
+<td><strong>No effect at all from any target</strong></td>
+<td>the bloc's companion failed to load ⇒ no <code>driftCache</code> ⇒ <code>sens=NaN</code> ⇒ every slider disabled</td>
+<td>confirm the bloc's <code>companion_mean.json</code> is present and well-formed (C1/C3); the overlay needs the shipped companion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="g6-model-based-vs-with-judgement-and-the-consensus-anchor-preset">G6. Model-based vs. with-judgement, and the consensus-anchor preset<a class="headerlink" href="#g6-model-based-vs-with-judgement-and-the-consensus-anchor-preset" title="Permanent link">&para;</a></h3>
+<p>Two operator-relevant framings sit on top of the drift setter:</p>
+<ul>
+<li><strong>Model-based vs. with-judgement (per variable).</strong> A variable with its slider at the model estimate
+  is <strong>model-based</strong> (<code>δc=0</code>, exact no-op). Setting a target makes it <strong>with-judgement</strong> — the panel
+  highlights the target, shows a per-row reset-to-estimate control, and the footer badge reads
+  <code>N targets · exact</code>. The flag is <strong>per-country and per-variable</strong> and is cleared on a country switch
+  (targets reference the old bloc's variable ids). This is a UI/state distinction only — no new data
+  artifact and nothing to re-estimate.</li>
+<li><strong>Consensus-anchor preset (<code>app/public/data/default_anchors.json</code>).</strong> An <strong>opt-in, off-by-default</strong>
+  one-click set of publicly-defensible long-run values per bloc (<code>{ COUNTRY: { variableId: value } }</code>),
+  surfaced as <strong>Apply consensus anchors</strong>. It is keyed by <strong>country code</strong> then <strong>spec variable id</strong>
+  (e.g. <code>GDP_BE</code>, <code>HICP_BE</code>, <code>LR_BE</code>), in <strong>display units</strong>. The panel auto-drops any id that is not in
+  the bloc's targetable set or whose slider is <strong>near-singular</strong> (the <code>|sens| &lt; 0.3</code> guard) — so the
+  perverse policy-rate sliders (BE/CA/CZ) are intentionally <strong>omitted</strong> from the JSON / never applied.
+  To curate the values, edit <code>default_anchors.json</code> (the canonical source is <code>pre-ship-smoke-test.md</code>
+  §2); it ships under <code>app/public/data/</code> and is fetched at panel mount. No re-estimation, no green-gate
+  impact — but keep the variable ids in sync with each bloc's spec when a model is re-ported (a stale id
+  is silently skipped, not an error).</li>
+</ul>
+<hr />
+<h2 id="acknowledgments">Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permanent link">&para;</a></h2>
+<p>The long-run-target <strong>drift-setter</strong> overlay (and the trend/cycle long-run-target direction it grew
+out of) owes its framing to <strong>Jesper Lindé</strong> and <strong>Tobias Adrian</strong>, whose guidance on anchoring the
+model's long run shaped this design. Any errors are the maintainer's own.</p>
+<hr />
+<h2 id="green-gate-priority-list-in-order">Green-gate priority list (in order)<a class="headerlink" href="#green-gate-priority-list-in-order" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong><code>n</code> == spec == companion dim</strong> (C3) — everything downstream assumes it.</li>
+<li><strong>Convergence below <code>TOL</code></strong> / not stuck at the MC floor (C2).</li>
+<li><strong>Fiscal closure <code>|δd| &lt; 1e-6</code></strong> (C4) — the build aborts if it fails, but confirm <code>backcastMaxErrPP</code>.</li>
+<li><strong>Fiscal meta re-indexed</strong> (D2b) — <code>node pipeline/fix_fiscal_meta_indices.mjs</code> after any port that
+   moved a fiscal bloc's variables (the EA/UK debt-explosion guard; stale indices pass <code>tsc</code>/<code>build</code>).</li>
+<li><strong>Baseline sanity</strong> — <code>GDP1q</code> not <code>NaN</code>/flat; levels monotone-ish (C1).</li>
+<li><strong>Coupling regenerated + <code>modelSig</code> matches</strong> (D3) — <code>gvar-coupling-artifact.test.ts</code> reports
+   STALE/mismatch otherwise (and <code>verify_gvar24.mjs</code> if you gunzip the <code>.gz</code> first, per E).</li>
+<li><strong>Canaries green</strong> (E1) before feature tests.</li>
+<li><strong><code>tsc --noEmit</code> clean, <code>npm run build</code> succeeds</strong> — last.</li>
+</ol>
+<hr />
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>spec/companion <code>n</code> mismatch</strong></td>
+<td>added a <code>row</code>/<code>fiscal</code> var by hand, or stale spec vs re-estimated betahat</td>
+<td>re-run the loop so <code>exportbloc</code> writes both from the same <code>R.B</code>; never hand-edit <code>spec.json</code>; verify with C3</td>
+</tr>
+<tr>
+<td><strong>Glob edit ignored</strong></td>
+<td><code>*_glob.json</code> shadows <code>*_2025q4.json</code>/bare file (A2 precedence)</td>
+<td>edit/rebuild the <strong><code>_glob.json</code></strong> for GVAR blocs</td>
+</tr>
+<tr>
+<td><strong>Fiscal closure error</strong> (<code>backcastMaxErrPP</code> ≫ <code>1e-13</code>, build aborts)</td>
+<td><code>gNomQ</code> not built the app's way, or COVID interpolated not NaN'd, or wrong debt grid</td>
+<td>confirm <code>gNomQ = 100·Δlog(gdp) + 100·Δlog(deflator)</code> off the <strong>same</strong> glob cols; COVID quarters → <code>NaN</code>; check the observed-debt grid (<code>pipeline/fiscal_raw/us_grid.json</code> for US, <code>pipeline/fiscal_raw/fiscal_&lt;CC&gt;.json</code> for EA/JP/UK/CA/CN)</td>
+</tr>
+<tr>
+<td><strong>Coupling <code>modelSig</code> mismatch / STALE</strong></td>
+<td>re-estimated/ported a bloc but didn't regenerate the artifact</td>
+<td>re-run <code>precompute_gvar_coupling.mjs</code> (D3); <code>gvar-coupling-artifact.test.ts</code> confirms (it reads the <code>.gz</code>)</td>
+</tr>
+<tr>
+<td><strong>Singular <code>(I−M)</code></strong></td>
+<td><code>ρ(M) ≥ 1</code> (e.g. disaggregating the euro members into coupled blocs)</td>
+<td>keep <code>EA</code> aggregated; euro <em>members</em> ship as standalones (no weights row); confirm <code>ρ(M) &lt; 1</code> after re-estimation</td>
+</tr>
+<tr>
+<td><strong>Stuck at MC noise floor (~0.13 &gt; <code>TOL</code>)</strong></td>
+<td>too few draws — iterating churns Monte-Carlo noise</td>
+<td>raise <code>NDRAWS</code>; do not increase <code>MAXIT</code> to chase it</td>
+</tr>
+<tr>
+<td><strong>MATLAB OOM</strong></td>
+<td><code>parfor</code> workers × <code>n=41</code> US bloc × draws</td>
+<td>reduce pool size / <code>NDRAWS</code>; run a <code>BVAR_GVAR_BLOCS</code> subset; the <code>.mat</code> checkpoint lets you re-export cheaply</td>
+</tr>
+<tr>
+<td><strong>Singular <code>SIGMA</code> / <code>NaN</code> in estimation</strong></td>
+<td>leading <code>NaN</code> in a discontinued series, or near-collinear national-accounts identity</td>
+<td>fix the <strong>raw <code>DataRaw_&lt;CC&gt;_glob.json</code></strong> (drop leading-<code>NaN</code> rows, fix the collinear var) — not the estimator</td>
+</tr>
+<tr>
+<td><strong><code>lambda</code> → <code>NaN</code></strong></td>
+<td><code>lamfix</code> pinned with both <code>noc</code> and <code>sur</code> fixed</td>
+<td>leave <code>lambda</code> empirical-Bayes; if pinning, keep <code>noc=1</code> <em>or</em> <code>sur=1</code> free (B2)</td>
+</tr>
+<tr>
+<td><strong>Coupling inverse step fails</strong></td>
+<td>no MATLAB on PATH for the BLAS inverse</td>
+<td>the NumPy fallback <code>scripts/invert_coupling.py</code> exists; confirm <code>matlab -batch</code> resolves, else use it</td>
+</tr>
+<tr>
+<td><strong><code>scenario-scale-convention</code> red after <code>n</code> change</strong></td>
+<td>fixture pinned to old column layout</td>
+<td>regenerate via <code>pipeline/_verify/gt.m</code> (id-resolved, layout-robust) and re-run (E3)</td>
+</tr>
+<tr>
+<td><strong>Estimator crashes on <code>arrayfun(@(v)v.id, …)</code> / "expected struct array"</strong></td>
+<td>the raw <code>_glob.json</code> has a <code>prior</code> field on <strong>some but not all</strong> variable objects ⇒ <code>jsondecode</code> returns a <strong>cell array</strong></td>
+<td>tag <strong>every</strong> variable object (use <code>tag_fiscal_wn.py</code> for the 6 fiscal blocs; for others add <code>"prior"</code> to all objects). The estimators' <code>priorsfrom</code> tolerates the cell shape, but homogeneous tagging is the convention (B5.3)</td>
+</tr>
+<tr>
+<td><strong>Prior change had no effect (still drifts)</strong></td>
+<td>spec wasn't tagged, or you read <code>*_2025q4.json</code>/bare file (precedence A2), or <code>pos</code> ended up empty</td>
+<td>confirm the tag is in the <strong><code>_glob.json</code></strong>; verify the export spec shows <code>prior:'WN'</code> (B5.3 step 3); the loop builds <code>statCols=find(Spec.Prior(keep)=="WN")'</code> — if that is empty, nothing changes</td>
+</tr>
+<tr>
+<td><strong>A series spikes/collapses through COVID 2020</strong></td>
+<td>mis-flagged <code>isFinancial</code> — a market price (equity/oil/rate) NaN'd as macro and DK-interpolated</td>
+<td>set <code>isFinancial=true</code> so it stays <strong>observed</strong> through the 2020Q2–Q4 mask; for the 4 commons confirm <code>GLB_FINANCIAL</code> includes all of <code>GLB_OIL/GLB_USLR/GLB_USBAA/GLB_USEQ</code> (B6.1), re-estimate, port, regen coupling</td>
+</tr>
+<tr>
+<td><strong>A bloc's betahat looks "off" after a subset run</strong></td>
+<td><code>BVAR_GVAR_BLOCS="US &lt;CC&gt;"</code> is a <strong>restricted GVAR</strong> (stars trade-weighted over <em>only</em> the listed partners), not the full fixed point</td>
+<td>use the subset only as a <strong>quick check</strong>; deploy a coupled bloc <strong>only</strong> from a full-loop export (B7.1)</td>
+</tr>
+<tr>
+<td><strong>Transform mismatch vs sibling blocs</strong> (e.g. IP stored as growth not level)</td>
+<td>a series' <code>transformation</code> is incoherent with the same series in other blocs</td>
+<td>rebuild it in the right space (e.g. <code>build_ca_ip_level.py</code> made <code>IP_CA</code> a log-LEVEL); audit with the per-economy variable table / the 1048-var count (B6.2)</td>
+</tr>
+<tr>
+<td><strong>Debt-to-GDP path explodes after a refit</strong> (e.g. EA/UK)</td>
+<td><code>fiscal_meta.json</code> indices went <strong>stale</strong> — a refit re-ordered the spec and the positional <code>idx</code> now points at the wrong column (e.g. EA <code>effRate</code> → equity ~col 537)</td>
+<td>run <code>node pipeline/fix_fiscal_meta_indices.mjs</code> (D2b) — it re-resolves the indices <strong>by id</strong> and rewrites all six metas, preserving <code>d0</code>/<code>sfaDefault</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="known-issues-limitations-flagged-not-yet-fixed">Known issues / limitations (flagged, NOT yet fixed)<a class="headerlink" href="#known-issues-limitations-flagged-not-yet-fixed" title="Permanent link">&para;</a></h2>
+<p>These are <strong>open</strong>, honestly-documented defects in the live tool — flagged for fix, not yet fixed. State
+them as such; do not present the affected outputs as fully validated.</p>
+<ol>
+<li><strong>CN fiscal debt — inflation double-count (RESOLVED 2026-06).</strong> For China, <code>fiscal_meta.json</code> <code>idx.gdp</code>
+   used to point at a <strong>nominal</strong> <code>GDP_CN</code>, so the snowball <code>gNomQ = Δlog(idx.gdp) + Δlog(idx.deflator)</code>
+   double-counted inflation. The <strong>surgical CN-only re-estimate</strong> replaced it with <strong>real GDP</strong>
+   (<code>CN/spec.json</code> var 0 = "CN Real GDP (quarterly, chain-linked SA volume index, base 2011Q1=100)" and
+   <code>CN/fiscal_meta.json idx.gdpIsNominal = false</code>), so the roll-forward now reads the correct real-GDP +
+   deflator nominal growth, matching the other five fiscal blocs. The fix re-estimated <strong>CN only</strong>; the
+   other 32 GVAR blocs are byte-identical to the prior working model.</li>
+<li><strong>Long-run tilt — no non-finite filter on the weights (SUPERSEDED by the δc drift overlay; tilt no
+   longer the live long-run mechanism).</strong> <code>longRunTilt.ts</code> <code>solveEntropicTilt</code> computes the per-draw
+   weights as <code>w_i = exp(γ'·(g_i − target))</code> over the long-run moments <code>g_i</code>. Unstable draws (unit-root /
+   near-singular <code>(I − ΣB_l)</code>) return a <strong><code>NaN</code></strong> long-run moment (verified: the steady-state path returns
+   <code>NaN</code> for the singular case), and the weight solve does <strong>not</strong> drop them — one <code>NaN</code> <code>g_i</code> poisons
+   <code>wsum</code> and <strong>silently empties the anchor band</strong>. (The std-scaling loop and <code>weightedQuantile</code> <em>do</em>
+   filter non-finite, but the dual/Newton weight solve does not.) <strong>The live "Long-run targets" panel no
+   longer uses this tilt</strong> — it uses the deterministic δc drift overlay (§G), which has no draw
+   reweighting and therefore none of this failure mode. <code>longRunTilt.ts</code> is now dormant/legacy; this bug
+   only bites if it is re-wired in. Fix-if-revived: filter non-finite <code>g_i</code> before <code>solveEntropicTilt</code>.</li>
+<li><strong>Closed-form GVAR solve — no <code>ρ(M)&lt;1</code> divergence guard.</strong> <code>solveGVARClosedForm</code> (<code>gvarSolve.ts</code>)
+   solves <code>x = (I−M)⁻¹d</code> either via the cached inverse or a Neumann fixed-point (<code>x ← d + Mx</code>, capped at
+   <code>maxIt=2000</code>). There is <strong>no check that <code>ρ(M)&lt;1</code></strong>: a diverged fixed point (or a Neumann iteration that
+   hit the cap without converging) returns a <strong>confident-wrong forecast with no warning</strong>. The shipped
+   artifact is stationary (<code>ρ=0.924</code>), but a future re-estimation that pushed <code>ρ≥1</code> (e.g. disaggregating
+   the euro members) would not be caught here. Fix: assert <code>ρ&lt;1</code> / Neumann convergence and surface a
+   divergence warning.</li>
+<li><strong>Conditional-forecast band uses the FILTERED (not DK-smoothed) covariance.</strong> The conditional band
+   variance is taken from <code>filteredP</code> (<code>kalman.ts</code>: "Extract forecast variances from filtered
+   covariances", <code>variances.push(submatrix(filteredP[t], …))</code>), <strong>not</strong> the smoother covariance. A future
+   pin tightens the <em>smoothed</em> uncertainty of the quarters <strong>preceding</strong> it, but the filtered covariance
+   does not see that future observation — so <strong>the band is OVERSTATED for quarters before a future pin</strong>.</li>
+<li><strong>The porter does not regenerate <code>fiscal_meta</code>.</strong> Positional fiscal indices go stale on any
+   variable-order change — see the RULE in <strong>D2b</strong> (<code>fix_fiscal_meta_indices.mjs</code>). This was the cause of
+   the recent EA/UK debt explosion. The <em>cause</em> is documented as a limitation; the <em>fix</em> is the mandatory
+   re-index step.</li>
+</ol>
+<hr />
+<h2 id="quick-file-map-what-one-country-update-touches">Quick file map — what one country update touches<a class="headerlink" href="#quick-file-map-what-one-country-update-touches" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concern</th>
+<th>File(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data pull / raw</td>
+<td><code>pipeline/build_*.py</code> → <code>pipeline/country_rawdata/DataRaw_&lt;CC&gt;_glob.json</code> (precedence A2)</td>
+</tr>
+<tr>
+<td>Spec / registry</td>
+<td><code>pipeline/country_specs.ts</code>, <code>app/src/lib/data/countries.ts</code></td>
+</tr>
+<tr>
+<td>Fiscal block</td>
+<td><code>pipeline/build_fiscal_&lt;cc&gt;_4var.py</code> → glob + <code>pipeline/fiscal_meta/&lt;CC&gt;.json</code></td>
+</tr>
+<tr>
+<td><strong>Variable PRIOR (RW↔WN)</strong></td>
+<td><code>pipeline/tag_fiscal_wn.py</code> (the 6 fiscal blocs; idempotent) → <code>prior</code> field in the <code>_glob.json</code>; mechanism in <code>BVAR/MFBVAR/GLPreplicationWeb/bvarGLPmf.m</code> (<code>diagb(pos)=0</code>) via <code>BVAR/MFBVAR/cgl_bvarV5.m</code> 3rd positional <code>stationary</code>/<code>pos</code> arg (B5)</td>
+</tr>
+<tr>
+<td><strong>Globals / <code>isFinancial</code> / COVID mask</strong></td>
+<td><code>pipeline/build_globals_new_blocs.py</code> (<code>GLB_FINANCIAL</code>={<code>GLB_OIL,GLB_USLR,GLB_USBAA,GLB_USEQ</code>}), <code>pipeline/build_ca_ip_level.py</code> (IP_CA as log-LEVEL) (B6)</td>
+</tr>
+<tr>
+<td>Estimate (GVAR-EM)</td>
+<td><code>pipeline/export_bvar_gvar24_loop.m</code> (env: <code>US_ENDOGENOUS</code>, <code>MAXIT</code>, <code>TOL</code>, <code>NDRAWS</code>, <code>BVAR_GVAR_BLOCS</code>, <code>GVAR_WEIGHTS_FILE</code>; reads per-var <code>prior</code> → <code>statCols</code>)</td>
+</tr>
+<tr>
+<td>Estimate (standalone)</td>
+<td><code>pipeline/export_bvar_euro_fsap.m</code> (17 euro; reads per-var <code>prior</code> → <code>statCols</code>), <code>export_bvar_oecd_covid.m</code>, <code>export_bvar_us_covid.m</code>, <code>export_bvar_country.m</code></td>
+</tr>
+<tr>
+<td>Weights / topology</td>
+<td><code>app/public/data/bvar/gvar/weights_24bloc.json</code> (33 blocs, US first), <code>pipeline/build_trade_weights_full.py</code>, <code>build_us_weights_row.py</code></td>
+</tr>
+<tr>
+<td>Port</td>
+<td><code>pipeline/port_gvar_exports.py</code> (6 sig-fig) → <code>app/public/data/bvar/&lt;CC&gt;/*.json</code></td>
+</tr>
+<tr>
+<td>Coupling</td>
+<td><code>app/scripts/precompute_gvar_coupling.mjs</code> + <code>app/scripts/invert_coupling.{m,py}</code> → <code>coupling_default.json.gz</code></td>
+</tr>
+<tr>
+<td>Compute (read-only)</td>
+<td><code>app/src/lib/compute/</code>: <code>gvarSolve.ts</code>, <code>kalman.ts</code>, <code>fiscalAccounting.ts</code>, <code>matrix.ts</code>, <code>taylor-rule.ts</code> (9 rules in <code>app/public/data/dsge/rules.json</code>), <code>barnichon-mesters.ts</code>, <code>longRunTilt.ts</code></td>
+</tr>
+<tr>
+<td>Checks</td>
+<td><code>app/src/__tests__/compute/</code> (the <strong>gate</strong> — <code>npx vitest run</code>), <code>pipeline/_verify/gt.m</code> (fixture regen); <code>app/scripts/verify_gvar24.mjs</code> is a legacy fast helper (gunzip the <code>.gz</code> first; some checks stale for endogenous — see E)</td>
+</tr>
+<tr>
+<td><strong>Publish (deploy)</strong></td>
+<td><code>git push bvarscenario HEAD:main</code> → <code>.github/workflows/deploy-to-website.yml</code> → <code>matyasfarkas/starter-hugo-academic</code> <code>static/bvar-scenario/</code> → GitHub Pages (F)</td>
+</tr>
+<tr>
+<td><strong>Empirical evaluation (separate repo)</strong></td>
+<td><code>/home/farkas/github/em-bayesian-gvar-eval</code> — OOS forecast horse-race + endogenous-US spillover analysis; design in <code>docs/EMPIRICAL_PROTOCOL.md</code>; results in <code>results/tables.{txt,json}</code> + <code>results/tierA/us_rate_100bp.json</code> — see the note below</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="empirical-evaluation-where-it-lives-and-what-it-does-not-touch">Empirical evaluation — where it lives, and what it does NOT touch<a class="headerlink" href="#empirical-evaluation-where-it-lives-and-what-it-does-not-touch" title="Permanent link">&para;</a></h2>
+<p>The model's <strong>out-of-sample evaluation</strong> is a <strong>separate repository</strong>,
+<code>/home/farkas/github/em-bayesian-gvar-eval</code> (full design + runbook in its
+<code>docs/EMPIRICAL_PROTOCOL.md</code> — read that before touching the eval). It is <strong>read-only</strong> with respect to
+this repo: it consumes this repo's estimator (<code>cgl_bvarV5.m</code>, <code>export_bvar_gvar24_loop.m</code>) and the raw
+<code>DataRaw_&lt;CC&gt;_glob.json</code> panels, but <strong>changes nothing here and is not part of the green gate or the
+deploy</strong>. Nothing in §A–§F depends on it.</p>
+<p>What it implements (design <strong>final</strong>; results now <strong>produced</strong> — read them off <code>results/tables.{txt,json}</code>
++ <code>results/tierA/us_rate_100bp.json</code>, do <strong>not</strong> re-key the numbers from memory):</p>
+<ul>
+<li><strong>An OOS forecast horse-race, 9 models.</strong> Proposed = the EM-Bayesian GVAR (endogenous-US <code>emgvar_endo</code></li>
+<li>frozen-anchor <code>emgvar_frozen</code>). Benchmarks = Random Walk (<code>rw</code>) + climatology (<code>rw_clim</code>), AR(p)
+  (<code>arp</code>), single-country BVAR (<code>sbvar</code>, strip the 3 <code>ROW*</code> columns), the textbook OLS
+  Pesaran–Schuermann–Weiner / Dees GVAR (<code>cgvar_a</code>), a single-pass Bayesian GVAR (<code>cgvar_b</code>, <code>MAXIT=1</code>),
+  and a Bayesian DFM (<code>dfm</code>). <strong>Recursive expanding window</strong>, <strong>56 origins</strong> 2010Q1–2024Q4 (2020 COVID
+  origins dropped from the headline), <strong>rolling as-of-<code>t0</code> trade weights</strong> (leak-free — the shipped
+  2021–2023 <code>weights_full.json</code> is <em>forbidden</em> in the OOS sweep), targets {real GDP growth, inflation,
+  short rate} for US/EA/JP/UK/CA/CN, horizons <code>h∈{1,2,4,8}</code>.</li>
+<li><strong>Scoring.</strong> <strong>CRPS is the primary</strong> density score + a 90% <strong>Model Confidence Set</strong> (CRPS-broken
+  parametric log-score is a secondary column — see the caveat). PIT/coverage; significance via
+  Giacomini–White (headline, valid under nesting), Clark–West (nested point), Diebold–Mariano
+  (non-nested), with Romano–Wolf + the MCS for multiplicity.</li>
+<li><strong>An endogenous-US spillover analysis</strong> off the <code>US_ENDOGENOUS=1</code> model (Tier-A).</li>
+</ul>
+<blockquote>
+<p><strong>Headline (read the exact numbers off <code>results/tables.json</code>).</strong> AR(p)/DFM have the <strong>lowest point CRPS</strong>
+overall, <strong>but</strong> the 90% MCS shows <code>emgvar</code> <strong>inside the INFLATION MCS at every horizon</strong> (h=1,2,4,8) and
+inside the <strong>SHORT-RATE MCS at h=1,2,4</strong> — statistically indistinguishable from the best on the nominal
+block; it is <strong>out</strong> of the GDP-GROWTH MCS at h=1 and h=8. <code>emgvar_endo ⪰ emgvar_frozen</code> in the MCS (the
+endogenous-US design earns its keep — e.g. at RATE h=1 <code>endo</code> is in the set and <code>frozen</code> is not). It
+<strong>decisively beats the textbook OLS classical GVAR</strong> (<code>cgvar_a</code> is removed from most MCS sets) — the
+EM-Bayesian treatment is the demonstrable value-add. Best INFL h=1 is <code>emgvar_endo</code> (relRMSE 0.799).</p>
+<p><strong>Honest caveats (must state).</strong> (1) The draw-based densities are <strong>OVER-CONFIDENT</strong> — PIT cov90 ≈
+0.73–0.85 for <code>emgvar</code> vs the 0.90 target. (2) The <strong>parametric log-score column is numerically broken</strong>
+on the under-covered clouds (it returns ~1e12–1e16); <strong>CRPS + the MCS are the robust primaries</strong> — do not
+cite the LPS column. (3) <strong>Tier-A spillover</strong> (<code>eval/tier_a_scenario.mjs</code>): a US +100bp <strong>multi-period
+conditional projection</strong> shows non-trivial endogenous-only cross-country feedback the frozen anchor
+structurally omits (its own note: <code>gap = endogenous − frozen = the RoW→US feedback the frozen anchor
+cannot represent</code>), but the magnitudes are <strong>large and sign-flipping</strong> (e.g. US growth peak +1.28 endo vs
+a −4.37 frozen-path spike) and it is a <strong>conditional projection, NOT a causal IRF/GIRF</strong> — the magnitudes
+need a validation pass before being headlined. Do not overclaim a causal interpretation.</p>
+<p>If you re-estimate or re-prior a bloc here, the eval must be <strong>re-run on its side</strong> to stay consistent —
+but that is its repo's concern, not a step in this runbook.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

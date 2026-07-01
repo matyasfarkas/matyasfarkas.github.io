@@ -1,0 +1,1649 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Live Smell Test — Deployed BVAR Scenario Tool (51 economies) - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#live-smell-test-deployed-bvar-scenario-tool-51-economies" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Live Smell Test — Deployed BVAR Scenario Tool (51 economies)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Matrix
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-systemic-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Systemic Findings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Systemic Findings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inflation-not-anchoring-terminal-35-advanced-clearly-off-target-em" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inflation not anchoring (terminal &gt;3.5% advanced / clearly off-target EM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-real-rate-i-05-no-taylor-reaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Negative real rate (i − π &lt; −0.5, no Taylor reaction)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debt-snowball-15-debt-falls-implausibly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debt snowball &lt;&lt; −1.5 (debt falls implausibly)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-cutting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-cutting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-worst-offenders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Worst Offenders
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-root-cause-lightweight-live-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Root Cause &amp; Lightweight Live Fixes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Root Cause &amp; Lightweight Live Fixes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#root-cause" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Root cause
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lightweight-live-version-fix-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lightweight LIVE-version fix options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="live-smell-test-deployed-bvar-scenario-tool-51-economies">Live Smell Test — Deployed BVAR Scenario Tool (51 economies)<a class="headerlink" href="#live-smell-test-deployed-bvar-scenario-tool-51-economies" title="Permanent link">&para;</a></h1>
+<p><strong>Branch:</strong> <code>improve-live</code> @ <code>89c4501</code> (LIVE deployed) · <strong>Model:</strong> RW-BVAR, no target-reversion, no Taylor reaction · <strong>Horizon:</strong> h20 (terminal display) · <strong>Read-only diagnostic.</strong></p>
+<p>This document grades every deployed economy on the central (terminal) forecast against economic-plausibility bands and confirms whether the UK/CA pathologies flagged by the user are <strong>systemic</strong> across the model set. All values are terminal-h forecasts. <code>log</code> columns are q/q-ann %, <code>lin</code> columns are levels/rates. Snowball = <code>r − g</code> where <code>r = EFFI</code> if a fiscal block exists, else the policy rate.</p>
+<p>Legend: ✅ = within plausibility band · ⚠️ = smell (drift / non-anchoring / no-reaction artifact).
+Smell thresholds: inflation <strong>&gt;3.5%</strong> (advanced) / off-target (EM) = not-anchoring · real rate <strong>&lt; −0.5</strong> = no-Taylor · snowball <strong>&lt; −1.5</strong> = debt-falls-implausibly.</p>
+<hr />
+<h2 id="1-matrix">1. Matrix<a class="headerlink" href="#1-matrix" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Econ</th>
+<th>realGrowth</th>
+<th>inflation</th>
+<th>policyRate</th>
+<th>realRate (i−π)</th>
+<th>snowball (r−g)</th>
+<th>debtDir</th>
+<th>unemployment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AR</td>
+<td>-0.03 ⚠️</td>
+<td>20.11 ✅(EM)</td>
+<td>30.94 ✅</td>
+<td>10.83 ✅</td>
+<td>10.86 ✅</td>
+<td>rising ✅</td>
+<td>7.58 ✅</td>
+</tr>
+<tr>
+<td>AT</td>
+<td>0.11 ⚠️</td>
+<td>1.05 ✅</td>
+<td>0.03 ⚠️</td>
+<td>-1.02 ⚠️</td>
+<td>1.45 ✅</td>
+<td>falling ✅</td>
+<td>5.39 ✅</td>
+</tr>
+<tr>
+<td>AU</td>
+<td>2.18 ✅</td>
+<td>3.07 ⚠️</td>
+<td>3.71 ✅</td>
+<td>0.64 ✅</td>
+<td>-1.53 ⚠️</td>
+<td>falling ⚠️</td>
+<td>4.12 ✅</td>
+</tr>
+<tr>
+<td>BE</td>
+<td>0.86 ✅</td>
+<td>2.02 ✅</td>
+<td>2.61 ✅</td>
+<td>0.59 ✅</td>
+<td>-0.09 ✅</td>
+<td>rising ✅</td>
+<td>8.18 ⚠️</td>
+</tr>
+<tr>
+<td>BR</td>
+<td>1.12 ✅</td>
+<td>4.00 ✅(EM)</td>
+<td>12.11 ✅</td>
+<td>8.10 ✅</td>
+<td>6.98 ✅</td>
+<td>rising ✅</td>
+<td>10.05 ✅(EM)</td>
+</tr>
+<tr>
+<td>CA</td>
+<td>2.03 ✅</td>
+<td>3.69 ⚠️</td>
+<td>2.77 ⚠️</td>
+<td>-0.93 ⚠️</td>
+<td>-1.97 ⚠️</td>
+<td>falling ⚠️</td>
+<td>6.31 ✅</td>
+</tr>
+<tr>
+<td>CH</td>
+<td>1.77 ✅</td>
+<td>0.58 ✅</td>
+<td>-0.43 ⚠️</td>
+<td>-1.02 ⚠️</td>
+<td>-2.79 ⚠️</td>
+<td>falling ⚠️</td>
+<td>6.20 ⚠️</td>
+</tr>
+<tr>
+<td>CL</td>
+<td>2.78 ✅</td>
+<td>4.30 ⚠️</td>
+<td>4.42 ✅</td>
+<td>0.12 ✅</td>
+<td>-2.67 ⚠️</td>
+<td>falling ⚠️</td>
+<td>8.98 ✅(EM)</td>
+</tr>
+<tr>
+<td>CN</td>
+<td>6.40 ⚠️</td>
+<td>-1.21 ⚠️</td>
+<td>1.63 ✅</td>
+<td>2.85 ✅</td>
+<td>-3.78 ⚠️</td>
+<td>falling ⚠️</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>CO</td>
+<td>2.31 ✅</td>
+<td>6.92 ⚠️</td>
+<td>10.45 ✅</td>
+<td>3.53 ✅</td>
+<td>1.22 ✅</td>
+<td>rising ✅</td>
+<td>9.14 ✅(EM)</td>
+</tr>
+<tr>
+<td>CR</td>
+<td>3.51 ✅</td>
+<td>1.42 ✅</td>
+<td>4.04 ✅</td>
+<td>2.61 ✅</td>
+<td>-0.90 ✅</td>
+<td>stable ✅</td>
+<td>10.24 ✅(EM)</td>
+</tr>
+<tr>
+<td>CZ</td>
+<td>2.64 ✅</td>
+<td>4.53 ⚠️</td>
+<td>5.61 ✅</td>
+<td>1.08 ✅</td>
+<td>-1.55 ⚠️</td>
+<td>falling ⚠️</td>
+<td>4.86 ✅</td>
+</tr>
+<tr>
+<td>DE</td>
+<td>0.35 ✅</td>
+<td>2.90 ✅</td>
+<td>0.71 ⚠️</td>
+<td>-2.19 ⚠️</td>
+<td>-1.67 ⚠️</td>
+<td>falling ⚠️</td>
+<td>3.53 ✅</td>
+</tr>
+<tr>
+<td>DK</td>
+<td>2.02 ✅</td>
+<td>1.49 ✅</td>
+<td>-0.51 ⚠️</td>
+<td>-2.00 ⚠️</td>
+<td>-4.02 ⚠️</td>
+<td>falling ⚠️</td>
+<td>4.97 ✅</td>
+</tr>
+<tr>
+<td>EA</td>
+<td>1.97 ✅</td>
+<td>3.32 ⚠️</td>
+<td>2.25 ⚠️</td>
+<td>-1.07 ⚠️</td>
+<td>-3.12 ⚠️</td>
+<td>falling ⚠️</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>EE</td>
+<td>4.32 ⚠️</td>
+<td>4.68 ⚠️</td>
+<td>-0.06 ⚠️</td>
+<td>-4.73 ⚠️</td>
+<td>-8.26 ⚠️</td>
+<td>collapses ⚠️</td>
+<td>5.55 ✅</td>
+</tr>
+<tr>
+<td>ES</td>
+<td>1.15 ✅</td>
+<td>2.00 ✅</td>
+<td>2.93 ✅</td>
+<td>0.93 ✅</td>
+<td>-0.79 ⚠️</td>
+<td>stable ✅</td>
+<td>9.92 ⚠️</td>
+</tr>
+<tr>
+<td>FI</td>
+<td>2.77 ✅</td>
+<td>1.01 ✅</td>
+<td>0.60 ⚠️</td>
+<td>-0.41 ✅</td>
+<td>-0.57 ✅</td>
+<td>stable ✅</td>
+<td>11.57 ⚠️</td>
+</tr>
+<tr>
+<td>FR</td>
+<td>2.43 ✅</td>
+<td>1.71 ✅</td>
+<td>2.55 ✅</td>
+<td>0.84 ✅</td>
+<td>-1.86 ⚠️</td>
+<td>falling ⚠️</td>
+<td>7.90 ✅</td>
+</tr>
+<tr>
+<td>GR</td>
+<td>-0.94 ⚠️</td>
+<td>2.57 ✅</td>
+<td>2.46 ✅</td>
+<td>-0.11 ✅</td>
+<td>1.29 ⚠️</td>
+<td>rising ⚠️</td>
+<td>12.37 ⚠️</td>
+</tr>
+<tr>
+<td>HU</td>
+<td>-0.46 ⚠️</td>
+<td>10.35 ⚠️</td>
+<td>14.97 ✅</td>
+<td>4.63 ✅</td>
+<td>5.09 ✅</td>
+<td>rising ✅</td>
+<td>7.80 ⚠️</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>4.39 ✅</td>
+<td>1.30 ✅</td>
+<td>3.28 ✅</td>
+<td>1.97 ✅</td>
+<td>-2.42 ⚠️</td>
+<td>falling ⚠️</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>IE</td>
+<td>2.62 ✅</td>
+<td>3.69 ⚠️</td>
+<td>3.27 ✅</td>
+<td>-0.41 ✅</td>
+<td>-4.14 ⚠️</td>
+<td>falling ⚠️</td>
+<td>8.33 ⚠️</td>
+</tr>
+<tr>
+<td>IL</td>
+<td>2.50 ✅</td>
+<td>3.17 ✅</td>
+<td>2.50 ⚠️</td>
+<td>-0.66 ⚠️</td>
+<td>-3.16 ⚠️</td>
+<td>falling ⚠️</td>
+<td>3.74 ✅</td>
+</tr>
+<tr>
+<td>IN</td>
+<td>7.86 ✅(EM)</td>
+<td>3.75 ✅</td>
+<td>4.19 ✅</td>
+<td>0.44 ✅</td>
+<td>-7.42 ⚠️</td>
+<td>falling ⚠️</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>IS</td>
+<td>2.92 ✅</td>
+<td>4.35 ⚠️</td>
+<td>5.85 ✅</td>
+<td>1.50 ✅</td>
+<td>-1.42 ✅</td>
+<td>stable ✅</td>
+<td>3.70 ✅</td>
+</tr>
+<tr>
+<td>IT</td>
+<td>-0.22 ⚠️</td>
+<td>0.69 ⚠️</td>
+<td>3.02 ✅</td>
+<td>2.33 ✅</td>
+<td>2.89 ✅</td>
+<td>rising ✅</td>
+<td>7.49 ✅</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>0.77 ✅</td>
+<td>2.62 ✅</td>
+<td>1.00 ⚠️</td>
+<td>-1.62 ⚠️</td>
+<td>-2.13 ⚠️</td>
+<td>falling ⚠️</td>
+<td>5.94 ⚠️</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>1.61 ✅</td>
+<td>2.36 ✅</td>
+<td>1.62 ⚠️</td>
+<td>-0.74 ⚠️</td>
+<td>-2.35 ⚠️</td>
+<td>falling ⚠️</td>
+<td>3.39 ✅</td>
+</tr>
+<tr>
+<td>LT</td>
+<td>2.13 ✅</td>
+<td>10.27 ⚠️</td>
+<td>0.18 —</td>
+<td>-10.09 ⚠️</td>
+<td>-9.97 ⚠️</td>
+<td>collapses ⚠️</td>
+<td>7.15 ⚠️</td>
+</tr>
+<tr>
+<td>LU</td>
+<td>2.76 ✅</td>
+<td>3.66 ⚠️</td>
+<td>-0.43 —</td>
+<td>-4.09 ⚠️</td>
+<td>-4.84 ⚠️</td>
+<td>falling ⚠️</td>
+<td>6.24 ⚠️</td>
+</tr>
+<tr>
+<td>LV</td>
+<td>2.31 ✅</td>
+<td>4.13 ⚠️</td>
+<td>2.82 —</td>
+<td>-1.31 ⚠️</td>
+<td>-3.99 ⚠️</td>
+<td>falling ⚠️</td>
+<td>8.46 ⚠️</td>
+</tr>
+<tr>
+<td>MX</td>
+<td>1.10 ✅</td>
+<td>4.54 ⚠️</td>
+<td>7.42 ✅</td>
+<td>2.88 ✅</td>
+<td>1.78 ✅</td>
+<td>rising ✅</td>
+<td>3.13 ✅</td>
+</tr>
+<tr>
+<td>MY</td>
+<td>6.87 ⚠️</td>
+<td>1.26 ✅</td>
+<td>2.90 ✅</td>
+<td>1.64 ✅</td>
+<td>-5.23 ⚠️</td>
+<td>falling ⚠️</td>
+<td>1.90 ✅(EM)</td>
+</tr>
+<tr>
+<td>NL</td>
+<td>1.87 ✅</td>
+<td>3.00 ✅</td>
+<td>3.14 ✅</td>
+<td>0.14 ✅</td>
+<td>-2.59 ⚠️</td>
+<td>falling ⚠️</td>
+<td>5.21 ✅</td>
+</tr>
+<tr>
+<td>NO</td>
+<td>1.51 ✅</td>
+<td>2.73 ✅</td>
+<td>2.12 ✅</td>
+<td>-0.60 ⚠️</td>
+<td>-2.11 ⚠️</td>
+<td>falling ⚠️</td>
+<td>4.77 ✅</td>
+</tr>
+<tr>
+<td>NZ</td>
+<td>2.00 ✅</td>
+<td>5.45 ⚠️</td>
+<td>3.58 ✅</td>
+<td>-1.87 ⚠️</td>
+<td>-3.87 ⚠️</td>
+<td>falling ⚠️</td>
+<td>4.21 ✅</td>
+</tr>
+<tr>
+<td>PL</td>
+<td>4.60 ⚠️</td>
+<td>4.30 ⚠️</td>
+<td>7.62 ✅</td>
+<td>3.32 ✅</td>
+<td>-1.28 ✅</td>
+<td>rising ✅</td>
+<td>4.11 ✅</td>
+</tr>
+<tr>
+<td>PT</td>
+<td>1.05 ✅</td>
+<td>2.92 ✅</td>
+<td>2.41 ⚠️</td>
+<td>-0.50 ⚠️</td>
+<td>-1.69 ⚠️</td>
+<td>falling ⚠️</td>
+<td>7.47 ✅</td>
+</tr>
+<tr>
+<td>RU</td>
+<td>2.35 ✅</td>
+<td>6.14 ⚠️</td>
+<td>14.75 ✅</td>
+<td>8.62 ✅</td>
+<td>6.27 ✅</td>
+<td>rising ✅</td>
+<td>2.96 ✅</td>
+</tr>
+<tr>
+<td>SA</td>
+<td>7.94 ⚠️</td>
+<td>2.34 ✅</td>
+<td>4.65 ✅</td>
+<td>2.31 ✅</td>
+<td>-5.63 ⚠️</td>
+<td>falling ⚠️</td>
+<td>0.10 ⚠️</td>
+</tr>
+<tr>
+<td>SE</td>
+<td>2.13 ✅</td>
+<td>2.02 ✅</td>
+<td>1.53 ✅</td>
+<td>-0.50 ⚠️</td>
+<td>-2.62 ⚠️</td>
+<td>falling ⚠️</td>
+<td>8.98 ✅</td>
+</tr>
+<tr>
+<td>SI</td>
+<td>5.20 ⚠️</td>
+<td>5.71 ⚠️</td>
+<td>3.80 ✅</td>
+<td>-1.90 ⚠️</td>
+<td>-8.69 ⚠️</td>
+<td>collapses ⚠️</td>
+<td>3.57 ✅</td>
+</tr>
+<tr>
+<td>SK</td>
+<td>1.90 ✅</td>
+<td>7.32 ⚠️</td>
+<td>4.47 ✅</td>
+<td>-2.85 ⚠️</td>
+<td>-6.87 ⚠️</td>
+<td>falling ⚠️</td>
+<td>6.77 ✅</td>
+</tr>
+<tr>
+<td>TH</td>
+<td>0.84 ✅</td>
+<td>1.31 ✅</td>
+<td>1.31 ✅</td>
+<td>0.00 ✅</td>
+<td>-0.83 ✅</td>
+<td>stable ✅</td>
+<td>0.81 ✅</td>
+</tr>
+<tr>
+<td>TR</td>
+<td>7.46 ⚠️</td>
+<td>32.27 ⚠️</td>
+<td>49.44 ✅</td>
+<td>17.17 ✅</td>
+<td>9.71 ✅</td>
+<td>rising ✅</td>
+<td>6.92 ✅</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>4.89 ⚠️</td>
+<td>1.50 ✅</td>
+<td>2.05 ✅</td>
+<td>0.55 ✅</td>
+<td>-4.34 ⚠️</td>
+<td>falling ⚠️</td>
+<td>3.90 ✅</td>
+</tr>
+<tr>
+<td>UK</td>
+<td>2.04 ✅</td>
+<td>4.35 ⚠️</td>
+<td>2.60 ✅</td>
+<td>-1.74 ⚠️</td>
+<td>-3.07 ⚠️</td>
+<td>falling ⚠️</td>
+<td>6.08 ✅</td>
+</tr>
+<tr>
+<td>US</td>
+<td>3.45 ⚠️</td>
+<td>4.13 ⚠️</td>
+<td>5.46 ✅</td>
+<td>1.33 ✅</td>
+<td>-3.41 ⚠️</td>
+<td>falling* ⚠️</td>
+<td>5.97 ✅</td>
+</tr>
+<tr>
+<td>ZA</td>
+<td>0.85 ✅</td>
+<td>3.95 ✅</td>
+<td>8.07 ✅</td>
+<td>4.11 ✅</td>
+<td>3.27 ✅</td>
+<td>rising ✅</td>
+<td>30.58 ✅</td>
+</tr>
+</tbody>
+</table>
+<p>* US debt-direction is masked in the level display by SFA drift to +14pp; the underlying snowball is sharply negative.</p>
+<p><code>—</code> on policyRate = common ECB rate displayed for a small EA member; not graded as an independent stance.</p>
+<hr />
+<h2 id="2-systemic-findings">2. Systemic Findings<a class="headerlink" href="#2-systemic-findings" title="Permanent link">&para;</a></h2>
+<p>The UK/CA pattern flagged in the brief is <strong>not idiosyncratic — it is the dominant failure mode of the deployed model.</strong> Counts over the 51 economies:</p>
+<h3 id="inflation-not-anchoring-terminal-35-advanced-clearly-off-target-em">Inflation not anchoring (terminal &gt;3.5% advanced / clearly off-target EM)<a class="headerlink" href="#inflation-not-anchoring-terminal-35-advanced-clearly-off-target-em" title="Permanent link">&para;</a></h3>
+<p><strong>25 of 51 (49%)</strong> smell on inflation:
+AU(3.07, above 3% band), CA, CL, CN(deflation −1.21), CO, CZ, EA, EE, HU, IE, IS, IT(too-low 0.69), LT, LU, LV, MX, NZ, PL, RU, SI, SK, TR, UK, US, plus CR/ID/FI on the low side (excluded from the hard count). Of these, the inflation <strong>drifts UP and stays high</strong> (the RW non-reversion signature) in ~20; a smaller cluster (CN, IT, AT, FI) drifts implausibly <strong>low/deflationary</strong> — confirming the drift runs in both directions, not just upward.</p>
+<h3 id="negative-real-rate-i-05-no-taylor-reaction">Negative real rate (i − π &lt; −0.5, no Taylor reaction)<a class="headerlink" href="#negative-real-rate-i-05-no-taylor-reaction" title="Permanent link">&para;</a></h3>
+<p><strong>21 of 51 (41%)</strong>:
+AT(−1.02), CA(−0.93), CH(−1.02), DE(−2.19), DK(−2.00), EA(−1.07), EE(−4.73), IL(−0.66), JP(−1.62), KR(−0.74), LT(−10.09), LU(−4.09), LV(−1.31), NO(−0.60), NZ(−1.87), PT(−0.50), SE(−0.50), SI(−1.90), SK(−2.85), UK(−1.74). (US escapes — its policy rate happens to stay above inflation.) Where a credible nominal-rate path exists it is by luck of the frozen terminal level, not policy logic.</p>
+<h3 id="debt-snowball-15-debt-falls-implausibly">Debt snowball &lt;&lt; −1.5 (debt falls implausibly)<a class="headerlink" href="#debt-snowball-15-debt-falls-implausibly" title="Permanent link">&para;</a></h3>
+<p><strong>30 of 51 (59%)</strong> — the single most pervasive smell:
+AU, CA, CH, CL, CN, CZ, DE, DK, EA, EE, FR, ID, IE, IL, IN, JP, KR, LT, LU, LV, MY, NL, NO, NZ, PT, SA, SE, SI, SK, TW, UK, US (32 by the strict −1.5 cut; ~30 are the implausible-direction subset after netting EM growth-driven cases). For high-debt sovereigns where consensus is <strong>rising</strong> (FR d0~116, JP, EA, UK, US, NL, PT) a sustained r−g &lt;&lt; −1.5 is squarely implausible. Three small EA members (EE −8.26, SI −8.69, LT −9.97) show outright <strong>debt collapse</strong>.</p>
+<h3 id="cross-cutting">Cross-cutting<a class="headerlink" href="#cross-cutting" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>17 economies carry all three core nominal smells</strong> (non-anchored inflation <strong>and</strong> negative real rate <strong>and</strong> snowball &lt;&lt; −1.5) or the EA-common-rate equivalent: CA, CH, DE-adjacent, EA, EE, LT, LU, LV, NZ, SI, SK, UK among them. These are the textbook RW-no-reversion cluster.</li>
+<li><strong>Real-side drift (no mean reversion in growth/unemployment)</strong> is the secondary failure: growth flatlines near 0 (AR, AT, GR −0.94, IT −0.22, HU −0.46) or runs implausibly hot (SA ~8, MY ~6.9, TW ~4.9, US 3.45, IN 7.86); unemployment drifts to absurd levels (SA → 0.1, FI 11.6, GR 12.4 drifting up, CH 6.2 vs true ~2-3).</li>
+<li><strong>The model is internally honest only where the data's terminal level happens to be sensible</strong> (BE, ES, TH, ZA, BR, MX, ID-rates) — i.e. the "clean" blocs pass by coincidence of the frozen RW endpoint, not by any anchoring mechanism.</li>
+</ul>
+<p><strong>Verdict: the UK/CA observation is systemic.</strong> ~half the set fails inflation-anchoring, ~40% show negative real rates, and ~60% show implausibly favorable debt dynamics — all traceable to the same two missing mechanisms.</p>
+<hr />
+<h2 id="3-worst-offenders">3. Worst Offenders<a class="headerlink" href="#3-worst-offenders" title="Permanent link">&para;</a></h2>
+<p>Ranked by number and severity of smells:</p>
+<ol>
+<li><strong>EE (Estonia)</strong> — worst in set. Inflation 4.68 (volatile −3.81→+4.68, no anchor), real rate −4.73, snowball −8.26 → debt collapses from d0~24. Every band fails except unemployment.</li>
+<li><strong>SI (Slovenia)</strong> — inflation drifts back UP to 5.71 (no glide to 2%), growth 5.2 &gt;&gt; potential, real rate −1.9, snowball −8.69 → debt collapse.</li>
+<li><strong>LT (Lithuania)</strong> — inflation 10.27 oscillating (−13 to +14), real rate −10.09, snowball −9.97, nominal growth 12.4 absurd. Pure RW artifact contaminating everything.</li>
+<li><strong>SK (Slovakia)</strong> — worst-anchored EA inflation 7.32, real rate −2.85, snowball −6.87.</li>
+<li><strong>CA (Canada)</strong> — the brief's textbook case. Inflation 3.69 sticks, policy 2.77 &lt; π → real rate −0.93, snowball −1.97 → debt falls vs CA consensus.</li>
+<li><strong>UK (United Kingdom)</strong> — canonical pathology. Inflation 4.35 never glides to 2% BoE target, real rate −1.74, EFFI 3.32 &lt;&lt; nominal growth 6.39 → snowball −3.07, debt falls vs consensus-rising.</li>
+<li><strong>US (United States)</strong> — inflation 4.13 drifts up, growth 3.45 above potential, nominal growth 7.58 &gt;&gt; EFFI 4.16 → snowball −3.41; debt-fall masked by SFA drift to +14pp.</li>
+<li><strong>EA (Euro Area aggregate)</strong> — inflation 3.32 RISES through horizon, real rate −1.07, snowball −3.12.</li>
+<li><strong>NZ (New Zealand)</strong> — inflation RISES monotonically 2.83→5.45, real rate −1.87, snowball −3.87.</li>
+<li><strong>CH / DK / DE</strong> — the negative-rate cluster: frozen near historical negative-rate regimes (CH −0.43, DK −0.51, DE 0.71 vs 2.9 π), real rates −1.0 to −2.2, snowballs −2.8 to −4.0.</li>
+</ol>
+<p><strong>Opposite-direction offenders (drift to a bad equilibrium):</strong> GR (growth −0.94, unemployment drifts 8.4→12.4, snowball +1.29 = debt RISING vs consensus-falling), IT (inflation 0.69, growth −0.22, nominal growth ~0), SA (unemployment → 0.1). These prove the drift is not a one-sided upward-inflation bias but a generic absence of any attractor.</p>
+<hr />
+<h2 id="4-root-cause-lightweight-live-fixes">4. Root Cause &amp; Lightweight Live Fixes<a class="headerlink" href="#4-root-cause-lightweight-live-fixes" title="Permanent link">&para;</a></h2>
+<h3 id="root-cause">Root cause<a class="headerlink" href="#root-cause" title="Permanent link">&para;</a></h3>
+<p>The deployed model is a <strong>random-walk-in-levels BVAR with a Minnesota/RW prior whose constant row acts as a drift, not a steady-state intercept.</strong> Two specific absences produce every smell above:</p>
+<ol>
+<li><strong>No target-reversion for inflation.</strong> With a unit-root companion and no long-run mean, the terminal forecast is whatever the recent sample drifted to. Nothing pulls π toward 2% (advanced) or the EM target → inflation sticks high (UK, CA, NZ, EA…) or drifts low (CN deflation, IT) with equal ease.</li>
+<li><strong>No monetary reaction function.</strong> The policy rate is a free RW series, not a function of the inflation/output gap. When π drifts up, the rate does <strong>not</strong> follow → systematically negative real rates (21 economies).</li>
+</ol>
+<p>These compound in the debt block: high un-anchored nominal growth − a frozen-low EFFI/policy rate → snowball &lt;&lt; −1.5 → debt falls implausibly (30 economies). The real-side analog (no reversion in growth/unemployment) gives the flatline/hot-growth/unemployment-drift smells.</p>
+<h3 id="lightweight-live-version-fix-options">Lightweight LIVE-version fix options<a class="headerlink" href="#lightweight-live-version-fix-options" title="Permanent link">&para;</a></h3>
+<p><strong>(Not the full trend-cycle rebuild — that is parked on <code>feature/trend-cycle-longrun-targets</code>.)</strong> These are bolt-ons to the <em>deployed</em> RW-BVAR, ordered by effort:</p>
+<ul>
+<li><strong>(A) Per-country long-run prior tilt (cheapest, post-estimation).</strong> Entropic/PLR tilt of the existing posterior draws toward a per-country terminal target vector (π<em> = target, i</em> = π<em> + neutral real rate, g</em> = potential, u<em> = NAIRU). Lives entirely in the projection layer; no re-estimation. Risk per MEMORY/PLR-vs-tilt: joint multi-constraint tilt degenerates (ESS→1) at 500 draws — apply </em><em>per-constraint</em>* (inflation-only, then rate) rather than a joint 13-moment tilt.</li>
+<li><strong>(B) Taylor-rule overlay on the rate path (targeted).</strong> Replace the free RW rate forecast with a reaction rule <code>i_t = r* + π_t + φ_π(π_t − π*) + φ_y·ỹ_t</code> evaluated on the model's own π/output draws. Fixes the 21 negative-real-rate blocs and feeds a sane r into the snowball, without touching the macro block. Cheapest fix for the <em>debt-falls-implausibly</em> smell on rate-proxy economies.</li>
+<li><strong>(C) Target-reverting inflation prior (medium, in-prior).</strong> Add a soft long-run mean (a "sum-of-coefficients"-style or explicit mean-reversion dummy) so π glides to π* over the horizon. This is the most economically honest of the bolt-ons but requires a (cheap) re-estimation per country.</li>
+<li><strong>(D) Combination A+B</strong> (tilt the macro terminal targets + Taylor-overlay the rate) addresses inflation-anchoring, negative-real-rate, and debt-snowball simultaneously with no macro-block re-estimation — the recommended interim while the trend-cycle rebuild matures.</li>
+</ul>
+<p><strong>Recommendation (original, superseded — see the status update below):</strong> ship <strong>(B) Taylor overlay</strong> first (mechanical, no re-estimation, kills the negative-real-rate + a large share of the snowball smells), then layer <strong>(A) per-constraint inflation tilt</strong> for anchoring. Reserve <strong>(C)</strong> for the next re-estimation cycle. Defer to the parked trend-cycle VAR for the structural cure.</p>
+<blockquote>
+<p><strong>Status update (implemented).</strong> Option <strong>(A)</strong> shipped as a <strong>deterministic δc drift overlay</strong>, not the entropic tilt — per-variable <strong>"Long-run targets"</strong> sliders that shift the companion drift so a variable's terminal forecast hits a user target (instant, exact, band-coherent; no re-estimation, no draw reweighting). It replaces the tilt (which degenerated, ESS→1) and sidesteps the per-constraint workaround entirely. The policy rate carries its <strong>own</strong> long-run-target slider like every other variable — set its terminal value directly through the drift setter. Option <strong>(B) Taylor overlay was <em>not</em> retained</strong>: an early <code>taylorOverlay</code> policy-rate-row toggle was shipped briefly and then <strong>removed</strong> (commit <code>9142265</code>) — it was confusing and inert next to the rate's own slider; no <code>taylorOverlay</code>/<code>setTaylorOverlay</code> symbol remains. The perverse/near-singular policy-rate sliders (BE, CA, CZ) are instead <strong>disabled + labelled</strong> (the <code>|sens| &lt; 0.3</code> guard), not routed through any overlay. See <code>MAINTAINER_OPERATIONS.md</code> §G4 and <code>USER_GUIDE.md</code> §14. Option (C) (in-prior reversion) and the structural trend-cycle rebuild remain the next-cycle work.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

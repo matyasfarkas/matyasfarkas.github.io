@@ -1,0 +1,1673 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../fiscal-block-methodology/">
+      
+      
+        <link rel="next" href="../EMPIRICAL_EVALUATION/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>External Block Methodology - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#external-block-the-balance-of-payments-satellite-trade-balance-current-account-nfagdp" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              External Block Methodology
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-shared-backbone-identical-to-the-fiscal-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The shared backbone (identical to the fiscal block)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#element-by-element-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Element-by-element mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-recursion-precisely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The recursion, precisely
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The recursion, precisely">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-quarter-recursion-using-lagged-nfa-nfa1-so-the-loop-stays-explicit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-quarter recursion (using lagged NFA NFA₋₁ so the loop stays explicit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anchors-and-which-blocs-have-an-external-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anchors and which blocs have an external block
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#honest-caveats-read-before-relying-on-the-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Honest caveats (read before relying on the output)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Honest caveats (read before relying on the output)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-trade-balance-is-a-real-volume-balance-not-the-nominal-customs-ca-us-ea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. The trade balance is a real-VOLUME balance, not the nominal customs CA (US, EA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-primary-income-is-imputed-not-estimated-infa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Primary income is IMPUTED, not estimated (iNFA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-fx-valuation-uses-an-external-parameter-fxshare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. FX valuation uses an external parameter (fxShare)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-nfa0-is-the-external-seed-real-sourced-per-bloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. nfa0 is the EXTERNAL seed — real, sourced, per bloc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cn-units-reconciliation-incompatible-native-units-brought-to-a-common-nominal-usd-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. CN units reconciliation — incompatible native units brought to a common nominal-USD ratio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-the-displayed-nfa-path-is-a-passive-accounting-recursion-no-debtnfa-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. The displayed NFA path is a PASSIVE accounting recursion (no debt/NFA feedback)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placement-in-one-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Placement in one line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key references
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-shared-backbone-identical-to-the-fiscal-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The shared backbone (identical to the fiscal block)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#element-by-element-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Element-by-element mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-recursion-precisely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The recursion, precisely
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The recursion, precisely">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-quarter-recursion-using-lagged-nfa-nfa1-so-the-loop-stays-explicit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-quarter recursion (using lagged NFA NFA₋₁ so the loop stays explicit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anchors-and-which-blocs-have-an-external-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anchors and which blocs have an external block
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#honest-caveats-read-before-relying-on-the-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Honest caveats (read before relying on the output)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Honest caveats (read before relying on the output)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-trade-balance-is-a-real-volume-balance-not-the-nominal-customs-ca-us-ea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. The trade balance is a real-VOLUME balance, not the nominal customs CA (US, EA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-primary-income-is-imputed-not-estimated-infa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Primary income is IMPUTED, not estimated (iNFA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-fx-valuation-uses-an-external-parameter-fxshare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. FX valuation uses an external parameter (fxShare)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-nfa0-is-the-external-seed-real-sourced-per-bloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. nfa0 is the EXTERNAL seed — real, sourced, per bloc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cn-units-reconciliation-incompatible-native-units-brought-to-a-common-nominal-usd-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. CN units reconciliation — incompatible native units brought to a common nominal-USD ratio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-the-displayed-nfa-path-is-a-passive-accounting-recursion-no-debtnfa-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. The displayed NFA path is a PASSIVE accounting recursion (no debt/NFA feedback)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placement-in-one-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Placement in one line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key references
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="external-block-the-balance-of-payments-satellite-trade-balance-current-account-nfagdp">External Block — the balance-of-payments satellite (Trade Balance + Current Account + NFA/GDP)<a class="headerlink" href="#external-block-the-balance-of-payments-satellite-trade-balance-current-account-nfagdp" title="Permanent link">&para;</a></h1>
+<p>The external block estimates the external <strong>drivers</strong> inside the BVAR (trade flows and the exchange
+rate) and derives the <strong>reporting variables</strong> — trade balance, current account, and the net
+international investment position (net foreign assets, NFA) as a share of GDP — by accounting
+identity. This is the exact same <em>division of labour</em> as the <a href="../fiscal-block-methodology/">fiscal block</a>:
+a reduced-form model is never allowed to freely forecast a <strong>stock</strong> (there, public debt; here, NFA).
+Instead the BVAR forecasts the flows and the FX index, and a separate, side-effect-free accounting
+module rolls the stock forward by the <strong>balance-of-payments identity</strong>, seeded from a real, sourced
+anchor.</p>
+<p>Together the fiscal block, this external block, and the monetary core complete the <strong>IMF FPP
+monetary–fiscal–external triad</strong> of sectoral consistency: fiscal rolls the debt stock from a budget
+identity, external rolls the NFA stock from the BoP identity, and both share the same two-layer pattern
+(BVAR flow generator + identity recursion) and the same %-of-GDP annual-ratio convention.</p>
+<h2 id="the-shared-backbone-identical-to-the-fiscal-block">The shared backbone (identical to the fiscal block)<a class="headerlink" href="#the-shared-backbone-identical-to-the-fiscal-block" title="Permanent link">&para;</a></h2>
+<p>Both satellites separate <strong>"forecast the macro + sector flows in the BVAR"</strong> from <strong>"derive the
+sector stock by accounting."</strong> Neither lets the reduced form forecast the stock directly.</p>
+<ul>
+<li><strong>Fiscal:</strong> BVAR forecasts revenue/GDP, primary-expenditure/GDP, the effective rate and the SFA →
+  <code>app/src/lib/compute/fiscalAccounting.ts</code> rolls <strong>debt/GDP</strong> forward by the FPP/DSA debt-dynamics
+  identity, seeded by <code>d0</code> in <code>fiscal_meta.json</code>.</li>
+<li><strong>External:</strong> BVAR forecasts exports, imports, GDP and the FX index → <code>app/src/lib/compute/externalAccounting.ts</code>
+  rolls <strong>NFA/GDP</strong> forward by the BoP identity, seeded by <code>nfa0</code> (real net-IIP / nominal GDP) in
+  <code>external_meta.json</code>.</li>
+</ul>
+<p>The authoritative implementation is <code>computeExternalBlock</code> in
+<code>app/src/lib/compute/externalAccounting.ts</code>. It is <strong>read-only and side-effect-free</strong>: it consumes a
+level-space forecast path and returns per-quarter arrays of length <code>H</code>. It is wired into
+<code>app/src/components/charts/ChartGrid.tsx</code> exactly the way the fiscal block is — a derived useMemo, a
+per-draw band loop, and synthetic chart traces — and is fully <strong>gated</strong> on the presence of a chartable
+<code>external_meta.json</code> (a bloc without one renders nothing, with zero band work).</p>
+<h2 id="element-by-element-mapping">Element-by-element mapping<a class="headerlink" href="#element-by-element-mapping" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>IMF BoP / FPP external sector</th>
+<th>This tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exports / imports (drivers)</td>
+<td>goods+services trade flows</td>
+<td><strong>estimated</strong> BVAR level vars (US <code>XH</code>/<code>MH</code>; EA <code>EXP_EA</code>/<code>IMP_EA</code>)</td>
+</tr>
+<tr>
+<td>GDP (denominator)</td>
+<td>nominal GDP</td>
+<td><strong>estimated</strong> BVAR level var (<code>GDPH</code> / <code>GDP_EA</code>)</td>
+</tr>
+<tr>
+<td>Exchange rate (driver)</td>
+<td>NEER / REER</td>
+<td><strong>estimated</strong> BVAR log var (US <code>FXTWM</code>; EA <code>NEER_EA</code>)</td>
+</tr>
+<tr>
+<td>Trade balance</td>
+<td>exports − imports, % GDP</td>
+<td><strong>derived</strong> <code>TB = 100·(X−M)/gdp$</code></td>
+</tr>
+<tr>
+<td>Primary income on NFA</td>
+<td>investment income on the net IIP</td>
+<td><strong>derived</strong> <code>income = iNFA·NFA₋₁</code> (imputed return)</td>
+</tr>
+<tr>
+<td>Current account</td>
+<td>trade balance + primary income (+ transfers)</td>
+<td><strong>derived</strong> <code>CA = TB + income</code></td>
+</tr>
+<tr>
+<td>FX valuation effect</td>
+<td>revaluation of FX-denominated net assets</td>
+<td><strong>derived</strong> <code>val = −fxShare·NFA₋₁·ΔFX</code></td>
+</tr>
+<tr>
+<td>NFA / net IIP path</td>
+<td><code>NFAₜ = NFA₋₁ + CAₜ + valuationₜ</code></td>
+<td><strong>derived</strong> recursion (the BoP stock identity)</td>
+</tr>
+<tr>
+<td>NFA seed</td>
+<td>observed net IIP / GDP</td>
+<td><strong>sourced</strong> <code>nfa0</code> in <code>external_meta.json</code> (real, per bloc)</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>NFA recursion is the standard BoP stock-flow identity</strong> — the net international investment
+position changes by the current-account flow plus valuation (revaluation) effects, the same
+decomposition the IMF/ECB external statistics and the Lane–Milesi-Ferretti External Wealth of Nations
+dataset use.</p>
+<h2 id="the-recursion-precisely">The recursion, precisely<a class="headerlink" href="#the-recursion-precisely" title="Permanent link">&para;</a></h2>
+<p>Read the units block at the top of <code>externalAccounting.ts</code> before editing anything here. Per forecast
+quarter <code>t = 0 … H−1</code>, read off the level-space forecast path (100·log for log vars; level for lin):</p>
+<ul>
+<li><strong>exports / imports / GDP</strong> — log vars; the quantity is <code>exp(level/100)</code>. Trade balance is a % of
+  GDP, so the numerator <code>(exports − imports)</code> and the denominator <code>gdp$</code> <strong>must</strong> be in a common
+  nominal scale. For US (<code>XH</code>/<code>MH</code>/<code>GDPH</code> all real chained Bil USD) and EA (<code>EXP_EA</code>/<code>IMP_EA</code>/<code>GDP_EA</code>
+  all real, common units) they are, so the ratio is real-trade-balance / real-GDP and validates against
+  the published BoP figure.</li>
+<li>the <strong>FX index</strong> (<code>idx.fx</code>, log var: US <code>FXTWM</code>, EA <code>NEER_EA</code>, CN <code>REER_CN</code>) — <strong>"up = home currency
+  appreciates."</strong> A rise lowers the domestic-currency value of FX-denominated net assets, hence the
+  negative valuation sign below.</li>
+<li><strong>iNFA</strong> (<code>idx</code>-level <code>iNFA</code>, % p.a.) — the imputed return on the NFA stock, a <strong>modeling default</strong>
+  (~3%), flagged in <code>external_meta.json</code> (<code>_flags</code>).</li>
+<li><strong>fxShare</strong> (<code>fxShare</code>, fraction in [0,1]) — the FX-exposed share of the NFA stock, a <strong>modeling
+  default</strong> (~0.4), flagged.</li>
+</ul>
+<p>The seed <code>nfa0</code> (initial NFA/GDP, %) is the <strong>real, sourced</strong> net-IIP/GDP anchor from
+<code>external_meta.json</code>.</p>
+<h3 id="per-quarter-recursion-using-lagged-nfa-nfa1-so-the-loop-stays-explicit">Per-quarter recursion (using lagged NFA <code>NFA₋₁</code> so the loop stays explicit)<a class="headerlink" href="#per-quarter-recursion-using-lagged-nfa-nfa1-so-the-loop-stays-explicit" title="Permanent link">&para;</a></h3>
+<p>With <code>NFA₋₁ = nfa0</code> at <code>t=0</code> and <code>NFA₋₁ = nfa[t−1]</code> thereafter, and <code>prev</code> the previous level row
+(<code>prevLevelRow</code> at <code>t=0</code>, for the FX diff seam):</p>
+<ol>
+<li><strong>Trade balance</strong> (% of GDP, annual ratio):
+   <code>TBₜ = 100·(exp(levelₜ[exports]/100) − exp(levelₜ[imports]/100)) / exp(levelₜ[gdp]/100)</code>
+   (<code>externalAccounting.ts:104</code>).</li>
+<li><strong>Primary income</strong> on the NFA stock: <code>incomeₜ = iNFA · NFA₋₁ / 100</code> (<code>externalAccounting.ts:106</code>).
+   This is the imputed-return channel (modeling default), the only place <code>iNFA</code> enters.</li>
+<li><strong>Current account</strong> (% of GDP, annual): <code>CAₜ = TBₜ + incomeₜ</code> (<code>externalAccounting.ts:107</code>).</li>
+<li><strong>FX valuation effect</strong> this quarter: with <code>dFXₜ = levelₜ[fx] − prev[fx]</code> (Δ of 100·log FX),
+   <code>valₜ = −fxShare · NFA₋₁ · dFXₜ / 100</code> (<code>externalAccounting.ts:109–110</code>). A home appreciation
+   (<code>dFX&gt;0</code>) cuts the home value of FX-denominated net assets, so for a net creditor it reduces NFA and
+   for a net debtor (<code>nfa0&lt;0</code>) it <strong>raises</strong> NFA (FX-denominated net liabilities shrink).</li>
+<li><strong>Roll the stock forward</strong> (the BoP stock identity), quarterly:
+   <code>NFAₜ = NFA₋₁ + CAₜ/4 + valₜ</code> (<code>externalAccounting.ts:112</code>). The current account is an <strong>annual
+   ratio</strong> so it enters as a quarter-share (<code>/4</code>); the valuation effect is already this quarter's.</li>
+<li><strong>Derived reporting variable</strong>: <code>Δ(NFA/GDP)ₜ = NFAₜ − NFA₋₁</code> (<code>externalAccounting.ts:119</code>).</li>
+</ol>
+<p>The recursion returns <code>{ tb, income, ca, valuation, nfa, dNfa }</code>, all length <code>H</code>.</p>
+<h2 id="anchors-and-which-blocs-have-an-external-block">Anchors and which blocs have an external block<a class="headerlink" href="#anchors-and-which-blocs-have-an-external-block" title="Permanent link">&para;</a></h2>
+<p>The seed <code>nfa0</code> is <strong>never invented</strong>; it is a real, sourced net-IIP/GDP figure (per the absolute
+no-synthetic rule). A bloc whose IIP cannot be verified, or whose trade flows and GDP are not in a
+common scale, ships <strong>without</strong> a chartable <code>external_meta.json</code> and renders <strong>no</strong> external charts.</p>
+<table>
+<thead>
+<tr>
+<th>Bloc</th>
+<th>External block?</th>
+<th><code>nfa0</code> (% GDP)</th>
+<th>Source</th>
+<th>TB anchor (h0)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>US</strong></td>
+<td><strong>Yes</strong> (renders)</td>
+<td><strong>−66.75</strong></td>
+<td>FRED <code>IIPUSNETIQ</code> (US Net IIP, −21,270,237 Mil USD, 2026-01-01) / FRED <code>GDP</code> (nominal SAAR, 31,865.721 Bil USD, 2026Q1). US = large net debtor.</td>
+<td><strong>−3.80%</strong> (deficit; published −3 to −4% range)</td>
+</tr>
+<tr>
+<td><strong>EA</strong></td>
+<td><strong>Yes</strong> (renders)</td>
+<td><strong>+11.0</strong></td>
+<td>ECB official release <em>"Euro area quarterly balance of payments and international investment position: Q4 2025"</em> — net assets EUR 1.76 tn = 11.0% of EA GDP. EA ≈ small net creditor.</td>
+<td><strong>+3.59%</strong> (modest surplus, net exporter)</td>
+</tr>
+<tr>
+<td><strong>CN</strong></td>
+<td><strong>Yes</strong> (renders, via unit reconciliation)</td>
+<td><strong>+20.35</strong></td>
+<td>SAFE <em>"China's IIP at end-2025"</em> — net external assets USD 4,071.3 bn; NBS 2025 nominal GDP CNY 140.1879 tn = USD 20.01 tn (implied CNY/USD 7.006) ⇒ +20.35% GDP. Cross-check BoFiT ~20%. CN = net creditor.</td>
+<td><strong>+4.46%</strong> (goods-trade surplus; published ~4–5% range)</td>
+</tr>
+<tr>
+<td>JP, UK, CA</td>
+<td><strong>No</strong> (no <code>external_meta.json</code>)</td>
+<td>—</td>
+<td>IIP not yet verified for these blocs (flagged)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>So <strong>US, EA and CN</strong> are the blocs that render the external block. <strong>CN</strong> required a units
+reconciliation (see caveat 5) because its trade flows and GDP are in incompatible native units; with the
+real, sourced conversion factors it now ships <code>externalChartable:true</code>. <strong>JP / UK / CA</strong> ship no
+<code>external_meta.json</code> at all (loader's <code>Promise.allSettled</code> resolves 404 → null → nothing renders, no
+band work).</p>
+<p>The <code>iNFA</code> (~3% p.a.) and <code>fxShare</code> (~0.4) parameters are <strong>modeling defaults shipped clearly flagged</strong>
+(the <code>_flags</code> key in each <code>external_meta.json</code>), exactly like the structural-constant SFA in the fiscal
+block — they are <strong>not</strong> estimated or sourced.</p>
+<h2 id="honest-caveats-read-before-relying-on-the-output">Honest caveats (read before relying on the output)<a class="headerlink" href="#honest-caveats-read-before-relying-on-the-output" title="Permanent link">&para;</a></h2>
+<p>These are documented honestly because the tool is a live research instrument.</p>
+<h3 id="1-the-trade-balance-is-a-real-volume-balance-not-the-nominal-customs-ca-us-ea">1. The trade balance is a real-VOLUME balance, not the nominal customs CA (US, EA)<a class="headerlink" href="#1-the-trade-balance-is-a-real-volume-balance-not-the-nominal-customs-ca-us-ea" title="Permanent link">&para;</a></h3>
+<p>For US and EA the trade flows and GDP are in a <strong>common real</strong> scale (US real chained Bil USD; EA real,
+common units), so the ratio is a <strong>real-trade-volume / real-GDP</strong> balance. It validates against the
+published nominal BoP trade balance to within a relative-price wedge (US ≈ −3.8%, EA ≈ +3.5%), but it
+is <strong>not</strong> the nominal customs/BoP current account to the decimal. Terms-of-trade swings between export
+and import prices are not captured because the BVAR carries real volumes, not separate export/import
+deflators. Treat the levels as economically faithful, the high-frequency wiggles as volume-driven.</p>
+<h3 id="2-primary-income-is-imputed-not-estimated-infa">2. Primary income is IMPUTED, not estimated (<code>iNFA</code>)<a class="headerlink" href="#2-primary-income-is-imputed-not-estimated-infa" title="Permanent link">&para;</a></h3>
+<p>The primary-income leg of the current account is <code>income = iNFA·NFA₋₁</code> with a <strong>modeling-default</strong>
+imputed return <code>iNFA ≈ 3%</code> p.a. — it is <strong>not</strong> an estimated BVAR variable and <strong>not</strong> sourced. It is
+flagged in <code>external_meta.json</code> (<code>_flags</code>), like the structural SFA. Because income compounds on the
+<strong>lagged</strong> NFA stock, a more-negative NFA path mechanically produces a more-negative income drag (and
+vice versa); this is a deliberate, transparent channel, but it is a parameterized assumption, not data.</p>
+<h3 id="3-fx-valuation-uses-an-external-parameter-fxshare">3. FX valuation uses an external parameter (<code>fxShare</code>)<a class="headerlink" href="#3-fx-valuation-uses-an-external-parameter-fxshare" title="Permanent link">&para;</a></h3>
+<p>The valuation (revaluation) effect <code>val = −fxShare·NFA₋₁·ΔFX</code> uses a <strong>modeling-default</strong> FX-exposed
+share <code>fxShare ≈ 0.4</code> — the fraction of the net IIP denominated in foreign currency. It is <strong>not</strong>
+sourced and is flagged like <code>iNFA</code>. The sign convention (home appreciation cuts the home value of FX
+net assets) means a fiscal expansion that appreciates the currency can, for a net <strong>debtor</strong> (<code>nfa0&lt;0</code>,
+e.g. US), produce a <strong>positive</strong> valuation gain (FX-denominated net liabilities shrink) — an economically
+correct J-curve/valuation channel, kept ON in the live charts. The unconfounded twin-deficit signal is
+therefore read off the <strong>trade/CA flow</strong> in the medium-term window, not the long-horizon NFA stock,
+whose dynamics are valuation-rich.</p>
+<h3 id="4-nfa0-is-the-external-seed-real-sourced-per-bloc">4. <code>nfa0</code> is the EXTERNAL seed — real, sourced, per bloc<a class="headerlink" href="#4-nfa0-is-the-external-seed-real-sourced-per-bloc" title="Permanent link">&para;</a></h3>
+<p>The NFA recursion is only as anchored as its seed. <code>nfa0</code> is a <strong>real</strong> net-IIP/GDP figure sourced per
+bloc (US: FRED <code>IIPUSNETIQ</code>/<code>GDP</code>; EA: ECB Q4-2025 IIP release; CN: SAFE end-2025 IIP). It is <strong>never</strong>
+invented. If a bloc's IIP cannot be verified it ships
+<strong>without</strong> an external block (JP/UK/CA today). After any re-estimation that changes a bloc's variable
+order, <strong>re-verify</strong> the positional <code>idx</code> in <code>external_meta.json</code> (<code>exports/imports/gdp/deflator/fx</code>) —
+the indices are positional and not auto-regenerated, the same staleness hazard the fiscal block flags.</p>
+<h3 id="5-cn-units-reconciliation-incompatible-native-units-brought-to-a-common-nominal-usd-ratio">5. CN units reconciliation — incompatible native units brought to a common nominal-USD ratio<a class="headerlink" href="#5-cn-units-reconciliation-incompatible-native-units-brought-to-a-common-nominal-usd-ratio" title="Permanent link">&para;</a></h3>
+<p>CN is the one bloc whose trade flows and GDP are <strong>not</strong> in a common native scale, so the raw level
+paths cannot be ratioed directly (the un-converted TB/GDP is off by ~10⁵). The mismatch is purely one of
+<strong>units and frequency</strong>, not of missing data, so it is resolved by a small set of <strong>real, sourced</strong>
+conversion factors (<code>units.*</code> in <code>external_meta.json</code>) — no FX rate or flow is fabricated.</p>
+<blockquote>
+<p><strong>Updated (surgical CN-only real-GDP re-estimate, 2026-06).</strong> <code>GDP_CN</code> is now a <strong>real chain-linked
+volume index</strong> (not nominal CNY), so the GDP denominator is reconstructed in nominal USD via the
+<code>gdpKind:'realIndexDeflate'</code> branch: <code>gdp$ = exp(gdp/100)·exp(deflator/100)·usdBase</code>, with a single
+calibrated <code>usdBase = 158760958.8679</code> scalar (CN's external block carries <code>tradeFreqMult: 3</code> and
+<code>gdpKind:'realIndexDeflate'</code>). This pins the CN goods-trade balance to the published <strong>+4.46%</strong> of GDP
+at the historical anchor. The legacy nominal-CNY path below (<code>gdpScale</code>/<code>fxToUsd</code>) is <strong>retained for
+historical reference only</strong> and is no longer the active conversion for CN. This was a <strong>CN-only graft</strong>;
+the other 32 GVAR blocs are byte-identical to the prior working model.</p>
+</blockquote>
+<p>The legacy native units, verified from the last historical level row (<code>exp(level/100)</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Series</th>
+<th>Native unit</th>
+<th><code>exp(level/100)</code> (last row)</th>
+<th>Conversion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GDP_CN</code> (legacy nominal)</td>
+<td>nominal CNY, <strong>millions</strong>, quarterly</td>
+<td>35,984,541 (≈ 36 tn CNY/quarter)</td>
+<td><code>gdpScale=1e6</code> (millions → ones), then <code>÷ fxToUsd</code> (CNY → USD)</td>
+</tr>
+<tr>
+<td><code>EXP_CN</code></td>
+<td>nominal USD, <strong>monthly-average</strong> flow</td>
+<td>314,673,049,926 (≈ $315 bn/month)</td>
+<td><code>× tradeFreqMult=3</code> (monthly → quarterly)</td>
+</tr>
+<tr>
+<td><code>IMP_CN</code></td>
+<td>nominal USD, <strong>monthly-average</strong> flow</td>
+<td>239,543,292,627 (≈ $240 bn/month)</td>
+<td><code>× tradeFreqMult=3</code> (monthly → quarterly)</td>
+</tr>
+</tbody>
+</table>
+<p>The factors:</p>
+<ul>
+<li><strong><code>usdBase = 158760958.8679</code></strong> (active) — <code>realIndexDeflate</code> scalar that maps the real chain-linked
+  <code>exp(gdp/100)·exp(deflator/100)</code> product into nominal USD, calibrated so the CN trade balance lands at
+  the published +4.46% of GDP at the anchor.</li>
+<li><strong><code>gdpScale = 1e6</code></strong> (legacy nominal path) — when <code>GDP_CN</code> was in <strong>millions</strong> of CNY; multiplying
+  <code>exp(gdp/100)</code> by 1e6 put the denominator in ones (CNY), matching the trade flows in ones (USD).</li>
+<li><strong><code>fxToUsd = 6.7686</code></strong> (legacy nominal path) — the <strong>real</strong> CNY/USD spot rate; GDP-in-CNY ÷ this =
+  GDP-in-USD. Sourced from <strong>FRED series <code>DEXCHUS</code></strong>, latest non-missing observation <strong>2026-06-18</strong>.
+  Cross-confirmed against its <strong>primary upstream source</strong> — the Federal Reserve H.10 <em>Foreign Exchange
+  Rates</em> release (<code>federalreserve.gov/releases/h10/current</code>, release dated 2026-06-22, China spot for
+  2026-06-18), a byte-exact match. <strong>Not synthetic.</strong></li>
+<li><strong><code>tradeFreqMult = 3</code></strong> — <code>EXP_CN</code>/<code>IMP_CN</code> are <strong>monthly-average</strong> USD flows while GDP is quarterly;
+  ×3 quarterizes the flows so numerator and denominator share a frequency.</li>
+</ul>
+<p>Applied to the recursion (<code>externalAccounting.ts</code>):</p>
+<div class="highlight"><pre><span></span><code>gdp$  = exp(gdp/100) · gdpScale / fxToUsd          // CNY-millions → USD
+exp$  = exp(exports/100) · tradeFreqMult           // monthly-USD → quarterly-USD
+imp$  = exp(imports/100) · tradeFreqMult
+TB    = 100 · (exp$ − imp$) / gdp$                 // % of GDP, common nominal-USD ratio
+</code></pre></div>
+<p>which gives, at the forecast anchor, <strong>TB ≈ +4.46% of GDP</strong> — squarely in China's published goods-trade
+surplus range (~4–5% of GDP). CN therefore now ships <code>externalChartable:true</code> and renders the external
+block on this common-USD ratio.</p>
+<p><strong>These factors are pure unit/frequency conversions, not data.</strong> Each native series keeps its own real
+sourced value; the factors only restate them in a single nominal-USD, quarterly scale. The
+default for any bloc that ships <strong>no</strong> <code>units.*</code> (US, EA) is <code>gdpScale=fxToUsd=tradeFreqMult=1</code>, so the
+US/EA paths are <strong>byte-identical</strong> to before this change (guarded by the byte-identity test). The CN
+factors are load-bearing — a test asserts that <em>without</em> them the ratio is absurd (&gt;10³) — so a future
+editor must never drop them back to the raw level paths. The CN units behaviour is pinned by
+<code>app/src/__tests__/compute/externalAccounting.test.ts</code>.</p>
+<h3 id="6-the-displayed-nfa-path-is-a-passive-accounting-recursion-no-debtnfa-feedback">6. The displayed NFA path is a PASSIVE accounting recursion (no debt/NFA feedback)<a class="headerlink" href="#6-the-displayed-nfa-path-is-a-passive-accounting-recursion-no-debtnfa-feedback" title="Permanent link">&para;</a></h3>
+<p>Like the fiscal block's deployed <code>computeFiscalBlock</code>, the external recursion has <strong>no</strong> endogenous
+feedback from the NFA stock back onto the BVAR drivers (no NFA→FX risk premium, no NFA→trade
+adjustment). The trade flows and FX are debt-agnostic BVAR baselines; the income and valuation legs
+layer on the lagged stock with no double-counting. This is a transparent passive recursion, not a
+sustainability model — a possible future extension.</p>
+<h2 id="bands">Bands<a class="headerlink" href="#bands" title="Permanent link">&para;</a></h2>
+<p>The external bands (TB / CA / NFA at q16/q84) are a faithful clone of the fiscal default-mode band:
+they are computed per-draw via <code>computeExternalBlock</code> on the unconditional level path, parallel-shifted
+by <code>(scenarioMean − baselineMean)</code>, and injected into the three chart traces. They are cleared
+everywhere the fiscal bands are. The synthetic chart <code>bvarIdx</code> is <code>9100+si</code> (distinct from the fiscal
+<code>9000+</code>) with <code>draggable:null</code>, so the j-indexed conditioning / band / forecast loops skip it — the
+external path is strictly additive and the <code>δc=0</code> + external no-op stays byte-exact with the fiscal
+no-op.</p>
+<h2 id="placement-in-one-line">Placement in one line<a class="headerlink" href="#placement-in-one-line" title="Permanent link">&para;</a></h2>
+<p>A compact, interactive realization of the <strong>IMF FPP external sector</strong>: the BVAR forecasts the trade
+flows and the exchange rate, and a passive <strong>balance-of-payments stock-flow recursion</strong> rolls NFA/GDP
+forward from a real, sourced net-IIP seed (trade balance + imputed primary income + FX valuation). It
+is the external leg of the <strong>monetary–fiscal–external triad</strong>, built on the identical two-layer pattern
+as the <a href="../fiscal-block-methodology/">fiscal block</a>, shipped for US, EA and CN (CN via a real, sourced
+nominal-USD units reconciliation; JP/UK/CA pending verified IIP).</p>
+<h2 id="key-references">Key references<a class="headerlink" href="#key-references" title="Permanent link">&para;</a></h2>
+<p>IMF, <em>Balance of Payments and International Investment Position Manual</em> (BPM6, the CA/IIP identity and
+valuation decomposition) · IMF Financial Programming (FPP, four-sector consistency) · ECB, <em>Euro area
+balance of payments and international investment position</em> (quarterly statistical releases) · Lane &amp;
+Milesi-Ferretti, <em>The External Wealth of Nations</em> (net-IIP construction, valuation effects) ·
+Obstfeld &amp; Rogoff, <em>Foundations of International Macroeconomics</em> (the intertemporal current account and
+NFA accumulation) · Gourinchas &amp; Rey, <em>International Financial Adjustment</em> (valuation channel of
+external adjustment).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

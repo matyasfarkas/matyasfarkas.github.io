@@ -1,0 +1,1709 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../DATA_SCHEMA/">
+      
+      
+        <link rel="next" href="../MAINTAINER_OPERATIONS/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Build & CI - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#build-test-deploy" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Build & CI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-green-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The green gate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test taxonomy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test taxonomy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fast-npm-test-vs-heavy-npm-run-testheavy-which-is-which" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fast (npm test) vs heavy (npm run test:heavy) — which is which
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canary-suites-block-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Canary suites (block deploy)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-suites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature suites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regression-suites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regression suites
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy chain
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy chain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BASE_PATH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hugo-version-pin-01220" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hugo version pin (0.122.0)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-commit-and-what-not-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What to commit (and what not to)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-green-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The green gate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test taxonomy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test taxonomy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fast-npm-test-vs-heavy-npm-run-testheavy-which-is-which" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fast (npm test) vs heavy (npm run test:heavy) — which is which
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canary-suites-block-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Canary suites (block deploy)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-suites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature suites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regression-suites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regression suites
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy chain
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy chain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BASE_PATH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hugo-version-pin-01220" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hugo version pin (0.122.0)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-commit-and-what-not-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What to commit (and what not to)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="build-test-deploy">Build, Test &amp; Deploy<a class="headerlink" href="#build-test-deploy" title="Permanent link">&para;</a></h1>
+<p>How the EM-Bayesian Global VAR platform goes from a working tree to the live
+public site under the <code>/bvar-scenario</code> path of the academic website. This page documents
+the <strong>green gate</strong> (the local checks that must pass before any deploy), the
+<strong>test taxonomy</strong> (which suites block a deploy versus which guard a feature), and
+the <strong>deploy chain</strong> (the GitHub Action that builds the static export and republishes
+it into the <code>starter-hugo-academic</code> site repo, which publishes to <strong>GitHub Pages</strong>).</p>
+<p>For the higher-level architecture and the data-refresh / re-estimation runbook, see
+<a href="../ARCHITECTURE_FOR_AI/">ARCHITECTURE_FOR_AI.md</a> and
+<a href="../REESTIMATING_MODELS/">REESTIMATING_MODELS.md</a>. This page does <strong>not</strong> repeat those.</p>
+<hr />
+<h2 id="the-green-gate">The green gate<a class="headerlink" href="#the-green-gate" title="Permanent link">&para;</a></h2>
+<p>Everything runs from the <code>app/</code> directory. The commands below are the full
+pre-deploy contract — types clean, tests green (fast suite + the heavy solver
+canaries), static export succeeds — <strong>before any push to the deploy remote</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>app
+npx<span class="w"> </span>tsc<span class="w"> </span>--noEmit<span class="w">                       </span><span class="c1"># 1. types: must report 0 errors</span>
+npm<span class="w"> </span><span class="nb">test</span><span class="w">                               </span><span class="c1"># 2. fast suite (excludes the heavy solver canaries)</span>
+npm<span class="w"> </span>run<span class="w"> </span>test:heavy<span class="w">                     </span><span class="c1"># 3. heavy solver/perf canaries (serialised, 1 fork)</span>
+<span class="nv">BASE_PATH</span><span class="o">=</span>/bvar-scenario<span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>build<span class="w"> </span><span class="c1"># 4. static export with the deploy base path</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Command</th>
+<th>What it proves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Types</td>
+<td><code>npx tsc --noEmit</code></td>
+<td>TypeScript compiles with no errors (no emit; type-check only).</td>
+</tr>
+<tr>
+<td>Fast tests</td>
+<td><code>npm test</code></td>
+<td>The fast compute suite in <code>app/src/__tests__/compute/</code>, <strong>minus the heavy solver canaries</strong> (see the split below), including the cheap canaries.</td>
+</tr>
+<tr>
+<td>Heavy tests</td>
+<td><code>npm run test:heavy</code></td>
+<td>The expensive full-panel solver / affine-kernel / band-solve canaries, run <strong>serialised</strong> (<code>--poolOptions.forks.maxForks=1</code>) so the multi-second US-endogenous solves do not contend for cores.</td>
+</tr>
+<tr>
+<td>Build</td>
+<td><code>npm run build</code> (<code>next build</code>)</td>
+<td>The Next.js <strong>static export</strong> (<code>output: 'export'</code>) completes and writes <code>app/out/</code>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Green gate</strong> = <code>tsc</code> 0 errors <strong>and</strong> <code>npm test</code> green <strong>and</strong> <code>npm run test:heavy</code>
+green <strong>and</strong> the build succeeds. Only then is a deploy allowed. <code>npx vitest run</code>
+(= <code>npm run test:all</code>) runs <em>everything</em> in one pass — use it for a full sweep, but
+note it runs the heavy suites with default parallelism (slower, can over-subscribe).</p>
+<blockquote>
+<p><strong>The fast/heavy split is real, and it is in <code>package.json</code> — read it, don't assume.</strong>
+<code>npm test</code> is <strong>not</strong> <code>vitest run</code>: it is <code>vitest run</code> with a list of <code>--exclude</code>
+globs. The excluded (heavy) patterns are
+<code>gvar-us-endogenous</code>, <code>gvar-direct-channel</code>, <code>gvar-band-solve</code>,
+<code>gvar-closed-form-*</code>, <code>gvar-band-closedform-*</code>, <code>affine-blockernels-parity</code>,
+<code>gvar-kernel-affine-independence</code>. <code>npm run test:heavy</code> runs <strong>exactly those</strong>
+(matched by <code>vitest run &lt;name…&gt;</code>), one fork at a time. A change that only <code>npm test</code>
+covers leaves the dim-2060 solver paths <strong>unverified</strong> — both halves are mandatory
+before deploy. (<code>npm run test:watch</code> is <code>vitest</code> — the interactive watcher, never a CI gate.)</p>
+</blockquote>
+<p>A few notes that are easy to get wrong:</p>
+<ul>
+<li>The build is a <strong>static export</strong>: <code>next.config.mjs</code> sets <code>output: 'export'</code>,
+  <code>images.unoptimized: true</code>, and routes the deploy prefix through
+  <code>basePath</code>/<code>assetPrefix</code>/<code>NEXT_PUBLIC_BASE_PATH</code>, all driven by the
+  <code>BASE_PATH</code> env var (see <a href="#base_path">BASE_PATH</a> below).</li>
+<li>This is <strong>not</strong> stock Next.js — see <code>app/AGENTS.md</code>. Read the bundled docs under
+  <code>node_modules/next/dist/docs/</code> before changing build config.</li>
+</ul>
+<hr />
+<h2 id="test-taxonomy">Test taxonomy<a class="headerlink" href="#test-taxonomy" title="Permanent link">&para;</a></h2>
+<p>All compute tests live in <code>app/src/__tests__/compute/</code>. They fall into three roles:</p>
+<ul>
+<li><strong>CANARY</strong> — guards a load-bearing invariant or a deployed artifact. A red canary
+  means the shipped model data, the scaling convention, or the cross-country solver
+  identity is broken; <strong>it must block the deploy</strong>, not be skipped.</li>
+<li><strong>FEATURE</strong> — proves a specific user-facing capability (a Taylor rule, optimal
+  policy, the fiscal debt recursion, US-endogenous coupling, the entropic long-run
+  tilt, GVAR globals/topology, …).</li>
+<li><strong>REGRESSION</strong> — pins a previously-fixed bug so it cannot silently return
+  (scaling differencing, WYSIWYG conditioning, counterfactual recovery, …).</li>
+</ul>
+<h3 id="fast-npm-test-vs-heavy-npm-run-testheavy-which-is-which">Fast (<code>npm test</code>) vs heavy (<code>npm run test:heavy</code>) — which is which<a class="headerlink" href="#fast-npm-test-vs-heavy-npm-run-testheavy-which-is-which" title="Permanent link">&para;</a></h3>
+<p><code>npm test</code> excludes seven heavy patterns; <code>npm run test:heavy</code> runs <strong>exactly those</strong>,
+serialised to one fork. The three <strong>deploy-blocking canaries</strong>
+(<code>scenario-scale-convention</code>, <code>gvar-convergence</code>, <code>gvar-coupling-artifact</code>) are all in
+the <strong>fast</strong> suite. The <strong>heavy</strong> suite is the multi-second full-panel solver and the
+affine-kernel/coupling perf-parity gates:</p>
+<table>
+<thead>
+<tr>
+<th>Heavy suite (<code>npm run test:heavy</code>)</th>
+<th>Why it is heavy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--exclude</code> glob (from <code>package.json</code>)</td>
+<td>currently-present files</td>
+</tr>
+<tr>
+<td>-----------</td>
+<td>--------</td>
+</tr>
+<tr>
+<td><code>gvar-us-endogenous</code></td>
+<td><code>gvar-us-endogenous.test.ts</code></td>
+</tr>
+<tr>
+<td><code>gvar-direct-channel</code></td>
+<td><code>gvar-direct-channel.test.ts</code></td>
+</tr>
+<tr>
+<td><code>gvar-band-solve</code></td>
+<td><code>gvar-band-solve.test.ts</code></td>
+</tr>
+<tr>
+<td><code>gvar-closed-form-*</code></td>
+<td><code>gvar-closed-form-routing.test.ts</code></td>
+</tr>
+<tr>
+<td><code>gvar-band-closedform-*</code></td>
+<td><em>(no file at present)</em></td>
+</tr>
+<tr>
+<td><code>affine-blockernels-parity</code></td>
+<td><code>affine-blockernels-parity.test.ts</code></td>
+</tr>
+<tr>
+<td><code>gvar-kernel-affine-independence</code></td>
+<td><code>gvar-kernel-affine-independence.test.ts</code></td>
+</tr>
+</tbody>
+</table>
+<p>The fast/heavy split is keyed on <strong>glob patterns</strong>, not a fixed file list: <code>npm test</code> <code>--exclude</code>s the
+seven patterns above and <code>npm run test:heavy</code> selects <code>gvar-us-endogenous gvar-direct-channel
+gvar-band-solve gvar-closed-form gvar-band-closedform affine-blockernels gvar-kernel-affine</code> — so a new
+<code>gvar-closed-form-*</code> or <code>gvar-band-closedform-*</code> file is auto-routed to the heavy half. Everything <strong>else</strong>
+in <code>app/src/__tests__/compute/</code> runs under <code>npm test</code>. <strong>Both halves gate the deploy</strong> — a heavy suite
+that only <code>test:heavy</code> runs still blocks a release if red.</p>
+<h3 id="canary-suites-block-deploy">Canary suites (block deploy)<a class="headerlink" href="#canary-suites-block-deploy" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Test file</th>
+<th>Guards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>scenario-scale-convention.test.ts</code></td>
+<td>The conditional-display scaling convention: response paths for <code>log</code> vars are shown as <code>4·(Δlevel_t − Δlevel_{t−1})</code> (q/q-annualized rate deviation), <strong>not</strong> <code>4·levelGap_t</code> (cumulative price-level gap). Pins the corrected convention against the MATLAB <code>conforekf</code> ground truth for the canonical Baa +100bp / 8q shock; a break would re-introduce the ~23× far-horizon overstatement.</td>
+</tr>
+<tr>
+<td><code>gvar-convergence.test.ts</code></td>
+<td><strong>Gauss-Seidel ≡ closed-form</strong>: for the same US scenario the iterative <code>solveGVAR</code> (Gauss-Seidel sweeps, US frozen) and the linear <code>solveGVARLinear</code> (build M by unit-RoW probes, then <code>(I−M)⁻¹ d</code> / Smith doubling) must agree to ~machine precision per RoW country. This is the proof that the N-bloc linear-solver generalization is correct; also reports empirical and power-iteration ρ(M).</td>
+</tr>
+<tr>
+<td><code>gvar-coupling-artifact.test.ts</code></td>
+<td>The <strong>pre-shipped coupling artifact</strong> (<code>public/data/bvar/gvar/coupling_default.json.gz</code>) is FRESH: its <code>modelSig</code> matches the deployed models, the augmented empty-pin-structure dim is self-consistent with the live US-endogenous build, ρ ∈ (0,1), and an artifact-hydrated solve equals the live-built closed-form solve (≤1e-3, the 6-sig-fig rounding bound). Also asserts the route REFUSES the empty-structure artifact for a non-empty (e.g. US-pinned) request. Skips loudly if the <code>.gz</code> is missing rather than failing.</td>
+</tr>
+</tbody>
+</table>
+<p>These three are exactly the suites that, if red, must stop a release — they cover the
+two things a static deploy cannot self-correct: the <strong>shipped artifacts</strong>
+(<code>coupling_default.json.gz</code>, the per-bloc model JSON) and the <strong>display/solver
+conventions</strong> the UI renders on top of them.</p>
+<h3 id="feature-suites">Feature suites<a class="headerlink" href="#feature-suites" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Test file</th>
+<th>Capability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>taylor-rule.test.ts</code></td>
+<td>The 9 Taylor-rule variants (<code>taylor-rule.ts</code>).</td>
+</tr>
+<tr>
+<td><code>barnichon-mesters.test.ts</code></td>
+<td>The Barnichon-Mesters optimal-policy optimizer.</td>
+</tr>
+<tr>
+<td><code>kalman.test.ts</code></td>
+<td>State-space build, Kalman filter/smoother, <code>conditionalForecast</code> (DK smoother).</td>
+</tr>
+<tr>
+<td><code>conditional-forecast.test.ts</code></td>
+<td>Conditional forecasting on real sample data.</td>
+</tr>
+<tr>
+<td><code>dynamic-conditioning.test.ts</code></td>
+<td>Any variable can be conditioned (general dynamic conditioning).</td>
+</tr>
+<tr>
+<td><code>linear-combo-conditioning.test.ts</code></td>
+<td>Conditioning on a <strong>linear combination</strong> (e.g. primary balance = revenue − primary expenditure) inside the smoother, without a separate BVAR variable.</td>
+</tr>
+<tr>
+<td><code>chart-data.test.ts</code></td>
+<td>Chart-data generation for all 8 display panels.</td>
+</tr>
+<tr>
+<td><code>fiscalAccounting.test.ts</code></td>
+<td>The fiscal debt recursion and exact SFA residual (<code>fiscalAccounting.ts</code>).</td>
+</tr>
+<tr>
+<td><code>fiscal-conditioning-integration.test.ts</code></td>
+<td>Conditioning on a debt/GDP trajectory: the engine inverts the recursion to the required primary balance and pins it via a linear constraint.</td>
+</tr>
+<tr>
+<td><code>gvar-globals.test.ts</code></td>
+<td>The 4 GVAR global commons (<code>GLB_OIL</code>/<code>GLB_USLR</code>/<code>GLB_USBAA</code>/<code>GLB_USEQ</code>) — US determines them as its own variables.</td>
+</tr>
+<tr>
+<td><code>gvar-derived-topology.test.ts</code></td>
+<td>Self-configuring bloc topology (ROW_COUNTRIES / IDX / W) DERIVED from deployed <code>spec.json</code> + <code>weights_24bloc.json</code>, not hardcoded.</td>
+</tr>
+<tr>
+<td><code>gvar-us-endogenous.test.ts</code></td>
+<td>The US-as-coupled-bloc solver generalization (its <code>ROW*_US</code> stars + US weights row).</td>
+</tr>
+<tr>
+<td><code>gvar-band-solve.test.ts</code></td>
+<td>Per-draw GVAR scenario <strong>band</strong> solve.</td>
+</tr>
+<tr>
+<td><code>gvar-ui-linkage.test.ts</code></td>
+<td>Wiring of the cross-country engine into the UI (<code>buildScenarioPins</code>, deviation → pinned LEVEL matrices).</td>
+</tr>
+<tr>
+<td><code>gvar-closed-form-routing.test.ts</code></td>
+<td>The production solve path: <code>runGVARSolve</code> routed through <code>solveGVARClosedForm</code> (assemble each bloc's affine RoW response once, build M, solve <code>x = (I−M)⁻¹ d</code>) + coupling-cache correctness. <strong>(heavy)</strong></td>
+</tr>
+<tr>
+<td><code>gvar-direct-channel.test.ts</code></td>
+<td>The US-endogenous <strong>direct</strong> preview channel on a bloc subset. <strong>(heavy)</strong></td>
+</tr>
+<tr>
+<td><code>longRunTilt.test.ts</code></td>
+<td>The entropic long-run tilt + PLR (<code>longRunTilt.ts</code>).</td>
+</tr>
+<tr>
+<td><code>chartgrid-render-memo.test.ts</code></td>
+<td>The Phase-2 render memoization (<code>reconcileCharts</code> + <code>chartDeepEqual</code> + <code>React.memo(DraggableChart)</code>): <strong>one</strong> conditioning edit rebuilds ≈1 of ~35 panels, not all of them (asserts via <code>chartRebuildCounter</code>/<code>draggableChartRenderCounter</code>).</td>
+</tr>
+<tr>
+<td><code>conditioned-dot-optimistic.test.ts</code></td>
+<td>The optimistic conditioned-point dot (<code>conditionedDotDisplayY</code> ∘ <code>conditioningDeviationFromDisplayY</code> = identity) — the marker round-trips to the clicked display value for every variable type.</td>
+</tr>
+<tr>
+<td><code>right-click-plant-at-cursor.test.ts</code></td>
+<td>Right-click on a forecast chart plants the bullet at the cursor (same display→stored mapping as drag).</td>
+</tr>
+<tr>
+<td><code>gvar-drag-scheduling.test.ts</code></td>
+<td>The drag-perf boundary: <strong>no</strong> GVAR mean solve fires while a drag is in progress; exactly one <code>direct</code> solve fires on pointer-up (via the <code>gvarDragState</code> bus + the 100 ms release macrotask).</td>
+</tr>
+<tr>
+<td><code>gvar-drag-line-band.test.ts</code></td>
+<td>While dragging a GVAR bloc, its line falls back to the cheap single-country <code>condForecast</code> and flips back to the propagated GVAR path on release.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="regression-suites">Regression suites<a class="headerlink" href="#regression-suites" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Test file</th>
+<th>Bug it pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>conditioning-wysiwyg.test.ts</code></td>
+<td>A directly-conditioned variable must display <strong>exactly</strong> the dragged path (WYSIWYG), including sparse/partial per-quarter conditioning — the scaling-differencing fix must apply only to RESPONSE vars.</td>
+</tr>
+<tr>
+<td><code>counterfactual-irf.test.ts</code></td>
+<td>A counterfactual recovers the IRF when the rate adjustment equals the IRF.</td>
+</tr>
+<tr>
+<td><code>counterfactual-recovers-scenario.test.ts</code></td>
+<td>A counterfactual with a vanishing policy adjustment must recover the scenario (policy effect measured against the right baseline).</td>
+</tr>
+<tr>
+<td><code>fiscal-backcast.test.ts</code></td>
+<td>The budget-identity recursion in <code>fiscalAccounting.ts</code> reproduces the observed US federal debt/GDP back-cast from observed drivers (Step-1 gating).</td>
+</tr>
+<tr>
+<td><code>matrix.test.ts</code></td>
+<td>Core linear algebra (Cholesky/solve/inverse, ~1e-15 singularity threshold) in <code>matrix.ts</code>.</td>
+</tr>
+<tr>
+<td><code>affine-blockernels-parity.test.ts</code></td>
+<td>The <code>affineBlocKernels</code> perf path reproduces the old full filter+smoother probe loop to <code>&lt;1e-9</code> (baseline mean <code>Sc</code> and every per-period kernel) and is <code>&gt;=3×</code> faster, on the real US-endogenous bloc — the optimization must stay a numerical no-op. <strong>(heavy)</strong></td>
+</tr>
+<tr>
+<td><code>gvar-kernel-affine-independence.test.ts</code></td>
+<td>The affine-independence claim underlying the per-bloc kernel cache-key change (RANK-1 gate). <strong>(heavy)</strong></td>
+</tr>
+<tr>
+<td><code>fiscal-meta-indices.test.ts</code></td>
+<td><strong>Pins the STALE-POSITIONAL-INDEX bug</strong> (§ below): re-resolves every fiscal bloc's <code>fiscal_meta.json</code> indices by variable id from the deployed <code>spec.json</code> and asserts each bloc's derived debt path stays <strong>bounded</strong> — the regression that caught EA's <code>effRate</code> landing on the equity index (col ~537) so debt/GDP exploded. Also pins the level-display drag conversion (oil → $100 must not over-shoot to ~$190).</td>
+</tr>
+</tbody>
+</table>
+<p>The perf-fix parity suites (<code>affine-blockernels-parity</code>,
+<code>gvar-kernel-affine-independence</code>) are regression gates in spirit — they prove an
+optimization is numerically a no-op — but because they protect the <strong>production GVAR
+solve path</strong>, treat a red result there with the same severity as a canary.</p>
+<blockquote>
+<p><strong>The STALE-POSITIONAL-INDEX gotcha (porter must regen).</strong> <code>fiscal_meta.json</code> stores
+the fiscal-driver <strong>column indices</strong> positionally, but the porter
+(<code>pipeline/port_gvar_exports.py</code>) does <strong>not</strong> regenerate them. Any variable-order
+change (the 33-bloc GVAR-EM refit inserted vars ahead of the fiscal block in every
+spec except US) silently re-points the indices at the wrong columns — the cause of the
+recent EA/UK/CA/JP/CN debt explosion. The fix is to run
+<code>node pipeline/fix_fiscal_meta_indices.mjs</code> (re-resolves the six indices by variable id
+from the deployed <code>spec.json</code>, preserves <code>d0</code>/<code>sfaDefault</code>, idempotent) <strong>after porting
+and before the gate</strong>; <code>fiscal-meta-indices.test.ts</code> is the canary-grade guard that
+blocks a deploy with stale indices. See
+<a href="../REESTIMATING_MODELS/">REESTIMATING_MODELS.md</a> and the DATA_SCHEMA fiscal-meta section.</p>
+<p>The file list above is enumerated from <code>app/src/__tests__/compute/</code>. When you add a
+test, slot it into the right row here and confirm it actually runs under <code>vitest run</code>.</p>
+</blockquote>
+<hr />
+<h2 id="deploy-chain">Deploy chain<a class="headerlink" href="#deploy-chain" title="Permanent link">&para;</a></h2>
+<p>The source repo is <code>matyasfarkas/BVAR-Policy-Calibration-Tool</code> (the <code>origin</code> remote).
+The <strong>deploy</strong> target is the <code>bvarscenario</code> remote (<code>matyasfarkas/BVARScenarioTool</code>),
+whose GitHub Action builds the export and republishes it into the
+<code>matyasfarkas/starter-hugo-academic</code> website repo. That site is a Hugo Academic
+site published to <strong>GitHub Pages</strong> (note the <code>netlify.toml</code> trigger).
+This workflow contains <strong>no Hugo step</strong>: it only copies <code>app/out/*</code> into the website
+repo, and the Hugo build downstream then rebuilds and serves it.</p>
+<div class="highlight"><pre><span></span><code>push -&gt; bvarscenario main
+   │   (paths: app/** or netlify.toml)
+   ▼
+.github/workflows/deploy-to-website.yml   (runner: ubuntu-latest, Node 22)
+   │  npm ci
+   │  BASE_PATH=/bvar-scenario npm run build      → app/out/
+   │  checkout matyasfarkas/starter-hugo-academic
+   │  rm -rf website/static/bvar-scenario/*
+   │  cp -r app/out/* website/static/bvar-scenario/
+   │  commit + push to the website repo
+   ▼
+Hugo rebuilds the academic (Hugo Academic) site from the website repo
+   ▼
+served at the /bvar-scenario path of the academic site (GitHub Pages)
+</code></pre></div>
+<p>Workflow facts, verified against <code>.github/workflows/deploy-to-website.yml</code>:</p>
+<ul>
+<li><strong>Triggers</strong>: <code>push</code> to <code>main</code> with changed paths under <code>app/**</code> or <code>netlify.toml</code>,
+  plus manual <code>workflow_dispatch</code>.</li>
+<li><strong>Runner / toolchain</strong>: <code>ubuntu-latest</code>, <code>actions/setup-node@v4</code> with <code>node-version: 22</code>
+  and npm cache keyed on <code>app/package-lock.json</code>.</li>
+<li><strong>Build step</strong> runs in <code>working-directory: app</code>: <code>npm ci</code> then <code>npm run build</code>, with
+  <code>BASE_PATH: /bvar-scenario</code> in the environment.</li>
+<li><strong>Publish step</strong> checks out <code>matyasfarkas/starter-hugo-academic</code> (via
+  <code>secrets.WEBSITE_DEPLOY_TOKEN</code>), clears <code>website/static/bvar-scenario/</code>, copies
+  <code>app/out/*</code> in, and commits/pushes (a no-op <code>git diff --cached --quiet</code> short-circuits
+  when nothing changed).</li>
+</ul>
+<p>The Hugo build that assembles the final academic site is <strong>not</strong> in this workflow file —
+it runs as part of the website repo's downstream build that publishes to GitHub Pages, and any
+Hugo version pin lives in the <code>starter-hugo-academic</code> repo, not here (see below).</p>
+<h3 id="base_path">BASE_PATH<a class="headerlink" href="#base_path" title="Permanent link">&para;</a></h3>
+<p>The site is served from the <code>/bvar-scenario</code> sub-path of the academic site (GitHub Pages), so the
+static export must be built with that prefix. <code>next.config.mjs</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">nextConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">output</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;export&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">basePath</span><span class="o">:</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">BASE_PATH</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">assetPrefix</span><span class="o">:</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">BASE_PATH</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">images</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">unoptimized</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">env</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NEXT_PUBLIC_BASE_PATH</span><span class="o">:</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">BASE_PATH</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="p">};</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Build</th>
+<th><code>BASE_PATH</code></th>
+<th>Asset/link prefix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Local dev / preview</td>
+<td>unset → <code>''</code></td>
+<td>root-relative (<code>/…</code>)</td>
+</tr>
+<tr>
+<td>Deploy (CI)</td>
+<td><code>/bvar-scenario</code></td>
+<td><code>/bvar-scenario/…</code></td>
+</tr>
+</tbody>
+</table>
+<p>The CI step always sets <code>BASE_PATH=/bvar-scenario</code>. Reproduce the exact deploy artifact
+locally with <code>BASE_PATH=/bvar-scenario npm run build</code>. Client code that needs to fetch a
+shipped data file under the prefix reads <code>process.env.NEXT_PUBLIC_BASE_PATH</code>.</p>
+<h3 id="hugo-version-pin-01220">Hugo version pin (0.122.0)<a class="headerlink" href="#hugo-version-pin-01220" title="Permanent link">&para;</a></h3>
+<p>The website repo's build is <strong>pinned to Hugo 0.122.0</strong>. The pin is enforced in the
+website pipeline (<code>.github/workflows/updater-wip.yml</code>). <strong>Rationale:</strong> Hugo 0.123+
+removed the <code>getCSV</code> / <code>getCSS</code> data helpers that the wowchemy (academic) theme depends
+on; later versions break the site build. <strong>Do not bump the pin</strong> without first migrating
+the theme off those removed helpers. (Documented in
+<a href="../README.md">README.md</a> and <a href="../ARCHITECTURE_FOR_AI/">ARCHITECTURE_FOR_AI.md</a>.)</p>
+<h3 id="what-to-commit-and-what-not-to">What to commit (and what not to)<a class="headerlink" href="#what-to-commit-and-what-not-to" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Commit only deploy-relevant files (<code>app/**</code>, docs, config).</li>
+<li>Leave <code>pipeline/</code> scratch — diagnostics, staging dirs, raw CSVs, <code>_verify/</code> —
+  <strong>untracked</strong>.</li>
+<li>Never commit <code>app/.env.local</code> or any <code>FRED_API_KEY</code>.</li>
+</ul>
+<hr />
+<h2 id="quick-reference">Quick reference<a class="headerlink" href="#quick-reference" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># Full local green gate (run before every deploy):</span>
+<span class="nb">cd</span><span class="w"> </span>app
+npx<span class="w"> </span>tsc<span class="w"> </span>--noEmit
+npm<span class="w"> </span><span class="nb">test</span><span class="w">                </span><span class="c1"># fast suite (excludes the heavy solver canaries)</span>
+npm<span class="w"> </span>run<span class="w"> </span>test:heavy<span class="w">      </span><span class="c1"># heavy solver / perf-parity canaries (1 fork)</span>
+<span class="nv">BASE_PATH</span><span class="o">=</span>/bvar-scenario<span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>build
+
+<span class="c1"># Or sweep everything in one pass (slower, default parallelism):</span>
+npm<span class="w"> </span>run<span class="w"> </span>test:all<span class="w">        </span><span class="c1"># = vitest run</span>
+
+<span class="c1"># Run a single suite while iterating:</span>
+npx<span class="w"> </span>vitest<span class="w"> </span>run<span class="w"> </span>src/__tests__/compute/gvar-coupling-artifact.test.ts
+
+<span class="c1"># Regenerate the shipped coupling artifact (keeps the coupling canary green</span>
+<span class="c1"># after a model refresh) — see REESTIMATING_MODELS.md:</span>
+npx<span class="w"> </span>vite-node<span class="w"> </span>scripts/precompute_gvar_coupling.mjs
+</code></pre></div>
+<p>If the <code>gvar-coupling-artifact</code> canary goes red after a model refresh, the artifact is
+stale: regenerate <code>coupling_default.json.gz</code> with the <code>precompute_gvar_coupling.mjs</code>
+script (full data-refresh runbook in <a href="../REESTIMATING_MODELS/">REESTIMATING_MODELS.md</a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1978 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../MAINTAINER_OPERATIONS/">
+      
+      
+        <link rel="next" href="../REESTIMATING_MODELS/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Adding a Country - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#runbook-adding-a-country-updating-a-countrys-data-and-model" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Adding a Country
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-a-country-needs-the-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What a country needs (the contract)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-update-an-existing-country-worked-example-the-us" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Update an existing country (worked example: the US)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A. Update an existing country (worked example: the US)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a1-rebuild-the-us-dataset-macro-fiscal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A1. Rebuild the US dataset (macro + fiscal)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2-re-estimate-the-coupled-gvar-the-us-is-endogenous" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A2. Re-estimate the coupled GVAR (the US is endogenous)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a3-sanity-check-then-port-over-the-live-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A3. Sanity-check, then port over the live data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a4-regenerate-the-coupling-artifact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A4. Regenerate the coupling artifact
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a5-run-the-green-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A5. Run the green gate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a6-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A6. Deploy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-add-a-brand-new-country" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Add a brand-new country
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B. Add a brand-new country">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b1-choose-the-variables-and-find-fred-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B1. Choose the variables and find FRED IDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b2-add-the-country-to-the-data-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B2. Add the country to the data builder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b3-reflect-the-spec-register-the-country" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B3. Reflect the spec + register the country
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b4-estimate-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B4. Estimate + export
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b5-place-files-regenerate-coupling-if-gvar-gate-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5. Place files, regenerate coupling (if GVAR), gate, deploy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b6-optional-gvar-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6. (Optional) GVAR integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-add-refresh-a-4-variable-fiscal-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Add / refresh a 4-variable fiscal block
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Add / refresh a 4-variable fiscal block">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c1-what-the-builder-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C1. What the builder does
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c2-run-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2. Run it
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c3-re-estimate-port-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C3. Re-estimate, port, deploy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c4-mandatory-rule-regenerate-fiscal_meta-indices-after-any-variable-order-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C4. MANDATORY RULE — regenerate fiscal_meta indices after ANY variable-order change
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference-files-touched-when-addingupdating-a-country" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick reference — files touched when adding/updating a country
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-a-country-needs-the-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What a country needs (the contract)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-update-an-existing-country-worked-example-the-us" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Update an existing country (worked example: the US)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A. Update an existing country (worked example: the US)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a1-rebuild-the-us-dataset-macro-fiscal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A1. Rebuild the US dataset (macro + fiscal)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2-re-estimate-the-coupled-gvar-the-us-is-endogenous" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A2. Re-estimate the coupled GVAR (the US is endogenous)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a3-sanity-check-then-port-over-the-live-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A3. Sanity-check, then port over the live data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a4-regenerate-the-coupling-artifact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A4. Regenerate the coupling artifact
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a5-run-the-green-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A5. Run the green gate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a6-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A6. Deploy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-add-a-brand-new-country" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Add a brand-new country
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B. Add a brand-new country">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b1-choose-the-variables-and-find-fred-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B1. Choose the variables and find FRED IDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b2-add-the-country-to-the-data-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B2. Add the country to the data builder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b3-reflect-the-spec-register-the-country" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B3. Reflect the spec + register the country
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b4-estimate-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B4. Estimate + export
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b5-place-files-regenerate-coupling-if-gvar-gate-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5. Place files, regenerate coupling (if GVAR), gate, deploy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b6-optional-gvar-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6. (Optional) GVAR integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-add-refresh-a-4-variable-fiscal-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Add / refresh a 4-variable fiscal block
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Add / refresh a 4-variable fiscal block">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c1-what-the-builder-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C1. What the builder does
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c2-run-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2. Run it
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c3-re-estimate-port-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C3. Re-estimate, port, deploy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c4-mandatory-rule-regenerate-fiscal_meta-indices-after-any-variable-order-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C4. MANDATORY RULE — regenerate fiscal_meta indices after ANY variable-order change
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference-files-touched-when-addingupdating-a-country" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick reference — files touched when adding/updating a country
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="runbook-adding-a-country-updating-a-countrys-data-and-model">Runbook: adding a country / updating a country's data and model<a class="headerlink" href="#runbook-adding-a-country-updating-a-countrys-data-and-model" title="Permanent link">&para;</a></h1>
+<p>This is a <strong>human, step-by-step</strong> guide for the data-and-estimation side of the tool. It covers three
+jobs:</p>
+<ul>
+<li><strong>A. Update an existing country</strong> (refresh its data, re-estimate, redeploy). Worked example: the US.</li>
+<li><strong>B. Add a brand-new country</strong> from scratch (standalone single-country model, optional GVAR link).</li>
+<li><strong>C. Add / refresh a 4-variable fiscal block</strong> (US, EA, JP, UK, CA, CN today).</li>
+</ul>
+<p>The frontend is generic: it reads <code>n</code> (the number of variables) and every index from the model JSON,
+so once a country's JSON files are in <code>app/public/data/bvar/&lt;CC&gt;/</code> and the country is registered in
+the single registry <code>app/src/lib/data/countries.ts</code>, the charts, conditioning, uncertainty, and the
+<strong>long-run anchor (LRP / entropic tilt)</strong> all work automatically — no extra data files are needed for
+any of them. <strong>The only hard part is the data and the estimation.</strong> (For the code-side architecture,
+see <a href="../ARCHITECTURE_FOR_AI/"><code>ARCHITECTURE_FOR_AI.md</code></a>.) The deployed tool is live at the
+<code>/bvar-scenario</code> path of the academic website, hosted on <strong>GitHub Pages</strong> (the
+<code>matyasfarkas/starter-hugo-academic</code> Hugo Academic site).</p>
+<blockquote>
+<p><strong>Long-run anchor (LRP / entropic tilt).</strong> Once a model ships, the user can set a long-run target
+and tilt the forecast toward it: the Compute button is enabled whenever an enabled anchor exists
+(auto-selecting the Quick mode), and the tilt moves the <strong>unconditional central path</strong> (the weighted
+mean from <code>reduceCloud</code>), not just the fan. The tilt moment is the <code>H</code>-horizon forecast, not the
+steady state. For a GVAR bloc the anchor is marginal (per-bloc), with a disclaimer shown in the UI.
+This is entirely frontend — adding a country needs no LRP-specific files.</p>
+<p><strong>Current topology (so the numbers below have context).</strong> The coupled GVAR has <strong>33 blocs</strong>, and the
+<strong>US is now a FULLY ENDOGENOUS coupled bloc</strong>, not the frozen anchor. Its <code>spec.json</code> carries the
+three <code>ROW*_US</code> stars (<code>ROWDEM_US</code>/<code>ROWINF_US</code>/<code>ROWFIN_US</code>, <code>block:'row'</code>) built from a US
+trade-weights row, so it both <strong>drives</strong> Rest-of-World <em>and</em> <strong>receives</strong> RoW→US feedback (<code>n=41</code>:
+30 domestic + 4 global + 4 fiscal + 3 stars). The set is: the US + <strong>euro area as one aggregate
+bloc (<code>EA</code>)</strong> + 31 Rest-of-World blocs (JP UK CA CN CH KR MX AU TR SE PL NO DK IN BR RU ID SA AR ZA
+TH MY CL CO CR CZ HU IL IS NZ TW). With the US endogenous the coupling is the <strong>augmented
+(stars ++ US-global) closed-form operator</strong> of dimension <strong>2060</strong>, with spectral radius
+<code>rho(M) = 0.924 &lt; 1</code> (stable; verified off the shipped <code>coupling_default.json.gz</code> header —
+<code>rhoSpectral = 0.924041</code>). The engine detects endogeneity from the data:
+<code>US_ENDOGENOUS = !!usIdx.row &amp;&amp; !!WEIGHTS24.weights.US</code> in
+<a href="../app/src/lib/compute/gvarSolve.ts"><code>gvarSolve.ts</code></a>, so <code>COUPLED_COUNTRIES = ['US', ...rows]</code>.
+The <strong>17 euro members</strong> (DE FR IT ES NL AT BE FI GR IE LU PT SI SK EE LT LV) are <strong>standalone
+single-country models</strong> (domestic + 4 global commons + trade-weighted foreign stars, estimated in
+separation via <code>MAXIT=1</code>) — they are <strong>not</strong> in the coupled GVAR and have <strong>no weights row</strong>.
+Reason: the fully-disaggregated euro GVAR was non-convergent (<code>rho&gt;1</code>); aggregating the euro area
+restores stationarity, which is why <code>EA</code> is one bloc and the members are standalone. (50 country
+directories ship in all: 33 coupled GVAR blocs + 17 standalone euro members.)</p>
+<p><strong>Registry / selector.</strong> The country dropdown is driven by <code>app/src/lib/data/countries.ts</code> (one
+entry per economy, <code>{ code, name, group }</code>). Adding a country = add an entry there + drop its data
+files; no dropdown edit is needed. The selector groups entries into <strong>"GVAR" / "Other countries"
+optgroups</strong> (driven by <code>isGvarCountry</code> from <code>gvarLoader</code> in
+<a href="../app/src/components/controls/TopBar.tsx"><code>controls/TopBar.tsx</code></a>; plain names, no "- GVAR" suffix).
+<code>group</code> is only a coarse tag (<code>core</code>/<code>oecd</code>/<code>em</code>); GVAR membership is
+<strong>data-driven</strong> — a bloc is GVAR-linked iff its <code>spec.json</code> carries <code>block:'row'</code> vars AND it has a
+row in <code>app/public/data/bvar/gvar/weights_24bloc.json</code> (the filename is historical — the file now
+holds the <strong>33-bloc</strong> weights, including the US row). The legacy
+<code>app/public/data/meta/countries.json</code> is display metadata only.</p>
+</blockquote>
+<h2 id="what-a-country-needs-the-contract">What a country needs (the contract)<a class="headerlink" href="#what-a-country-needs-the-contract" title="Permanent link">&para;</a></h2>
+<p>The app loads these files from <code>app/public/data/bvar/&lt;CC&gt;/</code> (<code>&lt;CC&gt;</code> = 2-letter code, e.g. <code>US</code>, <code>EA</code>):</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Required</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>spec.json</code></td>
+<td>yes</td>
+<td><code>{ n, variables:[{id,name,transformation,isFinancial,prior,block}] }</code> — <code>block</code> ∈ <code>domestic</code>/<code>row</code>/<code>global</code>/<code>fiscal</code>; <code>row</code>+<code>global</code> are the GVAR foreign/commons blocs, <code>fiscal</code> tags the 4 fiscal-accounting vars; a standalone non-fiscal bloc is all <code>domestic</code></td>
+</tr>
+<tr>
+<td><code>companion_mean.json</code></td>
+<td>yes</td>
+<td>estimated VAR coefficients <code>{ betahat, sigmahat, n, lags }</code></td>
+</tr>
+<tr>
+<td><code>baseline.json</code></td>
+<td>yes</td>
+<td>unconditional forecast in <strong>growth/display</strong> space (<code>mean</code> + <code>q16/q84/q05/q95</code>)</td>
+</tr>
+<tr>
+<td><code>baseline_levels.json</code></td>
+<td>yes</td>
+<td>unconditional forecast in <strong>level</strong> space</td>
+</tr>
+<tr>
+<td><code>historical.json</code> / <code>historical_levels.json</code></td>
+<td>yes</td>
+<td>last ~40 quarters (growth / level)</td>
+</tr>
+<tr>
+<td><code>transformations.json</code></td>
+<td>yes</td>
+<td><code>['log'\|'lin', ...]</code> per variable</td>
+</tr>
+<tr>
+<td><code>companion_draws.json</code></td>
+<td>optional</td>
+<td>posterior draws → enables Full uncertainty bands</td>
+</tr>
+<tr>
+<td><code>fiscal_meta.json</code></td>
+<td>6 fiscal countries</td>
+<td>fiscal-block indices <code>{gdp,deflator,revenue,primaryExp,effRate,sfa}</code> + <code>d0</code> + <code>sfaDefault</code>. Present for <strong>US/EA/JP/UK/CA/CN</strong></td>
+</tr>
+</tbody>
+</table>
+<p><code>transformation</code>: <strong><code>'log'</code></strong> = the series is stored as <code>100·log(level)</code> and shown as <code>4·Δ</code> (q/q
+annualized growth) — use it for real GDP, prices, indices. <strong><code>'lin'</code></strong> = passed through as-is — use it
+for rates, ratios, unemployment. <strong><code>isFinancial</code></strong> just groups the variable under the "financial" header.</p>
+<blockquote>
+<p><strong>Fiscal block (the 6 fiscal countries) — now 4 variables.</strong> US/EA/JP/UK/CA/CN carry <strong>four</strong>
+estimated fiscal vars (<code>block:'fiscal'</code>, all <code>lin</code>):</p>
+<ol>
+<li><code>FREV_GDP</code>  — revenue / GDP × 100 (% of GDP, 4-quarter trailing ratio)</li>
+<li><code>FPEXP_GDP</code> — primary expenditure (= total exp − interest) / GDP × 100 (% of GDP)</li>
+<li><code>EFFI</code>      — <strong>effective interest rate</strong> = net interest / <strong>lagged</strong> gross debt × 100 × 4
+                 (% per annum). This <strong>reverts</strong> the earlier debt-service swap (<code>DSVC</code>) <strong>back to the
+                 rate</strong> — older builds estimated <code>DSVC</code>; the current builds estimate <code>EFFI</code>.</li>
+<li><code>SFA</code>       — <strong>stock-flow adjustment</strong>, a <strong>new estimated <code>lin</code> BVAR variable</strong> = the EXACT
+                 one-step residual that closes the app's debt recursion (see below).</li>
+</ol>
+<p><code>fiscal_meta.json</code> <code>idx</code> is <code>{gdp, deflator, revenue, primaryExp, effRate, sfa}</code> — there is <strong>no
+<code>debtService</code> key</strong> any more. In <a href="../app/src/lib/compute/fiscalAccounting.ts"><code>fiscalAccounting.ts</code></a>
+<code>computeFiscalBlock</code> reads <code>idx.effRate</code> as the rate driver, and — because <code>idx.sfa</code> is set — reads
+the <strong>per-quarter SFA forecast off the level path</strong> (<code>levelPaths[t][idx.sfa]</code>), so the debt/GDP
+projection now carries the deficit–debt discrepancy forward <strong>with its own dynamics and bands</strong>
+instead of being defaulted to 0. (<code>fiscalAccounting.ts</code> still contains a dormant <code>idx.debtService</code>
+branch for backward compat; the shipped metas leave it unset.)</p>
+<p><strong>The debt recursion</strong> (per quarter, <code>computeFiscalBlock</code>):
+<div class="highlight"><pre><span></span><code>pb_t  = FREV_GDP_t − FPEXP_GDP_t                                  (% of GDP, annual)
+gNomQ = 100·Δlog(realGDP) + 100·Δlog(deflator)                   (% per quarter, off the level path)
+d_t   = d_{t-1}·(1 + EFFI_t/400)/(1 + gNomQ_t/100) − pb_t/4 + sfa_t/4     (debt/GDP, %)
+</code></pre></div>
+Debt-to-GDP is DERIVED (never an estimated variable); <code>d0</code>/<code>sfaDefault</code> seed and fall-back it.</p>
+<p><strong>SFA = the EXACT app residual</strong> (data-build only — see §C). For every non-COVID quarter the build
+rearranges that same recursion onto the <strong>observed</strong> gross-debt/GDP path:
+<div class="highlight"><pre><span></span><code>snowball_t = ((1 + EFFI_t/400)/(1 + gNomQ_t/100) − 1)·d_{t-1}
+SFA_t      = 4·(d_obs_t − d_{t-1} − snowball_t + pb_t/4)          (% of GDP, annual)
+</code></pre></div>
+so rolling the recursion forward with this SFA reproduces the observed debt path to machine
+precision (closure checked <code>&lt; 1e-6</code>pp). The <strong>COVID quarters are set to NaN</strong> (NOT interpolated — an
+interpolated value cannot equal the residual) so the COVID-as-missing Gibbs imputes them with the
+rest of the block. SFA captures the deficit–debt-discrepancy / gross-debt-perimeter seam
+(intragovernmental holdings, federal-flows-vs-gross-debt). Deployed <code>sfaDefault</code> (≈ non-COVID SFA
+mean, % GDP): US 1.7518, EA 0.325, JP 2.233, UK 3.1487, CA 3.191, CN 4.017 (verified in each bloc's
+shipped <code>fiscal_meta.json</code>). The SFA estimation-sample length (number of non-COVID quarters with an
+SFA observation) is US 41, EA 21, JP 21, UK 23, CA 23, CN 18 — <strong>these are SFA-column sample lengths,
+not the bloc's spec variable count</strong> <code>n</code> (which is US 41, EA 24, JP 23, UK 25, CA 25, CN 20). Do not
+conflate the two.</p>
+<p>A checkable walkthrough lives in <code>docs/fiscal_accounting_walkthrough_US_UK.xlsx</code> (built by
+<code>pipeline/build_fiscal_walkthrough_xlsx.py</code>) alongside the source <code>docs/Fiscal_Accounting_US_UK_NSA.xlsx</code>.</p>
+</blockquote>
+<p>The estimation tooling lives in <code>pipeline/</code>:</p>
+<ul>
+<li><code>build_country_data.py</code> — pulls FRED-based countries (EA/UK/JP/CA …) → raw CSV/<code>.mat</code>.</li>
+<li><code>build_oecd_eurostat.py</code> / <code>build_oecd_batch.py</code> — pull the OECD (EU/EFTA + others) economies.</li>
+<li><code>build_us_auto.py</code> — hands-off US builder (pulls everything from FRED + builds the fiscal drivers).</li>
+<li><code>build_fiscal_&lt;cc&gt;_4var.py</code> (cc ∈ us/ea/jp/uk/ca/cn) — <strong>the 4-var fiscal-block builder</strong>: writes
+  <code>{FREV_GDP, FPEXP_GDP, EFFI, SFA}</code> into the bloc's <code>country_rawdata/DataRaw_&lt;CC&gt;_glob.json</code> (the
+  exact-residual SFA + COVID-NaN recipe) and rewrites <code>fiscal_meta/&lt;CC&gt;.json</code> (see §C). Data build
+  only — no estimation, no deploy.</li>
+<li><code>export_bvar_gvar24_loop.m</code> — the <strong>GVAR-EM iterative estimator</strong> (despite the <code>24</code> in the name it
+  produces the <strong>33-bloc</strong> coupled set with the <strong>US ENDOGENOUS</strong> and the <strong>euro area as one <code>EA</code>
+  aggregate</strong>). Set env <code>US_ENDOGENOUS=1</code> (requires a US weights row). It runs a <code>parfor</code> Jacobi sweep
+  over the blocs (<code>MAXIT</code> iterations to the Monte-Carlo noise floor, <code>TOL=0.03</code>), each bloc estimated
+  by COVID-as-missing Gibbs (<code>cgl_bvarV5</code>). <code>MAXIT=1</code> = single-country (separated) mode for standalone
+  blocs / euro members.</li>
+<li><code>export_bvar_us_covid.m</code> / <code>export_bvar_oecd_covid.m</code> / <code>export_bvar_country.m</code> — single-country
+  exporters (US-only, OECD, generic).</li>
+<li><code>country_specs.ts</code> (variable lists for <code>spec.json</code>) / <code>app/src/lib/data/countries.ts</code> (the country
+  registry / dropdown).</li>
+</ul>
+<blockquote>
+<p><strong>API key:</strong> the FRED pullers read <code>FRED_API_KEY</code> from the environment. Always pass your own:
+<code>FRED_API_KEY=&lt;your_key&gt; python3 pipeline/...</code>. Do <strong>not</strong> commit a key (<code>app/.env.local</code> is the
+place for local secrets and is git-ignored). Get a free key at
+<a href="https://fred.stlouisfed.org/docs/api/api_key.html">https://fred.stlouisfed.org/docs/api/api_key.html</a>.</p>
+<p><strong>Network:</strong> the FRED/IMF pulls need outbound HTTPS. If you run inside a sandbox that blocks the
+network, disable it for the pull step.</p>
+</blockquote>
+<hr />
+<h2 id="a-update-an-existing-country-worked-example-the-us">A. Update an existing country (worked example: the US)<a class="headerlink" href="#a-update-an-existing-country-worked-example-the-us" title="Permanent link">&para;</a></h2>
+<p>The US is fully automated end-to-end — this is also the <strong>test case</strong> for this runbook. Because the US
+is now an endogenous GVAR bloc, a US data refresh is a <strong>GVAR re-estimation</strong> (§B6 path), not a
+single-country export. The single-country <code>export_bvar_us_covid.m</code> still exists for an isolated US-only
+model, but the deployed US is produced by the GVAR-EM loop.</p>
+<h3 id="a1-rebuild-the-us-dataset-macro-fiscal">A1. Rebuild the US dataset (macro + fiscal)<a class="headerlink" href="#a1-rebuild-the-us-dataset-macro-fiscal" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;&lt;repo root&gt;&quot;</span>
+<span class="nv">FRED_API_KEY</span><span class="o">=</span>&lt;your_key&gt;<span class="w"> </span>python3<span class="w"> </span>pipeline/build_us_auto.py<span class="w">    </span><span class="c1"># macro + fiscal drivers, COVID handled</span>
+python3<span class="w"> </span>pipeline/build_fiscal_us_4var.py<span class="w">                     </span><span class="c1"># SFA → exact app residual, COVID-NaN</span>
+</code></pre></div>
+<p><code>build_us_auto.py</code> pulls every US series on the auto-detected quarterly grid (currently to 2025Q4) and
+assembles the raw matrix. <code>build_fiscal_us_4var.py</code> then overwrites <strong>only</strong> the <code>SFA</code> column in
+<code>pipeline/country_rawdata/DataRaw_US_glob.json</code> with the exact one-step residual of the app recursion
+(reading <code>FREV_GDP</code>/<code>FPEXP_GDP</code>/<code>EFFI</code> + the real-GDP &amp; deflator level columns the app reads, plus the
+observed debt/GDP from <code>pipeline/fiscal_raw/us_grid.json</code>), NaN-ing the COVID window
+(2020Q2–2021Q4), runs the <code>&lt; 1e-6</code>pp closure check, and rewrites <code>pipeline/fiscal_meta/US.json</code>
+(<code>idx{gdp,deflator,revenue,primaryExp,effRate,sfa}</code>, <code>d0</code>, <code>sfaDefault</code> = non-COVID SFA mean).</p>
+<h3 id="a2-re-estimate-the-coupled-gvar-the-us-is-endogenous">A2. Re-estimate the coupled GVAR (the US is endogenous)<a class="headerlink" href="#a2-re-estimate-the-coupled-gvar-the-us-is-endogenous" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># In MATLAB, with the repo&#39;s BVAR/ on path (the .m adds it):</span>
+<span class="nv">US_ENDOGENOUS</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="s2">&quot;run(&#39;pipeline/export_bvar_gvar24_loop.m&#39;)&quot;</span>
+</code></pre></div>
+<p>This estimates <strong>all 33 blocs</strong> (adding/refreshing the US changes everyone's trade-weighted RoW, so
+the whole set is re-estimated), with the US folded into the convergence loop with its <code>ROW*_US</code> stars.
+It saves the workspace to <code>/tmp/gvar24_workspace.mat</code> and writes the full JSON contract per bloc to
+<strong><code>/tmp/gvar24_export/&lt;CC&gt;/</code></strong>. Confirm the printed per-iteration <code>max star change</code> falls below <code>TOL</code>
+(convergence) and the printed <code>GDP1q</code> central forecasts are sane.</p>
+<blockquote>
+<p>For an isolated US-only refresh (no GVAR), <code>export_bvar_us_covid.m</code> (<code>cgl_bvarV5</code>, <code>sur=0</code>,
+empirical-Bayes <code>lambda</code>/<code>mu</code>, 1000 draws / 500 burn-in) still writes a standalone US export to
+<code>/tmp/us_export/</code>. But the deployed US is the endogenous GVAR bloc, so prefer the loop above.</p>
+</blockquote>
+<h3 id="a3-sanity-check-then-port-over-the-live-data">A3. Sanity-check, then port over the live data<a class="headerlink" href="#a3-sanity-check-then-port-over-the-live-data" title="Permanent link">&para;</a></h3>
+<p>Inspect <code>/tmp/gvar24_export/</code> first (never overwrite live data blind). Then port every bloc (6-sigfig
+compaction is the deployed convention) and refresh the fiscal meta:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;&lt;repo root&gt;&quot;</span>
+python3<span class="w"> </span>pipeline/port_gvar_exports.py<span class="w">                 </span><span class="c1"># all blocs → app/public/data/bvar/&lt;CC&gt; (6 sig-figs)</span>
+cp<span class="w"> </span>pipeline/fiscal_meta/US.json<span class="w"> </span>app/public/data/bvar/US/fiscal_meta.json
+</code></pre></div>
+<h3 id="a4-regenerate-the-coupling-artifact">A4. Regenerate the coupling artifact<a class="headerlink" href="#a4-regenerate-the-coupling-artifact" title="Permanent link">&para;</a></h3>
+<p>Any change to a deployed bloc invalidates the precomputed coupling (it is keyed by <code>modelSig</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>app
+npx<span class="w"> </span>vite-node<span class="w"> </span>scripts/precompute_gvar_coupling.mjs<span class="w">    </span><span class="c1"># → public/data/bvar/gvar/coupling_default.json.gz</span>
+</code></pre></div>
+<h3 id="a5-run-the-green-gate">A5. Run the green gate<a class="headerlink" href="#a5-run-the-green-gate" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>app
+npx<span class="w"> </span>tsc<span class="w"> </span>--noEmit
+npx<span class="w"> </span>vitest<span class="w"> </span>run<span class="w">                         </span><span class="c1"># all must pass; watch the GVAR + scaling canaries</span>
+<span class="nv">BASE_PATH</span><span class="o">=</span>/bvar-scenario<span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>build
+</code></pre></div>
+<p>If <code>n</code> changed, the <strong>canary</strong> test <code>scenario-scale-convention.test.ts</code> may carry a fixture pinned to
+the old layout — regenerate it (the pipeline has <code>_verify/gt.m</code>, which resolves columns by variable id,
+so it is layout-robust) and re-run. Everything else is index-agnostic.</p>
+<h3 id="a6-deploy">A6. Deploy<a class="headerlink" href="#a6-deploy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;&lt;repo root&gt;&quot;</span>
+git<span class="w"> </span>add<span class="w"> </span>app/public/data/bvar
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Update US + coupled GVAR (data through &lt;quarter&gt;)&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>bvarscenario<span class="w"> </span>main<span class="w">              </span><span class="c1"># host auto-builds on push</span>
+</code></pre></div>
+<p>The push to <code>bvarscenario</code> (<code>matyasfarkas/BVARScenarioTool</code>) triggers a GitHub Actions run that builds
+the static app (<code>BASE_PATH=/bvar-scenario</code>) and copies <code>app/out/*</code> into the
+<code>matyasfarkas/starter-hugo-academic</code> website repo's <code>static/bvar-scenario/</code>. That repo is a <strong>Hugo
+Academic</strong> site published to <strong>GitHub Pages</strong>, which rebuilds and serves it at the <code>/bvar-scenario</code>
+path. (The Action itself has no Hugo step.) Hugo is <strong>pinned to 0.122.0</strong> in the
+website repo (0.123+ removed <code>getCSV</code> and broke the wowchemy/academic theme — do not bump it).</p>
+<p><strong>Done = the gate is green and the push succeeded.</strong> Open the live site (the <code>/bvar-scenario</code> path of
+the academic site on GitHub Pages) and confirm the US baseline, a quick conditioning
+scenario, and a "Solve full GVAR" run look sane.</p>
+<hr />
+<h2 id="b-add-a-brand-new-country">B. Add a brand-new country<a class="headerlink" href="#b-add-a-brand-new-country" title="Permanent link">&para;</a></h2>
+<p>Use an existing FRED country (EA/UK/JP/CA) as the template.</p>
+<h3 id="b1-choose-the-variables-and-find-fred-ids">B1. Choose the variables and find FRED IDs<a class="headerlink" href="#b1-choose-the-variables-and-find-fred-ids" title="Permanent link">&para;</a></h3>
+<p>Decide the variable block (a typical small open economy uses ~12–16: real GDP, consumption,
+investment, government spending, exports, imports, industrial production, unemployment, CPI/HICP, a
+short rate, a 10Y yield, the nominal effective exchange rate). For each, find the FRED series ID and
+tag it <code>log</code> (levels/indices) or <code>lin</code> (rates/ratios). Prefer <strong>quarterly, seasonally adjusted,
+long-history</strong> series. If a country's data is not cleanly on FRED (e.g. China), source it from IMF
+IFS/WEO or OECD and assemble the same raw matrix by hand — <strong>but use real observed data, never
+synthetic placeholders.</strong></p>
+<h3 id="b2-add-the-country-to-the-data-builder">B2. Add the country to the data builder<a class="headerlink" href="#b2-add-the-country-to-the-data-builder" title="Permanent link">&para;</a></h3>
+<p>Add a block to <code>COUNTRIES</code> in <code>pipeline/build_country_data.py</code> (mirror the EA entry):</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;XX&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Country Name&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;YYYY-01-01&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;domestic&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;FRED_ID&quot;</span><span class="p">,</span> <span class="s2">&quot;GDP_XX&quot;</span><span class="p">,</span> <span class="s2">&quot;XX Real GDP&quot;</span><span class="p">,</span> <span class="s2">&quot;log&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+    <span class="o">...</span> <span class="n">one</span> <span class="nb">tuple</span> <span class="n">per</span> <span class="n">variable</span><span class="p">:</span> <span class="p">(</span><span class="n">fred_id</span><span class="p">,</span> <span class="n">internal_name</span><span class="p">,</span> <span class="n">display_name</span><span class="p">,</span> <span class="s1">&#39;log&#39;</span><span class="o">|</span><span class="s1">&#39;lin&#39;</span><span class="p">,</span> <span class="n">is_financial</span><span class="p">)</span>
+  <span class="p">],</span>
+<span class="p">},</span>
+</code></pre></div>
+<p>Then run <code>FRED_API_KEY=&lt;key&gt; python3 pipeline/build_country_data.py</code> to pull the raw data.</p>
+<h3 id="b3-reflect-the-spec-register-the-country">B3. Reflect the spec + register the country<a class="headerlink" href="#b3-reflect-the-spec-register-the-country" title="Permanent link">&para;</a></h3>
+<p>Add the matching variable list to <code>pipeline/country_specs.ts</code> (used to emit <code>spec.json</code>) and add a
+one-line entry to the registry <code>app/src/lib/data/countries.ts</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nx">code</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;XX&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">group</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;oecd&#39;</span><span class="w"> </span><span class="p">},</span><span class="w">   </span><span class="c1">// group: &#39;core&#39; | &#39;oecd&#39; | &#39;em&#39;</span>
+</code></pre></div>
+<p>That single entry is what puts the country in the dropdown (in the "Other countries" optgroup until it
+becomes a GVAR bloc) — the engine reads the real <code>n</code> from <code>companion_mean.json</code>, so no size metadata is
+needed here. (The legacy <code>app/public/data/meta/countries.json</code> is display-only and not required.)</p>
+<h3 id="b4-estimate-export">B4. Estimate + export<a class="headerlink" href="#b4-estimate-export" title="Permanent link">&para;</a></h3>
+<p>Estimate with the <strong>COVID-as-missing Gibbs sampler</strong> (<code>cgl_bvarV5</code>) and emit the <strong>full JSON
+contract</strong> (§"What a country needs"). For a standalone single-country bloc the cleanest template is
+<code>pipeline/export_bvar_oecd_covid.m</code> / <code>export_bvar_country.m</code>; for a GVAR bloc use
+<code>export_bvar_gvar24_loop.m</code> (§B6). The exporter produces <code>companion_mean</code>, <code>baseline</code> (growth) <strong>and</strong>
+<code>baseline_levels</code>, <code>historical</code> <strong>and</strong> <code>historical_levels</code>, <code>transformations</code>, and <code>companion_draws</code>.
+Standard config: the 2020 COVID quarters are NaN'd (window self-calibrated to the 2020Q2 GDP trough,
+searched within 2019Q4–2021Q1) and DK-imputed; <code>lambda</code>/<code>mu</code> are empirical-Bayes (MH on the
+completed-data marginal likelihood); <code>'sur',0,'noc',1,'Ndraws',1000,'Ndrawsdiscard',500</code>.</p>
+<blockquote>
+<p>If the estimator returns a singular/<code>NaN</code> <code>SIGMA</code>, the data is the cause: a <code>NaN</code> in a discontinued
+series, or near-collinear national-accounts identities. Drop the offending leading-<code>NaN</code> rows and/or
+fix a multicollinear variable. With COVID imputed, the empirical-Bayes <code>lambda</code> optimum is
+well-behaved (estimated ~0.24–0.56), so a fixed <code>lamfix</code> is no longer needed; if you do pin one, keep
+<code>noc=1</code> or <code>sur=1</code> free or <code>lambda</code> degenerates to <code>NaN</code>.</p>
+</blockquote>
+<h3 id="b5-place-files-regenerate-coupling-if-gvar-gate-deploy">B5. Place files, regenerate coupling (if GVAR), gate, deploy<a class="headerlink" href="#b5-place-files-regenerate-coupling-if-gvar-gate-deploy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>/tmp/&lt;XX&gt;_export/*.json<span class="w"> </span>app/public/data/bvar/XX/<span class="w">      </span><span class="c1"># or: python3 pipeline/port_gvar_exports.py</span>
+<span class="nb">cd</span><span class="w"> </span>app
+<span class="c1"># (if XX is a GVAR bloc, regenerate the artifact — see B6.4)</span>
+<span class="c1"># npx vite-node scripts/precompute_gvar_coupling.mjs</span>
+npx<span class="w"> </span>tsc<span class="w"> </span>--noEmit<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npx<span class="w"> </span>vitest<span class="w"> </span>run<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nv">BASE_PATH</span><span class="o">=</span>/bvar-scenario<span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>build
+<span class="nb">cd</span><span class="w"> </span>..<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>app/public/data/bvar/XX<span class="w"> </span>app/src/lib/data/countries.ts<span class="w"> </span>pipeline/*.py<span class="w"> </span>pipeline/country_specs.ts
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add XX country model&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>bvarscenario<span class="w"> </span>main
+</code></pre></div>
+<h3 id="b6-optional-gvar-integration">B6. (Optional) GVAR integration<a class="headerlink" href="#b6-optional-gvar-integration" title="Permanent link">&para;</a></h3>
+<p>To link the new country into the <strong>33-bloc coupled GVAR</strong> (a Rest-of-World bloc rather than a
+standalone single-country model). <strong>Caveat:</strong> keep the euro area aggregated — adding the euro
+<em>members</em> as their own coupled blocs makes the system non-stationary, which is why the 17 euro members
+ship as <strong>standalone</strong> models (no weights row) and <code>EA</code> is one bloc. Verify the spectral radius stays
+<code>&lt; 1</code> after re-estimation (it is <code>0.924</code> for the current 33-bloc / dim-2060 endogenous-US set).</p>
+<ol>
+<li><strong>Add the bloc to the trade-weights file.</strong> Add <code>XX</code> (with its ISO-3 code) to the bloc list in
+   <code>app/public/data/bvar/gvar/weights_24bloc.json</code> (regenerated by
+   <code>pipeline/build_trade_weights_full.py</code> / <code>pipeline/build_trade_weights.py</code> from IMF IMTS; the US
+   own-reporter row is built by <code>pipeline/build_us_weights_row.py</code>). Every bloc's row is renormalized
+   over the active set, so adding a country changes everyone's trade weights.</li>
+<li><strong>Give the bloc its foreign + global variables.</strong> Its <code>spec.json</code> must carry the <strong>3 Rest-of-World
+   stars</strong> (<code>ROWDEM_XX</code>/<code>ROWINF_XX</code>/<code>ROWFIN_XX</code>, <code>block:'row'</code>) and the <strong>4 shared global commons</strong>
+   (<code>GLB_OIL</code>/<code>GLB_USLR</code>/<code>GLB_USBAA</code>/<code>GLB_USEQ</code>, <code>block:'global'</code>). The estimator
+   <code>export_bvar_gvar24_loop.m</code> builds the stars from partners' completed series and iterates the
+   foreign components to a cross-country fixed point — re-estimating <strong>every</strong> bloc (adding a country
+   changes everyone's trade-weighted RoW). The raw inputs are the
+   <code>pipeline/country_rawdata/DataRaw_&lt;XX&gt;_glob.json</code> files (domestic + the 4 globals; the stars are
+   appended at export time, not stored in the glob). Run with <code>US_ENDOGENOUS=1</code> so the US stays a
+   coupled bloc.</li>
+<li><strong>No frontend code edits are needed for topology.</strong> The GVAR engine <strong>self-configures</strong> from the
+   deployed <code>spec.json</code> files + <code>weights_24bloc.json</code>
+   (<code>configureGVARTopology</code>/<code>deriveBlocIdx</code>/<code>US_ENDOGENOUS</code> in
+   <a href="../app/src/lib/compute/gvarSolve.ts"><code>gvarSolve.ts</code></a>): a bloc becomes active automatically once it
+   ships <code>block:'row'</code> vars and has a weights row. Do <strong>not</strong> hand-edit <code>IDX</code>/<code>W</code>/<code>COUPLED_COUNTRIES</code>.</li>
+<li><strong>Regenerate the precomputed coupling.</strong> After re-estimating + porting, rebuild the coupling
+   artifact:
+   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>app<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npx<span class="w"> </span>vite-node<span class="w"> </span>scripts/precompute_gvar_coupling.mjs
+</code></pre></div>
+   It builds the augmented-state coupling <code>M</code> in JS (DK-smoother probes), inverts <code>(I − M)</code> via a
+   MATLAB BLAS batch (<code>app/scripts/invert_coupling.m</code>), and writes the <strong>gzipped</strong> artifact
+   <code>app/public/data/bvar/gvar/coupling_default.json.gz</code> directly (<code>{modelSig, pinStructure:'', dim,
+   rhoSpectral, M, invImM}</code>, 6-sig-fig). The plain <code>.json</code> is removed/skipped because at this bloc
+   count it would exceed GitHub's 100 MB per-file limit (gzip brings the current dim-2060 artifact to
+   ~30 MB); the loader decompresses it in-browser via the native <code>DecompressionStream</code> (falling back
+   to a plain <code>.json</code> only if the <code>.gz</code> is absent). The browser solves <code>x = (I − M)⁻¹d</code> from this
+   artifact; without it the in-browser inverse (~19 min at 24 blocs; far worse at the augmented
+   endogenous dim) is infeasible. The artifact is keyed to the data by <code>modelSig</code>, so it <strong>must</strong> be
+   regenerated whenever any deployed bloc changes.</li>
+<li><strong>Add tests.</strong> Extend the GVAR canaries in <code>app/src/__tests__/compute/</code> (e.g.
+   <code>gvar-closed-form-routing.test.ts</code>, <code>gvar-coupling-artifact.test.ts</code>,
+   <code>gvar-derived-topology.test.ts</code>, and the endogenous-US / closed-form stress tests) to cover the new
+   bloc.</li>
+</ol>
+<blockquote>
+<p><strong>Two-tier solve UX, drag off the heavy path (FYI, no per-country work).</strong> On the live ~50-bloc
+US-endogenous panel every mean solve is multi-second (~4.5 s warm / ~13 s cold), so <strong>no GVAR solve
+fires during a drag</strong>: the drag path is a cheap conditioning preview (the conditioned dot snaps to the
+cursor instantly via <code>conditionedDotY.ts</code>), exactly one cheap <strong>DIRECT</strong> first-order solve
+(<code>solveGVARDirect</code>, affine per-probe kernels, numerically exact) fires on pointer-up, and the complete
+fixed point + uncertainty bands run only on the <strong>"Solve full GVAR"</strong> button / top-bar Compute. A
+"computing…" badge and a <code>direct</code>/<code>full</code> mode pill are shown; the ≈95 MB coupling artifact is stripped
+from direct-mode worker posts; and per-chart React.memo means one conditioning edit repaints one panel,
+not all ~35. New blocs inherit this automatically.</p>
+</blockquote>
+<hr />
+<h2 id="c-add-refresh-a-4-variable-fiscal-block">C. Add / refresh a 4-variable fiscal block<a class="headerlink" href="#c-add-refresh-a-4-variable-fiscal-block" title="Permanent link">&para;</a></h2>
+<p>The 6 fiscal countries (US/EA/JP/UK/CA/CN) carry <code>{FREV_GDP, FPEXP_GDP, EFFI, SFA}</code> (<code>block:'fiscal'</code>,
+all <code>lin</code>). The dedicated builders are <code>pipeline/build_fiscal_&lt;cc&gt;_4var.py</code>. They are <strong>data-build
+only</strong> (no estimation, no deploy, idempotent).</p>
+<h3 id="c1-what-the-builder-does">C1. What the builder does<a class="headerlink" href="#c1-what-the-builder-does" title="Permanent link">&para;</a></h3>
+<p>Each <code>build_fiscal_&lt;cc&gt;_4var.py</code>:</p>
+<ol>
+<li>Computes the four columns from the country's raw fiscal source (e.g. <code>pipeline/fiscal_raw/&lt;cc&gt;_grid.json</code></li>
+<li>the macro glob), with the <strong>same scaling</strong> as the legacy <code>build_fiscal_drivers.py</code> columns:
+   <code>FREV_GDP = 100·rev4/ngdp4</code>, <code>FPEXP_GDP = 100·(exp−interest)4/ngdp4</code>,
+   <code>EFFI = 100·4·interest_t/gross_debt_{t-1}</code> (% p.a.).</li>
+<li>Computes <strong>SFA = the exact one-step residual</strong> that closes the app recursion on the OBSERVED
+   debt/GDP path (reading <code>EFFI</code>, <code>pb = FREV − FPEXP</code>, and <code>gNomQ = 100·Δlog(realGDP) + 100·Δlog(deflator)</code>
+   off the SAME glob columns the app reads), then <strong>NaN-s the COVID window</strong> so the COVID-as-missing
+   Gibbs imputes those quarters (do NOT interpolate). It runs a closure check (<code>&lt; 1e-6</code>pp) and aborts
+   if the residual does not reproduce the observed debt path.</li>
+<li>Edits <strong>in place</strong> <code>pipeline/country_rawdata/DataRaw_&lt;CC&gt;_glob.json</code> — replacing the prior fiscal
+   columns at their positions and <strong>appending the 4th (<code>SFA</code>)</strong> column with <code>block:'fiscal'</code> tags —
+   and rewrites <code>pipeline/fiscal_meta/&lt;CC&gt;.json</code> so <code>idx = {gdp, deflator, revenue, primaryExp,
+   effRate, sfa}</code> (NOT <code>debtService</code>), with <code>d0</code> (last observed debt/GDP) and
+   <code>sfaDefault</code> (non-COVID SFA mean).</li>
+</ol>
+<h3 id="c2-run-it">C2. Run it<a class="headerlink" href="#c2-run-it" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;&lt;repo root&gt;&quot;</span>
+python3<span class="w"> </span>pipeline/build_fiscal_&lt;cc&gt;_4var.py<span class="w">     </span><span class="c1"># cc ∈ us ea jp uk ca cn ; edits glob + fiscal_meta in place</span>
+</code></pre></div>
+<p>(The US builder, <code>build_fiscal_us_4var.py</code>, overwrites only the <code>SFA</code> column and leaves
+<code>FREV_GDP</code>/<code>FPEXP_GDP</code>/<code>EFFI</code> byte-identical; the others — <code>ca</code>/<code>cn</code>/<code>ea</code>/<code>jp</code>/<code>uk</code> — additionally
+revert <code>DSVC</code> → <code>EFFI</code> and append <code>SFA</code>.)</p>
+<h3 id="c3-re-estimate-port-deploy">C3. Re-estimate, port, deploy<a class="headerlink" href="#c3-re-estimate-port-deploy" title="Permanent link">&para;</a></h3>
+<p>The fiscal columns are part of the bloc's <code>domestic</code>/<code>fiscal</code> block, so they are estimated by the same
+GVAR-EM loop (or single-country exporter). Continue with <strong>§A2–A6</strong> (re-estimate via
+<code>export_bvar_gvar24_loop.m</code>, port with <code>port_gvar_exports.py</code>, <strong>copy the refreshed
+<code>pipeline/fiscal_meta/&lt;CC&gt;.json</code> to <code>app/public/data/bvar/&lt;CC&gt;/fiscal_meta.json</code></strong>, regenerate the
+coupling artifact, gate, deploy). The shipped <code>fiscal_meta.json</code> is what the frontend reads — porting
+the bloc JSON alone is not enough; the meta must be copied too.</p>
+<h3 id="c4-mandatory-rule-regenerate-fiscal_meta-indices-after-any-variable-order-change">C4. MANDATORY RULE — regenerate <code>fiscal_meta</code> indices after ANY variable-order change<a class="headerlink" href="#c4-mandatory-rule-regenerate-fiscal_meta-indices-after-any-variable-order-change" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>RULE (must run after any re-estimation or port that can change a fiscal bloc's variable order or
+count): run <code>node pipeline/fix_fiscal_meta_indices.mjs</code>.</strong></p>
+</blockquote>
+<p><code>fiscal_meta.json</code> stores the fiscal-driver columns <strong>by POSITION</strong> (<code>idx = {gdp, deflator, revenue,
+primaryExp, effRate, sfa}</code>), and the debt recursion in
+<a href="../app/src/lib/compute/fiscalAccounting.ts"><code>fiscalAccounting.ts</code></a> reads the level path at exactly those
+positional indices. <strong>Any change to a bloc's variable order or count silently re-points those indices at
+the WRONG columns.</strong> This is not hypothetical: the 33-bloc GVAR-EM refit inserted variables <em>ahead</em> of the
+fiscal block in every spec except US, which re-pointed (e.g.) EA's <code>effRate</code> onto the equity index (~col
+537) and made the <strong>EA/UK debt-to-GDP path explode</strong>. The porter does <strong>not</strong> regenerate the meta, so the
+stale indices ship unless you fix them.</p>
+<p><code>pipeline/fix_fiscal_meta_indices.mjs</code> re-resolves the fiscal indices <strong>by variable id</strong> (the canonical,
+order-independent source) from the deployed <code>spec.json</code> and rewrites <code>fiscal_meta.json</code> for all six fiscal
+blocs (<code>US EA UK CA JP CN</code>), preserving the model parameters <code>d0</code>/<code>sfaDefault</code> (verified — it only rewrites
+<code>meta.idx</code>). It is idempotent.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;&lt;repo root&gt;&quot;</span>
+node<span class="w"> </span>pipeline/fix_fiscal_meta_indices.mjs
+<span class="c1"># prints per bloc:  US: ok {…}   |   EA: FIXED {old} -&gt; {new}   …   N fiscal_meta.json files corrected.</span>
+</code></pre></div>
+<p>Run it <strong>after every port</strong> that touches a fiscal bloc (it is cheap and idempotent — when nothing moved it
+prints <code>ok</code> for all six and changes nothing). The fiscal conditioning/back-cast canaries
+(<code>fiscalAccounting.test.ts</code>, <code>fiscal-backcast.test.ts</code>, <code>fiscal-conditioning-integration.test.ts</code>) are the
+backstop, but the explicit re-index is the fix — a green build with stale indices is still wrong.</p>
+<hr />
+<h2 id="quick-reference-files-touched-when-addingupdating-a-country">Quick reference — files touched when adding/updating a country<a class="headerlink" href="#quick-reference-files-touched-when-addingupdating-a-country" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concern</th>
+<th>File(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data pull</td>
+<td><code>pipeline/build_country_data.py</code> (FRED) / <code>build_oecd_eurostat.py</code> (OECD) / <code>build_us_auto.py</code> (US)</td>
+</tr>
+<tr>
+<td>Spec definition</td>
+<td><code>pipeline/country_specs.ts</code></td>
+</tr>
+<tr>
+<td>Fiscal block (US/EA/JP/UK/CA/CN)</td>
+<td><code>pipeline/build_fiscal_&lt;cc&gt;_4var.py</code> → <code>pipeline/country_rawdata/DataRaw_&lt;CC&gt;_glob.json</code> + <code>pipeline/fiscal_meta/&lt;CC&gt;.json</code> (<code>idx{gdp,deflator,revenue,primaryExp,effRate,sfa}</code>); ship as <code>app/public/data/bvar/&lt;CC&gt;/fiscal_meta.json</code></td>
+</tr>
+<tr>
+<td><strong>Fiscal meta re-index (RULE)</strong></td>
+<td><code>pipeline/fix_fiscal_meta_indices.mjs</code> — re-resolve fiscal indices BY ID from the deployed spec; <strong>run after ANY variable-order change</strong> (§C4)</td>
+</tr>
+<tr>
+<td>Estimate + export JSON</td>
+<td><code>pipeline/export_bvar_gvar24_loop.m</code> (GVAR-EM, <code>US_ENDOGENOUS=1</code>, 33 blocs) / <code>export_bvar_us_covid.m</code> / <code>export_bvar_oecd_covid.m</code> / <code>export_bvar_country.m</code></td>
+</tr>
+<tr>
+<td>Port exports → live data</td>
+<td><code>pipeline/port_gvar_exports.py</code> (6-sig-fig) → <code>app/public/data/bvar/&lt;CC&gt;/*.json</code></td>
+</tr>
+<tr>
+<td>Country registry (dropdown)</td>
+<td><code>app/src/lib/data/countries.ts</code> (selector groups via <code>isGvarCountry</code> in <code>app/src/components/controls/TopBar.tsx</code>)</td>
+</tr>
+<tr>
+<td>GVAR weights / RoW (optional)</td>
+<td><code>app/public/data/bvar/gvar/weights_24bloc.json</code> (33-bloc weights incl. US row; name is historical), <code>pipeline/build_trade_weights_full.py</code>, <code>pipeline/build_us_weights_row.py</code>, <code>pipeline/export_bvar_gvar24_loop.m</code></td>
+</tr>
+<tr>
+<td>GVAR coupling regen (optional)</td>
+<td><code>app/scripts/precompute_gvar_coupling.mjs</code> → <code>app/public/data/bvar/gvar/coupling_default.json.gz</code> (gzipped, dim-2060 augmented endogenous-US, ρ≈0.924)</td>
+</tr>
+<tr>
+<td>Topology (auto, no edit)</td>
+<td><code>app/src/lib/compute/gvarSolve.ts</code> self-configures from spec + weights (<code>US_ENDOGENOUS</code>, <code>configureGVARTopology</code>)</td>
+</tr>
+<tr>
+<td>Fiscal recursion (read-only)</td>
+<td><code>app/src/lib/compute/fiscalAccounting.ts</code> (<code>computeFiscalBlock</code>, SFA via <code>idx.sfa</code>)</td>
+</tr>
+<tr>
+<td>Tests</td>
+<td><code>app/src/__tests__/compute/</code> (canaries + GVAR closed-form / coupling / topology / endogenous-US stress)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

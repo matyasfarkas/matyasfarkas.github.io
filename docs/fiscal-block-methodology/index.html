@@ -1,0 +1,1680 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../euro-cross-border/">
+      
+      
+        <link rel="next" href="../external-block-methodology/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Fiscal Block Methodology - Monetary-Financial Model — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fiscal-block-relation-to-the-cbo-and-imf-fpp-frameworks" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Monetary-Financial Model — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fiscal Block Methodology
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Monetary-Financial Model — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial Model — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Monetary-Financial Model — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MFM_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-shared-backbone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The shared backbone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#element-by-element-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Element-by-element mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-debt-recursion-precisely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The debt recursion, precisely
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The debt recursion, precisely">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputs-the-bvar-estimated-drivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs (the BVAR-estimated drivers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-quarter-recursion-using-lagged-debt-d1-so-the-loop-stays-explicit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-quarter recursion (using lagged debt d₋₁ so the loop stays explicit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sfa-closure-and-the-inverse-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SFA closure and the inverse map
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-follow-faithfully" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where we follow faithfully
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-extend-beyond-the-simplified-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where we extend beyond the simplified versions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-deliberately-simplify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where we deliberately simplify
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues-and-limitations-flagged-not-yet-fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known issues and limitations (flagged, not yet fixed)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Known issues and limitations (flagged, not yet fixed)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-china-debt-nominal-gdp-inflation-double-count-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. China debt: nominal-GDP inflation double-count (material)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-positional-fiscal-indices-can-go-stale-fiscal_metajson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Positional fiscal indices can go stale (fiscal_meta.json)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-long-run-anchor-tilt-does-not-filter-non-finite-draws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Long-run anchor tilt does not filter non-finite draws
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-conditional-band-uses-the-filtered-not-smoothed-covariance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Conditional band uses the filtered (not smoothed) covariance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placement-in-one-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Placement in one line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key references
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper_outline.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-shared-backbone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The shared backbone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#element-by-element-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Element-by-element mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-debt-recursion-precisely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The debt recursion, precisely
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The debt recursion, precisely">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputs-the-bvar-estimated-drivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs (the BVAR-estimated drivers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-quarter-recursion-using-lagged-debt-d1-so-the-loop-stays-explicit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-quarter recursion (using lagged debt d₋₁ so the loop stays explicit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sfa-closure-and-the-inverse-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SFA closure and the inverse map
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-follow-faithfully" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where we follow faithfully
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-extend-beyond-the-simplified-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where we extend beyond the simplified versions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-deliberately-simplify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where we deliberately simplify
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues-and-limitations-flagged-not-yet-fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known issues and limitations (flagged, not yet fixed)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Known issues and limitations (flagged, not yet fixed)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-china-debt-nominal-gdp-inflation-double-count-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. China debt: nominal-GDP inflation double-count (material)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-positional-fiscal-indices-can-go-stale-fiscal_metajson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Positional fiscal indices can go stale (fiscal_meta.json)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-long-run-anchor-tilt-does-not-filter-non-finite-draws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Long-run anchor tilt does not filter non-finite draws
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-conditional-band-uses-the-filtered-not-smoothed-covariance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Conditional band uses the filtered (not smoothed) covariance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placement-in-one-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Placement in one line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key references
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="fiscal-block-relation-to-the-cbo-and-imf-fpp-frameworks">Fiscal Block — relation to the CBO and IMF FPP frameworks<a class="headerlink" href="#fiscal-block-relation-to-the-cbo-and-imf-fpp-frameworks" title="Permanent link">&para;</a></h1>
+<p>The fiscal block estimates the fiscal <strong>drivers</strong> inside the BVAR and derives the <strong>reporting
+variables</strong> (deficit, debt service, debt-to-GDP, gross financing needs) by accounting identity. This
+is the same <em>division of labour</em> used by CBO and by IMF Financial Programming (FPP) / debt
+sustainability — not a coincidence; the design is built on their shared backbone.</p>
+<h2 id="the-shared-backbone">The shared backbone<a class="headerlink" href="#the-shared-backbone" title="Permanent link">&para;</a></h2>
+<p>Both frameworks separate <strong>"forecast the macro + fiscal flows"</strong> from <strong>"derive debt and the balances
+by accounting."</strong> Neither lets a reduced-form model freely forecast the debt <em>stock</em>.</p>
+<ul>
+<li><strong>CBO</strong> runs a <strong>conditional BVAR</strong> (Minnesota/GLP shrinkage, hierarchical tightness — the same
+  prior family this tool already uses; <em>Conditional Forecasting With a Bayesian VAR</em>, 2023) purely as
+  a <em>macro scenario generator</em>; those paths feed a <strong>separate, simplified budget module</strong> that
+  produces revenues, outlays, net interest, deficit, and debt. Budget accounting lives <em>outside</em> the
+  BVAR.</li>
+<li><strong>IMF FPP</strong> is the four-sector (real / fiscal / monetary / external) consistency framework. The
+  fiscal block forecasts revenue, expenditure, and financing, then imposes the <strong>government budget
+  constraint and debt-dynamics identity</strong> to get debt, with a stock-flow-adjustment (SFA) residual
+  closing it. The modern quarterly incarnation is the IMF <strong>QMFF</strong> (<em>A Novel Quarterly Macroeconomic
+  Forecasting Framework</em>, 2026): a QPM core + FPP sectoral accounting, linkable to the IMF debt tools
+  (DDT / DDT_GFN).</li>
+</ul>
+<p><strong>This tool is that division of labour:</strong> the BVAR (extended to carry the fiscal flow ratios) is the
+scenario generator; <code>app/src/lib/compute/fiscalAccounting.ts</code> is the budget/accounting module. We fuse
+CBO's "macro BVAR" and "budget module" into one interactive tool, with the accounting module
+implemented as the IMF FPP/DSA debt-dynamics recursion.</p>
+<h2 id="element-by-element-mapping">Element-by-element mapping<a class="headerlink" href="#element-by-element-mapping" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>CBO</th>
+<th>IMF FPP / DSA</th>
+<th>This tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Macro determinants (g, π, rates)</td>
+<td>macro model + conditional BVAR</td>
+<td>real + monetary sectors</td>
+<td>existing BVAR vars (GDPH, JGDP, 2Y, +new 10Y)</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>revenue module, elasticities to wages/profits/GDP</td>
+<td>revenue (% GDP)</td>
+<td><strong>estimated</strong> BVAR flow <code>revenue/GDP</code></td>
+</tr>
+<tr>
+<td>Primary spending</td>
+<td>mandatory + discretionary outlays</td>
+<td>primary expenditure (% GDP)</td>
+<td><strong>estimated</strong> BVAR flow <code>primexp/GDP</code></td>
+</tr>
+<tr>
+<td>Effective interest rate</td>
+<td>weighted-avg rate on outstanding debt (lags market)</td>
+<td>effective rate on debt</td>
+<td><strong>estimated</strong> BVAR var <code>EFFI</code></td>
+</tr>
+<tr>
+<td>Net interest / debt service</td>
+<td>eff. rate × debt held by public</td>
+<td><code>i_eff · d₋₁</code></td>
+<td><strong>derived</strong> <code>int = i_eff·d₋₁</code></td>
+</tr>
+<tr>
+<td>Primary balance</td>
+<td>deficit excl. net interest</td>
+<td><code>rev − non-interest exp</code></td>
+<td><strong>derived</strong> <code>pb = rev − primexp</code></td>
+</tr>
+<tr>
+<td>Overall deficit</td>
+<td>outlays − revenues</td>
+<td><code>−(pb − int)</code></td>
+<td><strong>derived</strong> <code>deficit = int − pb</code></td>
+</tr>
+<tr>
+<td>Debt path</td>
+<td><code>Debtₜ = Debt₋₁ + deficit + other means of financing</code></td>
+<td><code>dₜ = d₋₁(1+i)/(1+gⁿ) − pb + sfa</code></td>
+<td><strong>derived</strong> recursion (the FPP/DSA equation)</td>
+</tr>
+<tr>
+<td>Snowball / (i−g)</td>
+<td>interest-vs-growth in long-run outlook</td>
+<td>Fiscal Monitor decomposition</td>
+<td>derived snowball decomposition</td>
+</tr>
+<tr>
+<td>Gross financing needs</td>
+<td>issuance to fund operations</td>
+<td>primary deficit + interest + amortization</td>
+<td>derived <code>gfn</code></td>
+</tr>
+<tr>
+<td>SFA / "other means of financing"</td>
+<td>OMF line</td>
+<td>stock-flow adjustment</td>
+<td>the <code>sfa</code> soft-identity closure</td>
+</tr>
+<tr>
+<td>Conditioning on official/policy paths</td>
+<td>current-law &amp; alternative scenarios</td>
+<td>WEO-consistent soft conditions</td>
+<td>the tool's scenario conditioning (drag driver paths)</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>debt recursion is the IMF DSA / DDT–DDT_GFN equation</strong> — same <code>(1+i)/(1+gⁿ)</code> snowball, same SFA
+term, same primary-vs-overall-balance distinction and sign convention (primary balance positive =
+surplus). Both frameworks require debt service to use the <strong>effective average rate on the stock</strong>, not
+the policy/market rate — hence we estimate <code>EFFI</code> rather than reusing the 2Y.</p>
+<h2 id="the-debt-recursion-precisely">The debt recursion, precisely<a class="headerlink" href="#the-debt-recursion-precisely" title="Permanent link">&para;</a></h2>
+<p>This section pins the exact arithmetic the accounting module runs, so the manual and the code never
+drift. The authoritative implementation is <code>app/src/lib/compute/fiscalAccounting.ts</code>, which exposes two
+recursions:</p>
+<ul>
+<li><strong><code>computeFiscalBlock</code></strong> (<code>fiscalAccounting.ts:158</code>) — the <strong>live forecast/band path</strong> (called
+  per draw from <code>runGvarBandSolve.ts</code>). It reads the drivers off the level-space path and rolls the
+  debt identity forward. It does <strong>not</strong> apply the Bohn / risk-premium feedback (<code>pb = revenue −
+  primexp</code> exactly; no <code>γ</code>/<code>β</code> term).</li>
+<li><strong><code>runFiscalRecursion</code></strong> (<code>fiscalAccounting.ts:66</code>) — the array-level core that <strong>adds the optional
+  active debt-feedback levers</strong> (the Bohn fiscal-reaction-function <code>γ</code> and the risk-premium <code>β</code>).</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong><code>runFiscalRecursion</code> has NO live UI/production caller.</strong> As of this writing it is invoked
+only from the test suite (<code>__tests__/compute/fiscalAccounting.test.ts</code>,
+<code>__tests__/compute/fiscal-backcast.test.ts</code>) — the γ/β-lever path is <strong>test-covered only, not
+wired into the production forecast flow</strong> (the band/forecast path goes exclusively through
+<code>computeFiscalBlock</code>). The feedback levers are documented and validated but currently dormant.</p>
+</blockquote>
+<p>The roll-forward identity below is <strong>identical</strong> in both; the feedback terms (step 1's <code>γ</code>, step 2's
+<code>β</code>) apply only in <code>runFiscalRecursion</code>. Read the units block at the top of the file
+(<code>fiscalAccounting.ts:7</code>) before editing anything here.</p>
+<h3 id="inputs-the-bvar-estimated-drivers">Inputs (the BVAR-estimated drivers)<a class="headerlink" href="#inputs-the-bvar-estimated-drivers" title="Permanent link">&para;</a></h3>
+<p>Per forecast quarter <code>t = 0 … H−1</code>, read off the level-space forecast path:</p>
+<ul>
+<li><strong>revenue / GDP</strong> and <strong>primary expenditure / GDP</strong> — % of GDP, expressed as an <strong>annual ratio</strong>
+  (the 4-quarter-sum over 4-quarter-nominal-GDP ratio the BVAR carries as a <code>lin</code> variable).</li>
+<li>the <strong>effective rate</strong> <code>EFFI</code> (<code>idx.effRate</code>, % p.a., the average rate on the outstanding stock):
+  the <strong>deployed</strong> form for all six fiscal blocs (US, EA, JP, UK, CA, CN), where interest =
+  <code>EFFI · d₋₁ / 100</code>. The recursion also supports an <em>estimated debt-service / GDP</em> column
+  (<code>idx.debtService</code>, % of GDP) — when present that <strong>is</strong> the endogenous interest and the effective
+  rate is backed out of it — but <code>idx.debtService</code> is <strong>not</strong> in the deployed <code>fiscal_meta.json</code> of
+  any bloc, so the live path takes the effective-rate branch.</li>
+<li><strong>stock-flow adjustment</strong> <code>SFA</code> (<code>idx.sfa</code>, % of GDP annual ratio) — read per-quarter off the level
+  path when an <code>SFA</code> column is estimated, so the debt projection carries the deficit–debt discrepancy
+  forward <em>with its own dynamics and bands</em>; otherwise a constant <code>sfaDefault</code> (or zeros).</li>
+<li><strong>nominal GDP growth</strong> <code>gⁿ</code> — built from the level path as
+  <code>gNomQ = Δ(real-GDP 100·log) + Δ(deflator 100·log)</code> (% per <strong>quarter</strong>), i.e.
+  <code>((levelPaths[t][idx.gdp] − prev[idx.gdp]) + (levelPaths[t][idx.deflator] − prev[idx.deflator]))/100</code>
+  (<code>fiscalAccounting.ts:169</code>). The growth and rate are <strong>quarterized internally</strong> while the flow
+  reporting variables stay annual.</li>
+</ul>
+<p>The seed <code>d₀</code> (initial debt/GDP, %) and the feedback anchor <code>d*</code> (default <code>d₀</code>) come from
+<code>fiscal_meta.json</code> (<code>d0</code>).</p>
+<h3 id="per-quarter-recursion-using-lagged-debt-d1-so-the-loop-stays-explicit">Per-quarter recursion (using lagged debt <code>d₋₁</code> so the loop stays explicit)<a class="headerlink" href="#per-quarter-recursion-using-lagged-debt-d1-so-the-loop-stays-explicit" title="Permanent link">&para;</a></h3>
+<p>With <code>dₚᵣₑᵥ = d₀</code> at <code>t=0</code> and <code>dₚᵣₑᵥ = debt[t−1]</code> thereafter (<code>fiscalAccounting.ts:170</code>):</p>
+<ol>
+<li><strong>Primary balance</strong> <code>pb_t = rev_t − primexp_t</code> (live path, <code>fiscalAccounting.ts:171</code>), <strong>plus</strong>
+   the optional Bohn fiscal-reaction-function <code>+ γ·(d₋₁ − d*)</code> in <code>runFiscalRecursion</code>
+   (<code>fiscalAccounting.ts:98</code>; <code>γ</code> default 0.03 ⇒ consolidation as debt rises above <code>d*</code>).</li>
+<li><strong>Interest / debt service</strong> (% of GDP): <code>int_t = EFFI_t · d₋₁ / 100</code> (deployed effective-rate
+   branch, <code>fiscalAccounting.ts:177</code>), or <code>int_t = dsvc_t</code> directly when a debt-service column is
+   estimated; <code>runFiscalRecursion</code> additionally adds the debt-level risk premium
+   <code>β·max(0, d₋₁ − d*)·d₋₁/100</code> (<code>fiscalAccounting.ts:94–95</code>, <code>β</code> default 0). The <strong>effective rate is
+   backed out</strong> for the roll-forward and for display: <code>i_eff_t = int_t · 100 / d₋₁</code>
+   (<code>fiscalAccounting.ts:178</code>, <code>96</code>).</li>
+<li><strong>Roll the stock forward</strong> (the IMF DSA / FPP debt-dynamics identity), quarterly:
+   <code>d_t = d₋₁ · (1 + i_eff_t/400) / (1 + gⁿ_t/100) − pb_t/4 + sfa_t/4</code> &nbsp;(<code>fiscalAccounting.ts:185</code>).
+   Here <code>i_eff_t/400</code> is the <strong>quarterized</strong> effective rate (so <code>d₋₁·(1+iQ) = d₋₁ + int_t/4</code>), the
+   <code>/(1+gⁿ/100)</code> term is the denominator that shrinks the ratio when nominal GDP grows, and the
+   primary balance and SFA enter as <strong>quarter-shares</strong> (<code>/4</code>, since they are annual ratios).</li>
+<li><strong>Derived reporting variables</strong>, all falling straight out of the same identity:</li>
+<li>overall deficit <code>deficit_t = int_t − pb_t</code> (<code>fiscalAccounting.ts:188</code>);</li>
+<li>implied change in the ratio <code>Δ(debt/GDP)_t = d_t − d₋₁</code> (<code>fiscalAccounting.ts:186</code>, the chart's
+     third-row derived variable);</li>
+<li>the <strong>snowball</strong> (automatic debt dynamics) <code>snowball_t = [(1+iQ)/(1+gQ) − 1]·d₋₁</code> — the
+     interest-minus-growth <code>(i−g)</code> contribution the IMF Fiscal Monitor decomposition isolates
+     (<code>fiscalAccounting.ts:190</code>);</li>
+<li>gross financing needs <code>gfn_t = deficit_t + amortization_t</code> (<code>fiscalAccounting.ts:191</code>).</li>
+</ol>
+<h3 id="sfa-closure-and-the-inverse-map">SFA closure and the inverse map<a class="headerlink" href="#sfa-closure-and-the-inverse-map" title="Permanent link">&para;</a></h3>
+<p>The <strong>SFA</strong> is the soft-identity residual that closes the deficit-vs-debt gap. It is estimated as its
+own BVAR column (the <code>idx.sfa</code> path) and forecast with its own dynamics and bands; <strong>the deployed debt
+roll-forward, however, uses the <em>structural constant</em> <code>sfaDefault</code></strong> (the long-run SFA mean), not the
+per-quarter forecast SFA column (<code>computeFiscalBlock</code> lines 192–200). The forecast column is dragged to
+spurious extremes by the δc long-run/consensus anchors' cross-response (e.g. UK −3.2→−8.2), which would
+collapse the projected debt path; the structural constant is the economically-correct long-run residual.
+The recursion is also <strong>invertible</strong>: <code>requiredPrimaryBalance</code> (<code>fiscalAccounting.ts:217</code>)
+solves the same equation for the primary balance that pins debt to a <em>target</em> path,
+<code>pb_t = 4·[(d₋₁ + int_t/4)/(1 + gⁿ_t/100) − d_target,t] + sfa_t</code>, which the tool feeds back as a
+conditioning constraint (<code>revenue − primexp</code>). Because effective rate and growth respond to the primary
+balance through the BVAR, the caller iterates invert → condition → re-read <code>i,g</code> → re-invert (1–2 passes
+converge).</p>
+<p>The exact quarterly convention here is <strong>pinned by the historical back-cast test</strong> (reconstructed
+debt/GDP vs observed; fixture <code>app/src/__tests__/fixtures/us_fiscal_backcast.json</code>) — the identity
+error is ≈ 0 except for the modelled SFA, exactly the consistency check both CBO and FPP demand.</p>
+<h2 id="where-we-follow-faithfully">Where we follow faithfully<a class="headerlink" href="#where-we-follow-faithfully" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The <strong>two-layer separation</strong> (BVAR/flows + identity recursion) — the core of both frameworks.</li>
+<li><strong>Conditional forecasting</strong> itself: the tool's existing scenario engine (condition on a few driver
+  paths → consistent forecast of the rest) <em>is</em> CBO's conditional-BVAR method and FPP's "official
+  paths as soft information." The fiscal block just adds the accounting layer on top.</li>
+<li><strong>SFA soft-identity closure</strong>, primary/overall balance definitions, effective-rate debt service.</li>
+</ul>
+<h2 id="where-we-extend-beyond-the-simplified-versions">Where we extend beyond the simplified versions<a class="headerlink" href="#where-we-extend-beyond-the-simplified-versions" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Endogenous, jointly-estimated fiscal flows.</strong> CBO's budget module is largely elasticity-based; we
+  let the BVAR's reduced form capture revenue/expenditure cyclicality <em>jointly</em> with the macro block —
+  closer to the ECB mixed-frequency fiscal BVAR and the IMF QMFF than to CBO's simplest module.</li>
+<li><strong>Debt-feedback channels (documented; DORMANT — not in the live path)</strong> — a risk-premium channel
+  <code>i_eff += β·(d₋₁−d*)</code> and a <strong>Bohn fiscal-reaction-function</strong> <code>pb += γ·(d₋₁−d*)</code> (γ≈0.03 default) are
+  implemented <strong>only</strong> in <code>runFiscalRecursion</code>, which has <strong>zero production callers</strong> (test-suite only,
+  see the ⚠️ note above). The deployed <code>computeFiscalBlock</code> path — the one wired to every displayed
+  debt chart and band — runs with <code>β=γ=0</code> and there is <strong>no UI control</strong> for them. So the live tool has
+  <strong>no</strong> endogenous debt→primary-balance reaction (Bohn) and <strong>no</strong> debt→yield risk premium; the debt
+  path is a <em>passive accounting recursion</em>. CBO's simplified debt-service tool likewise does <em>not</em>
+  endogenize macro feedback; FPP/DSA usually handle it via scenarios. These channels are a <strong>possible
+  future extension</strong> toward IMF SRDSF "snowball realism" and the Bohn / fiscal-fatigue sustainability
+  literature; because debt is <strong>not</strong> a BVAR variable, <code>î_eff</code>/<code>p̂b</code> are debt-agnostic baselines, so the
+  +β/+γ terms <em>would</em> layer on with no double-counting (and, using <em>lagged</em> debt, the recursion stays
+  explicit) were they ever activated.</li>
+</ul>
+<h2 id="where-we-deliberately-simplify">Where we deliberately simplify<a class="headerlink" href="#where-we-deliberately-simplify" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>No line-item decomposition</strong> — CBO splits revenue (individual income / payroll / corporate /
+  excise) and outlays (Social Security / Medicare / Medicaid / discretionary). We estimate <em>aggregate</em>
+  general-government revenue and primary expenditure; the BVAR subsumes the elasticities but not the
+  components.</li>
+<li><strong>Not the full four-sector FPP</strong> — only the fiscal block plus its macro linkages through the BVAR's
+  correlations (no monetary-survey or BoP identities). A fiscal-block <em>extension</em> of a macro BVAR, not
+  a complete financial program.</li>
+<li><strong>SFA is a closure/scenario term</strong>, not a modelled valuation/FX/contingent-liability block (Phase 2/3).</li>
+<li><strong>No amortization/maturity profile</strong> for GFN, and <strong>no accrual↔cash bridge / mixed-frequency</strong> in v1.</li>
+</ul>
+<h2 id="known-issues-and-limitations-flagged-not-yet-fixed">Known issues and limitations (flagged, not yet fixed)<a class="headerlink" href="#known-issues-and-limitations-flagged-not-yet-fixed" title="Permanent link">&para;</a></h2>
+<p>These are documented honestly because the tool is a live research instrument. They are <strong>flagged for
+fix</strong>, not resolved — read this section before relying on the affected output.</p>
+<h3 id="1-china-debt-nominal-gdp-inflation-double-count-material">1. China debt: nominal-GDP inflation double-count (material)<a class="headerlink" href="#1-china-debt-nominal-gdp-inflation-double-count-material" title="Permanent link">&para;</a></h3>
+<p>The debt-snowball roll-forward shrinks the debt ratio by <strong>nominal GDP growth</strong>, built as
+<code>gNomQ = Δ(real-GDP) + Δ(deflator)</code> in 100·log space (<code>fiscalAccounting.ts:169</code>). For the five
+advanced fiscal blocs <code>idx.gdp</code> correctly points at a <strong>real</strong> GDP series, so — unlike China below —
+the growth term does not double-count prices. The deflator term, however, is a true <strong>GDP deflator
+only for the US</strong> (<code>idx.gdp = GDPH</code>, <code>idx.deflator = JGDP</code>, idx 7). The other four advanced blocs
+deflate with a <strong>consumer price index, not a GDP deflator</strong> (verified against each bloc's <code>spec.json</code>
++ <code>fiscal_meta.json</code>): EA <code>GDP_EA</code> real + <code>HICP_EA</code> (idx 6), JP <code>GDP_JP</code> real + <code>CPI_JP</code> (idx 7),
+UK <code>GDP_UK</code> real + <code>CPI_UK</code> (idx 8), CA <code>GDP_CA</code> real + <code>CPI_CA</code> (idx 8). Because real GDP already
+strips out prices, adding a CPI (rather than the matching GDP deflator) is a CPI-vs-deflator wedge in
+the nominal-growth term for EA/JP/UK/CA, not the double-price-counting error CN suffers.</p>
+<p>For <strong>China this was previously wrong but is now fixed</strong> (surgical CN-only re-estimate, 2026-06).
+The CN model historically shipped a single <strong>nominal</strong> GDP series (<code>spec.json</code> name <em>"CN Nominal GDP
+(quarterly)"</em>), so the growth term became <code>gNomQ = Δ(nominal GDP) + Δ(CPI)</code> and <strong>added the price level
+twice</strong> — biasing the CN debt-to-GDP path. The CN block has since been <strong>re-estimated against real GDP</strong>:
+<code>spec.json</code> var 0 is now <em>"CN Real GDP (quarterly, chain-linked SA volume index, base 2011Q1=100)"</em>,
+<code>CN/fiscal_meta.json</code> sets <code>idx.gdpIsNominal = false</code>, and the growth term is now the correct real-GDP +
+deflator nominal growth used by the advanced blocs. This was a <strong>CN-only graft</strong> — the surgical fix
+re-estimated and replaced <strong>only</strong> the CN bloc; the other 32 GVAR blocs are byte-identical to the prior
+working model (the earlier full 33-bloc re-run degraded them and was reverted). The CN debt-to-GDP path
+is now quantitative on the same footing as US/EA/JP/UK/CA.</p>
+<h3 id="2-positional-fiscal-indices-can-go-stale-fiscal_metajson">2. Positional fiscal indices can go stale (<code>fiscal_meta.json</code>)<a class="headerlink" href="#2-positional-fiscal-indices-can-go-stale-fiscal_metajson" title="Permanent link">&para;</a></h3>
+<p><code>computeFiscalBlock</code> resolves every driver <strong>by integer column index</strong> from <code>fiscal_meta.json</code>
+(<code>idx.gdp / deflator / revenue / primaryExp / effRate / sfa</code>). Those indices are <strong>positional</strong>, and
+the MATLAB porters (<code>export_bvar_country.m</code>, <code>export_bvar_gvar*.m</code>, <code>export_bvar_euro_fsap.m</code>) do <strong>not
+regenerate</strong> <code>fiscal_meta.json</code> — it is maintained by separate scripts (<code>build_fiscal_*.py</code>,
+<code>pipeline/fix_fiscal_meta_indices.mjs</code>). So <strong>any change to a bloc's variable order silently
+desynchronizes the fiscal indices</strong>, and the recursion then reads the wrong columns. This was the
+cause of a recent EA/UK debt explosion (fixed in commit <code>a42a2db</code>, "Fix explosive fiscal debt (stale
+fiscal_meta indices)"). After any re-estimation that touches variable order, <strong>regenerate / re-verify
+<code>fiscal_meta.json</code> for every fiscal bloc</strong> before trusting the debt path.</p>
+<h3 id="3-long-run-anchor-tilt-does-not-filter-non-finite-draws">3. Long-run anchor tilt does not filter non-finite draws<a class="headerlink" href="#3-long-run-anchor-tilt-does-not-filter-non-finite-draws" title="Permanent link">&para;</a></h3>
+<p>The entropic long-run-anchor tilt (<code>app/src/lib/compute/longRunTilt.ts</code>) can silently <strong>empty the
+anchor band</strong>. <code>computeLongRunMoments</code> writes one moment per posterior draw with no finiteness check;
+a singular / near-unit-root draw returns a <code>NaN</code> steady state (<code>longRunTilt.ts:145</code>), and a single
+<code>NaN</code> moment poisons the soft-max weight sum in <code>solveEntropicTilt</code> → all weights become <code>NaN</code> → the
+weighted-quantile band collapses to empty with no warning. The fix is to drop non-finite draws before
+the dual solve. (This is the tilt machinery the fiscal block can be conditioned through, hence its
+relevance here.)</p>
+<h3 id="4-conditional-band-uses-the-filtered-not-smoothed-covariance">4. Conditional band uses the filtered (not smoothed) covariance<a class="headerlink" href="#4-conditional-band-uses-the-filtered-not-smoothed-covariance" title="Permanent link">&para;</a></h3>
+<p>The conditional-forecast <strong>mean</strong> is the Durbin–Koopman <em>smoothed</em> path, but the <strong>band variance</strong> is
+read from the <em>filtered</em> covariance <code>filteredP[t]</code> (<code>app/src/lib/compute/kalman.ts:404–407</code>). The
+filtered covariance at quarter <code>t</code> does not yet incorporate information from a <strong>future</strong> pin, so for
+quarters <em>preceding</em> a forward conditioning point the band is <strong>overstated</strong> (wider than the true
+smoothed band). This applies to any conditioned fiscal driver pinned at a future date.</p>
+<p>For the empirical out-of-sample density caveats (the GVAR predictive intervals are over-confident at
+short horizons — a separate, opposite issue from the conditioning band above), see the
+<a href="../EMPIRICAL_EVALUATION/">Empirical Evaluation</a> page.</p>
+<h2 id="placement-in-one-line">Placement in one line<a class="headerlink" href="#placement-in-one-line" title="Permanent link">&para;</a></h2>
+<p>A compact, interactive realization of <strong>CBO's "conditional-BVAR → budget-accounting" division of
+labour</strong>, with the accounting layer implemented as the <strong>IMF FPP/DSA debt-dynamics recursion</strong>
+(snowball + SFA). The displayed debt path is a <em>passive</em> accounting recursion; the active-debt-feedback
+and Bohn-reaction-function channels are documented and validated but <strong>dormant</strong> (test-only, no live
+caller) — a possible future extension. It sits
+methodologically between CBO's simplified budget module and the IMF's QMFF / DDT debt tools. The Step-1
+historical back-cast (reconstructed debt/GDP vs observed, identity error ≈ 0 except modelled SFA) is
+exactly the consistency check both frameworks demand.</p>
+<h2 id="key-references">Key references<a class="headerlink" href="#key-references" title="Permanent link">&para;</a></h2>
+<p>CBO, <em>The Budget and Economic Outlook</em> (current-law baseline, budget mechanics) · CBO, <em>Conditional
+Forecasting With a Bayesian VAR</em> (2023) · IMF, <em>Fiscal Monitor</em> (debt decomposition, snowball) · IMF,
+<em>A Novel Quarterly Macroeconomic Forecasting Framework</em> (QMFF, 2026) · IMF, DDT / DDT_GFN debt tools ·
+IMF MAC <strong>SRDSF</strong> (realism, fan charts) · Bohn, <em>The Behavior of U.S. Public Debt and Deficits</em>
+(fiscal reaction function) · Favero &amp; Giavazzi, <em>Debt and the Effects of Fiscal Policy</em> (debt feedback
+in fiscal VARs).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
