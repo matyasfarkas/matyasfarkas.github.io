@@ -1,0 +1,14 @@
+{
+ "asof": "2026Q1",
+ "detectedAt": "2025-10-01",
+ "note": "source revisions detected by the R1 gate and ACCEPTED (as-of-now knowledge policy); shipped history retains its vintage values — the seam is the revision",
+ "revisions": [
+  {
+   "id": "HP",
+   "shipped": 579.9380491819257,
+   "rederived": 579.9550125562239,
+   "diff": 0.016963374298143208,
+   "revisionProne": false
+  }
+ ]
+}
