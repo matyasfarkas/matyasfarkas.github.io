@@ -290,40 +290,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#documentation-set" class="md-nav__link">
+  <a href="#start-here" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Documentation set
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Documentation set">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#for-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        For users
+        Start here
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#methodology" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#methodology-and-data" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Methodology
+        Methodology and data
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#for-developers-and-maintainers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -333,8 +321,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#project-history" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -342,11 +330,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -971,40 +954,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#documentation-set" class="md-nav__link">
+  <a href="#start-here" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Documentation set
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Documentation set">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#for-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        For users
+        Start here
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#methodology" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#methodology-and-data" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Methodology
+        Methodology and data
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#for-developers-and-maintainers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1014,8 +985,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#project-history" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1023,11 +994,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1049,16 +1015,42 @@
 
 
 <h1 id="monetary-financial-model-documentation">Monetary-Financial Model — Documentation<a class="headerlink" href="#monetary-financial-model-documentation" title="Permanent link">&para;</a></h1>
-<p>Welcome to the documentation for the <strong>Monetary-Financial Model: A global projection and scenario
-tool</strong> (built on an EM-Bayesian Global VAR engine) — an
-interactive web application that combines Bayesian Vector Autoregression (BVAR) baseline forecasts with
-DSGE-model counterfactuals across <strong>50 economies</strong>, <strong>33</strong> of which are linked into a cross-country
-Global VAR (GVAR) with the United States as a <strong>fully endogenous coupled bloc</strong> (US bloc dimension
-<code>n = 41</code>, carrying its own <code>ROW{DEM,INF,FIN}_US</code> stars); the remaining 17 are single-country euro /
-FSAP blocs. The deployed 33-bloc coupling has spectral radius <strong>ρ(M) ≈ 0.924</strong>.</p>
-<p>The deployed tool is served at the <code>/bvar-scenario</code> path of the academic website, which is hosted on
-<strong>GitHub Pages</strong> (the <code>matyasfarkas/starter-hugo-academic</code> Hugo Academic site). The
+<p>The <strong>Monetary-Financial Model</strong> is an interactive forecasting tool that runs entirely in your
+browser. It shows quarterly forecasts for about <strong>fifty economies</strong> — growth, inflation, interest
+rates, public finances, and more — and lets you bend them: click on a chart where you think
+inflation will be, and every other chart updates so the whole forecast stays consistent with the
+estimated economics. Thirty-three of the economies are linked through trade and financial
+channels, so pushing the United States moves the euro area, Japan, and China too.</p>
+<p>Three rules govern everything on the screen:</p>
+<ol>
+<li><strong>Data are data.</strong> Solid history is observed. Where a country's latest quarter has not been
+   published yet, the model fills the gap using everything already observed elsewhere — and those
+   filled-in points are always drawn in <strong>amber</strong>, never disguised as data.</li>
+<li><strong>The model is estimated once, then frozen.</strong> Within the year, new data releases shift the
+   starting point of the forecast (the panel currently starts projections at <strong>2026 Q1</strong>) but never
+   silently change the model itself. Re-estimation happens once a year, on a complete final year of
+   data. Each quarterly update is archived as a vintage, and the <strong>Monitor</strong> page shows exactly
+   what each data release did to the forecasts.</li>
+<li><strong>Judgment is visible.</strong> If you move a forecast away from what the model says — a scenario, a
+   long-run target, a policy counterfactual — the chart says so.</li>
+</ol>
+<p>Under the hood it is a Bayesian Vector Autoregression (BVAR) per economy, coupled into a Global VAR
+(GVAR) with a fully endogenous United States, plus DSGE impulse responses for policy
+counterfactuals. The deployed tool is served at the <code>/bvar-scenario</code> path of the academic website,
+hosted on <strong>GitHub Pages</strong> (the <code>matyasfarkas/starter-hugo-academic</code> Hugo Academic site). The
 build/deploy chain is documented in <a href="BUILD_AND_CI/">Build &amp; CI</a>.</p>
+<h2 id="start-here">Start here<a class="headerlink" href="#start-here" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="MFM_User_Manual.pdf">User Manual (PDF)</a></strong> — the manual is in two parts.
+  <strong>Part I, "Using the tool"</strong>, is written for someone with no econometrics background: each
+  section says <em>what you can do</em>, <em>how to do it</em> (step by step, naming the exact buttons), and
+  <em>what you will find</em> on the screen. If you have five minutes, read the quick-start section and
+  skip the rest until you need it. <strong>Part II, "How the machinery works"</strong>, has the full
+  methodology — BVAR estimation, COVID-as-missing data augmentation, the GVAR coupling and
+  closed-form solve, the fiscal accounting, long-run targets, vintages, and reproducibility.</li>
+<li><strong><a href="USER_GUIDE/">User Guide</a></strong> — a short web quick-start: your first scenario in five minutes,
+  and where to go next. Defers to Part I of the manual for everything else.</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Empirical results are in</p>
 <p>An out-of-sample horse-race (56 origins, 2010Q1–2024Q4, × 9 models, CRPS-primary scoring + 90%
@@ -1069,34 +1061,25 @@ the textbook OLS classical GVAR, and the endogenous-US variant weakly dominates 
 Read the numbers and the honest caveats (over-confident draw densities; provisional spillover
 magnitudes) in <strong><a href="EMPIRICAL_EVALUATION/">Empirical Evaluation</a></strong>.</p>
 </div>
-<h2 id="documentation-set">Documentation set<a class="headerlink" href="#documentation-set" title="Permanent link">&para;</a></h2>
-<p>This site collects the project's reference material into a few groups.</p>
-<h3 id="for-users">For users<a class="headerlink" href="#for-users" title="Permanent link">&para;</a></h3>
+<h2 id="methodology-and-data">Methodology and data<a class="headerlink" href="#methodology-and-data" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong><a href="USER_GUIDE/">User Guide</a></strong> — how to drive the tool: the top bar, country selector, conditioning,
-  scenarios, density bands, and the fiscal projections.</li>
-</ul>
-<h3 id="methodology">Methodology<a class="headerlink" href="#methodology" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong><a href="MFM_User_Manual.pdf">User Manual (PDF)</a></strong> — the full LaTeX methodology manual: BVAR estimation,
-  COVID-as-missing data augmentation, the GVAR coupling and closed-form solve, the forward-pass
-  long-run-target drift setter, and reproducibility.</li>
 <li><strong><a href="fiscal-block-methodology/">Fiscal Block Methodology</a></strong> — how the estimated fiscal drivers relate
   to the CBO and IMF fiscal-policy frameworks, the exact debt-dynamics recursion (snowball + SFA
   closure + primary balance), and the known limitations (including the China nominal-GDP inflation
   double-count).</li>
-<li><strong>Data &amp; sources</strong> — the per-source-family data documentation (FRED / Eurostat / OECD-QNA / IMF-WEO),
-  the 2025 Q4 estimation vintage versus the no-re-estimation 2026 Q1 observed refresh, the ragged edge
-  (CN/IN at 2025 Q4, IL at 2024 Q4), and the WEO-back-fill (CN/IN) and source-review (KR/RU/ID/TH)
-  provenance flags are in the <strong><a href="MFM_User_Manual.pdf">User Manual (PDF)</a></strong> (§Data Sources and the full
-  landscape <strong>country × variable coverage matrix</strong>), generated from
-  <code>app/public/data/coverage_manifest.json</code>.</li>
+<li><strong>Data &amp; sources</strong> — per-source-family documentation (FRED / Eurostat / OECD-QNA / IMF-WEO), the
+  2025 estimation vintage versus the frozen-model quarterly refresh, and the full
+  <strong>country × variable coverage matrix</strong> are in the <strong><a href="MFM_User_Manual.pdf">User Manual (PDF)</a></strong>
+  (Part II, §Data Sources), generated from <code>app/public/data/coverage_manifest.json</code>. Where a series
+  lags its country's release calendar, the gap to the common 2026 Q1 origin is filled by the
+  cross-country model and flagged as a nowcast in the manifest (<code>imputedThrough</code>) — the same cells
+  the app draws in amber.</li>
 <li><strong><a href="EMPIRICAL_EVALUATION/">Empirical Evaluation</a></strong> — the out-of-sample forecast horse-race (9-model
   density race, CRPS + Model Confidence Set), the endogenous-US Tier-A spillover analysis, and the
   honest caveats. Implemented in a separate evaluation repository.</li>
 <li><strong><a href="paper_outline.pdf">Paper Outline (PDF)</a></strong> — the working outline of the accompanying paper.</li>
 </ul>
-<h3 id="for-developers-and-maintainers">For developers and maintainers<a class="headerlink" href="#for-developers-and-maintainers" title="Permanent link">&para;</a></h3>
+<h2 id="for-developers-and-maintainers">For developers and maintainers<a class="headerlink" href="#for-developers-and-maintainers" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong><a href="ARCHITECTURE_FOR_AI/">Architecture (for AI / developers)</a></strong> — dense codebase map of the compute
   engine, GVAR topology, fiscal block, data conventions, and tests. Also documents the <strong>drag-perf /
@@ -1111,9 +1094,12 @@ magnitudes) in <strong><a href="EMPIRICAL_EVALUATION/">Empirical Evaluation</a><
 <li><strong><a href="DATA_SCHEMA/">Data Schemas</a></strong> — the JSON contracts the browser app reads.</li>
 <li><strong><a href="BUILD_AND_CI/">Build &amp; CI</a></strong> — the green gate, the test taxonomy, and the deploy chain.</li>
 <li><strong>Maintainer's Guide</strong> — <a href="MAINTAINER_OPERATIONS/">operations</a>,
-  <a href="ADDING_A_COUNTRY/">adding a country</a>, and <a href="REESTIMATING_MODELS/">re-estimating models</a>.</li>
+  <a href="ADDING_A_COUNTRY/">adding a country</a>, and <a href="REESTIMATING_MODELS/">re-estimating models</a>.
+  Quarterly vintage shifts run through <code>app/scripts/auto_update.mjs</code> (<code>--check</code>, <code>--shift --asof</code>),
+  which archives the old vintage, imputes ragged edges cross-block, rebuilds provenance, and writes
+  the release-impact report behind the <strong>/monitor</strong> page.</li>
 </ul>
-<h3 id="project-history">Project history<a class="headerlink" href="#project-history" title="Permanent link">&para;</a></h3>
+<h2 id="project-history">Project history<a class="headerlink" href="#project-history" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong><a href="CHANGELOG/">Changelog</a></strong> — release notes and notable changes.</li>
 </ul>

@@ -171,7 +171,10 @@ the conditional forecasting algorithms, and the three-layer architecture
 that separates the unconditional baseline, the user's scenario, and the
 policy counterfactual.  All computation runs client-side in the browser;
 the tool requires no server infrastructure and can be deployed as a
-static website.
+static website.  The manual is in two parts: Part~I explains how to
+\emph{use} the tool --- what you do, how you do it, and what you find
+on the screen --- in plain language, assuming no econometrics; Part~II
+documents the methodology in full technical detail.
 \end{quote}
 
 \vspace{0.5cm}
@@ -194,7 +197,1598 @@ associated with the IMF.  Email: \texttt{mfarkas@imf.org}.}
 \clearpage
 
 %% ================================================================
-\section{Introduction}\label{sec:intro}
+%% OPENING + PART I — USING THE TOOL (task-oriented user manual)
+%% ================================================================
+\section{What this tool does}\label{sec:whatis}
+
+This tool shows you quarterly forecasts for about fifty economies --- growth, inflation,
+interest rates, public finances, and more --- and lets you bend them.
+
+Click on a chart where you think inflation will be, and every other chart updates so the whole
+forecast stays consistent with the estimated economics: if you push United States inflation up,
+the policy rate rises, growth cools, and --- because the economies are linked through trade and
+financial channels --- the euro area, Japan, and China move too. You can set where a variable
+should settle in the long run, ask what a different interest-rate path would have done, and put
+uncertainty bands around any of it. Everything runs in your browser; nothing to install.
+
+Three honest rules govern everything you see:
+\begin{itemize}
+  \item \textbf{Data are data.} Solid history is observed. Where a country's latest quarter has
+    not been published yet, the model fills the gap using everything already observed elsewhere
+    --- and those filled-in points are always drawn in amber, never disguised as data.
+  \item \textbf{The model is estimated once, then frozen.} Within the year, new data shift the
+    starting point of the forecast but never silently change the model itself. Re-estimation
+    happens once a year, on a complete final year of data.
+  \item \textbf{Judgment is visible.} If you move a forecast away from what the model says ---
+    a scenario, a long-run target, a policy counterfactual --- the chart says so.
+\end{itemize}
+
+\paragraph{How to use this manual.}
+Part~I is the manual proper: each section tells you \emph{what you can do}, \emph{how to do it}
+(step by step, naming the exact buttons), and \emph{what you will find} on the screen when you
+have done it. You can read any section on its own. If you have five minutes, read
+Section~\ref{sec:use-quickstart} and skip the rest until you need it.
+
+Part~II explains how the machinery works --- the estimation, the filtering, the cross-country
+system --- with the mathematics. You do not need any of it to use the tool. It is there so that
+every number on the screen can be traced to a method, and every method to code and data.
+
+\part{Using the tool}\label{part:using}
+
+\section{Your first scenario in five minutes}\label{sec:use-quickstart}
+
+This chapter is one continuous walk-through. You open the tool, look at one chart,
+bend the United States policy rate with your mouse, watch the rest of the economy
+respond, put uncertainty bands around the result, and clean up. Nothing else. Every
+button and label named below appears on screen exactly as written. The full tour of
+every control comes later, in \S\ref{sec:use-tour}.
+
+\subsection{Open the tool and pick a country}
+
+\paragraph{What you do.} Load the page and make sure you are looking at the United
+States.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Open the tool's web address in a modern browser. There is nothing to
+    install; the model files load into the page itself, so give the first visit a
+    few seconds.
+  \item Look at the top bar. The \textbf{Country} dropdown already reads
+    \textbf{United States} --- that is the default. If someone changed it, open the
+    dropdown and pick \textbf{United States} from the \textbf{GVAR} group. That
+    group lists the economies linked into the cross-country system; every other
+    economy sits under \textbf{Other countries} and moves on its own.
+  \item Leave everything else as it is: \textbf{Units} on \textbf{q/q ann.} and
+    \textbf{Uncertainty} on \textbf{None}.
+\end{enumerate}
+
+\paragraph{What you find.} A grid of charts fills the screen --- growth, inflation,
+the policy rate, public finances, credit, and more. In the left control panel a
+scenario named \textbf{Scenario 1} is already active, and at the bottom of the
+screen it has a tab of its own. You have not touched anything yet, so every chart
+still shows the model's own view.
+
+\subsection{Read your first chart}
+
+\paragraph{What you do.} Learn to tell history from forecast on one chart before
+you change anything.
+
+\paragraph{How.} Find the chart titled \textbf{Inflation}, at the top left.
+
+\paragraph{What you find.} Three things to read:
+\begin{itemize}
+  \item \emph{History sits on a lightly shaded background.} The solid line there is
+    observed data. The x-axis is labelled with calendar years; hover over any point
+    to see its exact quarter and value.
+  \item \emph{The forecast is the dotted line} on the white part of the chart,
+    labelled \textbf{Baseline} in the legend. The faint grey fan around it is the
+    model's own uncertainty about that path --- it is there from the start, before
+    you compute anything. The first forecast quarter is the latest quarter whose
+    data have not been published yet; the sidebar and exports label it
+    \textbf{NC} --- short for nowcast, the model's estimate of the current,
+    not-yet-published quarter.
+  \item \emph{Amber means model-filled.} If a series' latest quarters have not been
+    published, the tail of its history is drawn as an amber dashed tail with
+    open circles --- values the model filled in from everything observed elsewhere,
+    never disguised as data (\S\ref{sec:use-data}).
+\end{itemize}
+The unit is \% q/q ann.: the change from the previous quarter, stated at an annual
+rate. If you prefer the change over the same quarter a year earlier, click
+\textbf{y/y} in the \textbf{Units} toggle --- then click \textbf{q/q ann.} to come
+back.
+
+\subsection{Bend the policy rate}
+
+\paragraph{What you do.} Tell the tool: ``suppose the policy rate is higher than
+the model expects one year from now --- say half a percentage point higher.''
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Find the chart titled \textbf{Policy Rate}, next to Inflation.
+  \item Click the small \textbf{condition} button in its header. The button turns
+    blue and now reads \textbf{CONDITIONED}, the panel gets a blue border, and a
+    hint badge appears: \textbf{drag to adjust policy}.
+  \item Press the mouse down on the forecast part of the chart, about four
+    quarters in, and drag upward --- half a percentage point above the dotted
+    baseline. Release.
+\end{enumerate}
+A shortcut for later: right-clicking an unconditioned chart does steps 2 and 3 at
+once --- it conditions the variable and plants the point exactly where you clicked.
+
+\paragraph{What you find.} A dot marks the quarter you pinned, and the scenario
+line --- solid, in Scenario~1's colour --- now passes through it. While you hold
+the mouse the line follows a fast preview; the full answer settles in about a
+second after you release. Only the quarter you dragged is imposed; every other
+quarter of the rate path is left free, and the model fills it in with the most
+plausible route through your point. In the left control panel, a new entry for the
+rate appears in the conditioning list, with one row per forecast quarter from
+\textbf{NC} to \textbf{t+19} --- you will use those rows in
+\S\ref{sec:use-scenarios}.
+
+\subsection{Watch the rest of the economy respond}
+
+\paragraph{What you do.} See what a tighter policy path means for everything else.
+
+\paragraph{How.} Scroll through the grid. Compare each chart's solid scenario line
+with its dotted \textbf{Baseline}.
+
+\paragraph{What you find.} Every chart has updated, not just the one you touched.
+The estimated model knows how United States variables have moved together in the
+data, and it re-draws the whole forecast so it stays consistent with your pinned
+rate: with a tighter path, growth typically cools, inflation eases with a lag, and
+the financial variables shift too. How this works is spelled out in Part~II,
+\S\ref{sec:partial}. Two notes. First, the response is the model's estimate
+of typical historical co-movement, not a law. Read it as ``what usually
+accompanies a higher rate,'' not ``what the rate causes.'' For a true
+cause-and-effect experiment, use the policy counterfactual
+(\S\ref{sec:use-counterfactual}). Second, other countries have not moved: cross-border
+spillovers are off by default, so the United States moves alone until you switch
+them on (\S\ref{sec:use-spillovers}).
+
+\subsection{Put uncertainty bands around it}
+
+\paragraph{What you do.} Ask how sure the model is about the scenario you just
+drew.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the top bar, set \textbf{Uncertainty} to \textbf{Quick}.
+  \item Press \textbf{Compute}. An overlay appears: \emph{Computing scenario
+    uncertainty (50 draws)...} --- the model redraws its own forecast fifty times,
+    each time with a different plausible version of its estimated parameters and
+    shocks, and centres that range on your scenario.
+\end{enumerate}
+
+\paragraph{What you find.} A shaded band in the scenario's colour now wraps the
+solid line on every chart: the middle two-thirds of the plausible outcomes.
+Notice the band on the Policy Rate chart pinches shut at the quarter you dragged
+--- you \emph{imposed} that value, so there is no uncertainty about it there. The
+band is widest where the model is least sure, usually far out in the forecast.
+\textbf{Full} does the same with 200 draws --- smoother edges, longer wait.
+What the bands do and do not cover is in \S\ref{sec:use-uncertainty}, with the
+machinery in Part~II, \S\ref{sec:bands}.
+
+\subsection{Clean up}
+
+\paragraph{What you do.} Put everything back the way you found it.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the left control panel, at the top of the \textbf{Scenario} section,
+    click \textbf{Reset}. This clears the pins of the active scenario for the
+    current country only --- other scenarios and other countries are untouched.
+  \item Set \textbf{Uncertainty} back to \textbf{None}.
+\end{enumerate}
+
+\paragraph{What you find.} The dot is gone, the scenario line lies back on the
+dotted \textbf{Baseline}, and the conditioning list in the left control panel is
+empty again. You are back at the model's own view.
+
+\subsection{Where to go next}
+
+You have now done the core loop: pin a point, read the response, band it, reset.
+The rest of Part~I builds outward from here.
+\begin{itemize}
+  \item \S\ref{sec:use-tour} --- the full tour: every control on the screen, top
+    bar to bottom bar.
+  \item \S\ref{sec:use-scenarios} --- richer scenarios: several variables and
+    quarters at once, quarter-by-quarter editing, ready-made cookbook recipes,
+    saving and loading.
+  \item \S\ref{sec:use-spillovers} --- switch on cross-border transmission and let
+    a United States scenario reach the euro area, Japan, and China.
+  \item \S\ref{sec:use-longrun} --- set where a variable settles in the long run.
+  \item \S\ref{sec:use-counterfactual} --- the true policy experiment: what a
+    different interest-rate path would have \emph{caused}.
+  \item \S\ref{sec:use-fiscal} --- revenue, spending, deficits, and debt.
+  \item \S\ref{sec:use-uncertainty} --- what the bands mean, Quick versus Full,
+    and what they leave out.
+  \item \S\ref{sec:use-data} --- where the data come from, what the amber points
+    are, and how to export everything you see.
+\end{itemize}
+
+%% ================================================================
+\section{A tour of the screen}\label{sec:use-tour}\label{sec:interface}
+
+The screen has four parts. A \emph{top bar} across the top: country choice, display units,
+uncertainty, and links. A \emph{control panel} down the left side: scenarios, long-run targets,
+cross-border switches, and the policy counterfactual. The \emph{chart grid} in the middle: one
+chart per variable, and this is where you click and drag. A \emph{scenario bar} along the bottom:
+scenario tabs and export buttons. This chapter walks through each part, and --- most importantly
+--- teaches you to read one chart correctly.
+
+\subsection{The top bar}
+
+\subsubsection{Picking a country}
+
+\paragraph{What you do.} You choose which economy fills the chart grid.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Find the dropdown labelled \textbf{Country} in the top bar.
+  \item Open it. The list has two groups: \textbf{GVAR} and \textbf{Other countries}.
+  \item Click an economy. The grid redraws for that economy within a moment.
+\end{enumerate}
+
+\paragraph{What you find.} The two groups matter. Economies under \textbf{GVAR} belong to the
+linked cross-country system --- the global model that ties economies together through trade and
+financial channels (\S\ref{sec:gvar}) --- so a scenario you build there can spill over to
+partners, and their scenarios can reach it (see \S\ref{sec:use-spillovers}). Economies under
+\textbf{Other countries} are forecast on their own. Switching country never deletes your work:
+each economy keeps its own scenario settings until you reset them.
+
+\subsubsection{The rest of the bar}
+
+Left to right, the remaining controls are:
+\begin{itemize}
+  \item \textbf{The app title} (\emph{Monetary-Financial Model: A global projection and
+    scenario tool}), with a small ``i'' button that opens an \textbf{About} note.
+  \item \textbf{Data \& coverage} --- opens the data-provenance panel, telling you for every
+    variable where the numbers come from and how far the observations reach
+    (\S\ref{sec:use-data}).
+  \item \textbf{Three links}: \textbf{User Manual} (this document as a PDF), \textbf{Docs}
+    (the full online documentation), and \textbf{Monitor} (a page showing how the latest data
+    update moved every economy's forecast).
+  \item \textbf{Units} --- the display-units toggle, covered below.
+  \item \textbf{Uncertainty} --- a toggle with the choices \textbf{None}, \textbf{Quick}, and
+    \textbf{Full} (\S\ref{sec:use-uncertainty}).
+  \item \textbf{Compute} --- runs the uncertainty and long-run calculations
+    (\S\ref{sec:use-uncertainty}, \S\ref{sec:use-longrun}).
+\end{itemize}
+\textbf{Compute} is greyed out until you either pick \textbf{Quick} or \textbf{Full}
+uncertainty or set at least one long-run target.
+
+\subsection{How to read one chart}
+
+\paragraph{What you do.} Before you touch anything, learn what the lines and shading on a single
+chart mean. Every chart in the grid follows the same grammar.
+
+\paragraph{How.} Pick any chart --- say \textbf{Inflation} --- and look at it from left to right.
+
+\paragraph{What you find.}
+\begin{itemize}
+  \item \textbf{The shaded region on the left is history.} A light background tint covers all
+    quarters up to the last historical quarter. Everything to its right is forecast.
+  \item \textbf{The solid coloured line is the data, then your scenario.} Inside the shaded
+    region the solid line is observed history. To the right it continues as the active
+    scenario's forecast. If you have not changed anything, it lies exactly on top of the
+    baseline.
+  \item \textbf{The amber dashed tail is model-filled, not observed.} Quarters not yet
+    published are drawn amber and dashed at the end of the history line, with small open
+    circles marking exactly the filled-in quarters. Hover over one and the label reads
+    \emph{Model-implied nowcast (imputed)}. Solid means observed; amber dashed with open
+    circles means the model's best guess. What the filling uses is explained in
+    \S\ref{sec:use-data}; see also \S\ref{sec:vintage}.
+  \item \textbf{The dotted grey line is the baseline.} This is what the model expects with no
+    intervention from you. It is labelled \textbf{Baseline} in the legend. When you move a
+    forecast, your scenario line departs from it, so the gap between solid and dotted is
+    exactly what your judgment added.
+  \item \textbf{The grey fan is the model's own uncertainty.} A pale grey band around the
+    baseline covers the central two-thirds of the outcomes the model considers plausible ---
+    roughly, ``the future usually lands inside this band.'' It is there from the start; the
+    coloured band around your \emph{scenario} appears only after you press \textbf{Compute}
+    (\S\ref{sec:use-uncertainty}; construction in \S\ref{sec:bands}).
+  \item \textbf{The date axis.} Tick labels mark calendar years. For the exact quarter, hover
+    anywhere on a line: the label shows the date and value, for example \emph{2027 Q3 · 2.10}.
+    The first forecast quarter is the one right after the last historical quarter.
+  \item \textbf{The header.} Each chart's title sits top-left with a \textbf{condition} button
+    next to it --- click it to start steering this variable (\S\ref{sec:use-scenarios}); it
+    turns into \textbf{CONDITIONED} and gives the panel a blue border once active. Charts
+    computed from other charts by an accounting identity --- the change in debt-to-GDP
+    ($\Delta$~Debt-to-GDP) or the external-sector charts, for example --- show a
+    \textbf{derived} badge instead and cannot be steered directly. If you have moved a
+    variable's long-run target off the model's estimate, its title turns amber and shows a
+    small \textbf{judgement} badge with a pencil mark (\S\ref{sec:use-longrun}). While a chart
+    is steerable, a hint badge appears top-right: \textbf{drag to set path} --- or, on the
+    policy-rate chart, \textbf{drag to adjust policy}.
+  \item \textbf{The footer.} Two small lines under each chart give the variable's definition
+    and its unit, so you never have to guess what a series measures. The full variable
+    catalogue is in \S\ref{sec:variables}.
+\end{itemize}
+
+One more thing you may see \emph{above} the grid on GVAR economies: a badge reporting whether
+the cross-country solve you are looking at is a fast preview or the full solve, sometimes with a
+\textbf{Solve full GVAR} button. Ignore it for now; \S\ref{sec:use-spillovers} explains it.
+
+\subsection{Three ways to display the numbers}
+
+\paragraph{What you do.} You choose the units every growth-rate chart is drawn in. The numbers
+are the same forecast; only the lens changes.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the top bar, find the toggle labelled \textbf{Units}.
+  \item Click one of \textbf{q/q ann.}, \textbf{y/y}, or \textbf{\% vs base}.
+\end{enumerate}
+
+\paragraph{What you find.}
+\begin{itemize}
+  \item \textbf{q/q ann.} shows each quarter's change from the quarter before, scaled up to a
+    full year --- the ``annualised'' pace economists quote. It is the model's native unit
+    (\S\ref{sec:units}) and the most responsive view: a one-quarter dip shows up as one sharp
+    notch.
+  \item \textbf{y/y} shows the change against the same quarter one year earlier. It is
+    smoother and matches how inflation is usually reported in the press. The same forecast
+    therefore looks calmer here; nothing has changed but the lens.
+  \item \textbf{\% vs base} shows the \emph{difference} between your scenario and the
+    baseline, centred at zero --- an impact view. A flat line at zero means your scenario
+    changed nothing for that variable. This view is read-only: you cannot drag on charts while
+    it is active. A second pair of buttons appears in this view only: \textbf{Level} (the
+    default; the cumulative difference in the level of the series) and \textbf{Rate (IRF)}
+    (the quarter-by-quarter difference, matching the convention used to compare against the
+    structural policy models of \S\ref{sec:use-counterfactual}; details in
+    \S\ref{sec:counterfactual}).
+\end{itemize}
+
+Two kinds of charts opt out of this toggle. Charts that are already rates --- the policy rate,
+unemployment --- are always shown in \% and ignore the growth-rate lenses. And a handful
+of price and index series --- the oil price, exchange-rate indices, equity and house prices ---
+are always drawn as \emph{levels} (an index number, or dollars per barrel for oil), because a
+level is how you think about them. On those charts, dragging sets the level itself.
+
+\subsection{The left control panel}
+
+The panel down the left side holds everything that is not a chart. Top to bottom:
+
+\begin{itemize}
+  \item \textbf{Scenario} --- buttons to \textbf{Reset}, \textbf{Reset all}, \textbf{Save},
+    and \textbf{Load} a scenario, plus \textbf{Cookbook}, a menu of ready-made, documented
+    scenarios you can load in one click. Below them, a text box to name the scenario. All of
+    it is covered in \S\ref{sec:use-scenarios}.
+  \item \textbf{Long-run targets} --- a collapsible panel where you set where each variable
+    settles in the long run. Covered in \S\ref{sec:use-longrun}.
+  \item \textbf{Cross-border spillovers} --- two on/off switches controlling whether your
+    scenario and your long-run targets propagate to other economies. Covered in
+    \S\ref{sec:use-spillovers}.
+  \item \textbf{Policy counterfactual} --- a mode for asking what a different interest-rate or
+    spending path would do, judged through a structural model of your choice. Covered in
+    \S\ref{sec:use-counterfactual}.
+  \item \textbf{The conditioning list} --- once you steer a variable, it appears here with a
+    slider and an on/off button for each forecast quarter, and a \textbf{Show deviations} /
+    \textbf{Show levels} toggle for how you type the numbers. Covered in
+    \S\ref{sec:use-scenarios}.
+  \item \textbf{Acknowledgments} and the disclaimer sit at the very bottom.
+\end{itemize}
+
+\subsection{The bottom bar}
+
+\paragraph{What you do.} You manage up to four scenarios side by side and export your results.
+
+\paragraph{How.} The bar along the bottom shows one tab per scenario --- a colour dot, the
+name, and the structural model and policy rule it uses for counterfactuals. Click a tab to make
+that scenario active; click its \textbf{x} to remove it. \textbf{+ Add Scenario} creates a new
+one (up to four). To rename a scenario, use the name box in the left control panel, not the
+tab. On the right sit four export buttons: \textbf{CSV}, \textbf{Excel}, \textbf{PNG}, and
+\textbf{PDF}.
+
+\paragraph{What you find.} Every scenario draws on every chart in its own colour, so you can
+compare, say, a soft-landing path against a stagflation path on the same axes. The exports
+carry the numbers behind what you see --- baseline, scenarios, and uncertainty ranges --- and
+are described in \S\ref{sec:export}.
+
+%% ================================================================
+\section{Building scenarios}\label{sec:use-scenarios}
+
+A scenario is a forecast you have bent. You pin one or more variables to a path you
+believe in --- say, inflation half a point higher for the next year --- and the model
+redraws every other chart so the whole picture stays consistent with the estimated
+economics. This ``pin some, let the model fill in the rest'' calculation is called a
+conditional forecast; the mechanics live in \S\ref{sec:partial}. This chapter shows
+you every way to set pins, how to run several scenarios side by side, and how to
+start over.
+
+\subsection{Pin a variable with the mouse}
+
+\paragraph{What you do.} You tell the tool where you think one variable is heading,
+directly on its chart.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Find the chart you want to steer. In its header, click \textbf{condition}.
+    The button changes to \textbf{CONDITIONED} and the panel gets a blue border.
+    Nothing moves yet --- you have only declared the variable steerable.
+  \item Drag on the plot. A hint badge --- \textbf{drag to set path} --- appears while
+    the chart is draggable. As you drag, the forecast quarter nearest your cursor is
+    pinned at the height of the cursor.
+  \item Or skip step 1 entirely: \emph{right-click} anywhere on the forecast region of
+    an unconditioned chart. That single click conditions the variable \emph{and}
+    plants a pin exactly at the quarter and value you clicked. On a chart that is
+    already conditioned, right-click toggles that one quarter's pin on or off,
+    placing the dot at the cursor value.
+\end{enumerate}
+
+\paragraph{What you find.} The pinned quarter shows a solid dot at your value ---
+the dot snaps to the click immediately, and the full redrawn path follows a moment
+later. Every other quarter of that variable, and every other chart, adjusts to stay
+consistent: pin growth down and you will typically see inflation soften and the
+policy rate follow. Two things cannot be dragged. Charts with a \textbf{derived}
+badge are computed by an accounting identity from other variables, so you steer
+their drivers instead --- except the fiscal primary-balance and debt charts, where a
+drag sets a target trajectory directly (see \S\ref{sec:use-fiscal}). And nothing is
+draggable in the \textbf{\% vs base} view, which is a read-only impact display.
+
+If cross-border spillovers are switched on for a linked economy, the line follows a
+quick local preview while you drag, and the cross-country solve --- the fast direct
+preview, flagged by the amber \textbf{GVAR DIRECT preview} badge --- fires once when
+you release the mouse. The full cross-country solve still runs only on demand, via
+the \textbf{Solve full GVAR} button or \textbf{Compute}
+(\S\ref{sec:use-spillovers}).
+
+\subsection{Fine-tune quarters in the conditioning list}
+
+\paragraph{What you do.} You set exact numbers, quarter by quarter, instead of
+eyeballing a drag.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Look at the conditioning list at the bottom of the left control panel. Every
+    conditioned variable appears there with twenty quarter rows, labelled
+    \textbf{NC}, \textbf{t+1} through \textbf{t+19}. \textbf{NC} is short for
+    nowcast, the model's estimate of the current, not-yet-published quarter --- its
+    read of where the economy stands right now.
+  \item Click a quarter label to switch that quarter's pin on or off. Click
+    \textbf{All} to switch all twenty at once.
+  \item Move a quarter's slider to set its value. The slider covers roughly
+    $\pm 3$ in steps of $0.1$, and the number you set is shown next to it.
+  \item By default you type absolute values (say, a policy rate of $3.5$). Click
+    \textbf{Show deviations} to enter distances from the baseline forecast instead
+    ($+0.5$); click \textbf{Show levels} to switch back. The same pins are shown
+    either way.
+  \item Click \textbf{remove} next to a variable's name to take it out of the
+    scenario entirely.
+\end{enumerate}
+
+\paragraph{What you find.} Only the quarters you switched on are held fixed; the
+quarters that are off are filled in by the model. A single pinned quarter far out
+--- say \textbf{t+8} --- gives a smooth model-chosen path to that point. Pins are
+what-you-set-is-what-you-see: a pinned quarter sits exactly at your number on the
+chart, always. If a pinned path looks kinked or implausible elsewhere, that is the
+model telling you what your assumption costs; loosen a quarter and watch it relax.
+
+\subsection{Condition several variables at once}
+
+\paragraph{What you do.} You build a richer story --- for example, weaker growth
+\emph{and} a lower policy rate together, to describe a downturn the central bank
+leans against.
+
+\paragraph{How.} Condition each variable as above; they stack. Every conditioned
+variable gets its own block in the conditioning list, and you can pin different
+quarters on each.
+
+\paragraph{What you find.} All pins are imposed jointly, not one after the other:
+the model finds the single most plausible forecast that passes through every pin at
+once. Beware of fighting yourself --- pinning inflation up while pinning the policy
+rate down asks for an unusual combination, and the unconditioned charts will show
+you how strained it is. Fewer, well-chosen pins usually tell a cleaner story than
+many.
+
+\subsection{Run scenarios side by side}
+
+\paragraph{What you do.} You keep up to four alternative scenarios and compare them
+on the same charts.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the bar along the bottom of the screen, click \textbf{+ Add Scenario}.
+    A new tab appears with its own colour dot and becomes active; the button is
+    offered while you have fewer than four scenarios.
+  \item Click a tab to make that scenario active. All conditioning you do --- charts,
+    the conditioning list, cookbook loads --- edits the active scenario only.
+  \item Rename the active scenario by typing in the \textbf{Scenario name} box at the
+    top of the left control panel. The tabs have no rename control of their own.
+  \item Click the small \textbf{x} on a tab to delete that scenario. The \textbf{x}
+    is shown only while you have more than one.
+\end{enumerate}
+
+\paragraph{What you find.} Each scenario is drawn on every chart in its own colour
+--- blue, red, green, purple, matching the dot on its tab --- with the active
+scenario's line thicker. There is no hide button: all scenarios stay visible until
+you delete them, so if a chart gets crowded, remove the tabs you no longer need.
+Each tab also carries a small caption naming the scenario's policy-model choice,
+which matters only in counterfactual mode (\S\ref{sec:use-counterfactual}).
+
+\subsection{Start over: Reset vs.\ Reset all}
+
+\paragraph{What you do.} You clear your work --- either just the current scenario in
+the current country, or everything everywhere.
+
+\paragraph{How.} Both buttons sit in the \textbf{Scenario} header of the left
+control panel. \textbf{Reset} clears the \emph{active} scenario's pins and paths for
+the \emph{current country only}. \textbf{Reset all} (in red) clears every scenario
+and all cross-country conditioning in all countries; because that is drastic, it
+first shows ``Clear all scenarios \& conditioning?'' and waits for you to click
+\textbf{Yes, reset all} or \textbf{Cancel}.
+
+\paragraph{What you find.} After \textbf{Reset}, the active scenario's line falls
+back onto the baseline forecast here, but pins you set in other countries survive.
+After \textbf{Yes, reset all}, you are back to a clean baseline everywhere. If a
+scenario is worth keeping, click \textbf{Save} first --- it writes the scenario to
+an Excel file that \textbf{Load} restores later (\S\ref{sec:use-data}).
+
+\subsection{When to press Compute}
+
+\paragraph{What you do.} Nothing, most of the time. The central scenario path
+updates live with every pin --- \textbf{Compute} is never needed to see it.
+
+\paragraph{How.} Press \textbf{Compute} in the top bar only when you want
+uncertainty bands around the scenario or when you have set a long-run target; the
+button's enable rule and the \textbf{Uncertainty} switch are described in the tour
+(\S\ref{sec:use-tour}).
+
+\paragraph{What you find.} Bands appear around your scenario line, showing the range
+of outcomes consistent with your pins --- how to read them is
+\S\ref{sec:use-uncertainty}; long-run targets are \S\ref{sec:use-longrun}. Bands do
+not refresh on their own: change a pin afterwards and press \textbf{Compute} again.
+
+\subsection{Load a ready-made scenario from the Cookbook}
+
+\paragraph{What you do.} Instead of building pins from scratch, you load a named,
+documented recipe --- an oil-price shock, an inflation surge --- as a worked
+example, then adjust it.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the \textbf{Scenario} header of the left control panel, click
+    \textbf{Cookbook~\raisebox{-0.2ex}{$\blacktriangledown$}}. A panel titled
+    \textbf{Scenario cookbook} opens, listing the recipes available for the current
+    economy.
+  \item Click \textbf{Why} on a recipe to read its rationale --- what the shock is
+    and why the pins are set where they are.
+  \item Click one of the two load buttons. \textbf{Load naive} pins only the
+    headline variable and lets the model fill in everything else --- the model's own
+    read of the shock. \textbf{Load + restriction} adds short-run pins on related
+    variables that shape the shock into its economically meaningful form.
+  \item Adjust from there: everything a recipe loads is ordinary conditioning, so
+    the sliders in the conditioning list, the quarter toggles, and chart drags all
+    work on it.
+\end{enumerate}
+
+\paragraph{What you find.} Loading \emph{replaces} the active scenario's
+conditioning --- your existing pins are wiped, not merged, so switch to a fresh tab
+first if you want to keep them. The panel closes and the charts redraw under the
+recipe's pins. Comparing \textbf{Load naive} against \textbf{Load + restriction} for
+the same recipe, on two tabs, is the fastest way to see what the extra pins buy. If
+a recipe names a variable this economy does not carry, an amber note lists what was
+skipped; click \textbf{Dismiss} to clear it.
+
+%% ================================================================
+\section{Cross-country spillovers}\label{sec:use-spillovers}
+
+Economies trade with each other, so a shock to one moves the others. This chapter
+shows you how to make your scenario travel: you condition inflation or growth in
+one country, and the forecasts for its trading partners move too. The machinery
+behind this is the linked cross-country system: country models tied together by
+trade-weighted links, called a GVAR (\S\ref{sec:gvar}). On screen it comes down
+to two switches, one button, and a small status badge.
+
+A quick map of who is linked. Open the \textbf{Country} dropdown in the top bar:
+economies listed under the \textbf{GVAR} heading are full members of the linked
+system --- conditioning any of them can reach all the others. Economies under
+\textbf{Other countries} include the individual euro-area members (Germany,
+France, Italy, \dots), which are a special case: they receive shocks through the
+euro-area aggregate rather than through their own link (see the last subsection).
+
+By default both spillover switches are \emph{off}. Until you turn something on or
+press a solve button, a scenario moves only the country you are looking at, and
+its partners stay frozen. That is deliberate: local-only is instant, it is
+explicit about what has and has not been computed, and it is often all you need.
+
+\subsection{Turning on scenario spillovers}
+
+\paragraph{What you do.} You let your conditioning --- the points you have pinned
+on the charts --- propagate across borders, so that, say, a United States growth
+scenario also moves the euro area, Japan, and China.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the left control panel, find the section headed
+    \textbf{Cross-border spillovers}.
+  \item The first switch is \textbf{Scenario spillovers (GVAR solve)}. Click its
+    On/Off pill to turn it \textbf{On}.
+  \item Condition a variable as usual (\S\ref{sec:use-scenarios}): click
+    \textbf{condition} on a chart and drag the forecast, or right-click to plant
+    a point directly.
+\end{enumerate}
+
+\paragraph{What you find.} With the switch on, every edit to a pinned point
+triggers a live cross-country computation. A status line appears above the chart
+grid. While the computation runs you see a small \textbf{computing\ldots} pill
+with a spinner --- the heavier recomputations can take several seconds, so the
+pill tells you the app is working, not frozen. When it finishes, a badge
+(marked with a small double-arrow icon) reports what was computed, for example
+\textbf{GVAR DIRECT preview} with a short technical read-out (how many passes it
+took, a convergence number, and how long it ran). Switch to another country in
+the \textbf{Country} dropdown and you will see its forecasts shifted by your
+scenario. If the switch is \emph{off} instead, the status line says \emph{local
+forecast (partners frozen)} whenever you have active pins --- a plain reminder
+that what you see has not travelled anywhere.
+
+\subsection{Preview versus the complete solve}
+
+The live result you get while editing is a \emph{preview}, and it is worth
+understanding what that means.
+
+\paragraph{What you do.} You read the badge above the charts to know how much of
+the cross-country feedback is in the numbers on screen.
+
+\paragraph{How.} Look at the badge colour and text:
+\begin{itemize}
+  \item An \emph{amber} badge reading \textbf{GVAR DIRECT preview} means you are
+    seeing the fast first-pass answer: your shock has travelled \emph{one hop}
+    to each partner, but the partners' responses have not yet fed back --- the
+    echo of the echo is missing. This keeps editing responsive.
+  \item A \emph{blue} badge reading \textbf{GVAR full solve} means the complete
+    answer is on screen: every feedback loop between every linked economy,
+    including the feedback from the rest of the world onto the United States,
+    has been solved through to consistency (see \S\ref{sec:gvar:solvemode}).
+\end{itemize}
+
+\paragraph{What you find.} For small shocks the preview and the full solve are
+usually close, because the second-round echoes are smaller than the first hop.
+For large shocks, or when you care about the country \emph{receiving} the
+spillover, run the full solve before you quote numbers. The hint text next to
+the badge tells you which situation you are in: \emph{live direct-channel
+preview --- click ``Solve full GVAR'' for all feedback loops} when a preview is
+showing, and \emph{conditioning one bloc propagates to its trade partners} once
+the full answer is up.
+
+\subsection{The ``Solve full GVAR'' button}
+
+\paragraph{What you do.} You compute the complete cross-country answer on
+demand --- whether or not the scenario-spillover switch is on.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Set up your scenario first: pin the paths you want.
+  \item Click \textbf{Solve full GVAR} (the button is marked with a filled
+    play-triangle icon). The button appears in two places --- in the
+    \textbf{Cross-border spillovers} section of the control panel, and above the
+    chart grid whenever a fuller answer than the one on screen is available.
+    Pressing \textbf{Compute} in the top bar runs the same complete solve as
+    part of its work.
+  \item Wait for the \textbf{computing\ldots} pill to clear. The complete solve
+    is the heavy option; expect it to take roughly ten seconds rather than an
+    instant.
+\end{enumerate}
+
+\paragraph{What you find.} The badge turns blue and reads
+\textbf{GVAR full solve}, and the button above the grid disappears --- there is
+nothing more to compute for this scenario. Every linked country's charts now
+show the fully consistent answer. This is the workflow to prefer if you leave
+the spillover switch off: work locally and fast while you shape the scenario,
+then press \textbf{Solve full GVAR} once to propagate it everywhere. Be aware
+that pressing the button also turns the \textbf{Scenario spillovers (GVAR
+solve)} switch \textbf{On}, so later pin edits run the live cross-country
+preview; switch it back \textbf{Off} if you want to return to local-only
+editing. Note also that the full solve reflects the pins as they are when you
+press it; if you keep editing afterwards, press it again.
+
+\subsection{Long-run target spillovers}
+
+\paragraph{What you do.} You let a \emph{long-run target} --- a value you have
+set for where a variable settles far out (\S\ref{sec:use-longrun}) --- shift the
+long-run forecasts of the trading partners too, not just the economy you set it
+on.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Set a long-run target as described in \S\ref{sec:use-longrun}.
+  \item In \textbf{Cross-border spillovers}, turn \textbf{On} the second switch,
+    \textbf{Long-run target spillovers (GVAR constant shifts)}.
+\end{enumerate}
+
+\paragraph{What you find.} This channel is instant --- no solve button and no
+computing pill. The cross-country pass-through of long-run shifts is worked out
+once, ahead of time, so flipping the switch just applies it (the construction is
+in \S\ref{sec:gvar:solvemode} and \S\ref{sec:driftsetter}). The receiving
+country tells you what happened: the banner above its chart grid, which normally
+reads \textbf{Unconditional forecast:} \emph{model-based}, turns amber and adds
+\textbf{+ spillover from} followed by the names of the countries whose targets
+are feeding in. Hover it for the full explanation. This keeps judgment visible:
+you can always tell a partner's baseline has been tilted by targets you set
+elsewhere. Note the two switches are independent --- one governs scenario pins,
+the other long-run targets, and either can be on without the other.
+
+\subsection{Euro-area members: one interest rate, one doorway}
+
+The individual euro-area members --- Germany, France, Italy, Spain, and the
+smaller members --- do not set their own interest rate. They share the European
+Central Bank's policy rate, the area-wide long yield, and the area corporate
+bond yield (each member also carries its own sovereign spread over the Bund).
+The tool respects this: a member's model does not have its own policy channel to
+move. Instead, shocks reach a member through one doorway --- the euro-area
+aggregate. A United States or euro-area scenario first moves the area-wide
+model. The solved area response --- the common interest rate, area growth, area
+inflation --- is then fed into the member's own model, which translates it into
+that member's GDP, inflation, and yields.
+
+\paragraph{What you do.} You run, say, a United States scenario and check what
+it does to Germany.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Condition your scenario on the United States (or euro-area) charts.
+  \item Switch the \textbf{Country} dropdown to Germany.
+  \item Look above the chart grid. If the area shock has not been passed
+    through yet, you see an amber note: \textbf{Cross-border spillover from the
+    US/EA scenario not yet computed}, next to a
+    \textbf{Solve full GVAR} button.
+  \item Click \textbf{Solve full GVAR} (or press \textbf{Compute}
+    in the top bar). This solves the euro-area aggregate and pushes the area
+    shock into the member.
+\end{enumerate}
+
+\paragraph{What you find.} After the solve, Germany's growth, inflation, and
+interest-rate charts show the scenario's imprint, transmitted through the common
+euro-area block. Members never update silently in the background --- the amber
+note is the tool telling you plainly that the answer on screen is still the
+pre-scenario one, and the solve runs only when you ask for it. Check the note is
+gone before reading member charts under a US or euro-area scenario. If you edit
+the scenario again, the note reappears and you re-solve. On a member you will
+not see the \textbf{GVAR} badge itself; that badge belongs to the full members
+of the linked system, and the member's answer arrives through the euro-area
+doorway instead.
+
+Two caveats to close. First, spillovers only flow between economies in
+the linked system --- for the exact variable-by-variable channels, see
+\S\ref{sec:gvar:stars}. Second, on a linked economy the \textbf{Long-run
+targets} panel always shows an amber \textbf{GVAR bloc} note warning that, with
+the target-spillover switch off, partners are \emph{not} re-solved --- the
+realised joint outcome may differ from the single-country picture on screen.
+
+%% ================================================================
+\section{Long-run targets}\label{sec:use-longrun}
+
+Every forecast in this tool eventually settles down: growth returns to a trend rate,
+inflation to a typical level, a fiscal ratio to its long-run average. Where each
+variable settles comes from the estimated model. A \emph{long-run target} lets you
+overrule that: you say where a variable should end up --- inflation at 2\%, say, or
+trend growth at 1.5\% --- and the tool bends the whole forecast so it glides to your
+number instead of the model's. How that bending works is explained in Part~II
+(\S\ref{sec:longrun} and \S\ref{sec:driftsetter}); this chapter shows you the controls.
+
+Two things to hold on to. First, every control starts at the model's own estimate, so
+an untouched panel changes nothing --- the default view is always the raw model.
+Second, targets apply \emph{instantly}: the moment you change a value, the baseline and
+every scenario update. You never press \textbf{Compute} for this; that button is for
+uncertainty bands and is covered in \S\ref{sec:use-uncertainty}.
+
+\subsection{Set a target}
+
+\paragraph{What you do.} Pick one variable and fix where it settles at the far end of
+the forecast.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the left control panel, click the \textbf{Long-run targets} header (just
+    below the scenario name). The panel unfolds; the chevron turns from
+    $\blacktriangleright$ to open.
+  \item Find the row for your variable. There is one row for every chart that can be
+    targeted, in the same order as the chart grid, labelled with the chart title and
+    its unit --- for example \textbf{Inflation \(\cdot\) \% q/q ann.} (quarter-on-quarter
+    at an annual rate; units are explained in \S\ref{sec:units}).
+  \item Set the value. Either drag the slider, or type in the number box, or use its
+    arrows --- each arrow click steps the target by 0.1. The small grey
+    \textbf{est} figure next to the slider is the model's own estimate, your
+    reference point.
+  \item To take a target back, click the row's reset-to-estimate arrow button --- it
+    resets that variable to the model estimate. Setting the value exactly back to the
+    estimate does the same thing: the target is removed, not stored as a coincidence.
+\end{enumerate}
+
+\paragraph{What you find.} The row highlights amber as soon as the value leaves the
+estimate, the panel header gains a count such as \textbf{(1 set)}, and a green badge
+appears at the foot of the panel reading \textbf{1 target \(\cdot\) exact}. ``Exact''
+means what it says: the forecast is built to hit your number at the end of the horizon
+by construction, not approximately. On the chart, the forecast path for that variable
+now drifts toward your value instead of the model's. A \textbf{reset all to estimate}
+link next to the badge clears every target at once.
+
+\subsection{See which numbers are yours}
+
+\paragraph{What you do.} Keep a visible record, on the charts themselves, of where you
+have overruled the model.
+
+\paragraph{How.} Nothing to click --- the flags appear on their own. Look in two
+places: the chart title, and the status line above the grid.
+
+\paragraph{What you find.} Two flags appear automatically. On the affected chart, the
+title turns amber and shows a small \textbf{judgement} badge with a pencil mark; hover
+it and the tooltip states your target and the model estimate side by side, in the
+chart's units. Above the whole grid, the status line \textbf{Unconditional forecast:}
+switches from \textbf{model-based} to \textbf{with judgement (1 variable anchored)},
+counting up as you add targets. When every target is cleared, both flags disappear and
+the line reads \textbf{model-based} again. This is the tool's third honest rule at
+work: judgment is visible, always.
+
+\subsection{Load the consensus anchors}
+
+\paragraph{What you do.} Instead of setting values by hand, load a ready-made set of
+publicly defensible long-run numbers for the country you are viewing --- one click.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Open \textbf{Long-run targets}. If a preset exists for this country, a
+    \textbf{Consensus anchors} note sits near the top of the panel, saying how many
+    variables it covers.
+  \item Click \textbf{Apply consensus anchors}. The button turns green and reads
+    \textbf{\checkmark~Consensus applied} while your targets exactly match the preset.
+  \item Click the adjacent \textbf{Clear} to drop all targets and return every
+    variable to its model estimate.
+\end{enumerate}
+
+\paragraph{What you find.} The preset is deliberately minimal: a long-run real-growth
+rate for the economy, an inflation anchor where the central bank has a clear public
+target, and --- for the economies that carry a full public-finance block --- long-run
+values for revenue, primary spending, and the effective interest rate on debt. It does
+not set policy rates, unemployment, or asset prices. Japan ships with no preset at
+all --- its long run is left entirely model-driven, so the block simply does not appear
+there. The preset is \emph{off} by default everywhere: until you click the button, you
+are looking at the raw model.
+
+\subsection{Several targets at once: Per-variable or Joint}
+
+\paragraph{What you do.} When you set two or more targets, they can interfere: pushing
+inflation up also moves the interest rate, which moves growth, and so on. You choose
+how the tool handles that interference.
+
+\paragraph{How.} As soon as a second target is set, a \textbf{Multiple-target solve}
+toggle appears at the top of the panel with two buttons: \textbf{Per-variable} and
+\textbf{Joint}. \textbf{Joint} is the default.
+
+\paragraph{What you find.} The trade-off, in plain words:
+\begin{itemize}
+  \item \textbf{Joint} solves all your targets together, so each one lands exactly on
+    its value, knock-on effects included. This is the correct answer --- but if two
+    targets are strongly related (say two interest rates the model cannot move apart
+    in the long run), the solve can become unstable and the paths can blow up. If the
+    charts go wild after you add a target, switch to \textbf{Per-variable}.
+  \item \textbf{Per-variable} sets each target on its own, ignoring what one target's
+    shift does to the others. It is stable and bounded --- but approximate: it
+    understates the knock-on effects, so with several targets set, each one lands
+    slightly off its stated value.
+\end{itemize}
+A footnote line under the toggle restates which behaviour is active. With a single
+target the two modes coincide, so the toggle is hidden. The mathematics behind both
+modes is in \S\ref{sec:driftsetter}.
+
+\subsection{Greyed-out sliders}
+
+A few variables cannot be retargeted reliably: the model's long-run response to them is
+too weak for the calculation to be trustworthy. Their rows are disabled, and hovering
+shows \emph{``Near-singular response --- this variable cannot be retargeted
+reliably.''} This is a safety guard, not a bug --- forcing a target there would produce
+an explosive or meaningless path. Target a closely related variable instead.
+
+\subsection{Growth targets move the debt path}
+
+Rows for real-growth variables carry an extra tag, \textbf{\(\cdot\) sets debt path}.
+Setting long-run growth changes the gap between the interest rate and growth, and that
+gap compounds on the stock of public debt --- so a growth target quietly reshapes the
+debt-to-GDP forecast too. It is a consequence of arithmetic, not a structural fiscal
+fix. The public-finance charts are covered in \S\ref{sec:use-fiscal}, and the
+accounting behind them in \S\ref{sec:fiscal_identity}.
+
+\subsection{Targets and other countries}
+
+For an economy inside the linked cross-country system (\S\ref{sec:gvar}), the panel
+shows an amber note beginning \textbf{GVAR bloc.} --- it means that, by default, your
+target moves only the country you set it on; trading partners are not re-solved. To
+let a long-run target travel across borders, turn on \textbf{Long-run target
+spillovers (GVAR constant shifts)} --- the switch, and how imported judgment is
+flagged on the receiving side, are covered in \S\ref{sec:use-spillovers}.
+
+%% ================================================================
+\section{Policy counterfactuals}\label{sec:use-counterfactual}
+
+A scenario answers ``what if the data come in differently?'' A policy
+counterfactual answers a sharper question: \emph{what if the central bank had
+set interest rates differently?} You choose a theory model of how the economy
+responds to policy, push the policy rate up or down quarter by quarter, and the
+tool draws a second forecast --- the counterfactual --- as a dashed line next
+to your scenario on every chart. The scenario line stays put; the dashed line
+shows what that same scenario would have looked like under the alternative
+rate path. The machinery behind this is described in \S\ref{sec:counterfactual}
+and \S\ref{sec:dsge}.
+
+One term needs defining up front. The theory models used here are DSGE models
+--- economist shorthand for models where households, firms, and the central
+bank are written down as decision-makers, so the model has an internal story
+about \emph{why} a rate change moves inflation and output. Each model ships
+with pre-computed IRFs --- impulse response functions, a ledger of how a
+one-time rate move ripples through every variable over the following quarters.
+The counterfactual is built by adding that ledger, scaled to your rate
+adjustment, on top of your scenario.
+
+\subsection{Turning counterfactual mode on}
+
+\paragraph{What you do.} You switch the active scenario into counterfactual
+mode so the policy controls appear.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the left control panel, find the \textbf{Policy Counterfactual}
+    section.
+  \item Click \textbf{Policy counterfactual}. The button turns orange and its
+    label changes to \textbf{Exit counterfactual mode}; click it again at any
+    time to leave.
+\end{enumerate}
+
+\paragraph{What you find.} The section expands to show four blocks:
+\textbf{DSGE Model}, \textbf{Policy Rule}, \textbf{Macro response}, and the
+adjustment sliders. Nothing on the charts changes yet --- the counterfactual
+line only appears once you actually move the rate.
+
+\subsection{Picking a model and a policy rule}
+
+\paragraph{What you do.} You choose which theory model, and which interest-rate
+rule inside it, translates your rate move into effects on the rest of the
+economy. This choice matters: the same one-quarter rate move can have a much
+larger or smaller effect under one model-and-rule pair than under another, so
+treat the pass-through as model-dependent, not as a fact.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Under \textbf{DSGE Model}, the current model name is shown (the
+    default is \textbf{US\_SW07}, a widely used estimated model of the US
+    economy). Click \textbf{Browse...} to open the model list, grouped by
+    category with a count per group, or type in \textbf{Search models...} to
+    filter by name or author. Click a model to select it; the list closes.
+  \item Under \textbf{Policy rule}, pick a rule from the dropdown. Each entry
+    shows the rule name and a short description. Rules without pre-computed
+    responses for the selected model are greyed out and marked
+    \textbf{(no IRFs)} --- you cannot select them.
+\end{enumerate}
+
+\paragraph{What you find.} In the default \textbf{Rule-based} mode a note
+below the buttons reads ``IRFs pre-computed with the \ldots{} rule embedded in
+the DSGE equilibrium'' --- meaning the rule is baked into the model's ledger of
+responses, not applied afterwards. Only the model list is filtered to models
+that have at least one computed rule.
+
+\subsection{Setting the rate adjustment}
+
+\paragraph{What you do.} You specify how much higher or lower the policy rate
+should be than in your scenario, quarter by quarter, in percentage points.
+
+\paragraph{How.} There are two equivalent ways.
+\begin{enumerate}
+  \item \emph{Sliders.} Under \textbf{Interest rate adjustment (pp)} you find
+    twelve sliders labelled \textbf{Q1} through \textbf{Q12}, each running
+    from $-2$ to $+2$ percentage points in steps of 0.05, with a signed
+    readout on the right. Moving a slider sets that quarter. \textbf{Undo}
+    steps back through your recent slider moves; \textbf{Reset} clears the
+    whole adjustment.
+  \item \emph{Drag on the chart.} With counterfactual mode on, the policy-rate
+    chart shows a \textbf{drag to adjust policy} badge. Drag the forecast
+    part of the rate line to where you want it; the nearest quarter takes the
+    difference between your cursor and the scenario's rate as its adjustment.
+\end{enumerate}
+
+\paragraph{What you find.} Every quarter you touch --- by slider or by drag
+--- becomes \emph{pinned}: the counterfactual rate holds your value there.
+Quarters you never touched are left to the model: under the rule-consistent
+mode below, the model's own rule decides how the rate behaves in them,
+responding to the inflation and output your pinned quarters have caused.
+Right-click a quarter on the policy-rate chart to toggle it between pinned
+and free; releasing a quarter also zeroes its adjustment so a later re-pin
+starts clean. So a single $+0.5$ in Q1 is not a five-year rate promise ---
+it is a one-quarter surprise, after which policy follows the rule.
+
+\subsection{Two ways the economy can respond}
+
+\paragraph{What you do.} You choose who works out the consequences of the rate
+move: the theory model or the forecasting model.
+
+\paragraph{How.} Use the \textbf{Macro response} dropdown:
+\begin{itemize}
+  \item \textbf{DSGE/Taylor-rule (IRF-consistent)} --- the default. The theory
+    model's ledger of responses dictates how inflation, output, and the rest
+    react, and the unpinned rate quarters follow the model's policy rule. This
+    is the mode that answers ``what does \emph{this theory} say the rate move
+    would have done?''
+  \item \textbf{BVAR-endogenous (let adjust)} --- no theory model. The rate
+    path is handed to the estimated forecasting model as extra conditioning
+    information, and it works out everything else's response from the
+    historical correlations, exactly as in a scenario
+    (\S\ref{sec:use-scenarios}, method in \S\ref{sec:modes}). This answers
+    ``what does \emph{the data} say usually accompanies such a rate path?''
+\end{itemize}
+
+\paragraph{What you find.} The two modes can disagree, and that disagreement
+is informative: theory attributes the move to a deliberate policy surprise;
+the historical pattern cannot tell a surprise from a response to something
+else. If the selected model-and-rule pair has no computed responses, an amber
+warning appears --- ``No IRFs for \ldots{} --- using BVAR-only
+re-conditioning'' --- telling you the tool has silently fallen back to the
+second mode. Pick a different rule if you wanted the theory answer.
+
+\subsection{Reading the result, and the Level \textbar{} Rate (IRF) toggle}
+
+\paragraph{What you do.} You read the counterfactual off the charts and, if
+you want, switch to a view that shows only the policy effect.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Look at any chart: the counterfactual is the dashed line labelled
+    \textbf{Counterfactual} on hover, drawn in a distinct rust colour next to
+    your scenario line.
+  \item To isolate the effect, set the \textbf{Units} toggle in the top bar to
+    \textbf{\% vs base}. Charts now plot deviations from baseline, and the
+    counterfactual line becomes the pure policy effect. This view is
+    read-only --- you cannot drag in it.
+  \item In that view only, a second toggle appears: \textbf{Level} versus
+    \textbf{Rate (IRF)}. \textbf{Level} (the default) shows the cumulative
+    effect on the \emph{level} of each variable --- where GDP ends up
+    relative to baseline, the ``\% chg.''\ reporting convention.
+    \textbf{Rate (IRF)} shows the quarter-by-quarter effect in each
+    variable's native units --- the way responses are plotted in the model
+    database the DSGE models come from, so you can compare the chart directly
+    against published model responses.
+\end{enumerate}
+
+\paragraph{What you find.} Under a rate hike of, say, $+1$ percentage point
+for one quarter, expect the dashed line to show the rate above the scenario
+at the start, inflation and growth drifting below it over the following
+quarters, and everything closing back towards the scenario as the effect dies
+out. How large and how persistent is a property of the model and rule you
+chose --- switch models and watch the dashed line change while your scenario
+does not. Uncertainty bands, if computed, belong to the scenario; the
+counterfactual is a single model-implied path (\S\ref{sec:uncertainty}).
+
+\subsection{Letting the tool choose the rate path: Optimal (B\&M)}
+
+\paragraph{What you do.} Instead of hand-crafting a rate path, you state what
+the central bank should care about --- price stability versus employment ---
+and the tool computes the rate path that best achieves it, using the
+Barnichon--Mesters method --- it reads the best rate path directly off the
+model's ledger of responses, no extra estimation (\S\ref{sec:bm}).
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Under \textbf{Policy Rule}, click \textbf{Optimal (B\&M)} instead of
+    \textbf{Rule-based}.
+  \item Move the weight slider between \textbf{Price stability} and
+    \textbf{Full employment}; the readout shows the two weights, written
+    $\lambda\pi$ and $\lambda y$ on screen.
+  \item Set the goals with the \textbf{$\pi$* target} slider (inflation, 0 to
+    5, step 0.1) and the \textbf{y* target} slider (output, $-3$ to $3$,
+    step 0.1).
+  \item Click \textbf{Compute optimal rate path}.
+\end{enumerate}
+
+\paragraph{What you find.} The rate-adjustment sliders fill in with the
+computed path, and --- unlike a hand-set path --- \emph{every} quarter is
+pinned: the optimal path is a full plan, not a one-off surprise. The dashed
+counterfactual line updates as usual. If the selected model and rule have no
+computed responses, an alert says so and nothing is loaded; pick another
+rule first. The caption ``Barnichon \& Mesters (2023) sufficient statistics''
+names the method.
+
+\subsection{A fiscal lever too}
+
+\paragraph{What you do.} You add a government-spending move to the
+counterfactual, alongside (or instead of) the rate move.
+
+\paragraph{How.} Below the rate sliders, find \textbf{Fiscal adjustment ---
+gov spending (pp)}: twelve more sliders (\textbf{Q1}--\textbf{Q12}, $\pm 3$,
+step 0.1) with their own \textbf{Undo} and \textbf{Reset}. They work exactly
+like the rate sliders, scaling the model's government-spending responses on
+top of your scenario.
+
+\paragraph{What you find.} As the caption notes, this needs the selected
+model to include fiscal responses --- fewer than half of the models do ---
+so if the dashed line does not react, that is why. For projecting the public
+finances themselves (debt, deficits), use the fiscal block instead
+(\S\ref{sec:use-fiscal}).
+
+Everything here belongs to the \emph{active} scenario. Each scenario tab
+carries its own model, rule, and adjustments --- shown as a small
+``model/rule'' caption on the tab --- so you can keep, say, a hawkish and a
+dovish counterfactual side by side and flip between them in the bottom bar.
+
+%% ================================================================
+\section{Public finances and the external accounts}\label{sec:use-fiscal}
+
+For the economies that carry public-finance data, the tool adds a government block to the
+chart grid: what the government collects, what it spends, what it pays in interest, and where
+its debt goes. For three economies it also adds an external block: trade with the rest of the
+world and the country's net position toward it. This chapter shows you how to read both blocks,
+how to bend the debt path, and which numbers are data and which are stated modelling assumptions.
+
+\subsection{Reading the fiscal charts}
+
+\paragraph{What you do.} You inspect a country's public finances: the forecast for revenue,
+spending, interest costs, the budget balance, and the debt ratio.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Pick a fiscal economy in the \textbf{Country} dropdown. The block exists for the
+    United States, the euro area and each euro-area member, Japan, the United Kingdom, Canada,
+    and China. Other countries show no fiscal charts.
+  \item In the main grid, find the four estimated fiscal charts: \textbf{Revenue} and
+    \textbf{Primary Expenditure} (both in \% of GDP), \textbf{Effective Interest Rate}
+    (in \% per year), and \textbf{Stock-Flow Adjustment} (in \% of GDP).
+  \item Below them, find the row headed \textbf{Fiscal block --- derived by accounting
+    identity}. It holds three more charts: \textbf{Primary Balance}, \textbf{$\Delta$
+    Debt-to-GDP}, and \textbf{Debt-to-GDP}.
+\end{enumerate}
+
+\paragraph{What you find.} The four charts in the main grid are \emph{estimated}: the model
+forecasts them directly, like inflation or growth. In plain words:
+\begin{itemize}
+  \item \textbf{Revenue} and \textbf{Primary Expenditure} are what the government takes in and
+    what it spends, excluding interest, both as a share of the economy.
+  \item The \textbf{Effective Interest Rate} is the average rate the government actually pays:
+    interest costs divided by the debt stock. It moves slowly, because old debt was issued at
+    old rates.
+  \item The \textbf{Stock-Flow Adjustment} is the bookkeeping gap between the deficit and the
+    change in debt --- items such as asset sales or valuation effects that move debt without
+    passing through the budget.
+\end{itemize}
+The three charts in the derived row are \emph{not} estimated. They are computed from the four
+drivers by budget arithmetic. The \textbf{Primary Balance} is simply revenue minus primary
+expenditure. The debt line is an accounting identity rolled forward: each quarter, debt grows
+with the interest the government pays, shrinks as the economy grows in money terms, and falls
+one-for-one with the primary surplus. The tool applies that rule quarter by quarter, starting
+from the last observed debt ratio. \textbf{$\Delta$ Debt-to-GDP} shows the resulting change per
+quarter. The exact arithmetic is in Part~II, \S\ref{sec:fiscal_identity}.
+
+Three reading notes. First, the derived charts show the forecast horizon only --- the history
+sits in the driver charts above. Second, the \textbf{Units} toggle in the top bar does not
+change them; they are always ratios to GDP or rates. Third, \textbf{$\Delta$ Debt-to-GDP}
+carries a grey \textbf{derived} badge and cannot be conditioned --- it is implied by the others.
+
+\subsection{Move the fiscal forecast through its drivers}
+
+\paragraph{What you do.} You impose a view on a fiscal driver --- say, revenue one point of GDP
+weaker --- and read off what it does to the balance and the debt.
+
+\paragraph{How.} Condition the driver exactly as you condition any variable
+(\S\ref{sec:use-scenarios}): click \textbf{condition} on the \textbf{Revenue}, \textbf{Primary
+Expenditure}, \textbf{Effective Interest Rate}, or \textbf{Stock-Flow Adjustment} chart, then
+drag the line or use the sliders in the left panel.
+
+\paragraph{What you find.} The whole model updates, and the derived row updates with it. A note
+appears next to the block header --- \textbf{derived variables implicitly conditioned} ---
+reminding you that once you pin any fiscal variable, the primary balance and the debt path are
+pinned too, through the identity. Growth and inflation matter as much as the budget itself:
+push growth down and the debt ratio rises even with unchanged fiscal numbers, because the
+denominator shrinks and the gap between the interest rate and growth widens.
+
+\subsection{Set a debt path or a primary-balance path directly}
+
+\paragraph{What you do.} Instead of working through the drivers, you draw the outcome you want:
+``debt stabilises at, say, 100\% of GDP'' or ``the primary balance reaches, say, plus one
+percent of GDP by 2028'' --- and let the tool find the budget that delivers it.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item On the \textbf{Debt-to-GDP} or \textbf{Primary Balance} chart, click
+    \textbf{condition}, or simply right-click where you want the path to pass --- that plants a
+    dot exactly at the clicked quarter and value.
+  \item Drag the line to shape the trajectory. The badge reads \textbf{drag to set path}. On
+    these two charts, the value you drag to is the \emph{absolute} target --- 100 means 100\%
+    of GDP, not a deviation.
+  \item Right-click again on a quarter to pin or release it. Released quarters follow the model.
+  \item To remove the target, click the \textbf{CONDITIONED} button. Note that these two
+    trajectory targets live on the chart itself; they do not appear in the conditioning list
+    in the left panel.
+\end{enumerate}
+
+\paragraph{What you find.} A primary-balance target is hit \emph{exactly}: it is a straight
+linear condition on revenue minus expenditure, and the model finds the most plausible mix. A
+debt target is \emph{approximate}, and says so. The tool inverts the debt arithmetic: it
+computes the primary balance that would deliver your debt path \emph{given the model's forecast}
+interest rate and growth, and pins that. But the interest rate and growth themselves respond a
+little to the implied consolidation, and the tool does not iterate on that feedback. In practice
+the realised debt path can miss your target --- by, say, a point or so of GDP over the horizon.
+If you need the debt line exact to the decimal, this is not the instrument; if you want
+a coherent consolidation scenario, it is. Details in Part~II, \S\ref{sec:fiscal_inversion}.
+
+\subsection{Long-run fiscal targets}
+
+Every fiscal driver can also be given a long-run destination in the \textbf{Long-run targets}
+panel (\S\ref{sec:use-longrun}). Two things are specific to the fiscal block. First, the real
+growth target carries the note \textbf{sets debt path}: where growth settles decides whether
+the debt ratio drifts up or down, because it sets the gap between the interest rate and growth
+--- it is not a structural budget fix. Second, for the main fiscal economies the
+\textbf{Apply consensus anchors} button loads public long-run values for revenue, primary
+expenditure, and the effective interest rate alongside growth and inflation; it is off by
+default, so the raw model is what you see first.
+
+\subsection{The external accounts}
+
+\paragraph{What you do.} For the United States, the euro area, and China, you read the
+country's balance with the rest of the world: exports minus imports, the broader current
+account, and the accumulated net position.
+
+\paragraph{How.} Select one of those three economies. Below the fiscal block, find the row
+headed \textbf{External-sector block --- derived by balance-of-payments identity} with three
+charts: \textbf{Trade Balance}, \textbf{Current Account}, and \textbf{NFA / GDP}, all in \% of
+GDP.
+
+\paragraph{What you find.} \textbf{Trade Balance} is exports minus imports. \textbf{Current
+Account} adds the income the country earns on its net foreign assets. \textbf{NFA / GDP} is
+the stock of net foreign assets --- what the country owns abroad minus what it owes abroad ---
+rolled forward, quarter by quarter, from the latest published net position: each surplus adds
+to it, each deficit subtracts, and exchange-rate moves revalue it. All three charts are
+read-only and carry a \textbf{derived} note: to move them, condition the drivers --- the
+export, import, exchange-rate, or growth charts in the country grid --- and the external row
+follows. A weaker currency, for instance, revalues foreign-currency assets upward and shifts
+the net position even before trade responds.
+
+\subsection{Which numbers are modelling defaults}
+
+Some inputs are data and some are assumptions, and the distinction matters. Data: the estimated
+drivers, the starting debt ratio, and the starting net foreign asset position --- the latter
+two come from published official statistics for each economy. Stated assumptions, shipped
+flagged in the model files:
+\begin{itemize}
+  \item \textbf{The structural stock-flow adjustment.} The debt roll-forward uses a fixed
+    per-quarter constant for the deficit--debt gap, not the forecast from the
+    \textbf{Stock-Flow Adjustment} chart, because that forecast can be dragged to extremes by
+    other conditions and would distort the debt line. The chart shows the model's forecast; the
+    debt arithmetic deliberately uses the stable constant.
+  \item \textbf{The return on net foreign assets}, set to about 3\% per year, which generates
+    the income line inside the current account.
+  \item \textbf{The share of net foreign assets exposed to the exchange rate}, set to about
+    0.4, which scales the revaluation effect.
+\end{itemize}
+Neither of the last two is estimated; treat the level of the income and revaluation terms as
+indicative and the direction of movement as the reliable part.
+
+Finally, uncertainty: after you press \textbf{Compute} with \textbf{Quick} or \textbf{Full}
+selected (\S\ref{sec:use-uncertainty}), shaded bands appear on the derived fiscal and external
+charts too. Each band is built consistently: every one of the model's alternative re-solves is
+pushed through the same accounting identity, so the debt band widens exactly as fast as the
+underlying budget and growth uncertainty says it should. Where you have pinned a quarter of a
+debt or primary-balance target, the band closes onto the line at that quarter.
+
+%% ================================================================
+\section{Uncertainty bands}\label{sec:use-uncertainty}
+
+A forecast line is a best guess, not a promise. This chapter shows you how to read the
+range around that guess, and how to put the same kind of range around a scenario you
+have built yourself. There are two kinds of bands on the charts: a grey fan that is
+always there, and a coloured scenario band that you compute on demand.
+
+\subsection{The grey fan: the model's own range}
+
+\paragraph{What you do.} You read how sure the model is about its own baseline forecast,
+before you have touched anything.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Nothing. The grey fan is always on. Open any chart and look at the shaded
+    region around the dotted \textbf{Baseline} line in the forecast area.
+\end{enumerate}
+
+\paragraph{What you find.} The fan covers roughly the middle two-thirds of the outcomes
+the model considers plausible: it runs from the 16th to the 84th percentile of the
+model's simulated futures, meaning about one outcome in six falls above the fan and one
+in six below. Two things to check:
+\begin{itemize}
+  \item The fan \emph{widens} as you look further out. Next quarter is fairly
+    well pinned down; five years out much less so. That is a feature, not a flaw.
+  \item The fan belongs to the \emph{baseline}. It was computed when the model was
+    estimated and does not react to your clicks. When you condition a chart, the grey
+    fan stays where it is --- your scenario gets its own band, described next.
+\end{itemize}
+How the range is built --- from repeated simulations of the estimated model, including
+both coefficient and shock uncertainty --- is in \S\ref{sec:bands}.
+
+\subsection{Putting a band around your scenario}
+
+\paragraph{What you do.} You have pinned a path --- say, inflation half a point higher
+for four quarters (\S\ref{sec:use-scenarios}) --- and you want to know how uncertain
+the rest of the system's response is.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the top bar, find the \textbf{Uncertainty} toggle. It has three settings:
+    \textbf{None}, \textbf{Quick}, and \textbf{Full}.
+  \item Pick \textbf{Quick} or \textbf{Full}. Quick uses 50 alternative versions of
+    the model; Full uses 200. An ``alternative version'' here is one set of model
+    coefficients that is also consistent with the historical data --- the estimation
+    does not produce a single model but a whole family of plausible ones, and the band
+    samples from that family (\S\ref{sec:uncertainty}).
+  \item Press \textbf{Compute}. Every chart greys out behind a message ---
+    \textbf{Computing scenario uncertainty (50 draws)...} or \textbf{(200 draws)...}
+    --- and comes back with the band drawn.
+\end{enumerate}
+Expect a wait. Quick usually takes a few seconds. Full takes proportionally longer.
+The very first Compute for a country is the slowest, because the browser first has to
+download that country's file of sampled coefficients (several megabytes); after that
+the file is cached and only the computation remains.
+
+\paragraph{What you find.} A band tinted in your scenario's colour appears around the
+scenario line on every chart --- not just the ones you conditioned. It answers the
+question: \emph{given} the path I pinned, how much could everything else still vary?
+By default this band keeps the full width of the model's own forecast range and is
+re-centred on your scenario path, so it is directly comparable to the grey fan.
+
+Three caveats:
+\begin{itemize}
+  \item The band is a \emph{snapshot}. If you move a pin, add a variable, or change
+    the conditioning after computing, the displayed band no longer matches --- press
+    \textbf{Compute} again to refresh it.
+  \item After switching country or switching the active scenario, treat any band still
+    on screen as stale --- press \textbf{Compute} again before reading it.
+  \item Setting \textbf{Uncertainty} back to \textbf{None} removes the scenario band.
+    The grey baseline fan never goes away.
+\end{itemize}
+The \textbf{CSV} and \textbf{Excel} exports include the scenario's band columns only
+after you have pressed \textbf{Compute}; until then those cells are empty
+(\S\ref{sec:use-data}).
+
+One convenience: \textbf{Compute} also lights up when you have a long-run target set,
+even with uncertainty on \textbf{None} --- pressing it then switches the setting to
+\textbf{Quick} automatically, because the long-run tilt needs the sampled model
+versions to work with (\S\ref{sec:plr}).
+
+\subsection{Why the band pinches shut at your pins}
+
+\paragraph{What you find.} On a chart you have conditioned, the scenario band collapses
+to zero width at every quarter you pinned, then opens up again at the quarters in
+between and beyond.
+
+This is correct behaviour, not a rendering glitch. A pinned quarter is something you
+have \emph{asserted}: in your scenario, inflation in that quarter \emph{is} the value
+you set, by construction. There is no uncertainty about an assumption. The uncertainty
+lives in everything the assumption does not fix --- the same variable at the quarters
+you left free, and every other variable at every quarter. So read a pinched band as a
+reminder of what you have imposed, and the open parts as what the model still has to
+say. If a band stays wide where you expected it to pinch, check the conditioning list:
+the quarter may be toggled off (\textbf{NC} --- short for nowcast, the model's estimate
+of the current, not-yet-published quarter --- or an unlit quarter label,
+\S\ref{sec:use-scenarios}).
+
+\subsection{Long-run targets move the bands instantly}
+
+\paragraph{What you do.} You adjust a value in the \textbf{Long-run targets} panel ---
+say, potential growth a quarter-point higher --- after having already computed a
+scenario band.
+
+\paragraph{What you find.} The forecast line \emph{and} its bands glide to the new
+path together, immediately, with no recomputation and no wait. A long-run target is a
+deterministic shift of the whole forecast path (\S\ref{sec:use-longrun},
+\S\ref{sec:driftsetter}): it moves where the forecast is headed, not how uncertain the
+model is about getting there. So both the grey fan and any computed scenario band are
+simply carried along rigidly --- their widths are preserved exactly. You can drag a
+long-run slider back and forth and watch line and band move as one; you never need to
+press \textbf{Compute} for this. Check it yourself: note the band width at some
+horizon, move a target, and confirm the width is unchanged while the centre has
+shifted.
+
+\subsection{Experimental: the per-draw cross-country band}
+
+\paragraph{What you do.} You switch to an alternative, slower way of building the
+scenario band on countries that are part of the linked cross-country system
+(\S\ref{sec:use-spillovers}).
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Find the small \textbf{Experimental} switch in the bottom-left corner of the
+    screen.
+  \item Turn it on.
+  \item Press \textbf{Compute}.
+\end{enumerate}
+
+\paragraph{What you find.} With the switch on, \textbf{Compute} re-solves the whole
+cross-country system separately for each of the 50 or 200 alternative model versions,
+producing a true conditional cloud. That cloud pinches naturally at your pins without
+any overlay, but it can collapse \emph{too} tightly when only a point or two is pinned.
+It is also much slower than the default. With the switch off --- the default, and the
+recommended setting --- the band is the model's own forecast range shifted onto the
+scenario path, as described above: full width, fast. Flipping the switch clears any
+band on screen, because a band built one way must not be read as if it were built the
+other; press \textbf{Compute} again after toggling. The construction details are in
+\S\ref{sec:uncertainty} and \S\ref{sec:gvar:solvemode}.
+
+%% ================================================================
+\section{The data behind the charts}\label{sec:use-data}
+
+Every chart starts with a solid line: history. This chapter tells you exactly what
+that line is made of --- which quarters are published data, which are filled in by
+the model, where each series comes from, and how the whole panel is kept up to date.
+The rule throughout is simple: \emph{data are data}. Anything the model filled in is
+drawn in amber and labelled, never disguised as an observation.
+
+\subsection{What vintage you are looking at}
+
+\paragraph{What you do.}
+You establish the ``as of'' date of everything on screen: the last quarter of
+history, and the quarter where the forecast begins.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Look at any chart. The solid history line ends at the \emph{panel
+    origin} --- the last quarter of history, shared by every economy; the
+    forecast lines continue from there.
+  \item Hover near the boundary --- the hover box shows the calendar quarter of
+    each point.
+  \item For the exact per-series dates, open \textbf{Data \& coverage}
+    in the top bar (next subsection but one).
+\end{enumerate}
+
+\paragraph{What you find.}
+At the time of writing, the panel origin is 2026~Q1: that is the last quarter of
+history for every economy, and the first forecast quarter --- labelled \textbf{NC}
+(short for nowcast, the model's estimate of the current, not-yet-published
+quarter) in the conditioning list and in the exports --- is 2026~Q2. All economies
+share this single origin. That is deliberate: the linked cross-country system
+(labelled GVAR in the app, short for global vector autoregression --- see
+\S\ref{sec:gvar}) couples economies row by row, so every country's history must end
+on the same line. One exception: Israel's statistics arrive with a long lag,
+so its charts run on Israel's own calendar, about a year behind the rest of the
+panel. Details of the dating convention are in \S\ref{sec:vintage}.
+
+\subsection{Observed history versus model-filled history}
+
+\paragraph{What you do.}
+You check whether the most recent quarters of a series are published data or values
+the model filled in because the statistical office has not published them yet.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item Look at the end of the history line on any chart. If the last few quarters
+    are drawn as an \emph{amber dashed} segment with small open circles, those
+    quarters are model-filled, not published.
+  \item Hover over one of the open circles. The hover box reads
+    \textbf{Model-implied nowcast (imputed)}.
+  \item Compare with the solid line just before it: the dashed segment starts at
+    the last genuinely observed point, so you can see exactly where data end and
+    filling begins.
+\end{enumerate}
+
+\paragraph{What you find.}
+The amber dashed tail marks quarters that have not been published for that series.
+The model fills them using everything already observed elsewhere --- the same
+economy's other series and, through the trade and financial links, every other
+economy's published data. (A value estimated this way for the most recent past is
+called a \emph{nowcast}: a model estimate of a quarter that has already happened
+but has not been reported yet.) A series with no amber tail is fully observed
+through the panel origin. At this vintage only the United States is genuinely
+observed at the origin; every other economy's latest quarter is model-filled, so
+its series carry a short amber tail. The filling method is described in
+\S\ref{sec:vintage}; how the linked system shares information across borders is in
+\S\ref{sec:gvar}.
+
+\subsection{Check where every number comes from}
+
+\paragraph{What you do.}
+For the economy you are viewing, you list every series in the model: its source,
+the span of quarters it covers, its last observed quarter, and any data caveats.
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the top bar, click \textbf{Data \& coverage}.
+  \item A dialog opens, titled \textbf{Data \& coverage} followed by the country
+    code. The header line states the last historical quarter, the last quarter at
+    which \emph{all} series are observed together, and the variable count.
+  \item Scan the table. The columns are \textbf{Variable}, \textbf{Source},
+    \textbf{Coverage}, \textbf{Last obs}, and \textbf{Note}.
+  \item Click anywhere outside the dialog, or the \textbf{\texttimes} button, to
+    close it.
+\end{enumerate}
+
+\paragraph{What you find.}
+A last-observed quarter drawn in amber means the series ends before the panel
+origin --- exactly the series that carry an amber dashed tail on their charts. The
+\textbf{Note} column carries plain-language flags: quarters around the pandemic
+treated as missing during estimation (see \S\ref{sec:covid}), an interior gap in
+the raw series, or a source still under review. Sources are the genuine national,
+FRED, Eurostat, BIS, ECB, and IMF providers; the full source list is in
+\S\ref{sec:datasources} and the cross-economy coverage matrix in
+\S\ref{sec:coverage-matrix}. The view is read-only: opening it never re-pulls data
+or changes anything on the charts.
+
+\subsection{See how the latest data release moved the world}
+
+\paragraph{What you do.}
+After a data update, you ask: how did the new numbers change each economy's
+estimate of the current quarter --- and which economies moved only because
+\emph{someone else's} data came in?
+
+\paragraph{How.}
+\begin{enumerate}
+  \item In the top bar, click \textbf{Monitor}. The \textbf{Release-impact
+    monitor} opens in the same tab, with a \textbf{$\leftarrow$ back to the tool}
+    link at the top.
+  \item Read the intro line: it names the update quarter and lists the economies
+    with their own new releases this round.
+  \item Scan the headline table. Columns: \textbf{Economy}, \textbf{GDP nowcast
+    revision (pp, q/q ann)}, \textbf{Inflation revision (pp)}, \textbf{Policy rate
+    (pp)}, and \textbf{Channel}. Use the two buttons next to \textbf{sort by} to
+    rank economies by the absolute size of the GDP or inflation revision.
+  \item Click \textbf{detail} on any row to expand a per-variable table for that
+    economy; click \textbf{hide} to collapse it.
+\end{enumerate}
+
+\paragraph{What you find.}
+Each number is a \emph{revision}: the economy's estimate of the update quarter
+after the new data, minus what the previous vintage had already predicted for that
+same quarter. The \textbf{Channel} badge is the key column. \textbf{observed}
+(green) means the economy's own new data drove the move --- its genuine surprise
+against what was expected. \textbf{cross-block} (blue) means the economy published
+nothing itself: its revision is pure cross-border transmission of other economies'
+releases through the trade and financial links. Watching, say, the euro area or
+Canada shift on a United States release is the linked system at work on real data
+--- the same mechanism you steer by hand in \S\ref{sec:use-spillovers}. In the
+per-economy detail, each variable shows its before and after values, the revision,
+and how that revision carries into the first and the final forecast quarter; an
+\textbf{obs} or \textbf{nowcast} badge says whether that particular cell was
+published or model-filled. If a source restated its own history, the intro also
+lists the \emph{accepted source revisions} for that update.
+
+\subsection{The update cycle: quarterly shifts, annual re-estimation}
+
+\paragraph{What you do.}
+You understand what changes --- and, just as important, what does \emph{not}
+change --- each time the panel is updated.
+
+\paragraph{How.}
+Nothing to click: the cycle is an operating rule, and every update leaves visible
+traces you can inspect with the two views above.
+\begin{enumerate}
+  \item \emph{Within the year}, the panel gets quarterly \emph{data shifts}. Newly
+    published quarters are pulled in for the economies with wired sources; every
+    other economy's new quarter is filled by the linked system from everything
+    just observed, and flagged as model-implied (the amber tails). The estimated
+    model itself is untouched --- frozen exactly as estimated.
+  \item \emph{Once a year}, after the previous calendar year is fully published
+    for every economy, the whole system is re-estimated on that complete year of
+    data. Only then do the model's estimated relationships change.
+  \item \emph{Revisions are accepted and logged.} When a statistical office
+    restates its history, the revised figures replace the old ones as the current
+    best knowledge, and the change is recorded --- the Monitor page lists the
+    accepted revisions of each update.
+\end{enumerate}
+
+\paragraph{What you find.}
+After a quarterly shift, the history line is one quarter longer, the forecast
+starts one quarter later, and the amber tails move with the new origin --- but the
+model's behaviour, and therefore the way your scenarios respond, is unchanged. Any
+movement in the forecast comes from new data, not from a silently different model.
+After the annual re-estimation, the model itself is new, and the manual's technical
+chapters (\S\ref{sec:vintage}, \S\ref{sec:repro}) describe how that vintage is
+documented. If a chart surprises you after an update, the reading order is: hover
+the tail (observed or model-filled?), open \textbf{Data \& coverage}
+(did the series' last observation move?), then open \textbf{Monitor} (was it your
+economy's own release, or transmission from abroad?).
+
+\clearpage
+\part{How the machinery works}\label{part:machinery}
+
+\noindent This part documents the methods behind the screen --- the estimation, the filtering, the
+cross-country system, the accounting --- with the mathematics and the references. You do not need it
+to use the tool. It is here so that every number on the screen can be traced to a method, every
+method to code, and every series to a source.
+
+
+
+%% ================================================================
+\section{System Overview}\label{sec:intro}
 
 \begin{figure}[!ht]
 \centering
@@ -302,17 +1896,21 @@ projections and policy scenarios.  It runs entirely in the browser,
 requiring no server-side computation, and can be deployed as a static
 website on any hosting platform.
 
-This document is organized as follows.  Section~\ref{sec:bvar}
-describes the BVAR estimation methodology.
+Part~II is organized as follows.  Section~\ref{sec:bvar}
+describes the BVAR estimation methodology, and
 Section~\ref{sec:statespace} derives the companion-form state-space
 representation.  Section~\ref{sec:kalman} presents the Kalman filter
 and Durbin--Koopman smoother used for conditional forecasting.
 Section~\ref{sec:counterfactual} details the policy counterfactual
-framework.  Section~\ref{sec:variables} documents the variable
-coverage.  Section~\ref{sec:interface} provides a guide to the user
-interface.  Section~\ref{sec:technical} discusses technical
-implementation details.  Section~\ref{sec:discussion} concludes with
-a discussion of limitations and directions for future development.
+framework, and Section~\ref{sec:gvar} the cross-country system.
+Section~\ref{sec:fiscal} covers the fiscal block and
+Section~\ref{sec:longrun} the long-run targets.
+Section~\ref{sec:variables} documents the data, coverage, and vintage
+policy.  Section~\ref{sec:technical} discusses technical
+implementation details, Section~\ref{sec:repro} reproducibility, and
+Section~\ref{sec:discussion} concludes with limitations and directions
+for future development.  The guide to the user interface is Part~I
+(Sections~\ref{sec:use-quickstart}--\ref{sec:use-data}).
 
 \subsection{Notation}\label{sec:notation}
 
@@ -2572,8 +4170,75 @@ where $\psi^{\,0}_j$ is the variable's \emph{current} terminal display
 forecast --- the slider's default thumb. Setting
 $\psi^\star_j = \psi^{\,0}_j$ gives $\delta c_j = 0$ and hence
 $\Delta Y \equiv 0$: an unmoved slider is an exact, byte-identical
-no-op. Several targets superpose linearly, since each is a $\delta c$ on
-a different equation and the columns in~\eqref{eq:driftcol} simply add.
+no-op.
+
+\paragraph{Joint long-run restriction.}
+When \emph{several} sliders are moved at once a naive per-anchor
+superposition --- solving each $\delta c_j$ from~\eqref{eq:driftsens} in
+isolation and adding the columns of~\eqref{eq:driftcol} --- is
+\emph{incoherent}: a $\delta c_j$ on equation $j$ also shifts every other
+anchored variable's terminal through the off-diagonal cross-response
+$S_H[k,j]$, so the displayed terminals no longer land on their targets.
+A stationary, low-sensitivity anchor (e.g.\ a fiscal-block ratio with a
+near-zero own-$\mathrm{sens}_j$, hence a large $\delta c_j$) can drag a
+macro target arbitrarily far off. The tool therefore imposes all enabled
+targets \emph{jointly}, as a single linear long-run restriction. Let
+$\mathcal{K}$ be the anchored equations that pass the sensitivity guard,
+and define the display-unit response matrix $M$ by
+\begin{equation}\label{eq:driftjoint}
+  M_{kj} =
+  \begin{cases}
+    4\bigl(S_H[k,j] - S_{H-1}[k,j]\bigr), & k \in \mathcal{K}\ \texttt{log},\\[2pt]
+    S_H[k,j], & k \in \mathcal{K}\ \texttt{lin},
+  \end{cases}
+  \qquad
+  M\,\delta c = \psi^\star - \psi^{\,0},
+  \quad k,j \in \mathcal{K}.
+\end{equation}
+The diagonal $M_{kk}$ is exactly the own-sensitivity
+$\mathrm{sens}_k$ of~\eqref{eq:driftsens}, so a single anchor
+($|\mathcal{K}|=1$) reduces~\eqref{eq:driftjoint} to the scalar
+$\delta c_k = (\psi^\star_k - \psi^{\,0}_k)/\mathrm{sens}_k$, and
+$\psi^\star \equiv \psi^{\,0}$ (all targets at their estimates) gives
+$\delta c \equiv 0$ exactly --- the byte-identical no-op survives. The
+system is solved by Gaussian elimination with partial pivoting; the
+$\delta c$ are then superposed back through~\eqref{eq:driftcol} as
+before, so \emph{every} anchored terminal hits its target
+\emph{simultaneously}.
+
+\paragraph{Per-variable vs.\ joint (user toggle).}
+The exact joint solve is well-posed only when the anchored variables'
+terminal responses are linearly well separated. For a \emph{near-collinear}
+anchor set --- e.g.\ two anchored interest rates that the estimated
+dynamics cannot move independently in the long run --- $M^{-1}$ produces
+huge \emph{offsetting} $\delta c$'s that hit the $|\mathcal{K}|$ terminals
+exactly while wrecking the path everywhere else (on one estimated bloc the
+exact solution required $|\delta c|\approx 459$ where the per-anchor
+diagonal needed $\approx 11$). The tool therefore exposes a \emph{solve-mode
+toggle} (shown once two or more targets are set):
+\begin{itemize}
+\item \textbf{Per-variable} --- each $\delta c_k = (\psi^\star_k -
+\psi^{\,0}_k)/\mathrm{sens}_k$ set independently from its own diagonal
+sensitivity. \emph{Stable} and bounded (the drift can never blow up), but
+\emph{approximate}: it ignores the off-diagonal cross-responses, so it
+\emph{underestimates the spillovers} and the other anchored terminals drift
+off their set values by the cross-drag.
+\item \textbf{Joint} (default) --- the full $M\,\delta c = \psi^\star -
+\psi^{\,0}$ system, so \emph{every} anchored terminal lands exactly on its
+value. \emph{Correct}, but a strongly-correlated target set makes $M$
+ill-conditioned and can \emph{destabilise} the path; the tool flags that
+case and the user switches to per-variable. A genuinely singular $M$ falls
+back to the per-variable $\delta c$ numerically (never a NaN path).
+\end{itemize}
+Both modes reduce to the same scalar for a single target
+($|\mathcal{K}|=1$), and $\psi^\star \equiv \psi^{\,0}$ is a byte-exact
+no-op in either. The shipped default anchor sets are deliberately kept to a
+\emph{bare minimum} (long-run real growth and one inflation anchor per
+economy, plus the effective-rate/revenue/expenditure trio for the six
+fiscal-block economies) precisely so the joint system stays well
+conditioned out of the box: under these defaults joint is exact and stable
+on essentially every bloc, so per-variable is offered as the deliberate
+stability escape when a user adds many correlated targets.
 
 \paragraph{Rigid band translation.}
 The deviation $\Delta Y$ of~\eqref{eq:driftcol} is added \emph{identically}
@@ -2663,12 +4328,17 @@ exact} badge). The flag is per-country and per-variable --- a single chart
 grid may mix purely model-based series with judgemental ones --- and is
 cleared on a country switch. To make a transparent judgemental starting
 point one click away, blocs with publicly-defensible long-run values carry
-an optional \emph{consensus-anchors} preset (central-bank inflation target,
-potential growth, neutral policy rate $r^\ast+\pi^\ast$, NAIRU; the values
-of \S\ref{sec:driftsetter} and the smoke-test default-anchor set). It is
-\emph{off by default} --- the raw model estimate is always the default
-view --- restricted to well-conditioned variables (it omits the
-near-singular policy-rate sliders), and fully reversible to model-based.
+a \emph{consensus-anchors} preset, deliberately kept to a \emph{bare
+minimum}: potential growth and the central-bank inflation objective per
+economy, plus the effective-rate/revenue/expenditure fiscal trio for the
+six fiscal-block economies (the values of \S\ref{sec:driftsetter}). No
+policy or market rates, unemployment, house prices or spreads are anchored
+by default --- collinear anchored rates make the joint long-run system
+ill-conditioned (see the tameness guard of \S\ref{sec:driftsetter}) and
+those long runs stay model-driven. The preset seeds enabled so the big-6
+debt trajectories display their realistic slope out of the box, and it is
+fully reversible to model-based (clearing the anchors is a byte-exact
+no-op).
 \end{remark}
 
 \subsection{When to Use Which}\label{sec:plr_vs_tilt_choice}
@@ -2923,10 +4593,12 @@ Within a bloc, all core macro variables share the same trailing endpoint
 (the only interior gaps are the COVID 2020Q2--2021Q1 macro mask of
 Section~\ref{sec:covid} and the credit/SFA seed gaps), so the last
 \emph{balanced} observation equals the last historical quarter for every
-bloc. Real-versus-nominal GDP is handled per bloc: where a chain-volume
-real series exists it is used directly; China's nominal GDP is deflated in
-log space; and thin or volatile samples are estimated with deliberately
-wide, honest predictive bands rather than spuriously tight ones.
+bloc. Real-versus-nominal GDP is handled per bloc: every fiscal bloc now
+carries a chain-volume real GDP series used directly --- China was
+re-sourced to a real chain-linked SA volume index (base 2011Q1=100) in the
+June-2026 endogenous-US 33-bloc re-estimate, replacing the earlier nominal
+proxy; and thin or volatile samples are estimated with deliberately wide,
+honest predictive bands rather than spuriously tight ones.
 
 \paragraph{Provenance flags surfaced for the reader.} Two classes of tail
 are flagged explicitly, both consistent with the no-fabrication rule:
@@ -5359,226 +7031,6 @@ tail (CN/IN); review${}={}$source-review tail (KR/RU/ID/TH).}
 \end{landscape}
 
 
-\section{User Interface Guide}\label{sec:interface}
-%% ================================================================
-
-\subsection{Top Bar}
-
-The tool is deployed as a static site served at the \texttt{/bvar-scenario}
-path of the academic website, which is hosted on \textbf{GitHub Pages} (the
-\texttt{matyasfarkas/starter-hugo-academic} Hugo Academic site). The top bar
-provides global controls:
-\begin{itemize}
-  \item \textbf{Country selector:} Switch between any of the roughly fifty
-    estimated economies. The dropdown is grouped into two sections by actual
-    GVAR status: a \emph{GVAR} group listing the $33$ coupled blocs, and an
-    \emph{Other countries} group listing the standalone single-country models
-    (Section~\ref{sec:variables}). Membership is conveyed purely by the section a
-    country sits in---the names are shown plainly, with no per-option suffix or
-    bold---and the split is driven by the live trade-weights roster rather than a
-    static geographic grouping. Switching reloads all BVAR data and resets
-    conditioning.
-  \item \textbf{User Manual:} Download this document as a PDF.
-  \item \textbf{Uncertainty mode:} ``None'' (deterministic), ``Quick''
-    ($D = 50$ draws), or ``Full'' ($D = 200$ draws).
-  \item \textbf{Compute button:} Triggers the simulation smoother
-    (Section~\ref{sec:uncertainty}) for scenario conditioning. The long-run
-    targets (the forward-pass drift setter of Section~\ref{sec:driftsetter})
-    do \emph{not} require Compute: they apply instantly on every slider move.
-\end{itemize}
-
-\subsection{Chart Panel}
-
-The main panel displays a grid of time-series charts.  The first row
-shows the primary macroeconomic triad---inflation, policy rate, GDP
-growth---plus government spending.  Subsequent rows show core
-inflation, unemployment, consumption, investment, and any
-country-specific variables.
-
-Each chart includes:
-\begin{itemize}
-  \item A \textbf{dotted baseline} forecast with 68\% credible bands
-    (shaded).
-  \item A \textbf{solid scenario line} showing the conditional
-    forecast.
-  \item A \textbf{dashed counterfactual line} (when active) showing
-    the policy counterfactual.
-  \item A \textbf{``Condition'' button} to toggle conditioning on the
-    variable.
-  \item \textbf{Drag interaction:} Click and drag data points on
-    conditioned charts to set target paths.  Right-click to
-    toggle individual quarters on or off.
-\end{itemize}
-
-\paragraph{GVAR solve badge and the ``Solve full GVAR'' button.}
-On a GVAR-linked bloc a small badge above the charts reports the cross-country
-solve that produced the displayed scenario, together with its sweep count,
-spectral radius $\rho$, and time. Because the US is now endogenous
-(Section~\ref{sec:gvar:solvemode}), dragging a pin shows a fast first-order
-\emph{direct preview} (an amber ``GVAR DIRECT preview'' badge); when a preview is
-on screen a blue \textbf{Solve full GVAR} button is offered to compute the
-complete cross-country fixed point---all feedback loops, including the
-Rest-of-World feedback onto the US (a blue ``GVAR full solve'' badge). While a
-solve is running a ``computing\ldots'' pill is shown so a structure-change
-re-probe does not look like a freeze. On standalone (non-GVAR) blocs no badge or
-button appears; the scenario is the ordinary single-country conditional forecast.
-
-\subsection{Control Panel (Sidebar)}
-
-\subsubsection{Scenario Section}
-\begin{itemize}
-  \item \textbf{Scenario name:} Editable text field.
-  \item \textbf{Reset:} Clear all conditioning to return to baseline.
-  \item \textbf{Save/Load:} Export and import scenarios as Excel files.
-    The Excel format includes sheets for settings, conditioning paths,
-    active quarters, rate adjustments, and a variable map for
-    reproducibility.
-  \item \textbf{Example:} Download a pre-built inflation-surge
-    scenario.
-  \item \textbf{Conditioning sliders:} Per-variable, per-quarter
-    deviation sliders ($\pm 3$~pp) for each conditioned variable.
-\end{itemize}
-
-\subsubsection{Policy Counterfactual Section}
-\begin{itemize}
-  \item \textbf{Counterfactual toggle:} Enter/exit counterfactual mode.
-  \item \textbf{DSGE model browser:} Select from 169~models, searchable
-    by name or reference.
-  \item \textbf{Policy rule selector:} Choose from 9~standardized
-    monetary policy rules (Table in Section~\ref{sec:dsge}).
-  \item \textbf{Rule-based / Optimal toggle:} Switch between specifying
-    the rate path via a Taylor-type rule or via the
-    \citet{BarnichonMesters2023} optimal policy
-    (Section~\ref{sec:bm}).
-  \item \textbf{Dual-mandate slider:} In optimal mode, adjust the
-    relative weight on price stability versus full employment.
-\end{itemize}
-
-\subsubsection{Long-Run Targets Section}
-The \textbf{Long-run targets} panel (Section~\ref{sec:driftsetter}) lets
-the user pin a variable's long-horizon ($\approx H$-quarter) forecast in
-the chart's own display units.
-\begin{itemize}
-  \item \textbf{Add a target:} Pick a variable and set its long-run
-    value. Each slider defaults to the model's own terminal forecast, so
-    an unmoved slider is an exact no-op; the terminal forecast then
-    \emph{glides} to the target and drags the other variables along the
-    estimated dynamics. It is instant --- no Compute, no re-solve --- and
-    translates the baseline and scenario fans rigidly (band widths
-    unchanged).
-  \item \textbf{Policy rate:} Set directly through its own long-run-target
-    slider, like every other variable; there is no separate Taylor-rule
-    rate overlay.
-  \item \textbf{Model-based vs.\ with-judgement (per variable):} Every
-    variable is \emph{model-based} by default --- its slider rests at the
-    model's own terminal estimate (the \texttt{est} reference), so its
-    forecast is exactly what the model produces. Moving a slider (or
-    applying the preset below) makes that variable \emph{with-judgement}:
-    the target is highlighted, a per-row reset-to-estimate control
-    appears, and the footer badge reads \texttt{N targets $\cdot$ exact}.
-    The flag is per-country and per-variable, and a country switch resets
-    every variable to model-based.
-  \item \textbf{Consensus anchors (optional preset, off by default):}
-    Where a bloc has publicly-defensible long-run values, an
-    \emph{Apply consensus anchors} button loads public-knowledge defaults
-    (central-bank inflation target, potential growth, neutral policy rate
-    $r^\ast+\pi^\ast$, NAIRU) for the well-conditioned variables only ---
-    deliberately omitting near-singular/perverse sliders. It is opt-in: the
-    raw model estimate stays the default view until clicked, and
-    \emph{Clear} reverts every variable to model-based. The anchors live in
-    \texttt{app/public/data/default\_anchors.json}.
-  \item \textbf{Caveats shown inline:} the \emph{real-growth} target owns
-    the debt-snowball direction (it is not a structural debt fix); on a
-    GVAR bloc the target is marginal; near-singular sliders are disabled.
-\end{itemize}
-
-\subsubsection{Cross-Border Spillovers Section}\label{sec:ui-spillovers}
-On a GVAR-linked bloc the sidebar exposes \emph{two independent}
-cross-border switches, both \textbf{off by default}, that control whether
-edits on the viewed economy propagate to the rest of the world. They act
-through \emph{distinct} mechanisms and must not be conflated:
-\begin{itemize}
-  \item \textbf{Scenario spillovers (GVAR solve)} --- store flag
-    \texttt{gvarScenarioSpillover}. Governs whether a \emph{conditioning
-    scenario} (the pins of Section~\ref{sec:partial}) on one bloc
-    propagates to its trade partners through the \emph{live coupled GVAR
-    solve} of the affine fixed point $x = Mx + d$
-    (Section~\ref{sec:gvar:fixedpoint}). \emph{Off} (default): the
-    conditioned forecast is the \emph{local} single-country path with
-    trade partners frozen --- fast, and the default so a drag never
-    triggers the heavy cross-country solve. \emph{On}: the live
-    cross-country preview engages on every pin edit. Independently of this
-    switch, the \textbf{Solve full GVAR} button computes the
-    \emph{complete} cross-country fixed point (all feedback loops,
-    including RoW$\rightarrow$US) on demand
-    (Section~\ref{sec:gvar:solvemode}).
-  \item \textbf{Long-run target spillovers (GVAR constant shifts)} ---
-    store flag \texttt{spilloverEnabled}. Governs whether the
-    \emph{long-run-target} constant/intercept shifts ($\delta c$ of
-    Section~\ref{sec:driftsetter}) propagate cross-country through the
-    \emph{precomputed} $(I-M)^{-1}$ coupling, rather than through a live
-    solve. \emph{Off} (default): a long-run target moves \emph{only} its
-    own economy (the viewed bloc's own $\delta c$ always applies locally).
-    \emph{On}: every active bloc's $\delta c$ is injected into the GVAR
-    forcing and propagated to the rest of the world. In both modes
-    $\delta c = 0$ remains a byte-exact no-op.
-\end{itemize}
-The first switch propagates \emph{scenario pins} via the \emph{solve}; the
-second propagates \emph{long-run constants} via the \emph{precomputed
-inverse}. Both persist across a country switch (they are global model
-properties) and are restored to \emph{off} by a full reset.
-
-\begin{remark}[In-app switch labels lag these names]
-\label{rem:switch_label_followup}
-The two store flags above are the precise, econometrically-correct
-identifiers for the two mechanisms. As of this writing the in-app sidebar
-labels do not yet match them one-for-one: the
-\texttt{gvarScenarioSpillover} switch is currently captioned ``Long-run
-target spillovers (GVAR constants)'' and \texttt{spilloverEnabled}
-``Long-run trend spillovers'' in
-\texttt{app/src/components/controls/ControlPanel.tsx}. The mechanisms are
-exactly as documented here --- a scenario/solve switch and a long-run
-constant/$(I-M)^{-1}$ switch --- and the UI captions are flagged for a
-follow-up rename to ``Scenario spillovers (GVAR solve)'' and ``Long-run
-target spillovers (GVAR constant shifts)'' respectively.
-\end{remark}
-
-\subsection{Export}\label{sec:export}
-
-The scenario bar at the bottom provides four export formats:
-
-\begin{itemize}
-  \item \textbf{CSV:} Tabular data with columns for each variable's
-    Q16 (16th percentile), baseline (median), Q84 (84th percentile),
-    active scenario, deviation from baseline, and counterfactual (if
-    active).  Rows span historical quarters through the full forecast
-    horizon.
-  \item \textbf{Excel:} A workbook with per-variable detail sheets
-    (Q16, baseline, Q84, scenario, deviation, counterfactual) and a
-    summary sheet showing all variables side by side.
-  \item \textbf{PNG:} A ZIP archive of high-resolution chart images
-    (1200$\times$500\,px) capturing the full visual state including
-    all rendered scenarios, uncertainty bands, and counterfactuals.
-  \item \textbf{PDF:} A multi-page PDF with one chart per page
-    (landscape orientation), including metadata footers with country,
-    timestamp, and chart title.
-\end{itemize}
-
-All tabular exports (CSV, Excel) respect the active growth-rate
-toggle: if year-over-year is selected, the exported values reflect
-the y/y transformation.  Visual exports (PNG, PDF) capture exactly
-what is displayed on screen, including all visible scenarios and their
-uncertainty bands.
-
-\subsubsection{Multi-Scenario Support}
-
-The tool supports up to four simultaneous scenarios.  Each scenario's
-conditional forecast and uncertainty bands are cached when computed, so
-that switching between scenarios preserves their results.  Tabular
-exports include data for the active scenario; visual exports capture
-all visible scenario lines and bands.
-
-
 %% ================================================================
 \section{Technical Notes}\label{sec:technical}
 %% ================================================================
@@ -6559,16 +8011,21 @@ in the interest of honesty for a live research tool. Each cites the source
 file where it lives.
 
 \begin{enumerate}
-  \item \textbf{China fiscal debt double-counts inflation.} The fiscal
-    debt-snowball roll-forward (\texttt{fiscalAccounting.ts}) builds the
-    quarterly nominal GDP growth as
-    $\Delta(\texttt{idx.gdp}) + \Delta(\texttt{idx.deflator})$, i.e.\
-    real growth plus inflation. For China the resolved \texttt{idx.gdp}
-    points at \texttt{GDP\_CN}, which is \emph{nominal} GDP, while
-    \texttt{idx.deflator} points at \texttt{CPI\_CN}---so inflation is
-    added \emph{twice} and the CN debt-to-GDP path is biased. The fix
-    requires a proper real/nominal split for the CN bloc (the other fiscal
-    blocs carry a real GDP variable, so they are correct).
+  \item \textbf{China fiscal debt inflation double-count --- RESOLVED
+    (June~2026).} The fiscal debt-snowball roll-forward
+    (\texttt{fiscalAccounting.ts}) builds quarterly nominal GDP growth as
+    $\Delta(\texttt{idx.gdp}) + \Delta(\texttt{idx.deflator})$, i.e.\ real
+    growth plus inflation. Formerly the resolved CN \texttt{idx.gdp} pointed
+    at a \emph{nominal} \texttt{GDP\_CN} while \texttt{idx.deflator} pointed
+    at \texttt{CPI\_CN}, so inflation was added \emph{twice} and the CN
+    debt-to-GDP path was biased. The June-2026 endogenous-US 33-bloc
+    GVAR-EM re-estimate re-sourced \texttt{GDP\_CN} as a \emph{real}
+    chain-linked SA volume index (base 2011Q1=100) and set
+    \texttt{CN/fiscal\_meta.json} \texttt{idx.gdpIsNominal=false}, so the
+    growth term is now genuinely real growth plus a CPI term (CPI~$\approx$~0
+    in this window), on the same footing as the other fiscal blocs. The
+    double-count is gone; only a second-order CPI-versus-GDP-deflator wedge
+    remains (shared by EA/JP/UK/CA).
   \item \textbf{Retired entropic-tilt code still ships (no live path).}
     The user-facing long-run mechanism is now the forward-pass drift
     setter (\texttt{driftSetter.ts}, Section~\ref{sec:driftsetter}), which
