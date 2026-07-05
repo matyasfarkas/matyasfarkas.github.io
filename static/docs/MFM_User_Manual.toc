@@ -274,7 +274,7 @@
 \contentsline {paragraph}{One slider, one equation.}{77}{section*.169}%
 \contentsline {paragraph}{Joint long-run restriction.}{77}{section*.170}%
 \contentsline {paragraph}{Per-variable vs.\ joint (user toggle).}{78}{section*.171}%
-\contentsline {paragraph}{Rigid band translation.}{78}{section*.172}%
+\contentsline {paragraph}{Rigid band translation.}{79}{section*.172}%
 \contentsline {paragraph}{Responsiveness.}{79}{section*.173}%
 \contentsline {paragraph}{The policy rate.}{79}{section*.174}%
 \contentsline {subsection}{\numberline {18.3}When to Use Which}{80}{subsection.18.3}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.25)  4 JUL 2026 07:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.25)  5 JUL 2026 02:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1210,14 +1210,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 4109.
 
 [76] [77] [78] [79] [80] [81] [82]
-Overfull \hbox (48.90714pt too wide) in paragraph at lines 4518--4528
+Overfull \hbox (48.90714pt too wide) in paragraph at lines 4527--4537
 \OT1/cmr/m/n/10.95 vari-able is recorded in the machine-readable \OT1/cmr/m/it/
 10.95 cov-er-age man-i-fest \OT1/cmr/m/n/10.95 (\OT1/cmtt/m/n/10.95 app/public/
 data/coverage[]manifest.json\OT1/cmr/m/n/10.95 ),
  []
 
 [83]
-Overfull \hbox (19.68257pt too wide) in paragraph at lines 4562--4569
+Overfull \hbox (19.68257pt too wide) in paragraph at lines 4571--4578
 \OT1/cmr/m/n/10.95 distributed on FRED), short/policy rates from national-bank 
 or BIS \OT1/cmtt/m/n/10.95 CBPOL \OT1/cmr/m/n/10.95 se-ries (e.g. RBA/RBNZ
  []
@@ -1228,50 +1228,50 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (1.58441pt too wide) in paragraph at lines 4763--4780
+Overfull \hbox (1.58441pt too wide) in paragraph at lines 4772--4789
  []\OT1/cmr/bx/n/10.95 Fixed win-dow and macro-only mask-ing in the pro-duc-tio
 n GVAR loop.[] \OT1/cmr/m/n/10.95 The auto-detected
  []
 
 
-Overfull \hbox (116.86284pt too wide) in paragraph at lines 4763--4780
+Overfull \hbox (116.86284pt too wide) in paragraph at lines 4772--4789
 \OT1/cmr/m/n/10.95 win-dow above is the legacy single-bloc con-ven-tion; the pr
 o-duc-tion GVAR es-ti-ma-tor (\OT1/cmtt/m/n/10.95 pipeline/export[]bvar[]gvar24
 []loop.m\OT1/cmr/m/n/10.95 )
  []
 
 [86]
-Underfull \hbox (badness 10000) in paragraph at lines 4794--4794
+Underfull \hbox (badness 10000) in paragraph at lines 4803--4803
 []\OT1/cmr/bx/n/10.95 Algorithm 4 \OT1/cmr/m/n/10.95 EM-style GVAR es-ti-ma-tio
 n loop (Ja-cobi star re-convergence;
  []
 
 [87]
-Overfull \hbox (19.39795pt too wide) in paragraph at lines 4877--4890
+Overfull \hbox (19.39795pt too wide) in paragraph at lines 4886--4899
 \OT1/cmr/m/n/10.95 for the re-freshed blocs. This is a pure data ex-ten-sion pe
 r-formed by \OT1/cmtt/m/n/10.95 app/scripts/refresh-quarter.mjs\OT1/cmr/m/n/10.
 95 :
  []
 
 [88]
-Overfull \hbox (4.17824pt too wide) in paragraph at lines 4904--4912
+Overfull \hbox (4.17824pt too wide) in paragraph at lines 4913--4921
 \OT1/cmr/m/n/10.95 These per-bloc end-points are pinned in \OT1/cmtt/m/n/10.95 
 app/src/lib/dates.ts \OT1/cmr/m/n/10.95 (\OT1/cmtt/m/n/10.95 DEFAULT[]LAST[]HIS
 T[]DATE$[] \OT1/cmr/m/n/10.95 = []$2026Q1
  []
 
 [89]
-Underfull \hbox (badness 1043) in paragraph at lines 4979--4979
+Underfull \hbox (badness 1043) in paragraph at lines 4988--4988
 []|\OT1/cmr/m/n/10.95 Personal Con-sump-tion Ex-pen-di-tures:
  []
 
 
-Underfull \hbox (badness 7468) in paragraph at lines 5000--5000
+Underfull \hbox (badness 7468) in paragraph at lines 5009--5009
 []|\OT1/cmr/m/n/10.95 Non-Fuel Com-mod-ity Price In-dex
  []
 
 
-Underfull \hbox (badness 5260) in paragraph at lines 5010--5010
+Underfull \hbox (badness 5260) in paragraph at lines 5019--5019
 []|\OT1/cmr/m/n/10.95 US RoW in-fla-tion (trade-weighted
  []
 
@@ -6228,105 +6228,105 @@ Overfull \hbox (28.90327pt too wide) in alignment at lines 3243--3261
 [226])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 6937.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 6946.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.8254pt
-(hyperref)                removed on input line 6937.
+(hyperref)                removed on input line 6946.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 6937.
+(hyperref)                removing `math shift' on input line 6946.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 6937.
+(hyperref)                removing `\times' on input line 6946.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 6937.
+(hyperref)                removing `math shift' on input line 6946.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 6937.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 6946.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.8254pt
-(hyperref)                removed on input line 6937.
+(hyperref)                removed on input line 6946.
 
 [227] [228] [229
 
 ] [230] [231
 
 ]
-Overfull \hbox (81.42726pt too wide) in paragraph at lines 7094--7107
+Overfull \hbox (81.42726pt too wide) in paragraph at lines 7103--7116
 \OT1/cmr/m/n/10.95 round-trips to the cur-sor to ma-chine pre-ci-sion ($[] \OMS
 /cmsy/m/n/10.95 ^^N [] \OT1/cmr/m/n/10.95 =
  []
 
 
-Overfull \hbox (57.94623pt too wide) in paragraph at lines 7108--7125
+Overfull \hbox (57.94623pt too wide) in paragraph at lines 7117--7134
 \OT1/cmr/m/n/10.95 built chart ob-jects against the prior ren-der with a tight 
 struc-tural equal-ity (\OT1/cmtt/m/n/10.95 reconcileCharts\OT1/cmr/m/n/10.95 /\
 OT1/cmtt/m/n/10.95 chartDeepEqual\OT1/cmr/m/n/10.95 ):
  []
 
 
-Overfull \hbox (4.72357pt too wide) in paragraph at lines 7108--7125
+Overfull \hbox (4.72357pt too wide) in paragraph at lines 7117--7134
 \OT1/cmtt/m/n/10.95 conditioned-dot-optimistic\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/
 n/10.95 right-click-plant-at-cursor\OT1/cmr/m/n/10.95 , and \OT1/cmtt/m/n/10.95
  chartgrid-render-memo \OT1/cmr/m/n/10.95 test
  []
 
 [232] [233]
-Underfull \hbox (badness 10000) in paragraph at lines 7261--7265
+Underfull \hbox (badness 10000) in paragraph at lines 7270--7274
 []|\OT1/cmtt/m/n/9 export[]bvar[]gvar24[]loop.m \OT1/cmr/m/n/9 (GVAR--EM es-ti-
 ma-tor);
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
-7269.
+7278.
 (/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
 File: omscmtt.fd 
 )
 LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7269.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7278.
 
 
-Underfull \hbox (badness 7981) in paragraph at lines 7267--7271
+Underfull \hbox (badness 7981) in paragraph at lines 7276--7280
 \OT1/cmr/m/n/9 ac-count-ing); \OT1/cmtt/m/n/9 scripts/ \OT1/cmr/m/n/9 (\OT1/cmt
 t/m/n/9 precompute[]gvar[]coupling.mjs\OT1/cmr/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7267--7271
+Underfull \hbox (badness 10000) in paragraph at lines 7276--7280
 \OT1/cmtt/m/n/9 verify[]gvar24.mjs\OT1/cmr/m/n/9 , \OT1/cmtt/m/n/9 invert[]coup
 ling.\OMS/cmsy/m/n/9 f\OT1/cmtt/m/n/9 m,py\OMS/cmsy/m/n/9 g\OT1/cmr/m/n/9 );
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 7267--7271
+Underfull \hbox (badness 2285) in paragraph at lines 7276--7280
 \OT1/cmtt/m/n/9 public/data/bvar/<CC>/ \OT1/cmr/m/n/9 (the de-ployed JSON the a
 pp
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7273--7275
+Underfull \hbox (badness 10000) in paragraph at lines 7282--7284
 []|\OT1/cmtt/m/n/9 user[]manual.tex\OT1/cmr/m/n/9 ; \OT1/cmtt/m/n/9 REESTIMATIN
 G[]MODELS.md\OT1/cmr/m/n/9 ,
  []
 
 [234]
-Overfull \hbox (13.98291pt too wide) in paragraph at lines 7282--7288
+Overfull \hbox (13.98291pt too wide) in paragraph at lines 7291--7297
 \OT1/cmr/m/n/10.95 hierarchical-prior Gibbs sam-pler \OT1/cmtt/m/n/10.95 bvarGL
 Pmf.m \OT1/cmr/m/n/10.95 and the COVID-as-missing wrap-per \OT1/cmtt/m/n/10.95 
 cgl[]bvarV5.m
  []
 
 [235]
-Overfull \hbox (92.3798pt too wide) in paragraph at lines 7321--7328
+Overfull \hbox (92.3798pt too wide) in paragraph at lines 7330--7337
 \OT1/cmtt/m/n/10.95 baseline.json\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 basel
 ine[]levels.json\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 historical.json\OT1/cm
 r/m/n/10.95 , \OT1/cmtt/m/n/10.95 historical[]levels.json\OT1/cmr/m/n/10.95 , \
@@ -6334,38 +6334,38 @@ OT1/cmtt/m/n/10.95 transformations.json
  []
 
 
-Overfull \hbox (5.66759pt too wide) in paragraph at lines 7344--7355
+Overfull \hbox (5.66759pt too wide) in paragraph at lines 7353--7364
 []\OT1/cmr/bx/n/10.95 Green gate. \OT1/cmr/m/n/10.95 From \OT1/cmtt/m/n/10.95 a
 pp/\OT1/cmr/m/n/10.95 , run the fast fixed-point check \OT1/cmtt/m/n/10.95 npx 
 tsx scripts/verify[]gvar24.mjs
  []
 
 
-Overfull \hbox (71.04039pt too wide) in paragraph at lines 7355--7365
+Overfull \hbox (71.04039pt too wide) in paragraph at lines 7364--7374
 \OT1/cmtt/m/n/10.95 deploy-to-website.yml \OT1/cmr/m/n/10.95 GitHub Ac-tion run
 s \OT1/cmtt/m/n/10.95 npm ci && npm run build \OT1/cmr/m/n/10.95 with \OT1/cmtt
 /m/n/10.95 BASE[]PATH=/bvar-scenario\OT1/cmr/m/n/10.95 ,
  []
 
 
-Overfull \hbox (16.9553pt too wide) in paragraph at lines 7355--7365
+Overfull \hbox (16.9553pt too wide) in paragraph at lines 7364--7374
 \OT1/cmr/m/n/10.95 demic site pub-lished to \OT1/cmr/bx/n/10.95 GitHub Pages\OT
 1/cmr/m/n/10.95 , which re-builds and serves the tool at the \OT1/cmtt/m/n/10.9
 5 /bvar-scenario
  []
 
 [236] [237]
-Overfull \hbox (0.40083pt too wide) in paragraph at lines 7443--7453
+Overfull \hbox (0.40083pt too wide) in paragraph at lines 7452--7462
 \OT1/cmr/m/n/10.95 The sys-tem is eval-u-ated in a com-pan-ion repos-i-tory (\O
 T1/cmtt/m/n/10.95 em-bayesian-gvar-eval\OT1/cmr/m/n/10.95 ) un-der a pre-regist
 ered
  []
 
 LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7460.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7469.
 
 
-Overfull \hbox (51.05225pt too wide) in paragraph at lines 7458--7462
+Overfull \hbox (51.05225pt too wide) in paragraph at lines 7467--7471
 []\OT1/cmtt/m/n/10.95 emgvar[]endo \OT1/cmr/m/n/10.95 --- the full loop with th
 e US \OT1/cmr/m/it/10.95 en-doge-nous \OT1/cmr/m/n/10.95 (\OT1/cmtt/m/n/10.95 U
 S[]ENDOGENOUS$\OT1/cmr/m/n/10.95 = 1$: its own \OT1/cmtt/m/n/10.95 ROW\OMS/cmsy
@@ -6374,7 +6374,7 @@ S[]ENDOGENOUS$\OT1/cmr/m/n/10.95 = 1$: its own \OT1/cmtt/m/n/10.95 ROW\OMS/cmsy
  []
 
 [238] [239] [240] [241] [242] [243] [244]
-Overfull \hbox (12.89319pt too wide) in paragraph at lines 7899--7920
+Overfull \hbox (12.89319pt too wide) in paragraph at lines 7908--7929
 \OT1/cmr/m/n/10.95 constancy over the hori-zon. Bands come from re-running the 
 re-cur-sion over the \OT1/cmtt/m/n/10.95 companion[]draws.json
  []
@@ -6382,10 +6382,10 @@ re-cur-sion over the \OT1/cmtt/m/n/10.95 companion[]draws.json
 [245] [246] [247] [248]
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 8101.
+(enumitem)                sense, on input line 8110.
 
 [249] [250]
-Overfull \hbox (5.97209pt too wide) in paragraph at lines 8166--8175
+Overfull \hbox (5.97209pt too wide) in paragraph at lines 8175--8184
 \OT1/cmr/m/n/10.95 estimation draw reweight-ing that de-gen-er-ated (col-laps-i
 ng ef-fec-tive sam-ple size) when over-constrained. 
  []
@@ -6460,7 +6460,7 @@ blic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb>
-Output written on MFM_User_Manual.pdf (256 pages, 1315294 bytes).
+Output written on MFM_User_Manual.pdf (256 pages, 1315886 bytes).
 PDF statistics:
  3892 PDF objects out of 4296 (max. 8388607)
  3491 compressed objects within 35 object streams

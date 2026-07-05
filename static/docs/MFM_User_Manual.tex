@@ -1053,7 +1053,7 @@ how the tool handles that interference.
 
 \paragraph{How.} As soon as a second target is set, a \textbf{Multiple-target solve}
 toggle appears at the top of the panel with two buttons: \textbf{Per-variable} and
-\textbf{Joint}. \textbf{Joint} is the default.
+\textbf{Joint}. \textbf{Per-variable} is the default.
 
 \paragraph{What you find.} The trade-off, in plain words:
 \begin{itemize}
@@ -4223,22 +4223,31 @@ sensitivity. \emph{Stable} and bounded (the drift can never blow up), but
 \emph{approximate}: it ignores the off-diagonal cross-responses, so it
 \emph{underestimates the spillovers} and the other anchored terminals drift
 off their set values by the cross-drag.
-\item \textbf{Joint} (default) --- the full $M\,\delta c = \psi^\star -
+\item \textbf{Joint} --- the full $M\,\delta c = \psi^\star -
 \psi^{\,0}$ system, so \emph{every} anchored terminal lands exactly on its
-value. \emph{Correct}, but a strongly-correlated target set makes $M$
-ill-conditioned and can \emph{destabilise} the path; the tool flags that
-case and the user switches to per-variable. A genuinely singular $M$ falls
-back to the per-variable $\delta c$ numerically (never a NaN path).
+value. \emph{Correct at the terminal}, but a strongly-correlated target set
+makes $M$ ill-conditioned and can \emph{destabilise} the path; the tool
+flags that case and the user switches to per-variable. A genuinely singular
+$M$ falls back to the per-variable $\delta c$ numerically (never a NaN path).
 \end{itemize}
 Both modes reduce to the same scalar for a single target
 ($|\mathcal{K}|=1$), and $\psi^\star \equiv \psi^{\,0}$ is a byte-exact
 no-op in either. The shipped default anchor sets are deliberately kept to a
 \emph{bare minimum} (long-run real growth and one inflation anchor per
 economy, plus the effective-rate/revenue/expenditure trio for the six
-fiscal-block economies) precisely so the joint system stays well
-conditioned out of the box: under these defaults joint is exact and stable
-on essentially every bloc, so per-variable is offered as the deliberate
-stability escape when a user adds many correlated targets.
+fiscal-block economies) so the joint system stays well conditioned out of
+the box. Well-conditioned is not the same as well-shaped, however: because
+$\delta c$ is a \emph{rigid translation} of the whole path, joint exactness
+at the terminal is bought with a front-loaded near-term shift, and when the
+model's own terminal sits far from the anchor the first forecast years can
+be pushed to implausible values even under the bare-minimum set (at the
+2026\,Q1 origin the US deflator --- model terminal $4.3$ against the $2.0$
+anchor --- displayed \emph{negative} inflation over the first two forecast
+years under joint, against $+1.7$ under per-variable). \textbf{Per-variable
+is therefore the shipped default} --- stable and near-term-plausible, at the
+cost of terminals that land only approximately --- and joint is the
+deliberate opt-in for users who need every anchor met exactly and accept
+the near-term reshaping.
 
 \paragraph{Rigid band translation.}
 The deviation $\Delta Y$ of~\eqref{eq:driftcol} is added \emph{identically}
