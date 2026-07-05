@@ -126,40 +126,40 @@
 \contentsline {paragraph}{What you do.}{27}{section*.84}%
 \contentsline {paragraph}{How.}{27}{section*.85}%
 \contentsline {paragraph}{What you find.}{27}{section*.86}%
-\contentsline {subsection}{\numberline {7.3}Setting the rate adjustment}{27}{subsection.7.3}%
-\contentsline {paragraph}{What you do.}{27}{section*.87}%
+\contentsline {subsection}{\numberline {7.3}Setting the rate adjustment}{28}{subsection.7.3}%
+\contentsline {paragraph}{What you do.}{28}{section*.87}%
 \contentsline {paragraph}{How.}{28}{section*.88}%
 \contentsline {paragraph}{What you find.}{28}{section*.89}%
 \contentsline {subsection}{\numberline {7.4}Two ways the economy can respond}{28}{subsection.7.4}%
 \contentsline {paragraph}{What you do.}{28}{section*.90}%
 \contentsline {paragraph}{How.}{28}{section*.91}%
-\contentsline {paragraph}{What you find.}{28}{section*.92}%
+\contentsline {paragraph}{What you find.}{29}{section*.92}%
 \contentsline {subsection}{\numberline {7.5}Reading the result, and the Level \textbar {} Rate (IRF) toggle}{29}{subsection.7.5}%
 \contentsline {paragraph}{What you do.}{29}{section*.93}%
 \contentsline {paragraph}{How.}{29}{section*.94}%
 \contentsline {paragraph}{What you find.}{29}{section*.95}%
 \contentsline {subsection}{\numberline {7.6}Letting the tool choose the rate path: Optimal (B\&M)}{29}{subsection.7.6}%
 \contentsline {paragraph}{What you do.}{29}{section*.96}%
-\contentsline {paragraph}{How.}{29}{section*.97}%
+\contentsline {paragraph}{How.}{30}{section*.97}%
 \contentsline {paragraph}{What you find.}{30}{section*.98}%
 \contentsline {subsection}{\numberline {7.7}A fiscal lever too}{30}{subsection.7.7}%
 \contentsline {paragraph}{What you do.}{30}{section*.99}%
 \contentsline {paragraph}{How.}{30}{section*.100}%
 \contentsline {paragraph}{What you find.}{30}{section*.101}%
 \contentsline {section}{\numberline {8}Public finances and the external accounts}{30}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Reading the fiscal charts}{30}{subsection.8.1}%
-\contentsline {paragraph}{What you do.}{30}{section*.102}%
-\contentsline {paragraph}{How.}{30}{section*.103}%
+\contentsline {subsection}{\numberline {8.1}Reading the fiscal charts}{31}{subsection.8.1}%
+\contentsline {paragraph}{What you do.}{31}{section*.102}%
+\contentsline {paragraph}{How.}{31}{section*.103}%
 \contentsline {paragraph}{What you find.}{31}{section*.104}%
-\contentsline {subsection}{\numberline {8.2}Move the fiscal forecast through its drivers}{31}{subsection.8.2}%
-\contentsline {paragraph}{What you do.}{31}{section*.105}%
-\contentsline {paragraph}{How.}{31}{section*.106}%
+\contentsline {subsection}{\numberline {8.2}Move the fiscal forecast through its drivers}{32}{subsection.8.2}%
+\contentsline {paragraph}{What you do.}{32}{section*.105}%
+\contentsline {paragraph}{How.}{32}{section*.106}%
 \contentsline {paragraph}{What you find.}{32}{section*.107}%
 \contentsline {subsection}{\numberline {8.3}Set a debt path or a primary-balance path directly}{32}{subsection.8.3}%
 \contentsline {paragraph}{What you do.}{32}{section*.108}%
 \contentsline {paragraph}{How.}{32}{section*.109}%
 \contentsline {paragraph}{What you find.}{32}{section*.110}%
-\contentsline {subsection}{\numberline {8.4}Long-run fiscal targets}{32}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.4}Long-run fiscal targets}{33}{subsection.8.4}%
 \contentsline {subsection}{\numberline {8.5}The external accounts}{33}{subsection.8.5}%
 \contentsline {paragraph}{What you do.}{33}{section*.111}%
 \contentsline {paragraph}{How.}{33}{section*.112}%
@@ -170,12 +170,12 @@
 \contentsline {paragraph}{What you do.}{34}{section*.114}%
 \contentsline {paragraph}{How.}{34}{section*.115}%
 \contentsline {paragraph}{What you find.}{34}{section*.116}%
-\contentsline {subsection}{\numberline {9.2}Putting a band around your scenario}{34}{subsection.9.2}%
-\contentsline {paragraph}{What you do.}{34}{section*.117}%
+\contentsline {subsection}{\numberline {9.2}Putting a band around your scenario}{35}{subsection.9.2}%
+\contentsline {paragraph}{What you do.}{35}{section*.117}%
 \contentsline {paragraph}{How.}{35}{section*.118}%
 \contentsline {paragraph}{What you find.}{35}{section*.119}%
-\contentsline {subsection}{\numberline {9.3}Why the band pinches shut at your pins}{35}{subsection.9.3}%
-\contentsline {paragraph}{What you find.}{35}{section*.120}%
+\contentsline {subsection}{\numberline {9.3}Why the band pinches shut at your pins}{36}{subsection.9.3}%
+\contentsline {paragraph}{What you find.}{36}{section*.120}%
 \contentsline {subsection}{\numberline {9.4}Long-run targets move the bands instantly}{36}{subsection.9.4}%
 \contentsline {paragraph}{What you do.}{36}{section*.121}%
 \contentsline {paragraph}{What you find.}{36}{section*.122}%
@@ -190,14 +190,14 @@
 \contentsline {paragraph}{What you find.}{37}{section*.128}%
 \contentsline {subsection}{\numberline {10.2}Observed history versus model-filled history}{37}{subsection.10.2}%
 \contentsline {paragraph}{What you do.}{37}{section*.129}%
-\contentsline {paragraph}{How.}{37}{section*.130}%
+\contentsline {paragraph}{How.}{38}{section*.130}%
 \contentsline {paragraph}{What you find.}{38}{section*.131}%
 \contentsline {subsection}{\numberline {10.3}Check where every number comes from}{38}{subsection.10.3}%
 \contentsline {paragraph}{What you do.}{38}{section*.132}%
 \contentsline {paragraph}{How.}{38}{section*.133}%
 \contentsline {paragraph}{What you find.}{38}{section*.134}%
-\contentsline {subsection}{\numberline {10.4}See how the latest data release moved the world}{38}{subsection.10.4}%
-\contentsline {paragraph}{What you do.}{38}{section*.135}%
+\contentsline {subsection}{\numberline {10.4}See how the latest data release moved the world}{39}{subsection.10.4}%
+\contentsline {paragraph}{What you do.}{39}{section*.135}%
 \contentsline {paragraph}{How.}{39}{section*.136}%
 \contentsline {paragraph}{What you find.}{39}{section*.137}%
 \contentsline {subsection}{\numberline {10.5}The update cycle: quarterly shifts, annual re-estimation}{39}{subsection.10.5}%
@@ -287,31 +287,31 @@
 \contentsline {subsection}{\numberline {19.3}Data Sources}{83}{subsection.19.3}%
 \contentsline {paragraph}{Source families.}{83}{section*.179}%
 \contentsline {paragraph}{Coverage and last-observation conventions.}{84}{section*.180}%
-\contentsline {paragraph}{Provenance flags surfaced for the reader.}{84}{section*.181}%
+\contentsline {paragraph}{Provenance flags surfaced for the reader.}{85}{section*.181}%
 \contentsline {subsection}{\numberline {19.4}COVID-as-Missing Estimation}{85}{subsection.19.4}%
-\contentsline {paragraph}{Window selection.}{85}{section*.183}%
-\contentsline {paragraph}{Fixed window and macro-only masking in the production GVAR loop.}{86}{section*.184}%
-\contentsline {subsection}{\numberline {19.5}Common-Vintage Harmonization and the 2026Q1 Observed Refresh}{88}{subsection.19.5}%
-\contentsline {paragraph}{Step 1 --- estimation-build harmonization to 2025Q4.}{88}{section*.185}%
-\contentsline {paragraph}{Step 2 --- the 2026Q1 observed-data refresh (no re-estimation).}{88}{section*.186}%
+\contentsline {paragraph}{Window selection.}{86}{section*.183}%
+\contentsline {paragraph}{Fixed window and macro-only masking in the production GVAR loop.}{87}{section*.184}%
+\contentsline {subsection}{\numberline {19.5}Common-Vintage Harmonization and the 2026Q1 Observed Refresh}{87}{subsection.19.5}%
+\contentsline {paragraph}{Step 1 --- estimation-build harmonization to 2025Q4.}{87}{section*.185}%
+\contentsline {paragraph}{Step 2 --- the 2026Q1 observed-data refresh (no re-estimation).}{89}{section*.186}%
 \contentsline {paragraph}{The ragged edge (panel default 2026Q1; three exceptions).}{89}{section*.187}%
 \contentsline {subsection}{\numberline {19.6}Predictive Uncertainty Bands}{89}{subsection.19.6}%
-\contentsline {subsection}{\numberline {19.7}US Specification}{89}{subsection.19.7}%
+\contentsline {subsection}{\numberline {19.7}US Specification}{90}{subsection.19.7}%
 \contentsline {subsection}{\numberline {19.8}Variable Transformations, Priors, and Financial Tags by Economy}{92}{subsection.19.8}%
 \contentsline {paragraph}{Cross-economy coherence matrix.}{92}{section*.188}%
-\contentsline {paragraph}{The 33 GVAR blocs.}{93}{section*.190}%
+\contentsline {paragraph}{The 33 GVAR blocs.}{92}{section*.190}%
 \contentsline {paragraph}{The 17 euro-area standalones.}{111}{section*.191}%
 \contentsline {paragraph}{Coherence review.}{122}{section*.192}%
 \contentsline {section}{\numberline {20}Per-Country Data Sources and Transformations}{122}{section.20}%
-\contentsline {paragraph}{Transformation and COVID conventions (system-wide).}{122}{section*.193}%
-\contentsline {paragraph}{The new credit block (flagged throughout).}{122}{section*.194}%
+\contentsline {paragraph}{Transformation and COVID conventions (system-wide).}{123}{section*.193}%
+\contentsline {paragraph}{The new credit block (flagged throughout).}{123}{section*.194}%
 \contentsline {subsection}{\numberline {20.1}Per-Economy Data Documentation: the Six Core Blocs}{123}{subsection.20.1}%
 \contentsline {paragraph}{Transformation and COVID conventions.}{123}{section*.195}%
-\contentsline {paragraph}{The new credit block (flagged).}{123}{section*.196}%
+\contentsline {paragraph}{The new credit block (flagged).}{124}{section*.196}%
 \contentsline {subsection}{\numberline {20.2}United States (US)}{124}{subsection.20.2}%
-\contentsline {subsection}{\numberline {20.3}Euro Area (EA)}{126}{subsection.20.3}%
-\contentsline {subsection}{\numberline {20.4}Japan (JP)}{128}{subsection.20.4}%
-\contentsline {subsection}{\numberline {20.5}United Kingdom (UK)}{130}{subsection.20.5}%
+\contentsline {subsection}{\numberline {20.3}Euro Area (EA)}{127}{subsection.20.3}%
+\contentsline {subsection}{\numberline {20.4}Japan (JP)}{129}{subsection.20.4}%
+\contentsline {subsection}{\numberline {20.5}United Kingdom (UK)}{131}{subsection.20.5}%
 \contentsline {subsection}{\numberline {20.6}Canada (CA)}{132}{subsection.20.6}%
 \contentsline {subsection}{\numberline {20.7}China (CN)}{134}{subsection.20.7}%
 \contentsline {subsection}{\numberline {20.8}Euro-core single-country BVARs (AT, BE, DE, FR, NL)}{136}{subsection.20.8}%
