@@ -975,6 +975,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#gvar-propagation-of-an-external-forecast-compute-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GVAR propagation of an external forecast (compute note)
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1526,6 +1537,17 @@
     <span class="md-ellipsis">
       
         Shipped WEO forecasts (Load WEO button)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gvar-propagation-of-an-external-forecast-compute-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GVAR propagation of an external forecast (compute note)
       
     </span>
   </a>
@@ -2947,6 +2969,19 @@ rates</strong> and nothing quarterly, so only each bloc's growth + inflation var
 <p>The Excel template (<code>Export template</code>) uses the same variable-id-keyed layout as the import: a
 <strong>Forecasts</strong> sheet with quarter labels in column 1 and variable ids across the header, prefilled with
 the bloc's baseline, plus a <strong>Notes</strong> sheet naming the units. The importer accepts that XLSX or the JSON.</p>
+<h3 id="gvar-propagation-of-an-external-forecast-compute-note">GVAR propagation of an external forecast (compute note)<a class="headerlink" href="#gvar-propagation-of-an-external-forecast-compute-note" title="Permanent link">&para;</a></h3>
+<p>An imported forecast on a <em>linked</em> (GVAR) bloc propagates cross-country. The two conditioning modes take
+different solve paths:
+- <strong>Exact pins</strong> (drag / trust 100%) — the cross-country transmission is linear, so it runs through the
+  pre-built response kernels + the cached coupling inverse <code>(I−M)⁻¹</code> (<code>coupling_default.json.gz</code>); the
+  closed-form / one-hop-direct solvers apply. Fast and cacheable.
+- <strong>Soft pins</strong> (external forecast with uncertainty) — the per-cell measurement variance changes each
+  bloc's smoother gain, which the exact-pin kernels don't represent. So <code>runGVARSolve</code> <strong>routes to the
+  iterative <code>solveGVAR</code></strong> (Gauss–Seidel: forecast each bloc, feed partners via the star channel, repeat to
+  a fixed point), threading <code>opts.condVarByCountry[bloc]</code> into each per-bloc <code>conditionalForecast</code>. Exact
+  but not cacheable, so it runs only on the full solve (Compute / Solve full GVAR), not the live preview.</p>
+<p>No external forecast ⇒ <code>condVarByCountry</code> undefined ⇒ the untouched closed-form/direct path (byte-identical;
+<code>gvar-coupling-artifact</code> / <code>gvar-closed-form-*</code> tests). Propagation + no-op locked by <code>gvar-external-spillover.test.ts</code>.</p>
 
 
 

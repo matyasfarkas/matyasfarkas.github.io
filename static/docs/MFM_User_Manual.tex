@@ -1082,8 +1082,10 @@ error bar --- taller when you trust it less --- and every other chart moves in r
 because the outside number enters through the same estimated dynamics as any pin: an
 imported growth path cools the rate, shifts inflation, and so on. A cell you have pinned by
 hand always wins over an imported one. Turning the trust to zero, or pressing the source's
-\textbf{✕}, removes it. This release applies imported forecasts to the \emph{viewed} economy;
-the cross-country version (a WEO path for the United States moving the euro area) is planned.
+\textbf{✕}, removes it. On a linked economy (the United States, euro area, Japan, United
+Kingdom, Canada, China), an imported forecast also travels to the \emph{other} economies: press
+\textbf{Solve full GVAR} (or \textbf{Compute}) and, say, a United States growth path pulls the
+euro area, Japan and China with it through trade and financial linkages.
 
 \paragraph{Under the hood.} An imported forecast is a \emph{soft} conditioning: the
 Durbin--Koopman smoother (Part~II, \S\ref{sec:kalman}) is run with a measurement variance on
@@ -1091,6 +1093,21 @@ that cell, set from the trust dial relative to the model's own predictive band -
 $t$ gives variance $\mathrm{predVar}\cdot(1-t)/t$, so $t\to1$ is an exact observation and
 $t\to0$ is no information at all. The band therefore shrinks only \emph{partially} at a soft
 pin, which is the honest thing to draw.
+
+\paragraph{Why the cross-country version is slower.} The tool has two ways to move the linked
+economies, and an imported forecast uses the slower one. When every number is pinned
+\emph{exactly} --- a dragged point, or an imported forecast at full trust --- the way a change
+in one economy spreads to the others is a fixed, straight-line relationship. The tool works out
+that whole spillover pattern once, stores it with the model, and then any exactly-pinned
+cross-country solve is just fast arithmetic with the stored pattern. An imported forecast
+\emph{with uncertainty} breaks that shortcut: how firmly each number binds now depends on its
+trust setting, which changes the underlying responses, so the stored spillover pattern no longer
+fits. Instead the tool solves the linked economies the direct way --- it forecasts each economy,
+passes the result to its trading partners, forecasts again, and repeats until nothing moves. That
+is exact but takes a few seconds across the fifty-odd economies, so an \emph{uncertain} external
+forecast is propagated across borders only when you ask for it (\textbf{Solve full GVAR} or
+\textbf{Compute}), never live as you type; the single economy you are viewing still updates
+instantly either way.
 
 \paragraph{Saving the whole picture.} Because an outside forecast, your conditioning, the
 long-run targets and the cross-country pins together define your view, the scenario header
