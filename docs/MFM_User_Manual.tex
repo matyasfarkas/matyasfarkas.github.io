@@ -1049,6 +1049,55 @@ model-driven, so the block simply does not appear there (Japan is one; so are th
 economies whose long-run biases are too large to fix by a target and are queued for
 re-estimation instead).
 
+\subsection{Bring in an outside forecast}\label{sec:use-external}
+
+\paragraph{What you do.} Feed the model someone else's forecast --- IMF WEO, a consensus
+survey, a market curve, your own desk numbers --- as an \emph{ingredient} rather than as a
+hard fact. You decide how much to trust it; the model reconciles it with everything else.
+
+\paragraph{How.} Open \textbf{External forecasts} in the left panel. You have three ways in:
+\begin{enumerate}
+  \item \textbf{Load WEO} --- one click loads the IMF World Economic Outlook forecast for the
+    economy you are viewing (real GDP growth and CPI inflation). WEO is annual, so each year's
+    figure is applied softly to that year's four quarters and the model fills in the shape;
+    WEO carries no policy rates, so the rate stays model-driven.
+  \item \textbf{Export template} downloads an Excel file for this economy --- the headline
+    variables across the forecast quarters, pre-filled with the model's own baseline as a
+    starting point, with a Notes sheet naming the units. Overwrite the cells with your numbers
+    and re-import. This is the easiest way to see exactly how a forecast should be structured.
+  \item \textbf{Import forecasts\ldots} accepts that Excel file, or a small JSON
+    (\texttt{data/sample\_external\_forecast.json} is a template):
+\begin{quote}\small\ttfamily
+\{ "source": "WEO", "bloc": "US",\\
+\phantom{xx}"forecasts": \{ "GDPH": \{ "2026Q2": 2.4, "2026Q3": 2.2 \} \} \}
+\end{quote}
+\end{enumerate}
+Whichever way you bring it in, the source appears in a list with a \textbf{trust} slider. At
+\textbf{100\,\%} the forecast is pinned exactly (identical to conditioning it by hand); lower
+it and the model is allowed to pull the number toward its own view --- half-way means the band
+around that point is about half the model's own.
+
+\paragraph{What you find.} Each imported point shows as a \textbf{teal diamond} with a small
+error bar --- taller when you trust it less --- and every other chart moves in response,
+because the outside number enters through the same estimated dynamics as any pin: an
+imported growth path cools the rate, shifts inflation, and so on. A cell you have pinned by
+hand always wins over an imported one. Turning the trust to zero, or pressing the source's
+\textbf{✕}, removes it. This release applies imported forecasts to the \emph{viewed} economy;
+the cross-country version (a WEO path for the United States moving the euro area) is planned.
+
+\paragraph{Under the hood.} An imported forecast is a \emph{soft} conditioning: the
+Durbin--Koopman smoother (Part~II, \S\ref{sec:kalman}) is run with a measurement variance on
+that cell, set from the trust dial relative to the model's own predictive band --- trust
+$t$ gives variance $\mathrm{predVar}\cdot(1-t)/t$, so $t\to1$ is an exact observation and
+$t\to0$ is no information at all. The band therefore shrinks only \emph{partially} at a soft
+pin, which is the honest thing to draw.
+
+\paragraph{Saving the whole picture.} Because an outside forecast, your conditioning, the
+long-run targets and the cross-country pins together define your view, the scenario header
+carries \textbf{Export session} / \textbf{Import session}: one JSON that bundles all of it
+across every country --- so a colleague opens exactly what you see, or you pick the work up
+tomorrow. (The older per-scenario \textbf{Save} exports one country's conditioning to Excel.)
+
 \subsection{Several targets at once: Per-variable or Joint}
 
 \paragraph{What you do.} When you set two or more targets, they can interfere: pushing

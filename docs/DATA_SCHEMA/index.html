@@ -930,6 +930,56 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#external-forecast-import-full-session-files-client-side-not-shipped-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External-forecast import + full-session files (client-side, not shipped data)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="External-forecast import + full-session files (client-side, not shipped data)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#external-forecast-import-controlpanel-external-forecasts-import-forecasts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External-forecast import (ControlPanel → External forecasts → Import forecasts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-session-file-export-session-import-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full-session file (Export session / Import session)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shipped-weo-forecasts-load-weo-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shipped WEO forecasts (Load WEO button)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1426,6 +1476,56 @@
     <span class="md-ellipsis">
       
         13.3 realizations.json — the truth panel for scoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-forecast-import-full-session-files-client-side-not-shipped-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External-forecast import + full-session files (client-side, not shipped data)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="External-forecast import + full-session files (client-side, not shipped data)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#external-forecast-import-controlpanel-external-forecasts-import-forecasts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External-forecast import (ControlPanel → External forecasts → Import forecasts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-session-file-export-session-import-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full-session file (Export session / Import session)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shipped-weo-forecasts-load-weo-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shipped WEO forecasts (Load WEO button)
       
     </span>
   </a>
@@ -2788,6 +2888,65 @@ Since the 2026-06 CN-only re-estimate, CN's GDP is <strong>real</strong> (no lon
 subtraction); growth is scored as <code>4·Δ(100·log GDP_CN)</code> directly, the same convention as
 the other blocs, on <em>both</em> the forecast and realization side (<code>EMPIRICAL_PROTOCOL.md</code> §0).</p>
 </blockquote>
+<hr />
+<h2 id="external-forecast-import-full-session-files-client-side-not-shipped-data">External-forecast import + full-session files (client-side, not shipped data)<a class="headerlink" href="#external-forecast-import-full-session-files-client-side-not-shipped-data" title="Permanent link">&para;</a></h2>
+<p>Two user-facing JSON contracts (not part of <code>public/data/</code>), consumed and produced entirely in the
+browser. Documented here so a third party can generate them programmatically.</p>
+<h3 id="external-forecast-import-controlpanel-external-forecasts-import-forecasts">External-forecast import (<code>ControlPanel → External forecasts → Import forecasts</code>)<a class="headerlink" href="#external-forecast-import-controlpanel-external-forecasts-import-forecasts" title="Permanent link">&para;</a></h3>
+<p>One source, one bloc. Values are in the chart's <strong>display units</strong> (q/q-annualised % for <code>log</code>
+growth/inflation vars, the level in % for <code>lin</code> rates, the index level for level-displayed vars).
+Parsed by <code>app/src/lib/compute/externalForecast.ts::parseExternalForecastFile</code>; each point becomes a
+<strong>soft</strong> condition whose measurement variance is set by the per-source <em>trust</em> slider
+(<code>predVar·(1−t)/t</code>; trust 1 = exact pin). Quarters are <code>YYYYQn</code> and must fall in the forecast horizon.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WEO&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;vintage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026Q1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bloc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;US&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;forecasts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;GDPH&quot;</span><span class="p">:</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;2026Q1&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2.4</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;2026Q2&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2.2</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;POLRATE&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;2026Q1&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">3.6</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>A value may also be <code>{ "value": 2.4 }</code>; non-finite/<code>null</code> points are dropped. A cell the user has
+pinned by hand always overrides an imported one. Template: <code>public/data/sample_external_forecast.json</code>.</p>
+<h3 id="full-session-file-export-session-import-session">Full-session file (<code>Export session</code> / <code>Import session</code>)<a class="headerlink" href="#full-session-file-export-session-import-session" title="Permanent link">&para;</a></h3>
+<p><code>schema: "mfm-session/1"</code>. One portable bundle of the entire view — <strong>all</strong> countries' conditioning,
+GVAR cross-country pins, long-run anchors + solve mode, imported external forecasts + trust, and the
+display settings, with provenance (<code>exportedAt</code>). Produced/consumed by <code>useStore.exportSession</code> /
+<code>importSession</code>. Unlike the per-scenario Excel export, nothing is silently dropped.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mfm-session/1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;exportedAt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-07-06T…Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;US&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;scenarios&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;activeScenarioId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;s1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;gvarPins&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;s1&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;US&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;conditionedVars&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;conditioningPaths&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;longRunAnchorsByCountry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;US&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;variableId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GDPH&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;targetValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;longRunAnchorMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;perVariable&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;externalForecasts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;US&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;GDPH&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;2026Q1&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2.4</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WEO&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;externalTrust&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;WEO&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.7</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;externalSources&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WEO&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;bloc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;US&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;vintage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026Q1&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;display&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;growthDisplay&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;qoq&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;vsBaselineMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;level&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;inputMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;levels&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="shipped-weo-forecasts-load-weo-button">Shipped WEO forecasts (<code>Load WEO</code> button)<a class="headerlink" href="#shipped-weo-forecasts-load-weo-button" title="Permanent link">&para;</a></h3>
+<p><code>public/data/weo_forecasts.json</code>, built by <code>pipeline/build_weo_forecasts.py</code> from the IMF DataMapper
+API (<code>NGDP_RPCH</code> real GDP growth, <code>PCPIPCH</code> avg CPI inflation). Real published WEO numbers, tagged with
+the retrieval date. WEO is <strong>annual</strong>; each year's figure is replicated to that year's four quarters
+(the app applies them as soft pins and lets the model shape the intra-year path). WEO has <strong>no policy
+rates</strong> and nothing quarterly, so only each bloc's growth + inflation variables are populated.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;IMF WEO&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;provider&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;IMF DataMapper API (NGDP_RPCH, PCPIPCH)&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;retrieved&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-07-06&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;…annual → 4 quarters soft; rates model-driven; CPI↔deflator gap tolerated…&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;blocs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;US&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;GDPH&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;2026Q2&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2.3</span><span class="p">,</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="nt">&quot;JGDP&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;2026Q2&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">3.2</span><span class="p">,</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="nt">&quot;EA&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The Excel template (<code>Export template</code>) uses the same variable-id-keyed layout as the import: a
+<strong>Forecasts</strong> sheet with quarter labels in column 1 and variable ids across the header, prefilled with
+the bloc's baseline, plus a <strong>Notes</strong> sheet naming the units. The importer accepts that XLSX or the JSON.</p>
 
 
 
