@@ -1036,14 +1036,18 @@ publicly defensible long-run numbers for the country you are viewing --- one cli
     variable to its model estimate.
 \end{enumerate}
 
-\paragraph{What you find.} The preset is deliberately minimal: a long-run real-growth
-rate for the economy, an inflation anchor where the central bank has a clear public
-target, and --- for the economies that carry a full public-finance block --- long-run
-values for revenue, primary spending, and the effective interest rate on debt. It does
-not set policy rates, unemployment, or asset prices. Japan ships with no preset at
-all --- its long run is left entirely model-driven, so the block simply does not appear
-there. The preset is \emph{off} by default everywhere: until you click the button, you
-are looking at the raw model.
+\paragraph{What you find.} The preset is deliberately minimal --- and audited. A
+comprehensive review (July 2026) tested every candidate anchor against the forecast it
+produces and kept only those that fix a genuine long-run bias \emph{without} distorting
+the near-term path: 32 anchors across 23 economies, drawn from long-run growth,
+inflation, and --- for some public-finance economies --- revenue, spending, or the
+effective interest rate on debt. It never sets policy rates, unemployment, or asset
+prices. Where a preset ships it is \emph{on} by default (the affected charts carry the
+judgement flag, \S\ref{sec:use-longrun}); \textbf{Clear} returns the country to the raw
+model. Most economies ship \emph{no} preset at all --- their long run is left entirely
+model-driven, so the block simply does not appear there (Japan is one; so are the
+economies whose long-run biases are too large to fix by a target and are queued for
+re-estimation instead).
 
 \subsection{Several targets at once: Per-variable or Joint}
 
@@ -1053,7 +1057,7 @@ how the tool handles that interference.
 
 \paragraph{How.} As soon as a second target is set, a \textbf{Multiple-target solve}
 toggle appears at the top of the panel with two buttons: \textbf{Per-variable} and
-\textbf{Joint}. \textbf{Joint} is the default.
+\textbf{Joint}. \textbf{Per-variable} is the default.
 
 \paragraph{What you find.} The trade-off, in plain words:
 \begin{itemize}
@@ -4223,22 +4227,34 @@ sensitivity. \emph{Stable} and bounded (the drift can never blow up), but
 \emph{approximate}: it ignores the off-diagonal cross-responses, so it
 \emph{underestimates the spillovers} and the other anchored terminals drift
 off their set values by the cross-drag.
-\item \textbf{Joint} (default) --- the full $M\,\delta c = \psi^\star -
+\item \textbf{Joint} --- the full $M\,\delta c = \psi^\star -
 \psi^{\,0}$ system, so \emph{every} anchored terminal lands exactly on its
-value. \emph{Correct}, but a strongly-correlated target set makes $M$
-ill-conditioned and can \emph{destabilise} the path; the tool flags that
-case and the user switches to per-variable. A genuinely singular $M$ falls
-back to the per-variable $\delta c$ numerically (never a NaN path).
+value. \emph{Correct at the terminal}, but a strongly-correlated target set
+makes $M$ ill-conditioned and can \emph{destabilise} the path; the tool
+flags that case and the user switches to per-variable. A genuinely singular
+$M$ falls back to the per-variable $\delta c$ numerically (never a NaN path).
 \end{itemize}
 Both modes reduce to the same scalar for a single target
 ($|\mathcal{K}|=1$), and $\psi^\star \equiv \psi^{\,0}$ is a byte-exact
 no-op in either. The shipped default anchor sets are deliberately kept to a
-\emph{bare minimum} (long-run real growth and one inflation anchor per
-economy, plus the effective-rate/revenue/expenditure trio for the six
-fiscal-block economies) precisely so the joint system stays well
-conditioned out of the box: under these defaults joint is exact and stable
-on essentially every bloc, so per-variable is offered as the deliberate
-stability escape when a user adds many correlated targets.
+\emph{bare minimum} --- since the July-2026 anchor review, 32 anchors across
+23 economies, each individually verified to fix a genuine terminal-bias
+pathology while keeping the anchored path inside the economy's own
+(COVID-masked) historical envelope, with no origin discontinuity and no
+$>$1\,pp cross-drag onto unanchored headline variables
+(\texttt{docs/anchor-review-2026-07.md}) --- so the joint system stays well
+conditioned out of the box. Well-conditioned is not the same as well-shaped, however: because
+$\delta c$ is a \emph{rigid translation} of the whole path, joint exactness
+at the terminal is bought with a front-loaded near-term shift, and when the
+model's own terminal sits far from the anchor the first forecast years can
+be pushed to implausible values even under the bare-minimum set (at the
+2026\,Q1 origin the US deflator --- model terminal $4.3$ against the $2.0$
+anchor --- displayed \emph{negative} inflation over the first two forecast
+years under joint, against $+1.7$ under per-variable). \textbf{Per-variable
+is therefore the shipped default} --- stable and near-term-plausible, at the
+cost of terminals that land only approximately --- and joint is the
+deliberate opt-in for users who need every anchor met exactly and accept
+the near-term reshaping.
 
 \paragraph{Rigid band translation.}
 The deviation $\Delta Y$ of~\eqref{eq:driftcol} is added \emph{identically}
