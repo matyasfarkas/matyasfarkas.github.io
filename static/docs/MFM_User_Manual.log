@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.25)  5 JUL 2026 03:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.25)  6 JUL 2026 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1073,13 +1073,13 @@ l.195 \clearpage
 
 ]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-37.
+43.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 137.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
  [3] [4] [5] [6])
 \tf@toc=\write5
 \openout5 = `MFM_User_Manual.toc'.
@@ -1091,193 +1091,223 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 LaTeX Warning: Reference `sec:export' on page 15 undefined on input line 586.
 
-[15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28]
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 1229.
+[15] [16] [17] [18] [19] [20] [21] [22] [23] [24]
+Overfull \hbox (48.77222pt too wide) in paragraph at lines 1068--1070
+[]\OT1/cmr/bx/n/10.95 Import fore-casts... \OT1/cmr/m/n/10.95 ac-cepts that Ex-
+cel file, or a small JSON (\OT1/cmtt/m/n/10.95 data/sample[]external[]forecast.
+json
+ []
 
- [29]
-[30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40]
-Underfull \hbox (badness 1817) in paragraph at lines 1862--1862
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
+1071.
+(/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
+File: omscmtt.fd 
+)
+LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1071.
+
+ [25]
+
+! LaTeX Error: Unicode character ✕ (U+2715)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1085 \textbf{✕}
+                   , removes it. This release applies imported forecasts to ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[26] [27] [28] [29]
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 1278.
+
+ [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40]
+[41]
+Underfull \hbox (badness 1817) in paragraph at lines 1911--1911
 \OT1/cmr/m/n/10.95 vari-ables (ROW-DEM/ROWINF/ROWFIN) from part-ners' Durbin--K
 oopman-completed pan-
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1862--1862
+Underfull \hbox (badness 1320) in paragraph at lines 1911--1911
 \OT1/cmr/m/n/10.95 rate star ROWFIN and all do-mes-tic fi-nan-cials kept ob-ser
 ved; COVID-as-missing), it-er-at-
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 1862--1862
+Underfull \hbox (badness 1755) in paragraph at lines 1911--1911
 \OT1/cmr/m/n/10.95 ing to $[] \OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 ^^A[]\OMS
 /cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95
  :\OT1/cmr/m/n/10.95 03$ (cf. \TS1/cmr/m/n/10.95 �[][]\OT1/cmr/m/n/10.95 16[][]
 ). Each con-verged bloc is se-ri-al-ized to the eight-
  []
 
-[41
+[42
 
 ]
-Overfull \hbox (27.86128pt too wide) in paragraph at lines 1976--1976
+Overfull \hbox (27.86128pt too wide) in paragraph at lines 2025--2025
 []|$[]\OML/cmm/m/it/10 ; []; []$| 
  []
 
-[42] [43] [44] [45]
+[43] [44] [45] [46]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2133.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2182.
 
 
-Overfull \hbox (0.35764pt too wide) in paragraph at lines 2133--2139
+Overfull \hbox (0.35764pt too wide) in paragraph at lines 2182--2188
 \OT1/cmr/m/n/10.95 the prior mean of the co-ef-fi-cient ma-trix is built. In \O
 T1/cmtt/m/n/10.95 BVAR/MFBVAR/GLPreplicationWeb/bvarGLPmf.m
  []
 
-[46] [47] [48]
-Overfull \hbox (109.55719pt too wide) in paragraph at lines 2379--2381
+[47] [48] [49]
+Overfull \hbox (109.55719pt too wide) in paragraph at lines 2428--2430
  []\OT1/cmr/bx/n/10.95 Algorithm: Durbin--Koopman Fixed-Interval Smoother.[] In
 -put: \OT1/cmr/m/n/10.95 Fil-tered quan-ti-ties $\OMS/cmsy/m/n/10.95 f\OML/cmm/
 m/it/10.95 []; P[]; v[]; Z[]; F[]\OMS/cmsy/m/n/10.95 g[]$\OT1/cmr/m/n/10.95 . 
 
  []
 
-[49]
-Overfull \hbox (1.38478pt too wide) in paragraph at lines 2398--2411
+[50]
+Overfull \hbox (1.38478pt too wide) in paragraph at lines 2447--2460
 \OT1/cmr/m/n/10.95 COVID-as-missing data aug-men-ta-tion (Sec-tion [][]19.4[][]
 ) the tool needs \OT1/cmr/m/it/10.95 draws \OT1/cmr/m/n/10.95 of the miss-ing/c
 onditioned
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 2414.
-[50] [51] [52] [53] [54] [55] [56] [57]
+put line 2463.
+[51] [52] [53] [54] [55] [56] [57] [58]
 
-Package natbib Warning: Citation `TannerWong1987' on page 58 undefined on input
- line 2957.
+Package natbib Warning: Citation `TannerWong1987' on page 59 undefined on input
+ line 3006.
 
 
-Package natbib Warning: Citation `DempsterLairdRubin1977' on page 58 undefined 
-on input line 2961.
+Package natbib Warning: Citation `DempsterLairdRubin1977' on page 59 undefined 
+on input line 3010.
 
-[58]
-Overfull \hbox (10.14561pt too wide) in paragraph at lines 3011--3027
+[59]
+Overfull \hbox (10.14561pt too wide) in paragraph at lines 3060--3076
 \OT1/cmr/m/n/10.95 Metropo-lis sam-pler over the tightness/sum-of-coefficients 
 hy-per-pa-ram-e-ters $(\OML/cmm/m/it/10.95 ^^U; ^^V\OT1/cmr/m/n/10.95 )$, re-co
 m-put-ing $(\OML/cmm/m/it/10.95 ^^L[]; \OT1/cmr/m/n/10.95 ^^F[])$
  []
 
-[59] [60]
-Overfull \hbox (1.51918pt too wide) in paragraph at lines 3164--3177
+[60] [61]
+Overfull \hbox (1.51918pt too wide) in paragraph at lines 3213--3226
  [][] 
  []
 
 
-Overfull \hbox (1.56303pt too wide) in paragraph at lines 3181--3184
+Overfull \hbox (1.56303pt too wide) in paragraph at lines 3230--3233
 []\OT1/cmr/m/n/10.95 Algorithm [][]2[][] states the loop (\OT1/cmtt/m/n/10.95 p
 ipeline/export[]bvar[]gvar24[]loop.m\OT1/cmr/m/n/10.95 ; the credit-validation 
 driver
  []
 
-[61] [62]
-Overfull \hbox (5.05508pt too wide) in paragraph at lines 3360--3364
+[62] [63]
+Overfull \hbox (5.05508pt too wide) in paragraph at lines 3409--3413
 []\OT1/cmr/bx/n/10.95 Gauss--Seidel / Neu-mann sweeps \OT1/cmr/m/n/10.95 (the c
 ross-check) sum the Neu-mann se-ries $\OML/cmm/m/it/10.95 x \OT1/cmr/m/n/10.95 
 = [][] \OML/cmm/m/it/10.95 M[]d$
  []
 
-[63] [64] [65] [66] [67] [68] [69]
-Overfull \hbox (13.01065pt too wide) in paragraph at lines 3652--3673
+[64] [65] [66] [67] [68] [69] [70]
+Overfull \hbox (13.01065pt too wide) in paragraph at lines 3701--3722
 \OT1/cmr/m/n/10.95 ing re-cur-sion. It car-ries the in-te-ger in-dices $[] = \O
 MS/cmsy/m/n/10.95 f[]\OML/cmm/m/it/10.95 ; []; []; []; []; []\OMS/cmsy/m/n/10.9
 5 g$
  []
 
-[70] [71]
+[71] [72]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3869.
- [72] [73] [74] [75]
+(mdframed)              on input line 3918.
+ [73] [74] [75] [76]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4113.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\delta' on input line 4113.
+(hyperref)                removing `math shift' on input line 4162.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4113.
+(hyperref)                removing `\delta' on input line 4162.
 
-[76] [77] [78] [79] [80] [81] [82]
-Overfull \hbox (48.90714pt too wide) in paragraph at lines 4534--4544
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4162.
+
+[77] [78] [79] [80] [81] [82] [83]
+Overfull \hbox (48.90714pt too wide) in paragraph at lines 4583--4593
 \OT1/cmr/m/n/10.95 vari-able is recorded in the machine-readable \OT1/cmr/m/it/
 10.95 cov-er-age man-i-fest \OT1/cmr/m/n/10.95 (\OT1/cmtt/m/n/10.95 app/public/
 data/coverage[]manifest.json\OT1/cmr/m/n/10.95 ),
  []
 
-[83]
-Overfull \hbox (19.68257pt too wide) in paragraph at lines 4578--4585
+[84]
+Overfull \hbox (19.68257pt too wide) in paragraph at lines 4627--4634
 \OT1/cmr/m/n/10.95 distributed on FRED), short/policy rates from national-bank 
 or BIS \OT1/cmtt/m/n/10.95 CBPOL \OT1/cmr/m/n/10.95 se-ries (e.g. RBA/RBNZ
  []
 
-[84] [85] [86]
+[85] [86] [87]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (1.58441pt too wide) in paragraph at lines 4779--4796
+Overfull \hbox (1.58441pt too wide) in paragraph at lines 4828--4845
  []\OT1/cmr/bx/n/10.95 Fixed win-dow and macro-only mask-ing in the pro-duc-tio
 n GVAR loop.[] \OT1/cmr/m/n/10.95 The auto-detected
  []
 
 
-Overfull \hbox (116.86284pt too wide) in paragraph at lines 4779--4796
+Overfull \hbox (116.86284pt too wide) in paragraph at lines 4828--4845
 \OT1/cmr/m/n/10.95 win-dow above is the legacy single-bloc con-ven-tion; the pr
 o-duc-tion GVAR es-ti-ma-tor (\OT1/cmtt/m/n/10.95 pipeline/export[]bvar[]gvar24
 []loop.m\OT1/cmr/m/n/10.95 )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4810--4810
+Underfull \hbox (badness 10000) in paragraph at lines 4859--4859
 []\OT1/cmr/bx/n/10.95 Algorithm 4 \OT1/cmr/m/n/10.95 EM-style GVAR es-ti-ma-tio
 n loop (Ja-cobi star re-convergence;
  []
 
-[87]
-Overfull \hbox (19.39795pt too wide) in paragraph at lines 4893--4906
+[88]
+Overfull \hbox (19.39795pt too wide) in paragraph at lines 4942--4955
 \OT1/cmr/m/n/10.95 for the re-freshed blocs. This is a pure data ex-ten-sion pe
 r-formed by \OT1/cmtt/m/n/10.95 app/scripts/refresh-quarter.mjs\OT1/cmr/m/n/10.
 95 :
  []
 
-[88]
-Overfull \hbox (4.17824pt too wide) in paragraph at lines 4920--4928
+[89]
+Overfull \hbox (4.17824pt too wide) in paragraph at lines 4969--4977
 \OT1/cmr/m/n/10.95 These per-bloc end-points are pinned in \OT1/cmtt/m/n/10.95 
 app/src/lib/dates.ts \OT1/cmr/m/n/10.95 (\OT1/cmtt/m/n/10.95 DEFAULT[]LAST[]HIS
 T[]DATE$[] \OT1/cmr/m/n/10.95 = []$2026Q1
  []
 
-[89]
-Underfull \hbox (badness 1043) in paragraph at lines 4995--4995
+[90]
+Underfull \hbox (badness 1043) in paragraph at lines 5044--5044
 []|\OT1/cmr/m/n/10.95 Personal Con-sump-tion Ex-pen-di-tures:
  []
 
 
-Underfull \hbox (badness 7468) in paragraph at lines 5016--5016
+Underfull \hbox (badness 7468) in paragraph at lines 5065--5065
 []|\OT1/cmr/m/n/10.95 Non-Fuel Com-mod-ity Price In-dex
  []
 
 
-Underfull \hbox (badness 5260) in paragraph at lines 5026--5026
+Underfull \hbox (badness 5260) in paragraph at lines 5075--5075
 []|\OT1/cmr/m/n/10.95 US RoW in-fla-tion (trade-weighted
  []
 
-[90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103]
-[104] [105] [106] [107] [108] [109] [110] [111] [112] [113] [114] [115]
-[116] [117] [118] [119] [120] [121] (./per_country_data.tex [122] [123]
+[91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103] [104]
+[105] [106] [107] [108] [109] [110] [111] [112] [113] [114] [115] [116]
+[117] [118] [119] [120] [121] [122] (./per_country_data.tex [123] [124]
 Overfull \hbox (4.98141pt too wide) in paragraph at lines 154--154
 []|\OT1/cmr/bx/n/9 Trans.|  
  []
@@ -1312,7 +1342,7 @@ Overfull \hbox (9.26105pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/it/9 (FAAA/GLB[]USBAA 
  []
 
-[124] [125] [126]
+[125] [126] [127]
 Overfull \hbox (4.98141pt too wide) in paragraph at lines 238--238
 []|\OT1/cmr/bx/n/9 Trans.|  
  []
@@ -1367,7 +1397,7 @@ Overfull \hbox (29.00644pt too wide) in paragraph at lines 270--270
 []|\OT1/cmr/m/n/9 CREDIT[]GDP[]EA|  
  []
 
-[127] [128]
+[128] [129]
 Overfull \hbox (4.98141pt too wide) in paragraph at lines 293--293
 []|\OT1/cmr/bx/n/9 Trans.|  
  []
@@ -1407,7 +1437,7 @@ Overfull \hbox (26.82312pt too wide) in paragraph at lines 323--323
 []|\OT1/cmr/m/n/9 CREDIT[]GDP[]JP|  
  []
 
-[129] [130]
+[130] [131]
 Overfull \hbox (4.98141pt too wide) in paragraph at lines 345--345
 []|\OT1/cmr/bx/n/9 Trans.|  
  []
@@ -1452,7 +1482,7 @@ Overfull \hbox (1.97386pt too wide) in paragraph at lines 379--379
 []|\OT1/cmr/m/n/9 LENDR[]UK|  
  []
 
-[131]
+[132]
 Overfull \hbox (4.98141pt too wide) in paragraph at lines 399--399
 []|\OT1/cmr/bx/n/9 Trans.|  
  []
@@ -1497,7 +1527,7 @@ Overfull \hbox (1.46138pt too wide) in paragraph at lines 433--433
 []|\OT1/cmr/m/n/9 LENDR[]CA|  
  []
 
-[132] [133]
+[133] [134]
 Overfull \hbox (4.98141pt too wide) in paragraph at lines 458--458
 []|\OT1/cmr/bx/n/9 Trans.|  
  []
@@ -1548,7 +1578,7 @@ Overfull \hbox (29.39256pt too wide) in paragraph at lines 485--485
 []|\OT1/cmr/m/n/9 CREDIT[]GDP[]CN|  
  []
 
-[134] [135] [136]
+[135] [136] [137]
 Overfull \hbox (4.64719pt too wide) in paragraph at lines 607--607
 []|\OT1/cmr/m/n/10.95 Freq| 
  []
@@ -1888,7 +1918,7 @@ Overfull \hbox (18.0005pt too wide) in paragraph at lines 641--642
 \OT1/cmr/m/n/10.95 2026Q2:3.57| 
  []
 
-[137] [138] [139]
+[138] [139] [140]
 Overfull \hbox (4.64719pt too wide) in paragraph at lines 655--655
 []|\OT1/cmr/m/n/10.95 Freq| 
  []
@@ -2228,7 +2258,7 @@ Overfull \hbox (19.25443pt too wide) in paragraph at lines 689--690
 \OT1/cmr/m/it/10.95 2026Q2:3.48
  []
 
-[140] [141] [142]
+[141] [142] [143]
 Overfull \hbox (4.64719pt too wide) in paragraph at lines 706--706
 []|\OT1/cmr/m/n/10.95 Freq| 
  []
@@ -2553,7 +2583,7 @@ Overfull \hbox (18.0005pt too wide) in paragraph at lines 739--740
 \OT1/cmr/m/n/10.95 2026Q2:3.55| 
  []
 
-[143] [144] [145]
+[144] [145] [146]
 Overfull \hbox (4.64719pt too wide) in paragraph at lines 754--754
 []|\OT1/cmr/m/n/10.95 Freq| 
  []
@@ -2893,7 +2923,7 @@ Overfull \hbox (18.0005pt too wide) in paragraph at lines 788--789
 \OT1/cmr/m/n/10.95 2026Q2:3.56| 
  []
 
-[146] [147] [148]
+[147] [148] [149]
 Overfull \hbox (4.64719pt too wide) in paragraph at lines 802--802
 []|\OT1/cmr/m/n/10.95 Freq| 
  []
@@ -3233,7 +3263,7 @@ Overfull \hbox (18.0005pt too wide) in paragraph at lines 836--837
 \OT1/cmr/m/n/10.95 2026Q2:3.37| 
  []
 
-[149] [150] [151] [152]
+[150] [151] [152] [153]
 Overfull \hbox (4.64719pt too wide) in paragraph at lines 929--929
 []|\OT1/cmr/m/n/10.95 Freq| 
  []
@@ -3485,7 +3515,7 @@ Overfull \hbox (1.33214pt too wide) in paragraph at lines 963--963
 []|\OT1/cmr/m/n/10.95 observed| 
  []
 
-[153] [154] [155]
+[154] [155] [156]
 Overfull \hbox (4.64719pt too wide) in paragraph at lines 989--989
 []|\OT1/cmr/m/n/10.95 Freq| 
  []
@@ -3732,7 +3762,7 @@ Overfull \hbox (1.33214pt too wide) in paragraph at lines 1023--1023
 []|\OT1/cmr/m/n/10.95 observed| 
  []
 
-[156] [157]
+[157] [158]
 Overfull \hbox (4.64719pt too wide) in paragraph at lines 1045--1045
 []|\OT1/cmr/m/n/10.95 Freq| 
  []
@@ -3979,7 +4009,7 @@ Overfull \hbox (1.33214pt too wide) in paragraph at lines 1079--1079
 []|\OT1/cmr/m/n/10.95 observed| 
  []
 
-[158] [159] [160]
+[159] [160] [161]
 Overfull \hbox (4.64719pt too wide) in paragraph at lines 1107--1107
 []|\OT1/cmr/m/n/10.95 Freq| 
  []
@@ -4231,7 +4261,7 @@ Overfull \hbox (1.33214pt too wide) in paragraph at lines 1141--1141
 []|\OT1/cmr/m/n/10.95 observed| 
  []
 
-[161] [162] [163]
+[162] [163] [164]
 Overfull \hbox (4.64719pt too wide) in paragraph at lines 1163--1163
 []|\OT1/cmr/m/n/10.95 Freq| 
  []
@@ -4468,7 +4498,7 @@ Overfull \hbox (1.33214pt too wide) in paragraph at lines 1196--1196
 []|\OT1/cmr/m/n/10.95 observed| 
  []
 
-[164] [165] [166]
+[165] [166] [167]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1311--1311
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -4553,7 +4583,7 @@ Overfull \hbox (5.0052pt too wide) in paragraph at lines 1339--1339
 []|\OT1/cmr/m/n/9 M$\OMS/cmsy/m/n/9 !$\OT1/cmr/m/n/9 Q| 
  []
 
-[167] [168]
+[168] [169]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1354--1354
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -4643,7 +4673,7 @@ Overfull \hbox (5.0052pt too wide) in paragraph at lines 1382--1382
 []|\OT1/cmr/m/n/9 M$\OMS/cmsy/m/n/9 !$\OT1/cmr/m/n/9 Q| 
  []
 
-[169] [170]
+[170] [171]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1397--1397
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -4733,7 +4763,7 @@ Overfull \hbox (2.90285pt too wide) in paragraph at lines 1425--1426
 \OT1/cmr/m/it/9 OUTSTANDING-
  []
 
-[171] [172]
+[172] [173]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1441--1441
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -4813,7 +4843,7 @@ Overfull \hbox (52.92334pt too wide) in paragraph at lines 1468--1469
 \OT1/cmr/m/it/9 2010Q3=56.0..2025Q4=16.6.]| 
  []
 
-[173] [174]
+[174] [175]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1484--1484
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -4898,7 +4928,7 @@ Overfull \hbox (5.0052pt too wide) in paragraph at lines 1512--1512
 []|\OT1/cmr/m/n/9 M$\OMS/cmsy/m/n/9 !$\OT1/cmr/m/n/9 Q| 
  []
 
-[175] [176]
+[176] [177]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1527--1527
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -4983,7 +5013,7 @@ Overfull \hbox (5.0052pt too wide) in paragraph at lines 1555--1555
 []|\OT1/cmr/m/n/9 M$\OMS/cmsy/m/n/9 !$\OT1/cmr/m/n/9 Q| 
  []
 
-[177] [178]
+[178] [179]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1570--1570
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -5068,7 +5098,7 @@ Overfull \hbox (5.0052pt too wide) in paragraph at lines 1598--1598
 []|\OT1/cmr/m/n/9 M$\OMS/cmsy/m/n/9 !$\OT1/cmr/m/n/9 Q| 
  []
 
-[179] [180] [181]
+[180] [181] [182]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1707--1707
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -5143,7 +5173,7 @@ Overfull \hbox (5.0052pt too wide) in paragraph at lines 1730--1730
 []|\OT1/cmr/m/n/9 M$\OMS/cmsy/m/n/9 !$\OT1/cmr/m/n/9 Q| 
  []
 
-[182] [183]
+[183] [184]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1755--1755
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -5218,7 +5248,7 @@ Overfull \hbox (5.0052pt too wide) in paragraph at lines 1778--1778
 []|\OT1/cmr/m/n/9 M$\OMS/cmsy/m/n/9 !$\OT1/cmr/m/n/9 Q| 
  []
 
-[184] [185]
+[185] [186]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1809--1809
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -5293,7 +5323,7 @@ Overfull \hbox (5.0052pt too wide) in paragraph at lines 1832--1832
 []|\OT1/cmr/m/n/9 M$\OMS/cmsy/m/n/9 !$\OT1/cmr/m/n/9 Q| 
  []
 
-[186]
+[187]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1861--1861
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -5349,7 +5379,7 @@ Overfull \hbox (5.31087pt too wide) in paragraph at lines 1878--1878
 m/it/9 =$\OT1/cmr/m/n/9 4Q-
  []
 
-[187] [188]
+[188] [189]
 Overfull \hbox (0.78915pt too wide) in paragraph at lines 1922--1922
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -5415,7 +5445,7 @@ Overfull \hbox (5.31087pt too wide) in paragraph at lines 1944--1944
 m/it/9 =$\OT1/cmr/m/n/9 4Q-
  []
 
-[189] [190] [191]
+[190] [191] [192]
 Overfull \hbox (29.21504pt too wide) in alignment at lines 2067--2074
  [] [] [] [] [] [] [] [] 
  []
@@ -5450,7 +5480,7 @@ Overfull \hbox (29.21504pt too wide) in alignment at lines 2081--2100
  [] [] [] [] [] [] [] [] 
  []
 
-[192] [193]
+[193] [194]
 Overfull \hbox (29.21504pt too wide) in alignment at lines 2111--2116
  [] [] [] [] [] [] [] [] 
  []
@@ -5490,7 +5520,7 @@ Overfull \hbox (29.21504pt too wide) in alignment at lines 2123--2141
  [] [] [] [] [] [] [] [] 
  []
 
-[194]
+[195]
 Overfull \hbox (29.21504pt too wide) in alignment at lines 2151--2156
  [] [] [] [] [] [] [] [] 
  []
@@ -5530,7 +5560,7 @@ Overfull \hbox (29.21504pt too wide) in alignment at lines 2163--2183
  [] [] [] [] [] [] [] [] 
  []
 
-[195] [196]
+[196] [197]
 Overfull \hbox (29.21504pt too wide) in alignment at lines 2202--2207
  [] [] [] [] [] [] [] [] 
  []
@@ -5575,7 +5605,7 @@ Overfull \hbox (29.21504pt too wide) in alignment at lines 2214--2232
  [] [] [] [] [] [] [] [] 
  []
 
-[197]
+[198]
 Overfull \hbox (29.21504pt too wide) in alignment at lines 2242--2247
  [] [] [] [] [] [] [] [] 
  []
@@ -5620,7 +5650,7 @@ Overfull \hbox (29.21504pt too wide) in alignment at lines 2254--2274
  [] [] [] [] [] [] [] [] 
  []
 
-[198]
+[199]
 Overfull \hbox (29.21504pt too wide) in alignment at lines 2284--2289
  [] [] [] [] [] [] [] [] 
  []
@@ -5660,7 +5690,7 @@ Overfull \hbox (29.21504pt too wide) in alignment at lines 2296--2315
  [] [] [] [] [] [] [] [] 
  []
 
-[199] [200]
+[200] [201]
 Overfull \hbox (29.21504pt too wide) in alignment at lines 2334--2339
  [] [] [] [] [] [] [] [] 
  []
@@ -5700,7 +5730,7 @@ Overfull \hbox (29.21504pt too wide) in alignment at lines 2346--2365
  [] [] [] [] [] [] [] [] 
  []
 
-[201]
+[202]
 Overfull \hbox (29.21504pt too wide) in alignment at lines 2376--2381
  [] [] [] [] [] [] [] [] 
  []
@@ -5750,7 +5780,7 @@ Overfull \hbox (29.21504pt too wide) in alignment at lines 2388--2407
  [] [] [] [] [] [] [] [] 
  []
 
-[202] [203] [204]
+[203] [204] [205]
 Overfull \hbox (114.74266pt too wide) in alignment at lines 2504--2511
  [] [] [] [] [] [] [] [] 
  []
@@ -5775,7 +5805,7 @@ Overfull \hbox (114.74266pt too wide) in alignment at lines 2517--2535
  [] [] [] [] [] [] [] [] 
  []
 
-[205]
+[206]
 Overfull \hbox (128.54675pt too wide) in alignment at lines 2547--2552
  [] [] [] [] [] [] [] [] 
  []
@@ -5800,7 +5830,7 @@ Overfull \hbox (128.54675pt too wide) in alignment at lines 2558--2578
  [] [] [] [] [] [] [] [] 
  []
 
-[206] [207]
+[207] [208]
 Overfull \hbox (127.603pt too wide) in alignment at lines 2591--2596
  [] [] [] [] [] [] [] [] 
  []
@@ -5825,7 +5855,7 @@ Overfull \hbox (127.603pt too wide) in alignment at lines 2602--2622
  [] [] [] [] [] [] [] [] 
  []
 
-[208]
+[209]
 Overfull \hbox (127.603pt too wide) in alignment at lines 2636--2641
  [] [] [] [] [] [] [] [] 
  []
@@ -5850,7 +5880,7 @@ Overfull \hbox (127.603pt too wide) in alignment at lines 2647--2667
  [] [] [] [] [] [] [] [] 
  []
 
-[209] [210]
+[210] [211]
 Overfull \hbox (142.49042pt too wide) in alignment at lines 2681--2686
  [] [] [] [] [] [] [] [] 
  []
@@ -5875,7 +5905,7 @@ Overfull \hbox (142.49042pt too wide) in alignment at lines 2692--2712
  [] [] [] [] [] [] [] [] 
  []
 
-[211] [212]
+[212] [213]
 Overfull \hbox (114.74266pt too wide) in alignment at lines 2723--2728
  [] [] [] [] [] [] [] [] 
  []
@@ -5910,7 +5940,7 @@ Overfull \hbox (114.74266pt too wide) in alignment at lines 2734--2752
  [] [] [] [] [] [] [] [] 
  []
 
-[213] [214]
+[214] [215]
 Overfull \hbox (3.63417pt too wide) in paragraph at lines 2863--2863
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -5945,7 +5975,7 @@ Overfull \hbox (28.90327pt too wide) in alignment at lines 2871--2888
  [] [] [] [] [] [] [] [] 
  []
 
-[215] [216]
+[216] [217]
 Overfull \hbox (3.63417pt too wide) in paragraph at lines 2920--2920
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -5985,7 +6015,7 @@ Overfull \hbox (28.90327pt too wide) in alignment at lines 2928--2948
  [] [] [] [] [] [] [] [] 
  []
 
-[217]
+[218]
 Overfull \hbox (3.63417pt too wide) in paragraph at lines 2972--2972
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -6020,7 +6050,7 @@ Overfull \hbox (28.90327pt too wide) in alignment at lines 2980--2997
  [] [] [] [] [] [] [] [] 
  []
 
-[218] [219]
+[219] [220]
 Overfull \hbox (3.63417pt too wide) in paragraph at lines 3025--3025
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -6060,7 +6090,7 @@ Overfull \hbox (28.90327pt too wide) in alignment at lines 3033--3051
  [] [] [] [] [] [] [] [] 
  []
 
-[220]
+[221]
 Overfull \hbox (3.63417pt too wide) in paragraph at lines 3079--3079
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -6105,7 +6135,7 @@ Overfull \hbox (28.90327pt too wide) in alignment at lines 3087--3102
  [] [] [] [] [] [] [] [] 
  []
 
-[221] [222]
+[222] [223]
 Overfull \hbox (3.63417pt too wide) in paragraph at lines 3131--3131
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -6150,7 +6180,7 @@ Overfull \hbox (28.90327pt too wide) in alignment at lines 3139--3159
  [] [] [] [] [] [] [] [] 
  []
 
-[223]
+[224]
 Overfull \hbox (3.63417pt too wide) in paragraph at lines 3182--3182
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -6190,7 +6220,7 @@ Overfull \hbox (28.90327pt too wide) in alignment at lines 3190--3209
  [] [] [] [] [] [] [] [] 
  []
 
-[224] [225]
+[225] [226]
 Overfull \hbox (3.63417pt too wide) in paragraph at lines 3235--3235
 []|\OT1/cmr/bx/n/9 Freq| 
  []
@@ -6225,108 +6255,103 @@ Overfull \hbox (28.90327pt too wide) in alignment at lines 3243--3261
  [] [] [] [] [] [] [] [] 
  []
 
-[226])
+[227])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 6953.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 1.8254pt
-(hyperref)                removed on input line 6953.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 6953.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 6953.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 6953.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 6953.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 7002.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.8254pt
-(hyperref)                removed on input line 6953.
+(hyperref)                removed on input line 7002.
 
-[227] [228] [229
 
-] [230] [231
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 7002.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 7002.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 7002.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 7002.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 1.8254pt
+(hyperref)                removed on input line 7002.
+
+[228] [229] [230
+
+] [231] [232
 
 ]
-Overfull \hbox (81.42726pt too wide) in paragraph at lines 7110--7123
+Overfull \hbox (81.42726pt too wide) in paragraph at lines 7159--7172
 \OT1/cmr/m/n/10.95 round-trips to the cur-sor to ma-chine pre-ci-sion ($[] \OMS
 /cmsy/m/n/10.95 ^^N [] \OT1/cmr/m/n/10.95 =
  []
 
 
-Overfull \hbox (57.94623pt too wide) in paragraph at lines 7124--7141
+Overfull \hbox (57.94623pt too wide) in paragraph at lines 7173--7190
 \OT1/cmr/m/n/10.95 built chart ob-jects against the prior ren-der with a tight 
 struc-tural equal-ity (\OT1/cmtt/m/n/10.95 reconcileCharts\OT1/cmr/m/n/10.95 /\
 OT1/cmtt/m/n/10.95 chartDeepEqual\OT1/cmr/m/n/10.95 ):
  []
 
 
-Overfull \hbox (4.72357pt too wide) in paragraph at lines 7124--7141
+Overfull \hbox (4.72357pt too wide) in paragraph at lines 7173--7190
 \OT1/cmtt/m/n/10.95 conditioned-dot-optimistic\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/
 n/10.95 right-click-plant-at-cursor\OT1/cmr/m/n/10.95 , and \OT1/cmtt/m/n/10.95
  chartgrid-render-memo \OT1/cmr/m/n/10.95 test
  []
 
-[232] [233]
-Underfull \hbox (badness 10000) in paragraph at lines 7277--7281
+[233] [234]
+Underfull \hbox (badness 10000) in paragraph at lines 7326--7330
 []|\OT1/cmtt/m/n/9 export[]bvar[]gvar24[]loop.m \OT1/cmr/m/n/9 (GVAR--EM es-ti-
 ma-tor);
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
-7285.
-(/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
-File: omscmtt.fd 
-)
 LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7285.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7334.
 
 
-Underfull \hbox (badness 7981) in paragraph at lines 7283--7287
+Underfull \hbox (badness 7981) in paragraph at lines 7332--7336
 \OT1/cmr/m/n/9 ac-count-ing); \OT1/cmtt/m/n/9 scripts/ \OT1/cmr/m/n/9 (\OT1/cmt
 t/m/n/9 precompute[]gvar[]coupling.mjs\OT1/cmr/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7283--7287
+Underfull \hbox (badness 10000) in paragraph at lines 7332--7336
 \OT1/cmtt/m/n/9 verify[]gvar24.mjs\OT1/cmr/m/n/9 , \OT1/cmtt/m/n/9 invert[]coup
 ling.\OMS/cmsy/m/n/9 f\OT1/cmtt/m/n/9 m,py\OMS/cmsy/m/n/9 g\OT1/cmr/m/n/9 );
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 7283--7287
+Underfull \hbox (badness 2285) in paragraph at lines 7332--7336
 \OT1/cmtt/m/n/9 public/data/bvar/<CC>/ \OT1/cmr/m/n/9 (the de-ployed JSON the a
 pp
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7289--7291
+Underfull \hbox (badness 10000) in paragraph at lines 7338--7340
 []|\OT1/cmtt/m/n/9 user[]manual.tex\OT1/cmr/m/n/9 ; \OT1/cmtt/m/n/9 REESTIMATIN
 G[]MODELS.md\OT1/cmr/m/n/9 ,
  []
 
-[234]
-Overfull \hbox (13.98291pt too wide) in paragraph at lines 7298--7304
+[235]
+Overfull \hbox (13.98291pt too wide) in paragraph at lines 7347--7353
 \OT1/cmr/m/n/10.95 hierarchical-prior Gibbs sam-pler \OT1/cmtt/m/n/10.95 bvarGL
 Pmf.m \OT1/cmr/m/n/10.95 and the COVID-as-missing wrap-per \OT1/cmtt/m/n/10.95 
 cgl[]bvarV5.m
  []
 
-[235]
-Overfull \hbox (92.3798pt too wide) in paragraph at lines 7337--7344
+[236]
+Overfull \hbox (92.3798pt too wide) in paragraph at lines 7386--7393
 \OT1/cmtt/m/n/10.95 baseline.json\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 basel
 ine[]levels.json\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 historical.json\OT1/cm
 r/m/n/10.95 , \OT1/cmtt/m/n/10.95 historical[]levels.json\OT1/cmr/m/n/10.95 , \
@@ -6334,38 +6359,38 @@ OT1/cmtt/m/n/10.95 transformations.json
  []
 
 
-Overfull \hbox (5.66759pt too wide) in paragraph at lines 7360--7371
+Overfull \hbox (5.66759pt too wide) in paragraph at lines 7409--7420
 []\OT1/cmr/bx/n/10.95 Green gate. \OT1/cmr/m/n/10.95 From \OT1/cmtt/m/n/10.95 a
 pp/\OT1/cmr/m/n/10.95 , run the fast fixed-point check \OT1/cmtt/m/n/10.95 npx 
 tsx scripts/verify[]gvar24.mjs
  []
 
 
-Overfull \hbox (71.04039pt too wide) in paragraph at lines 7371--7381
+Overfull \hbox (71.04039pt too wide) in paragraph at lines 7420--7430
 \OT1/cmtt/m/n/10.95 deploy-to-website.yml \OT1/cmr/m/n/10.95 GitHub Ac-tion run
 s \OT1/cmtt/m/n/10.95 npm ci && npm run build \OT1/cmr/m/n/10.95 with \OT1/cmtt
 /m/n/10.95 BASE[]PATH=/bvar-scenario\OT1/cmr/m/n/10.95 ,
  []
 
 
-Overfull \hbox (16.9553pt too wide) in paragraph at lines 7371--7381
+Overfull \hbox (16.9553pt too wide) in paragraph at lines 7420--7430
 \OT1/cmr/m/n/10.95 demic site pub-lished to \OT1/cmr/bx/n/10.95 GitHub Pages\OT
 1/cmr/m/n/10.95 , which re-builds and serves the tool at the \OT1/cmtt/m/n/10.9
 5 /bvar-scenario
  []
 
-[236] [237]
-Overfull \hbox (0.40083pt too wide) in paragraph at lines 7459--7469
+[237] [238]
+Overfull \hbox (0.40083pt too wide) in paragraph at lines 7508--7518
 \OT1/cmr/m/n/10.95 The sys-tem is eval-u-ated in a com-pan-ion repos-i-tory (\O
 T1/cmtt/m/n/10.95 em-bayesian-gvar-eval\OT1/cmr/m/n/10.95 ) un-der a pre-regist
 ered
  []
 
 LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7476.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7525.
 
 
-Overfull \hbox (51.05225pt too wide) in paragraph at lines 7474--7478
+Overfull \hbox (51.05225pt too wide) in paragraph at lines 7523--7527
 []\OT1/cmtt/m/n/10.95 emgvar[]endo \OT1/cmr/m/n/10.95 --- the full loop with th
 e US \OT1/cmr/m/it/10.95 en-doge-nous \OT1/cmr/m/n/10.95 (\OT1/cmtt/m/n/10.95 U
 S[]ENDOGENOUS$\OT1/cmr/m/n/10.95 = 1$: its own \OT1/cmtt/m/n/10.95 ROW\OMS/cmsy
@@ -6373,30 +6398,30 @@ S[]ENDOGENOUS$\OT1/cmr/m/n/10.95 = 1$: its own \OT1/cmtt/m/n/10.95 ROW\OMS/cmsy
 /10.95 US
  []
 
-[238] [239] [240] [241] [242] [243] [244]
-Overfull \hbox (12.89319pt too wide) in paragraph at lines 7915--7936
+[239] [240] [241] [242] [243] [244] [245]
+Overfull \hbox (12.89319pt too wide) in paragraph at lines 7964--7985
 \OT1/cmr/m/n/10.95 constancy over the hori-zon. Bands come from re-running the 
 re-cur-sion over the \OT1/cmtt/m/n/10.95 companion[]draws.json
  []
 
-[245] [246] [247] [248]
+[246] [247] [248] [249]
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 8117.
+(enumitem)                sense, on input line 8166.
 
-[249] [250]
-Overfull \hbox (5.97209pt too wide) in paragraph at lines 8182--8191
+[250] [251]
+Overfull \hbox (5.97209pt too wide) in paragraph at lines 8231--8240
 \OT1/cmr/m/n/10.95 estimation draw reweight-ing that de-gen-er-ated (col-laps-i
 ng ef-fec-tive sam-ple size) when over-constrained. 
  []
 
-[251] [252] (./MFM_User_Manual.bbl [253
+[252] [253] (./MFM_User_Manual.bbl [254
 
-] [254])
+] [255])
 
 Package natbib Warning: There were undefined citations.
 
-[255] (./MFM_User_Manual.aux)
+[256] (./MFM_User_Manual.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -6406,13 +6431,13 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `MFM_User_Manual.out' has not changed.
-(rerunfilecheck)             Checksum: 855F771669EA8D5E329CEAE1ECFD077B;42059.
+(rerunfilecheck)             Checksum: 772C7BC72647862BD43A613A830F3689;42270.
  ) 
 Here is how much of TeX's memory you used:
- 30922 strings out of 476182
- 571729 string characters out of 5795595
+ 30937 strings out of 476182
+ 571914 string characters out of 5795595
  1993975 words of memory out of 5000000
- 51300 multiletter control sequences out of 15000+600000
+ 51305 multiletter control sequences out of 15000+600000
  581322 words of font info for 122 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,17n,93p,1464b,1044s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -6460,10 +6485,10 @@ blic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb>
-Output written on MFM_User_Manual.pdf (256 pages, 1317110 bytes).
+Output written on MFM_User_Manual.pdf (257 pages, 1321653 bytes).
 PDF statistics:
- 3891 PDF objects out of 4296 (max. 8388607)
- 3490 compressed objects within 35 object streams
- 1116 named destinations out of 1200 (max. 500000)
- 29837 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 3913 PDF objects out of 4296 (max. 8388607)
+ 3510 compressed objects within 36 object streams
+ 1126 named destinations out of 1200 (max. 500000)
+ 29845 words of extra memory for PDF output out of 29859 (max. 10000000)
 
