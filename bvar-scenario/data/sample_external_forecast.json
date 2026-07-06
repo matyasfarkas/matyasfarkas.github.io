@@ -1,0 +1,11 @@
+{
+  "source": "Sample WEO",
+  "vintage": "2026Q1",
+  "bloc": "US",
+  "_note": "External-forecast import template. Values are in the chart's DISPLAY units: q/q annualised % for growth/inflation (GDPH, JGDP), the level in % for rates (POLRATE). Each becomes a SOFT condition — the trust slider in the External forecasts panel sets how tightly it binds (100% = exact pin). Quarters are labelled YYYYQn and must fall inside the forecast horizon (the first forecast quarter is the one AFTER the panel's last history quarter). Import via ControlPanel → External forecasts → Import forecasts.",
+  "forecasts": {
+    "GDPH": { "2026Q2": 2.4, "2026Q3": 2.2, "2026Q4": 2.1, "2027Q1": 2.0 },
+    "JGDP": { "2026Q2": 2.6, "2026Q3": 2.4, "2026Q4": 2.3, "2027Q1": 2.2 },
+    "POLRATE": { "2026Q2": 3.6, "2026Q3": 3.4, "2026Q4": 3.2, "2027Q1": 3.0 }
+  }
+}
