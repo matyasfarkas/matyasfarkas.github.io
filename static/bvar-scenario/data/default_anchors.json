@@ -1,80 +1,91 @@
 {
- "AT": {
-  "GDP_AT": 1,
-  "HICP_AT": 2
- },
- "BR": {
-  "CPI_BR": 3
- },
- "CA": {
-  "FPEXP_GDP": 41.5
- },
- "CL": {
-  "CPI_CL": 3,
-  "GDP_CL": 2
- },
- "CN": {
-  "FREV_GDP": 25.5,
-  "GDP_CN": 4.3
- },
- "CO": {
-  "GDP_CO": 3
- },
- "CR": {
-  "CPI_CR": 3
- },
- "EA": {
-  "FPEXP_GDP": 47,
-  "HICP_EA": 2
- },
- "FR": {
-  "GDP_FR": 1.3
- },
- "ID": {
-  "CPI_ID": 2.5
- },
- "IL": {
-  "CPI_IL": 2
- },
- "IN": {
-  "GDP_IN": 6.5
- },
- "IS": {
-  "CPI_IS": 2.5
- },
- "LU": {
-  "HICP_LU": 2
- },
- "MX": {
-  "CPI_MX": 3,
-  "GDP_MX": 2
- },
- "NO": {
-  "HICP_NO": 2
- },
- "PL": {
-  "HICP_PL": 2.5
- },
- "PT": {
-  "HICP_PT": 2
- },
- "RU": {
-  "CPI_RU": 4,
-  "GDP_RU": 1.5
- },
- "SA": {
-  "CPI_SA": 4.5
- },
- "TH": {
-  "CPI_TH": 2
- },
- "UK": {
-  "EFFI": 4,
-  "FREV_GDP": 40
- },
- "US": {
-  "EFFI": 5,
-  "GDPH": 2,
-  "JGDP": 2
- }
+  "AU": {
+    "CPI_AU": 2.5
+  },
+  "CA": {
+    "FPEXP_GDP": 41.5,
+    "CPI_CA": 3
+  },
+  "CL": {
+    "CPI_CL": 4
+  },
+  "CN": {
+    "FREV_GDP": 25.5,
+    "CPI_CN": 0.5
+  },
+  "CO": {
+    "CPI_CO": 6.5
+  },
+  "CR": {
+    "CPI_CR": 0
+  },
+  "CZ": {
+    "HICP_CZ": 4
+  },
+  "EA": {
+    "HICP_EA": 2
+  },
+  "GR": {
+    "GDP_GR": -1
+  },
+  "HU": {
+    "HICP_HU": 8
+  },
+  "ID": {
+    "CPI_ID": 2.5
+  },
+  "IN": {
+    "GDP_IN": 6.5
+  },
+  "IS": {
+    "CPI_IS": 2.5
+  },
+  "IT": {
+    "GDP_IT": 0.8
+  },
+  "KR": {
+    "GDP_KR": 1
+  },
+  "MX": {
+    "GDP_MX": 2,
+    "CPI_MX": 4.5
+  },
+  "NO": {
+    "HICP_NO": 3.5
+  },
+  "NZ": {
+    "CPI_NZ": 4.5
+  },
+  "PL": {
+    "HICP_PL": 3.5
+  },
+  "PT": {
+    "HICP_PT": 3
+  },
+  "RU": {
+    "CPI_RU": 5.5
+  },
+  "SI": {
+    "HICP_SI": 2.5
+  },
+  "SA": {
+    "CPI_SA": 2.5
+  },
+  "SE": {
+    "HICP_SE": 3
+  },
+  "TR": {
+    "CPI_TR": 23
+  },
+  "UK": {
+    "EFFI": 3.5,
+    "CPI_UK": 2
+  },
+  "US": {
+    "GDPH": 2.2,
+    "JGDP": 2.2
+  },
+  "ZA": {
+    "CPI_ZA": 4.5
+  }
 }
