@@ -5,9 +5,9 @@
  "revisions": [
   {
    "id": "HP",
-   "shipped": 579.9380491819257,
+   "shipped": 579.938,
    "rederived": 579.9550125562239,
-   "diff": 0.016963374298143208,
+   "diff": 0.01701255622390363,
    "revisionProne": false
   }
  ]

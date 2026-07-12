@@ -1,1 +1,12 @@
-{"d0":137.11799227877208,"sfaDefault":0.157,"idx":{"gdp":0,"deflator":6,"revenue":17,"primaryExp":18,"effRate":19,"sfa":20}}
+{
+  "d0": 137.11799227877208,
+  "sfaDefault": -0.028,
+  "idx": {
+    "gdp": 0,
+    "deflator": 6,
+    "revenue": 17,
+    "primaryExp": 18,
+    "effRate": 19,
+    "sfa": 20
+  }
+}
