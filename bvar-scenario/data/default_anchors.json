@@ -1,35 +1,79 @@
 {
-  "AU": {
-    "CPI_AU": 2.5
-  },
-  "CA": {
-    "FPEXP_GDP": 41.5,
-    "CPI_CA": 3
-  },
-  "CL": {
-    "CPI_CL": 4
-  },
-  "CN": {
-    "FREV_GDP": 25.5,
-    "CPI_CN": 0.5
-  },
-  "CO": {
-    "CPI_CO": 6.5
-  },
-  "CR": {
-    "CPI_CR": 0
-  },
-  "CZ": {
-    "HICP_CZ": 4
+  "US": {
+    "GDPH": 2.2,
+    "JGDP": 2
   },
   "EA": {
     "HICP_EA": 2
   },
-  "GR": {
-    "GDP_GR": -1
+  "UK": {
+    "EFFI": 3.5,
+    "CPI_UK": 2
   },
-  "HU": {
-    "HICP_HU": 8
+  "CA": {
+    "FPEXP_GDP": 41.5,
+    "CPI_CA": 2
+  },
+  "AU": {
+    "CPI_AU": 2.5
+  },
+  "NZ": {
+    "CPI_NZ": 2,
+    "GDP_NZ": 2.3
+  },
+  "SE": {
+    "HICP_SE": 2
+  },
+  "NO": {
+    "HICP_NO": 2
+  },
+  "CZ": {
+    "HICP_CZ": 2
+  },
+  "PL": {
+    "HICP_PL": 2.5
+  },
+  "IS": {
+    "CPI_IS": 2.5
+  },
+  "KR": {
+    "CPI_KR": 2
+  },
+  "ES": {
+    "HICP_ES": 2
+  },
+  "PT": {
+    "HICP_PT": 2
+  },
+  "LV": {
+    "HICP_LV": 2
+  },
+  "SI": {
+    "HICP_SI": 2
+  },
+  "FI": {
+    "HICP_FI": 2
+  },
+  "GR": {
+    "GDP_GR": 1
+  },
+  "IT": {
+    "GDP_IT": 0.8
+  },
+  "CN": {
+    "FREV_GDP": 25.5,
+    "CPI_CN": 2
+  },
+  "MX": {
+    "CPI_MX": 3,
+    "GDP_MX": 2
+  },
+  "CL": {
+    "CPI_CL": 3
+  },
+  "CR": {
+    "CPI_CR": 3,
+    "GDP_CR": 3.5
   },
   "ID": {
     "CPI_ID": 2.5
@@ -37,55 +81,13 @@
   "IN": {
     "GDP_IN": 6.5
   },
-  "IS": {
-    "CPI_IS": 2.5
-  },
-  "IT": {
-    "GDP_IT": 0.8
-  },
-  "KR": {
-    "GDP_KR": 1
-  },
-  "MX": {
-    "GDP_MX": 2,
-    "CPI_MX": 4.5
-  },
-  "NO": {
-    "HICP_NO": 3.5
-  },
-  "NZ": {
-    "CPI_NZ": 4.5
-  },
-  "PL": {
-    "HICP_PL": 3.5
-  },
-  "PT": {
-    "HICP_PT": 3
+  "TH": {
+    "CPI_TH": 2
   },
   "RU": {
-    "CPI_RU": 5.5
-  },
-  "SI": {
-    "HICP_SI": 2.5
+    "CPI_RU": 4
   },
   "SA": {
-    "CPI_SA": 2.5
-  },
-  "SE": {
-    "HICP_SE": 3
-  },
-  "TR": {
-    "CPI_TR": 23
-  },
-  "UK": {
-    "EFFI": 3.5,
-    "CPI_UK": 2
-  },
-  "US": {
-    "GDPH": 2.2,
-    "JGDP": 2.2
-  },
-  "ZA": {
-    "CPI_ZA": 4.5
+    "CPI_SA": 2
   }
 }
