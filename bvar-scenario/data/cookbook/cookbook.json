@@ -499,5 +499,105 @@
         }
       }
     }
+  },
+  {
+    "id": "risk-shock",
+    "title": "10 · Risk shock / volatility spike",
+    "countries": [
+      "US"
+    ],
+    "tags": [
+      "risk",
+      "volatility",
+      "uncertainty",
+      "financial"
+    ],
+    "rationale": "SOURCE — the uncertainty-shock literature (Bloom 2009, Econometrica) and the historical VIX spikes: 2008 (≈70), 2011 (≈45), 2015/2018 (≈40), 2020 (≈65–80). A risk shock is a jump in the price of risk: implied equity volatility (the VIX) spikes, investors flee risk, equities fall, corporate spreads widen, and — because firms and households delay investment/hiring under elevated uncertainty — output falls, while the safe curve FALLS on flight-to-safety.\n\nNAIVE STAGE — Pin ONLY the VIX (SP500VOL) up to crisis levels (≈45–50 from a ~20 baseline, front-loaded and fading over ~2yr). Because the VIX is a DISTINCT model variable, its estimated comovement reproduces the full risk-off cascade UNAIDED — no other pins needed: output falls (~−1.3% at 1–2yr), equity crashes (~−9.5%), and the safe 10y yield falls (flight-to-safety, ~−0.2pp). This is the minimum-restriction identified risk shock, and adding equity/rate pins on top only WEAKENS it (they cap the endogenous crash).\n\nRESTRICTED STAGE (optional) — the model reads the uncertainty shock with a faint STAGFLATIONARY tilt (inflation comes out mildly UP). If the textbook DISINFLATIONARY (demand-destruction) reading is wanted, ADD a small inflation-DOWN pin. The inflation sign of an uncertainty shock is genuinely ambiguous in the literature (supply vs demand channels), so the naive single-VIX pin is a defensible, minimal scenario on its own.\n\nGLOBAL PROPAGATION — the VIX is a US/global risk gauge and lives in the US bloc only, so this is a US-anchored recipe. Under a full GVAR solve the risk-off transmits to every economy through the US-determined global financial commons (GLB_USEQ equity, GLB_USBAA corporate yield) — a US volatility spike is a GLOBAL risk shock.\n\nCOUNTRY NOTES — US: VIX = SP500VOL (CBOE VIX). Everything else is produced endogenously: equity = GLB_USEQ, safe 10y = GLB_USLR, corporate spread = GLB_USBAA − GLB_USLR, output = GDPH.",
+    "stages": {
+      "naive": {
+        "label": "VIX jumps (volatility spike only)",
+        "note": "SP500VOL (VIX) up to ~45–50 on impact, fading over ~2yr; nothing else pinned — the model produces the risk-off cascade endogenously (output down, equity ~−9.5%, safe 10y down / flight-to-safety). Adding pins here only mutes it.",
+        "pins": [
+          {
+            "varId": "SP500VOL",
+            "kind": "lin",
+            "values": [
+              25,
+              30,
+              20,
+              12,
+              6,
+              3,
+              1,
+              0
+            ],
+            "active": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          }
+        ]
+      },
+      "restricted": {
+        "label": "+ disinflation (textbook demand-destruction reading)",
+        "note": "Same VIX jump; ADD a small inflation-DOWN pin ONLY if you want the disinflationary reading (the model's own tilt is mildly stagflationary). Optional — the single VIX pin is already the minimal identified risk shock.",
+        "pins": [
+          {
+            "varId": "SP500VOL",
+            "kind": "lin",
+            "values": [
+              25,
+              30,
+              20,
+              12,
+              6,
+              3,
+              1,
+              0
+            ],
+            "active": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "varId": "JGDP",
+            "kind": "log",
+            "values": [
+              -0.5,
+              -1,
+              -1,
+              -0.75,
+              -0.5,
+              -0.25,
+              0,
+              0
+            ],
+            "active": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          }
+        ]
+      }
+    }
   }
 ]
