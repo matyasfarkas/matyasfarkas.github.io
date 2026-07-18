@@ -229,9 +229,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_AT",
@@ -239,9 +238,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_AT",
@@ -249,9 +247,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_AT",
@@ -259,9 +256,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_AT",
@@ -269,9 +265,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_AT",
@@ -288,9 +283,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_AT",
@@ -298,9 +292,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_AT",
@@ -308,9 +300,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_AT",
@@ -318,9 +308,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_AT",
@@ -336,9 +324,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_AT",
@@ -346,9 +332,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -356,9 +340,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_AT",
@@ -366,9 +348,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_AT",
@@ -376,9 +357,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -386,9 +366,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -396,9 +374,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -406,9 +382,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -416,9 +390,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_AT",
@@ -426,9 +399,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_AT",
@@ -436,9 +408,7 @@
           "source": "ECB:AT NFC Bank Lending Rate (ECB MIR new business, % p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -717,9 +687,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_BE",
@@ -727,9 +696,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_BE",
@@ -737,9 +705,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_BE",
@@ -747,9 +714,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_BE",
@@ -757,9 +723,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_BE",
@@ -776,9 +741,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_BE",
@@ -786,9 +750,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_BE",
@@ -796,9 +758,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_BE",
@@ -806,9 +766,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_BE",
@@ -824,9 +782,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_BE",
@@ -834,9 +790,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -844,9 +798,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_BE",
@@ -854,9 +806,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_BE",
@@ -864,9 +815,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -874,9 +824,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -884,9 +832,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -894,9 +840,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -904,9 +848,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_BE",
@@ -914,9 +857,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_BE",
@@ -924,9 +866,7 @@
           "source": "ECB:BE NFC Bank Lending Rate (ECB MIR new business, % p.a.)",
           "coverageStart": "2003Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -2852,9 +2792,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_DE",
@@ -2862,9 +2801,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_DE",
@@ -2872,9 +2810,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_DE",
@@ -2882,9 +2819,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_DE",
@@ -2892,9 +2828,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_DE",
@@ -2911,9 +2846,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_DE",
@@ -2921,9 +2855,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_DE",
@@ -2931,9 +2863,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -2941,9 +2871,7 @@
           "source": "Eurostat:irt_lt_mcby_m (10Y Maastricht)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_DE",
@@ -2959,9 +2887,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_DE",
@@ -2969,9 +2895,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_DE",
@@ -2979,9 +2903,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_DE",
@@ -2989,9 +2912,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -2999,9 +2921,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -3009,9 +2929,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -3019,9 +2937,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -3029,9 +2945,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_DE",
@@ -3039,9 +2954,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_DE",
@@ -3049,9 +2963,7 @@
           "source": "ECB:DE NFC Bank Lending Rate (ECB MIR new business, % p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -3582,9 +3494,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_EE",
@@ -3592,9 +3503,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_EE",
@@ -3602,9 +3512,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_EE",
@@ -3612,9 +3521,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_EE",
@@ -3622,9 +3530,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_EE",
@@ -3641,9 +3548,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_EE",
@@ -3651,9 +3557,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_EE",
@@ -3661,9 +3565,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_EE",
@@ -3671,9 +3573,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_EE",
@@ -3689,9 +3589,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_EE",
@@ -3699,9 +3597,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -3709,9 +3605,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_EE",
@@ -3719,9 +3613,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_EE",
@@ -3729,9 +3622,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -3739,9 +3631,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -3749,9 +3639,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -3759,9 +3647,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -3769,9 +3655,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_EE",
@@ -3779,9 +3664,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2008Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_EE",
@@ -3789,9 +3673,8 @@
           "source": "ECB:EE ECB MIR Composite Cost of Borrowing, NFCs (new business, % p.a.)",
           "coverageStart": "2003Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         }
       ]
     },
@@ -3818,9 +3701,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_ES",
@@ -3828,9 +3710,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_ES",
@@ -3838,9 +3719,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_ES",
@@ -3848,9 +3728,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_ES",
@@ -3858,9 +3737,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_ES",
@@ -3877,9 +3755,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_ES",
@@ -3887,9 +3764,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_ES",
@@ -3897,9 +3772,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_ES",
@@ -3907,9 +3780,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_ES",
@@ -3925,9 +3796,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_ES",
@@ -3935,9 +3804,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -3945,9 +3812,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_ES",
@@ -3955,9 +3820,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_ES",
@@ -3965,9 +3829,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -3975,9 +3838,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -3985,9 +3846,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -3995,9 +3854,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -4005,9 +3862,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_ES",
@@ -4015,9 +3871,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2007Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_ES",
@@ -4025,9 +3880,7 @@
           "source": "ECB:ES NFC Bank Lending Rate (ECB MIR composite, %)",
           "coverageStart": "2008Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -4054,9 +3907,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_FI",
@@ -4064,9 +3916,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_FI",
@@ -4074,9 +3925,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_FI",
@@ -4084,9 +3934,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_FI",
@@ -4094,9 +3943,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_FI",
@@ -4113,9 +3961,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_FI",
@@ -4123,9 +3970,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_FI",
@@ -4133,9 +3978,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_FI",
@@ -4143,9 +3986,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_FI",
@@ -4161,9 +4002,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_FI",
@@ -4171,9 +4010,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -4181,9 +4018,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_FI",
@@ -4191,9 +4026,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_FI",
@@ -4201,9 +4035,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -4211,9 +4044,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -4221,9 +4052,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -4231,9 +4060,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -4241,9 +4068,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_FI",
@@ -4251,9 +4077,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_FI",
@@ -4261,9 +4086,8 @@
           "source": "ECB:FI ECB MIR Composite Cost of Borrowing, NFCs (new business, % p.a.)",
           "coverageStart": "2003Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         }
       ]
     },
@@ -4290,9 +4114,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_FR",
@@ -4300,9 +4123,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_FR",
@@ -4310,9 +4132,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_FR",
@@ -4320,9 +4141,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_FR",
@@ -4330,9 +4150,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_FR",
@@ -4349,9 +4168,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_FR",
@@ -4359,9 +4177,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_FR",
@@ -4369,9 +4185,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_FR",
@@ -4379,9 +4193,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_FR",
@@ -4397,9 +4209,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_FR",
@@ -4407,9 +4217,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -4417,9 +4225,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_FR",
@@ -4427,9 +4233,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_FR",
@@ -4437,9 +4242,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -4447,9 +4251,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -4457,9 +4259,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -4467,9 +4267,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -4477,9 +4275,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_FR",
@@ -4487,9 +4284,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_FR",
@@ -4497,9 +4293,7 @@
           "source": "ECB:FR NFC Bank Lending Rate (ECB MIR new business, % p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -4517,9 +4311,8 @@
           "source": "Eurostat:namq_10_gdp (B1GQ, CLV15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CONS_GR",
@@ -4527,9 +4320,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_GR",
@@ -4537,9 +4329,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_GR",
@@ -4547,9 +4338,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_GR",
@@ -4557,9 +4347,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_GR",
@@ -4567,9 +4356,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_GR",
@@ -4586,9 +4374,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "NEER_GR",
@@ -4596,9 +4383,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_GR",
@@ -4606,9 +4391,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_GR",
@@ -4624,9 +4407,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_GR",
@@ -4634,9 +4415,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -4644,9 +4423,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_GR",
@@ -4654,9 +4431,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_GR",
@@ -4664,9 +4440,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -4674,9 +4449,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -4684,9 +4457,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -4694,9 +4465,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -4704,9 +4473,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_GR",
@@ -4714,9 +4482,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2007Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_GR",
@@ -4724,7 +4491,177 @@
           "source": "ECB:GR NFC Bank Lending Rate (ECB MIR new-business floating, %)",
           "coverageStart": "2008Q1",
           "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        }
+      ]
+    },
+    {
+      "code": "HK",
+      "lastHistQuarter": "2026Q1",
+      "lastBalancedObs": "2026Q1",
+      "nPeriods": 41,
+      "estimationSample": "2000Q1–2025Q4",
+      "estimationPeriods": 104,
+      "variables": [
+        {
+          "id": "GDP_HK",
+          "displayName": "HK GDP",
+          "source": "OECD/FRED:QNA real GDP",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
           "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "EXP_HK",
+          "displayName": "HK EXP",
+          "source": "OECD/FRED:QNA exports",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "IMP_HK",
+          "displayName": "HK IMP",
+          "source": "OECD/FRED:QNA imports",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "CPI_HK",
+          "displayName": "HK CPI",
+          "source": "OECD/FRED/national CPI index",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "RATE_HK",
+          "displayName": "HK RATE",
+          "source": "OECD/FRED/national 3M interbank rate",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "YIELD10_HK",
+          "displayName": "HK YIELD10",
+          "source": "OECD/FRED 10Y government bond yield",
+          "coverageStart": "2010Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2024Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "NEER_HK",
+          "displayName": "HK NEER",
+          "source": "BIS:NEER (broad)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "HP_HK",
+          "displayName": "HK HP",
+          "source": "FRED:BIS real residential property price Q<CC>R628BIS",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "EQ_HK",
+          "displayName": "HK EQ",
+          "source": "OECD/national share-price index",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "CREDIT_GDP_HK",
+          "displayName": "HK CREDIT_GDP",
+          "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "GLB_OIL",
+          "displayName": "WTI crude oil, WTISPLC q-avg ($/bbl)",
+          "source": "FRED:WTISPLC (WTI crude oil, q-avg)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USLR",
+          "displayName": "US 10Y Treasury yield (%)",
+          "source": "FRED:DGS10 (US 10Y Treasury yield)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USBAA",
+          "displayName": "US BAA corporate yield (%)",
+          "source": "FRED:BAA (US BAA corporate yield)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USEQ",
+          "displayName": "US equity (S&P 500)",
+          "source": "FRED:S&P 500 (US equity)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "ROWDEM_HK",
+          "displayName": "HK RoW Demand",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "ROWINF_HK",
+          "displayName": "HK RoW Inflation",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "ROWFIN_HK",
+          "displayName": "HK RoW Fin",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
           "imputedThrough": "2026Q1",
           "flag": "nowcast"
         }
@@ -5237,9 +5174,8 @@
           "source": "Eurostat:namq_10_gdp (B1GQ, CLV15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CONS_IE",
@@ -5247,9 +5183,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_IE",
@@ -5257,9 +5192,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_IE",
@@ -5267,9 +5201,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_IE",
@@ -5277,9 +5210,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_IE",
@@ -5287,9 +5219,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_IE",
@@ -5306,9 +5237,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_IE",
@@ -5316,9 +5246,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_IE",
@@ -5326,9 +5254,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_IE",
@@ -5336,9 +5262,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_IE",
@@ -5354,9 +5278,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_IE",
@@ -5364,9 +5286,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -5374,9 +5294,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_IE",
@@ -5384,9 +5302,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_IE",
@@ -5394,9 +5311,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -5404,9 +5320,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -5414,9 +5328,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -5424,9 +5336,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -5434,9 +5344,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_IE",
@@ -5444,9 +5353,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2007Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_IE",
@@ -5454,9 +5362,7 @@
           "source": "ECB:IE NFC Bank Lending Rate (ECB MIR composite, %)",
           "coverageStart": "2008Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -6173,9 +6079,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_IT",
@@ -6183,9 +6088,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_IT",
@@ -6193,9 +6097,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_IT",
@@ -6203,9 +6106,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_IT",
@@ -6213,9 +6115,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_IT",
@@ -6232,9 +6133,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_IT",
@@ -6242,9 +6142,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_IT",
@@ -6252,9 +6150,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_IT",
@@ -6262,9 +6158,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_IT",
@@ -6280,9 +6174,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_IT",
@@ -6290,9 +6182,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -6300,9 +6190,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_IT",
@@ -6310,9 +6198,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_IT",
@@ -6320,9 +6207,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -6330,9 +6216,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -6340,9 +6224,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -6350,9 +6232,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -6360,9 +6240,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_IT",
@@ -6370,9 +6249,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2007Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_IT",
@@ -6380,9 +6258,7 @@
           "source": "ECB:IT NFC Bank Lending Rate (ECB MIR composite, %)",
           "coverageStart": "2008Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -6912,9 +6788,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_LT",
@@ -6922,9 +6797,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_LT",
@@ -6932,9 +6806,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_LT",
@@ -6942,9 +6815,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_LT",
@@ -6952,9 +6824,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_LT",
@@ -6971,9 +6842,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_LT",
@@ -6981,9 +6851,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_LT",
@@ -6991,9 +6859,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_LT",
@@ -7001,9 +6867,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_LT",
@@ -7019,9 +6883,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_LT",
@@ -7029,9 +6891,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -7039,9 +6899,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_LT",
@@ -7049,9 +6907,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_LT",
@@ -7059,9 +6916,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -7069,9 +6925,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -7079,9 +6933,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -7089,9 +6941,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -7099,9 +6949,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_LT",
@@ -7109,9 +6958,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2007Q4",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_LT",
@@ -7119,9 +6967,7 @@
           "source": "ECB:LT ECB MIR Composite Cost of Borrowing, NFCs (new business, % p.a.)",
           "coverageStart": "2004Q4",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -7148,9 +6994,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_LU",
@@ -7158,9 +7003,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_LU",
@@ -7168,9 +7012,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_LU",
@@ -7178,9 +7021,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_LU",
@@ -7188,9 +7030,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_LU",
@@ -7207,9 +7048,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_LU",
@@ -7217,9 +7057,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_LU",
@@ -7227,9 +7065,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_LU",
@@ -7237,9 +7073,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_LU",
@@ -7255,9 +7089,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_LU",
@@ -7265,9 +7097,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -7275,9 +7105,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_LU",
@@ -7285,9 +7113,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_LU",
@@ -7295,9 +7122,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -7305,9 +7131,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -7315,9 +7139,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -7325,9 +7147,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -7335,9 +7155,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_LU",
@@ -7345,9 +7164,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_LU",
@@ -7355,9 +7173,7 @@
           "source": "ECB:LU ECB MIR Bank Lending Rate to NFCs (outstanding amounts, % p.a.)",
           "coverageStart": "2003Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -7384,9 +7200,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_LV",
@@ -7394,9 +7209,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_LV",
@@ -7404,9 +7218,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_LV",
@@ -7414,9 +7227,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_LV",
@@ -7424,9 +7236,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_LV",
@@ -7443,9 +7254,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_LV",
@@ -7453,9 +7263,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_LV",
@@ -7463,9 +7271,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_LV",
@@ -7473,9 +7279,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_LV",
@@ -7491,9 +7295,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_LV",
@@ -7501,9 +7303,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -7511,9 +7311,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_LV",
@@ -7521,9 +7319,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_LV",
@@ -7531,9 +7328,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -7541,9 +7337,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -7551,9 +7345,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -7561,9 +7353,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -7571,9 +7361,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_LV",
@@ -7581,9 +7370,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2010Q3",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         }
       ]
     },
@@ -8082,9 +7870,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_NL",
@@ -8092,9 +7879,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_NL",
@@ -8102,9 +7888,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_NL",
@@ -8112,9 +7897,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_NL",
@@ -8122,9 +7906,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_NL",
@@ -8141,9 +7924,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_NL",
@@ -8151,9 +7933,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_NL",
@@ -8161,9 +7941,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_NL",
@@ -8171,9 +7949,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_NL",
@@ -8189,9 +7965,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_NL",
@@ -8199,9 +7973,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -8209,9 +7981,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_NL",
@@ -8219,9 +7989,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_NL",
@@ -8229,9 +7998,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -8239,9 +8007,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -8249,9 +8015,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -8259,9 +8023,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -8269,9 +8031,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_NL",
@@ -8279,9 +8040,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_NL",
@@ -8289,9 +8049,7 @@
           "source": "ECB:NL NFC Bank Lending Rate (ECB MIR new business, % p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -8786,6 +8544,380 @@
       ]
     },
     {
+      "code": "PE",
+      "lastHistQuarter": "2026Q1",
+      "lastBalancedObs": "2026Q1",
+      "nPeriods": 41,
+      "estimationSample": "2000Q1–2025Q4",
+      "estimationPeriods": 104,
+      "variables": [
+        {
+          "id": "GDP_PE",
+          "displayName": "PE GDP",
+          "source": "OECD/FRED:QNA real GDP",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "CONS_PE",
+          "displayName": "PE CONS",
+          "source": "OECD/FRED:QNA consumption",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "INV_PE",
+          "displayName": "PE INV",
+          "source": "OECD/FRED:QNA gross fixed capital formation",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "GOV_PE",
+          "displayName": "PE GOV",
+          "source": "OECD/FRED:QNA government consumption",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "EXP_PE",
+          "displayName": "PE EXP",
+          "source": "OECD/FRED:QNA exports",
+          "coverageStart": "2007Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "IMP_PE",
+          "displayName": "PE IMP",
+          "source": "OECD/FRED:QNA imports",
+          "coverageStart": "2007Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "CPI_PE",
+          "displayName": "PE CPI",
+          "source": "OECD/FRED/national CPI index",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "RATE_PE",
+          "displayName": "PE RATE",
+          "source": "OECD/FRED/national 3M interbank rate",
+          "coverageStart": "2003Q4",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "YIELD10_PE",
+          "displayName": "PE YIELD10",
+          "source": "OECD/FRED 10Y government bond yield",
+          "coverageStart": "2005Q3",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "NEER_PE",
+          "displayName": "PE NEER",
+          "source": "BIS:NEER (broad)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "HP_PE",
+          "displayName": "PE HP",
+          "source": "FRED:BIS real residential property price Q<CC>R628BIS",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "EQ_PE",
+          "displayName": "PE EQ",
+          "source": "OECD/national share-price index",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "CREDIT_PE",
+          "displayName": "PE CREDIT",
+          "source": "national/OECD (type)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "GLB_OIL",
+          "displayName": "WTI crude oil, WTISPLC q-avg ($/bbl)",
+          "source": "FRED:WTISPLC (WTI crude oil, q-avg)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USLR",
+          "displayName": "US 10Y Treasury yield (%)",
+          "source": "FRED:DGS10 (US 10Y Treasury yield)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USBAA",
+          "displayName": "US BAA corporate yield (%)",
+          "source": "FRED:BAA (US BAA corporate yield)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USEQ",
+          "displayName": "US equity (S&P 500)",
+          "source": "FRED:S&P 500 (US equity)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "ROWDEM_PE",
+          "displayName": "PE RoW Demand",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "ROWINF_PE",
+          "displayName": "PE RoW Inflation",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "ROWFIN_PE",
+          "displayName": "PE RoW Fin",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        }
+      ]
+    },
+    {
+      "code": "PH",
+      "lastHistQuarter": "2026Q1",
+      "lastBalancedObs": "2026Q1",
+      "nPeriods": 41,
+      "estimationSample": "2000Q1–2025Q4",
+      "estimationPeriods": 104,
+      "variables": [
+        {
+          "id": "GDP_PH",
+          "displayName": "PH GDP",
+          "source": "OECD/FRED:QNA real GDP",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "CONS_PH",
+          "displayName": "PH CONS",
+          "source": "OECD/FRED:QNA consumption",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "INV_PH",
+          "displayName": "PH INV",
+          "source": "OECD/FRED:QNA gross fixed capital formation",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "GOV_PH",
+          "displayName": "PH GOV",
+          "source": "OECD/FRED:QNA government consumption",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "EXP_PH",
+          "displayName": "PH EXP",
+          "source": "OECD/FRED:QNA exports",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "IMP_PH",
+          "displayName": "PH IMP",
+          "source": "OECD/FRED:QNA imports",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "CPI_PH",
+          "displayName": "PH CPI",
+          "source": "OECD/FRED/national CPI index",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "RATE_PH",
+          "displayName": "PH RATE",
+          "source": "OECD/FRED/national 3M interbank rate",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "NEER_PH",
+          "displayName": "PH NEER",
+          "source": "BIS:NEER (broad)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "HP_PH",
+          "displayName": "PH HP",
+          "source": "FRED:BIS real residential property price Q<CC>R628BIS",
+          "coverageStart": "2008Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "GLB_OIL",
+          "displayName": "WTI crude oil, WTISPLC q-avg ($/bbl)",
+          "source": "FRED:WTISPLC (WTI crude oil, q-avg)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USLR",
+          "displayName": "US 10Y Treasury yield (%)",
+          "source": "FRED:DGS10 (US 10Y Treasury yield)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USBAA",
+          "displayName": "US BAA corporate yield (%)",
+          "source": "FRED:BAA (US BAA corporate yield)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USEQ",
+          "displayName": "US equity (S&P 500)",
+          "source": "FRED:S&P 500 (US equity)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "ROWDEM_PH",
+          "displayName": "PH RoW Demand",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "ROWINF_PH",
+          "displayName": "PH RoW Inflation",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "ROWFIN_PH",
+          "displayName": "PH RoW Fin",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        }
+      ]
+    },
+    {
       "code": "PL",
       "lastHistQuarter": "2026Q1",
       "lastBalancedObs": "2026Q1",
@@ -9056,9 +9188,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_PT",
@@ -9066,9 +9197,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_PT",
@@ -9076,9 +9206,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_PT",
@@ -9086,9 +9215,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_PT",
@@ -9096,9 +9224,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_PT",
@@ -9115,9 +9242,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_PT",
@@ -9125,9 +9251,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_PT",
@@ -9135,9 +9259,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_PT",
@@ -9145,9 +9267,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_PT",
@@ -9163,9 +9283,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_PT",
@@ -9173,9 +9291,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -9183,9 +9299,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_PT",
@@ -9193,9 +9307,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_PT",
@@ -9203,9 +9316,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -9213,9 +9325,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -9223,9 +9333,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -9233,9 +9341,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -9243,9 +9349,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_PT",
@@ -9253,9 +9358,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2007Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_PT",
@@ -9263,7 +9367,185 @@
           "source": "ECB:PT NFC Bank Lending Rate (ECB MIR composite, %)",
           "coverageStart": "2008Q1",
           "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        }
+      ]
+    },
+    {
+      "code": "RO",
+      "lastHistQuarter": "2026Q1",
+      "lastBalancedObs": "2026Q1",
+      "nPeriods": 41,
+      "estimationSample": "2000Q1–2025Q4",
+      "estimationPeriods": 104,
+      "variables": [
+        {
+          "id": "GDP_RO",
+          "displayName": "RO GDP",
+          "source": "OECD/FRED:QNA real GDP",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "CONS_RO",
+          "displayName": "RO CONS",
+          "source": "OECD/FRED:QNA consumption",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
           "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "INV_RO",
+          "displayName": "RO INV",
+          "source": "OECD/FRED:QNA gross fixed capital formation",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "GOV_RO",
+          "displayName": "RO GOV",
+          "source": "OECD/FRED:QNA government consumption",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "EXP_RO",
+          "displayName": "RO EXP",
+          "source": "OECD/FRED:QNA exports",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "IMP_RO",
+          "displayName": "RO IMP",
+          "source": "OECD/FRED:QNA imports",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "CPI_RO",
+          "displayName": "RO CPI",
+          "source": "OECD/FRED/national CPI index",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "RATE_RO",
+          "displayName": "RO RATE",
+          "source": "OECD/FRED/national 3M interbank rate",
+          "coverageStart": "2003Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "YIELD10_RO",
+          "displayName": "RO YIELD10",
+          "source": "OECD/FRED 10Y government bond yield",
+          "coverageStart": "2005Q2",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "NEER_RO",
+          "displayName": "RO NEER",
+          "source": "BIS:NEER (broad)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "HP_RO",
+          "displayName": "RO HP",
+          "source": "FRED:BIS real residential property price Q<CC>R628BIS",
+          "coverageStart": "2009Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "GLB_OIL",
+          "displayName": "WTI crude oil, WTISPLC q-avg ($/bbl)",
+          "source": "FRED:WTISPLC (WTI crude oil, q-avg)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USLR",
+          "displayName": "US 10Y Treasury yield (%)",
+          "source": "FRED:DGS10 (US 10Y Treasury yield)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USBAA",
+          "displayName": "US BAA corporate yield (%)",
+          "source": "FRED:BAA (US BAA corporate yield)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USEQ",
+          "displayName": "US equity (S&P 500)",
+          "source": "FRED:S&P 500 (US equity)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "ROWDEM_RO",
+          "displayName": "RO RoW Demand",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "ROWINF_RO",
+          "displayName": "RO RoW Inflation",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "ROWFIN_RO",
+          "displayName": "RO RoW Fin",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
           "imputedThrough": "2026Q1",
           "flag": "nowcast"
         }
@@ -9885,6 +10167,158 @@
       ]
     },
     {
+      "code": "SG",
+      "lastHistQuarter": "2026Q1",
+      "lastBalancedObs": "2026Q1",
+      "nPeriods": 41,
+      "estimationSample": "2000Q1–2025Q4",
+      "estimationPeriods": 104,
+      "variables": [
+        {
+          "id": "GDP_SG",
+          "displayName": "SG GDP",
+          "source": "OECD/FRED:QNA real GDP",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "EXP_SG",
+          "displayName": "SG EXP",
+          "source": "OECD/FRED:QNA exports",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "IMP_SG",
+          "displayName": "SG IMP",
+          "source": "OECD/FRED:QNA imports",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "CPI_SG",
+          "displayName": "SG CPI",
+          "source": "OECD/FRED/national CPI index",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "NEER_SG",
+          "displayName": "SG NEER",
+          "source": "BIS:NEER (broad)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "HP_SG",
+          "displayName": "SG HP",
+          "source": "FRED:BIS real residential property price Q<CC>R628BIS",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "EQ_SG",
+          "displayName": "SG EQ",
+          "source": "OECD/national share-price index",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "CREDIT_GDP_SG",
+          "displayName": "SG CREDIT_GDP",
+          "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2025Q4",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "GLB_OIL",
+          "displayName": "WTI crude oil, WTISPLC q-avg ($/bbl)",
+          "source": "FRED:WTISPLC (WTI crude oil, q-avg)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USLR",
+          "displayName": "US 10Y Treasury yield (%)",
+          "source": "FRED:DGS10 (US 10Y Treasury yield)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USBAA",
+          "displayName": "US BAA corporate yield (%)",
+          "source": "FRED:BAA (US BAA corporate yield)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "GLB_USEQ",
+          "displayName": "US equity (S&P 500)",
+          "source": "FRED:S&P 500 (US equity)",
+          "coverageStart": "2000Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2026Q1"
+        },
+        {
+          "id": "ROWDEM_SG",
+          "displayName": "SG RoW Demand",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "ROWINF_SG",
+          "displayName": "SG RoW Inflation",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        },
+        {
+          "id": "ROWFIN_SG",
+          "displayName": "SG RoW Fin",
+          "source": "derived:GVAR star (trade-weighted partner aggregate)",
+          "coverageStart": "2016Q1",
+          "coverageEnd": "2026Q1",
+          "lastObs": "2023Q2",
+          "imputedThrough": "2026Q1",
+          "flag": "nowcast"
+        }
+      ]
+    },
+    {
       "code": "SI",
       "lastHistQuarter": "2026Q1",
       "lastBalancedObs": "2026Q1",
@@ -9907,9 +10341,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_SI",
@@ -9917,9 +10350,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_SI",
@@ -9927,9 +10359,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_SI",
@@ -9937,9 +10368,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_SI",
@@ -9947,9 +10377,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_SI",
@@ -9966,9 +10395,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_SI",
@@ -9976,9 +10404,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_SI",
@@ -9986,9 +10412,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_SI",
@@ -9996,9 +10420,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_SI",
@@ -10014,9 +10436,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_SI",
@@ -10024,9 +10444,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -10034,9 +10452,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_SI",
@@ -10044,9 +10460,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_SI",
@@ -10054,9 +10469,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -10064,9 +10478,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -10074,9 +10486,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -10084,9 +10494,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -10094,9 +10502,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_SI",
@@ -10104,9 +10511,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2007Q4",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_SI",
@@ -10114,9 +10520,7 @@
           "source": "ECB:SI ECB MIR Composite Cost of Borrowing, NFCs (new business, % p.a.)",
           "coverageStart": "2003Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
@@ -10134,9 +10538,8 @@
           "source": "Eurostat:namq_10_gdp (B1GQ, CLV15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CONS_SK",
@@ -10144,9 +10547,8 @@
           "source": "Eurostat:namq_10_gdp (P31_S14_S15)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "INV_SK",
@@ -10154,9 +10556,8 @@
           "source": "Eurostat:namq_10_gdp (P51G)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "GOV_SK",
@@ -10164,9 +10565,8 @@
           "source": "Eurostat:namq_10_gdp (P3_S13)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "EXP_SK",
@@ -10174,9 +10574,8 @@
           "source": "Eurostat:namq_10_gdp (P6)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "IMP_SK",
@@ -10184,9 +10583,8 @@
           "source": "Eurostat:namq_10_gdp (P7)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HICP_SK",
@@ -10203,9 +10601,8 @@
           "source": "Eurostat:une_rt_q (unemployment rate)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "HPI_SK",
@@ -10213,9 +10610,7 @@
           "source": "Eurostat:prc_hpi_q (residential HPI, deflated by HICP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "NEER_SK",
@@ -10223,9 +10618,7 @@
           "source": "Eurostat:ert_eff_ic_q (NEER, IC42)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SPREAD_SK",
@@ -10233,9 +10626,7 @@
           "source": "derived:10Y sovereign spread vs Bund",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "POLRATE_SK",
@@ -10251,9 +10642,7 @@
           "source": "ECB:all-bonds 10Y IG corporate yield (shared EA external)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "RATE_SK",
@@ -10261,9 +10650,7 @@
           "source": "Eurostat:irt_st_q (3M; euro members=EURIBOR)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "YIELD10_DE",
@@ -10271,9 +10658,7 @@
           "source": "Eurostat:irt_lt_mcby_m DE (Bund, spread base)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "ROWEA_GDP_SK",
@@ -10281,9 +10666,8 @@
           "source": "derived:rest-of-EA real GDP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "ROWEA_HICP_SK",
@@ -10291,9 +10675,8 @@
           "source": "derived:rest-of-EA HICP aggregate",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "FREV_GDP",
@@ -10301,9 +10684,7 @@
           "source": "national/Eurostat/IFI gov-finance: government revenue (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "FPEXP_GDP",
@@ -10311,9 +10692,7 @@
           "source": "national/Eurostat/IFI gov-finance: primary expenditure (% of GDP; per-bloc sources in pipeline/fiscal_expansion_22/SOURCES.md)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "EFFI",
@@ -10321,9 +10700,7 @@
           "source": "derived:effective interest rate = interest / lagged gross debt (% p.a.)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         },
         {
           "id": "SFA",
@@ -10331,9 +10708,8 @@
           "source": "derived:stock-flow adjustment (debt-recursion residual, % of GDP)",
           "coverageStart": "2000Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "interior-gap,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "interior-gap"
         },
         {
           "id": "CREDIT_GDP_SK",
@@ -10341,9 +10717,8 @@
           "source": "BIS via FRED:Q<ISO2>NAM770A (total credit to NFCs, % of GDP)",
           "coverageStart": "2007Q4",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "covid-masked,nowcast"
+          "lastObs": "2026Q1",
+          "flag": "covid-masked"
         },
         {
           "id": "LENDR_SK",
@@ -10351,9 +10726,7 @@
           "source": "ECB:SK ECB MIR Composite Cost of Borrowing, NFCs (new business, % p.a.)",
           "coverageStart": "2008Q1",
           "coverageEnd": "2026Q1",
-          "lastObs": "2025Q4",
-          "imputedThrough": "2026Q1",
-          "flag": "nowcast"
+          "lastObs": "2026Q1"
         }
       ]
     },
