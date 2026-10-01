@@ -1,0 +1,2427 @@
+{
+  "generatedForLiveOrigin": "2026-01-01",
+  "note": "Each vintage compares the LIVE published panel (POST) against a prior vintage (BASE). pureDataShift=true means the model/companion was frozen (a true data-release impact); false means the comparison also spans a re-estimation (model + data).",
+  "vintages": [
+    {
+      "id": "pre_2026Q1_counterfactual",
+      "label": "2026Q1 pre-release — pure data shift (model frozen)",
+      "kind": "pure-data-shift",
+      "pureDataShift": true,
+      "baseOriginISO": "2026-01-01",
+      "liveOriginISO": "2026-01-01",
+      "comparable": true,
+      "nBlocs": 35,
+      "totalDropped": 0,
+      "totalTransformMism": 0,
+      "blocs": [
+        {
+          "bloc": "AU",
+          "nVars": 25,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_AU",
+              "pre": 2.27,
+              "post": 3.4771,
+              "delta": 1.2071,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_AU",
+              "pre": 4.2122,
+              "post": 2.3861,
+              "delta": -1.8261,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "BR",
+          "nVars": 24,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_BR",
+              "pre": 0.6217,
+              "post": 1.0224,
+              "delta": 0.4006,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_BR",
+              "pre": 7.7445,
+              "post": 2.4085,
+              "delta": -5.336,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_BR",
+              "pre": 14.9795,
+              "post": 15,
+              "delta": 0.0205,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "CA",
+          "nVars": 27,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CA",
+              "pre": 5.7361,
+              "post": -0.9871,
+              "delta": -6.7232,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_CA",
+              "pre": 4.5096,
+              "post": 0.8886,
+              "delta": -3.621,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_CA",
+              "pre": 2.0006,
+              "post": 2.25,
+              "delta": 0.2494,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "CH",
+          "nVars": 20,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CH",
+              "pre": 2.1115,
+              "post": 0.8655,
+              "delta": -1.246,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "HICP_CH",
+              "pre": 1.8423,
+              "post": -2.4186,
+              "delta": -4.2609,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_CH",
+              "pre": 0.0578,
+              "post": 0,
+              "delta": -0.0578,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "CL",
+          "nVars": 25,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CL",
+              "pre": 4.5087,
+              "post": 2.0631,
+              "delta": -2.4456,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_CL",
+              "pre": 2.2132,
+              "post": 1.8339,
+              "delta": -0.3793,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_CL",
+              "pre": 4.3393,
+              "post": 4.6667,
+              "delta": 0.3274,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "CN",
+          "nVars": 22,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CN",
+              "pre": 6.5972,
+              "post": 4.7714,
+              "delta": -1.8258,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_CN",
+              "pre": 1.9596,
+              "post": 1.2966,
+              "delta": -0.663,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_CN",
+              "pre": 3.0217,
+              "post": 3,
+              "delta": -0.0217,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "CO",
+          "nVars": 26,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CO",
+              "pre": -3.334,
+              "post": 0.1476,
+              "delta": 3.4816,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_CO",
+              "pre": 6.1118,
+              "post": 2.3839,
+              "delta": -3.728,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_CO",
+              "pre": 9.0786,
+              "post": 9.25,
+              "delta": 0.1714,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "CR",
+          "nVars": 20,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CR",
+              "pre": -9.7032,
+              "post": 27.4865,
+              "delta": 37.1896,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_CR",
+              "pre": 3.1568,
+              "post": 0.7421,
+              "delta": -2.4147,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "CZ",
+          "nVars": 25,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CZ",
+              "pre": 3.1401,
+              "post": 2.8549,
+              "delta": -0.2852,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "HICP_CZ",
+              "pre": 10.5554,
+              "post": -1.4547,
+              "delta": -12.0101,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_CZ",
+              "pre": 3.9341,
+              "post": 3.5,
+              "delta": -0.4341,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "DK",
+          "nVars": 26,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_DK",
+              "pre": -1.3109,
+              "post": 1.9064,
+              "delta": 3.2174,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "HICP_DK",
+              "pre": 0.6022,
+              "post": -0.9829,
+              "delta": -1.5852,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_DK",
+              "pre": 1.4917,
+              "post": 1.6,
+              "delta": 0.1083,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "EA",
+          "nVars": 25,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_EA",
+              "pre": 1.9298,
+              "post": 0.6539,
+              "delta": -1.2759,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "HICP_EA",
+              "pre": 2.7351,
+              "post": 0.7562,
+              "delta": -1.9789,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_EA",
+              "pre": 1.9873,
+              "post": 2,
+              "delta": 0.0127,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "HK",
+          "nVars": 17,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_HK",
+              "pre": 5.3841,
+              "post": 4.2174,
+              "delta": -1.1667,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_HK",
+              "pre": 2.438,
+              "post": 1.9524,
+              "delta": -0.4856,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "HU",
+          "nVars": 25,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_HU",
+              "pre": 0.2439,
+              "post": 0.6955,
+              "delta": 0.4517,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "HICP_HU",
+              "pre": 8.1003,
+              "post": -0.0687,
+              "delta": -8.169,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_HU",
+              "pre": 6.6355,
+              "post": 6.5,
+              "delta": -0.1355,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "ID",
+          "nVars": 24,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_ID",
+              "pre": -0.218,
+              "post": 5.5667,
+              "delta": 5.7847,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_ID",
+              "pre": 2.3909,
+              "post": 1.2449,
+              "delta": -1.146,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_ID",
+              "pre": 4.1447,
+              "post": 4.75,
+              "delta": 0.6053,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "IN",
+          "nVars": 21,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_IN",
+              "pre": 7.587,
+              "post": 10.1332,
+              "delta": 2.5461,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_IN",
+              "pre": 4.7143,
+              "post": 1.9804,
+              "delta": -2.7339,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_IN",
+              "pre": 5.2645,
+              "post": 5.4167,
+              "delta": 0.1522,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "IS",
+          "nVars": 21,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_IS",
+              "pre": 4.54,
+              "post": -3.3854,
+              "delta": -7.9254,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_IS",
+              "pre": 2.6756,
+              "post": 2.2043,
+              "delta": -0.4713,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_IS",
+              "pre": 6.371,
+              "post": 7.3333,
+              "delta": 0.9623,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "JP",
+          "nVars": 26,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_JP",
+              "pre": 0.5614,
+              "post": 0.8352,
+              "delta": 0.2738,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_JP",
+              "pre": 2.973,
+              "post": 3.5556,
+              "delta": 0.5826,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_JP",
+              "pre": 0.6094,
+              "post": 0.5833,
+              "delta": -0.0261,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "KR",
+          "nVars": 26,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_KR",
+              "pre": 2.9219,
+              "post": 0.3104,
+              "delta": -2.6115,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_KR",
+              "pre": 2.5395,
+              "post": 0.373,
+              "delta": -2.1665,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_KR",
+              "pre": 2.4647,
+              "post": 2.5,
+              "delta": 0.0353,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "MX",
+          "nVars": 26,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_MX",
+              "pre": 3.195,
+              "post": 2.8671,
+              "delta": -0.3279,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_MX",
+              "pre": 5.7313,
+              "post": 4.3266,
+              "delta": -1.4047,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_MX",
+              "pre": 7.612,
+              "post": 7.25,
+              "delta": -0.362,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "MY",
+          "nVars": 21,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_MY",
+              "pre": 10.1993,
+              "post": 5.4262,
+              "delta": -4.773,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_MY",
+              "pre": 3.1186,
+              "post": 0.8883,
+              "delta": -2.2303,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_MY",
+              "pre": 2.6968,
+              "post": 2.75,
+              "delta": 0.0532,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "NO",
+          "nVars": 24,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_NO",
+              "pre": -3.035,
+              "post": -2.4119,
+              "delta": 0.6231,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "HICP_NO",
+              "pre": 0.4522,
+              "post": 0.8562,
+              "delta": 0.404,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_NO",
+              "pre": 4.0512,
+              "post": 4,
+              "delta": -0.0512,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "NZ",
+          "nVars": 25,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_NZ",
+              "pre": 1.2177,
+              "post": 0.2816,
+              "delta": -0.9361,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_NZ",
+              "pre": 2.4087,
+              "post": 1.8339,
+              "delta": -0.5748,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "PE",
+          "nVars": 20,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_PE",
+              "pre": -6.45,
+              "post": 16.5519,
+              "delta": 23.0019,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_PE",
+              "pre": 0.1792,
+              "post": -0.1362,
+              "delta": -0.3155,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "PH",
+          "nVars": 17,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_PH",
+              "pre": 4.0262,
+              "post": 2.3261,
+              "delta": -1.7001,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_PH",
+              "pre": 4.3945,
+              "post": 2.901,
+              "delta": -1.4935,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "PL",
+          "nVars": 25,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_PL",
+              "pre": 5.0403,
+              "post": 3.9824,
+              "delta": -1.0578,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "HICP_PL",
+              "pre": 3.6441,
+              "post": 1.9011,
+              "delta": -1.743,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_PL",
+              "pre": 3.9875,
+              "post": 4.25,
+              "delta": 0.2625,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "RO",
+          "nVars": 18,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_RO",
+              "pre": 3.1501,
+              "post": -7.7196,
+              "delta": -10.8697,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_RO",
+              "pre": 9.8233,
+              "post": 7.8552,
+              "delta": -1.9681,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "SA",
+          "nVars": 18,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_SA",
+              "pre": 11.3082,
+              "post": 5.6196,
+              "delta": -5.6886,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_SA",
+              "pre": 3.6875,
+              "post": 1.4703,
+              "delta": -2.2173,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_SA",
+              "pre": 4.0127,
+              "post": 4.4167,
+              "delta": 0.4039,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "SE",
+          "nVars": 26,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_SE",
+              "pre": 5.4785,
+              "post": 3.3193,
+              "delta": -2.1592,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "HICP_SE",
+              "pre": 2.7537,
+              "post": 0.8819,
+              "delta": -1.8718,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_SE",
+              "pre": 2.1936,
+              "post": 1.75,
+              "delta": -0.4436,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "SG",
+          "nVars": 15,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_SG",
+              "pre": 7.9607,
+              "post": 5.1072,
+              "delta": -2.8534,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_SG",
+              "pre": 2.136,
+              "post": 2.6772,
+              "delta": 0.5412,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "TH",
+          "nVars": 26,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_TH",
+              "pre": 5.0187,
+              "post": 0.9152,
+              "delta": -4.1035,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_TH",
+              "pre": 9.5086,
+              "post": -1.8361,
+              "delta": -11.3446,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_TH",
+              "pre": 1.2626,
+              "post": 1.4167,
+              "delta": 0.1541,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "TR",
+          "nVars": 24,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_TR",
+              "pre": 10.2771,
+              "post": 1.5328,
+              "delta": -8.7443,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_TR",
+              "pre": 27.8886,
+              "post": 24.6412,
+              "delta": -3.2473,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_TR",
+              "pre": 36.4541,
+              "post": 39,
+              "delta": 2.5459,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "TW",
+          "nVars": 21,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_TW",
+              "pre": 6.6268,
+              "post": 25.2417,
+              "delta": 18.6149,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_TW",
+              "pre": 0.5379,
+              "post": 1.5269,
+              "delta": 0.9889,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "UK",
+          "nVars": 27,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_UK",
+              "pre": 1.4985,
+              "post": 0.2187,
+              "delta": -1.2798,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_UK",
+              "pre": 2.9439,
+              "post": 1.7204,
+              "delta": -1.2235,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_UK",
+              "pre": 4.091,
+              "post": 3.9167,
+              "delta": -0.1743,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "US",
+          "nVars": 40,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDPH",
+              "pre": 3.938,
+              "post": 0.4811,
+              "delta": -3.4569,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "JGDP",
+              "pre": 5.1434,
+              "post": 3.6731,
+              "delta": -1.4703,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE",
+              "pre": 3.6284,
+              "post": 3.9,
+              "delta": 0.2716,
+              "crossSpace": false
+            }
+          }
+        },
+        {
+          "bloc": "ZA",
+          "nVars": 25,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_ZA",
+              "pre": -0.4135,
+              "post": 1.4872,
+              "delta": 1.9007,
+              "crossSpace": false
+            },
+            "inflation": {
+              "id": "CPI_ZA",
+              "pre": 4.4137,
+              "post": 0.7737,
+              "delta": -3.64,
+              "crossSpace": false
+            },
+            "policyRate": {
+              "id": "POLRATE_ZA",
+              "pre": 7.0636,
+              "post": 6.8333,
+              "delta": -0.2303,
+              "crossSpace": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2025Q4_shipped",
+      "label": "2025Q4 re-estimation — model + data",
+      "kind": "re-estimation",
+      "pureDataShift": false,
+      "baseOriginISO": "2025-10-01",
+      "liveOriginISO": "2026-01-01",
+      "comparable": true,
+      "nBlocs": 47,
+      "totalDropped": 5,
+      "totalTransformMism": 28,
+      "blocs": [
+        {
+          "bloc": "AT",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_AT",
+              "pre": 0.92,
+              "post": 0.8339,
+              "delta": -0.0861,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_AT",
+              "pre": 3.764,
+              "post": 1.9738,
+              "delta": -1.7902,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_AT",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "AU",
+          "nVars": 20,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_AU",
+              "pre": 3.48,
+              "post": 3.4771,
+              "delta": -0.0029,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_AU",
+              "pre": 2.388,
+              "post": 2.3861,
+              "delta": -0.0019,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "BE",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_BE",
+              "pre": 0.2,
+              "post": 0.9771,
+              "delta": 0.7771,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_BE",
+              "pre": 3.716,
+              "post": 1.781,
+              "delta": -1.935,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_BE",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "BR",
+          "nVars": 19,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_BR",
+              "pre": 1.04,
+              "post": 1.0224,
+              "delta": -0.0176,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_BR",
+              "pre": 2.412,
+              "post": 2.4085,
+              "delta": -0.0035,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_BR",
+              "pre": 15,
+              "post": 15,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "CA",
+          "nVars": 26,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CA",
+              "pre": -1,
+              "post": -0.9871,
+              "delta": 0.0129,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_CA",
+              "pre": 0.888,
+              "post": 0.8886,
+              "delta": 0.0006,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_CA",
+              "pre": 2.25,
+              "post": 2.25,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "CH",
+          "nVars": 19,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CH",
+              "pre": 0.84,
+              "post": 0.8655,
+              "delta": 0.0255,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_CH",
+              "pre": -2.416,
+              "post": -2.4186,
+              "delta": -0.0026,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_CH",
+              "pre": 0,
+              "post": 0,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "CL",
+          "nVars": 20,
+          "dropped": [
+            "CORP_CL"
+          ],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CL",
+              "pre": 2.08,
+              "post": 2.0631,
+              "delta": -0.0169,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_CL",
+              "pre": 1.836,
+              "post": 1.8339,
+              "delta": -0.0021,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_CL",
+              "pre": 4.6667,
+              "post": 4.6667,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "CN",
+          "nVars": 22,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CN",
+              "pre": 4.7714,
+              "post": 4.7714,
+              "delta": 0,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_CN",
+              "pre": 1.2966,
+              "post": 1.2966,
+              "delta": 0,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_CN",
+              "pre": 3,
+              "post": 3,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "CO",
+          "nVars": 21,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CO",
+              "pre": 0.16,
+              "post": 0.1476,
+              "delta": -0.0124,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_CO",
+              "pre": 2.384,
+              "post": 2.3839,
+              "delta": -0.0001,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_CO",
+              "pre": 9.25,
+              "post": 9.25,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "CR",
+          "nVars": 15,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CR",
+              "pre": 27.488,
+              "post": 27.4865,
+              "delta": -0.0015,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_CR",
+              "pre": 0.744,
+              "post": 0.7421,
+              "delta": -0.0019,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "CZ",
+          "nVars": 20,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_CZ",
+              "pre": 2.84,
+              "post": 2.8549,
+              "delta": 0.0149,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_CZ",
+              "pre": -1.456,
+              "post": -1.4547,
+              "delta": 0.0013,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_CZ",
+              "pre": 3.5,
+              "post": 3.5,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "DE",
+          "nVars": 22,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_DE",
+              "pre": 0.96,
+              "post": 1.3706,
+              "delta": 0.4106,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_DE",
+              "pre": 0.904,
+              "post": 1.862,
+              "delta": 0.958,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_DE",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "DK",
+          "nVars": 21,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_DK",
+              "pre": 1.88,
+              "post": 1.9064,
+              "delta": 0.0264,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_DK",
+              "pre": -0.984,
+              "post": -0.9829,
+              "delta": 0.0011,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_DK",
+              "pre": 1.6,
+              "post": 1.6,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "EA",
+          "nVars": 24,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_EA",
+              "pre": 0.64,
+              "post": 0.6539,
+              "delta": 0.0139,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_EA",
+              "pre": 0.756,
+              "post": 0.7562,
+              "delta": 0.0002,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_EA",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "EE",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_EE",
+              "pre": 1.232,
+              "post": 4.2909,
+              "delta": 3.0589,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_EE",
+              "pre": -3.24,
+              "post": 3.3645,
+              "delta": 6.6045,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_EE",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "ES",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_ES",
+              "pre": 3.04,
+              "post": 2.4468,
+              "delta": -0.5932,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_ES",
+              "pre": 3.252,
+              "post": 1.225,
+              "delta": -2.027,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_ES",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "FI",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_FI",
+              "pre": 1.28,
+              "post": 3.5937,
+              "delta": 2.3137,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_FI",
+              "pre": 0.468,
+              "post": 4.2849,
+              "delta": 3.8169,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_FI",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "FR",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_FR",
+              "pre": 0.84,
+              "post": -0.365,
+              "delta": -1.205,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_FR",
+              "pre": -2.276,
+              "post": 1.6763,
+              "delta": 3.9523,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_FR",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "GR",
+          "nVars": 22,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_GR",
+              "pre": 2.88,
+              "post": -3.8225,
+              "delta": -6.7025,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_GR",
+              "pre": 0.24,
+              "post": 0.8716,
+              "delta": 0.6316,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_GR",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "HU",
+          "nVars": 20,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_HU",
+              "pre": 0.72,
+              "post": 0.6955,
+              "delta": -0.0245,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_HU",
+              "pre": -0.068,
+              "post": -0.0687,
+              "delta": -0.0007,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_HU",
+              "pre": 6.5,
+              "post": 6.5,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "ID",
+          "nVars": 19,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_ID",
+              "pre": 5.56,
+              "post": 5.5667,
+              "delta": 0.0067,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_ID",
+              "pre": 1.244,
+              "post": 1.2449,
+              "delta": 0.0009,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_ID",
+              "pre": 4.75,
+              "post": 4.75,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "IE",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_IE",
+              "pre": -17.16,
+              "post": 9.4812,
+              "delta": 26.6412,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_IE",
+              "pre": 1.632,
+              "post": 1.7789,
+              "delta": 0.1469,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_IE",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "IN",
+          "nVars": 20,
+          "dropped": [
+            "CORP_IN"
+          ],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_IN",
+              "pre": 10.12,
+              "post": 10.1332,
+              "delta": 0.0132,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_IN",
+              "pre": 1.98,
+              "post": 1.9804,
+              "delta": 0.0004,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_IN",
+              "pre": 5.4167,
+              "post": 5.4167,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "IS",
+          "nVars": 20,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_IS",
+              "pre": -3.4,
+              "post": -3.3854,
+              "delta": 0.0146,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_IS",
+              "pre": 2.204,
+              "post": 2.2043,
+              "delta": 0.0003,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_IS",
+              "pre": 7.3333,
+              "post": 7.3333,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "IT",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_IT",
+              "pre": 1.24,
+              "post": 1.1201,
+              "delta": -0.1199,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_IT",
+              "pre": 2.036,
+              "post": -0.3982,
+              "delta": -2.4342,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_IT",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "JP",
+          "nVars": 24,
+          "dropped": [],
+          "added": [
+            "NEER_JP"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_JP",
+              "pre": 0.84,
+              "post": 0.8352,
+              "delta": -0.0048,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_JP",
+              "pre": 3.556,
+              "post": 3.5556,
+              "delta": -0.0004,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_JP",
+              "pre": 0.5833,
+              "post": 0.5833,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "KR",
+          "nVars": 20,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA",
+            "NEER_KR"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_KR",
+              "pre": 0.32,
+              "post": 0.3104,
+              "delta": -0.0096,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_KR",
+              "pre": 0.372,
+              "post": 0.373,
+              "delta": 0.001,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_KR",
+              "pre": 2.5,
+              "post": 2.5,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "LT",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_LT",
+              "pre": 7.492,
+              "post": -1.1126,
+              "delta": -8.6046,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_LT",
+              "pre": 1.876,
+              "post": 9.3197,
+              "delta": 7.4437,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_LT",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "LU",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_LU",
+              "pre": -0.18,
+              "post": -0.0772,
+              "delta": 0.1028,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_LU",
+              "pre": 0.696,
+              "post": 0.5153,
+              "delta": -0.1807,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_LU",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "LV",
+          "nVars": 22,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_LV",
+              "pre": 2.596,
+              "post": 2.2505,
+              "delta": -0.3455,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_LV",
+              "pre": 0.14,
+              "post": 2.4174,
+              "delta": 2.2774,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_LV",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "MX",
+          "nVars": 21,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_MX",
+              "pre": 2.88,
+              "post": 2.8671,
+              "delta": -0.0129,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_MX",
+              "pre": 4.328,
+              "post": 4.3266,
+              "delta": -0.0014,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_MX",
+              "pre": 7.25,
+              "post": 7.25,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "MY",
+          "nVars": 20,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_MY",
+              "pre": 5.44,
+              "post": 5.4262,
+              "delta": -0.0138,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_MY",
+              "pre": 0.888,
+              "post": 0.8883,
+              "delta": 0.0003,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_MY",
+              "pre": 2.75,
+              "post": 2.75,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "NL",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_NL",
+              "pre": 1.64,
+              "post": 0.2043,
+              "delta": -1.4357,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_NL",
+              "pre": -1.072,
+              "post": -0.8748,
+              "delta": 0.1972,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_NL",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "NO",
+          "nVars": 19,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_NO",
+              "pre": -2.4,
+              "post": -2.4119,
+              "delta": -0.0119,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_NO",
+              "pre": 0.856,
+              "post": 0.8562,
+              "delta": 0.0002,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_NO",
+              "pre": 4,
+              "post": 4,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "NZ",
+          "nVars": 20,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_NZ",
+              "pre": 0.28,
+              "post": 0.2816,
+              "delta": 0.0016,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_NZ",
+              "pre": 1.836,
+              "post": 1.8339,
+              "delta": -0.0021,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "PL",
+          "nVars": 20,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_PL",
+              "pre": 3.96,
+              "post": 3.9824,
+              "delta": 0.0224,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_PL",
+              "pre": 1.9,
+              "post": 1.9011,
+              "delta": 0.0011,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_PL",
+              "pre": 4.25,
+              "post": 4.25,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "PT",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_PT",
+              "pre": 3.68,
+              "post": 0.1898,
+              "delta": -3.4902,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_PT",
+              "pre": -1.116,
+              "post": -1.9936,
+              "delta": -0.8776,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_PT",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "SA",
+          "nVars": 17,
+          "dropped": [
+            "RATE_SA"
+          ],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_SA",
+              "pre": 5.6,
+              "post": 5.6196,
+              "delta": 0.0196,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_SA",
+              "pre": 1.472,
+              "post": 1.4703,
+              "delta": -0.0017,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_SA",
+              "pre": 4.4167,
+              "post": 4.4167,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "SE",
+          "nVars": 21,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_SE",
+              "pre": 3.32,
+              "post": 3.3193,
+              "delta": -0.0007,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_SE",
+              "pre": 0.884,
+              "post": 0.8819,
+              "delta": -0.0021,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_SE",
+              "pre": 1.75,
+              "post": 1.75,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "SI",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_SI",
+              "pre": 1.704,
+              "post": 2.7449,
+              "delta": 1.0409,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_SI",
+              "pre": 0.304,
+              "post": 0.5552,
+              "delta": 0.2512,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_SI",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "SK",
+          "nVars": 23,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_SK",
+              "pre": 1,
+              "post": -1.5039,
+              "delta": -2.5039,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "HICP_SK",
+              "pre": 1.348,
+              "post": 7.5804,
+              "delta": 6.2324,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_SK",
+              "pre": 2,
+              "post": 2,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "TH",
+          "nVars": 21,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_TH",
+              "pre": 0.92,
+              "post": 0.9152,
+              "delta": -0.0048,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_TH",
+              "pre": -1.836,
+              "post": -1.8361,
+              "delta": -0.0001,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_TH",
+              "pre": 1.4167,
+              "post": 1.4167,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "TR",
+          "nVars": 18,
+          "dropped": [],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA",
+            "NEER_TR"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_TR",
+              "pre": 1.56,
+              "post": 1.5328,
+              "delta": -0.0272,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_TR",
+              "pre": 24.644,
+              "post": 24.6412,
+              "delta": -0.0028,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_TR",
+              "pre": 39,
+              "post": 39,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "TW",
+          "nVars": 19,
+          "dropped": [],
+          "added": [
+            "NEER_TW"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_TW",
+              "pre": 25.24,
+              "post": 25.2417,
+              "delta": 0.0017,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_TW",
+              "pre": 1.528,
+              "post": 1.5269,
+              "delta": -0.0011,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "UK",
+          "nVars": 26,
+          "dropped": [],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDP_UK",
+              "pre": 0.24,
+              "post": 0.2187,
+              "delta": -0.0213,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_UK",
+              "pre": 1.72,
+              "post": 1.7204,
+              "delta": 0.0004,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_UK",
+              "pre": 3.9167,
+              "post": 3.9167,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "US",
+          "nVars": 40,
+          "dropped": [
+            "PZTEXP"
+          ],
+          "added": [],
+          "headline": {
+            "gdp": {
+              "id": "GDPH",
+              "pre": 0.48,
+              "post": 0.4811,
+              "delta": 0.0011,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "JGDP",
+              "pre": 3.672,
+              "post": 3.6731,
+              "delta": 0.0011,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE",
+              "pre": 3.9,
+              "post": 3.9,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        },
+        {
+          "bloc": "ZA",
+          "nVars": 20,
+          "dropped": [
+            "LENDR_ZA"
+          ],
+          "added": [
+            "FREV_GDP",
+            "FPEXP_GDP",
+            "EFFI",
+            "SFA"
+          ],
+          "headline": {
+            "gdp": {
+              "id": "GDP_ZA",
+              "pre": 1.52,
+              "post": 1.4872,
+              "delta": -0.0328,
+              "crossSpace": true
+            },
+            "inflation": {
+              "id": "CPI_ZA",
+              "pre": 0.772,
+              "post": 0.7737,
+              "delta": 0.0017,
+              "crossSpace": true
+            },
+            "policyRate": {
+              "id": "POLRATE_ZA",
+              "pre": 6.8333,
+              "post": 6.8333,
+              "delta": 0,
+              "crossSpace": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
