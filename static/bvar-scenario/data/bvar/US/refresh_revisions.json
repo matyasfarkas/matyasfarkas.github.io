@@ -1,14 +1,234 @@
 {
- "asof": "2026Q1",
- "detectedAt": "2025-10-01",
- "note": "source revisions detected by the R1 gate and ACCEPTED (as-of-now knowledge policy); shipped history retains its vintage values — the seam is the revision",
- "revisions": [
+ "log": [
   {
-   "id": "HP",
-   "shipped": 579.938,
-   "rederived": 579.9550125562239,
-   "diff": 0.01701255622390363,
-   "revisionProne": false
+   "stampedAt": "2026-10-05T14:02:52.521Z",
+   "asof": "2026Q1",
+   "priorQuarter": "2025-10-01",
+   "note": "as-of-now knowledge policy: the prior shipped quarter was RE-SYNCED to realized source values before appending the new quarter (self-correcting, NOT append-only). `resynced` = columns actually overwritten (|diff| > gate-tol); `gateFlagged` = the subset large enough to classify as a genuine vintage revision (|diff| > class-tol).",
+   "resynced": [
+    {
+     "id": "GDPH",
+     "shipped": 1008.8129290626568,
+     "realized": 1009.102378093236,
+     "diff": 0.28944903057913507
+    },
+    {
+     "id": "CH",
+     "shipped": 972.1079131969626,
+     "realized": 971.7433960353377,
+     "diff": 0.3645171616249172
+    },
+    {
+     "id": "FRH",
+     "shipped": 680.8127625334047,
+     "realized": 680.3099119759476,
+     "diff": 0.5028505574571227
+    },
+    {
+     "id": "FNH",
+     "shipped": 811.408597009671,
+     "realized": 814.2420214619355,
+     "diff": 2.8334244522644667
+    },
+    {
+     "id": "XH",
+     "shipped": 789.6089052507723,
+     "realized": 789.7719431463308,
+     "diff": 0.16303789555854564
+    },
+    {
+     "id": "MH",
+     "shipped": 820.3963814562409,
+     "realized": 821.5405703691678,
+     "diff": 1.144188912926893
+    },
+    {
+     "id": "GH",
+     "shipped": 828.3266207315794,
+     "realized": 830.4131397961852,
+     "diff": 2.0865190646057954
+    },
+    {
+     "id": "JGDP",
+     "shipped": 487.232296718738,
+     "realized": 487.0698669798432,
+     "diff": 0.16242973889478662
+    },
+    {
+     "id": "JC",
+     "shipped": 485.3591544486569,
+     "realized": 485.2787789424708,
+     "diff": 0.08037550618610112
+    },
+    {
+     "id": "JCXFE",
+     "shipped": 484.8375154638862,
+     "realized": 484.7575041639053,
+     "diff": 0.08001129998086753
+    },
+    {
+     "id": "IP",
+     "shipped": 461.76727027868196,
+     "realized": 461.75857923825026,
+     "diff": 0.008691040431699548
+    },
+    {
+     "id": "CUMFG",
+     "shipped": 74.8241,
+     "realized": 74.8049,
+     "diff": 0.019199999999997885
+    },
+    {
+     "id": "YPDH",
+     "shipped": 979.9805849106347,
+     "realized": 980.8782894366569,
+     "diff": 0.8977045260222667
+    },
+    {
+     "id": "HP",
+     "shipped": 579.9380491819257,
+     "realized": 579.918052938729,
+     "diff": 0.019996243196715113
+    },
+    {
+     "id": "LEV",
+     "shipped": 1620.0374413499744,
+     "realized": 1626.9261326152043,
+     "diff": 6.888691265229909
+    },
+    {
+     "id": "FREV_GDP",
+     "shipped": 18.771498510336183,
+     "realized": 18.809101863827006,
+     "diff": 0.03760335349082311
+    },
+    {
+     "id": "FPEXP_GDP",
+     "shipped": 20.228061868737093,
+     "realized": 20.018229307293634,
+     "diff": 0.2098325614434593
+    },
+    {
+     "id": "EFFI",
+     "shipped": 3.2613570507497003,
+     "realized": 3.3522481941001474,
+     "diff": 0.09089114335044712
+    }
+   ],
+   "gateFlagged": [
+    {
+     "id": "GDPH",
+     "shipped": 1008.8129290626568,
+     "rederived": 1009.102378093236,
+     "diff": 0.28944903057913507,
+     "revisionProne": false
+    },
+    {
+     "id": "CH",
+     "shipped": 972.1079131969626,
+     "rederived": 971.7433960353377,
+     "diff": 0.3645171616249172,
+     "revisionProne": false
+    },
+    {
+     "id": "FRH",
+     "shipped": 680.8127625334047,
+     "rederived": 680.3099119759476,
+     "diff": 0.5028505574571227,
+     "revisionProne": false
+    },
+    {
+     "id": "FNH",
+     "shipped": 811.408597009671,
+     "rederived": 814.2420214619355,
+     "diff": 2.8334244522644667,
+     "revisionProne": false
+    },
+    {
+     "id": "XH",
+     "shipped": 789.6089052507723,
+     "rederived": 789.7719431463308,
+     "diff": 0.16303789555854564,
+     "revisionProne": false
+    },
+    {
+     "id": "MH",
+     "shipped": 820.3963814562409,
+     "rederived": 821.5405703691678,
+     "diff": 1.144188912926893,
+     "revisionProne": false
+    },
+    {
+     "id": "GH",
+     "shipped": 828.3266207315794,
+     "rederived": 830.4131397961852,
+     "diff": 2.0865190646057954,
+     "revisionProne": false
+    },
+    {
+     "id": "JGDP",
+     "shipped": 487.232296718738,
+     "rederived": 487.0698669798432,
+     "diff": 0.16242973889478662,
+     "revisionProne": false
+    },
+    {
+     "id": "JC",
+     "shipped": 485.3591544486569,
+     "rederived": 485.2787789424708,
+     "diff": 0.08037550618610112,
+     "revisionProne": false
+    },
+    {
+     "id": "JCXFE",
+     "shipped": 484.8375154638862,
+     "rederived": 484.7575041639053,
+     "diff": 0.08001129998086753,
+     "revisionProne": false
+    },
+    {
+     "id": "YPDH",
+     "shipped": 979.9805849106347,
+     "rederived": 980.8782894366569,
+     "diff": 0.8977045260222667,
+     "revisionProne": false
+    },
+    {
+     "id": "HP",
+     "shipped": 579.9380491819257,
+     "rederived": 579.918052938729,
+     "diff": 0.019996243196715113,
+     "revisionProne": false
+    },
+    {
+     "id": "LEV",
+     "shipped": 1620.0374413499744,
+     "rederived": 1626.9261326152043,
+     "diff": 6.888691265229909,
+     "revisionProne": true
+    },
+    {
+     "id": "FREV_GDP",
+     "shipped": 18.771498510336183,
+     "rederived": 18.809101863827006,
+     "diff": 0.03760335349082311,
+     "revisionProne": false
+    },
+    {
+     "id": "FPEXP_GDP",
+     "shipped": 20.228061868737093,
+     "rederived": 20.018229307293634,
+     "diff": 0.2098325614434593,
+     "revisionProne": false
+    },
+    {
+     "id": "EFFI",
+     "shipped": 3.2613570507497003,
+     "rederived": 3.3522481941001474,
+     "diff": 0.09089114335044712,
+     "revisionProne": false
+    }
+   ]
   }
  ]
 }

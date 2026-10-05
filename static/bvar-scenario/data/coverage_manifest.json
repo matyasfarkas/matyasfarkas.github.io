@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedBy": "app/scripts/build_coverage_manifest.mjs",
-  "description": "Per-bloc data coverage: variable id, chart display name, source, coverage span (first/last observed quarter), last observation, and data-trap flags. Dates derived from app/src/lib/dates.ts; spans from historical_levels.json.",
+  "description": "Per-bloc data coverage: variable id, chart display name, source, coverage span (first/last observed quarter), last observation, and data-trap flags. Dates derived from each bloc history calendar (historical_levels.json firstQuarter + rows); spans from historical_levels.json.",
   "panelDefaultLastQuarter": "2026Q1",
   "blocs": [
     {
