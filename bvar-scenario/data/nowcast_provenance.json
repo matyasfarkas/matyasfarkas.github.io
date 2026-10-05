@@ -5,8 +5,8 @@
  "gridRows": 41,
  "windowRows": 11,
  "converged": true,
- "sweeps": 54,
- "finalResidual": 0.000008964448113601975,
+ "sweeps": 92,
+ "finalResidual": 0.000008577293556299992,
  "maskFile": null,
  "baselinesReprojected": true,
  "summary": {
