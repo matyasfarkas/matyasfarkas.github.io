@@ -1,0 +1,2484 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Matyas Farkas">
+      
+      
+        <link rel="canonical" href="https://matyasfarkas.github.io/docs/UPDATE_MANUAL/">
+      
+      
+        <link rel="prev" href="../BUILD_AND_CI/">
+      
+      
+        <link rel="next" href="../MAINTAINER_OPERATIONS/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Update Manual: data, model and app updates - Global Macroeconomic Analysis Projections and Scenarios — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gmaps-40-update-manual" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-header__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Global Macroeconomic Analysis Projections and Scenarios — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Update Manual: data, model and app updates
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-nav__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Global Macroeconomic Analysis Projections and Scenarios — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GMAPS_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GMAPS_US_bloc_model.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The US Bloc Model (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anchor-review-2026-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anchor Review (July 2026)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drivers-decomposition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drivers Decomposition Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Manual: data, model and app updates
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Manual: data, model and app updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-changed-in-40-in-one-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What changed in 4.0, in one page
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-installing-gmaps-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Installing GMAPS 4.0.0
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Installing GMAPS 4.0.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows-x64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows (x64)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-the-app-keeps-its-data-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where the app keeps its data folder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-updating-the-data-on-your-computer-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Updating the data on your computer (users)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Updating the data on your computer (users)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-see-which-data-you-have" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 See which data you have
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-install-an-update-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Install an update pack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-go-back-to-the-built-in-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Go back to the built-in data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-messages-and-what-to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Messages and what to do
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-the-ideas-behind-updates-maintainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. The ideas behind updates (maintainer)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-monthly-is-an-update-due" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Monthly: is an update due?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-quarterly-the-data-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Quarterly: the data shift
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Quarterly: the data shift">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-one-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 One command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-what-the-shift-does-step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 What the shift does, step by step
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-after-the-run-deliberate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 After the run (deliberate)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-if-it-stops-half-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 If it stops half-way
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-yearly-the-model-update-re-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Yearly: the model update (re-estimation)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Yearly: the model update (re-estimation)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-estimation-matlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Estimation (MATLAB)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-into-the-data-pack-run-in-app-unless-shown-otherwise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Into the data pack (run in app/ unless shown otherwise)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-getting-a-model-update-to-desktop-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Getting a model update to desktop users
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-releasing-a-new-app-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Releasing a new app version
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-when-something-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. When something fails
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commands-run-in-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands (run in app/)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-the-checks-guarantee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the checks guarantee
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#known-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper/gmaps_platform_paper.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-changed-in-40-in-one-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What changed in 4.0, in one page
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-installing-gmaps-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Installing GMAPS 4.0.0
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Installing GMAPS 4.0.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows-x64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows (x64)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-the-app-keeps-its-data-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where the app keeps its data folder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-updating-the-data-on-your-computer-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Updating the data on your computer (users)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Updating the data on your computer (users)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-see-which-data-you-have" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 See which data you have
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-install-an-update-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Install an update pack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-go-back-to-the-built-in-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Go back to the built-in data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-messages-and-what-to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Messages and what to do
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-the-ideas-behind-updates-maintainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. The ideas behind updates (maintainer)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-monthly-is-an-update-due" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Monthly: is an update due?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-quarterly-the-data-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Quarterly: the data shift
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Quarterly: the data shift">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-one-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 One command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-what-the-shift-does-step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 What the shift does, step by step
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-after-the-run-deliberate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 After the run (deliberate)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-if-it-stops-half-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 If it stops half-way
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-yearly-the-model-update-re-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Yearly: the model update (re-estimation)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Yearly: the model update (re-estimation)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-estimation-matlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Estimation (MATLAB)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-into-the-data-pack-run-in-app-unless-shown-otherwise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Into the data pack (run in app/ unless shown otherwise)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-getting-a-model-update-to-desktop-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Getting a model update to desktop users
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-releasing-a-new-app-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Releasing a new app version
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-when-something-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. When something fails
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commands-run-in-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands (run in app/)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-the-checks-guarantee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the checks guarantee
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#known-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gmaps-40-update-manual">GMAPS 4.0 — Update Manual<a class="headerlink" href="#gmaps-40-update-manual" title="Permanent link">&para;</a></h1>
+<p><strong>How to keep GMAPS current: data updates, model updates, and new app versions.</strong>
+For two readers: <strong>users</strong> of the desktop app (sections 1–3) and the <strong>maintainer</strong> who produces updates
+(sections 4–9). Section 10 is a reference.</p>
+<p><em>Applies to GMAPS 4.0.0 and later. Last revised 2026-10-08. The websites run data pack <code>2026Q2-reest-20261008b</code>
+(data through 2026Q2, the genuine-data model update of October 2026); the 4.0.0 desktop installer carries
+<code>2026Q1-20261006</code> (section 7.4).</em></p>
+<hr />
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#1-what-changed-in-40-in-one-page">What changed in 4.0, in one page</a></li>
+<li><a href="#2-installing-gmaps-400">Installing GMAPS 4.0.0</a></li>
+<li><a href="#3-updating-the-data-on-your-computer-users">Updating the data on your computer (users)</a></li>
+<li><a href="#4-the-ideas-behind-updates-maintainer">The ideas behind updates (maintainer)</a></li>
+<li><a href="#5-monthly-is-an-update-due">Monthly: is an update due?</a></li>
+<li><a href="#6-quarterly-the-data-shift">Quarterly: the data shift</a></li>
+<li><a href="#7-yearly-the-model-update-re-estimation">Yearly: the model update (re-estimation)</a></li>
+<li><a href="#8-releasing-a-new-app-version">Releasing a new app version</a></li>
+<li><a href="#9-when-something-fails">When something fails</a></li>
+<li><a href="#10-reference">Reference</a></li>
+</ol>
+<hr />
+<h2 id="1-what-changed-in-40-in-one-page">1. What changed in 4.0, in one page<a class="headerlink" href="#1-what-changed-in-40-in-one-page" title="Permanent link">&para;</a></h2>
+<p><strong>The data and the model are now separate from the app.</strong> Everything GMAPS shows (histories, forecasts,
+estimated models, uncertainty draws, trade weights) lives in a <strong>data pack</strong>: a folder of files plus one
+<code>manifest.json</code> that lists every file with its SHA-256 fingerprint and size. The app checks every file
+against that list before using it, and refuses a damaged or mismatched file. A problem with the pack as a whole
+(wrong version, an update made for another release, an unreadable manifest) stops the app with a full-screen
+message. A single damaged file found later is refused too, but today its message goes only to the browser
+console (see "Known limits" in section 10).</p>
+<p>That separation means:</p>
+<ul>
+<li><strong>New data does not need a new app.</strong> The maintainer sends an <em>update pack</em> (a small zip); users unzip it
+  into a folder and press Reload.</li>
+<li><strong>A model update does not need a new app</strong> either, as long as the variables stay the same.</li>
+<li><strong>The dates come from the data itself.</strong> Each country's history file records the quarter of its first row
+  (<code>firstQuarter</code>); the last quarter is always <em>first quarter + number of rows − 1</em>. There is no date setting
+  that can drift out of step with the data.</li>
+</ul>
+<p><strong>Why the last point matters (what went wrong in September 2026).</strong> Two model updates (22 and 23 September)
+replaced each country's data with fresh model exports. A model export ends at the estimation end, 2025Q4.
+The July data shift had added 2026Q1, and that row was silently lost. But a separate date setting still said
+"2026Q1". For about two weeks, the US, the euro area, Japan, the UK and 31 other economies were shown <strong>one
+quarter late</strong>, the 15 seasonal economies had their quarterly pattern applied one quarter off, and the
+published 2026Q1 data were missing. Nothing failed, because the only check that compared rows with dates ran
+after a data shift, never after a model update.</p>
+<p>4.0 fixes the cause, not just the symptom:</p>
+<ul>
+<li>the date is computed from the data (no label to forget);</li>
+<li>after every model update one command dates the new exports from the estimation panels and re-applies the
+  data shift (<code>npm run data:model-update -- --then-shift</code>);</li>
+<li>an offline <strong>calendar check</strong> compares the dated rows with the estimation panels the models were fitted on.
+  It runs on every build and refuses to ship a mis-dated pack.</li>
+</ul>
+<hr />
+<h2 id="2-installing-gmaps-400">2. Installing GMAPS 4.0.0<a class="headerlink" href="#2-installing-gmaps-400" title="Permanent link">&para;</a></h2>
+<h3 id="windows-x64">Windows (x64)<a class="headerlink" href="#windows-x64" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Get <code>GMAPS_4.0.0_x64-setup.exe</code> (536 MB; or the no-install <code>GMAPS_4.0.0_x64-portable.exe</code>, 530 MB) from the
+   release page, and compare its SHA-256 with <code>SHA256SUMS.txt</code> (PowerShell: <code>Get-FileHash .\GMAPS_4.0.0_x64-setup.exe</code>).
+   The data built into 4.0.0 run to <strong>2026Q1</strong> (data pack <code>2026Q1-20261006</code>). The websites already show the
+   October 2026 model update (data to 2026Q2); see section 7.4 for how it reaches the desktop app.</li>
+<li>Double-click it. Windows SmartScreen may warn that the app is unrecognised (it is not code-signed).
+   Click <strong>More info → Run anyway</strong>.</li>
+<li>GMAPS needs Microsoft Edge WebView2, which is part of Windows 10/11. On an older or stripped-down
+   machine without it, install the "Evergreen WebView2 Runtime" from Microsoft.</li>
+</ol>
+<p><strong>Windows on a Mac (Parallels/UTM on Apple silicon).</strong> That Windows is the ARM edition. It runs the x64 app
+through Windows' built-in x64 emulation. That works, but it is slower than a native build. A native
+ARM64 Windows build can be made on request.</p>
+<h3 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h3>
+<p>Build it on a Mac from the repository (<code>cd app &amp;&amp; npm install &amp;&amp; npm run tauri build</code>), or use a <code>.dmg</code> if one
+is provided. The app is unsigned: the first time, right-click → <strong>Open</strong>.</p>
+<h3 id="where-the-app-keeps-its-data-folder">Where the app keeps its data folder<a class="headerlink" href="#where-the-app-keeps-its-data-folder" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Data folder (created by <em>Open data folder</em>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td><code>C:\Users\&lt;you&gt;\AppData\Roaming\io.github.matyasfarkas.gmaps\gmaps-data</code></td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><code>~/Library/Application Support/io.github.matyasfarkas.gmaps/gmaps-data</code></td>
+</tr>
+<tr>
+<td>Linux</td>
+<td><code>~/.local/share/io.github.matyasfarkas.gmaps/gmaps-data</code></td>
+</tr>
+</tbody>
+</table>
+<p>You never need to type these: <strong>Settings → Data pack → Open data folder</strong> creates and opens it.</p>
+<hr />
+<h2 id="3-updating-the-data-on-your-computer-users">3. Updating the data on your computer (users)<a class="headerlink" href="#3-updating-the-data-on-your-computer-users" title="Permanent link">&para;</a></h2>
+<h3 id="31-see-which-data-you-have">3.1 See which data you have<a class="headerlink" href="#31-see-which-data-you-have" title="Permanent link">&para;</a></h3>
+<p>Open <strong>Settings</strong> (bottom left) → <strong>Data pack</strong>. It shows the pack name, how recent the data are
+("data through 2026Q1"), and where they come from:</p>
+<ul>
+<li><strong>bundled with the app</strong>: the data that came with your installation;</li>
+<li><strong>update pack (data folder)</strong>: an update you installed. The line also says how many files came from the
+  update and how many from the built-in data;</li>
+<li><strong>external pack (data folder)</strong>: a complete pack you installed.</li>
+</ul>
+<h3 id="32-install-an-update-pack">3.2 Install an update pack<a class="headerlink" href="#32-install-an-update-pack" title="Permanent link">&para;</a></h3>
+<p>You receive a file such as <code>2026Q2-20261115_for_4.0.0.zip</code>. The part after <code>for_</code> is the app version it is
+made for.</p>
+<ol>
+<li><strong>Settings → Data pack → Open data folder.</strong></li>
+<li>Extract the <strong>contents</strong> of the zip into that folder, so that <code>manifest.json</code> sits <strong>directly</strong> in it
+   (not in a sub-folder). On Windows, "Extract All" proposes a new sub-folder named after the zip. Either
+   change the destination to the data folder itself, or move the extracted files up one level afterwards.
+   If an older update is already there, let the new files replace the old ones.</li>
+<li>Press <strong>Reload</strong> (in the same panel). The Data pack line should now show the new pack and the new
+   "data through" quarter.</li>
+</ol>
+<p>The app checks the whole update before showing anything:
+- every file it ships, and every file it reuses from your built-in data, must match its fingerprint;
+- an update made for a different app version is refused, with a message that names the version it needs.</p>
+<h3 id="33-go-back-to-the-built-in-data">3.3 Go back to the built-in data<a class="headerlink" href="#33-go-back-to-the-built-in-data" title="Permanent link">&para;</a></h3>
+<p>Delete or rename <code>manifest.json</code> in the data folder, then press <strong>Reload</strong>. Nothing else is needed; the other
+files there are ignored.</p>
+<h3 id="34-messages-and-what-to-do">3.4 Messages and what to do<a class="headerlink" href="#34-messages-and-what-to-do" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>What it means</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"This update pack (…) was built for the data pack X, but the data built into this app is pack Y"</td>
+<td>The update is for a different app version</td>
+<td>Ask for the update for your version, or a full pack</td>
+</tr>
+<tr>
+<td>"… could not be read from the data folder — the pack copied there looks incomplete"</td>
+<td>A file of the update is missing</td>
+<td>Extract the zip again, completely, into the data folder itself</td>
+</tr>
+<tr>
+<td>"… sha256 mismatch …" (today in the browser console only; see section 10, Known limits)</td>
+<td>A file was changed or damaged</td>
+<td>Extract again; if it persists, ask for a new pack</td>
+</tr>
+<tr>
+<td>"This data pack requires the tool to be at least vX"</td>
+<td>The data need a newer app</td>
+<td>Install the newer app version</td>
+</tr>
+</tbody>
+</table>
+<p>In every case you can go back to the built-in data (3.3).</p>
+<hr />
+<h2 id="4-the-ideas-behind-updates-maintainer">4. The ideas behind updates (maintainer)<a class="headerlink" href="#4-the-ideas-behind-updates-maintainer" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data pack</strong></td>
+<td><code>app/public/data/</code>: all data files + <code>manifest.json</code> (fingerprint, size, and the dating of every country). The web build serves it; the desktop app has it built in.</td>
+</tr>
+<tr>
+<td><strong>Calendar</strong></td>
+<td><code>firstQuarter</code> in each <code>bvar/&lt;C&gt;/historical_levels.json</code>. Last quarter = <code>firstQuarter + rows − 1</code>. The only source of dates.</td>
+</tr>
+<tr>
+<td><strong>Panel quarter</strong></td>
+<td>The common last quarter of the 35 coupled GVAR economies (they share one row grid). The 17 euro members follow it.</td>
+</tr>
+<tr>
+<td><strong>Data shift</strong></td>
+<td>Within the year: add the newly published quarter (US observed; other published values pinned; the rest nowcast through the model and shown in amber). The estimated model is frozen.</td>
+</tr>
+<tr>
+<td><strong>Model update</strong></td>
+<td>Once a year: re-estimate (MATLAB) and re-export. Changes the model fingerprint.</td>
+</tr>
+<tr>
+<td><strong>Update pack</strong></td>
+<td>Only the files that changed against the pack built into a released app version, plus a full manifest. One per recorded release.</td>
+</tr>
+<tr>
+<td><strong>Release record</strong></td>
+<td><code>pipeline/released_packs/&lt;version&gt;.manifest.json</code>: the manifest of the pack built into that app version. Needed to cut update packs for it.</td>
+</tr>
+<tr>
+<td><strong>Model fingerprint</strong></td>
+<td>Hash of all GVAR <code>companion_mean.json</code> files. Unchanged by a data shift, changed by a model update. Archived vintages carry it, so the <code>/monitor</code> page knows whether a comparison is a pure data change.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Golden rules</strong></p>
+<ol>
+<li>Never edit dates by hand. There is nothing to edit; the data carry their own calendar.</li>
+<li>After every model export, date and verify it before anything ships (section 7). The calendar check
+   must pass.</li>
+<li>Never hand-edit a shipped data file to "fix" a value. Re-run the step that produces it.</li>
+<li>Pushing to <code>main</code> deploys the websites. Commit and push are always a deliberate human step; no script
+   does them.</li>
+<li>Never fill a missing value. A quarter that is not published stays missing: the model draws it, and the app
+   shows it in amber as a model estimate. The data list every such cell (<code>estimation_mask.json</code>, nowcast
+   provenance, coverage flags).</li>
+<li>Never regenerate a pack under an existing pack id. Any change after <code>pack-build</code> gets a new id; an old id
+   with new contents would turn every cached copy into a fingerprint error.</li>
+</ol>
+<hr />
+<h2 id="5-monthly-is-an-update-due">5. Monthly: is an update due?<a class="headerlink" href="#5-monthly-is-an-update-due" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>app
+npm<span class="w"> </span>run<span class="w"> </span>data:check
+</code></pre></div>
+<p>It asks the release calendars (FRED, OECD via DBnomics) for the latest quarter of a small set of sentinel
+series (US, euro area, Japan, Korea, China GDP; the US 10-year yield) and compares it with the panel quarter.</p>
+<table>
+<thead>
+<tr>
+<th>Exit</th>
+<th>Meaning</th>
+<th>Next step</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Nothing new for every sentinel yet</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>10</td>
+<td>A new quarter is published for every sentinel: a <strong>data shift</strong> is available</td>
+<td>Section 6</td>
+</tr>
+<tr>
+<td>11</td>
+<td>A full new calendar year is published beyond the model's estimation end: a <strong>model update</strong> is due</td>
+<td>Section 7</td>
+</tr>
+</tbody>
+</table>
+<p>A GitHub Action (<code>.github/workflows/data-check.yml</code>) runs this on the 5th of every month and fails on purpose
+(so GitHub emails the repository owner) when 10 or 11 comes back. It never changes data.</p>
+<hr />
+<h2 id="6-quarterly-the-data-shift">6. Quarterly: the data shift<a class="headerlink" href="#6-quarterly-the-data-shift" title="Permanent link">&para;</a></h2>
+<h3 id="61-one-command">6.1 One command<a class="headerlink" href="#61-one-command" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>app
+npm<span class="w"> </span>run<span class="w"> </span>data:shift<span class="w"> </span>--<span class="w"> </span>--asof<span class="w"> </span>2026Q2<span class="w">            </span><span class="c1"># dry run: every gate, nothing written</span>
+npm<span class="w"> </span>run<span class="w"> </span>data:shift<span class="w"> </span>--<span class="w"> </span>--asof<span class="w"> </span>2026Q2<span class="w"> </span>--commit<span class="w">   </span><span class="c1"># the real run</span>
+</code></pre></div>
+<p>Or let the scheduler do it: <code>npm run data:auto</code> checks and, if a shift is due, runs it with <code>--commit</code>
+(exit 0 nothing due, 10 shift done, 11 model update due, 1 error). It never commits or pushes. Example
+crontab line (6:00 on the 5th of each month):</p>
+<div class="highlight"><pre><span></span><code>0 6 5 * *  cd /path/to/repo/app &amp;&amp; npm run data:auto &gt;&gt; ~/gmaps-auto.log 2&gt;&amp;1
+</code></pre></div>
+<h3 id="62-what-the-shift-does-step-by-step">6.2 What the shift does, step by step<a class="headerlink" href="#62-what-the-shift-does-step-by-step" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Step</th>
+<th>Writes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td><strong>Pre-flight:</strong> the at-rest dating is coherent (every history has a calendar; coverage + pack manifest agree). Stops otherwise.</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Archive the current data as a vintage (<code>pipeline/vintages/&lt;quarter&gt;_shipped[_&lt;model&gt;]</code>)</td>
+<td>archive</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Counterfactual: the old data completed to the new quarter with no new information (the <code>/monitor</code> baseline)</td>
+<td>archive</td>
+</tr>
+<tr>
+<td>2</td>
+<td>US: append the observed quarter from FRED (gated; revisions accepted and logged)</td>
+<td>US history</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>Realized pins: every other published value for the new quarter (FRED mirrors of Eurostat, ECB, BoE, BoJ …), each gated against the shipped overlap</td>
+<td><code>pipeline/realized_pins_&lt;q&gt;.json</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Cross-economy nowcast: one coupled model solve fills every remaining gap (flagged model-implied → amber in the charts)</td>
+<td>staging</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Publish staging into <code>app/public/data</code></td>
+<td>histories, forecasts</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Euro members follow the euro area (skipped for a member already at the quarter)</td>
+<td>member histories</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Re-simulate the uncertainty bands from the posterior draws (seeded)</td>
+<td>bands</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Coverage manifest (dates from the data; the expected quarter is asserted)</td>
+<td><code>coverage_manifest.json</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Release-impact record for <code>/monitor</code></td>
+<td><code>release_impact.json</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Vintage-comparison artifacts for <code>/monitor</code></td>
+<td><code>vintages/</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Re-stamp the data pack (<code>manifest.json</code>, pack id <code>&lt;quarter&gt;-&lt;yyyymmdd&gt;</code>)</td>
+<td><code>manifest.json</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Verification gate:</strong> dating coherent everywhere, every economy on the new quarter, no empty last-row cells, nowcast converged, every file re-hashed, calendar check</td>
+<td>nothing — stops on any problem</td>
+</tr>
+<tr>
+<td>12</td>
+<td>One update pack per recorded app release → <code>packs/&lt;pack&gt;_for_&lt;version&gt;.zip</code></td>
+<td><code>packs/</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="63-after-the-run-deliberate">6.3 After the run (deliberate)<a class="headerlink" href="#63-after-the-run-deliberate" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>npm test</code> — the full test suite.</li>
+<li><code>npm run build</code> — its <code>prebuild</code> re-verifies the whole pack (<code>pack-verify --full</code>).</li>
+<li>Look at <code>/monitor</code> and a few charts: the history should end at the new quarter, the first forecast
+   quarter should be the one after it, and amber dashed tails mark model-implied values.</li>
+<li><code>git add app/public/data pipeline/vintages pipeline/realized_pins_&lt;q&gt;.json &amp;&amp; git commit</code></li>
+<li>When you decide to update the websites: push to <code>main</code> (this deploys).</li>
+<li>Send the update pack(s) from <code>packs/</code> to desktop users (section 3.2). A quarterly data shift changes few
+   files: the 2025Q4 → 2026Q1 shift (Oct 2026) produced an update pack of 297 files, <strong>3.1 MB zipped</strong>.</li>
+</ol>
+<h3 id="64-if-it-stops-half-way">6.4 If it stops half-way<a class="headerlink" href="#64-if-it-stops-half-way" title="Permanent link">&para;</a></h3>
+<p>Every step is safe to repeat. Re-run the same <code>--commit</code> command; finished work is skipped or harmlessly
+redone. To undo a run completely: <code>git checkout -- app/public/data</code> (and remove the new
+<code>pipeline/vintages/*</code> folders) — there is no date to restore.</p>
+<hr />
+<h2 id="7-yearly-the-model-update-re-estimation">7. Yearly: the model update (re-estimation)<a class="headerlink" href="#7-yearly-the-model-update-re-estimation" title="Permanent link">&para;</a></h2>
+<p>When <code>data:check</code> returns 11 (normally in Q2, once the previous year is fully published):</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>app
+npm<span class="w"> </span>run<span class="w"> </span>data:q1prep<span class="w"> </span>--<span class="w"> </span>--year<span class="w"> </span><span class="m">2026</span><span class="w">     </span><span class="c1"># confirms the year is published; prints the runbook</span>
+</code></pre></div>
+<p>The October 2026 update is the worked example. The scripts it ran are in <code>docs/reest-2026/runs/</code> (with a README
+giving the order), the method decisions in <code>docs/reest-2026/PLAN.md</code>, and the review in
+<code>docs/reest-2026/REVIEW.md</code>. Each MATLAB setting is explained in <code>docs/REESTIMATING_MODELS.md</code>.</p>
+<h3 id="71-data">7.1 Data<a class="headerlink" href="#71-data" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Rebuild every economy's panel from its source registry (<code>pipeline/sources/registry/</code>), using genuine data
+   only, to the latest published quarter. Unpublished cells stay missing (golden rule 5).</li>
+<li>Rebuild what is derived from the data: the fiscal stock-flow adjustment and the euro-member panels
+   (<code>docs/reest-2026/RECIPE_live_model.md</code> §3, step 0).</li>
+</ol>
+<h3 id="72-estimation-matlab">7.2 Estimation (MATLAB)<a class="headerlink" href="#72-estimation-matlab" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>The 35 coupled economies:</strong> <code>pipeline/export_bvar_gvar24_loop.m</code> with
+   <code>BVAR_DIFF_GP=1 US_ENDOGENOUS=1 NDRAWS=1000 MAXIT=30 BVAR_SEED=1 GVAR_FIXHYPER=1 GVAR_NOFILL=1</code>
+   (<code>runs/run_gvar35b.sh</code>). It iterates until the foreign ("star") variables stop changing. In 2026 it
+   converged at sweep 6, after about 1 h 40 min on a 4-core machine.</li>
+<li><code>GVAR_NOFILL=1</code>: missing cells at the start, in the middle and at the end stay missing, and the sampler
+     draws them. The export lists them in <code>estimation_mask.json</code>.</li>
+<li><code>GVAR_FIXHYPER=1</code> with <code>BVAR_SEED</code>: every sweep uses the same random numbers. Without this, sweeps are
+     not comparable and the loop does not converge.</li>
+<li><strong>The 17 euro members:</strong> <code>pipeline/export_bvar_euro_redesign.m</code> for each member, with
+   <code>BVAR_DIFF_GP=1 GVAR_NOFILL=1 CGL_FIXED_COMPANION=1</code> (<code>runs/run_members.sh</code>). A re-run gives identical
+   results.</li>
+</ol>
+<h3 id="73-into-the-data-pack-run-in-app-unless-shown-otherwise">7.3 Into the data pack (run in <code>app/</code> unless shown otherwise)<a class="headerlink" href="#73-into-the-data-pack-run-in-app-unless-shown-otherwise" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Port.</strong> Copy the 35 GVAR exports raw, including <code>estimation_mask.json</code>. Port the members with
+   <code>pipeline/port_gvar_exports.py</code>. Then run <code>node pipeline/fix_fiscal_meta_indices.mjs</code> and
+   <code>node pipeline/fix_external_meta_indices.mjs</code>. They re-find the fiscal and external column positions by
+   variable name. In 2026, adding a deflator column moved them (<code>runs/port_to_app.sh</code>).</li>
+<li><strong>Date.</strong> Run <code>node scripts/stamp_calendar.mjs</code>, then
+   <code>npx vite-node scripts/build_coverage_manifest.mjs --panel-quarter &lt;Q&gt;</code>.</li>
+<li><strong>Coupling.</strong> Run <code>npx vite-node scripts/precompute_gvar_coupling.mjs</code>. ρ(M) must be below 1 (2026: 0.9719).</li>
+<li><strong>Ragged edge.</strong> Run <code>npx vite-node scripts/nowcast_complete.mjs --write --baselines --out &lt;dir&gt;</code>, check
+   that it converged, and publish the coupled economies from <code>&lt;dir&gt;</code> (<code>runs/stageA.sh</code>).</li>
+<li><strong>Members and debt.</strong> Run <code>apply_member_completion.mjs</code>, then <code>roll_d0_forward.mjs</code>. The second rolls debt
+   starting points forward to the panel quarter and keeps the published value as <code>d0_observed</code>.</li>
+<li><strong>Forecasts, bands, draws.</strong> Run <code>regen_gr_baselines_via_loader.mjs</code> and <code>regen_gvar_bands.mjs</code>, then
+    <code>node scripts/gzip_companion_draws.mjs</code>.</li>
+<li><strong>Pack.</strong><ul>
+<li>Run <code>build_coverage_manifest.mjs --panel-quarter &lt;Q&gt;</code> and <code>vintages_publish.mjs</code>.</li>
+<li>Stamp the pack under a new id: <code>node scripts/pack-build.mjs --pack-id &lt;Q&gt;-reest-&lt;yyyymmdd&gt;</code>.</li>
+<li>Verify: <code>node scripts/verify_cutoffs.mjs --allow-ragged --dating-only</code>, then
+  <code>npx vite-node scripts/pack-verify.mjs --full</code> (<code>runs/stageB.sh</code>).</li>
+</ul>
+</li>
+<li><strong>Review.</strong> Run <code>npm test</code> and <code>npm run build</code>. Compare old and new
+    (<code>docs/reest-2026/compare_old_new.py</code>). Open the built site in a browser. Commit; push only when you decide
+    to.</li>
+</ol>
+<p>The steps above apply when the panels already end at the latest published quarter, as in 2026: the model is
+fitted to the latest data. If the exports end earlier (a model estimated to a year end), run
+<code>npm run data:model-update -- --then-shift</code> instead of steps 6 and 8, after step 7. It dates each export from
+its estimation panel; a country it cannot place stops the run, and nothing is guessed. It then re-stamps and
+verifies the pack, and shifts the panel to the latest published quarter.</p>
+<h3 id="74-getting-a-model-update-to-desktop-users">7.4 Getting a model update to desktop users<a class="headerlink" href="#74-getting-a-model-update-to-desktop-users" title="Permanent link">&para;</a></h3>
+<p>A model update changes most files (every model and every band file), so its update pack is large: hundreds of
+MB, mostly the uncertainty draws. Also check whether the new data rely on app code newer than the installed
+version.</p>
+<p>The October 2026 pack relies on two display changes made after 4.0.0: every effective exchange rate is shown as
+an index level, and interior model-estimated quarters get amber marks. The 4.0.0 app accepts the pack
+(<code>minToolVersion</code> is 4.0.0), but it would show those two things the old way. A new app version (section 8) is
+the clean route. If you send an update pack instead, tell users about that difference.</p>
+<p>Status on 2026-10-08: neither has been done. Desktop users have <code>2026Q1-20261006</code>.</p>
+<hr />
+<h2 id="8-releasing-a-new-app-version">8. Releasing a new app version<a class="headerlink" href="#8-releasing-a-new-app-version" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Set the version in <code>app/package.json</code>, <code>app/src-tauri/tauri.conf.json</code> and <code>app/src-tauri/Cargo.toml</code>
+   (all three the same). If the data now need a feature of this version, raise <code>MIN_TOOL_VERSION</code> in
+   <code>app/scripts/pack-build.mjs</code> and re-run it (<code>pack-verify</code> check [4] guarantees a pack never requires a
+   newer app than the one it ships with).</li>
+<li>Make sure <code>app/public/data</code> is final and verified: <code>npm run data:verify</code>.</li>
+<li><strong>Record the release</strong> (needed so future data shifts can cut update packs for it):
+   <code>node scripts/pack-record-release.mjs --version 4.0.0</code> → commit <code>pipeline/released_packs/4.0.0.manifest.json</code>.</li>
+<li>Build:</li>
+<li><strong>Web:</strong> <code>npm run build</code> (the website deploy does this in CI on push to <code>main</code>).</li>
+<li><strong>Windows x64 (cross-compiled on the Linux workstation):</strong> see <code>app/src-tauri/README.md</code>
+     ("Windows x64 — cross-compiled from Linux"): <code>npm run build:tauri</code>, then
+     <code>XWIN_ACCEPT_LICENSE=1 npx tauri build --runner cargo-xwin --target x86_64-pc-windows-msvc --bundles nsis</code>,
+     then run <code>makensis</code> on the generated script with <code>NSISDIR</code> set (Tauri's own Linux NSIS step ignores it).</li>
+<li><strong>macOS:</strong> on a Mac, <code>npm run tauri build</code>.</li>
+<li>Publish the installers (GitHub Release on the private repository) with their SHA-256 checksums.</li>
+</ol>
+<hr />
+<h2 id="9-when-something-fails">9. When something fails<a class="headerlink" href="#9-when-something-fails" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pre-flight FAILED — fix the at-rest dating first</code></td>
+<td>The coverage or pack manifest disagree with the data's calendars (e.g. files were replaced without re-stamping)</td>
+<td><code>npm run data:model-update</code></td>
+</tr>
+<tr>
+<td><code>… history has no calendar (stamp it …)</code></td>
+<td>A freshly exported history without <code>firstQuarter</code></td>
+<td><code>npm run data:model-update</code></td>
+</tr>
+<tr>
+<td><code>cannot place its history on the calendar</code></td>
+<td>No history row equals the country's estimation panel at its last quarter: the export and the panel do not belong together</td>
+<td>Check that the export is from that panel; only with independent evidence: <code>node scripts/stamp_calendar.mjs --first &lt;Q&gt; --blocs &lt;C&gt;</code></td>
+</tr>
+<tr>
+<td><code>MISDATED — the row dated X equals the panel at Y</code></td>
+<td>The calendar is wrong for that country</td>
+<td>Find out why (wrong <code>firstQuarter</code>?) and fix; never ship</td>
+</tr>
+<tr>
+<td><code>the coupled GVAR blocs do not share one last quarter</code></td>
+<td>Some coupled economies were shifted and others not</td>
+<td>Re-run the shift, or the model update</td>
+</tr>
+<tr>
+<td><code>coverage_manifest.json says … but the data end …</code></td>
+<td>The coverage manifest is stale</td>
+<td><code>npx vite-node scripts/build_coverage_manifest.mjs</code> (or <code>data:model-update</code>)</td>
+</tr>
+<tr>
+<td><code>pack-verify … sha256 mismatch</code> / <code>listed but missing on disk</code></td>
+<td>A data file changed after the pack was stamped, or is missing</td>
+<td>Re-run <code>node scripts/pack-build.mjs</code> after the intended change; restore an unintended one</td>
+</tr>
+<tr>
+<td><code>pack needs tool ≥ X but this tool is Y</code></td>
+<td><code>MIN_TOOL_VERSION</code> is above the app version</td>
+<td>Lower it, or release the newer app</td>
+</tr>
+<tr>
+<td>The web build fails in <code>prebuild</code></td>
+<td><code>pack-verify --full</code> found a mismatch (the deploy refuses to ship data the app would refuse)</td>
+<td>As above</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="10-reference">10. Reference<a class="headerlink" href="#10-reference" title="Permanent link">&para;</a></h2>
+<h3 id="commands-run-in-app">Commands (run in <code>app/</code>)<a class="headerlink" href="#commands-run-in-app" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>npm run data:check</code></td>
+<td>Is a shift (10) or a model update (11) due?</td>
+</tr>
+<tr>
+<td><code>npm run data:shift -- --asof &lt;Q&gt; [--commit]</code></td>
+<td>The quarterly data shift (dry run without <code>--commit</code>)</td>
+</tr>
+<tr>
+<td><code>npm run data:auto</code></td>
+<td>Unattended: run a due shift (<code>--commit</code>); exit 0/10/11/1</td>
+</tr>
+<tr>
+<td><code>npm run data:model-update [-- --then-shift]</code></td>
+<td>After a re-export: date, re-stamp, verify (then shift)</td>
+</tr>
+<tr>
+<td><code>npm run data:q1prep -- --year &lt;YYYY&gt;</code></td>
+<td>Re-estimation readiness + runbook</td>
+</tr>
+<tr>
+<td><code>npm run data:verify</code></td>
+<td><code>verify_cutoffs</code> + <code>pack-verify --full</code></td>
+</tr>
+<tr>
+<td><code>node scripts/stamp_calendar.mjs --check</code></td>
+<td>Every country's calendar + calendar-check verdict</td>
+</tr>
+<tr>
+<td><code>npm run pack:build</code></td>
+<td>Re-stamp <code>manifest.json</code></td>
+</tr>
+<tr>
+<td><code>npm run pack:verify -- [--full] [--dir &lt;update&gt; --bundled &lt;built-in&gt;]</code></td>
+<td>Verify a full or an update pack</td>
+</tr>
+<tr>
+<td><code>npm run pack:delta -- --base &lt;manifest&gt; --out &lt;dir&gt; --zip</code></td>
+<td>Cut an update pack by hand</td>
+</tr>
+<tr>
+<td><code>npm run pack:record-release -- --version &lt;x.y.z&gt;</code></td>
+<td>Record a released app's built-in pack</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-the-checks-guarantee">What the checks guarantee<a class="headerlink" href="#what-the-checks-guarantee" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><code>pack-verify --full</code></strong> (also in every web build): every listed file exists, has its recorded size and
+  SHA-256; no unused plain twin of a <code>.gz</code> is listed; the GVAR weights match the coupling they were made with;
+  the pack does not require a newer app than its own; the dating in the manifest equals each history's
+  calendar; the calendar check confirms the dating against the estimation panels.</li>
+<li><strong><code>verify_cutoffs</code></strong> (end of every shift): every history has a calendar; all economies end at the panel
+  quarter; the coverage and pack manifests agree with the calendars; no empty cells in the last row; the
+  nowcast converged.</li>
+<li><strong>In the app:</strong> the data are refused with a full-screen message if the pack is incompatible, an update was
+  cut for a different version, or any file fails its fingerprint.</li>
+</ul>
+<h3 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>app/public/data/manifest.json</code></td>
+<td>The pack: version fields, panel quarter, per-country dating, every file's fingerprint</td>
+</tr>
+<tr>
+<td><code>app/public/data/coverage_manifest.json</code></td>
+<td>Per-variable coverage, sources, flags (drives the Data &amp; coverage page and the amber tails)</td>
+</tr>
+<tr>
+<td><code>app/public/data/bvar/&lt;C&gt;/historical_levels.json</code></td>
+<td>History (100·log for log variables) + <code>firstQuarter</code></td>
+</tr>
+<tr>
+<td><code>app/scripts/lib/calendar.mjs</code></td>
+<td>Calendar arithmetic + the calendar check</td>
+</tr>
+<tr>
+<td><code>pipeline/vintages/</code></td>
+<td>Archived vintages for <code>/monitor</code> (each with <code>vintage_meta.json</code>: origin, kind, model fingerprint)</td>
+</tr>
+<tr>
+<td><code>pipeline/released_packs/</code></td>
+<td>Built-in manifests of released app versions</td>
+</tr>
+<tr>
+<td><code>packs/</code> (not in git)</td>
+<td>Update packs to send</td>
+</tr>
+</tbody>
+</table>
+<h3 id="known-limits">Known limits<a class="headerlink" href="#known-limits" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The list of countries is still compiled into the app: a pack can update existing countries but not add one.</li>
+<li>Files are fingerprinted one by one; the manifest itself is not yet signed (the format leaves room for it).</li>
+<li>There is no "import zip" button: users extract the zip into the data folder.</li>
+<li>The app still contains a build-time copy of the trade weights and of six economies' model descriptions
+  (<code>gvarSolve.ts</code>). They are start-up defaults only. Once the pack loads, the app uses the pack's own,
+  fingerprinted weights, and the list of countries comes from the compiled roster (first point above).</li>
+<li>A file that fails its fingerprint check (or fails to download) after start-up is refused, but the message goes
+  only to the browser console:</li>
+<li>the single-country view keeps showing what it had;</li>
+<li>the global model leaves that country out of the coupled system;</li>
+<li>a weights file that fails is replaced by the build-time copy.</li>
+</ul>
+<p><code>pack-verify --full</code> runs on every web build, so a damaged file cannot ship. What remains is a file damaged in
+  transit or on a desktop disk. The fix is to show the message on screen and stop, as the start-up checks do
+  (open, October 2026).
+- A within-year shift re-syncs only the previous quarter to the latest source vintage. After a large source
+  revision, the quarter before keeps the older vintage, so the growth rate across that seam mixes vintages.
+  (Example, now resolved: after the US annual revision of Sep 2026, US 2025Q4 GDP growth showed 1.6% annualised
+  against 0.2% on current data. The October 2026 rebuild took every series from its current vintage, and the
+  data now show 0.2%.)
+- Resolved in October 2026: the euro members had run an older model generation. They were re-estimated with
+  the rest, in growth rates.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025–2026 Matyas Farkas — GPL-3.0-only
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

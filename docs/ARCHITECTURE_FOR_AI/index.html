@@ -7,6 +7,10 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
+        <meta name="author" content="Matyas Farkas">
+      
+      
+        <link rel="canonical" href="https://matyasfarkas.github.io/docs/ARCHITECTURE_FOR_AI/">
       
       
         <link rel="prev" href="../EMPIRICAL_EVALUATION/">
@@ -23,7 +27,7 @@
     
     
       
-        <title>Architecture - Monetary-Financial-Fiscal Macromodel — Documentation</title>
+        <title>Architecture - Global Macroeconomic Analysis Projections and Scenarios — Documentation</title>
       
     
     
@@ -90,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Monetary-Financial-Fiscal Macromodel — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial-Fiscal Macromodel — Documentation" data-md-component="logo">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-header__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Monetary-Financial-Fiscal Macromodel — Documentation
+            Global Macroeconomic Analysis Projections and Scenarios — Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -214,13 +218,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Monetary-Financial-Fiscal Macromodel — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial-Fiscal Macromodel — Documentation" data-md-component="logo">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-nav__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Monetary-Financial-Fiscal Macromodel — Documentation
+    Global Macroeconomic Analysis Projections and Scenarios — Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -338,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MFFM_User_Manual.pdf" class="md-nav__link">
+      <a href="../GMAPS_User_Manual.pdf" class="md-nav__link">
         
   
   
@@ -366,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MFFM_US_bloc_model.pdf" class="md-nav__link">
+      <a href="../GMAPS_US_bloc_model.pdf" class="md-nav__link">
         
   
   
@@ -534,6 +538,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../drivers-decomposition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drivers Decomposition Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
         
   
@@ -648,6 +680,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="2. Repository layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2a-the-data-pack-how-the-tool-reads-data-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2a. The data pack — how the tool reads data (4.0.0)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -724,10 +773,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5emw-time-varying-trade-weights-capability-data-staged-not-yet-promoted" class="md-nav__link">
+  <a href="#5emw-time-varying-trade-weights-used-in-estimation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5·EM.w. Time-varying trade weights (capability; data staged, not yet promoted)
+        5·EM.w. Time-varying trade weights (used in estimation)
       
     </span>
   </a>
@@ -779,10 +828,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-the-fiscal-block-fiscalaccountingts-6-countries-useajpukcacn" class="md-nav__link">
+  <a href="#7-the-fiscal-block-fiscalaccountingts-41-economies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. The fiscal block (fiscalAccounting.ts) — 6 countries (US/EA/JP/UK/CA/CN)
+        7. The fiscal block (fiscalAccounting.ts) — 41 economies
       
     </span>
   </a>
@@ -802,10 +851,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#8a-long-run-anchor-plr-longruntiltts" class="md-nav__link">
+  <a href="#8a-long-run-anchor-driftsetterts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8a. Long-run anchor (PLR) — longRunTilt.ts
+        8a. Long-run anchor — driftSetter.ts
       
     </span>
   </a>
@@ -817,6 +866,17 @@
     <span class="md-ellipsis">
       
         8b. Drag-perf UX — the heavy GVAR solve is OFF the live drag path (DEPLOYED)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8c-drivers-the-model-conditional-scenario-decomposition-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8c. Drivers — the model-conditional scenario decomposition (EXPERIMENTAL)
       
     </span>
   </a>
@@ -878,6 +938,17 @@
     <span class="md-ellipsis">
       
         12a. Re-estimation + coupling-artifact runbook (the data refresh path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12b-drivers-payload-runbook-independent-of-the-data-refresh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12b. Drivers payload runbook (independent of the data refresh)
       
     </span>
   </a>
@@ -1097,6 +1168,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../UPDATE_MANUAL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Manual: data, model and app updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
         
   
@@ -1188,7 +1287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../paper/mffm_platform_paper.pdf" class="md-nav__link">
+      <a href="../paper/gmaps_platform_paper.pdf" class="md-nav__link">
         
   
   
@@ -1281,6 +1380,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="2. Repository layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2a-the-data-pack-how-the-tool-reads-data-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2a. The data pack — how the tool reads data (4.0.0)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1357,10 +1473,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5emw-time-varying-trade-weights-capability-data-staged-not-yet-promoted" class="md-nav__link">
+  <a href="#5emw-time-varying-trade-weights-used-in-estimation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5·EM.w. Time-varying trade weights (capability; data staged, not yet promoted)
+        5·EM.w. Time-varying trade weights (used in estimation)
       
     </span>
   </a>
@@ -1412,10 +1528,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-the-fiscal-block-fiscalaccountingts-6-countries-useajpukcacn" class="md-nav__link">
+  <a href="#7-the-fiscal-block-fiscalaccountingts-41-economies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. The fiscal block (fiscalAccounting.ts) — 6 countries (US/EA/JP/UK/CA/CN)
+        7. The fiscal block (fiscalAccounting.ts) — 41 economies
       
     </span>
   </a>
@@ -1435,10 +1551,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#8a-long-run-anchor-plr-longruntiltts" class="md-nav__link">
+  <a href="#8a-long-run-anchor-driftsetterts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8a. Long-run anchor (PLR) — longRunTilt.ts
+        8a. Long-run anchor — driftSetter.ts
       
     </span>
   </a>
@@ -1450,6 +1566,17 @@
     <span class="md-ellipsis">
       
         8b. Drag-perf UX — the heavy GVAR solve is OFF the live drag path (DEPLOYED)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8c-drivers-the-model-conditional-scenario-decomposition-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8c. Drivers — the model-conditional scenario decomposition (EXPERIMENTAL)
       
     </span>
   </a>
@@ -1517,6 +1644,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#12b-drivers-payload-runbook-independent-of-the-data-refresh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12b. Drivers payload runbook (independent of the data refresh)
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1573,7 +1711,7 @@
 
 
 <h1 id="codebase-guide-for-ai-agents-and-new-developers">Codebase Guide (for AI agents and new developers)<a class="headerlink" href="#codebase-guide-for-ai-agents-and-new-developers" title="Permanent link">&para;</a></h1>
-<p>This document is a dense, accurate map of the <strong>Monetary-Financial-Fiscal Macromodel</strong> (a global projection and
+<p>This document is a dense, accurate map of the <strong>Global Macroeconomic Analysis Projections and Scenarios</strong> (a global projection and
 scenario tool, built on an EM (Expectation–Maximization) Bayesian Global VAR engine) for an automated
 agent or a developer who needs to make a correct change quickly. It explains <em>where</em> things are,
 <em>why</em> they are shaped the way they are, and the <em>conventions you must not break</em>. Read it before
@@ -1589,7 +1727,16 @@ editing compute or pipeline code.</p>
 <strong>in the browser</strong> in TypeScript. There is no required backend for the core features — the
 pre-estimated models are static JSON under <code>app/public/data/</code> and every Kalman filter / smoother /
 matrix op runs on the user's machine. A FastAPI backend exists only for computing DSGE IRFs from
-<em>custom</em> policy rules and is not needed for normal use.</p>
+<em>custom</em> policy rules and is not needed for normal use. The same build also ships as a Tauri
+desktop app (Windows/macOS) that runs fully offline.</p>
+<p><strong>Since 4.0.0 the data and the estimated model are separate from the tool.</strong> Everything under
+<code>app/public/data/</code> is a <strong>data pack</strong>: the files plus one <code>manifest.json</code> that lists each file's
+SHA-256 and size and dates every economy. The tool reads every data file through that manifest
+(<code>lib/data/dataManifest.ts</code>), checks it before use, and takes all dates from it — nothing about the
+data is compiled in except the list of economies the UI knows. A new pack (a quarterly data shift or a
+re-estimated model) therefore needs no new app version: the web build serves whatever pack it was
+built with, and the desktop app reads an update pack dropped into its data folder. See §2a. The live
+pack is <code>2026Q2-reest-20261008b</code> (Oct 2026 genuine-data re-estimation, data to 2026Q2).</p>
 <p>The economic content is a <strong>three-layer methodology</strong>:</p>
 <ol>
 <li><strong>Conditioning</strong> — impose user paths on any BVAR variable; solve the conditional forecast with a
@@ -1598,32 +1745,38 @@ matrix op runs on the user's machine. A FastAPI backend exists only for computin
    Barnichon–Mesters optimal-policy QP).</li>
 <li><strong>Uncertainty</strong> — posterior-draw fan charts.</li>
 </ol>
-<p>On top of these sit three extensions: a <strong>6-country fiscal block</strong> (US/EA/JP/UK/CA/CN — derived
-debt/GDP), a <strong>33-bloc GVAR layer</strong> with a <strong>fully endogenous US</strong> (cross-country spillovers across an
-endogenous US bloc + an EA aggregate + 31 Rest-of-World blocs, ~90% of global demand), and a
+<p>On top of these sit three extensions: a <strong>fiscal block</strong> in 41 economies (derived debt/GDP), a
+<strong>35-bloc GVAR layer</strong> with a <strong>fully endogenous US</strong> (cross-country spillovers across an
+endogenous US bloc + an EA aggregate + 33 Rest-of-World blocs), and a
 <strong>long-run anchor</strong> (a deterministic companion-drift counterfactual that glides a bloc's forecast to a
 user-set long-run target along its own estimated convergence profile — the reactive, no-re-estimation
 analogue of a Villani steady-state prior; <code>driftSetter.ts</code>, default <code>transition</code> shape).</p>
+<p>A fourth layer, <strong>Drivers</strong>, is <strong>experimental</strong> and sits strictly downstream of the other three: it
+reads the scenario path the app is already displaying and asks a chosen DSGE model from the MMB which
+sequence of <em>that model's own</em> structural shocks would reproduce it over the first twelve forecast
+quarters. It writes nothing back into the forecast. The claim is <strong>model-conditional</strong> — "through model
+M's lens, this is the mix of M's shocks that reproduces the path" — and it is validated by same-model
+recovery, never by any model-free statement about what caused the path. See §8c.</p>
 <blockquote>
 <p>🔴 <span style="color:red"><strong>TOPOLOGY CHANGE — the US is now an ENDOGENOUS coupled bloc, NOT the frozen
 anchor.</strong> The deployed <code>US/spec.json</code> carries <code>n=40</code>: its domestic + fiscal vars <strong>plus 3 <code>ROW*_US</code>
-trade-weighted stars</strong> (cols 38–40, <code>block:'row'</code>) <strong>plus the 4 global commons</strong> it determines. With a
+trade-weighted stars</strong> (0-based cols 37–39, <code>block:'row'</code>) <strong>plus the 4 global commons</strong> it determines. With a
 <code>US</code> row in <code>weights_24bloc.json</code>, <code>configureGVARTopology</code> sets <code>US_ENDOGENOUS = true</code>: the US now
 <strong>drives RoW AND receives RoW→US feedback</strong> through its own stars. The frozen-anchor code paths still
 exist (gated on <code>!US_ENDOGENOUS</code>) and stay byte-identical for legacy/US-less-stars data, but the live
 deployment runs the endogenous path. The closed form is solved on an <strong>augmented state</strong> (stars ++
-US-global deltas, <code>dim=2060</code>, ρ(M)=<strong>0.945494</strong> in the live artifact). See §5/§5a.</span></p>
+US-global deltas, <code>dim=2180</code>, ρ(M)=<strong>0.971875</strong> in the live artifact). See §5/§5a.</span></p>
 </blockquote>
-<p>The app ships <strong>~50 economies</strong> in one registry (<code>app/src/lib/data/countries.ts</code>): 6 core majors,
-34 OECD members, 10 non-OECD EM. <strong>33 of them are GVAR-coupled</strong> — the <strong>endogenous US bloc</strong> + an
-<strong>EA aggregate</strong> bloc + 31 RoW blocs listed in <code>weights_24bloc.json</code> (the filename is stale; it now
-holds 33 blocs, US first, with a <code>US</code> weights row that activates the endogenous coupling).
-Everything else is a <strong>standalone single-country model</strong>. In particular, the <strong>17 euro-area members</strong>
-(DE FR IT ES NL AT BE FI GR IE LU PT SI SK EE LT LV) are standalone (domestic + 4 global commons +
-trade-weighted foreign stars, estimated in separation), <strong>not</strong> in the coupled GVAR and with <strong>no
-weights row</strong>. The reason: the fully-disaggregated euro GVAR was non-convergent (ρ(M)=1.089&gt;1);
-aggregating the euro area into one <code>EA</code> bloc restores stationarity (ρ(M)=0.726) — this is why EA is a
-single bloc and the members are standalone.</p>
+<p>The app ships <strong>52 economies</strong> in one compiled registry (<code>app/src/lib/data/countries.ts</code>; Argentina,
+Israel and Russia were dropped in 2026). <strong>35 of them are GVAR-coupled</strong> — the <strong>endogenous US bloc</strong>
++ an <strong>EA aggregate</strong> bloc + 33 RoW blocs listed in <code>weights_24bloc.json</code> (the filename is stale; it
+holds 35 blocs, US first, with a <code>US</code> weights row that activates the endogenous coupling). The other
+17 are the <strong>euro-area members</strong> (DE FR IT ES NL AT BE FI GR IE LU PT SI SK EE LT LV): each has its own
+model (domestic + fiscal block + euro-area-wide <code>external</code> columns + two rest-of-euro-area aggregates,
+estimated one by one, outside the coupled GVAR), <strong>not</strong> in the coupled GVAR and with <strong>no weights row</strong>.
+The reason: the fully-disaggregated euro GVAR was non-convergent (ρ(M)=1.089&gt;1); aggregating the euro
+area into one <code>EA</code> bloc restores stationarity (ρ(M)=0.726 at the time) — this is why EA is a single bloc
+and the members are separate.</p>
 <hr />
 <h2 id="2-repository-layout">2. Repository layout<a class="headerlink" href="#2-repository-layout" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>app/                         Next.js frontend (the product)
@@ -1633,41 +1786,99 @@ single bloc and the members are standalone.</p>
       charts/ChartGrid.tsx   THE central component: charts, conditioning, fiscal block, band compute
       controls/              TopBar (country selector — grouped &quot;GVAR&quot;/&quot;Other countries&quot; optgroups
                              driven by isGvarCountry, plain names), ControlPanel, ScenarioBar,
-                             SliderInput, ExperimentalToggle
+                             SliderInput, ExperimentalToggle, DriversDrawer (§8c),
+                             SettingsPanel + DataPackSection (which pack is loaded; desktop
+                             &quot;Open data folder&quot; / &quot;Reload&quot;)
+      DataPackGate.tsx       wraps the app: renders nothing until the manifest has loaded and
+                             passed its checks; a refused pack becomes one full-screen message
     lib/
       compute/               All econometrics (see §4–§8)
-      data/                  loader.ts (single-country), gvarLoader.ts (loads all GVAR blocs +
-                             the precomputed coupling), countries.ts (the ~50-economy registry)
-    store/useStore.ts        Zustand store: scenarios, gvarPins, flags
+      data/                  dataManifest.ts (THE data-pack reader: manifest, hash check, data source),
+                             loader.ts (single-country + the Drivers index/IRF fetchers),
+                             gvarLoader.ts (loads all GVAR blocs + weights + the precomputed coupling),
+                             countries.ts (the 52-economy registry)
+      dates.ts               panel dating, set from the pack manifest (setPanelDates)
+    store/useStore.ts        Zustand store: scenarios, gvarPins, flags, driversInput/driversOpen
     __tests__/               Vitest suites (see §11)
-  public/data/
+  scripts/                   Data-pipeline + pack tools run by hand (only `prebuild` runs some, §12)
+    build_drivers_index.mjs  Emits public/data/dsge/census/{index.json,&lt;M&gt;.json} (§8c, §12b)
+    precompute_gvar_coupling.mjs  Emits the GVAR coupling artifact (§12a)
+    pack-build.mjs / pack-verify.mjs / pack-delta.mjs / pack-record-release.mjs
+                             Stamp, verify, cut update packs from, and record the data pack (§2a)
+    stamp_calendar.mjs       Writes each history&#39;s firstQuarter (the only date source)
+    auto_update.mjs          data:check / data:shift / data:model-update / data:auto (UPDATE_MANUAL.md)
+  public/data/               THE DATA PACK (§2a)
+    manifest.json                    every file&#39;s path + sha256 + bytes; per-economy dating
     bvar/&lt;CC&gt;/                       Per-country model JSON (see §10)
-    bvar/gvar/weights_24bloc.json    33-bloc list + row-normalized trade weights (topology source;
-                                     filename is stale — it holds 33 blocs, not 24)
+    bvar/gvar/weights_24bloc.json    35-bloc list + row-normalized trade weights (topology source;
+                                     filename is stale — it holds 35 blocs, not 24)
     bvar/gvar/coupling_default.json.gz  GZIPPED precomputed cross-country coupling (M, (I−M)⁻¹, ρ) —
                                      interactivity enabler; decompressed in-browser via DecompressionStream
-    dsge/                            MMB model catalog, rules, IRFs
+    dsge/                            MMB model catalog, rules, IRFs (policy counterfactual, §4)
+    dsge/census/                     Drivers lens payload: index.json (the menu, shock classes,
+                                     collinear pairs, clusters) + one IRF file per census model (§8c)
     meta/countries.json              Legacy country metadata (display only; countries.ts is the source)
+  src-tauri/                 Tauri desktop shell (fs plugin scoped to the data folder)
 pipeline/                    Data + estimation (Python pull, MATLAB estimate, export to JSON)
-docs/                        This guide + methodology + runbooks
+  sources/                   Source registry per economy (registry/&lt;CC&gt;.json) + build_panel.py:
+                             rebuilds each estimation panel from its publishers, no fills
+docs/                        This guide + methodology + runbooks (UPDATE_MANUAL.md: data/model updates)
 backend/                     FastAPI (optional, custom DSGE rules only)
 </code></pre></div>
+<h3 id="2a-the-data-pack-how-the-tool-reads-data-400">2a. The data pack — how the tool reads data (4.0.0)<a class="headerlink" href="#2a-the-data-pack-how-the-tool-reads-data-400" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>One indirection.</strong> <code>dataManifest.loadManifest()</code> reads <code>manifest.json</code> (no-store), checks
+  compatibility (<code>schemaVersion</code> major = 2, <code>minToolVersion</code> ≤ app version) and, for an update pack,
+  that every reused file matches the app's built-in copy. Then <code>fetchVerified(logical)</code> /
+  <code>fetchJSON</code> / <code>fetchGzJSON</code> look a file up in the manifest, read it, and check byte length and
+  SHA-256 (for <code>.gz</code>, of the compressed bytes) before use. <code>loader.ts</code> and <code>gvarLoader.ts</code> read every
+  data file this way. A failure is an error with the file's name, and the file is never used. Caveat: the
+  callers only log it (<code>page.tsx</code>, <code>gvarLoader.loadGVARModels</code> via <code>Promise.allSettled</code>, <code>loadGvarWeights</code>
+  falling back to the build-time weights), so after start-up a bad file shows nothing on screen and the
+  global model silently leaves that economy out — see <code>UPDATE_MANUAL.md</code> §10, Known limits.</li>
+<li><strong>Where the bytes come from</strong> (<code>getDataSource</code>). Web: <code>&lt;base path&gt;/data/</code>. Desktop (Tauri): the
+  pack built into the app, unless <code>&lt;appDataDir&gt;/gmaps-data/manifest.json</code> exists — then that folder
+  (read with the Tauri fs plugin), with the same checks. An update pack in that folder may mark files
+  <code>inherit: true</code> (= take the built-in copy). Rollback = delete that <code>manifest.json</code> and reload.</li>
+<li><strong>Dates come from the data.</strong> <code>loadManifest</code> calls <code>dates.setPanelDates(manifest)</code> before any bloc
+  data is used. <code>lastHistOf(country)</code> throws if read earlier — there is no compiled fallback date.
+  The pack's dating itself comes from each <code>historical_levels.json</code> <code>firstQuarter</code> + rows − 1
+  (<code>stamp_calendar.mjs</code>, checked by <code>pack-verify</code>).</li>
+<li><strong><code>DataPackGate</code></strong> (inside <code>LoginGate</code>) renders the app only after the manifest has loaded, so every
+  component that reads dates during render sees them initialised; an incompatible pack is shown as one
+  full-screen message. <strong><code>DataPackSection</code></strong> (Settings) shows the pack id, "data through", and its
+  source (bundled / update / external), plus the desktop "Open data folder" and "Reload" buttons.</li>
+<li><strong>What is still compiled in:</strong> the economy list (<code>countries.ts</code>, the <code>CountryCode</code> union) and a
+  build-time copy of the weights + 6 specs in <code>gvarSolve.ts</code> (module-load default topology, test
+  default, fetch-failure fallback, and the candidate-bloc list <code>GVAR_BLOC_CANDIDATES</code>). So a pack can
+  update existing economies but cannot add one.</li>
+<li><strong>Tools:</strong> <code>pack-build.mjs --pack-id &lt;id&gt;</code> stamps the manifest (packs are immutable by rule: never
+  re-use an id for different content — the script does not enforce it); <code>pack-verify.mjs
+  --full</code> checks every hash, the weights↔coupling link, the dating against the estimation panels,
+  and that the pack does not need a newer app; <code>pack-delta.mjs</code> cuts an update pack against a
+  recorded release (<code>pipeline/released_packs/&lt;version&gt;.manifest.json</code>). User and maintainer guide:
+  <code>docs/UPDATE_MANUAL.md</code>; field reference: <code>DATA_SCHEMA.md</code> §1.1.</li>
+</ul>
 <hr />
 <h2 id="3-the-rendercompute-flow-one-pass">3. The render/compute flow (one pass)<a class="headerlink" href="#3-the-rendercompute-flow-one-pass" title="Permanent link">&para;</a></h2>
 <p><code>ChartGrid</code> is the hub. Per render it computes:</p>
 <ul>
 <li><code>condForecast = useConditionalForecast(...)</code> — single-country conditional forecast (mean +
   level deviation + scenario levels) via the DK smoother.</li>
-<li><code>gvarFc = useGvarForecast(...)</code> — for any active GVAR bloc (the endogenous US + EA + the 31 RoW
+<li><code>gvarFc = useGvarForecast(...)</code> — for any active GVAR bloc (the endogenous US + EA + the 33 RoW
   blocs), the <strong>cross-country</strong> propagated forecast (solved in a Web Worker). <code>null</code> for a non-GVAR
-  (standalone) country. Under the endogenous-US topology it returns a <strong>two-tier</strong> result: a fast
+  country (a euro member). Under the endogenous-US topology it returns a <strong>two-tier</strong> result: a fast
   <code>mode:'direct'</code> first-order preview on every pin edit, and the complete <code>mode:'full'</code> fixed point on
   the explicit "Solve full GVAR" button (<code>solveFullToken</code>) — see §5a/§8.</li>
 <li><code>effective = (isGvar &amp;&amp; gvarFc &amp;&amp; !hasFiscalTarget) ? {...condForecast, ...gvarFc fields}
   : condForecast</code> — the path actually drawn. <strong>This is the single source of truth for "the
   displayed scenario line".</strong></li>
-<li><code>fiscalBlock</code> (the 6 fiscal countries US/EA/JP/UK/CA/CN) — derived PB / debt-service / debt-to-GDP
+<li><code>fiscalBlock</code> (the 41 economies with a fiscal block) — derived PB / debt-service / debt-to-GDP
   from <code>effective.scenarioLevels</code> by the accounting identity.</li>
+<li><code>setDriversInput({ displayed, isolated, coupled, displayedIsCoupled, external, baselineDisplay,
+  histDisplay })</code> — a <strong>publish into the store</strong> of the level-deviation paths the Drivers drawer reads
+  (§8c). ChartGrid writes it in an effect and never subscribes to it, so the publish cannot re-render
+  the grid; the same pattern as <code>setChartExportData</code>.</li>
 </ul>
 <p>Refs <code>gvarBandRef</code> and <code>fiscalMeanRef</code> snapshot <code>effective</code> and <code>fiscalBlock</code> so the
 band-computation effect (which fires only on Compute, deps <code>[uncertaintyComputing]</code>) reads fresh
@@ -1724,8 +1935,12 @@ optimization; the <strong>compute</strong> optimization (keeping the heavy GVAR 
 <td><code>computeFiscalBlock</code> — the debt/GDP accounting recursion, <strong>6 countries</strong> (US/EA/JP/UK/CA/CN; see §7).</td>
 </tr>
 <tr>
-<td><code>longRunTilt.ts</code></td>
-<td>After-estimation entropic tilt (PLR — Prior for the Long Run) toward a user long-run target — per-draw weights, no re-estimation (see §8a).</td>
+<td><code>driftSetter.ts</code></td>
+<td>Long-run anchor (§8a): a deterministic per-horizon display translation (level-space <code>Sₕ·δc</code>) that moves the display mean and every quantile toward a user long-run target — terminal hit exactly, band widths invariant; <code>perVariable</code>/<code>joint</code> solve modes + <code>rigid</code>/<code>transition</code> shapes (default <code>transition</code>), applied in <code>ChartGrid</code>. Supersedes the removed entropic-tilt PLR mechanism.</td>
+</tr>
+<tr>
+<td><code>driversDecomp.ts</code></td>
+<td>The Drivers decomposition engine (EXPERIMENTAL, §8c): <code>decompose</code> (column-normalised ridge min-norm deconvolution of a scenario deviation into a DSGE model's structural shocks over H=12), the measured observable↔BVAR-column unit maps, the class-view licence predicate <code>classViewLicensed</code>, the greedy non-collinear selection <code>useAllShockSelection</code>, and the FRB/US cluster composites (<code>clusterCompositeIRF</code> / <code>buildClusterIRFs</code>). <strong>Pure</strong> — its only import is <code>./matrix</code>; no React, no store, no fetch.</td>
 </tr>
 <tr>
 <td><code>gvarDragState.ts</code></td>
@@ -1739,15 +1954,15 @@ optimization; the <strong>compute</strong> optimization (keeping the heavy GVAR 
 </table>
 <hr />
 <h2 id="5-the-gvar-engine-appsrclibcompute-libdatagvarloaderts">5. The GVAR engine (<code>app/src/lib/compute/</code> + <code>lib/data/gvarLoader.ts</code>)<a class="headerlink" href="#5-the-gvar-engine-appsrclibcompute-libdatagvarloaderts" title="Permanent link">&para;</a></h2>
-<p><strong>33-bloc GVAR (~90% of global demand).</strong> The US is a <strong>fully endogenous coupled bloc</strong> (<code>n=40</code>; PZTEXP was dropped in the 2026-07 dedup as an exact duplicate of GLB_OIL):
+<p><strong>35-bloc GVAR.</strong> The US is a <strong>fully endogenous coupled bloc</strong> (<code>n=40</code>; PZTEXP was dropped in the 2026-07 dedup as an exact duplicate of GLB_OIL):
 it carries its domestic + fiscal vars, the <strong>4 global commons</strong> as its OWN endogenous variables (the
-US <em>determines</em> oil / US10Y / USBAA / USeq), AND <strong>3 <code>ROW*_US</code> trade-weighted stars</strong> (cols 38–40,
-<code>block:'row'</code>) from a US trade-weights row — so the US <strong>drives RoW</strong> through the globals/its linked
+US <em>determines</em> oil / US10Y / USBAA / USeq), AND <strong>3 <code>ROW*_US</code> trade-weighted stars</strong> (0-based cols
+37–39, <code>block:'row'</code>) from a US trade-weights row — so the US <strong>drives RoW</strong> through the globals/its linked
 series AND <strong>receives RoW→US feedback</strong> through its own stars, iterating in the cross-country fixed
-point exactly like a RoW bloc. The other 32 blocs are an <strong>EA aggregate</strong> plus 31 Rest-of-World blocs
-(JP, UK, CA, CN, CH, KR, MX, AU, TR, SE, PL, NO, DK, IN, BR, RU, ID, SA, AR, ZA, TH, MY + the 9 newer
-non-euro economies CL, CO, CR, CZ, HU, IL, IS, NZ, TW). EA and all 31 RoW blocs each carry <strong>two kinds
-of foreign variable</strong>:</p>
+point exactly like a RoW bloc. The other 34 blocs are an <strong>EA aggregate</strong> plus 33 Rest-of-World blocs
+(JP, UK, CA, CN, CH, KR, MX, AU, TR, SE, PL, NO, DK, IN, BR, ID, SA, ZA, TH, MY, CL, CO, CR, CZ, HU, IS,
+NZ, TW, HK, SG, RO, PE, PH — the <code>blocs</code> list of <code>weights_24bloc.json</code>; RU, AR and IL were dropped in
+2026). EA and all 33 RoW blocs each carry <strong>two kinds of foreign variable</strong>:</p>
 <ul>
 <li><strong>3 trade-weighted stars</strong> (<code>block:'row'</code>): <code>ROWDEM</code>/<code>ROWINF</code>/<code>ROWFIN</code> = trade-weighted partner
   real-GDP growth / inflation / short rate, renormalized over partners present each quarter.</li>
@@ -1788,23 +2003,26 @@ RoW blocs to ≤1e-9, and a zero scenario yields zero RoW spillover.</span></p>
 </blockquote>
 <p>The scenario <strong>deviation</strong> is a linear fixed point <code>x = M·x + d</code> (baseline is data-driven, computed
 once). The engine solves it <strong>in closed form</strong> as <code>x = (I − M)⁻¹·d</code>. Under the live <strong>endogenous-US</strong>
-topology the state is <strong>augmented</strong> (RoW+US stars ++ the US-global deltas), so <code>dim</code> = <strong>2060</strong> and
-ρ(M) = <strong>0.945494 &lt; 1</strong> in the deployed artifact (see §5a for the channel construction; the exact value
-moves slightly with each refit, what is load-bearing is <code>&lt; 1</code>; the pre-2026-07-17 artifact field read
-0.935044 from a power-iteration estimator that missed the complex dominant pair — corrected by
-eigendecomposition). <code>M</code> and its inverse come from the
-<strong>precomputed coupling artifact</strong> (<code>bvar/gvar/coupling_default.json.gz</code>, GZIPPED and decompressed
-in-browser via the native <code>DecompressionStream</code>; a plain <code>.json</code> fallback is tried for environments
-without it) — building/inverting <code>M</code> at this scale is many minutes in-browser, so the artifact is
-<strong>mandatory</strong> for interactivity, not optional. The shipped artifact carries <code>modelSig</code> (33-bloc,
-US:41), <code>pinStructure: ''</code> (the empty/baseline structure), <code>dim</code>, <code>rhoSpectral</code>, <code>M</code>, AND the
-BLAS-computed <code>invImM</code>. Gauss–Seidel (<code>solveGVAR</code>, which now iterates the US too when endogenous) is
+topology the state is <strong>augmented</strong> (RoW+US stars ++ the US-global deltas), so <code>dim</code> = <strong>2180</strong> and
+ρ(M) = <strong>0.971875 &lt; 1</strong> in the deployed artifact (pack <code>2026Q2-reest-20261008b</code>; see §5a for the
+channel construction; the value moves with each refit — 0.957724 for the Sep 2026 model — and what is
+load-bearing is <code>&lt; 1</code>; a pre-2026-07-17 artifact field read 0.935044 from a power-iteration estimator
+that missed the complex dominant pair — corrected by eigendecomposition). <code>M</code> and its inverse come from the
+<strong>precomputed coupling artifact</strong> (<code>bvar/gvar/coupling_default.json.gz</code>, read from the data pack via
+<code>fetchGzJSON</code>: hash-checked, then decompressed in-browser with <code>DecompressionStream</code>; no plain <code>.json</code>
+fallback) — building/inverting <code>M</code> at this scale is many minutes in-browser, so the artifact is
+<strong>mandatory</strong> for interactivity, not optional. The shipped artifact carries <code>modelSig</code> (35-bloc,
+US:40), <code>pinStructure: ''</code> (the empty/baseline structure), <code>dim</code>, <code>rhoSpectral</code>, <code>M</code>, AND the
+BLAS-computed <code>invImM</code>. The manifest records the weights the coupling was built from
+(<code>gvar.coupling.inputs.weightsSha256</code>); <code>gvarLoader</code> drops the artifact (and the solver recomputes)
+if that differs from the served weights' hash. Gauss–Seidel (<code>solveGVAR</code>, which now iterates the US too when endogenous) is
 kept as a cross-check; closed-form ≡ iterative to ~1e-6 over the full conditioning battery.
 (Historical note: the pre-endogenous frozen-anchor coupling had <code>dim</code>≈1920, ρ(M)≈0.726 — those figures
 no longer describe the deployed artifact.)</p>
-<p><strong>Topology is self-configured, not hardcoded.</strong> <code>configureGVARTopology(specs)</code> (in <code>gvarSolve.ts</code>)
-reads each deployed <code>spec.json</code> + <code>weights_24bloc.json</code> (the filename is stale — it now lists all
-33 blocs) and, for every candidate bloc, derives its gdp/price/rate columns (<code>deriveBlocIdx</code>, mirroring
+<p><strong>Topology is self-configured, not hardcoded.</strong> <code>configureGVARTopology(specs, weights)</code> (in <code>gvarSolve.ts</code>)
+reads each deployed <code>spec.json</code> + the trade weights <strong>fetched from the data pack</strong> (<code>weights_24bloc.json</code>;
+the filename is stale — it lists all 35 blocs; the build-time copy is only the default/fallback) and,
+for every candidate bloc, derives its gdp/price/rate columns (<code>deriveBlocIdx</code>, mirroring
 the estimator's <code>findcol</code> prefix order), its RoW-star indices, and its global columns (<code>IDX[c].glob</code>).
 A RoW bloc is <strong>active</strong> iff its spec carries <code>block:'row'</code> vars AND it has a weights row. <strong>The US is
 endogenous iff its OWN spec carries the 3 <code>ROW*_US</code> stars AND <code>weights_24bloc.json</code> has a <code>US</code> row</strong> —
@@ -1827,7 +2045,7 @@ bloc indices or a bloc subset</strong> — read <code>IDX</code>/<code>ROW_COUNT
 <tbody>
 <tr>
 <td><code>gvarSolve.ts</code></td>
-<td>The engine. <code>configureGVARTopology</code>/<code>deriveBlocIdx</code> (self-config from spec+weights; sets <code>US_ENDOGENOUS</code>), <code>IDX</code>/<code>W</code>/<code>ROW_COUNTRIES</code>/<code>COUPLED_COUNTRIES</code> (live, mutated in place), <code>solveGVARClosedForm</code> (the production entry — routes to the endogenous augmented closed form when <code>US_ENDOGENOUS</code>, else the frozen-anchor <code>(I−M)⁻¹d</code>, both with the amortized coupling cache), <code>solveGVARClosedFormEndo</code>/<code>buildLinearSystemEndo</code>/<code>blocKernels</code> (the augmented-state endogenous path, §5a), <code>solveGVARDirect</code> (fast first-order preview from prewarmed kernels), <code>prewarmGVARKernels</code>/<code>prewarmGVARKernelsChunk</code> (off-critical-path kernel-cache warm), <code>solveGVAR</code> (Gauss–Seidel cross-check; iterates the US when endogenous), <code>buildGVARCouplingMEndo</code>/<code>buildGVARCouplingEndo</code> (export-time M / coupling builds), <code>seedGVARCouplingCache</code>/<code>hydrateGVARCoupling</code> (consume the precomputed artifact), <code>solveViewedScenLvl</code> (viewed-bloc-only; US short-circuits the sweep ONLY when frozen).</td>
+<td>The engine. <code>configureGVARTopology</code>/<code>deriveBlocIdx</code> (self-config from spec+weights; sets <code>US_ENDOGENOUS</code>), <code>IDX</code>/<code>W</code>/<code>ROW_COUNTRIES</code>/<code>COUPLED_COUNTRIES</code> (live, mutated in place), <code>solveGVARClosedForm</code> (the production entry — routes to the endogenous augmented closed form when <code>US_ENDOGENOUS</code>, else the frozen-anchor <code>(I−M)⁻¹d</code>, both with the amortized coupling cache), <code>solveGVARClosedFormEndo</code>/<code>buildLinearSystemEndo</code>/<code>blocKernels</code> (the augmented-state endogenous path, §5a), <code>solveGVARDirect</code> (fast first-order preview from prewarmed kernels), <code>prewarmGVARKernels</code>/<code>prewarmGVARKernelsChunk</code> (off-critical-path kernel-cache warm), <code>solveGVAR</code> (Gauss–Seidel cross-check; iterates the US when endogenous), <code>buildGVARCouplingMEndo</code> (export-time M build), <code>seedGVARCouplingCache</code>/<code>hydrateGVARCoupling</code> (consume the precomputed artifact), <code>solveViewedScenLvl</code> (viewed-bloc-only; US short-circuits the sweep ONLY when frozen).</td>
 </tr>
 <tr>
 <td><code>buildScenarioPins.ts</code></td>
@@ -1855,25 +2073,25 @@ bloc indices or a bloc subset</strong> — read <code>IDX</code>/<code>ROW_COUNT
 </tr>
 <tr>
 <td><code>gvarLoader.ts</code></td>
-<td>Loads every deployed GVAR bloc's raw JSON (<code>GVAR_BLOC_CANDIDATES</code>, 404-tolerant) + the coupling artifact; re-runs <code>configureGVARTopology</code>.</td>
+<td>Loads every deployed GVAR bloc's raw JSON (<code>GVAR_BLOC_CANDIDATES</code>, 404-tolerant), the trade weights and the coupling artifact — all through the data pack (<code>dataManifest.ts</code>); re-runs <code>configureGVARTopology</code> with the fetched weights; refuses a coupling built from other weights.</td>
 </tr>
 </tbody>
 </table>
 <p>Special-case handling baked into the topology config: <strong>CN's GDP is real</strong> (since the 2026-06 surgical
 CN-only re-estimate — <code>NOMINAL_GDP_BLOCS</code> is now empty) → its DEM contribution reads <code>gdp</code> directly,
-not the deflated <code>gdp − price</code>; <strong>rate-less blocs</strong> (CH/NO) are dropped from partners' FIN;
-<strong>hyperinflation blocs</strong> (AR) are dropped from partners' INF and FIN (kept in DEM). These mirror the
-estimator (<code>export_bvar_gvar24_loop.m</code>) exactly. <code>W</code> is <strong>renormalized over the active bloc set</strong> at
-config time; the weights provenance is <code>app/public/data/bvar/gvar/weights_24bloc.json</code>.</p>
+not the deflated <code>gdp − price</code>; <strong>rate-less blocs</strong> (on the shipped roster only SG: no <code>RATE_</code>/<code>POLRATE</code>/<code>YIELD10_</code> column) are dropped from partners' FIN;
+<strong>hyperinflation blocs</strong> (AR, while it was in the roster) are dropped from partners' INF and FIN (kept
+in DEM). These mirror the estimator (<code>export_bvar_gvar24_loop.m</code>) exactly. <code>W</code> is <strong>renormalized over
+the active bloc set</strong> at config time; the weights provenance is <code>app/public/data/bvar/gvar/weights_24bloc.json</code>.</p>
 <blockquote>
-<p><strong>Variable-coherence audit (verified).</strong> All <strong>1048 variables across the 50 blocs</strong> were audited for
+<p><strong>Variable-coherence audit (verified at the time, 2026-07).</strong> All <strong>1048 variables across the then 50 blocs</strong> were audited for
 coherent <code>transformation</code> / <code>prior</code> / <code>isFinancial</code> tagging, and the per-economy variable table (each
 bloc's variables with their transformation · prior · financial flag) was added to the LaTeX manual
-(<code>docs/MFFM_User_Manual.tex</code>, Appendix B — generated from the shipped specs by <code>docs/generate_manual_tables.py</code>). Two coherence fixes shipped with the WN-prior refit: the 4 globals are now
+(<code>docs/GMAPS_User_Manual.tex</code>, Appendix B — generated from the shipped specs by <code>docs/generate_manual_tables.py</code>). Two coherence fixes shipped with the WN-prior refit: the 4 globals are now
 <code>isFinancial:true</code> everywhere (above), and <strong><code>IP_CA</code></strong> (Canada industrial production) was <strong>rebuilt as a
-<code>log</code> LEVEL</strong> — chained from the discontinued FRED level index plus growth through 2025Q4 — rather than a
-growth/diff series, so it lives in the same <code>100·log</code> level space as the other <code>log</code> variables (verified:
-<code>IP_CA</code> <code>transformation:'log'</code> in <code>CA/spec.json</code>).</p>
+<code>log</code> LEVEL</strong> rather than a growth/diff series, so it lives in the same <code>100·log</code> level space as the
+other <code>log</code> variables (verified: <code>IP_CA</code> <code>transformation:'log'</code> in <code>CA/spec.json</code>; since the Oct 2026
+rebuild its source is the OECD production index, <code>pipeline/sources/registry/CA.json</code>).</p>
 </blockquote>
 <h3 id="5em-how-the-coupled-blocs-are-estimated-the-gvar-em-loop-offline">5·EM. How the coupled blocs are estimated — the GVAR-EM loop (offline)<a class="headerlink" href="#5em-how-the-coupled-blocs-are-estimated-the-gvar-em-loop-offline" title="Permanent link">&para;</a></h3>
 <p>The coupling above operates on blocs that are <strong>already estimated</strong>. They come out of the offline
@@ -1884,16 +2102,18 @@ distinct from the solve-time <code>x=Mx+d</code> of §5. Algorithm (verified aga
 
   load every bloc&#39;s raw panel  DataRaw_&lt;CC&gt;_glob.json   (≤ vintage; 100·log / lin via transformData)
   mask COVID:  NaN the macro columns over 2020Q2..Q4 (financials + ROWFIN stay OBSERVED)   # COVID-as-missing
-  initialise each bloc&#39;s completed panel D.&lt;CC&gt;.comp (seed interpolation)
+  initialise each bloc&#39;s completed panel D.&lt;CC&gt;.comp (seed interpolation; under GVAR_NOFILL=1 the seed
+    only starts the chain — every gap stays missing data that the sampler draws)
   repeat up to MAXIT times:
     # --- E-step: rebuild the trade-weighted stars from the current completed partner panels ---
     for each COUPLED bloc c:
       ROWDEM/ROWINF/ROWFIN_c  =  Σ_j  w_{c,j} · partner_j&#39;s (deflated) gdp-growth / inflation / rate
                                   read from D.&lt;j&gt;.comp, renormalised over partners present each quarter
-                                  (CN gdp deflated by gdp−price; CH/NO dropped from FIN; AR dropped from INF/FIN)
+                                  (rate-less blocs — today SG — dropped from FIN; AR, while in the roster,
+                                   dropped from INF/FIN; time-varying annual weights per quarter, §5·EM.w)
     # --- M-step: re-estimate every bloc in PARALLEL on its [domestic | 3 stars] panel ---
     parfor each bloc c:                                                  # parpool(&#39;local&#39;)
-      pos = find(prior==&#39;WN&#39;)                                           # §6a — WN cols (fiscal ratios), [] otherwise
+      pos = find(prior==&#39;WN&#39;)                                           # §6a — WN cols (fiscal ratios + the differenced GDP/price under DIFF_GP)
       [Xcond, BETA, SU, Dforecast] = cgl_bvarV5([dom | stars], lags=3, pos, nDraws, nBurn, MCMCconst, H,
                                                 &#39;mcmc&#39;,1,&#39;MNpsi&#39;,0,&#39;sur&#39;,0,&#39;noc&#39;,1, &#39;Ndraws&#39;,1000,&#39;Ndrawsdiscard&#39;,500)
       #  cgl_bvarV5 = GLP/Minnesota csminwel mode (bvarGLPmf) + Durbin–Koopman simulation smoother:
@@ -1904,6 +2124,20 @@ distinct from the solve-time <code>x=Mx+d</code> of §5. Algorithm (verified aga
   # MAXIT=1  ⇒  no star re-convergence = single-country / &quot;separated&quot; estimation (the (iv-b)/single-BVAR ablation)
   export per bloc:  spec.json, companion_mean.json, companion_draws.json, baseline(_levels).json, historical(_levels).json
 </code></pre></div>
+<p><strong>Settings of the deployed run (Oct 2026, pack <code>2026Q2-reest-20261008b</code>; script
+<code>docs/reest-2026/runs/run_gvar35b.sh</code>):</strong> <code>BVAR_DIFF_GP=1 US_ENDOGENOUS=1 NDRAWS=1000 MAXIT=30
+BVAR_SEED=1 GVAR_FIXHYPER=1 GVAR_NOFILL=1</code>, 35-bloc weights, time-varying weights on.
+- <code>BVAR_DIFF_GP=1</code>: real GDP and the price series (incl. <code>DEFL_&lt;CC&gt;</code>) enter as growth rates with a WN
+  own-lag prior; everything else in levels. The mixed VAR(3) is exported as the equivalent level VAR(4).
+- <code>GVAR_NOFILL=1</code>: no fills anywhere — leading, interior and trailing gaps are missing data drawn by the
+  DK smoother, like the COVID quarters; the panel runs to the latest published quarter per series (ragged
+  end). The cells the sampler drew are exported per bloc in <code>estimation_mask.json</code>.
+- <code>GVAR_FIXHYPER=1</code> + a fixed seed (common random numbers): the EM sweeps use the smooth sampler
+  (hyperparameters at the posterior mode, re-seeded stream), so the sweep-to-sweep star change measures the
+  fixed point and can meet <code>TOL</code>; then ONE final full-MH pass at the frozen converged stars produces the
+  shipped posterior. The deployed run converged at sweep 6 (change 0.0109 &lt; 0.03). Before this (and the
+  explicit <code>rng(0,'twister')</code> fix in <code>cgl_bvarV5</code>) the random stream depended on the parallel worker and
+  the Sep 2026 run stopped at 12 sweeps unconverged.</p>
 <p>The "<strong>E-step</strong>" is the Durbin–Koopman completion of the foreign/star (and COVID-masked) cells; the
 "<strong>M-step</strong>" is the Bayesian re-estimation of each bloc; iterating to a fixed point in the completed stars
 is the EM analogy. Set <code>US_ENDOGENOUS=1</code> to fold the US into the <code>parfor</code> set (it then builds its own
@@ -1917,8 +2151,9 @@ to <code>TOL</code> (e.g. run 3: 14.7→1.07→0.20→0.11→plateau ~0.1). A se
 (<code>'fixedcomp'=0</code>, <code>GVAR_POLISH_EXACT</code>) rebuilds the companion from the current draw every Gibbs sweep
 (the open-issue-#4 fix) and is available as a final polish sweep, but it is <strong>NOT</strong> used to ship the
 coupled GVAR — it (i) breaks the outer-loop convergence and (ii) marginally raises companion
-persistence. The <strong>shipped coupled models use the fixed-companion posterior</strong>; single-bloc estimators
-(euro members) may use exact DA. See the <code>'fixedcomp'</code> header in <code>BVAR/MFBVAR/cgl_bvarV5.m</code>.</p>
+persistence. The <strong>shipped coupled models use the fixed-companion posterior</strong>; the 17 euro members in the
+deployed pack were also run with <code>CGL_FIXED_COMPANION=1</code> (<code>docs/reest-2026/runs/run_members.sh</code>). See the
+<code>'fixedcomp'</code> header in <code>BVAR/MFBVAR/cgl_bvarV5.m</code>.</p>
 </blockquote>
 <h3 id="5ems-seasonal-dummies-for-nsa-seasonal-blocs-offline-estimation-contract">5·EM.s. Seasonal dummies for NSA-seasonal blocs (offline estimation contract)<a class="headerlink" href="#5ems-seasonal-dummies-for-nsa-seasonal-blocs-offline-estimation-contract" title="Permanent link">&para;</a></h3>
 <p>Some blocs carry <strong>not-seasonally-adjusted (NSA)</strong> series (NSA HICP/CPI, unemployment <code>LR</code>, house prices,
@@ -1926,11 +2161,14 @@ India <code>GOV</code>, UK/KR <code>SFA</code>) whose within-year cycle, left un
 <strong>near-Nyquist companion root</strong> (an alternating-sign root ≈ −1) that produces a spurious sawtooth in
 forecast. The fix is a set of <strong>deterministic quarterly seasonal dummies</strong> baked into the estimation, so
 the seasonality is a <strong>bounded deterministic cycle</strong> instead of an explosive stochastic root.</p>
-<p><strong>Which blocs (<code>GVAR_DUMMY_BLOCS</code>, <code>pipeline/export_bvar_gvar24_loop.m</code>).</strong> The default coupled set is 16
-blocs — <code>{CL, CN, CO, CR, EA, ID, IL, IN, IS, JP, KR, MX, NO, TR, UK, ZA}</code> — plus the standalone euro
-members <code>{ES, IT, GR, PT, SI, BE}</code> (<code>EURO_DUMMY_MEMBERS</code> in <code>pipeline/export_bvar_euro_redesign.m</code>, 6). A
-bloc qualifies when the panel scan flags <strong>calendar-R² ≥ 0.40 with display-amplitude ≥ 2</strong> on any NSA
-series, <strong>PLUS every even-interest bloc</strong> (below). Both env vars override the default.</p>
+<p><strong>Which blocs (<code>GVAR_DUMMY_BLOCS</code>, <code>pipeline/export_bvar_gvar24_loop.m</code>).</strong> The script's default coupled set
+is 16 blocs — <code>{CL, CN, CO, CR, EA, ID, IL, IN, IS, JP, KR, MX, NO, TR, UK, ZA}</code>. The deployed Oct 2026 run
+passed that list <strong>plus HK and PE</strong> (left out by accident before), so with IL no longer estimated <strong>17
+coupled blocs</strong> carry dummies; the euro members' run set <code>EURO_DUMMY_MEMBERS</code> to <strong>all 17 members</strong>
+(<code>pipeline/export_bvar_euro_redesign.m</code>). 34 economies in all — the pack manifest lists them
+(<code>blocs.&lt;CC&gt;.seasonalRows = 3</code>). A bloc qualifies when the panel scan flags <strong>calendar-R² ≥ 0.40 with
+display-amplitude ≥ 2</strong> on any NSA series, <strong>PLUS every even-interest bloc</strong> (below). Both env vars
+override the default.</p>
 <p><strong>Mechanism.</strong> The three quarterly dummies <code>D = [q==2, q==3, q==4]</code> (Q1 is the base) enter each equation's
 regressor row <code>x = [1, D, y_{t-1}, …, y_{t-p}]</code>. The exported <code>betahat</code> layout is therefore
 <strong><code>[constant; γ_Q2; γ_Q3; γ_Q4; B_1; …; B_p]</code></strong> — <code>k = 1 + nsr + n·lags</code> rows with <strong><code>nsr = 3</code>
@@ -1947,16 +2185,18 @@ vector and ship the new fields: <code>export_bvar_gvar24_loop.m</code> / <code>e
 precomputes <strong><code>c2ByQ</code></strong> — 4 quarter-specific transition constants (the Q1-base <code>c2</code> plus <code>γ_Q2/γ_Q3/γ_Q4</code>
 on the top <code>n</code> rows). <strong><code>c2AtStep(ss, t)</code></strong> picks the constant for forecast step <code>t</code> via
 <code>q = ((qoyNext−1+t) mod 4)</code>. Every <code>betahat</code> consumer is wired: <code>gvarSolve.buildParams</code> /
-<code>makeCountryModel</code>, <code>useConditionalForecast</code>, <code>runGvarBandSolve</code> (per-draw), <code>driftSetter</code>, <code>longRunTilt</code>,
+<code>makeCountryModel</code>, <code>useConditionalForecast</code>, <code>runGvarBandSolve</code> (per-draw), <code>driftSetter</code>,
 the <code>ChartGrid</code> band paths, and the pipeline <code>.mjs</code> scripts.</p>
 <blockquote>
 <p>🔴 <span style="color:red"><strong>PHASE RULE (do not break).</strong> The app <strong>always</strong> derives <code>qoyNext</code> from its
 <strong>own</strong> date grid via <code>dates.qoyNextOf(country)</code> (the quarter after <code>lastHistOf</code>, wrapped <code>1..4</code>),
-<strong>never</strong> the shipped estimation-grid <code>qoyNext</code> in <code>spec.json</code> — the production shift moves the display
-origin <strong>+1 quarter</strong> past the estimation grid, so trusting the shipped value would mis-phase every
-seasonal constant by one quarter. <code>makeCountryModel</code> sets <code>params.qoyNext = qoyNextOverride ??
-qoyNextOf(code)</code> (the override is for the node pipeline scripts, whose forecast origin is not the app's;
-<code>nowcastCompletion</code> rebuilds seasonal blocs with the floor-row phase for the same reason).</span></p>
+<strong>never</strong> the shipped estimation-grid <code>qoyNext</code> in <code>spec.json</code> — a within-year data shift moves the display
+origin past the estimation grid, so trusting the shipped value would mis-phase every seasonal constant.
+<code>lastHistOf</code> itself comes from the data-pack manifest (<code>setPanelDates</code>), which also cross-checks the
+manifest's declared <code>qoyNext</code> against this recomputation and stops the load on a mismatch.
+<code>makeCountryModel</code> sets <code>params.qoyNext = qoyNextOverride ?? qoyNextOf(code)</code> (the override is for the
+node pipeline scripts, whose forecast origin is not the app's; <code>nowcastCompletion</code> rebuilds seasonal
+blocs with the floor-row phase for the same reason).</span></p>
 </blockquote>
 <p><strong>All <code>nsr = 0</code> paths are byte-identical to before</strong> (<code>buildStateSpace</code> reads row <code>j+1</code>, <code>c2</code> from row 0,
 builds no <code>c2ByQ</code>; <code>buildParams</code> sets <code>seasonalRows</code> only when <code>&gt; 0</code>).</p>
@@ -1972,10 +2212,17 @@ debt-identity residual) absorbs the genuine cash-vs-accrual timing — <strong>w
 seasonal dummies</strong>. The debt identity still closes exactly (~1e-14). Result: the EFFI sawtooth is removed
 (mean |q/q change| CL 4.82→0.11, MX 4.95→0.21, ZA 5.00→0.25) and the near-Nyquist companion root that drove
 it moves off −1 (ZA −0.973→−0.634, MX −0.953→−0.659, CL −0.965→−0.588).</p>
+<blockquote>
+<p><strong>Superseded in the Oct 2026 data (decision D5).</strong> The rebuilt panels no longer even out the coupons:
+for MX, CL, CO, CR, ID, TR and ZA, <code>EFFI</code> is now <strong>interest over the last 4 quarters ÷ debt at t−4</strong>
+(genuine and one-sided, to the latest quarter) — <code>effi: "trailing4"</code> in the source registry, computed by
+<code>pipeline/sources/derived.py</code>. These blocs keep their seasonal dummies. The paragraph above describes
+the earlier <code>build_fiscal22_columns.py</code> method.</p>
+</blockquote>
 <p><strong>Result.</strong> NSA series now honestly show their seasonal cycle in-forecast as a <strong>bounded deterministic
 cycle</strong> (the dummies model the seasonality) instead of a spurious near-Nyquist explosive root; the residual
 SFA cycle is bounded (year-1 ≈ year-5 amplitude).</p>
-<h3 id="5emw-time-varying-trade-weights-capability-data-staged-not-yet-promoted">5·EM.w. Time-varying trade weights (capability; data staged, not yet promoted)<a class="headerlink" href="#5emw-time-varying-trade-weights-capability-data-staged-not-yet-promoted" title="Permanent link">&para;</a></h3>
+<h3 id="5emw-time-varying-trade-weights-used-in-estimation">5·EM.w. Time-varying trade weights (used in estimation)<a class="headerlink" href="#5emw-time-varying-trade-weights-used-in-estimation" title="Permanent link">&para;</a></h3>
 <p><code>buildstars(c, D, W, blocs, TVW)</code> (<code>pipeline/export_bvar_gvar24_loop.m</code>) applies <strong>annual weight rows per
 quarter</strong> when <code>app/public/data/bvar/gvar/weights_timevarying.json</code> exists <strong>and</strong> <code>GVAR_TV_WEIGHTS != 0</code>.
 Each quarter uses its <strong>calendar-year</strong> weight row (clamped to the file's year span); a partner absent from
@@ -1984,8 +2231,10 @@ This moves the <strong>rising China / declining euro-area</strong> partner role 
 estimated on. <strong>Solve-time coupling still uses the static/current-year file</strong> — swapping it to the latest
 year is a separate, user-approved step. With <strong>no artifact</strong> (or <code>GVAR_TV_WEIGHTS=0</code>) the static row is
 used everywhere — <strong>byte-identical</strong> to the legacy path.</p>
-<p>The staged artifact (<code>pipeline/fsap_expansion_staging/weights/weights_timevarying.json</code>) is <strong>annual IMTS
-bilateral trade 1995–2024, 39 blocs</strong>. Honest empirical finding (document as-is, do <strong>not</strong> claim a
+<p>The artifact is now promoted to <code>app/public/data/bvar/gvar/weights_timevarying.json</code> (annual IMTS bilateral
+trade 1995–2024, 39 blocs) and was active in the Sep 2026 and the deployed Oct 2026 estimations (neither
+set <code>GVAR_TV_WEIGHTS=0</code>); it was first staged at
+<code>pipeline/fsap_expansion_staging/weights/weights_timevarying.json</code>. Honest empirical finding (document as-is, do <strong>not</strong> claim a
 monotone story): the <strong>US→China</strong> trade share rises to a <strong>2017 peak (0.176)</strong> then <strong>falls</strong> after the
 2018 trade war (<strong>0.119 by 2024</strong>); <strong>US→euro-area does NOT decline</strong> — it <strong>rises to 0.178</strong>.</p>
 <h3 id="5a-endogenous-us-augmented-closed-form-the-affine-kernel-perf-path">5a. Endogenous-US augmented closed form + the affine-kernel perf path<a class="headerlink" href="#5a-endogenous-us-augmented-closed-form-the-affine-kernel-perf-path" title="Permanent link">&para;</a></h3>
@@ -2007,8 +2256,9 @@ is <strong>AUGMENTED</strong> (<code>buildLinearSystemEndo</code>):</p>
 linked series at zero partner/global delta) plus the US's own-pin global delta; the US-as-partner term is
 in <code>M</code> (1), the US-global term in <code>M</code> (2)+(3). <code>solveGVARClosedFormEndo</code> solves <code>x = (I−M)⁻¹d</code> — using
 the hydrated artifact inverse when present, otherwise an <strong>inverse-free Neumann</strong> fixed-point
-<code>x ← d + Mx</code> (the in-JS <code>O(dim³)</code> inverse at <code>dim≈2060</code> is ~46 min, NEVER built live; the Neumann path
-converges at ρ(M)≈0.922 in a few-hundred cheap matvecs) — then reconstructs each bloc's full level with
+<code>x ← d + Mx</code> (the in-JS <code>O(dim³)</code> inverse at <code>dim≈2060</code> was ~46 min — the deployed <code>dim</code> is 2180 — and is
+NEVER built live; the Neumann path converges because ρ(M) &lt; 1, in a few hundred cheap matvecs at the
+earlier ρ≈0.92 and more at the deployed ρ≈0.97) — then reconstructs each bloc's full level with
 one final <code>conditionalForecast</code>.</p>
 <p><strong>Affine-kernel perf (<code>blocKernels</code> + <code>affineBlocKernels</code>).</strong> A bloc's response kernels — <code>K[v][tp]</code>
 (star-pin IRFs) and <code>Kg[p][tp]</code> (global-pin IRFs) — depend ONLY on that bloc's params + its OWN pin
@@ -2016,9 +2266,9 @@ STRUCTURE (which cells are pinned), <strong>not</strong> on partner data, the gl
 - All <code>(3 stars + #globals)·H</code> per-period kernels for a bloc come from <strong>one</strong> filter+smoother pass on
   the probe baseline plus cheap per-cell matvec recursions (<code>affineBlocKernels</code> in <code>kalman.ts</code>) instead
   of one full <code>conditionalForecast</code> per <code>(var, tp)</code> — numerically identical (&lt;1e-9), ~10–20× faster on
-  the <code>n=40</code>/lags=3/H=20 US bloc.
+  the <code>n=40</code>/H=20 US bloc (measured when it had lags=3; the deployed model has lags=4).
 - The kernels are <strong>cached</strong> (<code>_blocKernelCache</code>, keyed by <code>modelSig + bloc + own-pin-cells</code>). In the
-  dominant flow (the user pins ONLY the US) all 32 RoW blocs keep an empty own-pin structure ⇒ their
+  dominant flow (the user pins ONLY the US) all 34 other blocs keep an empty own-pin structure ⇒ their
   kernels are reused ⇒ only the US re-probes. <code>prewarmGVARKernels</code>/<code>prewarmGVARKernelsChunk</code> warm the
   empty-structure kernels off the critical path (in the worker right after load); <code>prewarmGVARKernels</code>
   also caches the empty-structure assembled <code>M</code> so the first US-pin solve reuses it.</p>
@@ -2074,7 +2324,7 @@ GLP/Minnesota prior:</p>
 <td><code>'WN'</code> (stationary)</td>
 <td><strong>0</strong></td>
 <td>the variable is a priori white noise → its forecast <strong>mean-reverts to the in-sample mean</strong></td>
-<td>the fiscal <strong>GDP-ratios</strong> <code>FREV_GDP</code>, <code>FPEXP_GDP</code>, <strong><code>SFA</code></strong></td>
+<td>the fiscal <strong>GDP-ratios</strong> <code>FREV_GDP</code>, <code>FPEXP_GDP</code>, <strong><code>SFA</code></strong>; and, in the deployed growth-rate model (<code>BVAR_DIFF_GP=1</code>), real GDP, the headline price and <code>DEFL_&lt;CC&gt;</code> — estimated as growth rates, so their <strong>growth</strong> mean-reverts</td>
 </tr>
 </tbody>
 </table>
@@ -2094,11 +2344,13 @@ into the <code>bvarGLPmf</code> call (<code>'pos', pos</code>) and every downstr
 1. The estimators <strong>read the per-variable <code>prior</code> from the spec</strong> and build the <code>pos</code> index set:
    - <code>pipeline/export_bvar_gvar24_loop.m</code>: <code>statCols = find(Spec.Prior(keep)=="WN")'</code> (on the <em>kept domestic</em>
      block — stars are appended AFTER and are always RW), passed as <code>cgl_bvarV5(x, lags, Dc.statCols, …)</code>.
-   - <code>pipeline/export_bvar_euro_fsap.m</code>: <code>statCols = find(Prior=="WN")'</code>, passed as <code>cgl_bvarV5(x, lags, statCols, …)</code>.
-   - Both use a robust <code>priorsfrom(vars)</code> helper that tolerates MATLAB's <code>jsondecode</code> dropping a <code>prior</code>
+   - <code>pipeline/export_bvar_euro_redesign.m</code> (the 17 euro members): <code>statCols = find(Prior=="WN")'</code>, plus the
+     differenced GDP/price/deflator columns under <code>BVAR_DIFF_GP</code> (the older <code>export_bvar_euro_fsap.m</code> uses the
+     same <code>statCols</code> rule).
+   - They use a robust <code>priorsfrom(vars)</code> helper that tolerates MATLAB's <code>jsondecode</code> dropping a <code>prior</code>
      field that is present on only <em>some</em> variables (cell-array vs struct-array shapes); a missing/empty
-     <code>prior</code> defaults to <code>'RW'</code> (the historical behaviour) — so the <code>WN</code> prior is <strong>purely additive</strong> and a
-     <strong>no-op (byte-identical) for the 44 non-fiscal blocs</strong> (their <code>pos</code> is empty).
+     <code>prior</code> defaults to <code>'RW'</code> (the historical behaviour) — so the <code>WN</code> prior is <strong>purely additive</strong> (a bloc
+     with an empty <code>pos</code> is unchanged).
 2. The estimator <strong>bakes the prior into the exported coefficients</strong> — the <code>WN</code> mean-reversion lives in the
    posterior <code>betahat</code>/<code>sigmahat</code> (and the draws) written to <code>companion_mean.json</code> / <code>companion_draws.json</code>.
 3. The <strong>TypeScript runtime never reads <code>.prior</code></strong> (grep: no <code>.prior</code> access anywhere in <code>app/src</code>). The
@@ -2109,11 +2361,12 @@ into the <code>bvarGLPmf</code> call (<code>'pos', pos</code>) and every downstr
 end (US revenue stuck near ~19%); with the <code>WN</code> prior <code>FREV_GDP</code> <strong>mean-reverts toward its in-sample
 mean</strong> — the deployed <code>US/baseline_levels.json</code> shows <code>FREV_GDP</code> ≈ 18.06 at h=0 → ≈ 17.4 by h=8 → ≈ 17.9
 at the long horizon, instead of drifting up. <code>EFFI</code> (the effective interest rate) deliberately stays <strong>RW</strong>
-(it <em>is</em> persistent). Committed <code>6f0161a</code> / <code>22250be</code> / <code>e38673a</code>. The <code>prior=='WN'</code> assignment is
-consistent across all 6 fiscal blocs (verified: <code>FREV_GDP</code>/<code>FPEXP_GDP</code>/<code>SFA</code> = <code>WN</code>, <code>EFFI</code> = <code>RW</code> in
-US/EA/JP/UK/CA/CN <code>spec.json</code>).</p>
+(it <em>is</em> persistent). Committed <code>6f0161a</code> / <code>22250be</code> / <code>e38673a</code>. (The US numbers above are from that
+change; the deployed pack's values differ.) The fiscal <code>prior</code> assignment is consistent across all 41
+fiscal economies (verified: <code>FREV_GDP</code>/<code>FPEXP_GDP</code>/<code>SFA</code> = <code>WN</code>, <code>EFFI</code> = <code>RW</code> in every shipped
+<code>spec.json</code> with a fiscal block).</p>
 <hr />
-<h2 id="7-the-fiscal-block-fiscalaccountingts-6-countries-useajpukcacn">7. The fiscal block (<code>fiscalAccounting.ts</code>) — 6 countries (US/EA/JP/UK/CA/CN)<a class="headerlink" href="#7-the-fiscal-block-fiscalaccountingts-6-countries-useajpukcacn" title="Permanent link">&para;</a></h2>
+<h2 id="7-the-fiscal-block-fiscalaccountingts-41-economies">7. The fiscal block (<code>fiscalAccounting.ts</code>) — 41 economies<a class="headerlink" href="#7-the-fiscal-block-fiscalaccountingts-41-economies" title="Permanent link">&para;</a></h2>
 <p>Stock-flow-consistent, CBO/IMF-style. The BVAR estimates <strong>4 fiscal drivers</strong> — <code>FREV_GDP</code>
 (revenue/GDP·100), <code>FPEXP_GDP</code> (primary-exp/GDP·100), <code>EFFI</code> (the effective interest rate = net
 interest / lagged gross debt ·100, annualised) and <strong><code>SFA</code></strong> (the stock-flow adjustment, % of GDP);
@@ -2128,44 +2381,53 @@ prior left US revenue stuck near ~19%; it now reverts toward ~17.4%). <strong><c
 effective rate is genuinely persistent. This is purely an estimation-prior choice baked into the exported
 coefficients; <code>fiscalAccounting.ts</code> is unchanged by it.</p>
 </blockquote>
+<p>Which economies: the 41 with a <code>fiscal_meta.json</code> — 24 GVAR blocs and all 17 euro members (the pack
+manifest lists them; see <code>DATA_SCHEMA.md</code> §9).</p>
 <ul>
 <li><code>pb = revenue − primaryExp</code> (primary balance, + = surplus).</li>
 <li><strong>SFA is a NEW estimated BVAR variable</strong> = the EXACT residual of the app's debt recursion — the
   deficit–debt discrepancy (observed <code>dDebt − (deficit + interest − growth)</code>), driven by the
   federal-flows-vs-gross-debt perimeter seam / intragovernmental holdings. It is computed so the
   recursion closes to machine precision; <strong>COVID quarters are set NaN</strong> (the COVID-as-missing Gibbs
-  imputes them). The debt/GDP projection now <strong>carries the FORECAST SFA forward</strong> (its own dynamics +
-  bands) instead of defaulting to 0.</li>
-<li>Recursion (per quarter): <code>d_t = d_{t-1}·(1 + EFFI/400)/(1 + gNomQ/100) − pb/4 + sfa/4</code>, with
+  imputes them). <strong>The debt/GDP projection does NOT use the forecast SFA</strong>: <code>computeFiscalBlock</code> rolls
+  debt forward with the constant <strong>structural</strong> SFA, <code>sfaDefault</code> (the historical mean, ex-COVID), because
+  the forecast SFA column is pulled to extremes by the long-run anchors' cross-responses
+  (<code>fiscalAccounting.ts</code>, comment above <code>const sfaT</code>). The SFA column is still forecast and can be
+  conditioned like any variable.</li>
+<li>Recursion (per quarter): <code>d_t = d_{t-1}·(1 + EFFI/400)/(1 + gNomQ/100) − pb/4 + sfaDefault/4</code>, with
   <code>pb = FREV − FPEXP</code> and <code>gNomQ = 100·log(realGDP)-diff + 100·log(deflator)-diff</code> (q/q nominal,
-  read off the level path). Debt service (interest, % GDP) = <code>EFFI·d_{t-1}/100</code>. Debt-to-GDP is
-  <strong>derived</strong> by rolling this budget identity forward from <code>d0</code> (debt is not a BVAR variable).</li>
-<li><code>fiscal_meta.json</code> carries <code>{ d0, sfaDefault, idx:{ gdp, deflator, revenue, primaryExp, effRate,
-  sfa } }</code>. <strong><code>debtService</code> is NO LONGER in the deployed <code>idx</code></strong> — <code>computeFiscalBlock</code> therefore takes
-  the <code>effRate</code> branch (interest = <code>effRate·d_{t-1}/100</code>) and reads the per-quarter SFA from
-  <code>idx.sfa</code> (the estimated SFA column). <strong>Deployed indices (read from the live files, NEVER hardcode —
-  these are positional and DRIFT on any variable-order change, see the gotcha below):</strong>
-  US <code>{0,7,33,34,35,36}</code>, EA <code>{0,6,17,18,19,20}</code>, JP <code>{0,7,16,17,18,19}</code>, UK <code>{0,8,18,19,20,21}</code>,
-  CA <code>{0,8,18,19,20,21}</code>, CN <code>{0,1,13,14,15,16}</code> for <code>{gdp,deflator,revenue,primaryExp,effRate,sfa}</code>.
-  SFA means (<code>sfaDefault</code>, % GDP): US 1.75, EA 0.33, JP 2.23, UK 3.15, CA 3.19, CN 4.02. Variable counts
-  <code>n</code>: US 41, EA 24, JP 23, UK 25, CA 25, CN 20.</li>
+  read off the level path; the deflator is <code>DEFL_&lt;CC&gt;</code> wherever the economy has one — 38 of 41 — else
+  <code>JGDP</code> for the US and CPI for CN/NZ). Debt service (interest, % GDP) = <code>EFFI·d_{t-1}/100</code>. Debt-to-GDP is
+  <strong>derived</strong> by rolling this budget identity forward from <code>d0</code> (debt is not a BVAR variable). <code>d0</code> is at
+  the panel's last quarter: the panel build records the last published debt ratio, and
+  <code>app/scripts/roll_d0_forward.mjs</code> rolls it forward with this identity on the completed history
+  (<code>d0_observed</code>/<code>d0_observed_quarter</code> keep the published value).</li>
+<li><code>fiscal_meta.json</code> carries <code>{ d0, d0_quarter, sfaDefault, idx:{ gdp, deflator, revenue, primaryExp,
+  effRate, sfa } }</code> (+ <code>d0_observed*</code>, <code>d0_note</code> where rolled). <strong><code>debtService</code> is NO LONGER in the
+  deployed <code>idx</code></strong> — <code>computeFiscalBlock</code> therefore takes the <code>effRate</code> branch (interest =
+  <code>effRate·d_{t-1}/100</code>). <strong>Indices in pack <code>2026Q2-reest-20261008b</code> (read from the live files, NEVER
+  hardcode — these are positional and DRIFT on any variable-order change, see the gotcha below):</strong>
+  US <code>{0,7,32,33,34,35}</code>, EA <code>{0,7,18,19,20,21}</code>, JP <code>{0,8,17,18,19,20}</code>, UK <code>{0,9,19,20,21,22}</code>,
+  CA <code>{0,9,19,20,21,22}</code>, CN <code>{0,1,13,14,15,16}</code> for <code>{gdp,deflator,revenue,primaryExp,effRate,sfa}</code>.
+  <code>sfaDefault</code> (% GDP): US 1.753, EA 0.187, JP −0.94, UK 0.234, CA 3.106, CN 3.247. Variable counts
+  <code>n</code>: US 40, EA 26, JP 27, UK 28, CA 28, CN 22.</li>
 </ul>
 <blockquote>
-<p>🔴 <strong>STALE-POSITIONAL-INDEX gotcha (flagged-for-process, not a code bug).</strong> The porter
-(<code>pipeline/port_gvar_exports.py</code>) does <strong>not</strong> regenerate <code>fiscal_meta.json</code>, and these indices are
-<strong>positional</strong>. The 33-bloc GVAR-EM refit inserted variables ahead of the fiscal block in every spec
+<p>🔴 <strong>STALE-POSITIONAL-INDEX gotcha.</strong> These indices are <strong>positional</strong>. History: the porter used to
+copy <code>fiscal_meta.json</code> unchanged, and the 33-bloc GVAR-EM refit inserted variables ahead of the fiscal block in every spec
 <strong>except US</strong>, so the old <code>EA {0,6,14,15,16,17}</code> / <code>JP {0,7,14,15,16,17}</code> / <code>UK,CA {0,8,16,17,18,19}</code> /
 <code>CN {0,1,11,12,13,14}</code> silently pointed at the WRONG columns — EA's <code>effRate</code> landed on the equity
-index (col ~537), so <code>d·(1+effRate/400)</code> compounded at ~134%/q and <strong>debt/GDP exploded</strong>. After any
-re-port you <strong>must</strong> run <code>node pipeline/fix_fiscal_meta_indices.mjs</code> (re-resolves the six indices by
-variable id from the deployed <code>spec.json</code>, preserves <code>d0</code>/<code>sfaDefault</code>, idempotent). The
-<code>fiscal-meta-indices.test.ts</code> canary asserts every deployed bloc's derived debt path stays bounded —
-it is what catches a stale port.
+index (col ~537), so <code>d·(1+effRate/400)</code> compounded at ~134%/q and <strong>debt/GDP exploded</strong>. Now
+<code>port_gvar_exports.py</code> regenerates <code>fiscal_meta.json</code> and <code>external_meta.json</code> by variable id after
+every port; for blocs copied raw (the 35 GVAR blocs in the Oct 2026 chain) run
+<code>node pipeline/fix_fiscal_meta_indices.mjs</code> and <code>node pipeline/fix_external_meta_indices.mjs</code> (both
+re-resolve by variable id, keep every other field, idempotent). The <code>fiscal-meta-indices.test.ts</code>
+canary asserts every deployed bloc's derived debt path stays bounded, and
+<code>data/meta-column-indices.test.ts</code> checks that every index points at the right variable family.
 - The <code>fiscalAccounting.ts</code> <code>debtService</code>/<code>dsvc</code> plumbing (<code>runFiscalRecursion</code>, <code>computeFiscalBlock</code>,
   <code>requiredPrimaryBalance</code>) is <strong>dormant but retained</strong>: it activates only when a model ships an
-  <code>idx.debtService</code>, which the current deployment does not. With <code>idx.sfa</code> set and <code>idx.debtService</code>
-  unset, <code>computeFiscalBlock</code> reads <code>levelPaths[t][idx.sfa]</code> for the per-quarter SFA and uses the
-  effective-rate interest form.
+  <code>idx.debtService</code>, which the current deployment does not. With <code>idx.debtService</code> unset,
+  <code>computeFiscalBlock</code> uses the effective-rate interest form and the structural SFA passed in by the caller.
 - There is a checkable Excel walkthrough <code>docs/fiscal_accounting_walkthrough_US_UK.xlsx</code> (and the
   user's source <code>docs/Fiscal_Accounting_US_UK_NSA.xlsx</code>).</p>
 </blockquote>
@@ -2180,7 +2442,7 @@ Compute). Quick=50 draws, Full=200.</p>
   the <em>same</em> mean scenario delta sourced from <code>gvarBandRef.current.effective.forecasts</code> (the
   GVAR-propagated path for any active GVAR bloc, else the single-country conditional). The band keeps full width
   (does <strong>not</strong> collapse when one point is pinned) and centres on the displayed line. The
-  derived-fiscal charts (the 6 fiscal countries) get a matching parallel-shift band (per-draw
+  derived-fiscal charts (the 41 fiscal economies) get a matching parallel-shift band (per-draw
   unconditional <code>computeFiscalBlock</code>, shifted by mean scenario−baseline PB/debt via <code>fiscalMeanRef</code>).</li>
 <li><strong>EXPERIMENTAL (per-draw iterative GVAR density, opt-in).</strong> Gated behind the store flag
   <code>experimentalFeatures</code> (lower-left <code>ExperimentalToggle</code>). Re-solves the <strong>conditional</strong>
@@ -2195,25 +2457,21 @@ Compute). Quick=50 draws, Full=200.</p>
 a point or two is pinned, so it compresses too much; the default parallel-shift preserves the
 model's own forecast width while still centring on the scenario. The default is the right answer for
 almost everyone; the experimental mode is there for users who want the pinching behaviour.</p>
-<h3 id="8a-long-run-anchor-plr-longruntiltts">8a. Long-run anchor (PLR) — <code>longRunTilt.ts</code><a class="headerlink" href="#8a-long-run-anchor-plr-longruntiltts" title="Permanent link">&para;</a></h3>
-<p>A user can pin a <strong>long-run target</strong> for a variable or a spread <code>h'·y</code>. Instead of re-estimating,
-<code>longRunTilt.ts</code> <strong>entropically tilts</strong> the existing posterior draws (KL-min / exponential-tilting
-importance reweighting) so the weighted-mean long-run moment hits the target. The tilt now moves the
-<strong>UNCONDITIONAL central path</strong> (the weighted mean from <code>reduceCloud</code>), not just the fan — so both the
-baseline and the scenario fans are pulled toward the target. The long-run moment defaults to the
-<strong>long-horizon forecast</strong> <code>E[y_{T+H}]</code> at the ≈10-year (40-quarter) horizon (reuses the
-<code>bvarForecastDraw</code> companion iteration, no innovation), not the steady state — the level VARs are
-near-unit-root so <code>(I − ΣB_l)⁻¹c</code> diverges. This is the user-facing, after-estimation analogue of
-GLP (2019) "Prior for the Long Run".</p>
-<p><strong>UI/Compute (<code>ControlPanel.tsx</code>):</strong> the <strong>Compute</strong> button is enabled whenever an enabled anchor
-exists, and applying the tilt <strong>auto-turns-on Quick uncertainty</strong> if it is off; the target input sits
-below the variable dropdown; the panel includes a "what it tilts toward" explanation and an ESS (effective sample size) badge
-(low ESS ⇒ target far from the data — relax it or use one anchor). The panel is <strong>no longer gated to
-non-GVAR models</strong>: it now renders for GVAR blocs too, with a <strong>"GVAR bloc — marginal anchor"
-disclaimer</strong> — for a GVAR bloc it reweights only <em>that bloc's own</em> draws, anchoring the bloc's
-<strong>marginal</strong> long-run forecast, not the joint cross-country solution (partners + US-determined globals
-still pull the displayed path), so the realised long-run value may differ from the target. A fully
-joint re-anchoring is a planned extension.</p>
+<h3 id="8a-long-run-anchor-driftsetterts">8a. Long-run anchor — <code>driftSetter.ts</code><a class="headerlink" href="#8a-long-run-anchor-driftsetterts" title="Permanent link">&para;</a></h3>
+<p>A user can pin a <strong>long-run target</strong> for a variable. The anchor is a <strong>deterministic per-horizon
+display translation</strong>, not a re-estimation or a reweighting: <code>computeDriftDeltaFull</code> builds a
+level-space shift <code>Sₕ·δc</code> (from the drift cache) that moves the <strong>display mean and every quantile</strong>
+toward the target, so the <strong>terminal hits the target exactly</strong> while <strong>band widths stay invariant</strong>
+(a rigid translation at each horizon). Two orthogonal user toggles: solve mode
+<strong><code>perVariable</code>/<code>joint</code></strong> (joint chooses the δc's so every anchored variable hits its target
+simultaneously when the system is tame, else falls back per-target) and transition shape
+<strong><code>rigid</code>/<code>transition</code></strong> (default <strong><code>transition</code></strong> — the adjustment is phased in along the variable's
+own estimated convergence profile, so there is no origin jump; both shapes share the same exact
+terminal). Applied in <code>ChartGrid</code>; the GVAR cross-bloc spillover of the local anchor lives in
+<code>gvarDriftSpillover.ts</code>.</p>
+<p>The earlier after-estimation <strong>entropic-tilt PLR</strong> mechanism (KL-min importance reweighting of the
+posterior draws, formerly <code>longRunTilt.ts</code>) has been <strong>removed</strong> and superseded by this display
+translation, which is faster and does not degenerate the fan.</p>
 <h3 id="8b-drag-perf-ux-the-heavy-gvar-solve-is-off-the-live-drag-path-deployed">8b. Drag-perf UX — the heavy GVAR solve is OFF the live drag path (DEPLOYED)<a class="headerlink" href="#8b-drag-perf-ux-the-heavy-gvar-solve-is-off-the-live-drag-path-deployed" title="Permanent link">&para;</a></h3>
 <p>The dominant interaction is dragging a pin on a GVAR bloc. The full cross-country fixed point is
 multi-second (§5a), so the live drag path must do <strong>zero</strong> heavy compute. Four pieces make the drag
@@ -2249,6 +2507,263 @@ feel instant while the correct answer reconciles on release:</p>
 the badge re-renders) shows while the release solve is in flight; <code>ChartGrid</code> shows the <code>mode</code> badge
 ('DIRECT preview' amber / 'full solve' blue) and a <code>▶ Solve full GVAR</code> button whenever the active result
 is a direct preview (§5a).</p>
+<h3 id="8c-drivers-the-model-conditional-scenario-decomposition-experimental">8c. Drivers — the model-conditional scenario decomposition (EXPERIMENTAL)<a class="headerlink" href="#8c-drivers-the-model-conditional-scenario-decomposition-experimental" title="Permanent link">&para;</a></h3>
+<p>Everything above answers <em>what the path looks like</em>. The Drivers drawer answers a different question:
+<strong>which sequence of a chosen DSGE model's own structural shocks would have produced the path the app is
+currently showing?</strong> Given the scenario's level deviation from baseline, it solves for that shock
+sequence over the first twelve forecast quarters and draws the resulting contributions as a stacked
+chart in the main panel's units, with an explicit grey residual for the part the named shocks cannot
+reproduce. This is the NAWM-II-style "filter the path through the model" exercise, run on a path object
+rather than by inverting a recursion.</p>
+<p>State the limits before the mechanics, because they shape the code. The feature is <strong>experimental</strong> and
+badged as such in the UI. Its claim is <strong>model-conditional</strong>: it reports what mix of model <em>M</em>'s shocks
+would have generated this path, not what caused it, and it is <strong>not</strong> model-free shock labelling. Its
+validation is <strong>same-model recovery</strong> — generate a path from a model's own known shock sequence,
+decompose it under that same model, compare the recovered contribution paths — so the numbers speak to
+the estimator, not to the model and not to the world. A different lens gives a different answer, and the
+lenses are <strong>not equally validated</strong>: <code>pipeline/bench_simple_decomp.m</code> ran exactly eight models
+(US_SW07, US_CMR14, EA_SW03, EA_SWW14, CA_LS07, HK_FP13, BRA_SAMBA08, UK_SM11) and never touched an
+FRB/US lens. Aggregating shocks into Monetary/Demand/Supply classes is licensed at <strong>one</strong> configuration
+(Remark 1). Do not widen any of this without a bench row behind it.</p>
+<p><strong>Where it sits.</strong> Strictly downstream of §3, §5 and §5a, and strictly read-only with respect to them.
+The drawer consumes the deviations ChartGrid has already computed; nothing it does re-enters the
+forecast, the GVAR coupling, the fiscal recursion or the bands.</p>
+<div class="highlight"><pre><span></span><code>┌─ ChartGrid (§3) ─────────────────────────────────────────────────────────────────────┐
+│  condForecast.levelDeviation       → isolated           single-country DK solve      │
+│  gvarFc.levelDeviation      (§5a)  → coupled            cross-country GVAR solve     │
+│  effective.levelDeviation          → displayed          the line actually drawn      │
+│  (reference identity vs gvarFc)    → displayedIsCoupled                              │
+│  externalOnlyDeviation             → external           WEO/SPF combination alone    │
+│  driftedBvarData.baseline.mean     → baselineDisplay    the bars&#39; anchor (display)   │
+│  driftedBvarData.historical.data   → histDisplay        the 3-quarter tail           │
+└──────────────────────────────┬───────────────────────────────────────────────────────┘
+                               │  useEffect → useStore.getState().setDriversInput(…)
+                               │  PUBLISH ONLY — ChartGrid never subscribes to driversInput
+                               ▼
+                  store.driversInput : DriversPathInput | null          (§9)
+                  store.driversOpen  : boolean   ←→ the &quot;Drivers&quot; button in ChartGrid
+                               │  useStore(s =&gt; s.driversInput)
+                               ▼
+┌─ DriversDrawer (mounted in ScenarioBar; renders when driversOpen) ───────────────────┐
+│  loadDriversIndex()          → /data/dsge/census/index.json    menu · classes ·      │
+│                                                                collinear pairs ·     │
+│                                                                clusters · defaults   │
+│  loadDriversModelIRFs(file)  → /data/dsge/census/&lt;M&gt;.json                            │
+│                                or /data/dsge/irfs/&lt;M&gt;/SW.json                        │
+│  commonObservablePaths / nativeObservablePath  → z, the observable-space deviation   │
+│  decompose(irf, named, observables, H)         → contributions · fitted · residual   │
+│  toDisplayDev / obsDisplaySeries               → main-panel units, then Plotly       │
+└──────────────────────────────────────────────────────────────────────────────────────┘
+</code></pre></div>
+<p><strong>Direction of dependencies — who may import whom.</strong> <code>driversDecomp.ts</code> is pure: its only import is
+<code>./matrix</code>, and it may not grow a React, store or <code>fetch</code> dependency. <code>loader.ts</code> gains
+<code>loadDriversIndex</code> / <code>loadDriversModelIRFs</code> plus the <code>DriversIndex</code> and <code>DriversModelMeta</code> types; it
+imports nothing from the drawer. <code>DriversDrawer.tsx</code> imports <code>driversDecomp.ts</code>, <code>loader.ts</code>,
+<code>useStore</code>, and — the one unusual edge — <code>resolveChartVars</code> from <code>ChartGrid.tsx</code>, so that <code>output</code>,
+<code>inflationq</code> and <code>interest</code> resolve to exactly the spec columns the charts use for the same roles.
+<code>ChartGrid.tsx</code> must therefore <strong>not</strong> import the drawer: it publishes into the store and reads only
+<code>driversOpen</code> for its button, and the drawer is mounted in <code>ScenarioBar</code> instead. That placement is the
+whole reason the open flag lives in the store rather than in ChartGrid's local state — a ChartGrid →
+DriversDrawer → ChartGrid import cycle would otherwise be unavoidable (the rationale is recorded at
+<code>useStore.ts:323</code>). <code>useStore.ts</code> imports neither component.</p>
+<p><strong>The engine.</strong> The object it estimates is a deconvolution. Write <em>H</em> = 12 for the horizon
+(<code>DRIVERS_H</code>), <em>q</em> for the number of watched observables, <em>K</em> for the number of named shocks, and let
+<em>z</em> be the scenario deviation expressed in the model's observable space. Then</p>
+<p>z_o(t) = Σ_k Σ_{τ ≤ t} R_{k,o}(t − τ) · ε_k(τ) + u_o(t),  o = 1…q,  t = 0…H−1</p>
+<p>where R_{k,o}(h) is model observable <em>o</em>'s impulse response to shock <em>k</em> at horizon <em>h</em>, ε_k(τ) is the
+size of shock <em>k</em> arriving in quarter τ, and <em>u</em> is the residual. Stacking gives Θ·ε = z − u with Θ of
+dimension (q·H) × (K·H): rows are blocked by observable (row index <em>o</em>·H + <em>t</em>, the three locked common
+observables first, then any added natives in the order they were toggled), columns are blocked by shock
+(column index <em>k</em>·H + <em>τ</em>), and each (<em>o</em>, <em>k</em>) block is lower-triangular Toeplitz because a shock
+arriving at τ cannot move an observable before τ. The entry Θ[<em>o</em>H+<em>t</em>, <em>k</em>H+<em>τ</em>] is read out of the IRF
+file as <code>irf[shock_k][irfField_o][t − τ + 1]</code>; index 0 of every IRF array is the pre-impact zero, so
+indices 1…H carry h = 0…H−1, mirroring MATLAB's <code>s.obs(2:H+1)</code>. The shipped arrays are length 21.</p>
+<p>The solver is displayed as</p>
+<div class="highlight"><pre><span></span><code>decompose(irf, shocks, observables, H = DRIVERS_H) → DriversDecomposition
+</code></pre></div>
+<p>where <code>irf</code> is a <code>ModelIRFs</code> (shock name → observable field → <code>number[]</code>, the raw model file or a
+synthetic one built by <code>buildClusterIRFs</code>); <code>shocks</code> is the <code>string[]</code> of <em>K</em> named units in the model's
+fixed order; <code>observables</code> is the <code>DecomposeObservable[]</code> of <em>q</em> watched rows, each carrying <code>key</code>
+(display key), <code>irfField</code> (the field to read from the IRF record, usually the same string), <code>path</code>
+(<code>number[]</code> of length ≥ <em>H</em>, the observable's deviation) and an optional <code>weight</code> (the measurement-error
+row weight, <code>1/√(1+me)</code>, present only on added observables); and <code>H</code> is the horizon, 12. It returns a
+<code>DriversDecomposition</code> holding <code>eps</code> (a <code>Float64Array</code> of length <em>K</em>·<em>H</em>, shock-major: <code>eps[k*H+τ]</code>),
+<code>contributions[k][o][t]</code>, <code>fitted[o][t] = Σ_k contributions[k][o][t]</code>, <code>residual[o][t] = z − fitted</code>,
+the input <code>z[o][t]</code>, the ridge <code>lambda</code> actually used, the numerical <code>rank</code> of Θ, <code>rows = q·H</code>, and
+<code>regime</code>, which is <code>'exact-fit'</code> when <code>rank ≥ rows</code> and <code>'residual-able'</code> otherwise.</p>
+<p>The estimate is the <strong>minimum-norm least-squares</strong> solution under an equal-response-energy prior:
+ε̂ = D⁻¹ · argmin ‖ε̃‖ over the minimisers of ‖W(ΘD⁻¹ε̃ − z)‖², where <em>D</em> holds the Euclidean norms of Θ's
+columns and <em>W</em> the row weights. Numerically the routine forms ΘN = ΘD⁻¹ (columns below 1e-12 keep a
+scale of 1 so they stay inert rather than being amplified), applies the row weights, LU-factors the ridge
+Gram (G + λI) once with λ = <code>RIDGE_LAMBDA_SCALE</code> · mean(diag G) = 1e-8 · mean(diag G), and runs
+<code>REFINE_STEPS</code> = 2 iterative-refinement sweeps against that same factorisation. Every iterate stays in
+range(Θᵀ), so the refined solution converges to the min-norm least-squares solution the MATLAB benches
+obtain from <code>pinv</code>. The column scaling matters economically, not just numerically: SW07's shocks differ
+by roughly an order of magnitude in stacked response energy (measured on the shipped <code>US_SW07/SW.json</code>,
+the three-observable H = 12 norms run from 1.28 for <code>interest_</code> to 13.84 for <code>epinf</code>), and without the
+scaling the ℓ² penalty prices the small-response monetary shock out of its own attribution. In
+identified configurations the scaling is a pure reparameterisation; in underdetermined ones it is what
+takes SW07's mean off-class leakage at three observables from 32% to 5%. Contributions and the residual
+are computed through the <strong>raw, unweighted</strong> Θ and the un-normalised ε, so neither the column scaling
+nor the row weights ever touch the reported bars. <code>thetaRank</code> is a pivoted Cholesky on the smaller-side
+Gram with relative pivot tolerance 1e-12·max(diag); the shipped menu's two regimes sit about twenty
+orders of magnitude apart in conditioning, so the threshold is not delicate.</p>
+<p><strong>Units — where this connects to §6.</strong> The input is the <strong>level deviation</strong> <code>[t][j]</code> in smoother level
+space (100·log for <code>log</code> variables, native units for <code>lin</code>), <em>not</em> display space. That choice is
+load-bearing twice over: the long-run anchor's δc drift translates baseline and scenario rigidly, so it
+cancels in the deviation by construction (§8a), and the observable maps are measured against the level
+space rather than assumed. The three locked common observables are built by <code>commonObservablePaths</code>:</p>
+<ul>
+<li><strong><code>output</code></strong> — the GDP level deviation (100·log) passed through as an identity. The column is resolved
+  through <code>resolveChartVars</code> role <code>output</code>; on the US bloc that is <code>GDPH</code>.</li>
+<li><strong><code>inflationq</code></strong> — <code>4·(p_t − p_{t−1})</code> of the price-level deviation, with p₋₁ = 0 (the same convention
+  the charts use). On the US bloc the price column is <code>JGDP</code>.</li>
+<li><strong><code>interest</code></strong> — the policy-rate deviation, already annualised, passed through as an identity with <strong>no
+  division by 4</strong>. On the US bloc that is <code>POLRATE</code>.</li>
+</ul>
+<p>Those factors are read off the shipped SW07 file, which carries both the MMB common block and SW07's own
+observables, and are regression-pinned: the test suite checks on every shock and every horizon with a
+non-trivial response that <code>inflationq/pinfobs</code> and <code>interest/robs</code> are both 4.000 to better than 1e-9.
+Four further native observables (<code>dc</code>, <code>dinve</code>, <code>dw</code>, <code>labobs</code> for SW07; the CMR14 analogues) are
+available <strong>only on the US bloc</strong>, because only the US spec carries all five of the columns they need
+(<code>CH</code>, <code>FNH</code>, <code>LXBC</code>, <code>JGDP</code>, <code>LANAGRA</code>). Every other bloc runs at three observables. On the way out,
+<code>obsDisplaySpec</code> / <code>toDisplayDev</code> map each observable into the main panel's display space through a
+<strong>linear</strong> operator — a gain or a scaled first difference — which is exactly why the bars, the residual
+and the baseline re-sum to the scenario line to 1e-8.</p>
+<p><strong>What the drawer's controls gate.</strong> Two rules carry the licence and are enforced in the interface, not
+merely documented:</p>
+<ul>
+<li><strong>The budget rule.</strong> At <em>q</em> watched observables the user may name at most <em>q</em> shocks. <code>decompose</code>
+  throws on <code>K &gt; q</code>, and the UI disables every un-named chip once the budget is reached. The budget is
+  <code>3 + addedObs.length</code> where the native mapping exists, and 3 otherwise.</li>
+<li><strong>The collinearity flag.</strong> Shock pairs whose unit-normalised stacked three-observable H = 12 response
+  paths satisfy |cos| &gt; 0.95 (<code>index.collinearThreshold</code>) are precomputed at build time and shipped in
+  the index; the drawer warns whenever both members of a flagged pair are named, quoting the measured
+  |cos|. The one-click "Use all" selection is greedy in the model's fixed shock order and skips any
+  shock forming a flagged pair with one already picked (<code>useAllShockSelection</code>).</li>
+</ul>
+<p>Observables that are invertible linear transforms of one already watched (<code>dy</code>, <code>pinfobs</code>, <code>robs</code> for
+SW07; <code>gdp_obs</code>, <code>inflation_obs</code>, <code>Re_obs</code> for CMR14) are <strong>excluded from the addable list</strong>, because
+adding one would raise the budget by one while buying no new rank, making the identification the budget
+rule promises fictitious. That exclusion is pinned against the data, not against a curated list: a test
+requires each legitimate SW07 addable to buy exactly <em>H</em> = 12 new rank and each excluded transform to buy
+exactly zero, alone and all three together.</p>
+<p><strong>When the decomposition recomputes, and what invalidates it.</strong> The whole thing is one synchronous
+<code>useMemo</code> on the main thread — there is no worker and no backend, because the largest system on the
+shipped menu is 84 × 84 (seven observables × twelve quarters). It re-runs when any of <code>open</code>, the
+<code>observables</code> array, the <code>decompIrf</code> unit pool, the <code>named</code> set or <code>hasDeviation</code> changes. Upstream of
+those, <code>observables</code> is rebuilt from <code>path</code>, the resolved common-observable column indices, the native
+availability flag, the added-observable list, the measurement-error slider and the spec ids; <code>path</code>
+itself is selected from <code>driversInput</code> by the source (scenario or external forecast) and the
+domestic/global mode. So every scenario edit, every GVAR solve, every external-forecast import and every
+drift change flows through <code>setDriversInput</code> and re-solves the decomposition — which is exactly why the
+memo opens with <code>if (!open) return { d: null, error: null }</code>. The drawer stays mounted in <code>ScenarioBar</code>
+and <code>driversInput</code> is republished on every drag tick, so without that guard a <em>closed</em> drawer would
+re-solve an 84 × 84 system per frame for a panel rendering nothing. Two further invalidations are worth
+knowing: changing the bloc or its spec re-hydrates the entire configuration (model, named set, observables,
+view) from the per-bloc <code>localStorage</code> key <code>gmaps-drivers-model:&lt;bloc&gt;</code>, and a shrinking budget clamps
+the named set — a bloc without the native columns drops the budget from 7 to 3, and the clamp fires
+whether or not the drawer is showing.</p>
+<p><strong>Build time versus run time.</strong> Nothing about the lens menu is computed in the browser. The index
+generator <code>app/scripts/build_drivers_index.mjs</code> is run by hand — it is <strong>not</strong> part of <code>next build</code> — and
+at build time it determines the usable shock set per model (all three common observables present and a
+stacked H = 12 norm ≥ 1e-9), the dropped shocks and why, the collinear pairs, the FRB/US collinearity
+clusters, the validated default cluster naming, and the sha256 of every shipped file; it copies
+<code>class_maps.json</code> in verbatim. At run time the drawer fetches <code>index.json</code> once on first open and each
+model's IRF file once on selection, caches both in component state, and does only the deconvolution and
+the display mapping. The app never reads anything under <code>pipeline/</code> at runtime — <code>class_maps.json</code> is the
+single source of truth for class membership and is amended <em>there</em>, not in the app. The payload cost is
+36 KB for the index plus 215 KB for the default SW07 lens; either 54-shock FRB/US lens adds about
+10.7 MB, which is why a failed IRF fetch is recorded per model and offers an explicit Retry rather than
+being swallowed. These files go over the wire as plain JSON — unlike <code>companion_draws</code> and the GVAR
+coupling artifact, there is no client-side decompression step.</p>
+<blockquote>
+<p><strong>Remark 1 (the class-view licence has THREE coordinates).</strong> <code>classViewLicensed(model,
+observableKeys, namedShocks)</code> returns true only when the model is <code>US_SW07</code>, the watched observables
+contain all of <code>{output, inflationq, interest, dc, dinve, dw, labobs}</code>, <strong>and</strong> the named shocks
+contain all of <code>{interest_, eb, fiscal_, eqs, ea, epinf, ew}</code>. All three are gated because
+<code>pipeline/bench_class_recovery.m</code> held all three fixed: its passing cell is SW07 at q = 7 with K = 7,
+every usable column of that model's class map, where it measures 100% class-total recovery and 0%
+off-class leakage. <strong>Un-naming a single shock revokes the licence</strong>, and it must: the missing shock's
+energy is redistributed across the classes that remain, which is precisely what the off-class-leakage
+criterion measures. The third argument is required rather than optional so that a caller who forgets it
+gets a compile error instead of silently re-opening that hole. The standing guard asserts the two
+constants against <strong>literal bench coordinates</strong> and includes a negative case for each of the seven
+droppable shocks, so widening either constant turns the test red.</p>
+<p><strong>Remark 2 (CMR14's "families" are a grouping, not a licensed class split).</strong> CMR14 ships a class map
+and the drawer renders it as Monetary/Demand/Supply/Financial <em>families</em>, but the bench refused it:
+under the shipped solver it recovers those class totals in 78% of test instances against its 90% bar.
+The drawer discloses that number verbatim on screen. Never present the families as classes, and never
+extend <code>classViewLicensed</code> to reach them.</p>
+<p><strong>Remark 3 (FRB/US clusters are chained, not mutually parallel).</strong> The two 54-shock FRB/US lenses group
+their shocks into connected components of the |cos| &gt; 0.95 graph, labelled by the largest member's
+equation name. Collinearity is <strong>not transitive</strong>, so two members of the same component can sit well
+below 0.95 against each other; they are chained through collinear links. The composite column
+<code>clusterCompositeIRF</code> builds is therefore the genuine first principal component of the member set (200
+power iterations, seeded from the largest-norm member, sign fixed by a positive projection on it), not a
+proxy for an already-parallel bundle. Naming a cluster names one column, so <strong>the budget counts
+clusters, not members</strong>. Write it this way; do not write "pairwise near-parallel".</p>
+<p><strong>Remark 4 (a full-rank Θ is not evidence a naming is usable).</strong> Most cluster triples pass the rank test
+while being badly conditioned. The build-time scan checks every triple through the shipped solver
+against the 1e-6 same-model-recovery criterion and ships only the winner as <code>defaultNamed</code>: 123 of 1,771
+triples pass for <code>US_FRB22</code> and 122 of 1,330 for <code>US_FRB22_var</code>. The drawer warns whenever the user
+leaves that default. Conditioning is what matters here, and rank does not imply it.</p>
+</blockquote>
+<p>Four display-side facts belong with the drawer rather than here, and are set out with their reasoning
+in <a href="../MODULES/">MODULES.md</a> Remarks 5–8. In short: when <code>rank ≥ rows</code> — almost every shipped
+configuration, including the US default at 84/84 — the residual is identically zero by construction
+and is evidence of nothing; at <code>K = q</code> the measurement-error slider cannot move the solution, because
+scaling a square system's rows cancels, and it is disabled there; the "Deviation from baseline" view
+auto-follows the main display but always draws the panel's <em>rate</em> deviation, whereas the panels'
+"% vs base" mode defaults to a level sub-mode, so the two can be in different units; and the shares
+strip is a norm share of contribution paths, not a forecast-error variance decomposition, so it can
+never show two contributions offsetting each other. Do not describe any of these four the other way
+round in a caption, a tooltip or a commit message.</p>
+<p><strong>Example 1 (tracing a bar back to the module that produced it).</strong> <em>A reader who has just seen a
+Drivers bar move and wants to know which module is responsible walks the chain backwards, in this
+order. The bar's height in display units comes from <code>toDisplayDev</code> applied to
+<code>DriversDecomposition.contributions[k][o][t]</code>; the contributions come from <code>contributionsFromEps</code> inside
+<code>decompose</code>, through the raw unweighted Θ; Θ comes from <code>buildTheta</code> over the chosen <code>irf</code> and the
+<code>observables</code> rows; the <code>observables</code> rows come from <code>commonObservablePaths</code> / <code>nativeObservablePath</code>
+applied to <code>path</code>; and <code>path</code> is one field of <code>store.driversInput</code>, selected by the source and the
+domestic/global toggle. If the bar moved because the scenario moved, the change entered at the last
+step, in ChartGrid's publish effect. If it moved without the scenario moving, it entered at one of the
+first four, i.e. in the drawer's own configuration.</em> The grep sequence is</p>
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;setDriversInput&quot;</span><span class="w"> </span>app/src/components/charts/ChartGrid.tsx<span class="w">     </span><span class="c1"># the publish (§3)</span>
+grep<span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;const path = useMemo&quot;</span><span class="w"> </span>app/src/components/controls/DriversDrawer.tsx
+grep<span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;const observables = useMemo&quot;</span><span class="w"> </span>app/src/components/controls/DriversDrawer.tsx
+grep<span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;export function decompose&quot;</span><span class="w"> </span>app/src/lib/compute/driversDecomp.ts
+</code></pre></div>
+<p><strong>Example 2 (adding a lens to the menu).</strong> <em>Adding a model to the Drivers menu is a build-time change
+followed by a data change; no app code is involved unless the model needs its own observable mapping. We
+proceed in steps. First, place the model's IRF export where the generator expects it —
+<code>pipeline/census_irfs/&lt;M&gt;/Taylor.json</code> with a matching <code>MANIFEST.json</code> sha256 entry, or an existing
+<code>app/public/data/dsge/irfs/&lt;M&gt;/SW.json</code>. Second, add an entry to the generator's model list, marking it
+<code>census: true</code> if it is to be copied, and <code>clustered: true</code> only if its shocks genuinely need
+collinearity clustering. Third, re-run the generator, which recomputes the usable shock set, the dropped
+shocks, the collinear pairs and the shas. Fourth, decide whether the model gets a class map: if it does,
+amend <code>pipeline/_shockbench/class_maps.json</code> — never the app copy, which is generated verbatim from it.
+Fifth, run the licence tests, which hash every shipped file against the index and assert the class-view
+constants against literal bench coordinates.</em></p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>app/scripts/build_drivers_index.mjs<span class="w">        </span><span class="c1"># regenerates index.json + the census copies</span>
+<span class="nb">cd</span><span class="w"> </span>app<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span><span class="nb">test</span><span class="w">                              </span><span class="c1"># 26 licence tests must stay green</span>
+</code></pre></div>
+<p><em>A new lens arrives </em><em>unvalidated</em><em>. <code>bench_simple_decomp.m</code> has no row for it, so the drawer's caveat
+will say so and offer only the fallback backing; and it will not be class-view licensed, because
+<code>classViewLicensed</code> hard-codes <code>US_SW07</code>. Both of those are correct behaviour, not gaps to paper over.</em></p>
+<p><strong>Example 3 (checking whether a configuration is licensed, before shipping a claim about it).</strong> <em>The
+licence predicate is pure and takes no data, so it can be exercised directly. We check the US default,
+then the same configuration with one shock un-named, to confirm the revocation described in Remark 1.</em></p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">classViewLicensed</span><span class="p">,</span><span class="w"> </span><span class="nx">CLASS_VIEW_OBSERVABLES</span><span class="p">,</span><span class="w"> </span><span class="nx">CLASS_VIEW_SHOCKS</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@/lib/compute/driversDecomp&#39;</span>
+
+<span class="nx">classViewLicensed</span><span class="p">(</span><span class="s1">&#39;US_SW07&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[...</span><span class="nx">CLASS_VIEW_OBSERVABLES</span><span class="p">],</span><span class="w"> </span><span class="p">[...</span><span class="nx">CLASS_VIEW_SHOCKS</span><span class="p">])</span><span class="w">          </span><span class="c1">// true</span>
+<span class="nx">classViewLicensed</span><span class="p">(</span><span class="s1">&#39;US_SW07&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[...</span><span class="nx">CLASS_VIEW_OBSERVABLES</span><span class="p">],</span><span class="w"> </span><span class="nx">CLASS_VIEW_SHOCKS</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">1</span><span class="p">))</span><span class="w">      </span><span class="c1">// false</span>
+<span class="nx">classViewLicensed</span><span class="p">(</span><span class="s1">&#39;US_SW07&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;output&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;inflationq&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;interest&#39;</span><span class="p">],</span><span class="w"> </span><span class="p">[...</span><span class="nx">CLASS_VIEW_SHOCKS</span><span class="p">])</span><span class="w"> </span><span class="c1">// false</span>
+<span class="nx">classViewLicensed</span><span class="p">(</span><span class="s1">&#39;US_CMR14&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[...</span><span class="nx">CLASS_VIEW_OBSERVABLES</span><span class="p">],</span><span class="w"> </span><span class="p">[...</span><span class="nx">CLASS_VIEW_SHOCKS</span><span class="p">])</span><span class="w">         </span><span class="c1">// false</span>
+</code></pre></div>
+<p><em>If a document, a caption or a tooltip asserts a class reading, the configuration behind it must return
+<code>true</code> here. If it returns <code>false</code>, the reading is Groups, and the labels are the model's own shock names
+or its clusters.</em></p>
 <hr />
 <h2 id="9-state-storeusestorets-zustand">9. State (<code>store/useStore.ts</code>, Zustand)<a class="headerlink" href="#9-state-storeusestorets-zustand" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2259,10 +2774,20 @@ is a direct preview (§5a).</p>
   <em>not</em> wiped in the <code>setCountry</code> reducer — do not "fix" that.</li>
 <li><code>uncertaintyMode</code> / <code>uncertaintyComputing</code> / <code>uncertaintyComputed</code> — drive the band effect.</li>
 <li><code>experimentalFeatures</code> (default false) — gates the per-draw iterative band.</li>
+<li><code>driversInput: DriversPathInput | null</code> — the Drivers feed (§8c), <code>null</code> until a scenario deviation
+  exists. It carries <code>displayed</code> / <code>isolated</code> / <code>coupled</code> / <code>external</code> level-deviation matrices <code>[t][j]</code>
+  in <strong>smoother level space</strong> (100·log for <code>log</code> vars, native for <code>lin</code> — §6), the
+  <code>displayedIsCoupled</code> flag, and the <code>baselineDisplay</code> / <code>histDisplay</code> rows in <strong>display</strong> space. It is a
+  one-way channel: ChartGrid writes it, <code>DriversDrawer</code> reads it, and nothing reads it back into a
+  forecast.</li>
+<li><code>driversOpen</code> / <code>setDriversOpen</code> — the drawer's open state. It lives in the store rather than in
+  ChartGrid because the button is in <code>ChartGrid</code> and the drawer is mounted in <code>ScenarioBar</code>; routing the
+  flag through the store is what keeps ChartGrid from importing the drawer (§8c).</li>
 </ul>
 <hr />
 <h2 id="10-the-per-country-data-contract-publicdatabvarcc">10. The per-country data contract (<code>public/data/bvar/&lt;CC&gt;/</code>)<a class="headerlink" href="#10-the-per-country-data-contract-publicdatabvarcc" title="Permanent link">&para;</a></h2>
-<p>Each country directory provides (loaded by <code>loader.ts</code> / <code>gvarLoader.ts</code>):</p>
+<p>Each country directory provides (loaded by <code>loader.ts</code> / <code>gvarLoader.ts</code>, always through the data-pack
+manifest — §2a; field-level reference: <code>DATA_SCHEMA.md</code>):</p>
 <table>
 <thead>
 <tr>
@@ -2280,8 +2805,8 @@ is a direct preview (§5a).</p>
 <td><code>{ betahat[k][n], sigmahat[n][n], n, lags, seasonalRows? }</code> (constant row FIRST — matches kalman.ts). <code>k = 1 + seasonalRows + n·lags</code>: a seasonal bloc (<code>seasonalRows=3</code>) inserts the <code>γ_Q2..Q4</code> dummy rows <strong>between</strong> the constant and the lag blocks; absent/0 ⇒ legacy layout <code>k = 1 + n·lags</code> (§5·EM.s).</td>
 </tr>
 <tr>
-<td><code>companion_draws.json</code></td>
-<td><code>{ beta, beta_shape, sigma, sigma_shape, n_draws }</code> flat posterior draws (lazy-loaded; large).</td>
+<td><code>companion_draws.json.gz</code></td>
+<td><code>{ beta, beta_shape, sigma, sigma_shape, n_draws }</code> flat posterior draws, gzipped (lazy-loaded; large; the pack ships only the <code>.gz</code>).</td>
 </tr>
 <tr>
 <td><code>baseline.json</code></td>
@@ -2293,38 +2818,54 @@ is a direct preview (§5a).</p>
 </tr>
 <tr>
 <td><code>historical.json</code> / <code>historical_levels.json</code></td>
-<td>last ~40 quarters, growth / level.</td>
+<td>last 40 quarters, growth / level; <code>historical_levels.json</code> carries <code>firstQuarter</code>, the only date source (last quarter = <code>firstQuarter</code> + rows − 1).</td>
 </tr>
 <tr>
 <td><code>transformations.json</code></td>
 <td><code>['log'|'lin', ...]</code> per variable.</td>
 </tr>
 <tr>
+<td><code>estimation_mask.json</code></td>
+<td>which history cells the estimator drew as missing data (<code>GVAR_NOFILL</code> runs; provenance — not read by the browser).</td>
+</tr>
+<tr>
 <td><code>fiscal_meta.json</code></td>
-<td>The 6 fiscal countries (US/EA/JP/UK/CA/CN) — <code>{ d0, sfaDefault, idx:{ gdp, deflator, revenue, primaryExp, effRate, sfa } }</code> (<code>debtService</code> dropped, <code>sfa</code> added); see §7.</td>
+<td>The 41 fiscal economies — <code>{ d0, d0_quarter, sfaDefault, idx:{ gdp, deflator, revenue, primaryExp, effRate, sfa } }</code> (+ <code>d0_observed*</code>); see §7.</td>
+</tr>
+<tr>
+<td><code>external_meta.json</code></td>
+<td>The 47 economies with the external-accounts satellite — <code>idx</code> + <code>idxIds</code> (the variable ids the indices must resolve to), <code>nfa0</code>, <code>fxShare</code>, …</td>
 </tr>
 </tbody>
 </table>
 <p>Every GVAR bloc tags each variable with <code>block</code> in <code>spec.json</code>: <code>'row'</code> = the 3 trade-weighted stars
 (per-bloc), <code>'global'</code> = the 4 shared commons (<code>GLB_OIL</code>/<code>GLB_USLR</code>/<code>GLB_USBAA</code>/<code>GLB_USEQ</code>, identical
-across blocs, US-determined), <code>'fiscal'</code> = the 4 fiscal drivers (the 6 fiscal blocs), <code>'domestic'</code> =
-everything else. <code>block:'row'</code> is what marks a bloc as GVAR-active (§5). <strong>The US <code>spec.json</code> now also
-carries <code>block:'row'</code> stars</strong> (<code>ROWDEM_US</code>/<code>ROWINF_US</code>/<code>ROWFIN_US</code>, cols 38–40) and the 4 globals — this
-is what makes the US endogenous (§5/§5a). Standalone (non-GVAR) economies carry only <code>'domestic'</code> (+
-<code>'fiscal'</code> for a fiscal bloc).</p>
+across blocs, US-determined), <code>'fiscal'</code> = the 4 fiscal drivers (the 41 fiscal economies), <code>'domestic'</code> =
+everything else. <code>block:'row'</code> (the 3 stars) plus a weights row is what marks a bloc as GVAR-active (§5).
+<strong>The US <code>spec.json</code> also carries <code>block:'row'</code> stars</strong> (<code>ROWDEM_US</code>/<code>ROWINF_US</code>/<code>ROWFIN_US</code>, 0-based
+cols 37–39) and the 4 globals — this is what makes the US endogenous (§5/§5a). The 17 euro members carry
+<code>'domestic'</code>, <code>'fiscal'</code>, <code>'external'</code> (euro-area policy rate, corporate yield, member rate, …) and two
+<code>'row'</code> rest-of-euro-area aggregates (<code>ROWEA_GDP_&lt;CC&gt;</code>, <code>ROWEA_HICP_&lt;CC&gt;</code>) — not GVAR-active (no
+weights row, not 3 stars).</p>
+<p>The Drivers payload is <strong>not</strong> part of this per-country contract: it is model-side, not country-side, and
+lives once under <code>public/data/dsge/census/</code> (<code>index.json</code> plus one IRF file per census model, §8c). What
+the per-country contract does determine is whether a bloc can run Drivers at seven observables — the
+native mapping needs the spec ids <code>CH</code>, <code>FNH</code>, <code>LXBC</code>, <code>JGDP</code> and <code>LANAGRA</code>, and only the US bloc has all
+five. Every other bloc runs at three, where no menu configuration licenses a class view.</p>
 <hr />
 <h2 id="11-tests-appsrc__tests__-vitest">11. Tests (<code>app/src/__tests__/</code>, Vitest)<a class="headerlink" href="#11-tests-appsrc__tests__-vitest" title="Permanent link">&para;</a></h2>
 <p><strong>The suite is SPLIT into fast and heavy halves — both gate the deploy</strong> (see
 <a href="../BUILD_AND_CI/">BUILD_AND_CI.md</a> for the authoritative taxonomy):</p>
 <ul>
-<li><code>npm test</code> runs the <strong>fast</strong> suite — <code>vitest run</code> minus seven <code>--exclude</code> globs
-  (the heavy solver/perf patterns). The three deploy-blocking canaries
+<li><code>npm test</code> runs the <strong>fast</strong> suite — <code>vitest run</code> minus ten <code>--exclude</code> globs
+  (the heavy solver/perf patterns). The three canaries
   (<code>scenario-scale-convention</code>, <code>gvar-convergence</code>, <code>gvar-coupling-artifact</code>) are all here.</li>
 <li><code>npm run test:heavy</code> runs <strong>exactly those excluded patterns</strong>, serialised to one fork
   (<code>--poolOptions.forks.maxForks=1</code>): <code>gvar-us-endogenous</code>, <code>gvar-direct-channel</code>,
-  <code>gvar-band-solve</code>, <code>gvar-closed-form-*</code>, <code>gvar-band-closedform-*</code>,
-  <code>affine-blockernels-parity</code>, <code>gvar-kernel-affine-independence</code> — the multi-second
-  dim-2060 endogenous solves + the affine-kernel parity gates.</li>
+  <code>gvar-band-solve</code> (incl. <code>-levelunits</code>), <code>gvar-closed-form-*</code>, <code>affine-blockernels-parity</code>,
+  <code>gvar-kernel-affine-independence</code>, <code>gvar-nowcast-completion</code>, <code>gvar-external-spillover</code>,
+  <code>gvar-anderson</code> — the multi-second endogenous solves (dim 2180 in the deployed pack) + the
+  affine-kernel parity gates. (<code>app/package.json</code> <code>test</code> / <code>test:heavy</code> are authoritative.)</li>
 <li><code>npm run test:all</code> (= <code>npx vitest run</code>) sweeps everything in one pass (slower).</li>
 </ul>
 <p>The <strong>canary</strong> tests pin the conventions — treat a change in them as a red flag:</p>
@@ -2336,6 +2877,9 @@ is what makes the US endogenous (§5/§5a). Standalone (non-GVAR) economies carr
 <li><code>fiscal-meta-indices.test.ts</code> — <strong>pins the STALE-POSITIONAL-INDEX bug</strong> (§7): re-resolves
   every fiscal bloc's <code>fiscal_meta.json</code> indices by variable id and asserts the derived debt path
   stays bounded (the EA-equity-index explosion guard); also pins the level-display drag conversion.</li>
+<li><code>data/meta-column-indices.test.ts</code> — the shipped <code>fiscal_meta</code>/<code>external_meta</code> indices point at the
+  right variable family (deflator = <code>DEFL_&lt;CC&gt;</code> where present; <code>external_meta.idx</code> = <code>idxIds</code>).</li>
+<li><code>calendar.test.ts</code> — the calendar arithmetic and the dating check behind <code>firstQuarter</code>.</li>
 <li><code>gvar-convergence.test.ts</code> — Gauss–Seidel ≡ direct solver to ~1e-11; reports ρ(M). <em>(fast)</em></li>
 <li><code>gvar-closed-form-routing.test.ts</code> — closed-form <code>(I−M)⁻¹d</code> ≡ iterative on a US-endogenous fixture;
   cache-hit ≡ cold rebuild; a pin-structure change (US OR RoW) → new M. <em>(heavy)</em></li>
@@ -2354,7 +2898,15 @@ is what makes the US endogenous (§5/§5a). Standalone (non-GVAR) economies carr
 <li><code>conditioned-dot-optimistic.test.ts</code> / <code>right-click-plant-at-cursor.test.ts</code> — the optimistic dot
   round-trips to the cursor (<code>conditionedDotY.ts</code> inverse pair); right-click plants the bullet (§8b).</li>
 <li><code>gvar-ui-linkage.test.ts</code> — the dropdown/selector GVAR membership tracks <code>isGvarCountry</code>.</li>
-<li><code>longRunTilt.test.ts</code> — the entropic tilt hits the target long-run moment.</li>
+<li><code>drivers-decomp.test.ts</code> / <code>drivers-decomp-v2.test.ts</code> / <code>drivers-decomp-v3.test.ts</code> — <strong>26 licence
+  tests</strong> (4 + 7 + 15) for the Drivers decomposition (§8c). They pin the measured observable unit factors
+  against the shipped IRF files, the budget-rule throw, additivity through the display transform to 1e-8,
+  same-model recovery to 1e-6 on the licence fixtures, the equal-response-energy split, the rank each
+  addable observable buys (12 for a legitimate one, 0 for an excluded transform), the FRB/US cluster
+  partition against the shipped pair list, the sha256 of every shipped payload file, <code>class_maps.json</code>
+  copied verbatim into the index, and — the one that most needs to stay red-on-widening — the class-view
+  observable and shock constants against <strong>literal bench coordinates</strong>, with a negative case for each of
+  the seven droppable shocks. <em>(fast)</em></li>
 </ul>
 <hr />
 <h2 id="12-build-gate-deploy">12. Build, gate, deploy<a class="headerlink" href="#12-build-gate-deploy" title="Permanent link">&para;</a></h2>
@@ -2366,12 +2918,24 @@ npm<span class="w"> </span>run<span class="w"> </span>test:heavy<span class="w">
 </code></pre></div>
 <p><strong>Green gate</strong> = tsc 0 + <code>npm test</code> green + <code>npm run test:heavy</code> green + build succeeds,
 <em>before any deploy</em>. (<code>npm test</code> is <code>vitest run</code> minus the heavy <code>--exclude</code> globs;
-<code>npm run test:heavy</code> runs exactly those. <strong>Both halves are mandatory</strong> — §11.)</p>
-<p><strong>Deploy path:</strong> push to the <strong><code>bvarscenario</code></strong> git remote (<code>matyasfarkas/BVARScenarioTool</code>) <code>main</code>,
-touching <code>app/**</code>. Its GitHub <strong>Actions</strong> workflow (<code>deploy-to-website.yml</code>) builds the static export
-(<code>BASE_PATH=/bvar-scenario</code>) and copies <code>app/out/*</code> into the <code>matyasfarkas/starter-hugo-academic</code>
-website repo's <code>static/bvar-scenario/</code>. That repo is a <strong>Hugo Academic</strong> site published to <strong>GitHub Pages</strong>
-(note the <code>netlify.toml</code> trigger), which rebuilds and serves the tool at the <code>/bvar-scenario</code> path.
+<code>npm run test:heavy</code> runs exactly those. <strong>Both halves are mandatory</strong> — §11.) The gate is the
+maintainer's job: <strong>neither deploy runs the tests</strong>. What every build does enforce is <code>prebuild</code>:
+<code>gzip_companion_draws.mjs</code> → <code>vintages_publish.mjs</code> → <code>pack-verify.mjs --full</code> — a pack whose files do
+not match its manifest (or whose dating or weights↔coupling link is wrong) fails the build.</p>
+<p><strong>Deploy path — two sites, both built from the same commit of <code>main</code>:</strong>
+- <strong>GitHub Pages (matyasfarkas.github.io/bvar-scenario):</strong> push to the <strong><code>bvarscenario</code></strong> git remote
+  (<code>matyasfarkas/BVARScenarioTool</code>) <code>main</code>, touching <code>app/**</code> or <code>netlify.toml</code>. Its GitHub <strong>Actions</strong>
+  workflow (<code>deploy-to-website.yml</code>) runs <code>npm ci &amp;&amp; npm run build</code> with <code>BASE_PATH=/bvar-scenario</code> and
+  copies <code>app/out/*</code> into the <code>matyasfarkas/starter-hugo-academic</code> website repo's
+  <code>static/bvar-scenario/</code>. That repo is a <strong>Hugo Academic</strong> site published to <strong>GitHub Pages</strong>, which
+  serves the tool at the <code>/bvar-scenario</code> path.
+- <strong>gmapsmodel.com (Netlify):</strong> push the same commit to the <strong><code>gmapsmodel</code></strong> remote (<code>gmapsmodel/GMAPS</code>)
+  <code>main</code>. Netlify builds per <code>netlify.toml</code> (<code>base = "app"</code>, <code>npm ci &amp;&amp; npm run build</code>, publish <code>out</code>,
+  served at the domain root). Its <code>ignore</code> rule skips pushes that change neither <code>app/</code> nor
+  <code>netlify.toml</code>; it runs inside <code>app/</code>, so it uses repo-root pathspecs (<code>:/app :/netlify.toml</code>) against
+  <code>$CACHED_COMMIT_REF</code>. The first version of the rule matched nothing and cancelled every build from
+  2026-08-05 until the fix in <code>298dfd8d</code> (2026-10-08). After a push, check the site actually changed
+  (e.g. <code>curl https://gmapsmodel.com/data/manifest.json</code> shows the new <code>packId</code>).
 This workflow has <strong>no Hugo step</strong>; any Hugo pin (<strong>0.122.0</strong> — Hugo 0.123+
 removed <code>getCSV</code> and broke the wowchemy theme, so do <strong>not</strong> bump it) lives in the
 <code>starter-hugo-academic</code> repo, not here. The <code>origin</code> remote
@@ -2380,10 +2944,26 @@ removed <code>getCSV</code> and broke the wowchemy theme, so do <strong>not</str
 untracked. Never commit <code>app/.env.local</code> / <code>FRED_API_KEY</code>.</p>
 <h3 id="12a-re-estimation-coupling-artifact-runbook-the-data-refresh-path">12a. Re-estimation + coupling-artifact runbook (the data refresh path)<a class="headerlink" href="#12a-re-estimation-coupling-artifact-runbook-the-data-refresh-path" title="Permanent link">&para;</a></h3>
 <p>The models are estimated offline and ported into <code>app/public/data/bvar</code>. <strong>Verify each command against
-the actual scripts before running — do not invent flags.</strong></p>
+the actual scripts before running — do not invent flags.</strong> The human runbook is <code>docs/UPDATE_MANUAL.md</code>
+(§6 quarterly shift, §7 yearly model update) and <code>docs/REESTIMATING_MODELS.md</code>; the exact scripts of
+the deployed Oct 2026 run are in <code>docs/reest-2026/runs/</code> (order and notes in its README). In outline:</p>
+<ol>
+<li><strong>Panels</strong> — rebuild each economy's estimation panel from its source registry:
+   <code>python3 -B pipeline/sources/build_panel.py --bloc &lt;CC&gt;</code> (reads <code>pipeline/sources/registry/&lt;CC&gt;.json</code>,
+   fetches every column from its publisher, no fills; writes <code>DataRaw_&lt;CC&gt;_glob.json</code>, a provenance file,
+   and for fiscal economies <code>fiscal_meta_&lt;CC&gt;.json</code>). Decisions behind the registries:
+   <code>docs/reest-2026/PLAN.md</code> §5.</li>
+</ol>
+<p>The numbered steps below are the older description; where they differ, the Oct 2026 run scripts are
+authoritative (notably: GVAR blocs are copied raw at full precision, not 6-sigfig; the porter now
+regenerates <code>fiscal_meta</code>/<code>external_meta</code> by id; fiscal panels come from step 0, not the
+<code>build_fiscal_&lt;cc&gt;_4var.py</code> scripts; after the coupling, the chain runs the coupled nowcast, member
+completion, <code>roll_d0_forward.mjs</code>, baselines, bands, <code>gzip_companion_draws.mjs</code>,
+<code>build_coverage_manifest.mjs</code>, <code>vintages_publish.mjs</code>, then <code>pack-build.mjs --pack-id &lt;new id&gt;</code> and
+<code>pack-verify.mjs --full</code>).</p>
 <ol>
 <li><strong>Estimate</strong> — <code>pipeline/export_bvar_gvar24_loop.m</code> is the GVAR-EM iterative estimator: it runs the
-   33 blocs <strong>in parallel</strong> (<code>parfor</code>), estimating each by <code>cgl_bvarV5([domestic | 3 stars])</code> with the
+   35 blocs <strong>in parallel</strong> (<code>parfor</code>), estimating each by <code>cgl_bvarV5([domestic | 3 stars])</code> with the
    DK smoother filling the missing star/COVID quarters (COVID-as-missing), and iterates the stars to
    the Monte-Carlo noise floor (env <code>MAXIT</code> iterations, <code>TOL</code>; <code>MAXIT=1</code> ⇒ single-country/separated). It
    reads the per-bloc raw <code>pipeline/country_rawdata/DataRaw_&lt;CC&gt;_glob.json</code>. Set env <strong><code>US_ENDOGENOUS=1</code></strong>
@@ -2391,30 +2971,58 @@ the actual scripts before running — do not invent flags.</strong></p>
    the deployed <code>US/spec.json</code> with its 3 <code>ROW*_US</code> stars. Key <code>cgl_bvarV5</code> flags: <code>sur=0</code>, <code>noc=1</code>,
    <code>MNpsi=0</code> (mirror them exactly when porting). The estimator also <strong>reads the per-variable <code>prior</code> from
    the spec/raw</strong> and builds the stationary-column set <code>pos = find(prior=='WN')</code>, passed as the 3rd
-   positional argument of <code>cgl_bvarV5</code> (the WN own-lag-0 prior on the fiscal GDP-ratios — §6a); it is empty
-   (a no-op) for the 44 non-fiscal blocs.</li>
+   positional argument of <code>cgl_bvarV5</code> (the WN own-lag-0 prior on the fiscal GDP-ratios and, under
+   <code>BVAR_DIFF_GP</code>, the differenced GDP/price columns — §6a). The deployed run's full settings are in §5·EM.</li>
 <li><strong>Fiscal</strong> — <code>pipeline/build_fiscal_&lt;cc&gt;_4var.py</code> (one per US/EA/JP/UK/CA/CN) builds the 4-driver
    fiscal block <code>{FREV_GDP, FPEXP_GDP, EFFI, SFA}</code>, where <strong>SFA is computed as the exact residual that
    closes the app debt recursion</strong> (COVID quarters → NaN). Writes <code>pipeline/fiscal_meta/&lt;CC&gt;.json</code>
    (<code>{d0, sfaDefault, idx:{gdp,deflator,revenue,primaryExp,effRate,sfa}}</code>).</li>
-<li><strong>Port</strong> — copy all 33 blocs into <code>app/public/data/bvar/&lt;CC&gt;/</code> (6-significant-figure JSON) and refresh
-   each fiscal bloc's <code>fiscal_meta.json</code>. <strong>Then run <code>node pipeline/fix_fiscal_meta_indices.mjs</code></strong> — the
-   porter does NOT regenerate the positional fiscal indices, so a variable-order change silently
-   re-points them (the EA-debt-explosion bug; §7 STALE-POSITIONAL-INDEX gotcha). The script re-resolves
-   all six indices by variable id from the deployed <code>spec.json</code> (idempotent); <code>fiscal-meta-indices.test.ts</code>
-   then catches any that are still stale.</li>
+<li><strong>Port</strong> — copy all 35 blocs into <code>app/public/data/bvar/&lt;CC&gt;/</code> (the Oct 2026 chain copied the GVAR
+   exports raw, full precision, incl. <code>estimation_mask.json</code>; the 17 members go through
+   <code>port_gvar_exports.py</code>, 6-sigfig) and refresh each fiscal bloc's <code>fiscal_meta.json</code>. <strong>For raw-copied
+   blocs run <code>node pipeline/fix_fiscal_meta_indices.mjs</code> and <code>node pipeline/fix_external_meta_indices.mjs</code></strong>
+   (the porter does this itself) — a variable-order change silently re-points the positional indices
+   (the EA-debt-explosion bug; §7 STALE-POSITIONAL-INDEX gotcha). Both re-resolve by variable id
+   (idempotent); <code>fiscal-meta-indices.test.ts</code> and <code>data/meta-column-indices.test.ts</code> then catch any
+   that are still stale.</li>
 <li><strong>Regenerate the coupling artifact</strong> (MANDATORY after any data change — <code>modelSig</code> keys it to the
    data): from <code>app/</code>, <code>npx vite-node scripts/precompute_gvar_coupling.mjs</code>. It builds <code>M</code> in JS
    (<code>buildGVARCouplingMEndo</code> when <code>US_ENDOGENOUS</code>, else <code>buildGVARCouplingM</code>) for the <strong>empty</strong> pin
    structure, computes the <strong>inverse via MATLAB BLAS</strong> (<code>invert_coupling.m</code>, shelled <code>matlab -batch</code> —
-   the in-JS <code>O(dim³)</code> inverse at <code>dim≈2060</code> is ~46 min), and writes
+   the in-JS <code>O(dim³)</code> inverse at <code>dim≈2060</code> was ~46 min; deployed <code>dim</code> 2180), and writes
    <code>app/public/data/bvar/gvar/coupling_default.json.gz</code> (gzip, 6-sigfig: <code>{modelSig, pinStructure:'',
-   dim, rhoSpectral, M, invImM}</code>). <code>gvar-coupling-artifact.test.ts</code> asserts the artifact matches a fresh
-   build.</li>
-<li><strong>Gate + deploy</strong> — green gate (above), then the deploy path (below). Push to the <strong><code>bvarscenario</code></strong>
-   remote → GitHub Action copies <code>app/out</code> into <code>starter-hugo-academic</code> → Hugo rebuilds &amp; serves
-   the tool at the <code>/bvar-scenario</code> path on <strong>GitHub Pages</strong>.</li>
+   dim, rhoSpectral, M, invImM}</code>). It prints ρ(M); check it is &lt; 1 (it does not stop by itself).
+   <code>gvar-coupling-artifact.test.ts</code> asserts the artifact matches a fresh build.</li>
+<li><strong>Re-stamp the data pack</strong> — <code>node scripts/pack-build.mjs --pack-id &lt;new id&gt;</code> (packs are immutable:
+   never reuse an id), then <code>npx vite-node scripts/pack-verify.mjs --full</code>.</li>
+<li><strong>Gate + deploy</strong> — green gate (above), then the deploy path (§12, both sites). Desktop users get
+   the new data as an update pack (<code>pack-delta.mjs</code>) or a new installer — <code>docs/UPDATE_MANUAL.md</code> §3, §8.</li>
 </ol>
+<p>This runbook is about the BVAR/GVAR data. The Drivers lens payload is on a <strong>separate cadence</strong> — it
+depends on the MMB IRF exports, not on the macro vintage, and does not need regenerating when the models
+are refit. See §12b.</p>
+<h3 id="12b-drivers-payload-runbook-independent-of-the-data-refresh">12b. Drivers payload runbook (independent of the data refresh)<a class="headerlink" href="#12b-drivers-payload-runbook-independent-of-the-data-refresh" title="Permanent link">&para;</a></h3>
+<p>The Drivers menu, its shock sets, its collinear pairs and its FRB/US clusters are all produced at build
+time by one generator and shipped as static JSON (§8c). Regenerate them only when an MMB IRF export
+changes, when a model is added to or removed from the menu, or when <code>class_maps.json</code> is amended.</p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>app/scripts/build_drivers_index.mjs<span class="w">        </span><span class="c1"># runs from anywhere</span>
+</code></pre></div>
+<p>It reads <code>pipeline/census_irfs/MANIFEST.json</code>, <code>pipeline/census_irfs/&lt;srcDir&gt;/Taylor.json</code> for the eight
+census entries, <code>pipeline/_shockbench/class_maps.json</code>, and <code>app/public/data/dsge/irfs/&lt;M&gt;/SW.json</code> for
+the four entries already in the <code>irfs</code> tree. It writes <code>app/public/data/dsge/census/index.json</code> and copies
+each census <code>Taylor.json</code> to <code>app/public/data/dsge/census/&lt;name&gt;.json</code>, refusing to ship any census file
+whose sha256 does not match the manifest. The four <code>irfs</code>-tree files are <strong>indexed, not copied</strong>. Then run
+the licence tests (§11), which re-hash every shipped file against the index.</p>
+<p>The two MATLAB validation benches are separate again, and are what the licences in §8c rest on:</p>
+<div class="highlight"><pre><span></span><code>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="s2">&quot;run(&#39;pipeline/bench_simple_decomp.m&#39;)&quot;</span><span class="w">    </span><span class="c1"># the budget + collinearity rules, 8 models</span>
+matlab<span class="w"> </span>-batch<span class="w"> </span><span class="s2">&quot;run(&#39;pipeline/bench_class_recovery.m&#39;)&quot;</span><span class="w">   </span><span class="c1"># the class-view licence, 5 (model, obs-set) cells</span>
+</code></pre></div>
+<p>Both print to stdout and write no file; the committed <code>docs/paper/simple_decomp_results.txt</code> and
+<code>docs/paper/class_recovery_results.txt</code> are captured transcripts, so regenerating them means redirecting
+the output. Note that both scripts hard-code <code>pipeline/census_irfs</code> paths, so the six census rows of the
+first bench and the FRB/US row of the second need that tree present; the shipped
+<code>app/public/data/dsge/census/&lt;M&gt;.json</code> copies are byte-identical to their sources by the sha gate, but
+pointing the benches at them is a code edit, not a flag.</p>
 <hr />
 <h2 id="13-conventions-to-respect-a-checklist-before-you-commit">13. Conventions to respect (a checklist before you commit)<a class="headerlink" href="#13-conventions-to-respect-a-checklist-before-you-commit" title="Permanent link">&para;</a></h2>
 <ol>
@@ -2422,7 +3030,7 @@ the actual scripts before running — do not invent flags.</strong></p>
    <code>fiscal_meta.json</code>, GVAR indices from <code>IDX</code>.</li>
 <li><strong>Respect the data space.</strong> A stray <code>×4</code> or <code>/100</code> between level and growth space will diverge
    forecasts silently — the canary tests catch it.</li>
-<li><strong>The GVAR bloc set is data-driven (33 blocs: endogenous US + EA + 31 RoW), not a hardcoded list.</strong>
+<li><strong>The GVAR bloc set is data-driven (35 blocs: endogenous US + EA + 33 RoW), not a hardcoded list.</strong>
    Never hardcode a subset like <code>['US','EA','JP']</code> — read <code>ROW_COUNTRIES</code> / <code>COUPLED_COUNTRIES</code> / <code>IDX</code>
    (live, set by <code>configureGVARTopology</code>) or iterate the active candidates from <code>gvarLoader.ts</code>. Note the
    US is now in the fixed point (<code>COUPLED_COUNTRIES</code>, gated by <code>US_ENDOGENOUS</code>): <strong>US pins are NOT free</strong>
@@ -2434,6 +3042,21 @@ the actual scripts before running — do not invent flags.</strong></p>
 <li><strong>Exact MATLAB replication</strong> when porting an estimator — no shortcuts; flag and ask if unsure.</li>
 <li><strong>The green gate is mandatory</strong> before deploy — and it is <strong>two halves</strong> (<code>npm test</code> +
    <code>npm run test:heavy</code>), not one <code>vitest run</code>. See §11.</li>
+<li><strong>Never widen a Drivers licence without a bench row behind it.</strong> <code>classViewLicensed</code> gates on three
+   coordinates — model, watched observables, named shocks (§8c Remark 1) — and each matches a
+   configuration <code>bench_class_recovery.m</code> actually ran. The same discipline applies to the addable-observable
+   exclusions, the |cos| &gt; 0.95 flag and the shipped <code>defaultNamed</code> cluster triple. If a change makes a
+   reading available in a configuration no bench covers, it is a licence widening even when nothing looks
+   broken on screen, and the drivers tests are written to go red on it.</li>
+<li><strong>Drivers is read-only with respect to the forecast.</strong> <code>driversInput</code> flows ChartGrid → store →
+   drawer and stops there. Do not let the drawer write scenario state, and do not let <code>ChartGrid</code> import
+   it (§8c).</li>
+<li><strong>Read data only through the pack.</strong> Never <code>fetch()</code> a data file directly or import one into app
+   code for runtime use — go through <code>dataManifest.ts</code> (<code>fetchJSON</code>/<code>fetchGzJSON</code>), so it is
+   hash-checked and served from the right source (web or desktop data folder). Never compile in a date:
+   use <code>lastHistOf</code> / <code>qoyNextOf</code> / <code>offsetLabel</code> (set from the manifest). Never edit a shipped data
+   file by hand, and never regenerate an existing pack id in place — re-run the step that produces the
+   file, then <code>pack-build --pack-id &lt;new id&gt;</code>.</li>
 </ol>
 <hr />
 <h2 id="13a-known-issues-limitations-flagged-for-fix-not-yet-fixed">13a. Known issues &amp; limitations (flagged-for-fix, NOT yet fixed)<a class="headerlink" href="#13a-known-issues-limitations-flagged-for-fix-not-yet-fixed" title="Permanent link">&para;</a></h2>
@@ -2443,24 +3066,44 @@ carries the file:line detail; the short forms:</p>
 <ol>
 <li><strong>CN fiscal debt — inflation double-count (RESOLVED 2026-06).</strong> The CN debt roll-forward used to read
    <code>Δ(GDP) + Δ(deflator)</code> against an already-NOMINAL <code>GDP_CN</code>, double-counting inflation. The <strong>surgical
-   CN-only re-estimate</strong> replaced <code>GDP_CN</code> with <strong>real GDP</strong> (<code>spec.json</code> var 0 = "CN Real GDP …",
-   <code>fiscal_meta.json idx.gdpIsNominal = false</code>), so the growth term is now the correct real-GDP + deflator
-   nominal growth, matching US/EA/JP/UK/CA. The fix is CN-only; the other 32 blocs are byte-identical.</li>
-<li><strong>Entropic long-run tilt does not filter non-finite moments.</strong> <code>solveEntropicTilt</code> feeds the raw
-   per-draw long-run moments into the Newton dual; a single non-finite moment from an <strong>unstable draw</strong>
-   NaN-poisons the softmax weights and silently empties the anchor band. Fix: drop non-finite draws
-   before the iteration (as the band-step <code>weightedQuantile</code> already does). (<code>longRunTilt.ts</code>.)</li>
-<li><strong>No <code>ρ(M) &lt; 1</code> divergence guard on the live closed-form solve.</strong> The endogenous Neumann fixed point
-   iterates to <code>maxIt</code>/tolerance with <strong>no stationarity check</strong>: a refit yielding <code>ρ(M) ≥ 1</code> would return
-   a confident-wrong forecast with no warning. <code>ρ</code> is shipped in the artifact (currently 0.922) but not
-   read as a live guard. (<code>gvarSolve.ts:1296</code>.)</li>
+   CN-only re-estimate</strong> replaced <code>GDP_CN</code> with <strong>real GDP</strong> (<code>spec.json</code> var 0 = "CN Real GDP …"), so the
+   growth term is now the correct real-GDP + price nominal growth, as for the other economies. (CN's price
+   column in the fiscal block is <code>CPI_CN</code>.)</li>
+<li><strong>[OBSOLETE — <code>longRunTilt.ts</code> removed; superseded by the <code>driftSetter.ts</code> anchor, §8a].</strong> The
+   former entropic tilt did not filter non-finite moments: an unstable draw's non-finite long-run
+   moment NaN-poisoned the softmax weights and silently emptied the anchor band. The <code>driftSetter.ts</code>
+   display translation does no per-draw reweighting and is not subject to this failure mode.</li>
+<li><strong>Only a console-level <code>ρ(M) &lt; 1</code> divergence guard on the live closed-form solve.</strong> When the endogenous
+   Neumann iteration does not converge, <code>solveGVARClosedFormEndo</code> computes ρ(M) and <code>runGvarSolve</code> treats
+   ρ ≥ 1 (or a non-finite residual) as DIVERGED: it logs a console warning and does not cache the result
+   (<code>gvarSolve.ts</code> ~1801–1808, <code>runGvarSolve.ts</code> ~269). There is still <strong>no on-screen warning</strong>, so a refit
+   with ρ(M) ≥ 1 would show a wrong path to the user. ρ is shipped in the artifact (0.971875 in the deployed
+   pack) and must be checked when the coupling is rebuilt (§12a step 4).</li>
 <li><strong>Conditional band uses the FILTERED, not DK-smoothed, covariance.</strong> <code>conditionalForecast</code> returns the
    smoothed MEAN but the FILTERED variance, so the band is <strong>overstated</strong> for quarters that precede a
    future pin (the smoother would tighten them). Mean correct; band conservative. (<code>kalman.ts:405</code>.)</li>
-<li><strong>The porter does not regenerate <code>fiscal_meta.json</code> (STALE-POSITIONAL-INDEX).</strong> Positional indices go
-   stale on any variable-order change (the EA/UK debt-explosion cause). Mandatory mitigation: run
-   <code>node pipeline/fix_fiscal_meta_indices.mjs</code> after every re-port; <code>fiscal-meta-indices.test.ts</code> guards
-   it. (§7, <code>port_gvar_exports.py</code>.)</li>
+<li><strong>Positional meta indices (STALE-POSITIONAL-INDEX) — mitigated, not removed.</strong> <code>fiscal_meta.json</code> and
+   <code>external_meta.json</code> still store positional column indices, which go stale on any variable-order
+   change (the EA/UK debt-explosion cause; the Oct 2026 external <code>fx</code> mis-pointing). <code>port_gvar_exports.py</code>
+   now regenerates both by variable id; blocs copied raw need <code>node pipeline/fix_fiscal_meta_indices.mjs</code>
+   and <code>node pipeline/fix_external_meta_indices.mjs</code>. <code>fiscal-meta-indices.test.ts</code> and
+   <code>data/meta-column-indices.test.ts</code> guard them. (§7.)</li>
+<li><strong>The Drivers caveat over-claims for <code>US_FRB08</code>.</strong> For any lens outside the eight models
+   <code>bench_simple_decomp.m</code> ran, the drawer's bottom caveat falls back to "what backs it is a build-time
+   check that the shipped default naming recovers a known shock sequence to 1e-6". That build-time scan
+   runs only for <strong>clustered</strong> models, so it exists for the two 54-shock FRB/US lenses and <strong>not</strong> for
+   <code>US_FRB08</code>, which is in the menu with two shocks, no bench row and no scan. The sentence is therefore
+   true for two of the three lenses it is shown on. Do not repeat the build-time-check claim for
+   <code>US_FRB08</code> in any document until either the scan covers it or the caveat splits again.
+   (<code>DriversDrawer.tsx</code>, the <code>BENCH_VALIDATED_MODELS</code> fallback branch; §8c.)</li>
+<li><strong>Three numbers in the Drivers source comments do not reproduce.</strong> The SW07 column norms quoted as
+   "0.41 vs 3.55" (<code>driversDecomp.ts</code>, <code>bench_class_recovery.m</code>), the CMR14 collinear-pair error range
+   "1.7e-3–9.4e-3", and the FRB22 top-three-by-size failure "1.4e-1" could not be reproduced from the
+   shipped files under an independent solver mirror; they most likely predate the IRF regeneration. In each
+   case the qualitative point is confirmed and the mechanism is real — the norms do differ by about an
+   order of magnitude, a flagged pair <em>can</em> push the recovery error far past 1e-6, and the size-ranked
+   triple does fail — but <strong>the three numbers must not be quoted</strong> in documentation until the comments are
+   refreshed.</li>
 </ol>
 <hr />
 <h2 id="14-empirical-evaluation-lives-in-a-separate-repo-em-bayesian-gvar-eval">14. Empirical evaluation — lives in a SEPARATE repo (<code>em-bayesian-gvar-eval</code>)<a class="headerlink" href="#14-empirical-evaluation-lives-in-a-separate-repo-em-bayesian-gvar-eval" title="Permanent link">&para;</a></h2>
@@ -2576,9 +3219,9 @@ projection, NOT a causal IRF</strong> (the file labels itself exactly that). The
 before being headlined — <strong>do not over-claim a causal interpretation.</strong></p>
 <blockquote>
 <p><strong>Naming note:</strong> the protocol references this repo's weights as <code>weights_full.json</code> (the 33-bloc, US-row
-file used for the eval pulls) and <code>pipeline/country_rawdata/DataRaw_&lt;CC&gt;_glob.json</code>; the <em>app</em> loads
-<code>weights_24bloc.json</code> (same 33-bloc content, stale name — §5). Both files exist here; do not assume they
-are identical byte-for-byte, but they carry the same bloc set.</p>
+file used for the eval pulls, still including RU/AR/IL) and <code>pipeline/country_rawdata/DataRaw_&lt;CC&gt;_glob.json</code>;
+the <em>app</em> now loads <code>weights_24bloc.json</code> with the <strong>35-bloc</strong> set (= <code>weights_full_38.json</code>; no RU/AR/IL,
+plus HK/SG/RO/PE/PH). The two files no longer carry the same bloc set.</p>
 </blockquote>
 
 
@@ -2613,6 +3256,10 @@ are identical byte-for-byte, but they carry the same bloc set.</p>
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025–2026 Matyas Farkas — GPL-3.0-only
+    </div>
   
   
     Made with

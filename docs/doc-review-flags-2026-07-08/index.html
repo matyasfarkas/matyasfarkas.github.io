@@ -7,6 +7,10 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
+        <meta name="author" content="Matyas Farkas">
+      
+      
+        <link rel="canonical" href="https://matyasfarkas.github.io/docs/doc-review-flags-2026-07-08/">
       
       
       
@@ -19,7 +23,7 @@
     
     
       
-        <title>Documentation review — flagged for human adjudication - Monetary-Financial-Fiscal Macromodel — Documentation</title>
+        <title>Documentation review — flagged for human adjudication - Global Macroeconomic Analysis Projections and Scenarios — Documentation</title>
       
     
     
@@ -86,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Monetary-Financial-Fiscal Macromodel — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial-Fiscal Macromodel — Documentation" data-md-component="logo">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-header__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -100,7 +104,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Monetary-Financial-Fiscal Macromodel — Documentation
+            Global Macroeconomic Analysis Projections and Scenarios — Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -210,13 +214,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Monetary-Financial-Fiscal Macromodel — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial-Fiscal Macromodel — Documentation" data-md-component="logo">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-nav__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Monetary-Financial-Fiscal Macromodel — Documentation
+    Global Macroeconomic Analysis Projections and Scenarios — Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -334,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MFFM_User_Manual.pdf" class="md-nav__link">
+      <a href="../GMAPS_User_Manual.pdf" class="md-nav__link">
         
   
   
@@ -362,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MFFM_US_bloc_model.pdf" class="md-nav__link">
+      <a href="../GMAPS_US_bloc_model.pdf" class="md-nav__link">
         
   
   
@@ -510,6 +514,34 @@
     
   
     External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drivers-decomposition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drivers Decomposition Methodology
   
 
     
@@ -752,6 +784,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../UPDATE_MANUAL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Manual: data, model and app updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
         
   
@@ -843,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../paper/mffm_platform_paper.pdf" class="md-nav__link">
+      <a href="../paper/gmaps_platform_paper.pdf" class="md-nav__link">
         
   
   
@@ -1022,8 +1082,8 @@
 <li><strong>[medium] <code>MAINTAINER_OPERATIONS.md</code></strong> — snowball_t is used in the SFA_t definition (line 537) and in prose (lines 854, 931) but never defined in the equation block. Consider inserting into the block: 'snowball_t = d_{t-1}·[(1 + EFFI_t/400)/(1 + gNomQ_t/100) − 1]   # the (i−g) interest–growth term'. Not auto-applied — adding an equation is a math/content change requiring maintainer confirmation.</li>
 <li><strong>[medium] <code>paper_outline.tex</code></strong> — eq:debt, line 174: symbols g^{nom}_t (nominal GDP growth) and pb_t (primary balance) appear in the debt recursion but are never defined; g^{nom} is not among the four named estimated drivers. Add a one-line definition after the equation.</li>
 <li><strong>[medium] <code>paper_outline.tex</code></strong> — Table tab:spillover (lines 316-327): the 'gap' column is not the row-wise difference of 'endo' minus 'frozen' (e.g. US 1.28-(-4.37)=5.65 not +4.22) because each column is an independently-taken peak (max-abs) at possibly different horizons. Clarify in caption that endo/frozen/gap are each the peak of their respective paths taken independently.</li>
-<li><strong>[medium] <code>MFFM_User_Manual.tex</code></strong> — line 7666 CRPS: the 1/(2m^2) double-sum form is the BIASED (energy/NRG, Gneiting-Raftery 2007) plug-in estimator, not the 'unbiased' one. Either relabel 'the unbiased estimator' -&gt; 'the standard (energy-form) estimator', OR change denominator to 1/(2m(m-1)) with sum over k!=l. Author must choose (m^2 form matches cited GneitingRaftery2007).</li>
-<li><strong>[medium] <code>MFFM_User_Manual.tex</code></strong> — line 3907 (i-g) debt-dynamics approximation: dimensionally inconsistent with the symbols' defined units (i^eff percent p.a. vs g^n percent per quarter; denominator 1+g^n treats percent as raw ratio; pb_t/sfa_t lose the 1/4 quarterization). Flag as schematic textbook form with decimal annual i,g, or rewrite in consistent quarterized/decimal units; do not present as an exact identity with the percent-unit symbols.</li>
+<li><strong>[medium] <code>GMAPS_User_Manual.tex</code></strong> — line 7666 CRPS: the 1/(2m^2) double-sum form is the BIASED (energy/NRG, Gneiting-Raftery 2007) plug-in estimator, not the 'unbiased' one. Either relabel 'the unbiased estimator' -&gt; 'the standard (energy-form) estimator', OR change denominator to 1/(2m(m-1)) with sum over k!=l. Author must choose (m^2 form matches cited GneitingRaftery2007).</li>
+<li><strong>[medium] <code>GMAPS_User_Manual.tex</code></strong> — line 3907 (i-g) debt-dynamics approximation: dimensionally inconsistent with the symbols' defined units (i^eff percent p.a. vs g^n percent per quarter; denominator 1+g^n treats percent as raw ratio; pb_t/sfa_t lose the 1/4 quarterization). Flag as schematic textbook form with decimal annual i,g, or rewrite in consistent quarterized/decimal units; do not present as an exact identity with the percent-unit symbols.</li>
 <li><strong>[low] <code>scenario-cookbook.md</code></strong> — §5 line ~269: 'the old +3 for 8 q compounded to ~+6 % in 2 yr, ~5–6× the IMF decade path' — vs the ~+5.4–5.6 % / 10 yr US path (line 251), +6 % over 2 yr is ~EQUAL to the decade cumulative, not 5–6×. The 5–6× only holds on an annualized-pace basis. Clarify basis, e.g. 'an annual pace ~5–6× the IMF decade path'.</li>
 <li><strong>[low] <code>euro-cross-border.md</code></strong> — line 128: 'a two-decimal tooltip can very occasionally show e.g. 2.24 vs 2.25': a ~0.005 pp (≈0.5 bp) residual (line 126) producing a visible 2.24 vs 2.25 (0.01) split is only possible as a rounding-boundary artefact. Defensible but the ~0.005 pp figure and a 0.01 displayed gap could read as contradictory. Optionally append after '2.24 vs 2.25': ' — a two-decimal rounding-boundary artefact of a ~0.005 pp residual'. Author judgment; not auto-applied as it touches a numeric claim's framing.</li>
 <li><strong>[low] <code>fiscal-block-methodology.md</code></strong> — line 159: summary risk-premium channel 'i_eff += β·(d₋₁−d<em>)' omits the max(0,·) floor present in step-2 (line 109) and code (fiscalAccounting.ts:95). As written it implies a symmetric premium reducing the rate when debt&lt;d</em>. Change to 'i_eff += β·max(0, d₋₁−d*)'.</li>
@@ -1031,8 +1091,8 @@
 <li><strong>[low] <code>ARCHITECTURE_FOR_AI.md</code></strong> — line 54 ('restores stationarity (ρ(M)=0.726)') vs line 212 ('the pre-endogenous frozen-anchor coupling had dim≈1920, ρ(M)≈0.726'): the identical value ρ(M)=0.726 is quoted for two ostensibly different systems (euro-area-only aggregation experiment vs full pre-endogenous 33-bloc frozen-anchor coupling). Possible copy/paste carryover. Verify each ρ(M) against its source artifact; correct the mismatched one if they differ. Not auto-applied — numeric claim.</li>
 <li><strong>[low] <code>MODULES.md</code></strong> — line 705 'ε* = (HᵀWH)⁻¹ HᵀWb' omits the Tikhonov α=1e-6 (line 711) that is always applied — write regularized form (HᵀWH+αI)⁻¹ or annotate as unregularized ideal minimizer.</li>
 <li><strong>[low] <code>REESTIMATING_MODELS.md</code></strong> — Line ~62 <code>MAXIT=12</code>, <code>TOL=0.03</code> with stated MC noise floor ≈0.13: floor exceeds tolerance, so the loop could never satisfy TOL and would hit MAXIT every time, contradicting the CONVERGED claim. Likely typo (≈0.013?) — confirm numbers; do not auto-edit a numeric value.</li>
-<li><strong>[low] <code>MFFM_User_Manual.tex</code></strong> — line 2581: symbol D overloaded — defined as retained posterior draws (D=500) but reused for the 50/200 band-simulation draws. Use a distinct symbol (D_band or N_sim) for the band count and adjust the eq:bands summation index, noting these subsample the 500 posterior draws.</li>
-<li><strong>[low] <code>MFFM_User_Manual.tex</code></strong> — line 2565: notation collision — companion intercept d written with draw superscript renders as d^{(d)}, and this intercept d is undefined in the notation table (which reserves d for GVAR forcing and d_t for debt/loss). Rename the companion drift (e.g. c or d_alpha), add it to the notation table, and avoid the d^{(d)} form in eq:sim_forward.</li>
+<li><strong>[low] <code>GMAPS_User_Manual.tex</code></strong> — line 2581: symbol D overloaded — defined as retained posterior draws (D=500) but reused for the 50/200 band-simulation draws. Use a distinct symbol (D_band or N_sim) for the band count and adjust the eq:bands summation index, noting these subsample the 500 posterior draws.</li>
+<li><strong>[low] <code>GMAPS_User_Manual.tex</code></strong> — line 2565: notation collision — companion intercept d written with draw superscript renders as d^{(d)}, and this intercept d is undefined in the notation table (which reserves d for GVAR forcing and d_t for debt/loss). Rename the companion drift (e.g. c or d_alpha), add it to the notation table, and avoid the d^{(d)} form in eq:sim_forward.</li>
 </ul>
 <h2 id="comprehensiveness-gaps-undefined-terms-missing-definitions">Comprehensiveness gaps (undefined terms, missing definitions)<a class="headerlink" href="#comprehensiveness-gaps-undefined-terms-missing-definitions" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1047,8 +1107,8 @@
 <li><strong>[low] <code>PIPELINE.md</code></strong> — line 664: headline "56 origins, 9 models" vs §11.1 enumeration of 2 proposed configs + 8 benchmarks = 10 model configs. Reader can't tell which config the first full pass drops, or whether AR(p) iterated+direct count as one model. Author to reconcile; do not silently change the number.</li>
 <li><strong>[low] <code>MAINTAINER_OPERATIONS.md</code></strong> — 'FSAP' used ~6 times (first at line 17) without expansion, likely IMF Financial Sector Assessment Program. Expand on first use, e.g. '<strong>+ 17 euro-area FSAP (Financial Sector Assessment Program) standalones</strong>'. Not auto-applied — needs confirmation of the intended expansion before writing it out.</li>
 <li><strong>[low] <code>ADDING_A_COUNTRY.md</code></strong> — long-run anchor (LRP / entropic tilt): The acronym LRP is introduced (lines 13, 19) without being spelled out; it is only implicitly equated to 'long-run anchor'. Reader cannot confirm what LRP stands for. -&gt; Expand on first use, e.g. 'long-run anchor (LRP = long-run prior / entropic tilt)' — confirm the intended expansion with the author before applying.</li>
-<li><strong>[low] <code>MFFM_User_Manual.tex</code></strong> — line 4158: PLR study reports US model n=36, but the US bloc is n=41 elsewhere (Sec. 2.1 line 2085, notation table, Sec. 12.5 line 5024, 41-row Table 6). Add a clause clarifying the configuration (e.g. 'an earlier pre-endogenous-US specification'); author to confirm the PLR experiment was run on the 36-variable US.</li>
-<li><strong>[low] <code>MFFM_User_Manual.tex</code></strong> — lines 5081/5090: US variable table lists two WTI spot-oil series (PZTEXP and GLB_OIL), both log/RW with near-identical descriptions — reads as a duplicate/collinear regressor. Add a one-line note distinguishing global-common carrier (GLB_OIL) vs domestic oil column (PZTEXP), or differentiate the descriptions.</li>
+<li><strong>[low] <code>GMAPS_User_Manual.tex</code></strong> — line 4158: PLR study reports US model n=36, but the US bloc is n=41 elsewhere (Sec. 2.1 line 2085, notation table, Sec. 12.5 line 5024, 41-row Table 6). Add a clause clarifying the configuration (e.g. 'an earlier pre-endogenous-US specification'); author to confirm the PLR experiment was run on the 36-variable US.</li>
+<li><strong>[low] <code>GMAPS_User_Manual.tex</code></strong> — lines 5081/5090: US variable table lists two WTI spot-oil series (PZTEXP and GLB_OIL), both log/RW with near-identical descriptions — reads as a duplicate/collinear regressor. Add a one-line note distinguishing global-common carrier (GLB_OIL) vs domestic oil column (PZTEXP), or differentiate the descriptions.</li>
 </ul>
 <h2 id="editorial">Editorial<a class="headerlink" href="#editorial" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1069,13 +1129,13 @@
 </ul>
 <h2 id="rendering">Rendering<a class="headerlink" href="#rendering" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>[medium] <code>MFFM_User_Manual.tex</code></strong> — line 586 '\S\ref{sec:export}': broken cross-reference (no \label{sec:export} exists) will render as '??'. Retarget to an outputs section (e.g. \S\ref{sec:repro} or \S\ref{sec:use-data}) or drop it. Author must confirm intended target.</li>
+<li><strong>[medium] <code>GMAPS_User_Manual.tex</code></strong> — line 586 '\S\ref{sec:export}': broken cross-reference (no \label{sec:export} exists) will render as '??'. Retarget to an outputs section (e.g. \S\ref{sec:repro} or \S\ref{sec:use-data}) or drop it. Author must confirm intended target.</li>
 <li><strong>[low] <code>MODULES.md</code></strong> — anchor target '#known-issues-limitations-...' (links at lines 470/756): '&amp;' in the heading yields a double-hyphen slug on GitHub, resolving only under MkDocs — if cross-GitHub portability matters, drop the ampersand and update both link targets.</li>
 </ul>
 <h2 id="bibliography-build-found-during-the-faithful-pdf-rebuild">Bibliography / build (found during the faithful PDF rebuild)<a class="headerlink" href="#bibliography-build-found-during-the-faithful-pdf-rebuild" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>[low] <code>MFFM_User_Manual.tex</code></strong> — two <code>\cite</code> keys are missing from <code>references.bib</code>, so they render as <code>[?]</code> on p.59 (data-augmentation section): <code>TannerWong1987</code> (Tanner &amp; Wong 1987, JASA) and <code>DempsterLairdRubin1977</code> (Dempster, Laird &amp; Rubin 1977, EM, JRSS-B). Add both entries to <code>references.bib</code>. Pre-existing (present in the committed PDF too), not introduced by this pass.</li>
-<li><strong>[low] <code>MFFM_User_Manual.tex</code></strong> — <code>\ref{sec:export}</code> (p.15, line 586) has no matching <code>\label</code>, renders <code>??</code>. Retarget to an existing outputs/reproducibility section or drop it (also in the math/render list above).</li>
+<li><strong>[low] <code>GMAPS_User_Manual.tex</code></strong> — two <code>\cite</code> keys are missing from <code>references.bib</code>, so they render as <code>[?]</code> on p.59 (data-augmentation section): <code>TannerWong1987</code> (Tanner &amp; Wong 1987, JASA) and <code>DempsterLairdRubin1977</code> (Dempster, Laird &amp; Rubin 1977, EM, JRSS-B). Add both entries to <code>references.bib</code>. Pre-existing (present in the committed PDF too), not introduced by this pass.</li>
+<li><strong>[low] <code>GMAPS_User_Manual.tex</code></strong> — <code>\ref{sec:export}</code> (p.15, line 586) has no matching <code>\label</code>, renders <code>??</code>. Retarget to an existing outputs/reproducibility section or drop it (also in the math/render list above).</li>
 </ul>
 <hr />
 <h2 id="resolution-status-2026-07-09">Resolution status (2026-07-09)<a class="headerlink" href="#resolution-status-2026-07-09" title="Permanent link">&para;</a></h2>
@@ -1123,6 +1183,10 @@ numbers, <code>paper_outline.tex</code> wording, and the evaluation-doc counts r
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025–2026 Matyas Farkas — GPL-3.0-only
+    </div>
   
   
     Made with

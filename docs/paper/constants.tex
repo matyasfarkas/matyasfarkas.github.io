@@ -4,17 +4,10 @@
 % SCRIPT-GENERATED version (docs/paper/figs/make_constants.mjs) so no number is hand-typed.
 % Sources are noted per line — update ONLY by regeneration.
 
-% --- coverage (source: app/public/data/coverage_manifest.json, weights_24bloc.json blocs) ---
-\newcommand{\NBlocs}{38}          % coupled GVAR blocs (euro area = one bloc)
-\newcommand{\NMembers}{17}        % euro-area member satellite models
-\newcommand{\NModels}{55}         % 38 + 17 country models served by the tool
-\newcommand{\NUSVars}{40}         % US bloc variables (spec.json n)
-\newcommand{\NLags}{3}            % VAR lag order p
-\newcommand{\HorizonQ}{20}        % forecast horizon, quarters
-
-% --- dating (source: app/src/lib/dates.ts, coverage_manifest.json) ---
-\newcommand{\LastObsQ}{2026Q1}    % last historical quarter (observed + model-completed)
-\newcommand{\NowcastQ}{2026Q2}    % first forecast quarter (the nowcast)
+% --- coverage + dating + US sample (GENERATED: coverage_constants.mjs reads the SHIPPED
+%     weights/manifest/specs — regenerate, never hand-edit; fixed the stale 38/55/18/25) ---
+\input{figs/data/coverage_constants}
+\newcommand{\HorizonQ}{20}        % forecast horizon, quarters (design constant)
 
 % --- solve (GENERATED: rho_margin.mjs reads the SHIPPED coupling artifact — regenerate, never hand-edit) ---
 \input{figs/data/rho_constants}
@@ -26,17 +19,10 @@
 % --- own-panel pilot (GENERATED: ourpanel_matrix.mjs parses the eval harness tables) ---
 \input{figs/data/ourpanel_constants}
 
-% --- model structure (source: US spec.json blocks; spec seasonalRows count over app/public/data/bvar) ---
+% --- model structure not derivable from shipped data (words/config, not counts) ---
 \newcommand{\NGlobals}{four}      % global commons: GLB_OIL, GLB_USLR, GLB_USBAA, GLB_USEQ
-\newcommand{\NSeasonal}{18}       % coupled blocs with seasonalRows = 3 (count of spec.json)
 \newcommand{\NEvenEffi}{eight}    % evened-interest fiscal blocs (CL CO CR ID IL MX TR ZA)
-\newcommand{\NFiscal}{25}         % coupled blocs carrying the 4-variable fiscal block (verified count of spec.json block:'fiscal')
+% NSeasonal, NFiscal, US sample, and the US trade weights are in coverage_constants (generated).
 
-% --- US bloc (source: coverage_manifest estimationSample; weights_24bloc.json US row) ---
-\newcommand{\USSampleStart}{1998Q3}
-\newcommand{\USSampleEnd}{2025Q4}
-\newcommand{\USSampleT}{110}      % estimation quarters
-\newcommand{\WUSEA}{0.17}         % US weight on the euro area (rounded, 0.1701)
-\newcommand{\WUSMX}{0.16}         % Mexico (0.1625)
-\newcommand{\WUSCA}{0.16}         % Canada (0.1623)
-\newcommand{\WUSCN}{0.14}         % China (0.1402)
+% --- trade-only block dimension: starDim = NBlocs * 3 aggregates * H (see app:tradeblock) ---
+\newcommand{\NCoupledTimesThreeH}{2100}   % 35 blocs x 3 foreign aggregates x 20 horizons

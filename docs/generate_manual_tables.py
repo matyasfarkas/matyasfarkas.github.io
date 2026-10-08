@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate docs/MFFM_manual_tables.tex from the SHIPPED data files, so the manual's
+"""Generate docs/GMAPS_manual_tables.tex from the SHIPPED data files, so the manual's
 per-economy appendix is accurate by construction.
 
 Sources (read-only):
@@ -9,14 +9,14 @@ Sources (read-only):
   app/public/data/bvar/gvar/weights_24bloc.json weights rows => coupled GVAR membership
   app/public/data/coverage_manifest.json       last historical quarter, per-variable coverage
 
-Output: docs/MFFM_manual_tables.tex  (\\input'ed by MFFM_User_Manual.tex, appendix)
+Output: docs/GMAPS_manual_tables.tex  (\\input'ed by GMAPS_User_Manual.tex, appendix)
 Run:    python3 docs/generate_manual_tables.py   (from the repo root)
 """
 import json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BVAR = os.path.join(ROOT, 'app/public/data/bvar')
-OUT = os.path.join(ROOT, 'docs/MFFM_manual_tables.tex')
+OUT = os.path.join(ROOT, 'docs/GMAPS_manual_tables.tex')
 
 NAMES = {
     'US': 'United States', 'EA': 'Euro area (aggregate)', 'JP': 'Japan', 'UK': 'United Kingdom',

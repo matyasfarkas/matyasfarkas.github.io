@@ -7,6 +7,10 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
+        <meta name="author" content="Matyas Farkas">
+      
+      
+        <link rel="canonical" href="https://matyasfarkas.github.io/docs/MODULES/">
       
       
         <link rel="prev" href="../PIPELINE/">
@@ -23,7 +27,7 @@
     
     
       
-        <title>Modules & API - Monetary-Financial-Fiscal Macromodel — Documentation</title>
+        <title>Modules & API - Global Macroeconomic Analysis Projections and Scenarios — Documentation</title>
       
     
     
@@ -90,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Monetary-Financial-Fiscal Macromodel — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial-Fiscal Macromodel — Documentation" data-md-component="logo">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-header__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Monetary-Financial-Fiscal Macromodel — Documentation
+            Global Macroeconomic Analysis Projections and Scenarios — Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -214,13 +218,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Monetary-Financial-Fiscal Macromodel — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial-Fiscal Macromodel — Documentation" data-md-component="logo">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-nav__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Monetary-Financial-Fiscal Macromodel — Documentation
+    Global Macroeconomic Analysis Projections and Scenarios — Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -338,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MFFM_User_Manual.pdf" class="md-nav__link">
+      <a href="../GMAPS_User_Manual.pdf" class="md-nav__link">
         
   
   
@@ -366,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MFFM_US_bloc_model.pdf" class="md-nav__link">
+      <a href="../GMAPS_US_bloc_model.pdf" class="md-nav__link">
         
   
   
@@ -514,6 +518,34 @@
     
   
     External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drivers-decomposition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drivers Decomposition Methodology
   
 
     
@@ -1148,22 +1180,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#longruntiltts" class="md-nav__link">
+  <a href="#driftsetterts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        longRunTilt.ts
+        driftSetter.ts
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="longRunTilt.ts">
+    <nav class="md-nav" aria-label="driftSetter.ts">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-long-run-moment" class="md-nav__link">
+  <a href="#per-variable-vs-joint-rigid-vs-transition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The long-run moment
+        Per-variable vs joint, rigid vs transition
       
     </span>
   </a>
@@ -1187,6 +1219,177 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#driversdecompts-the-drivers-decomposition-engine-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        driversDecomp.ts — the Drivers decomposition engine (EXPERIMENTAL)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="driversDecomp.ts — the Drivers decomposition engine (EXPERIMENTAL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-question-and-the-object-that-answers-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The question, and the object that answers it
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-column-normalised-equal-response-energy-prior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The column-normalised equal-response-energy prior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decompose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        decompose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#units-the-bvar-panel-into-observable-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Units — the BVAR panel into observable space
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observable-main-panel-display-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observable → main-panel display space
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numerical-thresholds-driversdecompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numerical thresholds (driversDecomp.ts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1-decompose-a-us-scenario-at-the-licensed-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1 (Decompose a US scenario at the licensed configuration)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-aggregate-into-classes-and-check-the-display-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2 (Aggregate into classes and check the display identity)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-decompose-an-frbus-path-through-collinearity-clusters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3 (Decompose an FRB/US path through collinearity clusters)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-the-tests-pin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the tests pin
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datadatamanifestts-the-data-pack-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        data/dataManifest.ts — the data pack (4.0.0)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datests-panel-dating-from-the-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dates.ts — panel dating from the pack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dataloaderts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1194,6 +1397,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="data/loader.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-drivers-index-driversindex-driversmodelmeta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Drivers index (DriversIndex / DriversModelMeta)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1249,6 +1469,128 @@
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlsdriversdrawertsx-the-drivers-drawer-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        controls/DriversDrawer.tsx — the Drivers drawer (EXPERIMENTAL)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="controls/DriversDrawer.tsx — the Drivers drawer (EXPERIMENTAL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-publishes-into-it-the-driverspathinput-store-slice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What publishes into it: the DriversPathInput store slice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-default-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The default configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-two-chart-builders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The two chart builders
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviours-worth-knowing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Behaviours worth knowing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appscriptsbuild_drivers_indexmjs-the-drivers-data-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        app/scripts/build_drivers_index.mjs — the Drivers data layer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="app/scripts/build_drivers_index.mjs — the Drivers data layer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-4-regenerate-the-drivers-index-after-a-new-census-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 4 (Regenerate the Drivers index after a new census export)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-shipped-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The shipped menu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-validation-benches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The validation benches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1417,6 +1759,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../UPDATE_MANUAL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Manual: data, model and app updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
         
   
@@ -1508,7 +1878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../paper/mffm_platform_paper.pdf" class="md-nav__link">
+      <a href="../paper/gmaps_platform_paper.pdf" class="md-nav__link">
         
   
   
@@ -2047,22 +2417,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#longruntiltts" class="md-nav__link">
+  <a href="#driftsetterts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        longRunTilt.ts
+        driftSetter.ts
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="longRunTilt.ts">
+    <nav class="md-nav" aria-label="driftSetter.ts">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-long-run-moment" class="md-nav__link">
+  <a href="#per-variable-vs-joint-rigid-vs-transition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The long-run moment
+        Per-variable vs joint, rigid vs transition
       
     </span>
   </a>
@@ -2086,6 +2456,177 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#driversdecompts-the-drivers-decomposition-engine-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        driversDecomp.ts — the Drivers decomposition engine (EXPERIMENTAL)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="driversDecomp.ts — the Drivers decomposition engine (EXPERIMENTAL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-question-and-the-object-that-answers-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The question, and the object that answers it
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-column-normalised-equal-response-energy-prior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The column-normalised equal-response-energy prior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-exports_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key exports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decompose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        decompose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#units-the-bvar-panel-into-observable-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Units — the BVAR panel into observable space
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observable-main-panel-display-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observable → main-panel display space
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numerical-thresholds-driversdecompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numerical thresholds (driversDecomp.ts)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1-decompose-a-us-scenario-at-the-licensed-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1 (Decompose a US scenario at the licensed configuration)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-aggregate-into-classes-and-check-the-display-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2 (Aggregate into classes and check the display identity)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-decompose-an-frbus-path-through-collinearity-clusters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3 (Decompose an FRB/US path through collinearity clusters)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-the-tests-pin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the tests pin
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datadatamanifestts-the-data-pack-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        data/dataManifest.ts — the data pack (4.0.0)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datests-panel-dating-from-the-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dates.ts — panel dating from the pack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dataloaderts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2093,6 +2634,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="data/loader.ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-drivers-index-driversindex-driversmodelmeta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Drivers index (DriversIndex / DriversModelMeta)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2148,6 +2706,128 @@
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlsdriversdrawertsx-the-drivers-drawer-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        controls/DriversDrawer.tsx — the Drivers drawer (EXPERIMENTAL)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="controls/DriversDrawer.tsx — the Drivers drawer (EXPERIMENTAL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-publishes-into-it-the-driverspathinput-store-slice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What publishes into it: the DriversPathInput store slice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-default-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The default configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-two-chart-builders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The two chart builders
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behaviours-worth-knowing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Behaviours worth knowing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appscriptsbuild_drivers_indexmjs-the-drivers-data-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        app/scripts/build_drivers_index.mjs — the Drivers data layer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="app/scripts/build_drivers_index.mjs — the Drivers data layer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-4-regenerate-the-drivers-index-after-a-new-census-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 4 (Regenerate the Drivers index after a new census export)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-shipped-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The shipped menu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-validation-benches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The validation benches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2214,7 +2894,9 @@
 
 <h1 id="module-api-reference">Module &amp; API Reference<a class="headerlink" href="#module-api-reference" title="Permanent link">&para;</a></h1>
 <p>A per-module reference for the browser-side compute engine in <code>app/src/lib/compute/*</code> and the
-JSON data loaders in <code>app/src/lib/data/*</code>. Each section lists the module's responsibility, its
+JSON data loaders in <code>app/src/lib/data/*</code>. Since 4.0.0 every data file reaches these modules through
+the <strong>data pack</strong> (<code>data/dataManifest.ts</code>): the data and the estimated model are separate from the tool,
+and the dates come from the pack, not from the code. Each section lists the module's responsibility, its
 key exported signatures with input/output shapes, the numerical thresholds and unit conventions
 that matter, and where it is called.</p>
 <p>This page is a navigable reference, not a tutorial. For the architecture overview, the per-bloc
@@ -2236,8 +2918,9 @@ module reference:</p>
   sets the own-first-lag prior mean to <code>0</code> so the series <strong>mean-reverts</strong>. This is a property of
   the MATLAB estimator (<code>bvarGLPmf.m</code>, §<a href="#fiscal-stationary-prior">Fiscal stationary prior</a>), not
   the TS engine, but it changes the <strong>shape of the baselines</strong> the engine loads — the fiscal
-  GDP-ratios (<code>FREV_GDP</code>, <code>FPEXP_GDP</code>, <code>SFA</code>) now revert to their in-sample mean instead of
-  drifting at the long horizon. See <a href="../DATA_SCHEMA/#3-specjson-the-variable-manifest">DATA_SCHEMA §3</a>
+  GDP-ratios (<code>FREV_GDP</code>, <code>FPEXP_GDP</code>, <code>SFA</code>) revert to their in-sample mean instead of
+  drifting at the long horizon, and in the deployed growth-rate model so do the growth rates of real
+  GDP and prices (those columns are estimated in first differences and also tagged <code>WN</code>). See <a href="../DATA_SCHEMA/#3-specjson-the-variable-manifest">DATA_SCHEMA §3</a>
   for the field and <a href="../PIPELINE/#5-the-gvar-em-loop-export_bvar_gvar24_loopm">PIPELINE §5</a> for how
   it is set.</li>
 <li><strong><code>isFinancial</code> and COVID masking.</strong> A variable with <code>isFinancial:true</code> is kept <strong>observed</strong>
@@ -2291,9 +2974,14 @@ annualized growth rate is <code>4·Δ(level)</code> for a <code>log</code> varia
 <td><code>ControlPanel.tsx</code></td>
 </tr>
 <tr>
-<td><code>longRunTilt.ts</code></td>
-<td>Entropic tilt / PLR long-run anchors + weighted bands</td>
-<td><code>ChartGrid.tsx</code></td>
+<td><code>driftSetter.ts</code></td>
+<td>δc long-run-target anchors — rigid, band-coherent display translation (<code>S_h·δc</code>, <code>computeDriftDeltaFull</code>), per-variable or joint; supersedes the removed <code>longRunTilt.ts</code></td>
+<td><code>ChartGrid.tsx</code>, <code>ControlPanel.tsx</code>, <code>useConditionalForecast.ts</code>, <code>gvarDriftSpillover.ts</code></td>
+</tr>
+<tr>
+<td><code>driversDecomp.ts</code></td>
+<td><strong>Drivers (EXPERIMENTAL)</strong>: model-conditional decomposition of a scenario path into a chosen DSGE model's structural shocks + a residual</td>
+<td><code>DriversDrawer.tsx</code></td>
 </tr>
 <tr>
 <td><code>compute/gvarDragState.ts</code></td>
@@ -2311,19 +2999,44 @@ annualized growth rate is <code>4·Δ(level)</code> for a <code>log</code> varia
 <td><code>ChartGrid.tsx</code></td>
 </tr>
 <tr>
+<td><code>data/dataManifest.ts</code></td>
+<td><strong>The data-pack reader</strong>: loads + compatibility-checks <code>manifest.json</code>, picks the source (web <code>/data</code> or the desktop data folder), and serves every file SHA-256-verified (<code>fetchJSON</code>, <code>fetchGzJSON</code>)</td>
+<td><code>loader.ts</code>, <code>gvarLoader.ts</code>, <code>DataPackGate.tsx</code>, <code>DataPackSection.tsx</code></td>
+</tr>
+<tr>
+<td><code>dates.ts</code></td>
+<td>Panel dating: <code>setPanelDates(manifest)</code>, <code>lastHistOf</code>, <code>qoyNextOf</code>, <code>offsetLabel</code> (no compiled date)</td>
+<td><code>dataManifest.ts</code> (init), <code>ChartGrid.tsx</code> and the controls, <code>gvarSolve.ts</code>, <code>useConditionalForecast.ts</code></td>
+</tr>
+<tr>
 <td><code>data/loader.ts</code></td>
-<td>Per-country single-bloc JSON fetch + LRU (least-recently-used) draws cache + <code>fiscal_meta</code></td>
-<td>single-country views, <code>ChartGrid.tsx</code></td>
+<td>Per-country single-bloc JSON fetch (through the pack) + LRU (least-recently-used) draws cache + <code>fiscal_meta</code>/<code>external_meta</code>; DSGE catalog/IRFs and the Drivers model index</td>
+<td>single-country views, <code>ChartGrid.tsx</code>, <code>DriversDrawer.tsx</code></td>
 </tr>
 <tr>
 <td><code>data/gvarLoader.ts</code></td>
-<td>Multi-bloc GVAR bundle fetch, topology self-config, coupling artifact</td>
+<td>Multi-bloc GVAR bundle fetch (through the pack), trade weights, topology self-config, coupling artifact (refused if built from other weights)</td>
 <td>GVAR mode</td>
 </tr>
 <tr>
 <td><code>data/countries.ts</code></td>
-<td>Static country registry (dropdown)</td>
+<td>Static country registry (dropdown; the one compiled list of economies)</td>
 <td><code>TopBar</code></td>
+</tr>
+<tr>
+<td><code>components/DataPackGate.tsx</code></td>
+<td>Renders the app only after the manifest has loaded and passed its checks; a refused pack is one full-screen message</td>
+<td><code>app/layout.tsx</code> (inside <code>LoginGate</code>)</td>
+</tr>
+<tr>
+<td><code>controls/DataPackSection.tsx</code></td>
+<td>Settings → Data pack: pack id, "data through", source; desktop "Open data folder" + "Reload"</td>
+<td><code>SettingsPanel.tsx</code></td>
+</tr>
+<tr>
+<td><code>controls/DriversDrawer.tsx</code></td>
+<td>The Drivers drawer: model menu, observable/shock naming under the budget rule, stacked contribution chart</td>
+<td>mounted by <code>ScenarioBar.tsx</code>, opened from <code>ChartGrid.tsx</code></td>
 </tr>
 </tbody>
 </table>
@@ -2337,8 +3050,9 @@ because the <code>prior</code> / <code>isFinancial</code> tags are read by <code
 <h2 id="fiscal-stationary-prior">Fiscal stationary prior<a class="headerlink" href="#fiscal-stationary-prior" title="Permanent link">&para;</a></h2>
 <p><strong>Where it lives.</strong> <code>BVAR/MFBVAR/GLPreplicationWeb/bvarGLPmf.m</code> (the GLP/Minnesota prior builder),
 threaded through <code>BVAR/MFBVAR/cgl_bvarV5.m</code> (the COVID-as-missing data-augmentation Gibbs), driven
-by the two estimators <code>pipeline/export_bvar_gvar24_loop.m</code> (GVAR) and
-<code>pipeline/export_bvar_euro_fsap.m</code> (euro-area financial blocks).</p>
+by the estimators <code>pipeline/export_bvar_gvar24_loop.m</code> (GVAR) and
+<code>pipeline/export_bvar_euro_redesign.m</code> (the 17 euro members; the older <code>export_bvar_euro_fsap.m</code>
+uses the same rule).</p>
 <p><strong>The problem it fixes.</strong> Under the default random-walk own-lag prior (mean <code>1</code>) the fiscal
 GDP-ratios <code>FREV_GDP</code>, <code>FPEXP_GDP</code>, <code>SFA</code> inherit a near-unit-root and <strong>drift</strong> at the long
 horizon — e.g. US revenue stuck near the last-observed ~19% of GDP rather than reverting toward its
@@ -2363,7 +3077,7 @@ mean held on the diagonal of the prior-mean matrix <code>b</code>. <code>bvarGLP
 selects the <code>WN</code> columns of the <strong>kept domestic block</strong> (stars are appended <em>after</em> the domestic
 columns and are always <code>RW</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="c">% pipeline/export_bvar_gvar24_loop.m</span>
-<span class="n">statCols</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">find</span><span class="p">(</span><span class="n">Spec</span><span class="p">.</span><span class="n">Prior</span><span class="p">(</span><span class="n">keep</span><span class="p">)</span><span class="o">==</span><span class="s">&quot;WN&quot;</span><span class="p">)</span><span class="o">&#39;</span><span class="p">;</span><span class="w">   </span><span class="c">% domestic WN columns; [] for the 44 non-fiscal blocs</span>
+<span class="n">statCols</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">find</span><span class="p">(</span><span class="n">Spec</span><span class="p">.</span><span class="n">Prior</span><span class="p">(</span><span class="n">keep</span><span class="p">)</span><span class="o">==</span><span class="s">&quot;WN&quot;</span><span class="p">)</span><span class="o">&#39;</span><span class="p">;</span><span class="w">   </span><span class="c">% domestic WN columns; [] if the spec has none</span>
 <span class="k">...</span>
 <span class="p">[</span><span class="n">Xcond</span><span class="p">,</span><span class="o">~</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">S</span><span class="p">,</span><span class="o">~</span><span class="p">,</span><span class="n">Dfc</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">cgl_bvarV5</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">lags</span><span class="p">,</span><span class="w"> </span><span class="n">Dc</span><span class="p">.</span><span class="n">statCols</span><span class="p">,</span><span class="w"> </span><span class="n">nDraws</span><span class="p">,</span><span class="w"> </span><span class="n">nBurn</span><span class="p">,</span><span class="w"> </span><span class="n">MCMCconst</span><span class="p">,</span><span class="w"> </span><span class="n">H</span><span class="p">,</span><span class="w"> </span><span class="k">...</span><span class="c">);</span>
 </code></pre></div>
@@ -2375,9 +3089,11 @@ columns and are always <code>RW</code>):</p>
 <p><code>priorsfrom</code> is deliberately robust to MATLAB's <code>jsondecode</code> dropping a <code>prior</code> field that is
 present on only <em>some</em> variable objects (a heterogeneous struct array collapses the field); an
 absent field ⇒ all-<code>RW</code> (the historical behaviour).</p>
-<p><strong>Which variables are <code>WN</code>.</strong> Only the three fiscal GDP-ratios, in the six fiscal blocs
-(<code>US, EA, JP, UK, CA, CN</code>). <code>EFFI</code> (the effective rate, <code>isFinancial:true</code>) <strong>stays <code>RW</code></strong> — a rate
-level is not a mean-reverting ratio. The shipped <code>US/spec.json</code> confirms exactly three <code>WN</code> tags:</p>
+<p><strong>Which variables are <code>WN</code>.</strong> The three fiscal GDP-ratios, in all 41 fiscal economies. <code>EFFI</code> (the
+effective rate, <code>isFinancial:true</code>) <strong>stays <code>RW</code></strong> — a rate level is not a mean-reverting ratio. In
+the deployed growth-rate model (<code>BVAR_DIFF_GP=1</code>, Oct 2026) real GDP, the headline price and
+<code>DEFL_&lt;CC&gt;</code> are estimated as growth rates and also carry <code>WN</code> (the US: <code>GDPH</code>, <code>JGDP</code>). The fiscal
+tags in the shipped <code>US/spec.json</code>:</p>
 <table>
 <thead>
 <tr>
@@ -2414,10 +3130,10 @@ level is not a mean-reverting ratio. The shipped <code>US/spec.json</code> confi
 </tr>
 </tbody>
 </table>
-<p><strong>Effect and scope.</strong> The fiscal ratios now mean-revert to their in-sample means at the long end
-(US revenue → ~17.4% instead of ~19%). The change is <strong>byte-identical</strong> (a no-op) for the 44
-non-fiscal blocs, whose <code>statCols</code> is empty. Committed in <code>6f0161a</code> (prior change),
-<code>22250be</code> / <code>e38673a</code> (full 33-bloc refit + port). The browser engine reads the resulting
+<p><strong>Effect and scope.</strong> The fiscal ratios mean-revert to their in-sample means at the long end
+(at the time of the change: US revenue → ~17.4% instead of ~19%). The change was <strong>byte-identical</strong>
+(a no-op) for blocs without a fiscal block, whose <code>statCols</code> was empty. Committed in <code>6f0161a</code>
+(prior change), <code>22250be</code> / <code>e38673a</code> (the then 33-bloc refit + port). The browser engine reads the resulting
 mean-reverting baselines unchanged — there is no TS-side code for the prior.</p>
 <hr />
 <h2 id="coherence-fixes-companion-to-the-refit">Coherence fixes (companion to the refit)<a class="headerlink" href="#coherence-fixes-companion-to-the-refit" title="Permanent link">&para;</a></h2>
@@ -2428,17 +3144,17 @@ loaded JSON, not the engine:</p>
   through the COVID-as-missing window (2020Q2–Q4) instead of being imputed as macro columns, so the
   US-equity and oil paths condition the imputation of the masked macro block. Verified in
   <code>US/spec.json</code> (<code>GLB_USEQ → log·RW·fin</code>, <code>GLB_OIL → log·RW·fin</code>).</li>
-<li><strong>Canada <code>IP_CA</code> rebuilt as a log-LEVEL.</strong> Chained from the discontinued FRED level index +
-  growth to 2025Q4, so <code>IP_CA</code> carries <code>transformation:"log"</code> (a level the engine differences to a
-  growth rate) rather than a pre-differenced series. Verified in <code>CA/spec.json</code>.</li>
+<li><strong>Canada <code>IP_CA</code> rebuilt as a log-LEVEL.</strong> <code>IP_CA</code> carries <code>transformation:"log"</code> (a level the
+  engine differences to a growth rate) rather than a pre-differenced series. Verified in
+  <code>CA/spec.json</code>. (Then chained from the discontinued FRED level index; since the Oct 2026 rebuild,
+  the OECD production index per <code>pipeline/sources/registry/CA.json</code>.)</li>
 <li><strong>Per-economy variable table.</strong> A transformation · prior · financial table was added to the
-  user manual; all <strong>1048</strong> variables across the <strong>50</strong> shipped specs were audited coherent.</li>
+  user manual; all <strong>1048</strong> variables across the then <strong>50</strong> shipped specs were audited coherent.</li>
 </ul>
 <blockquote>
-<p>⚠️ The illustrative <code>spec.json</code> example in <a href="../DATA_SCHEMA/#3-specjson-the-variable-manifest">DATA_SCHEMA §3</a>
-predates this refit (it shows <code>FREV_GDP</code>/<code>SFA</code> as <code>RW</code> and <code>GLB_OIL</code> as <code>isFinancial:false</code>). The
-<strong>shipped</strong> <code>US/spec.json</code> is the authority: <code>FREV_GDP</code>/<code>FPEXP_GDP</code>/<code>SFA</code> are <code>WN</code>, and
-<code>GLB_OIL</code>/<code>GLB_USEQ</code> are <code>isFinancial:true</code>.</p>
+<p>The <strong>shipped</strong> <code>US/spec.json</code> is the authority: <code>FREV_GDP</code>/<code>FPEXP_GDP</code>/<code>SFA</code> are <code>WN</code>, and
+<code>GLB_OIL</code>/<code>GLB_USEQ</code> are <code>isFinancial:true</code> (the example in
+<a href="../DATA_SCHEMA/#3-specjson-the-variable-manifest">DATA_SCHEMA §3</a> matches it).</p>
 </blockquote>
 <hr />
 <h2 id="matrixts"><code>matrix.ts</code><a class="headerlink" href="#matrixts" title="Permanent link">&para;</a></h2>
@@ -2644,9 +3360,11 @@ smoother <code>L_t</code>, <code>ZF_t</code>) are value-independent. <code>affin
 full filter+smoother pass on <code>condPaths</code>), then evaluates each unit-bump kernel as a cheap delta
 forward/backward recursion (pure matvecs). The arithmetic is <strong>byte-equal</strong> to running
 <code>conditionalForecast</code> once per <code>(cell, tp)</code> probe, at a large constant-factor win
-(~10–20× on the <code>n=41</code>, <code>lags=3</code>, <code>H=20</code> endogenous US bloc). Used inside <code>gvarSolve.ts</code>'s <code>blocKernels</code>.</p>
+(~10–20×, measured on the then <code>n=41</code>, <code>lags=3</code>, <code>H=20</code> endogenous US bloc; the deployed US bloc is
+<code>n=40</code>, <code>lags=4</code>). Used inside <code>gvarSolve.ts</code>'s <code>blocKernels</code>.</p>
 <h3 id="seasonal-dummies-seasonalrows-qoynext-c2atstep">Seasonal dummies (<code>seasonalRows</code> / <code>qoyNext</code> / <code>c2AtStep</code>)<a class="headerlink" href="#seasonal-dummies-seasonalrows-qoynext-c2atstep" title="Permanent link">&para;</a></h3>
-<p>NSA-seasonal blocs (16 coupled + 6 euro members — see <code>ARCHITECTURE_FOR_AI.md</code> §5·EM.s) are estimated
+<p>NSA-seasonal blocs (in the deployed pack: 17 coupled blocs + all 17 euro members — see
+<code>ARCHITECTURE_FOR_AI.md</code> §5·EM.s; the manifest's <code>blocs.&lt;CC&gt;.seasonalRows</code> lists them) are estimated
 with three <strong>quarterly seasonal dummies</strong> <code>D = [q==2, q==3, q==4]</code> (Q1 base). The estimator therefore ships
 <code>betahat</code> with the layout <strong><code>[constant; γ_Q2; γ_Q3; γ_Q4; B_1; …; B_p]</code></strong> (<code>k = 1 + nsr + n·lags</code>,
 <code>nsr = seasonalRows</code>), plus <code>seasonalRows</code> in <code>companion_mean.json</code> and <code>seasonalRows</code>/<code>qoyNext</code> in
@@ -2664,15 +3382,16 @@ with three <strong>quarterly seasonal dummies</strong> <code>D = [q==2, q==3, q=
 <p>The <strong>seasonal-aware conditional forecast</strong> is thus the same <code>conditionalForecast</code> / <code>affineBlocKernels</code>
 call — only the transition constant varies by quarter. Consumers that build <code>BVARParams</code> and must thread
 <code>{ seasonalRows, qoyNext }</code>: <code>gvarSolve.buildParams</code> / <code>makeCountryModel</code>, <code>useConditionalForecast</code>,
-<code>runGvarBandSolve</code> (per-draw), <code>driftSetter</code>, <code>longRunTilt</code> (which infers <code>nsr</code> from <code>beta_shape[0]</code> on the
-draws), the <code>ChartGrid</code> band paths, and the pipeline <code>.mjs</code> scripts (<code>member_extend</code>, <code>nowcast_complete</code>,
+<code>runGvarBandSolve</code> (per-draw), <code>driftSetter</code>, the <code>ChartGrid</code> band paths, and the pipeline <code>.mjs</code> scripts (<code>member_extend</code>, <code>nowcast_complete</code>,
 <code>regen_gvar_bands</code>, <code>precompute_gvar_coupling</code>, <code>verify_gvar24</code>, <code>refresh-quarter</code>).</p>
 <blockquote>
 <p>🔴 <strong>PHASE RULE.</strong> <code>qoyNext</code> is <strong>always</strong> recomputed from the app's own date grid via
-<code>dates.qoyNextOf(country)</code> (quarter after <code>lastHistOf</code>, wrapped <code>1..4</code>); the shipped <code>spec.json.qoyNext</code>
-is on the estimation grid, which the production shift moves <strong>+1 quarter</strong> — trusting it would mis-phase
-every seasonal constant. <code>makeCountryModel</code> sets <code>params.qoyNext = qoyNextOverride ?? qoyNextOf(code)</code>
-(the override is for the node pipeline scripts only). See <code>DATA_SCHEMA.md</code> §3.3.</p>
+<code>dates.qoyNextOf(country)</code> (quarter after <code>lastHistOf</code>, wrapped <code>1..4</code>; <code>lastHistOf</code> comes from the
+data-pack manifest); the shipped <code>spec.json.qoyNext</code> is on the estimation grid, which a within-year
+data shift moves — trusting it would mis-phase every seasonal constant. <code>setPanelDates</code> also checks
+the manifest's declared <code>qoyNext</code> against this value and stops the load on a mismatch.
+<code>makeCountryModel</code> sets <code>params.qoyNext = qoyNextOverride ?? qoyNextOf(code)</code> (the override is for the
+node pipeline scripts only). See <code>DATA_SCHEMA.md</code> §3.3.</p>
 </blockquote>
 <h3 id="numerical-thresholds-kalmants">Numerical thresholds (kalman.ts)<a class="headerlink" href="#numerical-thresholds-kalmants" title="Permanent link">&para;</a></h3>
 <table>
@@ -2790,9 +3509,15 @@ in-sample last level, whose delta is 0); <code>rate</code> deltas are the level 
 (<code>NOMINAL_GDP_BLOCS</code> is empty since the 2026-06 CN-only re-estimate — CN now ships real GDP, so its
 <code>DEM</code> reads <code>gdp</code> directly rather than <code>gdp − price</code>.)</p>
 <h3 id="topology-configuration">Topology configuration<a class="headerlink" href="#topology-configuration" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">configureGVARTopology</span><span class="p">(</span><span class="nx">specs</span><span class="o">:</span><span class="w"> </span><span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">Record</span><span class="o">&lt;</span><span class="nx">CountryCode</span><span class="p">,</span><span class="w"> </span><span class="nx">SpecJSON</span><span class="o">&gt;&gt;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">CountryCode</span><span class="p">[]</span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">configureGVARTopology</span><span class="p">(</span>
+<span class="w">  </span><span class="nx">specs</span><span class="o">:</span><span class="w"> </span><span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">Record</span><span class="o">&lt;</span><span class="nx">CountryCode</span><span class="p">,</span><span class="w"> </span><span class="nx">SpecJSON</span><span class="o">&gt;&gt;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">weights</span><span class="o">?:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">blocs</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[];</span><span class="w"> </span><span class="nx">weights</span><span class="o">:</span><span class="w"> </span><span class="kt">Record</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">Record</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">number</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">},</span><span class="w">  </span><span class="c1">// default: build-time copy</span>
+<span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">CountryCode</span><span class="p">[]</span>
 </code></pre></div>
-<p>(Re)configures the module from loaded <code>spec.json</code>s + <code>weights_24bloc.json</code>. A country is an
+<p>(Re)configures the module from loaded <code>spec.json</code>s + the trade weights. At runtime <code>gvarLoader</code> passes
+the weights <strong>fetched from the data pack</strong>, so a re-weighting takes effect without a new app version;
+the build-time copy of <code>weights_24bloc.json</code> imported by <code>gvarSolve.ts</code> is only the default (module
+load, tests, fetch failure) and the source of the candidate list <code>GVAR_BLOC_CANDIDATES</code>. A country is an
 active RoW bloc iff its spec carries <code>block:'row'</code> stars <strong>and</strong> it has a weights row; the US is
 the closed anchor unless its own spec carries stars (then <code>US_ENDOGENOUS = true</code>). Mutates these
 live module exports <strong>in place</strong> (importers hold references):</p>
@@ -2806,8 +3531,9 @@ live module exports <strong>in place</strong> (importers hold references):</p>
 </ul>
 <p><code>deriveBlocIdx(code, spec)</code> mirrors the estimator's column resolution: <code>gdp = GDP_&lt;CC&gt;</code> else
 <code>GDPH</code>; <code>price = HICP_&lt;CC&gt;</code> else <code>CPI_&lt;CC&gt;</code> else <code>JGDP</code>; <code>rate = RATE_&lt;CC&gt;</code> else <code>POLRATE</code> else
-<code>YIELD10_&lt;CC&gt;</code> (optional → <code>-1</code>). <code>resetGVARTopologyToDefault()</code> restores the shipped 6-bloc set
-(<code>US, EA, JP, UK, CA, CN</code>) and runs at module load.</p>
+<code>YIELD10_&lt;CC&gt;</code> (optional → <code>-1</code>; on the shipped roster only SG). <code>resetGVARTopologyToDefault()</code>
+configures a default 6-bloc set (<code>US, EA, JP, UK, CA, CN</code>, from build-time copies of their specs) and runs
+at module load; <code>gvarLoader</code> re-configures from the full deployed set.</p>
 <h3 id="model-container">Model container<a class="headerlink" href="#model-container" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">makeCountryModel</span><span class="p">(</span><span class="nx">code</span><span class="p">,</span><span class="w"> </span><span class="nx">companionMean</span><span class="p">,</span><span class="w"> </span><span class="nx">historicalLevels</span><span class="p">,</span><span class="w"> </span><span class="nx">horizon</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">CountryModel</span>
 <span class="c1">// CountryModel = { code, params, histMat, histLastLvl, baseLvl, H, n }</span>
@@ -2857,12 +3583,12 @@ live module exports <strong>in place</strong> (importers hold references):</p>
 on the pinned values, so it is cached and reused across the dominant drag-a-pin UI flow. The
 relevant exports:</p>
 <ul>
-<li><code>buildGVARCoupling</code> / <code>buildGVARCouplingEndo</code> — assemble <code>M</code>, <code>(I−M)⁻¹</code>, <code>ρ(M)</code> (frozen / endogenous).</li>
+<li><code>buildGVARCoupling</code> — assemble <code>M</code>, <code>(I−M)⁻¹</code>, <code>ρ(M)</code> (frozen anchor).</li>
 <li><code>buildGVARCouplingM</code> / <code>buildGVARCouplingMEndo</code> — assemble <code>M</code> and <code>ρ</code> <strong>without</strong> the inverse,
   for the export-time precompute that inverts <code>(I−M)</code> in MATLAB BLAS (<code>precompute_gvar_coupling.mjs</code>
   shells out to <code>invert_coupling.m</code>; <code>invert_coupling.py</code> is a NumPy fallback). The in-JS <code>O(dim³)</code>
   inverse was measured at ~46 min at the frozen-anchor <code>dim≈1380</code>, and is larger at the endogenous
-  <code>dim=2060</code>, so it is never built live.</li>
+  <code>dim</code> (2180 in the deployed pack), so it is never built live.</li>
 <li><code>gvarPinStructureSignature(pins)</code> — stable key over pinned cells; frozen-anchor topology excludes
   US pins, endogenous includes them.</li>
 <li><code>seedGVARCouplingCache</code> / <code>hydrateGVARCoupling</code> — load the pre-shipped artifact into the module cache.</li>
@@ -2875,8 +3601,9 @@ relevant exports:</p>
 <span class="w">  </span><span class="nx">M</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][];</span><span class="w"> </span><span class="nx">invImM</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>This is the shape of <code>app/public/data/bvar/gvar/coupling_default.json(.gz)</code>, produced by
-<code>app/scripts/precompute_gvar_coupling.mjs</code> and consumed by <code>runGvarSolve.ts</code>.</p>
+<p>This is the shape of <code>app/public/data/bvar/gvar/coupling_default.json.gz</code>, produced by
+<code>app/scripts/precompute_gvar_coupling.mjs</code>, read from the pack by <code>gvarLoader.ts</code> (refused if the
+manifest says it was built from other weights) and consumed by <code>runGvarSolve.ts</code>.</p>
 <h3 id="us_endogenous-augmented-state"><code>US_ENDOGENOUS</code> augmented state<a class="headerlink" href="#us_endogenous-augmented-state" title="Permanent link">&para;</a></h3>
 <p>When the US is a coupled bloc it both receives partner spillovers (its own <code>ROW*_US</code> stars) and
 <strong>drives every RoW bloc's global commons</strong> (oil / US 10Y / US BAA / US equity), which RoW blocs
@@ -2889,10 +3616,10 @@ pin to <code>own-base + US-global-delta</code>. The compact state is therefore a
 <code>x = (I−M)⁻¹d</code> (cached inverse) or the inverse-free Neumann fixed point (<code>maxIt = 2000</code>, tolerance
 <code>1e-10</code>), then reconstructs each bloc with one final <code>conditionalForecast</code>.</p>
 <blockquote>
-<p>⚠️ <strong>No <code>ρ(M) &lt; 1</code> divergence guard on the live solve (known issue #3).</strong> The Neumann iteration
-(<code>gvarSolve.ts:1296</code>) stops at <code>maxIt</code>/tolerance but never checks <code>ρ(M) &lt; 1</code>. A refit producing
-<code>ρ ≥ 1</code> would diverge silently and return a confident-wrong forecast. <code>ρ</code> is shipped in the artifact
-(currently 0.922) but not read as a guard. See
+<p>⚠️ <strong>Only a console-level <code>ρ(M) &lt; 1</code> divergence guard on the live solve (known issue #3).</strong> When the
+Neumann iteration does not converge, <code>solveGVARClosedFormEndo</code> computes ρ(M) and <code>runGvarSolve</code> treats
+ρ ≥ 1 as diverged: a console warning and no caching — but no on-screen warning. <code>ρ</code> is shipped in the
+artifact (0.971875 in the deployed pack). See
 <a href="#known-issues-limitations-flagged-for-fix-not-yet-fixed">Known issues #3</a>.</p>
 </blockquote>
 <h3 id="spectral-radius-by-panel-size">Spectral radius by panel size<a class="headerlink" href="#spectral-radius-by-panel-size" title="Permanent link">&para;</a></h3>
@@ -2915,8 +3642,16 @@ pin to <code>own-base + US-global-delta</code>. The compact state is therefore a
 <td>~0.726</td>
 </tr>
 <tr>
-<td>33-bloc, US endogenous (<code>dim≈2060</code>)</td>
-<td><strong>0.945494</strong> (live <code>coupling_default.json.gz</code>, eigendecomposition-exact — the field read 0.935044 before 2026-07-17 from an under-converged power iteration; moves with each refit and stays <code>&lt; 1</code>)</td>
+<td>33-bloc, US endogenous (<code>dim≈2060</code>, Jun–Sep 2026)</td>
+<td>~0.92–0.945 (the field read 0.935044 before 2026-07-17 from an under-converged power iteration)</td>
+</tr>
+<tr>
+<td>35-bloc, US endogenous, Sep 2026 model</td>
+<td>0.957724</td>
+</tr>
+<tr>
+<td><strong>35-bloc, US endogenous, deployed Oct 2026 re-estimation (<code>dim</code> 2180)</strong></td>
+<td><strong>0.971875</strong> (live <code>coupling_default.json.gz</code>; moves with each refit and must stay <code>&lt; 1</code>)</td>
 </tr>
 </tbody>
 </table>
@@ -2981,7 +3716,7 @@ shipped-artifact match are enforced by canary tests (<code>gvar-convergence</cod
 </tr>
 <tr>
 <td>In-JS <code>(I−M)⁻¹</code> cost</td>
-<td>~46 min measured at frozen <code>dim≈1380</code>; larger at endogenous <code>dim=2060</code></td>
+<td>~46 min measured at frozen <code>dim≈1380</code>; larger at the endogenous <code>dim</code> (2180 deployed)</td>
 <td><code>buildGVARCoupling</code></td>
 <td>why the inverse is <strong>precomputed</strong>, never built live</td>
 </tr>
@@ -3068,9 +3803,9 @@ possible future endogenous-debt-feedback extension, not current behaviour. See
 <a href="../fiscal-block-methodology/"><code>fiscal-block-methodology.md</code></a>.</p>
 <p>✅ <strong>CN inflation double-count — RESOLVED (2026-06).</strong> <code>computeFiscalBlock</code> forms <code>gNomQ</code> as
 <code>Δ(level[idx.gdp]) + Δ(level[idx.deflator])</code>. The CN block previously shipped a nominal <code>GDP_CN</code>, so
-the price term was double-counted; the <strong>surgical CN-only re-estimate</strong> replaced it with real GDP
-(<code>idx.gdpIsNominal = false</code>), so CN's roll-forward now matches US/EA/JP/UK/CA. CN-only graft; the other
-32 blocs are byte-identical.</p>
+the price term was double-counted; the <strong>surgical CN-only re-estimate</strong> replaced it with real GDP, so
+CN's roll-forward now matches the other economies. (At the time a CN-only graft; CN's fiscal price
+column is <code>CPI_CN</code>.)</p>
 </blockquote>
 <h3 id="key-exports_2">Key exports<a class="headerlink" href="#key-exports_2" title="Permanent link">&para;</a></h3>
 <table>
@@ -3139,11 +3874,12 @@ effRate-only callers byte-identical and fixes a ~100× over-statement of interes
 <span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">computeFiscalBlock</span><span class="p">({</span>
 <span class="w">  </span><span class="nx">levelPaths</span><span class="p">,</span><span class="w"> </span><span class="nx">prevLevelRow</span><span class="p">,</span>
 <span class="w">  </span><span class="nx">idx</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w">                                  </span><span class="c1">// FiscalBlockIndices — column positions in the level path</span>
-<span class="w">    </span><span class="nx">gdp</span><span class="o">:</span><span class="w"> </span><span class="kt">usIdx.gdp</span><span class="p">,</span><span class="w"> </span><span class="nx">deflator</span><span class="o">:</span><span class="w"> </span><span class="kt">usIdx.price</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">gdp</span><span class="o">:</span><span class="w"> </span><span class="kt">usIdx.gdp</span><span class="p">,</span><span class="w"> </span><span class="nx">deflator</span><span class="o">:</span><span class="w"> </span><span class="kt">usIdx.price</span><span class="p">,</span><span class="w">  </span><span class="c1">// US only: JGDP is both. Elsewhere take fiscal_meta.idx.deflator</span>
+<span class="w">                                          </span><span class="c1">// (DEFL_&lt;CC&gt;), which differs from the GVAR price column (CPI/HICP)</span>
 <span class="w">    </span><span class="nx">revenue</span><span class="o">:</span><span class="w"> </span><span class="kt">cRev</span><span class="p">,</span><span class="w"> </span><span class="nx">primaryExp</span><span class="o">:</span><span class="w"> </span><span class="kt">cPexp</span><span class="p">,</span><span class="w"> </span><span class="nx">effRate</span><span class="o">:</span><span class="w"> </span><span class="kt">cEffi</span><span class="p">,</span>
 <span class="w">    </span><span class="nx">sfa</span><span class="o">:</span><span class="w"> </span><span class="kt">cSfa</span><span class="p">,</span><span class="w">                            </span><span class="c1">// ESTIMATED SFA column (WN-prior) → per-quarter, with bands</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nx">d0</span><span class="o">:</span><span class="w"> </span><span class="kt">122.3</span><span class="p">,</span><span class="w">                              </span><span class="c1">// initial debt/GDP (%) for the US</span>
+<span class="w">  </span><span class="nx">d0</span><span class="o">:</span><span class="w"> </span><span class="kt">122.3</span><span class="p">,</span><span class="w">                              </span><span class="c1">// initial debt/GDP (%) for the US (illustrative; read fiscal_meta.d0)</span>
 <span class="p">})</span>
 <span class="c1">// result.debt[t]    : derived debt-to-GDP (%), budget-identity roll-forward</span>
 <span class="c1">// result.deficit[t] : interest − primary balance (% of GDP, annual)</span>
@@ -3223,18 +3959,23 @@ central bank's loss, as a regularized least-squares QP <code>min (H·ε − b)�
 <p><code>optimizePolicy</code> is called from <code>components/controls/ControlPanel.tsx</code>. <code>computeCounterfactualDeltas</code>
 is currently only exercised by <code>barnichon-mesters.test.ts</code>.</p>
 <hr />
-<h2 id="longruntiltts"><code>longRunTilt.ts</code><a class="headerlink" href="#longruntiltts" title="Permanent link">&para;</a></h2>
-<p><strong>Responsibility.</strong> After-estimation entropic tilting toward a "Prior for the Long Run" (PLR)
-restriction (Giannone–Lenza–Primiceri 2019). It does <strong>not</strong> re-estimate: it takes the existing
-posterior draws and computes per-draw importance weights <code>w_i ∝ exp(γ'·g_i)</code> so the weighted mean
-of each long-run moment hits a target, then the band loop applies them as weighted quantiles.
-Ported from <code>pipeline/_verify/entropic_tilt.m</code>.</p>
-<h3 id="the-long-run-moment">The long-run moment<a class="headerlink" href="#the-long-run-moment" title="Permanent link">&para;</a></h3>
-<p>Default <code>mode: 'forecast'</code> — <code>g = h'·E[y_{T+H}]</code>, the <code>H</code>-step mean forecast (default
-<code>horizon = 40 ≈ 10y</code>). The alternative <code>mode: 'steadyState'</code> (<code>g = h'·(I−ΣB_l)⁻¹c</code>) is <strong>opt-in
-and only valid for genuinely stationary combinations</strong>: on the I(1) <code>100·log</code>-level real VARs
-<code>(I−ΣB_l)</code> is near-singular and the steady state diverges (verified <code>−21103</code> vs an <code>H≈40</code> forecast
-of <code>+35</code>), so <code>forecast</code> is the default.</p>
+<h2 id="driftsetterts"><code>driftSetter.ts</code><a class="headerlink" href="#driftsetterts" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> The live user-facing long-run-target ("Prior for the Long Run"-style) anchor.
+It does <strong>not</strong> re-estimate, re-solve the GVAR, or reweight draws: it shifts the companion constant
+by <code>δC</code> and translates the forecast by exactly <code>ΔY_{T+h} = S_h·δC</code>, where <code>S_h = Σ_{k&lt;h} T^k</code> is the
+partial companion-power sum built <strong>once per bloc</strong> from the shipped companion and cached, so each
+slider change is a cheap mat-vec add. The same <code>δC</code> deviation is added <strong>identically</strong> to the central
+path and to every quantile, so the fan translates <strong>rigidly</strong> — band widths are invariant and quantiles
+cannot cross — while the terminal value hits the target <strong>exactly</strong>. This <strong>replaces</strong> the removed
+<code>longRunTilt.ts</code> entropic-tilt mechanism (KL-min importance reweighting of posterior draws), which
+needed a Compute and degenerated (<code>ESS → 1</code>) on a joint multi-target tilt.</p>
+<h3 id="per-variable-vs-joint-rigid-vs-transition">Per-variable vs joint, rigid vs transition<a class="headerlink" href="#per-variable-vs-joint-rigid-vs-transition" title="Permanent link">&para;</a></h3>
+<p>Targets can be solved <strong>per-variable</strong> or <strong>jointly</strong> (<code>AnchorMode = 'perVariable' | 'joint'</code>); the
+production entry <code>computeDriftDeltaFull</code> solves multiple set targets jointly when the system is tame
+(else it falls back to the per-target <code>δc</code>). The adjustment shape is <strong><code>rigid</code></strong> or <strong><code>transition</code></strong>
+(<code>AnchorShape</code>, default <strong><code>transition</code></strong> — phased in along the variable's own estimated convergence
+profile so there is no origin jump; both shapes share the same exact terminal). The GVAR cross-bloc
+spillover of a local anchor lives in <code>gvarDriftSpillover.ts</code>.</p>
 <h3 id="key-exports_5">Key exports<a class="headerlink" href="#key-exports_5" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -3245,52 +3986,678 @@ of <code>+35</code>), so <code>forecast</code> is the default.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>computeLongRunMoments(draws, historicalData, restrictions, opts?)</code></td>
-<td>per draw, per restriction → <code>gByDraw[r] = Float64Array(nDraws)</code></td>
+<td><code>buildDriftCache(betahat, n, lags, H)</code></td>
+<td>build and cache the per-bloc <code>S_h</code> companion-power sums → <code>DriftCache</code></td>
 </tr>
 <tr>
-<td><code>solveEntropicTilt(gByDraw, restrictions, opts?)</code></td>
-<td>Newton dual with backtracking line search → <code>LongRunTiltResult</code> (<code>weights</code>, <code>ess</code>, <code>tiltedMean</code>, <code>priorMean</code>, <code>gamma</code>, <code>converged</code>, <code>maxResidual</code>). <code>maxIter</code> default <code>200</code>, gradient <code>tol</code> default <code>1e-10</code>.</td>
+<td><code>deriveSens(cache, j, isLog)</code></td>
+<td>terminal display sensitivity of variable <code>j</code> per unit of drift (<code>log</code> → <code>4·(S_H[j,j] − S_{H-1}[j,j])</code>, <code>lin</code> → <code>S_H[j,j]</code>)</td>
 </tr>
 <tr>
-<td><code>longRunTilt(...)</code></td>
-<td>convenience wrapper: moments + tilt</td>
+<td><code>computeDriftDeltaFull(…)</code></td>
+<td><strong>production entry</strong>: display-unit targets + full per-column <code>isLog</code> map → the <code>δc</code> solve (per-variable or joint-when-tame) and the per-horizon <code>ΔY</code> delta</td>
 </tr>
 <tr>
-<td><code>computeLongRunTilt(draws, historicalData, anchors: AnchorSpec[], opts?)</code></td>
-<td><strong>the function <code>ChartGrid</code> consumes</strong>: display-unit variable anchors → <code>LongRunTiltDiagResult</code> (<code>weights</code>, <code>ess</code>, <code>nDraws</code>, <code>tiltedMean</code>, <code>priorMean</code>, <code>maxResidual</code>, <code>converged</code>). Empty anchors → uniform weights / full ESS.</td>
+<td><code>addDisplayDelta(path, deltaDisplay)</code> / <code>addLevelDelta(levelPath, deltaLevel)</code></td>
+<td>add the drift delta to a display / level path</td>
 </tr>
 <tr>
-<td><code>computeAnchorMoments(draws, historicalData, anchors)</code></td>
-<td>one mean-forecast pass per draw; <code>log</code> anchor → <code>4·Δ</code> annualized growth at <code>H</code>, <code>lin</code> anchor → level at <code>H</code></td>
-</tr>
-<tr>
-<td><code>weightedQuantile(values, weights, q)</code></td>
-<td>weighted quantile (drops non-finite, renormalizes)</td>
-</tr>
-<tr>
-<td><code>weightedBands(drawPaths, weights, H, n, qLo=0.16, qHi=0.84)</code></td>
-<td>per-draw paths → <code>{ q16, q84 }</code>, each <code>(H × n)</code></td>
+<td><code>currentTerminalDisplay(baselineDisplayMean, j, H)</code></td>
+<td>the baseline terminal display value the slider reads from</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">AnchorSpec</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">varIdx</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">isLog</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span><span class="w"> </span><span class="nx">target</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">horizon?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
-<p><code>PosteriorDraws</code> is the flat draws layout <code>beta[draw*k*nv + j*k + i]</code>, <code>beta_shape = [k, nv, nDraws]</code>
-— the same layout <code>loadCompanionDraws</code> produces. <strong>ESS = <code>1/Σwᵢ² ∈ [1, nDraws]</code></strong>; a joint
-multi-constraint tilt can degenerate (<code>ESS → 1</code>) at low draw counts, so <code>computeLongRunTilt</code>
-std-scales each anchor by its own sample standard deviation for conditioning.</p>
-<blockquote>
-<p>⚠️ <strong>Non-finite long-run moments are NOT filtered before the Newton dual (known issue #2).</strong>
-<code>solveEntropicTilt</code> builds <code>Gc</code> straight from <code>gByDraw</code> and the softmax <code>exp(Σ Gc·γ)</code> will <code>NaN</code> if
-any draw's moment is non-finite (an unstable draw whose long-horizon forecast diverged), silently
-emptying the anchor band. The scaling pre-pass skips non-finite values, but the matrix fed to the dual
-does not. See <a href="#known-issues-limitations-flagged-for-fix-not-yet-fixed">Known issues #2</a>.</p>
-</blockquote>
+<p><code>SENS_GUARD = 0.3</code> disables a slider whose <code>|sens_j| &lt; 0.3</code> (the display barely moves per unit of drift);
+<code>TAME_FACTOR = 2</code> gates whether the joint solve is used or the per-target <code>δc</code> fallback is taken.</p>
 <hr />
+<h2 id="driversdecompts-the-drivers-decomposition-engine-experimental"><code>driversDecomp.ts</code> — the Drivers decomposition engine (EXPERIMENTAL)<a class="headerlink" href="#driversdecompts-the-drivers-decomposition-engine-experimental" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> Takes the deviation of a scenario path from its baseline and asks a chosen DSGE
+model from the Macroeconomic Model Base (MMB) which sequence of <em>that model's own</em> structural shocks
+would have produced it over the first twelve forecast quarters. It returns the per-shock contribution
+paths, the fitted path, and an explicit residual for the part the named shocks cannot reproduce. This
+is the "filter the path through the model" exercise familiar from NAWM-II practice, run on a path
+object rather than by inverting a recursion. Ported from the MATLAB benchmark
+<code>pipeline/bench_simple_decomp.m</code>, whose transcript is committed at
+<code>docs/paper/simple_decomp_results.txt</code>.</p>
+<p><strong>What it does not do, stated up front.</strong> The feature is experimental and its claim is
+<em>model-conditional</em>: it reports the mix of model M's shocks that reproduces the path, not what caused
+the path, and it is not model-free shock labelling. Its validation is same-model recovery — generate a
+path from a model's own known shock sequence, decompose it under that same model, compare the
+recovered contribution paths with the truth — so the numbers speak to the estimator, not to the model
+and not to the world. A different lens gives a different answer, and the lenses are not equally
+validated: <code>bench_simple_decomp.m</code> ran eight models (<code>US_SW07</code>, <code>US_CMR14</code>, <code>EA_SW03</code>, <code>EA_SWW14</code>,
+<code>CA_LS07</code>, <code>HK_FP13</code>, <code>BRA_SAMBA08</code>, <code>UK_SM11</code>) and never touched an FRB/US lens. Aggregating shocks
+into economic classes is licensed at exactly one configuration and greyed everywhere else (Remark 3).
+The module has no financial observables, no bands, and no notion of posterior uncertainty: it is a
+deterministic map from one deviation path to one shock sequence.</p>
+<h3 id="the-question-and-the-object-that-answers-it">The question, and the object that answers it<a class="headerlink" href="#the-question-and-the-object-that-answers-it" title="Permanent link">&para;</a></h3>
+<p>The decomposition answers: <em>which sequence of model M's structural shocks, arriving over the forecast
+window, would have produced the path the app is displaying?</em> Write <code>H = 12</code> for the horizon
+(<code>DRIVERS_H</code>), <code>q</code> for the number of watched observables and <code>K</code> for the number of named shocks. The
+scenario deviation is carried into the model's observable space as <code>z_o(t)</code>, and the engine solves the
+deconvolution</p>
+<div class="highlight"><pre><span></span><code>z_o(t) = Σ_k Σ_{τ ≤ t} R_{k,o}(t − τ) · ε_k(τ) + u_o(t),     o = 1…q,  t = 0…H−1
+</code></pre></div>
+<p>for the shock sequence <code>{ε_k(τ)}</code>, where <code>R_{k,o}(h)</code> is model observable <code>o</code>'s impulse response to
+shock <code>k</code> at horizon <code>h</code>, <code>ε_k(τ)</code> is shock <code>k</code> arriving in quarter <code>τ</code>, and <code>u_o(t)</code> is the residual.
+Stacking the <code>q·H</code> observation rows into <code>z</code> and the <code>K·H</code> unknowns into <code>ε</code> turns this into
+<code>z = Θ·ε + u</code>, with <code>Θ</code> the block-Toeplitz response matrix built by <code>buildTheta</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>H</code> = 12</td>
+<td>decomposition horizon in quarters (<code>DRIVERS_H</code>)</td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td>observables watched (3 locked common + added natives)</td>
+</tr>
+<tr>
+<td><code>K</code></td>
+<td>units named (shocks, or cluster composites — see <code>clusterCompositeIRF</code>)</td>
+</tr>
+<tr>
+<td><code>o</code>, <code>t</code></td>
+<td>observable index, forecast quarter, both 0-based</td>
+</tr>
+<tr>
+<td><code>k</code>, <code>τ</code></td>
+<td>unit index, arrival quarter, both 0-based</td>
+</tr>
+<tr>
+<td><code>Θ</code></td>
+<td><code>(q·H) × (K·H)</code>, <code>Θ[o·H+t, k·H+τ] = R_{k,o}(t−τ)·1{t ≥ τ}</code></td>
+</tr>
+<tr>
+<td><code>z</code></td>
+<td>stacked observable-space deviation, <code>z[o·H+t]</code></td>
+</tr>
+<tr>
+<td><code>ε</code></td>
+<td>stacked shock sequence, <code>eps[k·H+τ]</code> (shock-major)</td>
+</tr>
+<tr>
+<td><code>D</code></td>
+<td><code>diag(‖Θ·₁‖ … ‖Θ·₍KH₎‖)</code>, the column-norm scaling; <code>ΘN = Θ·D⁻¹</code></td>
+</tr>
+<tr>
+<td><code>W</code></td>
+<td>diagonal row weights, <code>w = 1/√(1+me)</code> on added observables, <code>1</code> on the locked three</td>
+</tr>
+<tr>
+<td><code>λ</code></td>
+<td><code>1e-8 · mean(diag(ΘNᵀW²ΘN))</code></td>
+</tr>
+<tr>
+<td><code>u</code></td>
+<td>residual, <code>u = z − Θ·ε̂</code></td>
+</tr>
+</tbody>
+</table>
+<p>The estimator is the <strong>minimum-norm least-squares</strong> solution under the column scaling,</p>
+<div class="highlight"><pre><span></span><code>ε̂ = D⁻¹ · argmin ‖ε̃‖  subject to minimising ‖W(Θ·D⁻¹·ε̃ − z)‖²
+</code></pre></div>
+<p>computed numerically, not by an SVD. <code>decompose</code> forms the Gram matrix <code>G = Θ_wᵀΘ_w</code>, adds the ridge
+<code>λ = 1e-8·mean(diag G)</code>, LU-factors <code>(G + λI)</code> <strong>once</strong>, solves the ridge normal equations, and then
+runs <code>REFINE_STEPS = 2</code> iterative-refinement sweeps against that same factorisation. Every iterate
+stays in <code>range(Θᵀ)</code>, so the refined solution converges to the min-norm least-squares solution — the
+<code>pinv</code> the MATLAB benches use. The module records that the refinement drops the worst-case recovery
+error from about <code>7e-7</code> (bare ridge, inside but at the edge of the <code>1e-6</code> licence criterion) to about
+<code>1e-15</code>; those two figures are documented at <code>driversDecomp.ts:14–16</code> and are not independently
+re-measured here.</p>
+<h3 id="the-column-normalised-equal-response-energy-prior">The column-normalised equal-response-energy prior<a class="headerlink" href="#the-column-normalised-equal-response-energy-prior" title="Permanent link">&para;</a></h3>
+<p>Before the solve, every column of <code>Θ</code> is divided by its Euclidean norm, and the recovered coefficients
+are mapped back as <code>ε_j = ε̂N_j / ‖Θ·ⱼ‖</code> (a column whose norm falls below <code>1e-12</code> keeps a scale of 1,
+so it stays inert rather than being amplified — the MATLAB <code>cn(cn &lt; 1e-12) = 1</code>). This is the "v3
+colnorm" solver of <code>pipeline/bench_class_recovery.m</code>, and it imposes an <strong>equal-response-energy prior
+across shocks</strong>: the ℓ² penalty no longer prefers whichever shock moves the observables most per unit
+of <code>ε</code>.</p>
+<p>It matters because a model's shocks differ by an order of magnitude in response energy. Measured from
+the shipped <code>US_SW07/SW.json</code>, the stacked three-observable <code>H = 12</code> response norms run from 1.28 for
+<code>interest_</code> through 2.12 (<code>fiscal_</code>), 4.21 (<code>eqs</code>), 4.50 (<code>eb</code>), 4.93 (<code>ea</code>) and 11.58 (<code>ew</code>) to 13.84
+for <code>epinf</code>. Under a raw min-norm solve the small-response monetary shock is priced out of its own
+attribution; under column normalisation it is not. In <em>identified</em> configurations the scaling is a
+pure reparameterisation and the licence fixtures still pass at <code>≤ 1e-6</code> (tests v3-1a, v3-1b); in
+<em>underdetermined</em> ones it removes the small-column bias — <code>class_recovery_results.txt</code> records SW07 at
+three observables improving from 32% to 5% mean off-class leakage. Its signature is test v3-1c: with
+two exactly collinear shocks whose response norms differ 2:1, the shipped solver splits the
+contribution equally where the raw min-norm would split it 4:1.</p>
+<p>Contributions are always formed through the <strong>raw, unweighted</strong> <code>Θ</code> and the un-normalised <code>ε</code>, because
+<code>Θ·ε ≡ ΘN·ε̂N</code> exactly. Row weights therefore never touch the reported contributions; they change only
+which solution the underdetermined solve selects.</p>
+<h3 id="key-exports_6">Key exports<a class="headerlink" href="#key-exports_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Signature (abbreviated)</th>
+<th>Returns / invariant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>decompose</code></td>
+<td>see below</td>
+<td>the whole decomposition; <strong>throws</strong> when <code>K &gt; q</code> (the budget rule) or when an observable path is shorter than <code>H</code></td>
+</tr>
+<tr>
+<td><code>buildTheta</code></td>
+<td><code>(irf, shocks: string[], observables: {irfField}[], H = 12) =&gt; Matrix</code></td>
+<td><code>(q·H) × (K·H)</code> stacked response matrix; <strong>throws</strong> when a shock or an observable field is missing from the IRF file</td>
+</tr>
+<tr>
+<td><code>thetaRank</code></td>
+<td><code>(Theta: Matrix) =&gt; number</code></td>
+<td>numerical rank by pivoted Cholesky on the smaller-side Gram, relative pivot tolerance <code>1e-12·max(diag)</code></td>
+</tr>
+<tr>
+<td><code>contributionsFromEps</code></td>
+<td><code>(Theta, K, q, eps: Float64Array, H = 12) =&gt; number[][][]</code></td>
+<td><code>c[k][o][t] = Σ_{τ≤t} Θ[o·H+t, k·H+τ]·eps[k·H+τ]</code>; also builds the <em>truth</em> paths in the tests</td>
+</tr>
+<tr>
+<td><code>normShares</code></td>
+<td><code>(d: DriversDecomposition, obsIdx) =&gt; { label: string \| null; share: number }[]</code></td>
+<td>‖·‖₂ share of each contribution path plus the residual (<code>label: null</code>), normalised to 1</td>
+</tr>
+<tr>
+<td><code>meToWeight</code></td>
+<td><code>(me: number) =&gt; number</code></td>
+<td><code>1/√(1+me)</code>, the measurement-error row weight of an added observable</td>
+</tr>
+<tr>
+<td><code>commonObservablePaths</code></td>
+<td><code>(levelDeviation: number[][], idx: CommonSeriesIdx, H = 12) =&gt; { output, inflationq, interest }</code></td>
+<td>the three locked observables measured off the BVAR panel</td>
+</tr>
+<tr>
+<td><code>nativeObservablePath</code></td>
+<td><code>(key, levelDeviation, specIds: string[], H = 12, map = SW07_NATIVE_MAP) =&gt; number[] \| null</code></td>
+<td>one added native observable; <strong><code>null</code></strong> when a required spec column is absent — the caller drops the observable rather than fabricating it</td>
+</tr>
+<tr>
+<td><code>useAllShockSelection</code></td>
+<td><code>(shocks: string[], collinearPairs: {a,b}[], budget: number) =&gt; string[]</code></td>
+<td>greedy in the model's fixed shock order, skipping any shock collinear with one already picked</td>
+</tr>
+<tr>
+<td><code>obsDisplaySpec</code> / <code>toDisplayDev</code> / <code>obsDisplaySeries</code></td>
+<td>see <a href="#observable-main-panel-display-space">display units</a></td>
+<td>the linear map into main-panel units, and its application to a deviation path / a display-row block</td>
+</tr>
+<tr>
+<td><code>classViewLicensed</code></td>
+<td><code>(model, observableKeys: string[], namedShocks: string[]) =&gt; boolean</code></td>
+<td>the class-view gate on <strong>all three</strong> coordinates (Remark 3)</td>
+</tr>
+<tr>
+<td><code>aggregateContributions</code></td>
+<td><code>(d, groups: ShockGroup[]) =&gt; { groups, contributions }</code></td>
+<td>sums contribution paths by group and drops groups with no named member; additive by construction</td>
+</tr>
+<tr>
+<td><code>connectedComponents</code></td>
+<td><code>(shocks: string[], pairs: {a,b}[]) =&gt; string[][]</code></td>
+<td>union-find over the collinearity graph; components in order of first appearance, members in model order</td>
+</tr>
+<tr>
+<td><code>clusterCompositeIRF</code></td>
+<td><code>(irf, members: string[], H = 12) =&gt; ShockIRF</code></td>
+<td>one composite response column per cluster: the first principal component of the members' unit-normalised stacked three-observable paths</td>
+</tr>
+<tr>
+<td><code>buildClusterIRFs</code></td>
+<td><code>(irf, clusters: {id, members}[], H = 12) =&gt; ModelIRFs</code></td>
+<td>a synthetic IRF record whose "shocks" are the cluster composites, keyed by cluster id</td>
+</tr>
+</tbody>
+</table>
+<h3 id="decompose"><code>decompose</code><a class="headerlink" href="#decompose" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">decompose</span><span class="p">(</span>
+<span class="w">  </span><span class="nx">irf</span><span class="o">:</span><span class="w"> </span><span class="kt">ModelIRFs</span><span class="p">,</span><span class="w">                       </span><span class="c1">// shock name → { observable field → response path }</span>
+<span class="w">  </span><span class="nx">shocks</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[],</span><span class="w">                     </span><span class="c1">// the K named units, in the model&#39;s fixed order</span>
+<span class="w">  </span><span class="nx">observables</span><span class="o">:</span><span class="w"> </span><span class="kt">DecomposeObservable</span><span class="p">[],</span><span class="w">   </span><span class="c1">// the q watched rows: { key, irfField, path, weight? }</span>
+<span class="w">  </span><span class="nx">H</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">DRIVERS_H</span><span class="p">,</span>
+<span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">DriversDecomposition</span>
+</code></pre></div>
+<p><code>irf</code> is the model's IRF file as shipped (<code>Record&lt;shock, Record&lt;observableField, number[]&gt;&gt;</code>); index 0
+of every response array is the pre-impact zero, so <code>R_{k,o}(h)</code> is read as <code>irf[shock][field][h + 1]</code>,
+mirroring MATLAB's <code>s.obs(2:H+1)</code>. The shipped arrays are length 21, so <code>h = 0…19</code> is available and
+the engine uses the first twelve. Each <code>DecomposeObservable</code> carries a display <code>key</code>, the <code>irfField</code>
+to read from the model (usually the same string), the observable's deviation <code>path</code> of at least <code>H</code>
+entries, and an optional row <code>weight</code> (<code>1</code> or absent for the three locked observables). The result is</p>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">DriversDecomposition</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">shocks</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[];</span><span class="w"> </span><span class="nx">observableKeys</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[];</span><span class="w"> </span><span class="nx">H</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span>
+<span class="w">  </span><span class="nx">eps</span><span class="o">:</span><span class="w"> </span><span class="kt">Float64Array</span><span class="w">          </span><span class="c1">// K·H, shock-major: eps[k*H + τ]</span>
+<span class="w">  </span><span class="nx">contributions</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][][]</span><span class="w"> </span><span class="c1">// [k][o][t], through the UNWEIGHTED Θ</span>
+<span class="w">  </span><span class="nx">fitted</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span><span class="w">          </span><span class="c1">// [o][t] = Σ_k contributions[k][o][t]</span>
+<span class="w">  </span><span class="nx">residual</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span><span class="w">        </span><span class="c1">// [o][t] = z[o][t] − fitted[o][t]</span>
+<span class="w">  </span><span class="nx">z</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span><span class="w">               </span><span class="c1">// the input paths</span>
+<span class="w">  </span><span class="nx">lambda</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">rank</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">rows</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span>
+<span class="w">  </span><span class="nx">regime</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;exact-fit&#39;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s1">&#39;residual-able&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><code>rows</code> is <code>q·H</code>, <code>rank</code> is <code>thetaRank(Θ)</code> on the unweighted matrix, and <code>regime</code> is <code>'exact-fit'</code> when
+<code>rank ≥ rows</code> and <code>'residual-able'</code> otherwise. The rank threshold is not delicate: the full-rank models
+on the shipped menu have <code>Θ</code> condition <code>≲ 1e2</code> while <code>CA_LS07</code> sits at about <code>3e17</code>, some twenty orders
+of magnitude apart.</p>
+<blockquote>
+<p><strong>Remark 1 (The budget rule, and the observables that do not raise it).</strong> <em>At <code>q</code> watched observables
+at most <code>q</code> units may be named. <code>decompose</code> throws a message containing the word "budget" when
+<code>K &gt; q</code>, and the drawer disables every un-named chip once the budget is reached. The rule comes from
+criterion (e) of <code>bench_simple_decomp.m</code>: SW07 at its native seven observables with its seven usable
+shocks is fully identified, rank 84/84, noiseless recovery <code>3.6e-15</code>. Adding an observable raises the
+budget by one, which is why <code>dy</code>, <code>pinfobs</code> and <code>robs</code> (SW07) and <code>gdp_obs</code>, <code>inflation_obs</code> and
+<code>Re_obs</code> (CMR14) are excluded from the addable list: each is an invertible linear transform of an
+observable already watched, so it would raise the budget while buying no new rank, and the
+identification the rule promises would be fictitious. This is pinned against the data rather than
+against a curated list — test v3-7 requires each of the four legitimate SW07 addables to buy exactly
+<code>H = 12</code> new rank and each of the three excluded transforms to buy exactly zero, alone and together.</em></p>
+<p><strong>Remark 2 (Collinear units are read jointly, not separately).</strong> <em>A pair of shocks whose
+unit-normalised stacked three-observable <code>H = 12</code> response paths satisfy <code>|cos| &gt; 0.95</code> is flagged at
+build time and shipped in the index; the drawer warns whenever both members are named, quoting the
+measured <code>|cos|</code>. The split of the contribution within such a pair is not identified — the solver
+returns the minimum-norm split, which is a convention, not a finding — and naming both members can
+break same-model recovery outright. <code>useAllShockSelection</code> therefore skips the partner of any shock
+already picked, and the shipped "Use all" seven for CMR14 recovers far inside the criterion; test
+v2-2 pins the greedy set at <code>≤ 1e-6</code>. Hand-picking a collinear pair remains possible under
+Customize, with the warning. Read a flagged pair as one object.</em></p>
+<p><strong>Remark 3 (The class view is licensed on three coordinates, not one).</strong> <em><code>classViewLicensed(model,
+observableKeys, namedShocks)</code> returns true only when the model is <code>US_SW07</code>, the watched observables
+include all of <code>{output, inflationq, interest, dc, dinve, dw, labobs}</code>, and the named shocks include
+all of <code>{interest_, eb, fiscal_, eqs, ea, epinf, ew}</code>. <code>bench_class_recovery.m</code> held all three fixed
+— its passing row is <code>q = 7, K = 7</code> — and that is the only cell of its five-model, two-solver grid
+that passes both gates under the shipped colnorm solver, with a perfect diagonal attribution matrix
+(Monetary/Demand/Supply each 100%, 0% leakage). Un-naming a single class member revokes the licence,
+because the missing shock's energy is redistributed over the classes that remain, which is exactly
+what the off-class-leakage criterion measures. The third argument is required rather than optional so
+that a caller who forgets it gets a compile error. Test v3-3 asserts <code>CLASS_VIEW_OBSERVABLES</code> and
+<code>CLASS_VIEW_SHOCKS</code> against literal bench coordinates, with a negative case for every one of the
+seven droppable shocks, so widening either constant turns the test red.</em></p>
+<p><strong>Remark 4 (Cluster members are chained, not mutually parallel).</strong> <em>A cluster is a connected
+component of the <code>|cos| &gt; 0.95</code> graph. Collinearity is not transitive, so two members of the same
+component can sit well below the threshold against each other; they are linked through a chain of
+collinear neighbours. <code>clusterCompositeIRF</code> therefore returns the genuine first principal component of
+the member set — 200 power iterations on <code>Σ uuᵀ</code>, seeded from the largest-norm member, unit-normalised,
+sign fixed by a positive projection on that member — and not a proxy for an already-parallel bundle.
+Never describe cluster members as pairwise near-parallel.</em></p>
+<p><strong>Remark 5 (An exact-fit residual is zero by construction).</strong> <em>When <code>rank ≥ rows</code> the named units span
+the observation space and the residual vanishes identically. That is arithmetic, not evidence that the
+shocks explain the path. The residual becomes a test only in the <code>'residual-able'</code> regime — which on
+the shipped menu means a model whose named columns cannot span the <code>q·H</code> rows at all (<code>US_FRB08</code>, with
+two usable shocks; <code>CA_LS07</code>, left with two once the greedy selection skips its collinear partner), or a
+configuration in which the user has added observables without naming more shocks.</em></p>
+</blockquote>
+<h3 id="constants">Constants<a class="headerlink" href="#constants" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DRIVERS_H</code></td>
+<td><code>12</code></td>
+<td>decomposition horizon in quarters, always, regardless of the app's display horizon</td>
+</tr>
+<tr>
+<td><code>RIDGE_LAMBDA_SCALE</code></td>
+<td><code>1e-8</code></td>
+<td><code>λ = RIDGE_LAMBDA_SCALE · mean(diag G)</code>; the validated value — do not tune</td>
+</tr>
+<tr>
+<td><code>REFINE_STEPS</code></td>
+<td><code>2</code></td>
+<td>iterative-refinement sweeps on the factored ridge system</td>
+</tr>
+<tr>
+<td><code>COMMON_OBSERVABLES</code></td>
+<td><code>['output','inflationq','interest']</code></td>
+<td>the three locked observables every menu model must expose</td>
+</tr>
+<tr>
+<td><code>CLASS_VIEW_OBSERVABLES</code></td>
+<td>the seven SW07 observables</td>
+<td>the bench's observable coordinate (Remark 3)</td>
+</tr>
+<tr>
+<td><code>CLASS_VIEW_SHOCKS</code></td>
+<td><code>interest_, eb, fiscal_, eqs, ea, epinf, ew</code></td>
+<td>the bench's shock coordinate (Remark 3)</td>
+</tr>
+<tr>
+<td><code>SW07_NATIVE_MAP</code> / <code>CMR14_NATIVE_MAP</code></td>
+<td>see below</td>
+<td>measured BVAR-panel construction of each native observable</td>
+</tr>
+<tr>
+<td><code>NATIVE_OBS_BY_MODEL</code></td>
+<td><code>{ US_SW07, US_CMR14 }</code></td>
+<td>the only two models with a measured native mapping</td>
+</tr>
+</tbody>
+</table>
+<h3 id="units-the-bvar-panel-into-observable-space">Units — the BVAR panel into observable space<a class="headerlink" href="#units-the-bvar-panel-into-observable-space" title="Permanent link">&para;</a></h3>
+<p>The input is the active scenario's <strong>level deviation</strong> from baseline, <code>[t][j]</code>, in smoother level space
+(<code>100·log</code> for <code>log</code> variables, native units for <code>lin</code> ones). The long-run drift translates baseline and
+scenario rigidly, so it cancels in the deviation by construction. The three locked observables are
+measured as follows, and the factors are read off the shipped <code>US_SW07/SW.json</code>, which carries both the
+MMB common block and SW07's native observables:</p>
+<table>
+<thead>
+<tr>
+<th>Model observable</th>
+<th>Built from the BVAR panel as</th>
+<th>US column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>output</code></td>
+<td>GDP level deviation (<code>100·log</code>), identity</td>
+<td><code>GDPH</code></td>
+</tr>
+<tr>
+<td><code>inflationq</code></td>
+<td><code>4·(p_t − p_{t−1})</code> of the price-level deviation, with <code>p_{−1} = 0</code></td>
+<td><code>JGDP</code></td>
+</tr>
+<tr>
+<td><code>interest</code></td>
+<td>policy-rate deviation, annualised, identity — <strong>no division by 4</strong></td>
+<td><code>POLRATE</code></td>
+</tr>
+</tbody>
+</table>
+<p>Test (4) in <code>drivers-decomp.test.ts</code> checks, on every shock and every horizon with a non-trivial
+response, that <code>inflationq/pinfobs = 4.000</code> and <code>interest/robs = 4.000</code> to better than <code>1e-9</code>; test v3-6
+pins the panel-side arithmetic against hand-computed expectations, including the <code>p_{−1} = 0</code> convention
+and the zero-fill for a missing quarter.</p>
+<p>Added native observables, all factor 1 on the BVAR side, all differences taken with <code>deviation_{−1} = 0</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Native observable</th>
+<th>Built from</th>
+<th>Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dc</code> / <code>consumption_obs</code> — Consumption (Δ)</td>
+<td><code>Δ(CH dev)</code></td>
+<td>SW07 / CMR14</td>
+</tr>
+<tr>
+<td><code>dinve</code> / <code>investment_obs</code> — Investment (Δ)</td>
+<td><code>Δ(FNH dev)</code></td>
+<td>SW07 / CMR14</td>
+</tr>
+<tr>
+<td><code>dw</code> / <code>wage_obs</code> — Real wage (Δ)</td>
+<td><code>Δ((LXBC − JGDP) dev)</code></td>
+<td>SW07 / CMR14</td>
+</tr>
+<tr>
+<td><code>labobs</code> / <code>hours_obs</code> — Hours (level)</td>
+<td><code>LANAGRA dev</code>, level</td>
+<td>SW07 / CMR14</td>
+</tr>
+</tbody>
+</table>
+<p>The CMR14 conventions were measured from the shipped <code>US_CMR14/SW.json</code> and are regression-pinned in
+test v2-3: <code>gdp_obs = Δ(output)</code> exactly for every non-trend shock, which anchors the file in percent
+quarterly log growth; <code>consumption_obs</code>, <code>investment_obs</code> and <code>wage_obs</code> each carry exactly the same
+<code>1.0</code> loading on <code>log_muzstar</code> that the percent-anchored <code>gdp_obs</code> does, which fixes them in the same
+units (their Δ-term factors, 0.6366, 1.2526 and 0.5647, are internal model-variable scalings and are
+irrelevant to the data side); <code>wage_obs</code> is the <strong>real</strong> wage; and <code>hours_obs = 0.01·lhours</code> exactly,
+the same <code>0.01</code> that links <code>output</code> to <code>ly</code>, so it is a percent level deviation.</p>
+<p>Availability is a data question, not a configuration one. The native mode needs the spec columns <code>CH</code>,
+<code>FNH</code>, <code>LXBC</code>, <code>JGDP</code> and <code>LANAGRA</code>; only the US bloc ships all five. On every other bloc
+<code>nativeObservablePath</code> returns <code>null</code>, the drawer runs at three observables, the budget is 3, and the
+class view is unavailable.</p>
+<h3 id="observable-main-panel-display-space">Observable → main-panel display space<a class="headerlink" href="#observable-main-panel-display-space" title="Permanent link">&para;</a></h3>
+<p>Every observable maps into the main panel's display space through a <strong>linear</strong> operator — either a gain
+<code>scale·v_t</code> or a scaled first difference <code>scale·(v_t − v_{t−1})</code> with <code>v_{−1} = 0</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">ObsDisplaySpec</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">op</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;gain&#39;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s1">&#39;diff&#39;</span><span class="p">;</span><span class="w"> </span><span class="nx">scale</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">colIdx</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">minusIdx?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">unit</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">}</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">obsDisplaySpec</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">common</span><span class="o">:</span><span class="w"> </span><span class="kt">CommonSeriesIdx</span><span class="p">,</span><span class="w"> </span><span class="nx">specIds</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[],</span><span class="w"> </span><span class="nx">model</span><span class="o">?</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">ObsDisplaySpec</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">toDisplayDev</span><span class="p">(</span><span class="nx">spec</span><span class="o">:</span><span class="w"> </span><span class="kt">ObsDisplaySpec</span><span class="p">,</span><span class="w"> </span><span class="nx">v</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[])</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[]</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">obsDisplaySeries</span><span class="p">(</span><span class="nx">spec</span><span class="o">:</span><span class="w"> </span><span class="kt">ObsDisplaySpec</span><span class="p">,</span><span class="w"> </span><span class="nx">rows</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][],</span><span class="w"> </span><span class="nx">H</span><span class="o">?</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[]</span>
+</code></pre></div>
+<p><code>obsDisplaySpec</code> returns <code>null</code> when the key or a needed spec column cannot be resolved. <code>toDisplayDev</code>
+applies the operator to an observable-space deviation path; <code>obsDisplaySeries</code> reads the panel's own
+baseline or history rows for the same observable (subtracting <code>minusIdx</code> where the panel series is a
+difference of two columns).</p>
+<table>
+<thead>
+<tr>
+<th>Observable</th>
+<th>Operator</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>output</code></td>
+<td><code>diff</code>, scale 4</td>
+<td>% q/q ann.</td>
+</tr>
+<tr>
+<td><code>inflationq</code></td>
+<td><code>gain</code>, scale 1 (already <code>4·Δp</code>)</td>
+<td>% q/q ann.</td>
+</tr>
+<tr>
+<td><code>interest</code></td>
+<td><code>gain</code>, scale 1</td>
+<td>%</td>
+</tr>
+<tr>
+<td>native <code>diff</code>-kind (<code>dc</code>, <code>dinve</code>, <code>dw</code>, <code>consumption_obs</code>, <code>investment_obs</code>, <code>wage_obs</code>)</td>
+<td><code>gain</code>, scale <code>4/s = 4</code></td>
+<td>% q/q ann.</td>
+</tr>
+<tr>
+<td>native <code>level</code>-kind (<code>labobs</code>, <code>hours_obs</code>)</td>
+<td><code>diff</code>, scale <code>4/s = 4</code></td>
+<td>% q/q ann.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Display-unit additivity is the load-bearing invariant here.</strong> Because the operator is linear,
+contributions, residual and input transform additively, so the stacked bars plus the residual plus the
+baseline reproduce the scenario line exactly. Test v2-1a pins that identity at <code>1e-8</code> for raw shocks and
+test v3-2 pins it at <code>1e-8</code> for aggregated class bars. <code>dw</code> / <code>wage_obs</code> subtract the deflator column, so
+the panel series is compensation growth minus deflator growth.</p>
+<h3 id="numerical-thresholds-driversdecompts">Numerical thresholds (driversDecomp.ts)<a class="headerlink" href="#numerical-thresholds-driversdecompts" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Value</th>
+<th>Site</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ridge <code>λ</code></td>
+<td><code>1e-8 · mean(diag G)</code></td>
+<td><code>decompose</code></td>
+<td>conditions the normal equations; removed to <code>O(1e-15)</code> by the two refinement sweeps</td>
+</tr>
+<tr>
+<td>Column-norm floor</td>
+<td><code>1e-12</code></td>
+<td><code>decompose</code></td>
+<td>a near-zero response column keeps scale 1, so it stays inert rather than being amplified</td>
+</tr>
+<tr>
+<td>Rank pivot tolerance</td>
+<td><code>1e-12 · max(diag)</code></td>
+<td><code>thetaRank</code></td>
+<td>full-rank vs rank-deficient models are ~20 orders of magnitude apart in conditioning</td>
+</tr>
+<tr>
+<td>Collinearity threshold</td>
+<td><code>0.95</code></td>
+<td>index build (<code>index.collinearThreshold</code>)</td>
+<td><code>\|cos\|</code> between unit-normalised stacked 3-obs <code>H = 12</code> paths</td>
+</tr>
+<tr>
+<td>Usable-shock floor</td>
+<td><code>1e-9</code></td>
+<td>index build</td>
+<td>a shock whose stacked 3-obs path has smaller norm is dropped and named (SW07 <code>em</code>, CMR14 <code>e_term</code>)</td>
+</tr>
+<tr>
+<td>Licence criterion</td>
+<td><code>1e-6</code></td>
+<td>benches + build-time scan</td>
+<td>worst contribution-path recovery error a configuration may show</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-1-decompose-a-us-scenario-at-the-licensed-configuration">Example 1 (Decompose a US scenario at the licensed configuration)<a class="headerlink" href="#example-1-decompose-a-us-scenario-at-the-licensed-configuration" title="Permanent link">&para;</a></h3>
+<p><em>We decompose the displayed US scenario through the SW07 lens at the one configuration the class view is
+licensed in: the three locked observables plus the four addable natives, and all seven usable shocks
+named. We proceed in steps. First we measure the observable rows off the level-deviation panel, then we
+call the solver. The seven-observable set makes the system square at <code>q·H = 84</code>, so the regime comes back
+<code>exact-fit</code> and the residual is identically zero.</em></p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">DRIVERS_H</span><span class="p">,</span><span class="w"> </span><span class="nx">decompose</span><span class="p">,</span><span class="w"> </span><span class="nx">commonObservablePaths</span><span class="p">,</span><span class="w"> </span><span class="nx">nativeObservablePath</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">NATIVE_OBS_BY_MODEL</span><span class="p">,</span><span class="w"> </span><span class="nx">meToWeight</span><span class="p">,</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">DecomposeObservable</span><span class="p">,</span>
+<span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@/lib/compute/driversDecomp&#39;</span>
+
+<span class="c1">// levelDev: [t][j] scenario-minus-baseline in smoother level space (100·log for log vars)</span>
+<span class="c1">// specIds:  the bloc&#39;s spec variable ids, in column order</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">idx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">outputIdx</span><span class="o">:</span><span class="w"> </span><span class="kt">cGDPH</span><span class="p">,</span><span class="w"> </span><span class="nx">inflationIdx</span><span class="o">:</span><span class="w"> </span><span class="kt">cJGDP</span><span class="p">,</span><span class="w"> </span><span class="nx">rateIdx</span><span class="o">:</span><span class="w"> </span><span class="kt">cPOLRATE</span><span class="w"> </span><span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">common</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">commonObservablePaths</span><span class="p">(</span><span class="nx">levelDev</span><span class="p">,</span><span class="w"> </span><span class="nx">idx</span><span class="p">,</span><span class="w"> </span><span class="nx">DRIVERS_H</span><span class="p">)</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">rows</span><span class="o">:</span><span class="w"> </span><span class="kt">DecomposeObservable</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;output&#39;</span><span class="p">,</span><span class="w">     </span><span class="nx">irfField</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;output&#39;</span><span class="p">,</span><span class="w">     </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="kt">common.output</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;inflationq&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">irfField</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;inflationq&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="kt">common.inflationq</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;interest&#39;</span><span class="p">,</span><span class="w">   </span><span class="nx">irfField</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;interest&#39;</span><span class="p">,</span><span class="w">   </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="kt">common.interest</span><span class="w"> </span><span class="p">},</span>
+<span class="p">]</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">NATIVE_OBS_BY_MODEL</span><span class="p">[</span><span class="s1">&#39;US_SW07&#39;</span><span class="p">].</span><span class="nx">map</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">k</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;dc&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;dinve&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;dw&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;labobs&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nativeObservablePath</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span><span class="w"> </span><span class="nx">levelDev</span><span class="p">,</span><span class="w"> </span><span class="nx">specIds</span><span class="p">,</span><span class="w"> </span><span class="nx">DRIVERS_H</span><span class="p">,</span><span class="w"> </span><span class="nx">map</span><span class="p">)</span><span class="w">   </span><span class="c1">// null off the US bloc</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">p</span><span class="p">)</span><span class="w"> </span><span class="nx">rows</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="kt">k</span><span class="p">,</span><span class="w"> </span><span class="nx">irfField</span><span class="o">:</span><span class="w"> </span><span class="kt">k</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="kt">p</span><span class="p">,</span><span class="w"> </span><span class="nx">weight</span><span class="o">:</span><span class="w"> </span><span class="kt">meToWeight</span><span class="p">(</span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="p">})</span>
+<span class="p">}</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">decompose</span><span class="p">(</span><span class="nx">irf</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;interest_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;eb&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;fiscal_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;eqs&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;ea&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;epinf&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;ew&#39;</span><span class="p">],</span><span class="w"> </span><span class="nx">rows</span><span class="p">,</span><span class="w"> </span><span class="nx">DRIVERS_H</span><span class="p">)</span>
+<span class="c1">// d.rows === 84, d.rank === 84  ⇒  d.regime === &#39;exact-fit&#39;, d.residual ≡ 0</span>
+<span class="c1">// d.contributions[k][o][t] : unit k&#39;s contribution to observable o at quarter t</span>
+<span class="c1">// d.eps[k * DRIVERS_H + τ]  : the recovered shock sequence</span>
+</code></pre></div>
+<p>Naming an eighth unit here would throw: the budget is seven (Remark 1).</p>
+<h3 id="example-2-aggregate-into-classes-and-check-the-display-identity">Example 2 (Aggregate into classes and check the display identity)<a class="headerlink" href="#example-2-aggregate-into-classes-and-check-the-display-identity" title="Permanent link">&para;</a></h3>
+<p><em>We take the decomposition of Example 1, aggregate its seven shocks into the Monetary, Demand and Supply
+classes of the shipped class map, and transform the class paths into the units the Output panel draws.
+The check at the end is the additivity invariant the drawer's chart depends on.</em></p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">classViewLicensed</span><span class="p">,</span><span class="w"> </span><span class="nx">aggregateContributions</span><span class="p">,</span><span class="w"> </span><span class="nx">obsDisplaySpec</span><span class="p">,</span><span class="w"> </span><span class="nx">toDisplayDev</span><span class="p">,</span>
+<span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@/lib/compute/driversDecomp&#39;</span>
+
+<span class="nx">classViewLicensed</span><span class="p">(</span><span class="s1">&#39;US_SW07&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">d</span><span class="p">.</span><span class="nx">observableKeys</span><span class="p">,</span><span class="w"> </span><span class="nx">d</span><span class="p">.</span><span class="nx">shocks</span><span class="p">)</span><span class="w">      </span><span class="c1">// true; false if any of the seven is dropped</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">classMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">index</span><span class="p">.</span><span class="nx">shockClasses</span><span class="o">!</span><span class="p">.</span><span class="nx">models</span><span class="p">[</span><span class="s1">&#39;US_SW07&#39;</span><span class="p">]</span><span class="w">         </span><span class="c1">// class_maps.json, copied verbatim</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">groups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Monetary&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Demand&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Supply&#39;</span><span class="p">].</span><span class="nx">map</span><span class="p">((</span><span class="nx">c</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">c</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="kt">c</span><span class="p">,</span><span class="w"> </span><span class="nx">members</span><span class="o">:</span><span class="w"> </span><span class="kt">classMap</span><span class="p">[</span><span class="nx">c</span><span class="p">]</span><span class="w"> </span><span class="p">}))</span>
+<span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">groups</span><span class="o">:</span><span class="w"> </span><span class="kt">kept</span><span class="p">,</span><span class="w"> </span><span class="nx">contributions</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">aggregateContributions</span><span class="p">(</span><span class="nx">d</span><span class="p">,</span><span class="w"> </span><span class="nx">groups</span><span class="p">)</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">spec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">obsDisplaySpec</span><span class="p">(</span><span class="s1">&#39;output&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">idx</span><span class="p">,</span><span class="w"> </span><span class="nx">specIds</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;US_SW07&#39;</span><span class="p">)</span><span class="o">!</span><span class="w">   </span><span class="c1">// { op: &#39;diff&#39;, scale: 4, … }</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">bars</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">contributions</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">c</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">toDisplayDev</span><span class="p">(</span><span class="nx">spec</span><span class="p">,</span><span class="w"> </span><span class="nx">c</span><span class="p">[</span><span class="mf">0</span><span class="p">]))</span><span class="w">   </span><span class="c1">// observable 0 = output</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">resid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">toDisplayDev</span><span class="p">(</span><span class="nx">spec</span><span class="p">,</span><span class="w"> </span><span class="nx">d</span><span class="p">.</span><span class="nx">residual</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span>
+<span class="c1">// Σ_g bars[g][t] + resid[t] === toDisplayDev(spec, d.z[0])[t]   to 1e-8  (test v3-2)</span>
+</code></pre></div>
+<h3 id="example-3-decompose-an-frbus-path-through-collinearity-clusters">Example 3 (Decompose an FRB/US path through collinearity clusters)<a class="headerlink" href="#example-3-decompose-an-frbus-path-through-collinearity-clusters" title="Permanent link">&para;</a></h3>
+<p><em>The two 54-shock FRB/US lenses are not separable shock by shock in the three common observables, so the
+drawer decomposes their empirical collinearity clusters instead. We build the composite columns, name the
+build-time validated default triple, and solve at three observables, where the budget is three. Naming a
+cluster names one column, so the budget counts clusters and not members.</em></p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">buildClusterIRFs</span><span class="p">,</span><span class="w"> </span><span class="nx">decompose</span><span class="p">,</span><span class="w"> </span><span class="nx">DRIVERS_H</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@/lib/compute/driversDecomp&#39;</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">meta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">index</span><span class="p">.</span><span class="nx">models</span><span class="p">[</span><span class="s1">&#39;US_FRB22&#39;</span><span class="p">]</span><span class="w">                       </span><span class="c1">// 54 shocks, 109 collinear pairs, 23 clusters</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">clusterIrf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">buildClusterIRFs</span><span class="p">(</span><span class="nx">irf</span><span class="p">,</span><span class="w"> </span><span class="nx">meta</span><span class="p">.</span><span class="nx">clusters</span><span class="o">!</span><span class="p">,</span><span class="w"> </span><span class="nx">DRIVERS_H</span><span class="p">)</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">decompose</span><span class="p">(</span><span class="nx">clusterIrf</span><span class="p">,</span><span class="w"> </span><span class="nx">meta</span><span class="p">.</span><span class="nx">defaultNamed</span><span class="o">!</span><span class="p">,</span><span class="w"> </span><span class="nx">rows3</span><span class="p">,</span><span class="w"> </span><span class="nx">DRIVERS_H</span><span class="p">)</span>
+<span class="c1">// meta.defaultNamed === [&#39;hqlfpr&#39;, &#39;interest_&#39;, &#39;pcer_l&#39;] — 19 of the 54 shocks covered</span>
+<span class="c1">// rows3 = the three locked observables only ⇒ rows 36, rank 36, regime &#39;exact-fit&#39;</span>
+</code></pre></div>
+<p>The <code>hqlfpr</code> cluster contains <code>fiscal_</code>, so on this lens the fiscal shock is not separately nameable in
+cluster mode. Test v3-4 pins the default triple, cross-checks the shipped cluster partition against the
+shipped pair list as a set of sets, and confirms rank 36/36 on the three composite columns.</p>
+<h3 id="what-the-tests-pin">What the tests pin<a class="headerlink" href="#what-the-tests-pin" title="Permanent link">&para;</a></h3>
+<p>The 26 licence tests live in <code>app/src/__tests__/compute/drivers-decomp.test.ts</code> (4),
+<code>drivers-decomp-v2.test.ts</code> (7) and <code>drivers-decomp-v3.test.ts</code> (15), all in the fast <code>npm test</code> suite.
+The engine-side invariants they carry: exact same-model recovery at <code>≤ 1e-6</code> for <code>UK_SM11</code> at three
+observables and for <code>US_SW07</code> at seven, through both the plain and the colnorm solver (tests 1, 2, v3-1a,
+v3-1b); the budget-rule throw (test 3); the measured <code>4.000</code> unit factors (test 4) and the CMR14
+conventions (v2-3); display-unit additivity at <code>1e-8</code> for shocks (v2-1a) and classes (v3-2); the colnorm
+equal-split signature (v3-1c); the residual-able regime and an out-of-span residual share (v2-4, v2-5);
+the class licence on all three coordinates with a negative case per droppable shock (v3-3); the cluster
+partition and the validated default naming (v3-4); the index's <code>shockClasses</code> being <code>class_maps.json</code>
+verbatim, every shipped census file matching its recorded <code>sha256</code>, and <code>index.horizonQuarters ===
+DRIVERS_H</code> (v3-5); the panel-side unit arithmetic (v3-6); and the rank arithmetic behind the addable /
+excluded observable split (v3-7).</p>
+<hr />
+<h2 id="datadatamanifestts-the-data-pack-400"><code>data/dataManifest.ts</code> — the data pack (4.0.0)<a class="headerlink" href="#datadatamanifestts-the-data-pack-400" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> The one place the tool touches data files. It reads the pack's <code>manifest.json</code>,
+checks it can use it, and serves every other file by its logical name, verified against the manifest.
+This is what keeps the data and the estimated model separate from the tool: nothing in the bundle
+assumes a particular pack.</p>
+<table>
+<thead>
+<tr>
+<th>Export</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>loadManifest()</code> / <code>getManifest()</code></td>
+<td>load once (no-store), then: compatibility gate (<code>schemaVersion</code> major 2, minor ≥ the supported one; app version ≥ <code>minToolVersion</code>) → for an update pack, check every <code>inherit</code> file against the app's built-in manifest → <code>setPanelDates(manifest)</code>. Failures throw (<code>IncompatibleDataError</code> for the gate).</td>
+</tr>
+<tr>
+<td><code>fetchVerified(logical)</code></td>
+<td>bytes of one file, checked for byte length and SHA-256 (of the compressed bytes for <code>.gz</code>); content-hash cache-busting on the web</td>
+</tr>
+<tr>
+<td><code>fetchJSON&lt;T&gt;(logical)</code> / <code>fetchGzJSON&lt;T&gt;(logical)</code></td>
+<td>verified + parsed (gzip via <code>DecompressionStream</code>; a browser without it gets a clear error)</td>
+</tr>
+<tr>
+<td><code>hasFile(logical)</code></td>
+<td>is the file in the pack (for optional files)</td>
+</tr>
+<tr>
+<td><code>getDataSource()</code> / <code>isTauriRuntime()</code> / <code>EXTERNAL_PACK_DIRNAME</code></td>
+<td><code>'web'</code> (<code>&lt;base path&gt;/data</code>, also the desktop's built-in pack) or <code>'external'</code> (<code>&lt;appDataDir&gt;/gmaps-data</code>, used only when it holds a <code>manifest.json</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>The manifest's own fields are in <a href="../DATA_SCHEMA/#11-manifestjson-the-data-pack"><code>DATA_SCHEMA.md</code> §1.1</a>.
+The pack is built and checked offline by <code>app/scripts/pack-build.mjs</code> and <code>pack-verify.mjs</code> (§ Build &amp;
+test); the user/maintainer guide is <a href="../UPDATE_MANUAL/"><code>UPDATE_MANUAL.md</code></a>.</p>
+<h2 id="datests-panel-dating-from-the-pack"><code>dates.ts</code> — panel dating from the pack<a class="headerlink" href="#datests-panel-dating-from-the-pack" title="Permanent link">&para;</a></h2>
+<p><code>setPanelDates(manifest)</code> sets the panel's last historical quarter (<code>panel.lastHistQuarter</code>) and each
+economy's own quarter where it differs, then checks every seasonal economy's declared <code>qoyNext</code> against
+<code>qoyNextOf</code> (mismatch ⇒ throw). <code>lastHistOf(country)</code> <strong>throws if called before initialisation</strong> —
+there is deliberately no compiled fallback date (a stale compiled date mis-dated the charts in Sep 2026).
+<code>qoyNextOf</code>, <code>offsetLabel</code>, <code>offsetYQ</code> keep their signatures. Tests initialise the dates in a setup
+file; Node scripts initialise them from the pack manifest.</p>
 <h2 id="dataloaderts"><code>data/loader.ts</code><a class="headerlink" href="#dataloaderts" title="Permanent link">&para;</a></h2>
-<p><strong>Responsibility.</strong> Per-country single-bloc JSON fetch for the standalone (non-GVAR) views, plus
-the DSGE catalog/IRF loaders. Fetch base is <code>${NEXT_PUBLIC_BASE_PATH || ''}/data</code>.</p>
+<p><strong>Responsibility.</strong> Per-country single-bloc JSON fetch, plus the DSGE catalog/IRF loaders. Every
+data file goes through <code>dataManifest.ts</code> (<code>loadJSON</code> = <code>fetchJSON</code>), so it is hash-checked and read
+from the active source.</p>
 <table>
 <thead>
 <tr>
@@ -3301,31 +4668,77 @@ the DSGE catalog/IRF loaders. Fetch base is <code>${NEXT_PUBLIC_BASE_PATH || ''}
 <tbody>
 <tr>
 <td><code>loadJSON&lt;T&gt;(path)</code></td>
-<td><code>fetch</code> + parse; throws on non-OK</td>
+<td><code>dataManifest.fetchJSON(path)</code>: look up, fetch, verify, parse; throws on a missing or mismatched file</td>
 </tr>
 <tr>
 <td><code>loadBVARData(country)</code></td>
-<td><code>{ spec, companion, baseline, historical, companionDraws: null, baselineLevels, historicalLevels, fiscalMeta }</code>. <code>baseline_levels</code> / <code>historical_levels</code> / <code>fiscal_meta</code> are optional (404 → null). <code>companion_draws</code> is <strong>not</strong> fetched here (loaded lazily).</td>
+<td><code>{ spec, companion, baseline, historical, companionDraws: null, baselineLevels, historicalLevels, fiscalMeta, externalMeta }</code>. <code>baseline_levels</code> / <code>historical_levels</code> / <code>fiscal_meta</code> / <code>external_meta</code> are optional (missing → null). <code>companion_draws</code> is <strong>not</strong> fetched here (loaded lazily).</td>
 </tr>
 <tr>
-<td><code>loadCompanionDraws(country)</code></td>
-<td>the heavy draws file (US <code>beta</code> ~2M doubles). <strong>Converts <code>beta</code>/<code>sigma</code> from boxed <code>number[]</code> to <code>Float64Array</code> once</strong> (faster indexing + memcpy into the worker). 404 → null.</td>
+<td><code>loadCompanionDraws(country, expect?)</code></td>
+<td>the heavy draws file, <code>companion_draws.json.gz</code> (verified + gunzipped; no plain-JSON fallback). <strong>Converts <code>beta</code>/<code>sigma</code> from boxed <code>number[]</code> to <code>Float64Array</code> once</strong> (faster indexing + memcpy into the worker). A failure → null; a shape that does not match the mean companion is warned and left to the caller's band guard.</td>
 </tr>
 <tr>
 <td><code>loadDSGECatalog()</code> / <code>loadModelIRFs(modelName, ruleName)</code></td>
 <td>DSGE catalog + per-rule IRFs</td>
 </tr>
+<tr>
+<td><code>loadDriversIndex()</code></td>
+<td><code>Promise&lt;DriversIndex&gt;</code> — the Drivers model menu, <code>dsge/census/index.json</code></td>
+</tr>
+<tr>
+<td><code>loadDriversModelIRFs(file)</code></td>
+<td><code>Promise&lt;any&gt;</code> — one menu model's IRF file, <code>file</code> being the index entry's site-absolute <code>file</code> field (the leading <code>/data/</code> is stripped before the fetch)</td>
+</tr>
 </tbody>
 </table>
 <p>The draws cache is a <strong>bounded LRU</strong> (<code>_DRAWS_CACHE_MAX = 4</code>): each <code>companion_draws</code> is
-~7–26 MB, so browsing all ~50 economies would otherwise retain hundreds of MB; eviction is
+~7–26 MB, so browsing all 52 economies would otherwise retain hundreds of MB; eviction is
 transparent (a miss re-fetches).</p>
+<h3 id="the-drivers-index-driversindex-driversmodelmeta">The Drivers index (<code>DriversIndex</code> / <code>DriversModelMeta</code>)<a class="headerlink" href="#the-drivers-index-driversindex-driversmodelmeta" title="Permanent link">&para;</a></h3>
+<p><code>loadDriversIndex</code> fetches the menu the Drivers drawer is built from — one file, 36 KB, produced by
+<code>app/scripts/build_drivers_index.mjs</code> (below). The top level carries <code>schema</code>
+(<code>"gmaps-drivers-index/1"</code>), <code>horizonQuarters</code> (12, asserted equal to <code>DRIVERS_H</code> by test v3-5),
+<code>commonObservables</code> (the three locked keys), <code>collinearThreshold</code> (0.95), the verbatim copy of
+<code>pipeline/_shockbench/class_maps.json</code> under <code>shockClasses</code>, and <code>models</code>. Two fields the generator
+writes are not declared on the TS interface and are simply ignored: <code>generated</code> (the build date) and
+<code>note</code> (a prose provenance line).</p>
+<p>Each <code>models[name]</code> entry is a <code>DriversModelMeta</code>:</p>
+<ul>
+<li><code>file</code> — the site-absolute path the drawer fetches, e.g. <code>/data/dsge/census/UK_SM11.json</code>.</li>
+<li><code>source</code> — the repository path the file came from.</li>
+<li><code>title</code> <em>(optional)</em> — the menu display name; used by the FRB/US entries.</li>
+<li><code>sourceNote</code> <em>(optional)</em> — <code>"MMB rule file"</code> or <code>"MMB census run"</code>.</li>
+<li><code>sha256</code> / <code>sha256Source</code> — the content hash and where it came from:
+  <code>pipeline/census_irfs/MANIFEST.json</code> for the eight census entries, the hash of the shipped
+  <code>SW.json</code> for the four indexed out of the <code>irfs</code> tree. Test v3-5 re-hashes every shipped file.</li>
+<li><code>shocks</code> — the usable shocks: all three common observables present and stacked <code>H = 12</code> norm <code>≥ 1e-9</code>.</li>
+<li><code>dropped</code> — <code>{ shock, reason }</code> for anything excluded; the reasons in use are <code>zero-response</code> and
+  <code>missing-observable</code>. The drawer names them in the lens row rather than hiding them.</li>
+<li><code>hasOutput</code> — whether the model exposes an <code>output</code> observable; a false value disables the menu
+  entry. Every shipped entry is true.</li>
+<li><code>collinearPairs</code> — <code>{ a, b, cos }</code>, <code>cos</code> rounded to six decimals.</li>
+<li><code>menuHidden</code> <em>(optional)</em> — true for <code>US_FRB22_mcap</code> only, which stays in the index because the v2
+  licence fixtures use it.</li>
+<li><code>classMapKey</code> <em>(optional)</em> — the <code>shockClasses.models</code> record to use when it differs from the index
+  key; the three FRB22 entries point at <code>US_FRB22_mcap</code>.</li>
+<li><code>clusters</code> <em>(optional)</em> — <code>{ id, label, members }</code>, present only for <code>US_FRB22</code> and <code>US_FRB22_var</code>.</li>
+<li><code>defaultNamed</code> <em>(optional)</em> — the build-time validated default cluster naming, clustered models only.</li>
+</ul>
+<p><strong>What is fetched when.</strong> The index once per session, on the first drawer open; the chosen model's IRF
+file on model selection, cached per model for the session. Both go through <code>loadJSON</code>, a plain <code>fetch</code>
+with no client-side decompression — unlike <code>companion_draws</code>, these files are not shipped gzipped. The
+default lens therefore costs 36 KB plus a 215 KB IRF file; selecting either 54-shock FRB/US lens costs a
+further ~10.7 MB, which is why the drawer records a per-model fetch failure and offers an explicit
+Retry rather than looping.</p>
 <hr />
 <h2 id="datagvarloaderts"><code>data/gvarLoader.ts</code><a class="headerlink" href="#datagvarloaderts" title="Permanent link">&para;</a></h2>
-<p><strong>Responsibility.</strong> Multi-bloc GVAR bundle fetch + self-configuring topology. Tries every
-candidate bloc in <code>weights_24bloc.json</code> (US first), tolerates 404s, and keeps a bloc iff its spec
-carries <code>block:'row'</code> stars (US always kept as anchor). The qualifying set re-configures the
-solver topology via <code>configureGVARTopology</code>.</p>
+<p><strong>Responsibility.</strong> Multi-bloc GVAR bundle fetch + self-configuring topology, all through the data
+pack. Fetches the trade weights from the pack first, tries every candidate bloc in
+<code>GVAR_BLOC_CANDIDATES</code> (the build-time <code>weights_24bloc.json</code> list, US first; 35 in the deployed pack),
+tolerates missing blocs, and keeps a bloc iff its spec carries <code>block:'row'</code> stars (US always kept).
+The qualifying set re-configures the solver topology via <code>configureGVARTopology</code> with the <strong>fetched</strong>
+weights.</p>
 <table>
 <thead>
 <tr>
@@ -3344,7 +4757,7 @@ solver topology via <code>configureGVARTopology</code>.</p>
 </tr>
 <tr>
 <td><code>loadGVARModels()</code></td>
-<td>fetches the 4 engine files per bloc (<code>companion_mean</code>, <code>historical_levels</code>, <code>baseline_levels</code>, <code>spec</code>) — <strong>not</strong> the heavy <code>companion_draws</code> — plus the 404-tolerant coupling artifact → <code>GVARModelsRaw</code></td>
+<td>fetches the weights, the 4 engine files per bloc (<code>companion_mean</code>, <code>historical_levels</code>, <code>baseline_levels</code>, <code>spec</code>) — <strong>not</strong> the heavy <code>companion_draws</code> — plus the coupling artifact (missing → null) → <code>GVARModelsRaw</code>. Drops the coupling if the manifest says it was built from weights other than those served (<code>gvar.coupling.inputs.weightsSha256</code> ≠ <code>gvar.weights.sha256</code>)</td>
 </tr>
 <tr>
 <td><code>qualifyGVARRaw(raw)</code></td>
@@ -3360,18 +4773,20 @@ solver topology via <code>configureGVARTopology</code>.</p>
 </tr>
 </tbody>
 </table>
-<p><code>loadCouplingArtifact()</code> tries the <strong>gzipped</strong> <code>coupling_default.json.gz</code> first (decompressed via
-the native <code>DecompressionStream</code>, no dependency — the plain JSON exceeds GitHub's 100 MB limit at
-the full panel), then falls back to plain JSON. <code>GVARModelsRaw</code> is plain JSON so it round-trips
-through zustand and the Web Worker.</p>
+<p><code>loadCouplingArtifact()</code> reads the <strong>gzipped</strong> <code>coupling_default.json.gz</code> through <code>fetchGzJSON</code>
+(hash-checked, decompressed via the native <code>DecompressionStream</code> — the plain JSON exceeds GitHub's
+100 MB limit at the full panel); there is no plain-JSON fallback any more. <code>GVARModelsRaw</code> is plain
+JSON so it round-trips through zustand and the Web Worker.</p>
 <hr />
 <h2 id="datacountriests"><code>data/countries.ts</code><a class="headerlink" href="#datacountriests" title="Permanent link">&para;</a></h2>
 <p><strong>Responsibility.</strong> The static country registry backing the dropdown (<code>TopBar</code>). <code>COUNTRIES</code> is a
 <code>CountryEntry[]</code> (<code>{ code, name, group }</code>); <code>group</code> (<code>'core' | 'oecd' | 'em'</code>) is only a coarse
 geographic tag for sorting — <strong>GVAR membership is data-driven</strong> via <code>isGvarCountry</code> /
-<code>GVAR_BLOC_CANDIDATES</code>, not this field. Adding a country = add an entry here and drop its
-<code>app/public/data/bvar/&lt;code&gt;/</code> files. Convenience filters: <code>CORE_COUNTRIES</code>, <code>OECD_COUNTRIES</code>,
-<code>EM_COUNTRIES</code>.</p>
+<code>GVAR_BLOC_CANDIDATES</code>, not this field. 52 entries (AR, IL, RU removed in 2026). This list — with the
+<code>CountryCode</code> union in <code>gvarSolve.ts</code> — is the part of the data that is <strong>still compiled into the
+tool</strong>: a data pack can update these economies but cannot add one, so adding a country = add an entry
+here (a new app version) and ship its <code>app/public/data/bvar/&lt;code&gt;/</code> files in a pack. Convenience
+filters: <code>CORE_COUNTRIES</code>, <code>OECD_COUNTRIES</code>, <code>EM_COUNTRIES</code>.</p>
 <hr />
 <h2 id="conditioneddotyts-optimistic-conditioned-point-dot"><code>conditionedDotY.ts</code> — optimistic conditioned-point dot<a class="headerlink" href="#conditioneddotyts-optimistic-conditioned-point-dot" title="Permanent link">&para;</a></h2>
 <p><strong>Path.</strong> <code>app/src/lib/conditionedDotY.ts</code> (it lives directly under <code>lib/</code>, <strong>not</strong> under <code>lib/compute/</code>).</p>
@@ -3455,9 +4870,9 @@ re-render on every begin or fail to dispatch on end. Tested by <code>gvar-drag-s
 forecast, <strong>keeping the heavy solve off the live drag path</strong>. It owns a module Worker (main-thread
 fallback), a stale-response <code>reqId</code> guard, and two timers (a live debounce + a separate drag-release
 macrotask). The <strong>load-bearing perf fact</strong> (verified in the code, <code>useGvarForecast.ts:279</code>): on the
-live 50-bloc US-endogenous panel <strong>every</strong> mean solve — direct OR full — is <strong>~4571 ms warm /
+then-live US-endogenous panel (measured before the Oct 2026 re-estimation) <strong>every</strong> mean solve — direct OR full — is <strong>~4571 ms warm /
 ~13327 ms cold</strong> (the US-pinned structure misses the shipped <em>empty</em>-<code>pinStructure</code> coupling artifact
-and falls to the dim-2060 Neumann fixed point + one Kalman smoother per coupled bloc).</p>
+and falls to the Neumann fixed point (dim 2180 in the deployed pack) + one Kalman smoother per coupled bloc).</p>
 <p>The drag boundary (<code>useGvarForecast.ts:287</code>):</p>
 <ul>
 <li><strong>While a drag is in progress (<code>isGvarDragging()</code>): ZERO solves fire</strong> — neither value-only nor
@@ -3476,6 +4891,307 @@ and falls to the dim-2060 Neumann fixed point + one Kalman smoother per coupled 
 <p>So the full cross-country fixed point (<code>mode:'full'</code>, hydrated <code>(I−M)⁻¹</code>) fires <strong>only</strong> on the explicit
 Compute / "Solve full GVAR" token bump; everything else is the <code>direct</code> one-hop preview. Pinned by
 <code>gvar-drag-scheduling.test.ts</code>.</p>
+<hr />
+<h2 id="controlsdriversdrawertsx-the-drivers-drawer-experimental"><code>controls/DriversDrawer.tsx</code> — the Drivers drawer (EXPERIMENTAL)<a class="headerlink" href="#controlsdriversdrawertsx-the-drivers-drawer-experimental" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> The user-facing surface of <code>driversDecomp.ts</code>: a fixed right-side overlay, 480 px
+wide, <code>role="dialog"</code>, closed by its × or by Escape, that chooses the lens, decides which path to
+decompose, enforces the naming budget in the interface, draws the stacked contribution chart, and states
+the licence in plain words underneath it.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">DriversDrawer</span><span class="p">({</span><span class="w"> </span><span class="nx">open</span><span class="p">,</span><span class="w"> </span><span class="nx">onClose</span><span class="w"> </span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">open</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span><span class="w"> </span><span class="nx">onClose</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="ow">void</span><span class="w"> </span><span class="p">})</span>
+</code></pre></div>
+<p><code>open</code> and <code>onClose</code> are the only props. The drawer is mounted by <code>ScenarioBar.tsx</code> and stays mounted
+while closed, so <code>open</code> also gates the solve: <code>decompResult</code> returns early when the drawer is closed,
+which matters because <code>driversInput</code> is republished on every drag tick and a closed drawer would
+otherwise re-solve an 84×84 system per frame for a panel rendering nothing. The button that opens it
+lives elsewhere — in <code>ChartGrid</code>'s scenario-action cluster — so the open state lives in the store rather
+than in either component, which avoids a <code>ChartGrid → DriversDrawer → ChartGrid</code> import cycle (the
+drawer imports <code>resolveChartVars</code> from <code>ChartGrid</code>).</p>
+<h3 id="what-publishes-into-it-the-driverspathinput-store-slice">What publishes into it: the <code>DriversPathInput</code> store slice<a class="headerlink" href="#what-publishes-into-it-the-driverspathinput-store-slice" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">DriversPathInput</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">displayed</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="w">       </span><span class="c1">// the deviation of the path the app CURRENTLY DISPLAYS</span>
+<span class="w">  </span><span class="nx">isolated</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="w">        </span><span class="c1">// the isolated single-country (frozen-partner) conditional deviation</span>
+<span class="w">  </span><span class="nx">coupled</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="w">         </span><span class="c1">// the coupled cross-country GVAR deviation for the viewed bloc</span>
+<span class="w">  </span><span class="nx">displayedIsCoupled</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="w">        </span><span class="c1">// true when `displayed` IS the coupled path (reference identity)</span>
+<span class="w">  </span><span class="nx">external</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="w">        </span><span class="c1">// the external-forecast combination deviation, or null</span>
+<span class="w">  </span><span class="nx">baselineDisplay</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="c1">// baseline DISPLAY rows [t][j], exactly as the panels draw them</span>
+<span class="w">  </span><span class="nx">histDisplay</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="w">     </span><span class="c1">// the panels&#39; trailing 3-quarter history tail, same convention</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The first five are <code>[t][j]</code> in smoother <strong>level</strong> space — <code>100·log</code> for <code>log</code> variables, native units
+for <code>lin</code> ones — which is the space the Drivers unit mappings were measured in; the last two are in
+main-panel <strong>display</strong> space (drift-adjusted, annualised q/q growth for <code>log</code> variables) and are the
+anchor the contribution bars stack from. <code>ChartGrid</code> publishes the whole object through
+<code>useStore.getState().setDriversInput(...)</code> in an effect keyed on the effective, conditional and GVAR
+level deviations (<code>ChartGrid.tsx:2343</code>), using the same imperative publish pattern as
+<code>setChartExportData</code>, so <code>ChartGrid</code> never subscribes to <code>driversInput</code> and the publish cannot re-render
+the grid. <code>displayedIsCoupled</code> is a reference-identity test against <code>gvarFc.levelDeviation</code>, exactly the
+branch the <code>effective</code> memo takes when a GVAR result drives the display. Deviations are drift-invariant
+because the long-run <code>δc</code> translation shifts baseline and scenario rigidly, so the undrifted <code>effective</code>
+is the correct input.</p>
+<p>The store also holds <code>driversOpen</code> / <code>setDriversOpen</code>. <code>ChartGrid</code> renders the Drivers button — amber
+<code>exp</code> badge, alongside the GVAR badges — only when <code>driversAvailable</code> (<code>ChartGrid.tsx:2362</code>): some entry
+of the displayed, isolated or coupled deviation, or of the external combination, exceeds <code>1e-9</code> in
+absolute value. That gate mirrors the drawer's own <code>hasDeviation</code> test over the same inputs, so the
+button never opens a drawer with nothing to decompose.</p>
+<h3 id="the-default-configuration">The default configuration<a class="headerlink" href="#the-default-configuration" title="Permanent link">&para;</a></h3>
+<p>On the US bloc, opening the drawer with no further clicks gives the licensed class-view configuration:
+model <code>US_SW07</code>, all seven observables watched (the three locked plus Consumption, Investment, Real wage
+and Hours), all seven usable shocks named, grouping <strong>Classes</strong> (Monetary, Demand, Supply plus a grey
+residual), chart view <strong>Forecast</strong> (contribution bars anchored on the baseline in main-panel units,
+the classic central-bank history decomposition), observable <strong>Output</strong>, source the displayed scenario.
+Rank is 84/84, so the regime is exact-fit and no residual, collinearity or rank warning fires.</p>
+<p>On every other bloc the model is still <code>US_SW07</code> but the native columns are absent, so the budget is 3
+and the named set is the greedy non-collinear three (<code>interest_</code>, <code>fiscal_</code>, <code>ea</code>); Classes is greyed
+with its licence tooltip and the view falls back to <strong>Groups</strong>, three per-shock series. A per-bloc model
+choice is remembered in <code>localStorage</code> under <code>gmaps-drivers-model:&lt;bloc&gt;</code>; <strong>Reset</strong> restores the
+default and overwrites that saved choice.</p>
+<h3 id="controls">Controls<a class="headerlink" href="#controls" title="Permanent link">&para;</a></h3>
+<p>Always visible: the lens row (model title, the dropped-shock note where applicable, and a "Change model"
+link opening the grouped picker — Own country, then Reference, then Other), the <code>[Classes | Groups]</code>
+segmented toggle (Classes disabled unless licensed), the chart-view dropdown (Forecast, or Deviation
+from baseline), Reset, and Customize. Under <strong>Customize</strong>:</p>
+<ul>
+<li><strong>Use all</strong> — watch every mappable observable for the model, then name every unit the budget allows,
+  skipping collinear duplicates. For a clustered model it names the build-time validated default triple.</li>
+<li><strong>Input source</strong> — "Scenario (displayed)" or "External forecast combination". The latter is disabled
+  and annotated "— switched off" when imports exist for the bloc but the external master switch is off,
+  and "— none imported" when there is nothing to use.</li>
+<li><strong>Domestic | Global path</strong> — shown only for the scenario source and only when both an isolated and a
+  coupled path exist. The choice is sticky, so the drawer warns outside the collapsed fold when it is
+  decomposing a path other than the one on screen.</li>
+<li><strong>Observables</strong> — three locked chips with a padlock, plus the four addable native chips on the US
+  bloc, each annotated as raising the budget by one.</li>
+<li><strong>Measurement error</strong> — the strict↔permissive slider, shown only once a native observable is added,
+  displaying the current row weight <code>w = 1/√(1+me)</code> (default <code>me = 1</code>). See Remark 6.</li>
+<li><strong>Named units</strong> — one chip per shock, or per cluster on the FRB/US lenses; every un-named chip is
+  disabled once <code>named.length &gt;= budget</code>.</li>
+<li><strong>Experimental: raw shocks</strong> — a fold, clustered models only, switching the decomposition from cluster
+  composites to individual shocks. The chip list is the greedy non-collinear selection (26 of 54 for
+  <code>US_FRB22</code>), and the budget still applies, so at three observables only three may be named.</li>
+</ul>
+<p>Below the controls sit the "Contributions to" observable dropdown, the headline chart, the shares strip,
+a "Cluster membership" expander on the FRB/US lenses, and the caveat paragraph. The caveat cites
+<code>bench_simple_decomp.m</code> only for the eight models that bench actually ran; for anything else it says the
+lens is not covered by that bench and that what backs it is a build-time check on the shipped default
+naming, with other namings unvalidated (see
+<a href="#known-issues-limitations-flagged-for-fix-not-yet-fixed">Known issues #6</a>). It adds the
+cluster-chaining sentence on the FRB/US lenses, the CMR14 family disclosure where those families are
+shown, and the reason Classes are greyed whenever they are.</p>
+<h3 id="the-two-chart-builders">The two chart builders<a class="headerlink" href="#the-two-chart-builders" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">buildMainStyleHeadline</span><span class="p">(</span><span class="nx">args</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">H</span><span class="p">,</span><span class="w"> </span><span class="nx">spec</span><span class="o">:</span><span class="w"> </span><span class="kt">ObsDisplaySpec</span><span class="p">,</span><span class="w"> </span><span class="nx">bars</span><span class="o">:</span><span class="w"> </span><span class="kt">HeadlineBar</span><span class="p">[],</span><span class="w"> </span><span class="nx">zDisp</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[],</span>
+<span class="w">  </span><span class="nx">baselineRows</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][],</span><span class="w"> </span><span class="nx">histRows</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[][]</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nx">lastHist</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">lineName</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span>
+<span class="p">})</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">traces</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">[];</span><span class="w"> </span><span class="nx">layout</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">buildDeltaHeadline</span><span class="p">(</span><span class="nx">args</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">H</span><span class="p">,</span><span class="w"> </span><span class="nx">bars</span><span class="o">:</span><span class="w"> </span><span class="kt">HeadlineBar</span><span class="p">[],</span><span class="w"> </span><span class="nx">zDisp</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[],</span><span class="w"> </span><span class="nx">lastHist</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">lineName</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">unit</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span>
+<span class="p">})</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">traces</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">[];</span><span class="w"> </span><span class="nx">layout</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>Both are exported as pure functions of their arguments so the chart construction is testable without
+mounting the drawer. A <code>HeadlineBar</code> is <code>{ name, color, values: number[] }</code>, one stacked series in
+display units — a shock, a class or family total, or a cluster composite. <code>zDisp</code> is the input deviation
+in the same display units; <code>baselineRows</code> and <code>histRows</code> are the panel's own baseline and history rows
+(<code>driversInput.baselineDisplay</code> / <code>histDisplay</code>), and <code>lastHist</code> is the bloc's last historical quarter
+label, from which the quarter axis is generated. <code>buildMainStyleHeadline</code> stacks positive contributions
+upward and negative ones downward from the baseline, per quarter and independently, and returns <code>null</code>
+when the baseline display series is shorter than <code>H</code>. <code>buildDeltaHeadline</code> stacks the same bars from
+zero.</p>
+<blockquote>
+<p><strong>Remark 6 (The measurement-error slider does nothing at budget-max).</strong> <em>At <code>K = q</code> the stacked system
+is square, and scaling both <code>Θ</code> and <code>z</code> by a positive diagonal row weighting leaves the solution
+identical: <code>WΘx = Wz ⟺ Θx = z</code>. The slider is therefore inert in the default US configuration; the
+drawer disables it there and says so, rather than inviting the user to drag a control with no effect.
+It becomes real as soon as a shock is un-named, which is what gives the added observables a role.</em></p>
+<p><strong>Remark 7 (The delta view's units need not match the panel that opened the drawer).</strong> <em>The chart view
+auto-follows the main display — when <code>growthDisplay</code> is <code>vsbaseline</code> the drawer opens in "Deviation
+from baseline", otherwise in "Forecast" — and a manual choice then sticks. But the delta chart's bars
+are always the panel's </em><em>rate</em><em> deviation, while the main panels' "% vs base" mode has a level
+sub-mode and defaults to level. Auto-follow can therefore put the drawer's chart in different units
+from the panel that triggered it. The axis title states the unit; do not describe the delta view as
+matching the panel without that qualification.</em></p>
+<p><strong>Remark 8 (The shares strip is a norm share, not a variance decomposition).</strong> <em>For the selected
+observable, each series' share is <code>‖its contribution path‖₂</code> divided by the sum of those norms plus the
+residual's (<code>normShares</code>). Shares always sum to 100 and are never negative, so two contributions that
+offset each other both show as positive shares. It is a readability aid, not a <code>fevd</code>.</em></p>
+</blockquote>
+<h3 id="behaviours-worth-knowing">Behaviours worth knowing<a class="headerlink" href="#behaviours-worth-knowing" title="Permanent link">&para;</a></h3>
+<p>The chart shows one observable at a time while the solve uses all watched observables jointly, and the
+horizon is always twelve quarters regardless of the app's display horizon. Warnings fire for the
+residual-able regime (quoting rank and rows), for nearly collinear named shocks (quoting the measured
+<code>|cos|</code> inside the raw fold), for decomposing a path other than the displayed one, for the experimental
+raw-shock mode, for rank-deficient named columns (<code>rank &lt; K·H</code>), and for leaving the validated default
+naming on an FRB/US lens. An index fetch failure is reported as an error; a per-model IRF failure is
+recorded per model and offers a Retry, and the recorded failure blocks the loader effect until the user
+asks again.</p>
+<hr />
+<h2 id="appscriptsbuild_drivers_indexmjs-the-drivers-data-layer"><code>app/scripts/build_drivers_index.mjs</code> — the Drivers data layer<a class="headerlink" href="#appscriptsbuild_drivers_indexmjs-the-drivers-data-layer" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> Builds everything the Drivers feature fetches at runtime: it copies the census menu
+models' IRF files into <code>app/public/data/dsge/census/</code> and writes the <code>index.json</code> described under
+<a href="#the-drivers-index-driversindex-driversmodelmeta"><code>data/loader.ts</code></a>.</p>
+<h3 id="example-4-regenerate-the-drivers-index-after-a-new-census-export">Example 4 (Regenerate the Drivers index after a new census export)<a class="headerlink" href="#example-4-regenerate-the-drivers-index-after-a-new-census-export" title="Permanent link">&para;</a></h3>
+<p><em>We rebuild the menu from the census export tree. The script runs from anywhere, refuses to ship a
+census file whose <code>sha256</code> does not match the manifest, and rewrites both the copies and the index in
+one pass. Afterwards the licence tests re-hash every shipped file against the index, so a stale copy
+fails the fast suite rather than reaching the site.</em></p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>app/scripts/build_drivers_index.mjs
+<span class="nb">cd</span><span class="w"> </span>app<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span><span class="nb">test</span><span class="w">          </span><span class="c1"># v3-5 re-hashes every shipped census file against the index</span>
+</code></pre></div>
+<p>It reads <code>pipeline/census_irfs/MANIFEST.json</code> and <code>pipeline/census_irfs/&lt;srcDir&gt;/Taylor.json</code> for the
+eight census entries, <code>pipeline/_shockbench/class_maps.json</code> for the class maps, and
+<code>app/public/data/dsge/irfs/&lt;M&gt;/SW.json</code> for the four models indexed out of the <code>irfs</code> tree (<code>US_SW07</code>,
+<code>US_CMR14</code>, <code>US_FRB08</code>, <code>US_FRB22_mcap</code>), which are indexed in place and not copied. Note that
+<code>pipeline/census_irfs/</code> is not present on every branch — the census export tree lives on the research
+branch — and on a checkout without it the script fails at its first read.</p>
+<p><strong>What it computes per model.</strong> The usable shock list (a shock is usable when it carries all three
+common observables and its stacked three-observable <code>H = 12</code> path has norm <code>≥ 1e-9</code>; anything else is
+dropped <em>and named</em>, mirroring <code>bench_simple_decomp.m</code>); the collinear pairs, computed exactly as the
+bench does, as <code>|cos| &gt; 0.95</code> between unit-normalised stacked paths; for the models flagged <code>clustered</code>,
+the connected components of that graph, each labelled by its largest member's equation name (the
+mnemonic minus the <code>_aerr</code> suffix) and ordered by size descending then id ascending; and, for clustered
+models, the validated default naming.</p>
+<p><strong>The default-naming scan.</strong> <code>pickDefaultNamed</code> scans every cluster triple through the shipped colnorm
+solver over 20 sparse-truth seeds (deterministic <code>mulberry32</code>, seed 20260806) against the <code>1e-6</code> licence
+criterion, then picks deterministically among the passers: maximise total member coverage, then prefer a
+triple containing the <code>interest_</code> cluster, then first in shipped cluster order. It falls back to pairs
+and singletons if no triple passes, which does not occur for the shipped data. For <code>US_FRB22</code>, 123 of
+1,771 triples pass and the winner is <code>[hqlfpr, interest_, pcer_l]</code>, covering 19 of the 54 shocks with a
+measured worst recovery error of <code>2.53e-9</code>. For <code>US_FRB22_var</code>, 122 of 1,330 pass and the winner is
+<code>[eco_l, interest_, ki_l]</code>, covering 12 of 54, at <code>1.32e-7</code> — passing, but only an order of magnitude
+inside the criterion, and not pinned by any test. A full-rank <code>Θ</code> is not evidence that a triple is
+usable: most triples are badly conditioned while still passing the rank test, which is why the drawer
+warns as soon as the user leaves the shipped default.</p>
+<h3 id="the-shipped-menu">The shipped menu<a class="headerlink" href="#the-shipped-menu" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Index key</th>
+<th>Usable <code>K</code></th>
+<th>Dropped</th>
+<th>Collinear pairs</th>
+<th>Clusters</th>
+<th>Rank / regime at the default 3-obs configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>US_SW07</code></td>
+<td>7</td>
+<td><code>em</code> (zero response)</td>
+<td>0</td>
+<td>—</td>
+<td>36/36 exact-fit (3 named); 84/84 at the native 7</td>
+</tr>
+<tr>
+<td><code>US_CMR14</code></td>
+<td>9</td>
+<td><code>e_term</code> (zero response)</td>
+<td>3</td>
+<td>—</td>
+<td>36/36 exact-fit</td>
+</tr>
+<tr>
+<td><code>US_FRB08</code></td>
+<td>2</td>
+<td>—</td>
+<td>0</td>
+<td>—</td>
+<td>24/36 <strong>residual-able</strong> (2 named)</td>
+</tr>
+<tr>
+<td><code>US_FRB22</code></td>
+<td>54</td>
+<td>—</td>
+<td>109</td>
+<td>23</td>
+<td>36/36 exact-fit (3 clusters named)</td>
+</tr>
+<tr>
+<td><code>US_FRB22_var</code></td>
+<td>54</td>
+<td>—</td>
+<td>117</td>
+<td>21</td>
+<td>as above</td>
+</tr>
+<tr>
+<td><code>EA_SW03</code></td>
+<td>6</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>36/36 exact-fit</td>
+</tr>
+<tr>
+<td><code>EA_SWW14</code></td>
+<td>6</td>
+<td>—</td>
+<td>0</td>
+<td>—</td>
+<td>36/36 exact-fit</td>
+</tr>
+<tr>
+<td><code>CA_LS07</code></td>
+<td>3</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>24/36 <strong>residual-able</strong> (only 2 named — the greedy skips the collinear partner)</td>
+</tr>
+<tr>
+<td><code>HK_FP13</code></td>
+<td>5</td>
+<td>—</td>
+<td>2</td>
+<td>—</td>
+<td>36/36 exact-fit</td>
+</tr>
+<tr>
+<td><code>BRA_SAMBA08</code></td>
+<td>4</td>
+<td>—</td>
+<td>0</td>
+<td>—</td>
+<td>36/36 exact-fit</td>
+</tr>
+<tr>
+<td><code>UK_SM11</code></td>
+<td>3</td>
+<td>—</td>
+<td>0</td>
+<td>—</td>
+<td>36/36 exact-fit</td>
+</tr>
+<tr>
+<td><code>US_FRB22_mcap</code></td>
+<td>2</td>
+<td>—</td>
+<td>0</td>
+<td>—</td>
+<td>menu-hidden; kept for the v2 licence fixtures</td>
+</tr>
+</tbody>
+</table>
+<p>Only three models carry a class map: <code>US_SW07</code> (Monetary <code>interest_</code>; Demand <code>eb</code>, <code>fiscal_</code>, <code>eqs</code>;
+Supply <code>ea</code>, <code>epinf</code>, <code>ew</code> — the seven the licence was established over), <code>US_CMR14</code> (nine members
+across Monetary, Demand, Supply and Financial) and <code>US_FRB22_mcap</code>, aliased by both FRB22 census
+entries, whose 54 members are assigned by a rule on the equation each <code>_aerr</code> residual attaches to
+rather than by economic judgement about the shock. Everything else falls through to a null class map and
+shows one series per named shock. <strong>CMR14's families are that model's own class map used as an
+organising grouping, not a licensed class split</strong>: <code>bench_class_recovery.m</code> recovers their class totals
+in 78% of test instances against its 90% bar, and the drawer discloses that number verbatim wherever the
+families are shown. <code>class_maps.json</code> also carries a <code>censusGeneric</code> dictionary which is typed in
+<code>loader.ts</code> but read by nothing in <code>app/src</code>; it is inert in the shipped app.</p>
+<h3 id="the-validation-benches">The validation benches<a class="headerlink" href="#the-validation-benches" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="s2">&quot;run(&#39;pipeline/bench_simple_decomp.m&#39;)&quot;</span>
+matlab<span class="w"> </span>-batch<span class="w"> </span><span class="s2">&quot;run(&#39;pipeline/bench_class_recovery.m&#39;)&quot;</span>
+</code></pre></div>
+<p>Both print to stdout and write no file: the committed <code>docs/paper/simple_decomp_results.txt</code> and
+<code>docs/paper/class_recovery_results.txt</code> are captured transcripts, so regenerating them means redirecting
+the output. <code>bench_simple_decomp.m</code> reads the two shipped <code>irfs</code>-tree files plus
+<code>pipeline/census_irfs/&lt;M&gt;/Taylor.json</code> for its six census rows; <code>bench_class_recovery.m</code> reads
+<code>class_maps.json</code>, the same two shipped files, and <code>pipeline/census_irfs/US_FRB22_mcap/Taylor.json</code>. On a
+checkout without the census tree, two of the eight simple-decomposition rows and four of the five
+class-recovery rows still run; the rest do not.</p>
 <hr />
 <h2 id="render-memoization-in-chartgrid-reconcilecharts-chartdeepequal-reactmemo">Render memoization in <code>ChartGrid</code> (<code>reconcileCharts</code> + <code>chartDeepEqual</code> + <code>React.memo</code>)<a class="headerlink" href="#render-memoization-in-chartgrid-reconcilecharts-chartdeepequal-reactmemo" title="Permanent link">&para;</a></h2>
 <p><strong>Responsibility (Phase-2 render optimization, issue #68).</strong> A single conditioning edit changes
@@ -3621,31 +5337,25 @@ affected output.</p>
    debt-snowball roll-forward computes nominal growth as <code>gQ = Δ(level[idx.gdp]) + Δ(level[idx.deflator])</code>.
    CN previously shipped a <strong>nominal</strong> <code>GDP_CN</code>, so the price term was double-counted and the CN
    debt-to-GDP path was biased. The <strong>surgical CN-only re-estimate</strong> replaced <code>GDP_CN</code> with real GDP
-   (<code>spec.json</code> var 0 = "CN Real GDP (quarterly, chain-linked SA volume index, base 2011Q1=100)",
-   <code>fiscal_meta.json idx.gdpIsNominal = false</code>), so the snowball now reads the correct real-GDP + deflator
-   nominal growth, matching US/EA/JP/UK/CA. The fix re-estimated <strong>CN only</strong>; the other 32 GVAR blocs are
-   byte-identical to the prior working model.</p>
+   (<code>spec.json</code> var 0 = "CN Real GDP …"), so the snowball now reads the correct real-GDP + price nominal
+   growth, as for the other economies. At the time the fix re-estimated <strong>CN only</strong>.</p>
 </li>
 <li>
-<p><strong>Entropic long-run tilt does not filter non-finite moments (<code>longRunTilt.ts</code>).</strong>
-   <code>solveEntropicTilt</code> builds the centered/scaled constraint matrix <code>Gc.push(col)</code> directly from the
-   per-draw moments <code>gByDraw</code> (<code>longRunTilt.ts:~254</code>) and never drops non-finite draws. The Newton dual
-   then evaluates <code>z[i] = Σ Gc[r][i]·γ_r</code> and <code>exp(z[i] − zmax)</code> (<code>:284</code>–<code>:289</code>): a single non-finite
-   <code>Gc[r][i]</code> (from an <strong>unstable draw</strong> whose long-horizon forecast diverged) makes <code>z[i]=NaN</code>,
-   <code>exp(NaN)=NaN</code>, which poisons <code>wsum</code> and <strong>silently empties the anchor band</strong> (all weights NaN). The
-   scaling pre-pass <em>does</em> skip non-finite values when computing each anchor's mean/std (<code>:529</code>–<code>:532</code>),
-   but the matrix fed to the dual is not filtered. Fix: drop the non-finite draws (and renormalize)
-   before the Newton iteration, as <code>weightedQuantile</code> already does at the band step.</p>
+<p><strong>[OBSOLETE — <code>longRunTilt.ts</code> removed; superseded by the <code>driftSetter.ts</code> anchor (see above).]</strong>
+   The former entropic tilt did not filter non-finite moments before its Newton dual, so an unstable
+   draw's non-finite long-run moment NaN-poisoned the softmax weights and silently emptied the anchor
+   band. The <code>driftSetter.ts</code> display translation does no per-draw reweighting and is not subject to
+   this failure mode.</p>
 </li>
 <li>
-<p><strong>No <code>ρ(M) &lt; 1</code> divergence guard on the live closed-form solve (<code>gvarSolve.ts</code>).</strong> The endogenous
-   Neumann fixed point <code>x ← d + M·x</code> (<code>gvarSolve.ts:1296</code>) iterates to <code>maxIt = 2000</code> or a relative
-   tolerance <code>1e-10·(1+‖x‖)</code> — but there is <strong>no check that <code>ρ(M) &lt; 1</code></strong>. If a refit produced a <code>M</code> with
-   <code>ρ ≥ 1</code> (a non-stationary coupling), the iteration would diverge (or stop at <code>maxIt</code> far from a fixed
-   point) and the solver would return a <strong>confident-wrong</strong> forecast with no warning. <code>ρ</code> <em>is</em> computed
-   at export time and shipped in the artifact (and is currently 0.947), but the live solve does not read
-   it as a guard. Fix: assert <code>coupling.rhoSpectral &lt; 1</code> (or estimate <code>ρ</code> and bail/flag) before trusting
-   the iterate.</p>
+<p><strong>Only a console-level <code>ρ(M) &lt; 1</code> divergence guard on the live closed-form solve (<code>gvarSolve.ts</code>,
+   <code>runGvarSolve.ts</code>).</strong> The endogenous Neumann fixed point <code>x ← d + M·x</code> iterates to <code>maxIt = 2000</code> or a
+   relative tolerance <code>1e-10·(1+‖x‖)</code>. If it does not converge, <code>solveGVARClosedFormEndo</code> now computes
+   ρ(M), and <code>runGvarSolve</code> treats ρ ≥ 1 (or a non-finite residual) as <strong>diverged</strong>: a console warning and
+   no caching. But nothing tells the user on screen, so a refit with ρ ≥ 1 would still show a wrong path.
+   <code>ρ</code> is computed at export time and shipped in the artifact (0.971875 in the deployed pack); check it
+   when the coupling is rebuilt. Fix: surface the diverged flag in the UI (or refuse a coupling with
+   <code>rhoSpectral ≥ 1</code> at load).</p>
 </li>
 <li>
 <p><strong>Conditional band uses the FILTERED, not DK-smoothed, covariance (<code>kalman.ts</code>).</strong>
@@ -3658,15 +5368,28 @@ affected output.</p>
    the band is conservative.</p>
 </li>
 <li>
-<p><strong>The porter does not regenerate <code>fiscal_meta.json</code> — STALE-POSITIONAL-INDEX
-   (<code>port_gvar_exports.py</code>).</strong> <code>fiscal_meta.json</code>'s six <code>idx</code> values are positional column offsets, but
-   <code>pipeline/port_gvar_exports.py</code> ports the file verbatim. Any variable-order change (the 33-bloc
-   GVAR-EM refit inserted variables ahead of the fiscal block in every spec except US) silently
-   re-points them — EA's <code>effRate</code> once landed on the equity index (~col 537) and <strong>debt/GDP exploded</strong>.
-   <strong>Mitigation (mandatory after any re-port):</strong> run <code>node pipeline/fix_fiscal_meta_indices.mjs</code>, which
-   re-resolves all six indices BY VARIABLE ID from the deployed <code>spec.json</code> (idempotent, preserves
-   <code>d0</code>/<code>sfaDefault</code>). <code>fiscal-meta-indices.test.ts</code> is the guard that blocks a deploy with stale
-   indices. See <a href="../DATA_SCHEMA/">DATA_SCHEMA §9</a> and <a href="../ARCHITECTURE_FOR_AI/">ARCHITECTURE §7</a>.</p>
+<p><strong>Positional meta indices — STALE-POSITIONAL-INDEX (mitigated, not removed).</strong> <code>fiscal_meta.json</code>'s
+   six <code>idx</code> values and <code>external_meta.json</code>'s five are positional column offsets. Any variable-order
+   change silently re-points them — EA's <code>effRate</code> once landed on the equity index (~col 537) and
+   <strong>debt/GDP exploded</strong>; in the Oct 2026 data the inserted <code>DEFL_&lt;CC&gt;</code> sent 35 blocs' external <code>fx</code> index
+   to the wrong series (no numerical effect: the FX channel is off). <strong>Mitigation:</strong>
+   <code>pipeline/port_gvar_exports.py</code> now regenerates both files by variable id on every port; for blocs
+   copied raw, run <code>node pipeline/fix_fiscal_meta_indices.mjs</code> and <code>node pipeline/fix_external_meta_indices.mjs</code>
+   (by id, idempotent; the external one uses the recorded <code>idxIds</code>). <code>fiscal-meta-indices.test.ts</code> and
+   <code>data/meta-column-indices.test.ts</code> guard them — but the deploy workflows do not run tests, so run them
+   before pushing. See <a href="../DATA_SCHEMA/">DATA_SCHEMA §9</a> and <a href="../ARCHITECTURE_FOR_AI/">ARCHITECTURE §7</a>.</p>
+</li>
+<li>
+<p><strong>The Drivers caveat claims a build-time check that <code>US_FRB08</code> does not have
+   (<code>DriversDrawer.tsx</code>).</strong> For any model outside the eight <code>bench_simple_decomp.m</code> ran, the drawer's
+   bottom caveat says the lens is backed by "a build-time check that the shipped default naming recovers
+   a known shock sequence to 1e-6". That scan (<code>pickDefaultNamed</code> in <code>build_drivers_index.mjs</code>) runs
+   <strong>only for clustered models</strong>, so it exists for <code>US_FRB22</code> and <code>US_FRB22_var</code> and <strong>not</strong> for
+   <code>US_FRB08</code>, which is on the visible menu, has no bench row and carries no <code>defaultNamed</code>. The sentence
+   overstates what backs that one lens. Nothing else is affected — the engine, the budget rule and the
+   collinearity flag are model-independent, and <code>US_FRB08</code>'s two shocks at three observables put it in
+   the residual-able regime in any case. Fix: branch the fallback sentence on
+   <code>meta.defaultNamed != null</code>, and for the remaining case say plainly that the lens is unvalidated.</p>
 </li>
 </ol>
 <hr />
@@ -3674,15 +5397,22 @@ affected output.</p>
 <p>From <code>app/</code>:</p>
 <div class="highlight"><pre><span></span><code>npx<span class="w"> </span>tsc<span class="w"> </span>--noEmit<span class="w">     </span><span class="c1"># type check</span>
 npm<span class="w"> </span><span class="nb">test</span><span class="w">             </span><span class="c1"># FAST suite (vitest run minus the heavy solver --exclude globs)</span>
-npm<span class="w"> </span>run<span class="w"> </span>test:heavy<span class="w">   </span><span class="c1"># HEAVY solver/perf canaries (1 fork) — BOTH halves gate the deploy</span>
-npm<span class="w"> </span>run<span class="w"> </span>build<span class="w">        </span><span class="c1"># static export</span>
+npm<span class="w"> </span>run<span class="w"> </span>test:heavy<span class="w">   </span><span class="c1"># HEAVY solver/perf canaries (1 fork) — BOTH halves are the maintainer&#39;s gate</span>
+npm<span class="w"> </span>run<span class="w"> </span>build<span class="w">        </span><span class="c1"># static export; prebuild = gzip draws + vintages + pack-verify --full</span>
+npm<span class="w"> </span>run<span class="w"> </span>pack:verify<span class="w"> </span>--<span class="w"> </span>--full<span class="w">   </span><span class="c1"># the data-pack check on its own</span>
 </code></pre></div>
-<p>Compute-engine tests live in <code>app/src/__tests__/compute/</code>. The suite is <strong>split</strong> — <code>npm test</code> is
-<code>vitest run</code> minus seven heavy <code>--exclude</code> patterns; <code>npm run test:heavy</code> runs exactly those serialised
-to one fork; <code>npm run test:all</code> sweeps everything (see <a href="../BUILD_AND_CI/">BUILD_AND_CI.md</a>). The
-deploy-blocking canaries (all in the <strong>fast</strong> suite) are <code>scenario-scale-convention</code>, <code>gvar-convergence</code>
-(Gauss-Seidel ≡ closed-form), <code>gvar-coupling-artifact</code> (the shipped <code>.gz</code> matches a live build at the
-current <code>modelSig</code>), and <code>fiscal-meta-indices</code> (the STALE-POSITIONAL-INDEX guard above).</p>
+<p>Compute-engine tests live in <code>app/src/__tests__/compute/</code> (data checks in <code>app/src/__tests__/data/</code>).
+The suite is <strong>split</strong> — <code>npm test</code> is <code>vitest run</code> minus ten heavy <code>--exclude</code> patterns; <code>npm run
+test:heavy</code> runs exactly those serialised to one fork; <code>npm run test:all</code> sweeps everything (see
+<a href="../BUILD_AND_CI/">BUILD_AND_CI.md</a>). The key canaries (all in the <strong>fast</strong> suite) are
+<code>scenario-scale-convention</code>, <code>gvar-convergence</code> (Gauss-Seidel ≡ closed-form), <code>gvar-coupling-artifact</code>
+(the shipped <code>.gz</code> matches a live build at the current <code>modelSig</code>), <code>fiscal-meta-indices</code> and
+<code>data/meta-column-indices</code> (the STALE-POSITIONAL-INDEX guards above). The deploy workflows run the build
+(and so <code>pack-verify --full</code>) but <strong>not</strong> the tests: running the tests is a manual step before a push.</p>
+<p>The <strong>26 Drivers licence tests</strong> — <code>drivers-decomp.test.ts</code> (4), <code>drivers-decomp-v2.test.ts</code> (7) and
+<code>drivers-decomp-v3.test.ts</code> (15) — are also in the fast suite. They read the shipped IRF files and the
+shipped index directly, so they fail on a stale <code>app/public/data/dsge/census/</code> copy as well as on a code
+regression; see <a href="#driversdecompts-the-drivers-decomposition-engine-experimental"><code>driversDecomp.ts</code></a>.</p>
 
 
 
@@ -3716,6 +5446,10 @@ current <code>modelSig</code>), and <code>fiscal-meta-indices</code> (the STALE-
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025–2026 Matyas Farkas — GPL-3.0-only
+    </div>
   
   
     Made with

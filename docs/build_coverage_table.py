@@ -59,26 +59,36 @@ def cell_for(bloc, roots):
 FAMILY_TEX = {
     'FRED': 'FRED',
     'Eurostat': 'Eurostat',
-    'OECD/FRED': 'OECD/FRED',
+    'OECD': 'OECD',
+    'national': 'national',
+    'derived': 'derived',
 }
 
 
 def family(bloc):
     """Classify the bloc's PRIMARY source family off its real-GDP source (the
-    canonical anchor). Matching on 'any variable mentions Eurostat' is wrong:
-    CA/UK/JP carry a 'national/Eurostat gov-finance' string on their fiscal
-    ratios yet are not Eurostat-sourced economies."""
+    canonical anchor), read from the source string the source registry wrote
+    into the coverage manifest ("<provider>:<key>"). Matching on 'any variable
+    mentions Eurostat' is wrong: CA/UK/JP carry Eurostat-sourced series yet are
+    not Eurostat-sourced economies. Oct 2026: classified by provider prefix
+    (FRED / Eurostat / OECD / derived / national statistics office or central
+    bank) instead of the earlier hard-coded US/CN rule."""
     cc = bloc['code']
-    if cc in ('US', 'CN'):
-        return 'FRED'
     gdp = next((v for v in bloc['variables']
                 if strip_cc(v['id'], cc) in ('GDP', 'GDPH', 'JGDP')), None)
-    s = gdp['source'] if gdp else ''
-    if 'Eurostat' in s:
-        return 'Eurostat'
-    if 'OECD/FRED' in s or 'OECD' in s or 'FRED' in s:
-        return 'OECD/FRED'
-    return 'mixed'
+    s = (gdp['source'] if gdp else '') or ''
+    for prefix, fam in (('FRED', 'FRED'), ('Eurostat', 'Eurostat'),
+                        ('OECD', 'OECD'), ('derived', 'derived')):
+        if s.startswith(prefix):
+            return fam
+    return 'national'
+
+
+def model_tail_count(bloc):
+    """Number of the bloc's series whose last observation is before the panel
+    quarter: their remaining quarters are model estimates (amber in the app)."""
+    last = bloc['lastHistQuarter']
+    return sum(1 for v in bloc['variables'] if v.get('lastObs') and v['lastObs'] < last)
 
 
 def short_flag(bloc):
@@ -102,7 +112,7 @@ def short_flag(bloc):
 
 
 # Full self-contained landscape table wrapper. {n} and {rows} are filled in.
-# The manual \input{MFFM_coverage_matrix}s this file; the flag tags (WEO/review/
+# The manual \input{GMAPS_coverage_matrix}s this file; the flag tags (WEO/review/
 # frozen mirror) name the blocs whose tail is model-extended rather than genuine.
 HEADER = (r'\textbf{Bloc} & \textbf{GDP} & \textbf{Price} & \textbf{Unemp} & '
           r'\textbf{Pol} & \textbf{Long} & \textbf{Cred} & \textbf{Lend} & '
@@ -123,11 +133,12 @@ HICP/CPI; \textbf{Unemp} unemployment rate; \textbf{Pol} policy rate;
 rate; \textbf{Fisc} the four-variable fiscal block
 (\texttt{FREV}/\texttt{FPEXP}/\texttt{EFFI}/\texttt{SFA}).
 \cmark${}={}$carried; \texttt{--}${}={}$absent in that bloc.
-\emph{Last obs} is the last quarter shown; an italic tag flags a
-tail that is model-extended rather than genuinely observed
-(\textit{WEO}${}={}$WEO-back-filled, CN/IN;
-\textit{review}${}={}$under source review, ID/KR/RU/TH;
-\textit{frozen~mirror}${}={}$carried from a frozen partner mirror, KR).}
+\emph{Last obs} is the last quarter shown (the panel quarter);
+\emph{Source} is the provider of the bloc's real GDP (\emph{national}: the
+statistics office or central bank; \emph{derived}: built from other series).
+An italic tag \textit{$k$~est.} counts the bloc's series that end before the
+panel quarter: their remaining quarters are model estimates, shown in amber.
+Every bloc is built from its source registry with no fills.}
 \label{tab:coverage}\\
 \toprule
 %(header)s
@@ -157,7 +168,9 @@ def build_rows(blocs, cols):
             mark, lo, flagged = cell_for(b, CONCEPTS[c])
             cells.append('\\cmark' if mark == 'Y' else '--')
         flag = short_flag(b)
-        flagtex = ('\\,\\footnotesize\\textit{' + flag + '}') if flag else ''
+        k = model_tail_count(b)
+        tags = [t for t in (flag, ('%d~est.' % k) if k else '') if t]
+        flagtex = ('\\,\\footnotesize\\textit{' + ','.join(tags) + '}') if tags else ''
         out.append('\\texttt{%s} & %s & %s & %s%s \\\\' % (
             cc, ' & '.join(cells), last, FAMILY_TEX.get(fam, fam), flagtex))
     return out
@@ -173,7 +186,7 @@ def main():
     # Write the complete, self-contained \input file (so it regenerates like the
     # roster and per-economy tables and cannot drift from the shipped manifest).
     doc = WRAPPER % {'n': n, 'header': HEADER, 'rows': '\n'.join(rows)}
-    outpath = os.path.join(HERE, 'MFFM_coverage_matrix.tex')
+    outpath = os.path.join(HERE, 'GMAPS_coverage_matrix.tex')
     with open(outpath, 'w') as f:
         f.write(doc)
     # Rows still go to stdout for ad-hoc inspection / backward compatibility.
