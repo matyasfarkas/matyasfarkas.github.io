@@ -1832,10 +1832,13 @@ backend/                     FastAPI (optional, custom DSGE rules only)
   that every reused file matches the app's built-in copy. Then <code>fetchVerified(logical)</code> /
   <code>fetchJSON</code> / <code>fetchGzJSON</code> look a file up in the manifest, read it, and check byte length and
   SHA-256 (for <code>.gz</code>, of the compressed bytes) before use. <code>loader.ts</code> and <code>gvarLoader.ts</code> read every
-  data file this way. A failure is an error with the file's name, and the file is never used. Caveat: the
-  callers only log it (<code>page.tsx</code>, <code>gvarLoader.loadGVARModels</code> via <code>Promise.allSettled</code>, <code>loadGvarWeights</code>
-  falling back to the build-time weights), so after start-up a bad file shows nothing on screen and the
-  global model silently leaves that economy out — see <code>UPDATE_MANUAL.md</code> §10, Known limits.</li>
+  data file this way. A failure is an error with the file's name, and the file is never used. Since Oct 2026
+  <code>fetchVerified</code> also reports every failure of a LISTED file to an on-screen channel
+  (<code>reportDataLoadError</code> → <code>components/DataErrorBanner.tsx</code>); a file the pack does not list throws
+  <code>NotInPackError</code> and is never reported (optional files: <code>fetchJSONIfInPack</code> → <code>null</code>). Callers stop instead
+  of degrading: <code>loadGVARModels</code> refuses a partial bloc set (only <code>NotInPackError</code> blocs are skipped),
+  <code>loadGvarWeights</code> no longer falls back to the build-time weights for a listed file, and <code>page.tsx</code> covers
+  the grid with an error panel for a country that failed (the grid stays mounted with the previous country).</li>
 <li><strong>Where the bytes come from</strong> (<code>getDataSource</code>). Web: <code>&lt;base path&gt;/data/</code>. Desktop (Tauri): the
   pack built into the app, unless <code>&lt;appDataDir&gt;/gmaps-data/manifest.json</code> exists — then that folder
   (read with the Tauri fs plugin), with the same checks. An update pack in that folder may mark files

@@ -1794,8 +1794,8 @@ estimated models, uncertainty draws, trade weights) lives in a <strong>data pack
 <code>manifest.json</code> that lists every file with its SHA-256 fingerprint and size. The app checks every file
 against that list before using it, and refuses a damaged or mismatched file. A problem with the pack as a whole
 (wrong version, an update made for another release, an unreadable manifest) stops the app with a full-screen
-message. A single damaged file found later is refused too, but today its message goes only to the browser
-console (see "Known limits" in section 10).</p>
+message. A single damaged file found later is named in a red banner at the bottom of the screen, and whatever
+depends on it is not shown (a country's charts, or the whole global model). It never shows a wrong number.</p>
 <p>That separation means:</p>
 <ul>
 <li><strong>New data does not need a new app.</strong> The maintainer sends an <em>update pack</em> (a small zip); users unzip it
@@ -1913,7 +1913,7 @@ files there are ignored.</p>
 <td>Extract the zip again, completely, into the data folder itself</td>
 </tr>
 <tr>
-<td>"… sha256 mismatch …" (today in the browser console only; see section 10, Known limits)</td>
+<td>"… sha256 mismatch …" (red banner at the bottom of the screen)</td>
 <td>A file was changed or damaged</td>
 <td>Extract again; if it persists, ask for a new pack</td>
 </tr>
@@ -2394,23 +2394,20 @@ the clean route. If you send an update pack instead, tell users about that diffe
 <li>There is no "import zip" button: users extract the zip into the data folder.</li>
 <li>The app still contains a build-time copy of the trade weights and of six economies' model descriptions
   (<code>gvarSolve.ts</code>). They are start-up defaults only. Once the pack loads, the app uses the pack's own,
-  fingerprinted weights, and the list of countries comes from the compiled roster (first point above).</li>
-<li>A file that fails its fingerprint check (or fails to download) after start-up is refused, but the message goes
-  only to the browser console:</li>
-<li>the single-country view keeps showing what it had;</li>
-<li>the global model leaves that country out of the coupled system;</li>
-<li>a weights file that fails is replaced by the build-time copy.</li>
-</ul>
-<p><code>pack-verify --full</code> runs on every web build, so a damaged file cannot ship. What remains is a file damaged in
-  transit or on a desktop disk. The fix is to show the message on screen and stop, as the start-up checks do
-  (open, October 2026).
-- A within-year shift re-syncs only the previous quarter to the latest source vintage. After a large source
+  fingerprinted weights (if the pack lists weights that fail to load, the global model stops; it does not fall
+  back), and the list of countries comes from the compiled roster (first point above).</li>
+<li>Fixed in October 2026: a file that failed its fingerprint check after start-up used to reach only the browser
+  console (the global model then left that country out, and the weights fell back to the build-time copy). Now
+  every such failure is named in a red banner, the country shows an error panel instead of charts, and the
+  global model refuses to load from a partial set.</li>
+<li>A within-year shift re-syncs only the previous quarter to the latest source vintage. After a large source
   revision, the quarter before keeps the older vintage, so the growth rate across that seam mixes vintages.
   (Example, now resolved: after the US annual revision of Sep 2026, US 2025Q4 GDP growth showed 1.6% annualised
   against 0.2% on current data. The October 2026 rebuild took every series from its current vintage, and the
-  data now show 0.2%.)
-- Resolved in October 2026: the euro members had run an older model generation. They were re-estimated with
-  the rest, in growth rates.</p>
+  data now show 0.2%.)</li>
+<li>Resolved in October 2026: the euro members had run an older model generation. They were re-estimated with
+  the rest, in growth rates.</li>
+</ul>
 
 
 

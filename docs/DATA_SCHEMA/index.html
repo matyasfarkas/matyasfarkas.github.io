@@ -2110,8 +2110,9 @@ GVAR coupling lives in <code>app/public/data/bvar/gvar/</code>.</p>
 <p><strong>Loader (<code>app/src/lib/data/loader.ts</code>).</strong> Every read goes through the pack:
 <code>loadJSON(path)</code> is <code>dataManifest.fetchJSON(path)</code>, which looks the file up in
 <code>manifest.json</code>, fetches it, and checks its byte length and SHA-256 before parsing
-(a mismatch is an error, and the file is never used; note that the callers currently only log that error —
-see <code>UPDATE_MANUAL.md</code> §10, Known limits). <code>loadBVARData(country)</code>
+(a mismatch is an error, the file is never used, and the error is shown on screen by <code>DataErrorBanner</code>).
+Optional files go through <code>fetchJSONIfInPack</code>: a file the pack does not list is absent (<code>null</code>, a
+<code>NotInPackError</code> underneath); a listed file that fails is an error and fails the load. <code>loadBVARData(country)</code>
 fetches <code>spec/companion_mean/baseline/historical</code> eagerly, then <em>optionally</em>
 <code>baseline_levels/historical_levels/fiscal_meta/external_meta</code> (a missing file →
 <code>null</code>, normal for economies without a fiscal block or external satellite).
