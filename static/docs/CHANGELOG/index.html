@@ -992,6 +992,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unreleased-web-2026-10-08-data-files-that-fail-a-check-are-shown-on-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [Unreleased — web] - 2026-10-08 — DATA FILES THAT FAIL A CHECK ARE SHOWN ON SCREEN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-pack-2026q2-reest-20261008b-2026-10-08-genuine-data-re-estimation-data-to-2026q2-web-app-400" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1648,6 +1659,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unreleased-web-2026-10-08-data-files-that-fail-a-check-are-shown-on-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [Unreleased — web] - 2026-10-08 — DATA FILES THAT FAIL A CHECK ARE SHOWN ON SCREEN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-pack-2026q2-reest-20261008b-2026-10-08-genuine-data-re-estimation-data-to-2026q2-web-app-400" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2290,6 +2312,22 @@
 <p><em>The detailed changelog. The repository root <code>CHANGELOG.md</code> carries the same releases as short release
 notes. Since 4.0.0, a model or data update ships as a data pack and is listed by its pack id; app versions are
 listed by version number.</em></p>
+<h2 id="unreleased-web-2026-10-08-data-files-that-fail-a-check-are-shown-on-screen">[Unreleased — web] - 2026-10-08 — DATA FILES THAT FAIL A CHECK ARE SHOWN ON SCREEN<a class="headerlink" href="#unreleased-web-2026-10-08-data-files-that-fail-a-check-are-shown-on-screen" title="Permanent link">&para;</a></h2>
+<p><strong>A damaged or missing data file is now named on screen, and nothing that depends on it is shown.</strong>
+Until now, a file that failed its size or SHA-256 check after start-up was refused, but the message went only
+to the browser console:
+- the global model quietly left that economy out of the coupled solve;
+- a failing trade-weights file was replaced by the build-time copy;
+- a country that failed to load kept showing the previous country's charts under the new name.</p>
+<p>Now:
+- a red banner at the bottom of the screen names each file that failed;
+- a country that fails to load shows an error panel instead of charts;
+- the global model refuses to load from a partial set of economies, or from fallback weights, and says so.</p>
+<p>A file the data pack does not list is still treated as "not shipped" (for example an economy without a fiscal
+block); only a listed file that fails is an error. Web builds verify every file before publishing, so this
+concerns files damaged in transit or on a desktop disk. Tests: <code>dataManifest-errors</code>, <code>gvarLoader-strict</code>,
+<code>loadBVARData-country</code>; checked in a browser with a deliberately damaged file. Web only so far; not in a
+desktop installer.</p>
 <h2 id="data-pack-2026q2-reest-20261008b-2026-10-08-genuine-data-re-estimation-data-to-2026q2-web-app-400">[Data pack 2026Q2-reest-20261008b] - 2026-10-08 — GENUINE-DATA RE-ESTIMATION, DATA TO 2026Q2 (web; app 4.0.0)<a class="headerlink" href="#data-pack-2026q2-reest-20261008b-2026-10-08-genuine-data-re-estimation-data-to-2026q2-web-app-400" title="Permanent link">&para;</a></h2>
 <p><strong>Every economy rebuilt from published data, the whole model re-estimated with no filled values, data through
 2026Q2.</strong> This is the first model update delivered as a data pack under 4.0's separation of data and model from
