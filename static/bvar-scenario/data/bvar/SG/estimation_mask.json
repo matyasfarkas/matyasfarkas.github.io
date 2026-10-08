@@ -1,0 +1,1 @@
+{"bloc":"SG","firstQuarter":"2000-Q1","lastQuarter":"2026-Q2","missing":{"CREDIT_GDP_SG":{"leading":[],"interior":[],"trailing":["2026-Q2"]}},"covidWithheld":{"GDP_SG":["2020-Q2","2020-Q3","2020-Q4"],"EXP_SG":["2020-Q2","2020-Q3","2020-Q4"],"IMP_SG":["2020-Q2","2020-Q3","2020-Q4"],"CPI_SG":["2020-Q2","2020-Q3","2020-Q4"]}}

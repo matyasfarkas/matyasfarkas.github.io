@@ -1,1 +1,1 @@
-{"d0":94.33130080334892,"sfaDefault":4.017,"idx":{"gdp":0,"deflator":1,"revenue":13,"primaryExp":14,"effRate":15,"sfa":16,"gdpIsNominal":false}}
+{"d0":101.39026736047094,"d0_quarter":"2026-Q2","sfaDefault":3.247,"idx":{"gdp":0,"deflator":1,"revenue":13,"primaryExp":14,"effRate":15,"sfa":16},"d0_observed":99.23773735108378,"d0_observed_quarter":"2025-Q4","d0_note":"rolled from the published 2025-Q4 debt over 2 quarter(s) with the budget identity on the completed history (model-implied where those flows are nowcast)"}
