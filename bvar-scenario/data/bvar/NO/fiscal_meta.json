@@ -1,1 +1,1 @@
-{"d0": 54.274469083415894, "sfaDefault": 13.559, "idx": {"gdp": 0, "deflator": 6, "revenue": 15, "primaryExp": 16, "effRate": 17, "sfa": 18}}
+{"d0":45.80666058550503,"d0_quarter":"2026-Q2","sfaDefault":14.081,"idx":{"gdp":0,"deflator":7,"revenue":16,"primaryExp":17,"effRate":18,"sfa":19},"d0_observed":49.03972871985839,"d0_observed_quarter":"2026-Q1","d0_note":"rolled from the published 2026-Q1 debt over 1 quarter(s) with the budget identity on the completed history (model-implied where those flows are nowcast)"}

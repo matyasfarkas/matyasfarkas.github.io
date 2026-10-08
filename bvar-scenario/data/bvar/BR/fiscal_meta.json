@@ -1,1 +1,13 @@
-{"d0": 78.64, "sfaDefault": -0.548, "idx": {"gdp": 0, "deflator": 6, "revenue": 15, "primaryExp": 16, "effRate": 17, "sfa": 18}}
+{
+ "d0": 81.95077910961545,
+ "d0_quarter": "2026-Q2",
+ "sfaDefault": 0.17,
+ "idx": {
+  "gdp": 0,
+  "deflator": 7,
+  "revenue": 16,
+  "primaryExp": 17,
+  "effRate": 18,
+  "sfa": 19
+ }
+}
