@@ -7,12 +7,16 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
+        <meta name="author" content="Matyas Farkas">
+      
+      
+        <link rel="canonical" href="https://matyasfarkas.github.io/docs/BUILD_AND_CI/">
       
       
         <link rel="prev" href="../DATA_SCHEMA/">
       
       
-        <link rel="next" href="../MAINTAINER_OPERATIONS/">
+        <link rel="next" href="../UPDATE_MANUAL/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>Build & CI - Monetary-Financial-Fiscal Macromodel — Documentation</title>
+        <title>Build & CI - Global Macroeconomic Analysis Projections and Scenarios — Documentation</title>
       
     
     
@@ -90,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Monetary-Financial-Fiscal Macromodel — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial-Fiscal Macromodel — Documentation" data-md-component="logo">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-header__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Monetary-Financial-Fiscal Macromodel — Documentation
+            Global Macroeconomic Analysis Projections and Scenarios — Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -214,13 +218,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Monetary-Financial-Fiscal Macromodel — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial-Fiscal Macromodel — Documentation" data-md-component="logo">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-nav__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Monetary-Financial-Fiscal Macromodel — Documentation
+    Global Macroeconomic Analysis Projections and Scenarios — Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -338,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MFFM_User_Manual.pdf" class="md-nav__link">
+      <a href="../GMAPS_User_Manual.pdf" class="md-nav__link">
         
   
   
@@ -366,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MFFM_US_bloc_model.pdf" class="md-nav__link">
+      <a href="../GMAPS_US_bloc_model.pdf" class="md-nav__link">
         
   
   
@@ -514,6 +518,34 @@
     
   
     External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drivers-decomposition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drivers Decomposition Methodology
   
 
     
@@ -803,6 +835,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#drivers-licence-suites-the-experimental-dsge-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drivers licence suites (the experimental DSGE decomposition)
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -821,6 +864,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#gmapsmodelcom-netlify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gmapsmodel.com (Netlify)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-desktop-installer-tauri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The desktop installer (Tauri)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#base_path" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -836,6 +901,17 @@
     <span class="md-ellipsis">
       
         Hugo version pin (0.122.0)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-drivers-payload-in-the-static-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Drivers payload in the static export
       
     </span>
   </a>
@@ -936,6 +1012,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../UPDATE_MANUAL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Manual: data, model and app updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
         
   
@@ -1027,7 +1131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../paper/mffm_platform_paper.pdf" class="md-nav__link">
+      <a href="../paper/gmaps_platform_paper.pdf" class="md-nav__link">
         
   
   
@@ -1167,6 +1271,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#drivers-licence-suites-the-experimental-dsge-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drivers licence suites (the experimental DSGE decomposition)
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1185,6 +1300,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#gmapsmodelcom-netlify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gmapsmodel.com (Netlify)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-desktop-installer-tauri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The desktop installer (Tauri)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#base_path" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1200,6 +1337,17 @@
     <span class="md-ellipsis">
       
         Hugo version pin (0.122.0)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-drivers-payload-in-the-static-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Drivers payload in the static export
       
     </span>
   </a>
@@ -1251,12 +1399,15 @@
 
 
 <h1 id="build-test-deploy">Build, Test &amp; Deploy<a class="headerlink" href="#build-test-deploy" title="Permanent link">&para;</a></h1>
-<p>How the EM-Bayesian Global VAR platform goes from a working tree to the live
-public site under the <code>/bvar-scenario</code> path of the academic website. This page documents
+<p>How the EM-Bayesian Global VAR platform goes from a working tree to the two live
+sites — the <code>/bvar-scenario</code> path of the academic website (GitHub Pages) and
+<strong>gmapsmodel.com</strong> (Netlify) — and to the desktop installer. This page documents
 the <strong>green gate</strong> (the local checks that must pass before any deploy), the
-<strong>test taxonomy</strong> (which suites block a deploy versus which guard a feature), and
-the <strong>deploy chain</strong> (the GitHub Action that builds the static export and republishes
-it into the <code>starter-hugo-academic</code> site repo, which publishes to <strong>GitHub Pages</strong>).</p>
+<strong>data-pack check</strong> every build runs, the <strong>test taxonomy</strong> (which suites guard an
+invariant versus a feature), and the <strong>deploy chain</strong> (two builds of the same commit).</p>
+<p>Since 4.0.0 the data and the estimated model live in a <strong>data pack</strong> (<code>app/public/data</code>
++ <code>manifest.json</code>), separate from the tool: the build ships whatever pack is in the tree,
+and desktop users can update the pack without a new installer (<code>UPDATE_MANUAL.md</code>).</p>
 <p>For the higher-level architecture and the data-refresh / re-estimation runbook, see
 <a href="../ARCHITECTURE_FOR_AI/">ARCHITECTURE_FOR_AI.md</a> and
 <a href="../REESTIMATING_MODELS/">REESTIMATING_MODELS.md</a>. This page does <strong>not</strong> repeat those.</p>
@@ -1297,25 +1448,27 @@ npm<span class="w"> </span>run<span class="w"> </span>test:heavy<span class="w">
 </tr>
 <tr>
 <td>Build</td>
-<td><code>npm run build</code> (<code>next build</code>)</td>
-<td>The Next.js <strong>static export</strong> (<code>output: 'export'</code>) completes and writes <code>app/out/</code>.</td>
+<td><code>npm run build</code></td>
+<td><code>prebuild</code> first: <code>gzip_companion_draws.mjs</code> (gzips every local plain <code>companion_draws.json</code> into its <code>.gz</code>; in a fresh checkout there is none — the plain files are not in git — and the committed <code>.gz</code> is used), <code>vintages_publish.mjs</code> (re-bakes the <code>/monitor</code> vintage files), <code>pack-verify.mjs --full</code> (every file matches <code>manifest.json</code>; dating, weights↔coupling and app-version checks). Then <code>next build</code> writes the <strong>static export</strong> (<code>output: 'export'</code>) to <code>app/out/</code>, and <code>prune-redundant-json.mjs web</code> drops plain <code>.json</code> files that have a <code>.gz</code> twin.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Green gate</strong> = <code>tsc</code> 0 errors <strong>and</strong> <code>npm test</code> green <strong>and</strong> <code>npm run test:heavy</code>
-green <strong>and</strong> the build succeeds. Only then is a deploy allowed. <code>npx vitest run</code>
+green <strong>and</strong> the build succeeds. Only then is a deploy allowed. <strong>The gate is manual:</strong>
+neither deploy (GitHub Action, Netlify) runs <code>tsc</code> or the tests. What they do run is
+<code>npm run build</code>, so a pack that fails <code>pack-verify --full</code> cannot deploy. <code>npx vitest run</code>
 (= <code>npm run test:all</code>) runs <em>everything</em> in one pass — use it for a full sweep, but
 note it runs the heavy suites with default parallelism (slower, can over-subscribe).</p>
 <blockquote>
 <p><strong>The fast/heavy split is real, and it is in <code>package.json</code> — read it, don't assume.</strong>
 <code>npm test</code> is <strong>not</strong> <code>vitest run</code>: it is <code>vitest run</code> with a list of <code>--exclude</code>
 globs. The excluded (heavy) patterns are
-<code>gvar-us-endogenous</code>, <code>gvar-direct-channel</code>, <code>gvar-band-solve</code>,
-<code>gvar-closed-form-*</code>, <code>gvar-band-closedform-*</code>, <code>affine-blockernels-parity</code>,
-<code>gvar-kernel-affine-independence</code>. <code>npm run test:heavy</code> runs <strong>exactly those</strong>
-(matched by <code>vitest run &lt;name…&gt;</code>), one fork at a time. A change that only <code>npm test</code>
-covers leaves the dim-2060 solver paths <strong>unverified</strong> — both halves are mandatory
-before deploy. (<code>npm run test:watch</code> is <code>vitest</code> — the interactive watcher, never a CI gate.)</p>
+<code>gvar-us-endogenous</code>, <code>gvar-direct-channel</code>, <code>gvar-band-solve</code>, <code>gvar-band-solve-levelunits</code>,
+<code>gvar-nowcast-completion</code>, <code>gvar-closed-form-*</code>, <code>affine-blockernels-parity</code>,
+<code>gvar-kernel-affine-independence</code>, <code>gvar-external-spillover</code>, <code>gvar-anderson</code>.
+<code>npm run test:heavy</code> runs <strong>exactly those</strong> (matched by <code>vitest run &lt;name…&gt;</code>), one fork at a
+time. A change that only <code>npm test</code> covers leaves the full-panel solver paths (dim 2180 in the
+deployed pack) <strong>unverified</strong> — both halves are mandatory before deploy. (<code>npm run test:watch</code> is <code>vitest</code> — the interactive watcher, never a CI gate.)</p>
 </blockquote>
 <p>A few notes that are easy to get wrong:</p>
 <ul>
@@ -1328,7 +1481,8 @@ before deploy. (<code>npm run test:watch</code> is <code>vitest</code> — the i
 </ul>
 <hr />
 <h2 id="test-taxonomy">Test taxonomy<a class="headerlink" href="#test-taxonomy" title="Permanent link">&para;</a></h2>
-<p>All compute tests live in <code>app/src/__tests__/compute/</code>. They fall into three roles:</p>
+<p>Most tests live in <code>app/src/__tests__/compute/</code>; checks on the shipped data files (e.g.
+<code>meta-column-indices.test.ts</code>) are in <code>app/src/__tests__/data/</code>. They fall into three roles:</p>
 <ul>
 <li><strong>CANARY</strong> — guards a load-bearing invariant or a deployed artifact. A red canary
   means the shipped model data, the scaling convention, or the cross-country solver
@@ -1340,7 +1494,7 @@ before deploy. (<code>npm run test:watch</code> is <code>vitest</code> — the i
   (scaling differencing, WYSIWYG conditioning, counterfactual recovery, …).</li>
 </ul>
 <h3 id="fast-npm-test-vs-heavy-npm-run-testheavy-which-is-which">Fast (<code>npm test</code>) vs heavy (<code>npm run test:heavy</code>) — which is which<a class="headerlink" href="#fast-npm-test-vs-heavy-npm-run-testheavy-which-is-which" title="Permanent link">&para;</a></h3>
-<p><code>npm test</code> excludes seven heavy patterns; <code>npm run test:heavy</code> runs <strong>exactly those</strong>,
+<p><code>npm test</code> excludes ten heavy patterns; <code>npm run test:heavy</code> runs <strong>exactly those</strong>,
 serialised to one fork. The three <strong>deploy-blocking canaries</strong>
 (<code>scenario-scale-convention</code>, <code>gvar-convergence</code>, <code>gvar-coupling-artifact</code>) are all in
 the <strong>fast</strong> suite. The <strong>heavy</strong> suite is the multi-second full-panel solver and the
@@ -1357,7 +1511,7 @@ affine-kernel/coupling perf-parity gates:</p>
 <tr>
 <td><code>gvar-us-endogenous</code></td>
 <td><code>gvar-us-endogenous.test.ts</code></td>
-<td>augmented dim-2060 endogenous fixed point</td>
+<td>augmented endogenous fixed point (full panel)</td>
 </tr>
 <tr>
 <td><code>gvar-direct-channel</code></td>
@@ -1375,9 +1529,14 @@ affine-kernel/coupling perf-parity gates:</p>
 <td><code>(I−M)⁻¹d</code> ≡ iterative + cache correctness on the endogenous fixture</td>
 </tr>
 <tr>
-<td><code>gvar-band-closedform-*</code></td>
-<td><em>(no file at present)</em></td>
-<td>reserved glob for the closed-form band path</td>
+<td><code>gvar-band-solve-levelunits</code></td>
+<td><code>gvar-band-solve-levelunits.test.ts</code></td>
+<td>the band solve in level units</td>
+</tr>
+<tr>
+<td><code>gvar-nowcast-completion</code></td>
+<td><code>gvar-nowcast-completion.test.ts</code></td>
+<td>the coupled nowcast of the ragged edge (needs up to 120 sweeps on the deployed model)</td>
 </tr>
 <tr>
 <td><code>affine-blockernels-parity</code></td>
@@ -1389,14 +1548,26 @@ affine-kernel/coupling perf-parity gates:</p>
 <td><code>gvar-kernel-affine-independence.test.ts</code></td>
 <td>the kernel-cache RANK-1 affine-independence gate</td>
 </tr>
+<tr>
+<td><code>gvar-external-spillover</code></td>
+<td><code>gvar-external-spillover.test.ts</code></td>
+<td>external-forecast propagation through the coupled solve</td>
+</tr>
+<tr>
+<td><code>gvar-anderson</code></td>
+<td><code>gvar-anderson.test.ts</code></td>
+<td>the Anderson-accelerated soft (external-forecast) solve reaches the same fixed point (≈5 min alone)</td>
+</tr>
 </tbody>
 </table>
 <p>The fast/heavy split is keyed on <strong>glob patterns</strong>, not a fixed file list: <code>npm test</code> <code>--exclude</code>s the
-seven patterns above and <code>npm run test:heavy</code> selects <code>gvar-us-endogenous gvar-direct-channel
-gvar-band-solve gvar-closed-form gvar-band-closedform affine-blockernels gvar-kernel-affine</code> — so a new
-<code>gvar-closed-form-*</code> or <code>gvar-band-closedform-*</code> file is auto-routed to the heavy half. Everything <strong>else</strong>
-in <code>app/src/__tests__/compute/</code> runs under <code>npm test</code>. <strong>Both halves gate the deploy</strong> — a heavy suite
-that only <code>test:heavy</code> runs still blocks a release if red.</p>
+ten patterns above and <code>npm run test:heavy</code> selects <code>gvar-us-endogenous gvar-direct-channel
+gvar-band-solve gvar-closed-form affine-blockernels gvar-kernel-affine gvar-nowcast-completion
+gvar-external-spillover gvar-anderson</code> (<code>app/package.json</code> is authoritative) — so a new
+<code>gvar-closed-form-*</code> file is auto-routed to the heavy half. Everything <strong>else</strong>
+in <code>app/src/__tests__/</code> runs under <code>npm test</code>. <strong>Both halves are part of the gate</strong> — a heavy suite
+that only <code>test:heavy</code> runs still blocks a release if red. (Under heavy machine load some vitest
+workers time out; such a file is re-run on its own before it counts as a failure.)</p>
 <h3 id="canary-suites-block-deploy">Canary suites (block deploy)<a class="headerlink" href="#canary-suites-block-deploy" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -1420,10 +1591,14 @@ that only <code>test:heavy</code> runs still blocks a release if red.</p>
 </tr>
 </tbody>
 </table>
-<p>These three are exactly the suites that, if red, must stop a release — they cover the
-two things a static deploy cannot self-correct: the <strong>shipped artifacts</strong>
-(<code>coupling_default.json.gz</code>, the per-bloc model JSON) and the <strong>display/solver
-conventions</strong> the UI renders on top of them.</p>
+<p>These three must stop a release if red — they cover the two things a static deploy
+cannot self-correct: the <strong>shipped artifacts</strong> (<code>coupling_default.json.gz</code>, the per-bloc
+model JSON) and the <strong>display/solver conventions</strong> the UI renders on top of them. Two
+data-file guards belong with them: <code>fiscal-meta-indices.test.ts</code> (every fiscal bloc's
+debt path stays bounded — stale positional indices explode it) and
+<code>data/meta-column-indices.test.ts</code> (every <code>fiscal_meta</code>/<code>external_meta</code> index points at
+the right variable family; <code>external_meta.idx</code> equals its recorded <code>idxIds</code>). The
+<strong>data pack itself</strong> is checked by <code>pack-verify --full</code> in every build (above).</p>
 <h3 id="feature-suites">Feature suites<a class="headerlink" href="#feature-suites" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -1498,8 +1673,8 @@ conventions</strong> the UI renders on top of them.</p>
 <td>The US-endogenous <strong>direct</strong> preview channel on a bloc subset. <strong>(heavy)</strong></td>
 </tr>
 <tr>
-<td><code>longRunTilt.test.ts</code></td>
-<td>The entropic long-run tilt + PLR (<code>longRunTilt.ts</code>).</td>
+<td><code>driftSetter-joint-solve.test.ts</code></td>
+<td>The δc-drift long-run-target anchor (<code>driftSetter.ts</code> <code>computeDriftDeltaFull</code>), per-variable + joint solve.</td>
 </tr>
 <tr>
 <td><code>chartgrid-render-memo.test.ts</code></td>
@@ -1585,15 +1760,86 @@ blocks a deploy with stale indices. See
 <p>The file list above is enumerated from <code>app/src/__tests__/compute/</code>. When you add a
 test, slot it into the right row here and confirm it actually runs under <code>vitest run</code>.</p>
 </blockquote>
+<h3 id="drivers-licence-suites-the-experimental-dsge-decomposition">Drivers licence suites (the experimental DSGE decomposition)<a class="headerlink" href="#drivers-licence-suites-the-experimental-dsge-decomposition" title="Permanent link">&para;</a></h3>
+<p>The Drivers panel reads a scenario path through a chosen DSGE model and reports which sequence of
+<em>that model's</em> structural shocks reproduces it. The claim is model-conditional and its validation is
+same-model recovery, so what the suites below guard is not a user-facing capability but a <strong>licence</strong>:
+the configurations in which the shipped estimator is allowed to present a result, and the provenance of
+the data it reads. Three files carry them, <strong>26 tests</strong> in total, and none of them is in the
+<code>--exclude</code> list — they all run under <code>npm test</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Test file</th>
+<th>Tests</th>
+<th>Guards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>drivers-decomp.test.ts</code></td>
+<td>4</td>
+<td>The engine mirrors <code>pipeline/bench_simple_decomp.m</code>: exact same-model recovery on the identified fixtures, the budget rule (naming more shocks than observables watched throws), and the measured unit conversions (<code>inflationq/pinfobs</code> = <code>interest/robs</code> = 4.000).</td>
+</tr>
+<tr>
+<td><code>drivers-decomp-v2.test.ts</code></td>
+<td>7</td>
+<td>Display-unit additivity (contributions + residual reproduce the scenario line to 1e-8), the CMR14 extended-observable unit mapping, and the FRB/US cluster licence.</td>
+</tr>
+<tr>
+<td><code>drivers-decomp-v3.test.ts</code></td>
+<td>15</td>
+<td>The column-normalised solver, class aggregation at the licensed configuration, the <strong>three-coordinate class-view predicate</strong>, the FRB/US cluster partition and its validated default naming, shipped-payload provenance (sha256 of every shipped file, <code>class_maps.json</code> embedded verbatim, index horizon = engine horizon), the BVAR-panel-to-observable seam, and the rank arithmetic behind the excluded duplicate observables.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Remark 1 (These are artifact gates, not unit tests).</strong> <em>Each file reads the </em><em>shipped</em><em> payload off
+disk — <code>app/public/data/dsge/census/index.json</code>, the census copies, and the <code>US_SW07</code>/<code>US_CMR14</code> files
+in the IRF tree — rather than a fixture. Test v3-5 hashes every shipped file and compares against the
+<code>sha256</code> the index records for it, so a payload regenerated without rebuilding the index, or an index
+committed without its files, turns red. Treat that the way you treat <code>gvar-coupling-artifact</code>: it is
+telling you the shipped data and the shipped metadata have come apart. The suite therefore also does
+real I/O, including the 10.75 MB <code>US_FRB22.json</code> that the cluster tests load.</em></p>
+<p><strong>Remark 2 (Do not widen a licence constant to make a test pass).</strong> <em>Test v3-3 asserts the class-view
+observable set and shock set against the </em><em>literal bench coordinates</em><em>, not against the constants the
+app exports, and it carries a negative case for each of the seven droppable shocks. Widening either
+constant to admit a configuration the bench never ran is exactly what the test exists to catch. The
+correct response to a red licence test is to narrow what the interface offers; see
+<a href="../MAINTAINER_OPERATIONS/">MAINTAINER_OPERATIONS.md</a> §H4.</em></p>
 <hr />
 <h2 id="deploy-chain">Deploy chain<a class="headerlink" href="#deploy-chain" title="Permanent link">&para;</a></h2>
 <p>The source repo is <code>matyasfarkas/BVAR-Policy-Calibration-Tool</code> (the <code>origin</code> remote).
-The <strong>deploy</strong> target is the <code>bvarscenario</code> remote (<code>matyasfarkas/BVARScenarioTool</code>),
-whose GitHub Action builds the export and republishes it into the
-<code>matyasfarkas/starter-hugo-academic</code> website repo. That site is a Hugo Academic
-site published to <strong>GitHub Pages</strong> (note the <code>netlify.toml</code> trigger).
-This workflow contains <strong>no Hugo step</strong>: it only copies <code>app/out/*</code> into the website
-repo, and the Hugo build downstream then rebuilds and serves it.</p>
+There are <strong>two deploy targets, built from the same commit of <code>main</code></strong> — push it to both:</p>
+<table>
+<thead>
+<tr>
+<th>Remote</th>
+<th>Repo</th>
+<th>Builds</th>
+<th>Serves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bvarscenario</code></td>
+<td><code>matyasfarkas/BVARScenarioTool</code></td>
+<td>GitHub Action <code>deploy-to-website.yml</code> (below)</td>
+<td>matyasfarkas.github.io/bvar-scenario (GitHub Pages, via <code>starter-hugo-academic</code>)</td>
+</tr>
+<tr>
+<td><code>gmapsmodel</code></td>
+<td><code>gmapsmodel/GMAPS</code></td>
+<td>Netlify, per <code>netlify.toml</code> (below)</td>
+<td>gmapsmodel.com (domain root)</td>
+</tr>
+</tbody>
+</table>
+<p>Both deploys run <code>npm ci &amp;&amp; npm run build</code>, so both run <code>prebuild</code> (<code>pack-verify --full</code>);
+neither runs the tests. The desktop installer is a third, local build (below).</p>
+<p>The GitHub Pages chain: the <code>bvarscenario</code> Action builds the export and republishes it into the
+<code>matyasfarkas/starter-hugo-academic</code> website repo, a Hugo Academic site published to
+<strong>GitHub Pages</strong>. This workflow contains <strong>no Hugo step</strong>: it only copies <code>app/out/*</code> into the
+website repo, and the Hugo build downstream then rebuilds and serves it.</p>
 <div class="highlight"><pre><span></span><code>push -&gt; bvarscenario main
    │   (paths: app/** or netlify.toml)
    ▼
@@ -1625,6 +1871,29 @@ served at the /bvar-scenario path of the academic site (GitHub Pages)
 <p>The Hugo build that assembles the final academic site is <strong>not</strong> in this workflow file —
 it runs as part of the website repo's downstream build that publishes to GitHub Pages, and any
 Hugo version pin lives in the <code>starter-hugo-academic</code> repo, not here (see below).</p>
+<h3 id="gmapsmodelcom-netlify">gmapsmodel.com (Netlify)<a class="headerlink" href="#gmapsmodelcom-netlify" title="Permanent link">&para;</a></h3>
+<p><code>netlify.toml</code> (repo root): <code>base = "app"</code>, <code>command = "npm ci &amp;&amp; npm run build"</code>,
+<code>publish = "out"</code>, <code>NODE_VERSION = "22"</code>, and <code>DOCS_URL</code> pointing the Docs button at the hosted
+MkDocs site (this host serves the app at the domain root, with no sibling <code>/docs/</code>). No
+<code>BASE_PATH</code> is set, so the app is built for the root.</p>
+<p>The <code>ignore</code> rule skips a push that changes neither <code>app/</code> nor <code>netlify.toml</code> (to save metered
+build minutes):</p>
+<div class="highlight"><pre><span></span><code><span class="n">ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- :/app :/netlify.toml&quot;</span>
+</code></pre></div>
+<p>Netlify runs this command <strong>inside the base directory</strong> (<code>app/</code>), so the paths must be repo-root
+pathspecs (<code>:/…</code>). The first version (<code>git diff --quiet HEAD^ HEAD -- app netlify.toml</code>, added
+2026-08-05) matched nothing from <code>app/</code>, always exited 0, and cancelled <strong>every</strong> build — manual
+"Trigger deploy" included — until it was fixed in <code>298dfd8d</code> (2026-10-08). <code>$CACHED_COMMIT_REF</code> (the
+last commit Netlify built) also covers a merge whose first parent already had the changes, which
+<code>HEAD^</code> missed. <strong>After every push, check the site really changed</strong>: <code>curl
+https://gmapsmodel.com/data/manifest.json</code> should show the new <code>packId</code>.</p>
+<h3 id="the-desktop-installer-tauri">The desktop installer (Tauri)<a class="headerlink" href="#the-desktop-installer-tauri" title="Permanent link">&para;</a></h3>
+<p>Built locally, not in CI: <code>npm run build:tauri</code> (= <code>next build</code> with <code>TAURI_BUILD=1</code> and an empty
+<code>BASE_PATH</code>, then <code>prune-redundant-json.mjs desktop</code>), then <code>npx tauri build</code> (Windows cross-build
+steps in <code>app/src-tauri/README.md</code>). <code>build:tauri</code> has <strong>no</strong> <code>prebuild</code>, so run <code>npm run data:verify</code>
+(<code>verify_cutoffs</code> + <code>pack-verify --full</code>) first. The installer carries the data pack that was in the
+tree as its built-in pack; record it with <code>npm run pack:record-release -- --version &lt;x.y.z&gt;</code> so later
+update packs can be cut against it. Full steps: <code>UPDATE_MANUAL.md</code> §8.</p>
 <h3 id="base_path">BASE_PATH<a class="headerlink" href="#base_path" title="Permanent link">&para;</a></h3>
 <p>The site is served from the <code>/bvar-scenario</code> sub-path of the academic site (GitHub Pages), so the
 static export must be built with that prefix. <code>next.config.mjs</code>:</p>
@@ -1651,15 +1920,26 @@ static export must be built with that prefix. <code>next.config.mjs</code>:</p>
 <td>root-relative (<code>/…</code>)</td>
 </tr>
 <tr>
-<td>Deploy (CI)</td>
+<td>Deploy (GitHub Action)</td>
 <td><code>/bvar-scenario</code></td>
 <td><code>/bvar-scenario/…</code></td>
 </tr>
+<tr>
+<td>Deploy (Netlify, gmapsmodel.com)</td>
+<td>unset → <code>''</code></td>
+<td>root-relative (<code>/…</code>)</td>
+</tr>
+<tr>
+<td>Desktop (<code>build:tauri</code>)</td>
+<td><code>''</code></td>
+<td>root-relative</td>
+</tr>
 </tbody>
 </table>
-<p>The CI step always sets <code>BASE_PATH=/bvar-scenario</code>. Reproduce the exact deploy artifact
-locally with <code>BASE_PATH=/bvar-scenario npm run build</code>. Client code that needs to fetch a
-shipped data file under the prefix reads <code>process.env.NEXT_PUBLIC_BASE_PATH</code>.</p>
+<p>The GitHub Action always sets <code>BASE_PATH=/bvar-scenario</code>. Reproduce that deploy artifact
+locally with <code>BASE_PATH=/bvar-scenario npm run build</code>. Data files are fetched only through
+<code>app/src/lib/data/dataManifest.ts</code>, which builds its URLs from
+<code>process.env.NEXT_PUBLIC_BASE_PATH</code> + <code>/data</code>.</p>
 <h3 id="hugo-version-pin-01220">Hugo version pin (0.122.0)<a class="headerlink" href="#hugo-version-pin-01220" title="Permanent link">&para;</a></h3>
 <p>The website repo's build is <strong>pinned to Hugo 0.122.0</strong>. The pin is enforced in the
 website pipeline (<code>.github/workflows/updater-wip.yml</code>). <strong>Rationale:</strong> Hugo 0.123+
@@ -1667,12 +1947,45 @@ removed the <code>getCSV</code> / <code>getCSS</code> data helpers that the wowc
 on; later versions break the site build. <strong>Do not bump the pin</strong> without first migrating
 the theme off those removed helpers. (Documented in
 <a href="https://github.com/matyasfarkas/BVARScenarioTool/blob/main/README.md">README.md</a> and <a href="../ARCHITECTURE_FOR_AI/">ARCHITECTURE_FOR_AI.md</a>.)</p>
+<h3 id="the-drivers-payload-in-the-static-export">The Drivers payload in the static export<a class="headerlink" href="#the-drivers-payload-in-the-static-export" title="Permanent link">&para;</a></h3>
+<p><code>next build</code> copies <code>app/public/</code> into <code>app/out/</code> verbatim, so the DSGE impulse-response payload the
+Drivers panel reads ships with every deploy. The directory it added, <code>app/public/data/dsge/census/</code>,
+is <strong>22.4 MB</strong> over nine files, and two of them are almost all of it: the FRB/US census lenses
+<code>US_FRB22.json</code> at <strong>10.75 MB</strong> and <code>US_FRB22_var.json</code> at <strong>10.57 MB</strong>, each carrying the responses of
+54 shocks. The index and the six small census models come to 1.07 MB together. Regenerating the
+<code>US_SW07</code> and <code>US_CMR14</code> IRF files with their full native shock sets added a further 1.6 MB under
+<code>app/public/data/dsge/irfs/</code>. That was about <strong>24 MB</strong> against an <code>app/public/data/</code> tree of ~757 MB
+(Aug 2026), so nothing in the deploy chain has to change to carry it and no file comes near GitHub's
+100 MB limit.</p>
+<p>None of it is fetched eagerly. The drawer requests <code>census/index.json</code> (36 KB) the first time a user
+opens it, once per session, and the selected model's response file only when that model is selected,
+cached per model for the rest of the session. The default lens is <code>US_SW07</code>, whose 215 KB file is
+already in the IRF tree, so the ordinary path costs 251 KB. <strong>The two ~10.7 MB FRB/US files are
+downloaded only if the user picks an FRB/US lens</strong> — the drawer records a fetch failure per model and
+offers a retry, which is there because a file that size can fail on a slow link. Unlike
+<code>companion_draws</code> and the coupling artifact these files are <strong>not</strong> gzipped in the repo, and the loader
+that fetches them does no client-side decompression; whatever compression happens on the wire is the
+host's doing and is not configured here.</p>
+<p><strong>Remark 3 (The desktop prune does not touch them).</strong> <em><code>npm run build:tauri</code> runs
+<code>scripts/prune-redundant-json.mjs desktop</code>, which deletes a plain <code>X.json</code> from <code>out/data/</code> only when a sibling
+<code>X.json.gz</code> exists. The census files have no <code>.gz</code> sibling, so the full 22.4 MB travels into the Tauri
+bundle. If the installer size becomes the binding constraint, the lever is to gzip the two FRB/US files
+at build time and give the Drivers loader the <code>.gz</code> path the coupling artifact already uses — a code
+change on both sides, not a build flag.</em></p>
 <h3 id="what-to-commit-and-what-not-to">What to commit (and what not to)<a class="headerlink" href="#what-to-commit-and-what-not-to" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Commit only deploy-relevant files (<code>app/**</code>, docs, config).</li>
+<li>Commit <code>app/public/data/</code> <strong>together with</strong> its <code>manifest.json</code>: every data change needs a
+  re-stamp (<code>pack-build.mjs --pack-id &lt;new id&gt;</code>), or <code>prebuild</code>'s <code>pack-verify --full</code> fails the deploy.
+  Never re-use a pack id for different content.</li>
+<li>The plain <code>companion_draws.json</code> files are local by-products (not in git, not in the pack); only the
+  <code>.gz</code> is committed.</li>
 <li>Leave <code>pipeline/</code> scratch — diagnostics, staging dirs, raw CSVs, <code>_verify/</code> —
   <strong>untracked</strong>.</li>
 <li>Never commit <code>app/.env.local</code> or any <code>FRED_API_KEY</code>.</li>
+<li>Commit <code>app/public/data/dsge/census/index.json</code> <strong>together with</strong> the payload files it hashes. The
+  index records a <code>sha256</code> per shipped file and <code>drivers-decomp-v3.test.ts</code> re-computes every one of
+  them, so a half-staged payload is a red test rather than a silent mismatch.</li>
 </ul>
 <hr />
 <h2 id="quick-reference">Quick reference<a class="headerlink" href="#quick-reference" title="Permanent link">&para;</a></h2>
@@ -1681,7 +1994,15 @@ the theme off those removed helpers. (Documented in
 npx<span class="w"> </span>tsc<span class="w"> </span>--noEmit
 npm<span class="w"> </span><span class="nb">test</span><span class="w">                </span><span class="c1"># fast suite (excludes the heavy solver canaries)</span>
 npm<span class="w"> </span>run<span class="w"> </span>test:heavy<span class="w">      </span><span class="c1"># heavy solver / perf-parity canaries (1 fork)</span>
-<span class="nv">BASE_PATH</span><span class="o">=</span>/bvar-scenario<span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>build
+<span class="nv">BASE_PATH</span><span class="o">=</span>/bvar-scenario<span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>build<span class="w">   </span><span class="c1"># prebuild runs pack-verify --full</span>
+
+<span class="c1"># The data-pack checks on their own:</span>
+npm<span class="w"> </span>run<span class="w"> </span>data:verify<span class="w">                 </span><span class="c1"># verify_cutoffs + pack-verify --full</span>
+npm<span class="w"> </span>run<span class="w"> </span>pack:build<span class="w"> </span>--<span class="w"> </span>--pack-id<span class="w"> </span>&lt;id&gt;<span class="w"> </span><span class="c1"># re-stamp manifest.json after a data change (new id)</span>
+
+<span class="c1"># Deploy = push the same commit to both remotes (only after the gate, with confirmation):</span>
+git<span class="w"> </span>push<span class="w"> </span>bvarscenario<span class="w"> </span>main<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>gmapsmodel<span class="w"> </span>main
+curl<span class="w"> </span>-s<span class="w"> </span>https://gmapsmodel.com/data/manifest.json<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-c<span class="w"> </span><span class="m">300</span><span class="w">   </span><span class="c1"># confirm Netlify really rebuilt</span>
 
 <span class="c1"># Or sweep everything in one pass (slower, default parallelism):</span>
 npm<span class="w"> </span>run<span class="w"> </span>test:all<span class="w">        </span><span class="c1"># = vitest run</span>
@@ -1692,10 +2013,23 @@ npx<span class="w"> </span>vitest<span class="w"> </span>run<span class="w"> </s
 <span class="c1"># Regenerate the shipped coupling artifact (keeps the coupling canary green</span>
 <span class="c1"># after a model refresh) — see REESTIMATING_MODELS.md:</span>
 npx<span class="w"> </span>vite-node<span class="w"> </span>scripts/precompute_gvar_coupling.mjs
+
+<span class="c1"># Run just the 26 Drivers licence tests while iterating on that feature:</span>
+npx<span class="w"> </span>vitest<span class="w"> </span>run<span class="w"> </span>src/__tests__/compute/drivers-decomp.test.ts<span class="w"> </span><span class="se">\</span>
+<span class="w">              </span>src/__tests__/compute/drivers-decomp-v2.test.ts<span class="w"> </span><span class="se">\</span>
+<span class="w">              </span>src/__tests__/compute/drivers-decomp-v3.test.ts
+
+<span class="c1"># Rebuild the shipped DSGE lens payload (needs pipeline/census_irfs/ from</span>
+<span class="c1"># explore/shock-benchmark) — see PIPELINE.md §3.6 and MAINTAINER_OPERATIONS.md §H:</span>
+node<span class="w"> </span>scripts/build_drivers_index.mjs
 </code></pre></div>
 <p>If the <code>gvar-coupling-artifact</code> canary goes red after a model refresh, the artifact is
 stale: regenerate <code>coupling_default.json.gz</code> with the <code>precompute_gvar_coupling.mjs</code>
-script (full data-refresh runbook in <a href="../REESTIMATING_MODELS/">REESTIMATING_MODELS.md</a>).</p>
+script (full data-refresh runbook in <a href="../REESTIMATING_MODELS/">REESTIMATING_MODELS.md</a>).
+If a Drivers licence test goes red, the shipped payload and the index that hashes it have
+come apart, or a licence constant has been widened past what the benches ran — regenerate
+the payload, or narrow the interface; never widen the constant (§H4 of
+<a href="../MAINTAINER_OPERATIONS/">MAINTAINER_OPERATIONS.md</a>).</p>
 
 
 
@@ -1729,6 +2063,10 @@ script (full data-refresh runbook in <a href="../REESTIMATING_MODELS/">REESTIMAT
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025–2026 Matyas Farkas — GPL-3.0-only
+    </div>
   
   
     Made with

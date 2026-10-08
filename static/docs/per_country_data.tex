@@ -44,6 +44,15 @@ through the pandemic. Per-variable priors are RW except the stationary fiscal
 GDP-ratios (\texttt{FREV\_GDP}, \texttt{FPEXP\_GDP}, \texttt{SFA}), which carry
 the white-noise (\texttt{WN}) prior.
 
+\paragraph{Exchange-rate direction (system-wide).} Every exchange-rate variable --- \texttt{NEER\_<CC>} in each
+economy, the US \texttt{FXTWM} and China's real index \texttt{REER\_CN} --- is an effective exchange-rate index of
+the domestic currency, harmonised on direction across all economies: a \emph{rise is an appreciation} and a
+\emph{fall is a depreciation}. The sources (BIS broad index \texttt{WS\_EER}; IMF \texttt{EER} for AU, CL, CR, NZ;
+Eurostat \texttt{ert\_eff\_ic\_q} for the euro-area members) all quote the index this way, and the direction is
+verified on the data at every build. (Before the 2026 re-estimation the Canadian and euro-area series were
+bilateral US-dollar rates, where a rise meant a depreciation; the per-economy tables below still describe the
+pre-2026 sources and are regenerated from the source registry with the 2026 data.)
+
 \paragraph{The new credit block (flagged throughout).} Each bloc is augmented
 with a credit \emph{quantity} variable \texttt{CREDIT\_GDP\_<CC>} = BIS
 \emph{Total Credit to Non-Financial Corporations, \% of GDP} (the BIS

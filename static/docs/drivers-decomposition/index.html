@@ -1,0 +1,2796 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Matyas Farkas">
+      
+      
+        <link rel="canonical" href="https://matyasfarkas.github.io/docs/drivers-decomposition/">
+      
+      
+        <link rel="prev" href="../external-block-methodology/">
+      
+      
+        <link rel="next" href="../EMPIRICAL_EVALUATION/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Drivers Decomposition Methodology - Global Macroeconomic Analysis Projections and Scenarios — Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#drivers-model-conditional-shock-decomposition-of-a-scenario-path" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-header__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Global Macroeconomic Analysis Projections and Scenarios — Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Drivers Decomposition Methodology
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-nav__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Global Macroeconomic Analysis Projections and Scenarios — Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USER_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GMAPS_User_Manual.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GMAPS_US_bloc_model.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The US Bloc Model (PDF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-cookbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Cookbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../euro-cross-border/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Euro-area Spillover & Harmonization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fiscal-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiscal Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anchor-review-2026-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anchor Review (July 2026)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-block-methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drivers Decomposition Methodology
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drivers Decomposition Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-question-it-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The question it answers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-object-precisely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The object, precisely
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The object, precisely">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-stacked-response-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The stacked response matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-estimator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The estimator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-the-columns-are-normalised" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why the columns are normalised
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributions-fit-and-residual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributions, fit and residual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rank-and-regime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rank and regime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-engines-entry-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The engine's entry point
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unit conventions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unit conventions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-the-bvar-panel-to-the-three-common-observables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From the BVAR panel to the three common observables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#native-observables-us-bloc-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native observables (US bloc only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Availability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-observables-to-the-main-panels-display-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From observables to the main panel's display space
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-two-licensed-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The two licensed rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The two licensed rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rule-1-the-naming-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rule 1 — the naming budget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-2-the-collinearity-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rule 2 — the collinearity flag
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-class-view-licence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The class-view licence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The class-view licence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-the-bench-ran" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the bench ran
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-the-shipped-code-permits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the shipped code permits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-the-class-view-is-and-is-not-available" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where the class view is and is not available
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-model-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The model menu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-frbus-census-lenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The FRB/US census lenses
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-the-drawer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working with the drawer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-data-payload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The data payload
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limits-of-the-claim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limits of the claim
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regeneration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regeneration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placement-in-one-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Placement in one line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key references
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EMPIRICAL_EVALUATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empirical Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_FOR_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PIPELINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODULES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules & API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DATA_SCHEMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Schemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUILD_AND_CI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer's Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintainer's Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UPDATE_MANUAL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Manual: data, model and app updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADDING_A_COUNTRY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding a Country
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../REESTIMATING_MODELS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-estimating Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper/gmaps_platform_paper.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-question-it-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The question it answers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-object-precisely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The object, precisely
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The object, precisely">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-stacked-response-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The stacked response matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-estimator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The estimator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-the-columns-are-normalised" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why the columns are normalised
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contributions-fit-and-residual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributions, fit and residual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rank-and-regime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rank and regime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-engines-entry-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The engine's entry point
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unit conventions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unit conventions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-the-bvar-panel-to-the-three-common-observables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From the BVAR panel to the three common observables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#native-observables-us-bloc-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native observables (US bloc only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Availability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-observables-to-the-main-panels-display-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From observables to the main panel's display space
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-two-licensed-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The two licensed rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The two licensed rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rule-1-the-naming-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rule 1 — the naming budget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-2-the-collinearity-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rule 2 — the collinearity flag
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-class-view-licence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The class-view licence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The class-view licence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-the-bench-ran" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the bench ran
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-the-shipped-code-permits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the shipped code permits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-the-class-view-is-and-is-not-available" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where the class view is and is not available
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-model-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The model menu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-frbus-census-lenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The FRB/US census lenses
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-the-drawer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working with the drawer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-data-payload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The data payload
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limits-of-the-claim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limits of the claim
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regeneration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regeneration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placement-in-one-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Placement in one line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key references
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="drivers-model-conditional-shock-decomposition-of-a-scenario-path">Drivers — model-conditional shock decomposition of a scenario path<a class="headerlink" href="#drivers-model-conditional-shock-decomposition-of-a-scenario-path" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Experimental feature, model-conditional claim</p>
+<p>The Drivers panel is <strong>experimental</strong> and is badged as such in the tool. What it reports is
+<strong>conditional on the DSGE model the user selects</strong>: the mix of <em>that model's own</em> structural
+shocks which reproduces the displayed path. It is <strong>not</strong> a statement about what caused the
+scenario, and it is <strong>not</strong> model-free shock labelling. Read <a href="#limits-of-the-claim">Limits of the
+claim</a> before using any number from it.</p>
+</div>
+<p>The Drivers drawer takes the scenario path the app is currently showing — or an imported
+external-forecast combination — and asks a chosen model from the Macroeconomic Model Base (MMB) which
+sequence of that model's structural shocks would have produced it over the first twelve forecast
+quarters. It draws the answer as a stacked contribution chart in the same units as the main panel,
+with an explicit grey residual for the part the named shocks cannot reproduce. This is the
+NAWM-II-style "filter the path through the model" exercise, run on a path object rather than by
+inverting a state recursion.</p>
+<p>It fits the tool's standing division of labour. The <a href="../fiscal-block-methodology/">fiscal block</a> and
+the <a href="../external-block-methodology/">external block</a> take BVAR flow forecasts and derive stocks by
+accounting identity; Drivers takes the same BVAR path and reads it through a structural lens. In all
+three cases the reduced form generates the path and a separate, side-effect-free module interprets
+it. The authoritative implementation is <code>app/src/lib/compute/driversDecomp.ts</code> (the engine) and
+<code>app/src/components/controls/DriversDrawer.tsx</code> (the drawer); neither writes back into the scenario.</p>
+<h2 id="the-question-it-answers">The question it answers<a class="headerlink" href="#the-question-it-answers" title="Permanent link">&para;</a></h2>
+<p>A user looking at a scenario in which output falls and inflation stays up wants to know what kind of
+disturbance that pattern looks like. The variance decomposition answers a population question (how
+much of the fluctuation in inflation is due to supply shocks?), and the historical decomposition
+answers a sample question (which shocks moved inflation in 2022?). Drivers answers a third,
+narrower question: <strong>which sequence of this model's shocks, fed into this model, reproduces the path
+I am looking at?</strong></p>
+<p>That question has an honest answer and a dishonest one. The honest answer names the model: through
+the Smets–Wouters (2007) lens, this scenario is mostly a wage-markup and monetary mix; through the
+Christiano–Motto–Rostagno (2014) lens it is something else, because CMR14 has a financial block and
+SW07 does not. The dishonest answer drops the qualifier and claims to have identified what drove the
+economy. Everything in this page — the budget rule, the collinearity flag, the class-view licence —
+exists to keep the tool on the first answer.</p>
+<p>The exercise is validated by <strong>same-model recovery</strong>: a path is generated from a model's own known
+shock sequence, decomposed under that same model, and the recovered contribution paths are compared
+with the truth. That measures the estimator. It says nothing about whether the model is right.</p>
+<h2 id="the-object-precisely">The object, precisely<a class="headerlink" href="#the-object-precisely" title="Permanent link">&para;</a></h2>
+<p>Let <span class="arithmatex">\(H = 12\)</span> be the decomposition horizon in quarters (<code>DRIVERS_H</code>, <code>driversDecomp.ts:46</code>), <span class="arithmatex">\(q\)</span> the
+number of watched observables, and <span class="arithmatex">\(K\)</span> the number of named shocks. <span class="arithmatex">\(H\)</span> is fixed: the decomposition
+always covers the first twelve forecast quarters, whatever horizon the main chart grid is displaying.
+The user supplies a deviation path <span class="arithmatex">\(z\)</span> — the scenario's level deviation from baseline, mapped into
+the model's observable space by the conventions in <a href="#unit-conventions">Unit conventions</a>.</p>
+<p>The engine solves the deconvolution</p>
+<div class="arithmatex">\[
+z_o(t) \;=\; \sum_{k=1}^{K}\ \sum_{\tau \le t} R_{k,o}(t-\tau)\, \varepsilon_k(\tau) \;+\; u_o(t),
+\qquad o = 1,\dots,q, \quad t = 0,\dots,H-1
+\]</div>
+<p>for the shock sequence <span class="arithmatex">\(\{\varepsilon_k(\tau)\}\)</span>. Here <span class="arithmatex">\(R_{k,o}(h)\)</span> is the model's impulse response
+of observable <span class="arithmatex">\(o\)</span> to shock <span class="arithmatex">\(k\)</span> at horizon <span class="arithmatex">\(h\)</span>, read straight from the shipped MMB impulse-response
+file, and <span class="arithmatex">\(u_o(t)\)</span> is the residual — the part of the path the named shocks cannot reproduce.</p>
+<h3 id="the-stacked-response-matrix">The stacked response matrix<a class="headerlink" href="#the-stacked-response-matrix" title="Permanent link">&para;</a></h3>
+<p>Stacking observables and quarters turns that convolution into one linear system. Define <span class="arithmatex">\(\Theta\)</span> of
+dimension <span class="arithmatex">\((q\!\cdot\!H) \times (K\!\cdot\!H)\)</span> by</p>
+<div class="arithmatex">\[
+\Theta[\,o H + t,\; k H + \tau\,] \;=\; R_{k,o}(t-\tau)\,\mathbf{1}\{t \ge \tau\}.
+\]</div>
+<p>Rows are blocked by observable: row <span class="arithmatex">\(oH+t\)</span> is observable <span class="arithmatex">\(o\)</span> at forecast quarter <span class="arithmatex">\(t\)</span>, with the three
+locked common observables first and any added natives in the order the user toggled them. Columns
+are blocked by shock: column <span class="arithmatex">\(kH+\tau\)</span> is shock <span class="arithmatex">\(k\)</span> arriving in quarter <span class="arithmatex">\(\tau\)</span>. Each <span class="arithmatex">\((o,k)\)</span> block is
+therefore lower-triangular Toeplitz. The system is <span class="arithmatex">\(\Theta \varepsilon = z - u\)</span> with <span class="arithmatex">\(z\)</span> and
+<span class="arithmatex">\(\varepsilon\)</span> stacked the same way, <span class="arithmatex">\(z[oH+t] = z_o(t)\)</span> and <span class="arithmatex">\(\varepsilon[kH+\tau] =
+\varepsilon_k(\tau)\)</span>.</p>
+<p>The response <span class="arithmatex">\(R_{k,o}(h)\)</span> is read as <code>irf[shock_k][irfField_o][h + 1]</code>. Index 0 of every impulse-
+response array is the pre-impact zero and indices <span class="arithmatex">\(1,\dots,H\)</span> carry <span class="arithmatex">\(h = 0,\dots,H-1\)</span>, which mirrors
+the MATLAB benchmark's <code>s.obs(2:H+1)</code> exactly (<code>bench_simple_decomp.m:99</code>). The shipped arrays are
+all of length 21, so horizons <span class="arithmatex">\(h = 0,\dots,19\)</span> are available and the engine uses the first twelve.</p>
+<h3 id="notation">Notation<a class="headerlink" href="#notation" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(H = 12\)</span></td>
+<td>decomposition horizon, in quarters</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(q\)</span></td>
+<td>observables watched (three locked common ones, plus added natives)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(K\)</span></td>
+<td>shocks — or clusters — named</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(o\)</span>, <span class="arithmatex">\(t\)</span></td>
+<td>observable index, forecast quarter (0-based)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(k\)</span>, <span class="arithmatex">\(\tau\)</span></td>
+<td>shock index, arrival quarter (0-based)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(R_{k,o}(h)\)</span></td>
+<td>model <span class="arithmatex">\(M\)</span>'s response of observable <span class="arithmatex">\(o\)</span> to shock <span class="arithmatex">\(k\)</span> at horizon <span class="arithmatex">\(h\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\Theta\)</span></td>
+<td><span class="arithmatex">\((qH) \times (KH)\)</span> stacked response matrix</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(z\)</span></td>
+<td>stacked observable-space deviation path</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\varepsilon\)</span></td>
+<td>stacked shock sequence</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(D\)</span></td>
+<td><span class="arithmatex">\(\mathrm{diag}(\lVert\Theta_{\cdot 1}\rVert,\dots,\lVert\Theta_{\cdot KH}\rVert)\)</span>, the column-norm scaling; <span class="arithmatex">\(\Theta_N = \Theta D^{-1}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(W\)</span></td>
+<td>diagonal row weights, <span class="arithmatex">\(w = 1/\sqrt{1+\mathrm{me}}\)</span> on added observables, 1 on the locked three</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lambda\)</span></td>
+<td><span class="arithmatex">\(10^{-8}\cdot\mathrm{mean}\,\mathrm{diag}(\Theta_N^{\top}W^2\Theta_N)\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(u\)</span></td>
+<td>residual, <span class="arithmatex">\(u = z - \Theta\hat\varepsilon\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(c_{k,o}(t)\)</span></td>
+<td>shock <span class="arithmatex">\(k\)</span>'s contribution to observable <span class="arithmatex">\(o\)</span> at quarter <span class="arithmatex">\(t\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-estimator">The estimator<a class="headerlink" href="#the-estimator" title="Permanent link">&para;</a></h3>
+<p>The system is square only in the special case <span class="arithmatex">\(K = q\)</span>; in general it is underdetermined in the
+shock dimension, so the engine reports the <strong>minimum-norm least-squares</strong> solution,</p>
+<div class="arithmatex">\[
+\hat\varepsilon \;=\; D^{-1}\cdot \operatorname*{arg\,min}\ \lVert \tilde\varepsilon \rVert
+\quad\text{subject to minimising}\quad
+\bigl\lVert W\bigl(\Theta D^{-1}\tilde\varepsilon - z\bigr)\bigr\rVert^2 .
+\]</div>
+<p>That is the <code>pinv</code> solution the MATLAB benches use, computed here without forming a pseudo-inverse
+(<code>decompose</code>, <code>driversDecomp.ts:227–362</code>). The engine takes the Euclidean norm of every column of
+the raw, unweighted <span class="arithmatex">\(\Theta\)</span>, leaving any column with norm below <span class="arithmatex">\(10^{-12}\)</span> at a scale of 1 so it
+stays inert rather than being amplified; divides each column by its norm to get <span class="arithmatex">\(\Theta_N\)</span>; applies
+the row weights to both <span class="arithmatex">\(\Theta_N\)</span> and <span class="arithmatex">\(z\)</span> where an added observable carries measurement error;
+forms the Gram matrix, adds the ridge <span class="arithmatex">\(\lambda = 10^{-8}\cdot\mathrm{mean}\,\mathrm{diag}\)</span>
+(<code>RIDGE_LAMBDA_SCALE</code>, <code>driversDecomp.ts:49</code>), and LU-factors it once. It then solves the ridge
+normal equations and runs two iterative-refinement sweeps against that same factorisation
+(<code>REFINE_STEPS = 2</code>). Every iterate stays in <span class="arithmatex">\(\mathrm{range}(\Theta^{\top})\)</span>, so the refined solution
+converges on the min-norm least-squares solution rather than on the ridge-biased one; the source
+records the worst-case recovery error falling from roughly <span class="arithmatex">\(7\times10^{-7}\)</span> under the bare ridge to
+about <span class="arithmatex">\(10^{-15}\)</span> with refinement (<code>driversDecomp.ts:14–16</code>). Finally the recovered shocks are mapped
+back through the column scaling, <span class="arithmatex">\(\hat\varepsilon_j = \hat\varepsilon_{N,j} / \lVert\Theta_{\cdot
+j}\rVert\)</span>.</p>
+<h3 id="why-the-columns-are-normalised">Why the columns are normalised<a class="headerlink" href="#why-the-columns-are-normalised" title="Permanent link">&para;</a></h3>
+<p>Scaling every column to unit response norm before the solve imposes an <strong>equal-response-energy prior
+across shocks</strong>. Without it the <span class="arithmatex">\(\ell^2\)</span> penalty quietly prefers whichever shock moves the
+observables most per unit of <span class="arithmatex">\(\varepsilon\)</span>, and prices the others out of their own attribution.</p>
+<p>The magnitudes involved are not subtle. Measured from the shipped <code>US_SW07/SW.json</code>, the stacked
+three-observable <span class="arithmatex">\(H = 12\)</span> response norms are 1.28 for the monetary shock <code>interest_</code>, 2.12 for
+<code>fiscal_</code>, 4.21 for <code>eqs</code>, 4.50 for <code>eb</code>, 4.93 for <code>ea</code>, 11.58 for the wage markup <code>ew</code> and 13.84 for
+the price markup <code>epinf</code>. Roughly an order of magnitude separates the monetary shock from the markup
+shocks, and under a raw min-norm solve the monetary shock loses attribution to them for no
+economic reason.</p>
+<p>In identified configurations the normalisation is a pure reparameterisation: the licence fixtures
+(UK_SM11 at three observables, SW07 at seven observables with seven shocks) still recover to
+<span class="arithmatex">\(10^{-6}\)</span> or better. In underdetermined configurations it removes the small-column bias — for SW07 at
+three observables, mean off-class leakage falls from 32% to 5% (<code>class_recovery_results.txt</code>). Its
+signature is visible in a constructed case: with two exactly collinear shocks whose response norms
+differ 2:1, the shipped solver splits the contribution equally where a raw min-norm solver would
+split it 4:1.</p>
+<h3 id="contributions-fit-and-residual">Contributions, fit and residual<a class="headerlink" href="#contributions-fit-and-residual" title="Permanent link">&para;</a></h3>
+<p>Contributions are computed through the <strong>raw, unweighted</strong> <span class="arithmatex">\(\Theta\)</span> and the un-normalised
+<span class="arithmatex">\(\hat\varepsilon\)</span> (<code>contributionsFromEps</code>, <code>driversDecomp.ts:198</code>):</p>
+<div class="arithmatex">\[
+c_{k,o}(t) \;=\; \sum_{\tau \le t} \Theta[\,oH+t,\;kH+\tau\,]\,\hat\varepsilon_k(\tau),
+\qquad
+\hat z_o(t) = \sum_k c_{k,o}(t),
+\qquad
+u_o(t) = z_o(t) - \hat z_o(t).
+\]</div>
+<p>Because <span class="arithmatex">\(\Theta\hat\varepsilon \equiv \Theta_N\hat\varepsilon_N\)</span> exactly, the column normalisation
+leaves the reported contributions unchanged; and because the row weights enter only the solve, they
+never touch the reported contributions either. The weights change <em>which</em> shock sequence is chosen,
+not how a chosen sequence is attributed.</p>
+<h3 id="rank-and-regime">Rank and regime<a class="headerlink" href="#rank-and-regime" title="Permanent link">&para;</a></h3>
+<p><code>thetaRank</code> (<code>driversDecomp.ts:144</code>) is a pivoted Cholesky on the smaller-side Gram matrix with a
+relative pivot tolerance of <span class="arithmatex">\(10^{-12}\)</span> times the largest diagonal. The engine reports
+<code>regime = 'exact-fit'</code> when <span class="arithmatex">\(\mathrm{rank}(\Theta) \ge qH\)</span> and <code>'residual-able'</code> otherwise. The
+threshold is not delicate in practice: the two regimes on the shipped menu are about twenty orders of
+magnitude apart in conditioning, with full-rank models at <span class="arithmatex">\(\mathrm{cond}(\Theta) \lesssim 10^{2}\)</span> and
+the rank-deficient CA_LS07 at <span class="arithmatex">\(\approx 3\times10^{17}\)</span>.</p>
+<p><strong>Remark 1 (An exact-fit residual is zero by construction).</strong> <em>In the exact-fit regime every path is
+reproducible, so the residual is identically zero and carries no information. It is not evidence that
+the named shocks explain the path. The residual becomes a genuine test only once the user watches
+more observables than the named shocks can span — that is, in the residual-able regime, where an
+unexplained dimension actually exists.</em></p>
+<h3 id="the-engines-entry-point">The engine's entry point<a class="headerlink" href="#the-engines-entry-point" title="Permanent link">&para;</a></h3>
+<p>The whole decomposition runs through one call, displayed here in the form the code uses:</p>
+<div class="highlight"><pre><span></span><code>decompose(irf, shocks, observables, H) → DriversDecomposition
+</code></pre></div>
+<p><code>irf</code> is a <code>ModelIRFs</code> record mapping each shock name to a record of response arrays keyed by model
+observable field. <code>shocks</code> is the string array of named shocks, length <span class="arithmatex">\(K\)</span>, in the order the columns
+are blocked. <code>observables</code> is an array of length <span class="arithmatex">\(q\)</span>; each entry carries <code>key</code> (the display key, for
+instance <code>output</code> or <code>dc</code>), <code>irfField</code> (the field to read from each shock's response record, usually
+the same string), <code>path</code> (the observable's scenario deviation path, length at least <span class="arithmatex">\(H\)</span>), and an
+optional <code>weight</code> (the measurement-error row weight <span class="arithmatex">\(w = 1/\sqrt{1+\mathrm{me}}\)</span>, left undefined for
+the exact common three). <code>H</code> defaults to <code>DRIVERS_H = 12</code>.</p>
+<p>What comes back is a <code>DriversDecomposition</code>: <code>eps</code>, a <code>Float64Array</code> of length <span class="arithmatex">\(K\!\cdot\!H\)</span> in
+shock-major order; <code>contributions</code>, a <span class="arithmatex">\(K \times q \times H\)</span> nested array; <code>fitted</code> and <code>residual</code> and
+<code>z</code>, each <span class="arithmatex">\(q \times H\)</span>; the scalars <code>lambda</code>, <code>rank</code> and <code>rows</code> (<span class="arithmatex">\(= qH\)</span>); and <code>regime</code>, either
+<code>'exact-fit'</code> or <code>'residual-able'</code>. The call throws when no shock is named, when a supplied path is
+shorter than <span class="arithmatex">\(H\)</span>, and — the budget rule, below — when more shocks are named than observables are
+watched.</p>
+<h2 id="unit-conventions">Unit conventions<a class="headerlink" href="#unit-conventions" title="Permanent link">&para;</a></h2>
+<p>Every mapping in this section was measured from the shipped files and is regression-guarded by the
+test suite. None of it is assumed.</p>
+<h3 id="from-the-bvar-panel-to-the-three-common-observables">From the BVAR panel to the three common observables<a class="headerlink" href="#from-the-bvar-panel-to-the-three-common-observables" title="Permanent link">&para;</a></h3>
+<p>The input is the active scenario's <strong>level deviation</strong> from baseline, indexed <code>[t][j]</code>, in the
+smoother's level space: <span class="arithmatex">\(100\cdot\log\)</span> for log variables, native units for linear ones. The long-run
+drift translates baseline and scenario rigidly, so it cancels in the deviation by construction
+(<code>useStore.ts:11–16</code>). <code>commonObservablePaths</code> (<code>driversDecomp.ts:392</code>) then builds the three MMB
+common observables:</p>
+<table>
+<thead>
+<tr>
+<th>Model observable</th>
+<th>Built from the BVAR panel as</th>
+<th>US column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>output</code></td>
+<td>GDP level deviation (<span class="arithmatex">\(100\cdot\log\)</span>), <strong>identity</strong></td>
+<td><code>GDPH</code></td>
+</tr>
+<tr>
+<td><code>inflationq</code></td>
+<td><span class="arithmatex">\(4\,(p_t - p_{t-1})\)</span> of the price-level deviation, with <span class="arithmatex">\(p_{-1} = 0\)</span></td>
+<td><code>JGDP</code></td>
+</tr>
+<tr>
+<td><code>interest</code></td>
+<td>policy-rate deviation, annualised, <strong>identity — no division by 4</strong></td>
+<td><code>POLRATE</code></td>
+</tr>
+</tbody>
+</table>
+<p>The two factors of four are not conventions chosen here; they are read off the model file, which
+carries both the MMB common block and SW07's native observables. A regression test checks, on every
+shock and every horizon with a non-trivial response, that <code>inflationq/pinfobs</code> and <code>interest/robs</code>
+both equal 4.000 to better than <span class="arithmatex">\(10^{-9}\)</span>.</p>
+<h3 id="native-observables-us-bloc-only">Native observables (US bloc only)<a class="headerlink" href="#native-observables-us-bloc-only" title="Permanent link">&para;</a></h3>
+<p>Two models expose real-side observables beyond the common three, and both maps were measured from
+the shipped response files rather than taken from the model papers.</p>
+<p>For <strong>US_SW07</strong> (<code>SW07_NATIVE_MAP</code>) the four addable observables are consumption growth <code>dc</code>,
+investment growth <code>dinve</code>, real-wage growth <code>dw</code> from <span class="arithmatex">\(\Delta\)</span>((<code>LXBC</code> − <code>JGDP</code>) deviation), and
+hours <code>labobs</code> from the <code>LANAGRA</code> deviation in level. All differences use
+<span class="arithmatex">\(\text{deviation}_{-1} = 0\)</span>.</p>
+<p>Two of those rows were <strong>corrected in August 2026</strong> after an audit against the harmonised observable
+dictionary of the MMB real-time forecasting platform, which records the exact source construction of
+every model observable and ships the constructed observables as numbers. That turns a mapping from
+something argued into something measured: build the candidate from the GMAPS panel, line it up
+against the platform's own series, and read the fit. The benchmark is the <em>revision floor</em> — the row
+<code>dy</code>, where both sides are the identical formula on the identical series, and which therefore scores
+rmse 0.099 pp per quarter from data-vintage differences alone. A row at that floor is exact.</p>
+<table>
+<thead>
+<tr>
+<th>row</th>
+<th>was</th>
+<th>measured</th>
+<th>now</th>
+<th>measured</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dc</code></td>
+<td><span class="arithmatex">\(\Delta\)</span>(<code>CH</code>)</td>
+<td>corr 0.837, rmse 0.308</td>
+<td><span class="arithmatex">\(\Delta\)</span>(<code>CH</code> + <code>JC</code> − <code>JGDP</code>)</td>
+<td>corr 0.982, rmse 0.109</td>
+</tr>
+<tr>
+<td><code>dinve</code></td>
+<td><span class="arithmatex">\(\Delta\)</span>(<code>FNH</code>)</td>
+<td>corr 0.881, rmse 0.956</td>
+<td><span class="arithmatex">\(0.2384\,\Delta\)</span><code>FRH</code> <span class="arithmatex">\(+\ 0.7616\,\Delta\)</span><code>FNH</code></td>
+<td>corr 0.984, rmse 0.351</td>
+</tr>
+</tbody>
+</table>
+<p><code>CH</code> is chain-weighted <em>real</em> consumption deflated by its own price index, whereas the model
+observable is <em>nominal</em> consumption deflated by the GDP deflator; swapping the deflator is an
+identity, and same-vintage it reproduces the platform's series exactly. <code>FNH</code> is the
+<em>nonresidential</em> component alone, while the model observable is <em>total</em> private fixed investment —
+roughly a quarter of the series was absent, and it is the quarter that moves in housing and credit
+scenarios. <code>FNH</code> and <code>FRH</code> share the <code>JGDP</code> deflator, so their level sum is exactly the model's
+observable; but the log of a sum is non-linear and would break the additivity of §"Contributions",
+so the shipped row is its first-order share-weighted expansion at the measured residential share
+0.2384. Linearising costs rmse 0.048 pp per quarter against the exact sum, 2.7% of the observable's
+own standard deviation, measured on the shipped US panel. The weights must not be re-tuned to a scenario origin, and a naive 0.5/0.5 average is
+<em>worse than leaving the row unfixed</em>.</p>
+<div class="admonition warning">
+<p class="admonition-title"><code>labobs</code> is a proxy, and it is the one row that cannot be built correctly</p>
+<p>The model observable is <strong>hours per capita</strong>. <code>LANAGRA</code> is an establishment-survey employment
+<strong>headcount</strong>, and the US bloc carries neither an average-hours series nor population, so the
+intensive margin — hours per worker — is absent. Measured in the 12-quarter deviation space this
+panel works in, the proxy scores median correlation <strong>0.906</strong> against the true series with an
+error at the 12-quarter horizon of roughly 0.6 of the signal. A scenario that moves hours per
+worker without moving headcount is under-read.</p>
+<p>Two numbers circulate for this row and they measure different things. A <em>historical</em> shock
+decomposition rates it far lower, at 0.699 across seven observables — but that exercise is in
+levels, where the missing population <strong>trend</strong> dominates. A scenario deviation carries the same
+demographics in baseline and scenario, so the trend cancels exactly and only the intensive margin
+is lost. <strong>Quote 0.906 for this panel and 0.699 for a historical decomposition.</strong></p>
+<p>A satellite bridge — projecting average hours onto columns the bloc already carries — was tested
+and <strong>rejected</strong>. In-sample it looks good (<span class="arithmatex">\(R^2\)</span> 0.52, deviation correlation 0.906 → 0.940), but
+split at the financial crisis three of its five coefficients flip sign, and fitting pre-2008 to
+predict post-2010 gives <span class="arithmatex">\(R^2\)</span> 0.305 against 0.523 in-sample. A within-window fit has no place in
+a mapping layer whose other rows are identities. The only real fix is adding average hours and
+population to the bloc, which requires re-estimating it.</p>
+</div>
+<p>For <strong>US_CMR14</strong> (<code>CMR14_NATIVE_MAP</code>, <code>driversDecomp.ts:489</code>) the BVAR-side construction is
+identical, again all factor 1, and the units were pinned by fitting the model's own observation
+equations. The anchor is <code>gdp_obs</code> <span class="arithmatex">\(= \Delta\)</span><code>output</code> exactly for every non-trend shock, which fixes
+<code>gdp_obs</code> in percent quarterly log growth, the SW07 <code>dy</code> convention. The three growth observables
+then fit as <code>consumption_obs</code> <span class="arithmatex">\(= 0.6366\,\Delta c + 1.0\,\texttt{log\_muzstar}\)</span>, <code>investment_obs</code> <span class="arithmatex">\(=
+1.2526\,\Delta i + 1.0\,\texttt{log\_muzstar}\)</span> and <code>wage_obs</code> <span class="arithmatex">\(= 0.5647\,\Delta\tilde w +
+1.0\,\texttt{log\_muzstar}\)</span>, each to within <span class="arithmatex">\(7\times10^{-14}\)</span>. Every one of them carries <strong>exactly
+the same 1.0 trend loading</strong> that the percent-anchored <code>gdp_obs</code> does, which is what places them in
+the same percent-quarterly-growth units; the <span class="arithmatex">\(\Delta\)</span>-term factors are internal model-variable
+scalings and are irrelevant to the data side. <code>wage_obs</code> is the <strong>real</strong> wage — the two-term fit is
+exact with no separate inflation loading, and a price-markup shock raises <code>inflation_obs</code> while
+<code>wage_obs</code> falls. Hours are <code>hours_obs</code> <span class="arithmatex">\(= 0.01\,\texttt{lhours}\)</span> exactly, the same 0.01 that links
+the percent common column to its level counterpart, so <code>hours_obs</code> is a percent level deviation and
+takes the <code>labobs</code> convention at factor 1.</p>
+<p>CMR14's financial observables (<code>credit_obs</code>, <code>networth_obs</code>, <code>premium_obs</code>, <code>Spread1_obs</code>,
+<code>pinvest_obs</code>, <code>RealRe_obs</code>) are <strong>not mapped</strong> in this pass. There are no financial observables in
+the Drivers feature.</p>
+<h3 id="availability">Availability<a class="headerlink" href="#availability" title="Permanent link">&para;</a></h3>
+<p>The native mode needs the spec columns <code>CH</code>, <code>JC</code>, <code>JGDP</code>, <code>FRH</code>, <code>FNH</code>, <code>LXBC</code> and <code>LANAGRA</code> —
+seven since the <code>dc</code> and <code>dinve</code> corrections, which draw on <code>JC</code> and <code>FRH</code> respectively. Only the
+<strong>US</strong> bloc ships them all. On every other bloc the drawer runs at three observables, the naming
+budget is three, and the class view is unavailable.</p>
+<p>A row assembled from several columns is withheld entirely if <em>any</em> one of them is missing, rather
+than being built from those present: a partial combination is a different series, not an
+approximation of the intended one.</p>
+<h3 id="from-observables-to-the-main-panels-display-space">From observables to the main panel's display space<a class="headerlink" href="#from-observables-to-the-main-panels-display-space" title="Permanent link">&para;</a></h3>
+<p>Contributions are drawn in the units of the panel the user is already reading. Each observable maps
+into display space through a <strong>linear</strong> operator, either a gain <span class="arithmatex">\(s\,v_t\)</span> or a scaled first difference
+<span class="arithmatex">\(s\,(v_t - v_{t-1})\)</span> with <span class="arithmatex">\(v_{-1} = 0\)</span> (<code>obsDisplaySpec</code> and <code>toDisplayDev</code>,
+<code>driversDecomp.ts:608–643</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Observable</th>
+<th>Operator</th>
+<th>Display unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>output</code></td>
+<td>difference, scale 4</td>
+<td>% q/q ann.</td>
+</tr>
+<tr>
+<td><code>inflationq</code></td>
+<td>gain, scale 1 (already <span class="arithmatex">\(4\Delta p\)</span>)</td>
+<td>% q/q ann.</td>
+</tr>
+<tr>
+<td><code>interest</code></td>
+<td>gain, scale 1</td>
+<td>%</td>
+</tr>
+<tr>
+<td>native difference-kind (<code>dc</code>, <code>dinve</code>, <code>dw</code>, <code>consumption_obs</code>, <code>investment_obs</code>, <code>wage_obs</code>)</td>
+<td>gain, scale 4</td>
+<td>% q/q ann.</td>
+</tr>
+<tr>
+<td>native level-kind (<code>labobs</code>, <code>hours_obs</code>)</td>
+<td>difference, scale 4</td>
+<td>% q/q ann.</td>
+</tr>
+</tbody>
+</table>
+<p>Because the operator is linear, contributions and residual transform additively, so the stacked bars
+plus the residual plus the baseline reproduce the scenario line exactly. That identity is pinned to
+<span class="arithmatex">\(10^{-8}\)</span> in the test suite, for per-shock bars and for aggregated class bars alike. Note that <code>dw</code>
+and <code>wage_obs</code> subtract the deflator column, so the displayed series is compensation growth minus
+deflator growth.</p>
+<h2 id="the-two-licensed-rules">The two licensed rules<a class="headerlink" href="#the-two-licensed-rules" title="Permanent link">&para;</a></h2>
+<p>The validation bench states, in its own verdict block (<code>simple_decomp_results.txt:19–20</code>), the rules
+it licenses: <em>"name at most as many shocks as observables watched; added observables (with ME) raise
+the budget; collinear shock pairs are flagged."</em> Both are enforced in the shipped tool.</p>
+<h3 id="rule-1-the-naming-budget">Rule 1 — the naming budget<a class="headerlink" href="#rule-1-the-naming-budget" title="Permanent link">&para;</a></h3>
+<p><strong>At <span class="arithmatex">\(q\)</span> watched observables the user may name at most <span class="arithmatex">\(q\)</span> shocks.</strong> The engine throws when <span class="arithmatex">\(K &gt; q\)</span>
+(<code>driversDecomp.ts:236</code>), and the interface disables every un-named chip once the budget is reached
+(<code>DriversDrawer.tsx:1131</code>). The budget is <code>3 + addedObs.length</code> where the native mapping is available
+and 3 otherwise (<code>DriversDrawer.tsx:519</code>).</p>
+<p>The rule comes from criterion (e) of the bench: SW07 at its native seven observables with all seven
+usable shocks is fully identified, rank 84/84, with noiseless recovery at <span class="arithmatex">\(3.6\times10^{-15}\)</span> and 100%
+of contribution paths recovered at 1% noise.</p>
+<p>Not every observable raises the budget. SW07's <code>dy</code>, <code>pinfobs</code> and <code>robs</code>, and CMR14's <code>gdp_obs</code>,
+<code>inflation_obs</code> and <code>Re_obs</code>, are excluded from the addable list because each is an invertible linear
+transform of an already-watched locked observable: <code>dy</code> is the difference of the output path,
+<code>pinfobs</code> is <code>inflationq</code>/4, <code>robs</code> is <code>interest</code>/4, and on the CMR14 side <code>Re_obs</code> is a constant
+<span class="arithmatex">\(0.2529\)</span> times <code>interest</code> across all shocks and horizons. Adding one would raise the naming budget
+by one while buying no new rank, so the identification the budget rule promises would be fictitious.
+This is pinned against the data rather than against a curated list: a test requires each of the four
+legitimate SW07 addables to buy exactly <span class="arithmatex">\(H = 12\)</span> units of new rank, and each of the three excluded
+transforms to buy exactly zero, alone and all three together.</p>
+<h3 id="rule-2-the-collinearity-flag">Rule 2 — the collinearity flag<a class="headerlink" href="#rule-2-the-collinearity-flag" title="Permanent link">&para;</a></h3>
+<p>Two shocks whose stacked response paths point in nearly the same direction cannot be told apart by
+the data being decomposed, however well-conditioned the system looks. The build step therefore
+computes <span class="arithmatex">\(\lvert\cos\rvert\)</span> between every pair of <strong>unit-normalised stacked three-observable
+<span class="arithmatex">\(H = 12\)</span> response paths</strong>, exactly as <code>bench_simple_decomp.m:112–125</code> does, and ships every pair
+above <strong>0.95</strong> in the index (<code>collinearThreshold</code>). The drawer warns whenever both members of a
+flagged pair are named, quoting the measured <span class="arithmatex">\(\lvert\cos\rvert\)</span> to two decimals.</p>
+<p>The one-click "Use all" selection is greedy in the model's fixed shock order and skips any shock that
+forms a flagged pair with one already picked (<code>useAllShockSelection</code>, <code>driversDecomp.ts:562</code>).
+Hand-picking a collinear pair remains possible under Customize, with the warning shown.</p>
+<p>The rationale is that near-collinear columns break same-model recovery through the validated engine.
+Concretely, the CMR14 trio <code>e_sigma</code>, <code>e_gamma</code> and <code>e_zetai</code> is mutually flagged (measured
+<span class="arithmatex">\(\lvert\cos\rvert\)</span> of 0.998, 0.983 and 0.975); the shipped greedy seven-shock set, which keeps
+exactly one of them, recovers the generating sequence far inside the <span class="arithmatex">\(10^{-6}\)</span> criterion the test
+suite pins it against, while freeing a budget slot for a second member can push the worst
+contribution-path error past that criterion by several orders of magnitude, depending on which
+member is added.</p>
+<p><strong>Remark 2 (Read a flagged pair jointly).</strong> <em>Where a pair is flagged, the split of contributions
+between its two members is not identified — the solver is choosing among observationally equivalent
+splits by a norm criterion, not by evidence. The sum over the pair is meaningful; the division inside
+it is not. Keeping only one member of a collinear group is what preserves recovery, which is what the
+greedy default does.</em></p>
+<h2 id="the-class-view-licence">The class-view licence<a class="headerlink" href="#the-class-view-licence" title="Permanent link">&para;</a></h2>
+<p>Grouping shocks into Monetary, Demand and Supply is what makes a decomposition readable, and it is
+also where a model-conditional exercise is easiest to over-sell. The tool therefore treats the class
+view as <strong>licensed at one configuration and greyed everywhere else</strong>.</p>
+<h3 id="what-the-bench-ran">What the bench ran<a class="headerlink" href="#what-the-bench-ran" title="Permanent link">&para;</a></h3>
+<p><code>bench_class_recovery.m</code> ran five (model, observable-set) cells under two solvers, against two
+pre-stated criteria: <strong>(f1)</strong> the recovered class-total path correlates at least 0.95 with the true
+class-total path in at least 90% of active-class instances over 20 seeds; <strong>(f2)</strong> mean off-class
+leakage is at most 25%. Both must pass. The full results are committed in
+<code>docs/paper/class_recovery_results.txt</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th><span class="arithmatex">\(q\)</span></th>
+<th>Solver</th>
+<th>(f1) corr ≥ 0.95</th>
+<th>(f2) off-class leakage</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US_SW07</td>
+<td>3</td>
+<td>raw</td>
+<td>52% fail</td>
+<td>32% fail</td>
+<td>fail</td>
+</tr>
+<tr>
+<td>US_SW07</td>
+<td>3</td>
+<td>colnorm</td>
+<td>50% fail</td>
+<td>5% pass</td>
+<td>fail</td>
+</tr>
+<tr>
+<td>US_SW07</td>
+<td>7</td>
+<td>raw</td>
+<td>100% pass</td>
+<td>0% pass</td>
+<td>pass</td>
+</tr>
+<tr>
+<td><strong>US_SW07</strong></td>
+<td><strong>7</strong></td>
+<td><strong>colnorm</strong></td>
+<td><strong>100% pass</strong></td>
+<td><strong>0% pass</strong></td>
+<td><strong>pass</strong></td>
+</tr>
+<tr>
+<td>US_CMR14</td>
+<td>3</td>
+<td>raw</td>
+<td>58% fail</td>
+<td>34% fail</td>
+<td>fail</td>
+</tr>
+<tr>
+<td>US_CMR14</td>
+<td>3</td>
+<td>colnorm</td>
+<td>45% fail</td>
+<td>32% fail</td>
+<td>fail</td>
+</tr>
+<tr>
+<td>US_CMR14</td>
+<td>7</td>
+<td>raw</td>
+<td>87% fail</td>
+<td>8% pass</td>
+<td>fail</td>
+</tr>
+<tr>
+<td>US_CMR14</td>
+<td>7</td>
+<td>colnorm</td>
+<td>78% fail</td>
+<td>3% pass</td>
+<td>fail</td>
+</tr>
+<tr>
+<td>US_FRB22_mcap</td>
+<td>3</td>
+<td>raw</td>
+<td>20% fail</td>
+<td>62% fail</td>
+<td>fail</td>
+</tr>
+<tr>
+<td>US_FRB22_mcap</td>
+<td>3</td>
+<td>colnorm</td>
+<td>37% fail</td>
+<td>47% fail</td>
+<td>fail</td>
+</tr>
+</tbody>
+</table>
+<p>The shipped solver is the column-normalised one. Exactly one cell passes both gates under it:
+<strong>US_SW07 at the full extended seven-observable set</strong>, with a perfect diagonal attribution matrix —
+Monetary, Demand and Supply each recovered at 100% with 0% leakage.</p>
+<p>The bench held <strong>all three coordinates</strong> fixed in that cell. Its observable set is <span class="arithmatex">\(\{\)</span><code>output</code>,
+<code>inflationq</code>, <code>interest</code>, <code>dc</code>, <code>dinve</code>, <code>dw</code>, <code>labobs</code><span class="arithmatex">\(\}\)</span> (<code>bench_class_recovery.m:35</code>) and its
+shock set is <span class="arithmatex">\(K = 7\)</span>, every usable column of SW07's class map.</p>
+<h3 id="what-the-shipped-code-permits">What the shipped code permits<a class="headerlink" href="#what-the-shipped-code-permits" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>classViewLicensed(model, observableKeys, namedShocks) → boolean
+</code></pre></div>
+<p><code>model</code> is the index key of the selected lens, <code>observableKeys</code> the string array of watched
+observables, and <code>namedShocks</code> the string array of named shocks. The predicate
+(<code>driversDecomp.ts:694–702</code>) returns true only when the model is <code>US_SW07</code>, the observable keys
+contain all seven of the bench's set, and the named shocks contain all seven of <code>interest_</code>, <code>eb</code>,
+<code>fiscal_</code>, <code>eqs</code>, <code>ea</code>, <code>epinf</code>, <code>ew</code>. The drawer additionally requires that a class map exist for
+the model. The third argument is <strong>required</strong>, not optional, so a caller who forgets it gets a
+compile error rather than a silently wider licence.</p>
+<p>As shipped, the set of configurations in which the code permits the class view and the set the bench
+licensed are the same set, on all three coordinates. The predicate is permissive only towards
+supersets — naming or watching <em>more</em> than the bench's seven still returns true — and neither is
+reachable through the interface, since SW07 exposes exactly seven usable shocks and exactly four
+addable observables.</p>
+<p><strong>Remark 3 (The licence has three coordinates, and un-naming revokes it).</strong> <em>It is tempting to
+describe the class view as licensed "for SW07 at seven observables". That is wrong, and it was the
+defect the verification pass closed. If the user drops one shock under Customize, the licensed
+Monetary/Demand/Supply labels would otherwise survive on a split the bench never ran: the missing
+shock's energy is redistributed across the classes that remain, which is precisely the quantity the
+off-class-leakage criterion measures. The licence is a property of (model, watched observables,
+named shocks) jointly, and the Classes toggle greys out the moment any one of the three moves.</em></p>
+<h3 id="where-the-class-view-is-and-is-not-available">Where the class view is and is not available<a class="headerlink" href="#where-the-class-view-is-and-is-not-available" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Class map shipped</th>
+<th>Class view available</th>
+<th>What the Groups view shows instead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US_SW07</td>
+<td>yes (7 members)</td>
+<td><strong>yes</strong>, and only at 7 observables with all 7 shocks named</td>
+<td>textbook shock names</td>
+</tr>
+<tr>
+<td>US_CMR14</td>
+<td>yes (9 members)</td>
+<td>no</td>
+<td>its own class map as an organising grouping of families</td>
+</tr>
+<tr>
+<td>US_FRB22</td>
+<td>yes (54 members, via alias)</td>
+<td>no</td>
+<td>empirical collinearity clusters</td>
+</tr>
+<tr>
+<td>US_FRB22_var</td>
+<td>yes (54 members, via alias)</td>
+<td>no</td>
+<td>empirical collinearity clusters</td>
+</tr>
+<tr>
+<td>US_FRB22_mcap</td>
+<td>yes (54 members)</td>
+<td>no</td>
+<td>menu-hidden; kept for the licence fixtures</td>
+</tr>
+<tr>
+<td>US_FRB08</td>
+<td>no</td>
+<td>no</td>
+<td>one series per named shock</td>
+</tr>
+<tr>
+<td>EA_SW03, EA_SWW14</td>
+<td>no</td>
+<td>no</td>
+<td>one series per named shock</td>
+</tr>
+<tr>
+<td>CA_LS07, HK_FP13, BRA_SAMBA08, UK_SM11</td>
+<td>no</td>
+<td>no</td>
+<td>one series per named shock</td>
+</tr>
+</tbody>
+</table>
+<p>Because only the US bloc carries the five spec columns the native observables need, the licensed
+configuration is reachable <strong>on the US bloc only</strong>. Everywhere else the drawer runs at three
+observables and the Classes toggle is greyed, with the tooltip naming the reason and the results file.</p>
+<p>The class maps themselves live in <code>pipeline/_shockbench/class_maps.json</code> and are copied verbatim into
+the shipped index at build time, so they are amended there and not in the app. SW07's map assigns
+<code>interest_</code> to Monetary; <code>eb</code>, <code>fiscal_</code> and <code>eqs</code> to Demand; and <code>ea</code>, <code>epinf</code> and <code>ew</code> to Supply.
+CMR14's adds a Financial class (<code>e_sigma</code>, <code>e_gamma</code>). The FRB/US map covers all 54 shocks by a
+rule on the equation each <code>_aerr</code> residual attaches to — 1 Monetary, 16 Demand, 20 Supply, 14
+Financial and 3 Other — which is a mechanical assignment, not an economic judgement about the shock.</p>
+<p><strong>Remark 4 (CMR14's families are a grouping, not a licensed class split).</strong> <em>For US_CMR14 the Groups
+view renders that model's own class map as "Monetary family", "Demand family", "Supply family" and
+"Financial family". This is an organising device for nine shocks, not a class decomposition with a
+licence behind it: the bench recovers those class totals in 78% of test instances against its 90%
+bar, at 3% off-class leakage. The drawer shows that number verbatim wherever the families appear, and
+any document describing them should do the same.</em></p>
+<h2 id="the-model-menu">The model menu<a class="headerlink" href="#the-model-menu" title="Permanent link">&para;</a></h2>
+<p>The index ships twelve lenses. <code>K</code> is the number of usable shocks — those with all three common
+observables present and a stacked <span class="arithmatex">\(H = 12\)</span> response norm of at least <span class="arithmatex">\(10^{-9}\)</span> — and the rank and
+regime shown are for the default three-observable configuration.</p>
+<table>
+<thead>
+<tr>
+<th>Index key</th>
+<th><span class="arithmatex">\(K\)</span></th>
+<th>Dropped</th>
+<th>Flagged pairs (<span class="arithmatex">\(\lvert\cos\rvert &gt; 0.95\)</span>)</th>
+<th>Rank / regime at 3 observables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US_SW07</td>
+<td>7</td>
+<td><code>em</code> (zero response)</td>
+<td>none</td>
+<td>36/36, exact-fit</td>
+</tr>
+<tr>
+<td>US_CMR14</td>
+<td>9</td>
+<td><code>e_term</code> (zero response)</td>
+<td>3: <code>e_sigma</code>~<code>e_gamma</code> 0.998, <code>e_gamma</code>~<code>e_zetai</code> 0.983, <code>e_sigma</code>~<code>e_zetai</code> 0.975</td>
+<td>36/36, exact-fit</td>
+</tr>
+<tr>
+<td>US_FRB08</td>
+<td>2</td>
+<td>none</td>
+<td>none</td>
+<td>24/36, <strong>residual-able</strong></td>
+</tr>
+<tr>
+<td>US_FRB22</td>
+<td>54</td>
+<td>none</td>
+<td>109</td>
+<td>36/36, exact-fit (3 clusters named)</td>
+</tr>
+<tr>
+<td>US_FRB22_var</td>
+<td>54</td>
+<td>none</td>
+<td>117</td>
+<td>36/36, exact-fit (3 clusters named)</td>
+</tr>
+<tr>
+<td>EA_SW03</td>
+<td>6</td>
+<td>none</td>
+<td>1: <code>fiscal_</code>~<code>inv_</code> 0.963</td>
+<td>36/36, exact-fit</td>
+</tr>
+<tr>
+<td>EA_SWW14</td>
+<td>6</td>
+<td>none</td>
+<td>none</td>
+<td>36/36, exact-fit</td>
+</tr>
+<tr>
+<td>CA_LS07</td>
+<td>3</td>
+<td>none</td>
+<td>1: <code>markup_</code>~<code>flex_</code> 0.975</td>
+<td>24/36, <strong>residual-able</strong></td>
+</tr>
+<tr>
+<td>HK_FP13</td>
+<td>5</td>
+<td>none</td>
+<td>2: <code>interest_</code>~<code>flex_</code> 1.000, <code>markup_</code>~<code>demand_</code> 0.960</td>
+<td>36/36, exact-fit</td>
+</tr>
+<tr>
+<td>BRA_SAMBA08</td>
+<td>4</td>
+<td>none</td>
+<td>none</td>
+<td>36/36, exact-fit</td>
+</tr>
+<tr>
+<td>UK_SM11</td>
+<td>3</td>
+<td>none</td>
+<td>none</td>
+<td>36/36, exact-fit</td>
+</tr>
+<tr>
+<td>US_FRB22_mcap</td>
+<td>2</td>
+<td>none</td>
+<td>none</td>
+<td>menu-hidden</td>
+</tr>
+</tbody>
+</table>
+<p>CA_LS07 is residual-able for a substantive reason: two of its three usable shocks are
+near-duplicates in the three common observables, so its response columns span only 24 of the 36
+stacked rows however many of them are named. The greedy default names two, and naming the third
+would buy no rank. US_FRB08 exposes only a monetary and a fiscal shock, so it is residual-able at
+any configuration.</p>
+<p>The menu is grouped by relevance to the bloc on screen (<code>DriversDrawer.tsx:137–148</code>): "Own country"
+first (US to the five US lenses, EA to SW03 and SWW14, CA to LS07, HK to FP13, BR to SAMBA08, UK to
+SM11), then "Reference" (the US SW07/CMR14 pair where they are not already own-country), then
+"Other". The choice is remembered per bloc in <code>localStorage</code> under <code>gmaps-drivers-model:&lt;bloc&gt;</code>.</p>
+<h2 id="the-frbus-census-lenses">The FRB/US census lenses<a class="headerlink" href="#the-frbus-census-lenses" title="Permanent link">&para;</a></h2>
+<p>The two 54-shock FRB/US lenses are handled differently from every other model, for two independent
+reasons. First, the class view is refused for FRB/US by the bench at the only observable set it can
+run at: at three observables both solvers fail both gates. There is no seven-observable FRB/US
+configuration, because the native observable mapping exists only for SW07 and CMR14. Second, the
+individual <code>_aerr</code> equation-residual shocks are not separable in the three common observables in the
+first place: 109 of the 1,431 shock pairs exceed <span class="arithmatex">\(\lvert\cos\rvert = 0.95\)</span> for US_FRB22, and 117 for
+the VAR-expectations variant. The drawer therefore groups by the structure the response space
+actually has, rather than by the economics of the equations.</p>
+<p>Clusters are <strong>connected components</strong> of the <span class="arithmatex">\(\lvert\cos\rvert &gt; 0.95\)</span> graph, formed by union-find
+over the shipped pair list (<code>build_drivers_index.mjs:124</code>, mirrored app-side by <code>connectedComponents</code>,
+<code>driversDecomp.ts:746</code>). Each cluster is labelled by its largest member's equation name — largest
+stacked three-observable <span class="arithmatex">\(H = 12\)</span> response norm, equation being the mnemonic minus the <code>_aerr</code> suffix
+— and clusters are ordered by size descending, then id ascending. US_FRB22 partitions its 54 shocks
+into 23 clusters, the largest being <code>hqlfpr</code> with 17 members (the financial/housing blob, which
+contains <code>fiscal_</code>, so the fiscal shock is not separately nameable in cluster mode), <code>eco_l</code> with 10
+(the spending block) and <code>lww_l</code> with 4 (wages, labour force, ECI), followed by three pairs and 17
+singletons — among them <code>interest_</code>. US_FRB22_var partitions into 21 clusters, with <code>hqlfpr</code> at 18,
+<code>eco_l</code> at 10, <code>lww_l</code> at 4, <code>trci</code> at 3, two pairs and 15 singletons.</p>
+<p><strong>Remark 5 (Cluster members are chained, not mutually parallel).</strong> <em>Collinearity is not transitive. A
+connected component of the <span class="arithmatex">\(\lvert\cos\rvert &gt; 0.95\)</span> graph links its members through a chain of
+pairwise-collinear edges, so two members of the same cluster can sit well below the threshold against
+each other. A cluster is therefore not a bundle of near-identical shocks, and the composite column
+used to represent it is a genuine first principal component of the member set rather than a proxy for
+an already-parallel bundle. The drawer says this in three places, and it is the wording to mirror.</em></p>
+<p>Naming a cluster names exactly <strong>one</strong> column. <code>clusterCompositeIRF</code> (<code>driversDecomp.ts:780</code>) builds
+the first principal component of the members' unit-normalised stacked three-observable <span class="arithmatex">\(H = 12\)</span>
+paths, by 200 power iterations seeded from the largest-norm member, unit-normalised, with the sign
+fixed by a positive projection on that member. The budget therefore counts clusters, not members:
+three clusters at three observables, whatever their membership.</p>
+<p>Most cluster triples are not usable, and rank does not tell the user which. <code>pickDefaultNamed</code>
+(<code>build_drivers_index.mjs:363</code>) scans every possible triple through the shipped solver over 20 sparse
+truth seeds (a deterministic generator, seed 20260806) against the <span class="arithmatex">\(10^{-6}\)</span> criterion. Of 1,771
+possible triples for US_FRB22, <strong>123 pass</strong>; of 1,330 for US_FRB22_var, <strong>122</strong>. The builder then
+picks deterministically among the passers, maximising total member coverage, preferring a triple that
+contains the <code>interest_</code> cluster, and breaking ties by shipped cluster order. That yields
+<code>[hqlfpr, interest_, pcer_l]</code> for US_FRB22, covering 19 of 54 shocks at a measured worst recovery
+error of <span class="arithmatex">\(2.5\times10^{-9}\)</span>, and <code>[eco_l, interest_, ki_l]</code> for US_FRB22_var, covering 12 of 54 at
+<span class="arithmatex">\(1.3\times10^{-7}\)</span> — passing, but only an order of magnitude inside the criterion. The drawer warns
+whenever the user departs from the shipped default naming, because a full-rank <span class="arithmatex">\(\Theta\)</span> is not
+evidence that a triple is usable: the top-three-by-size triple <code>hqlfpr</code>/<code>eco_l</code>/<code>lww_l</code> is full-rank
+and still fails the recovery criterion by orders of magnitude.</p>
+<p>Under Customize there is an "Experimental: raw shocks" fold that decomposes individual <code>_aerr</code> shocks
+instead of clusters. The chip list is the greedy non-collinear selection: 26 of 54 for US_FRB22 and
+25 of 54 for US_FRB22_var. The budget still binds, so at three observables only three of them can be
+named.</p>
+<h2 id="working-with-the-drawer">Working with the drawer<a class="headerlink" href="#working-with-the-drawer" title="Permanent link">&para;</a></h2>
+<p>The Drivers button, carrying an amber <code>exp</code> badge, sits in the scenario-action cluster of the chart
+grid (<code>ChartGrid.tsx:3868</code>) and appears only once there is something to decompose — that is, when any
+displayed, isolated or coupled scenario deviation, or an active external-forecast combination, has an
+entry exceeding <span class="arithmatex">\(10^{-9}\)</span> in absolute value. The drawer is a fixed right-side overlay 480 px wide,
+closed by its × or by Escape, and it does not solve while closed.</p>
+<p><strong>Example 1 (Reading a US scenario through the SW07 lens, default settings).</strong> <em>We open Drivers on
+the US bloc with a scenario already displayed and change nothing. The drawer selects <code>US_SW07</code>,
+watches all seven observables — the three locked common ones plus Consumption (Δ), Investment (Δ),
+Real wage (Δ) and Hours (level) — and names all seven usable shocks. Because that is exactly the
+licensed configuration, the [Classes | Groups] toggle sits on Classes and the chart shows three
+stacked series, Monetary, Demand and Supply, plus a grey Residual, drawn as contribution bars
+anchored on the baseline path with the scenario line on top. The observable shown is Output, in %
+q/q ann.; a horizontal 100% shares strip sits underneath. The regime banner reads rank 84/84,
+exact-fit, so no residual, collinearity or rank warning fires, and the residual band is flat at
+zero (Remark 1). To read the same decomposition for inflation instead we change the "Contributions
+to" dropdown; the solve does not change, because it uses all seven observables jointly and only the
+display picks one.</em></p>
+<p><strong>Example 2 (Decomposing on a bloc without the native columns).</strong> <em>We switch the app to a non-US
+bloc and open Drivers. The lens is still <code>US_SW07</code>, but the five spec columns the native observables
+need are absent, so the budget is three and the named set is the greedy non-collinear three:
+<code>interest_</code>, <code>fiscal_</code>, <code>ea</code>. Classes is greyed with its tooltip, the view falls back to Groups, and
+the chart shows three per-shock series labelled Monetary (interest_), Government (fiscal_) and TFP
+(ea). The regime is 36/36, exact-fit. The caveat paragraph at the foot of the drawer gains the
+sentence explaining why Classes is unavailable. This is the honest reading available on that bloc:
+three shocks through a US lens, with no class aggregation behind it.</em></p>
+<p><strong>Example 3 (The FRB/US census lens and its cluster naming).</strong> <em>We select "FRB/US linearised (2022,
+MMB) — 54-shock census" from the model picker. The drawer fetches a further 10.7 MB of impulse
+responses, then names the shipped default triple <code>hqlfpr</code>, <code>interest_</code>, <code>pcer_l</code>, which covers 19 of
+the 54 shocks. Groups shows one series per cluster, labelled by each cluster's largest member. We
+open the "Cluster membership" expander to see which shocks each composite column stands for, and read
+the bottom caveat, which states that this lens has no row in <code>bench_simple_decomp.m</code> and that the
+clusters are empirical, chained collinearity components rather than economic classes. If we then
+re-name the clusters by hand, an amber warning appears: only the shipped default naming carries a
+build-time recovery check, and most alternative triples fail it even though the rank test passes.</em></p>
+<p>The controls fall into two groups. Always visible are the lens row (model title, any dropped-shock
+note, and a "Change model" link), the <code>[Classes | Groups]</code> toggle, the chart-view dropdown (Forecast,
+or Deviation from baseline), Reset, and Customize. Under Customize the drawer exposes:</p>
+<ul>
+<li><strong>Use all</strong> — watch every mappable observable, then name every unit the budget allows, skipping
+  collinear duplicates.</li>
+<li><strong>Input source</strong> — "Scenario (displayed)" or "External forecast combination"; the latter is
+  disabled and annotated when imports exist but the master switch is off, or when nothing is imported
+  for this bloc.</li>
+<li><strong>Domestic | Global path</strong> — shown only for the scenario source, and only when both an isolated and
+  a coupled path exist.</li>
+<li><strong>Observables</strong> — three locked chips with a padlock, plus the four addable native chips on the US
+  bloc, each annotated with the fact that it raises the budget by one.</li>
+<li><strong>Measurement error</strong> — a strict-to-permissive slider shown only when native observables are added,
+  displaying the current row weight <span class="arithmatex">\(w = 1/\sqrt{1+\mathrm{me}}\)</span> with <span class="arithmatex">\(\mathrm{me} \in [0,4]\)</span> and a
+  default of 1.</li>
+<li><strong>Cluster chips</strong> — the cluster list for the two FRB/US lenses.</li>
+<li><strong>Experimental: raw shocks</strong> — a fold containing the raw/cluster switch and the raw shock chips.</li>
+</ul>
+<p>Reset restores US_SW07 with its Use-all default, Classes, the scenario source and the follow-display
+chart view, and it overwrites the saved per-bloc model choice.</p>
+<p><strong>Remark 6 (The measurement-error slider does nothing at budget-max).</strong> <em>At <span class="arithmatex">\(K = q\)</span> the stacked
+system is square, so scaling both <span class="arithmatex">\(\Theta\)</span> and <span class="arithmatex">\(z\)</span> by a positive diagonal row weighting leaves the
+solution identical: <span class="arithmatex">\(W\Theta x = Wz \iff \Theta x = z\)</span>. In the default US configuration the slider is
+therefore rendered but disabled, and its tooltip says so and tells the user to un-name a shock if
+they want the added observables to have a role in the solve. The slider is real only in the
+underdetermined case.</em></p>
+<p><strong>Remark 7 (The delta view need not match the panel's units).</strong> <em>The chart view auto-follows the main
+display: when the app is showing deviations from baseline the drawer opens in "Deviation from
+baseline", otherwise in "Forecast", and a manual choice then sticks. The delta chart's bars are
+always the panel's </em><em>rate</em><em> deviation, whereas the main panels' "% vs base" mode has a level
+sub-mode and defaults to level. Auto-follow can therefore put the drawer in different units from the
+panel that prompted it. The axis title always states the unit; read it before comparing magnitudes.</em></p>
+<p><strong>Remark 8 (The shares strip is a norm share, not a variance decomposition).</strong> <em>For the selected
+observable, each series' share is the <span class="arithmatex">\(\ell^2\)</span> norm of its contribution path divided by the sum of
+those norms plus the residual's, in percent. Shares therefore always sum to 100 and are never
+negative, which means the strip cannot display two contributions that offset each other as such. It
+is a magnitude summary, not a decomposition of forecast-error variance.</em></p>
+<p>Warnings fire for the residual-able regime (with rank and rows shown), for named shocks that form a
+flagged collinear pair (with the measured <span class="arithmatex">\(\lvert\cos\rvert\)</span>), for decomposing a path other than the
+one displayed (the Domestic/Global override is sticky, so this warning shows outside the collapsed
+fold), for the experimental raw-shock mode, for rank-deficient named columns, and for departing from
+the validated default naming on the FRB/US lenses. An index fetch failure is reported as an error; a
+per-model response-file failure is recorded and offers a Retry, which matters for the two ~10.7 MB
+FRB/US files.</p>
+<h2 id="the-data-payload">The data payload<a class="headerlink" href="#the-data-payload" title="Permanent link">&para;</a></h2>
+<p>The feature adds <code>app/public/data/dsge/census/</code>, containing the 36 KB index and eight census
+response files: CA_LS07 (47 KB), BRA_SAMBA08 (123 KB), EA_SW03 (200 KB), EA_SWW14 (217 KB), HK_FP13
+(218 KB), UK_SM11 (231 KB), and the two FRB/US census files at 10.6 MB and 10.8 MB. Four further
+models are <em>indexed rather than copied</em>, since they already live in the <code>irfs</code> tree: US_SW07 (215 KB),
+US_CMR14 (1.8 MB), US_FRB08 (352 KB) and US_FRB22_mcap (407 KB). The SW07 and CMR14 files were
+regenerated by this feature to carry their full native shock sets; the <code>interest_</code> and <code>fiscal_</code>
+columns that the existing policy-counterfactual feature reads are unchanged to about <span class="arithmatex">\(5\times10^{-11}\)</span>
+by that regeneration, which is re-export rounding.</p>
+<p>The index is fetched once per session on the first drawer open, and a model's response file on
+selection, cached per model for the session. Both go through <code>loadJSON</code>, a plain fetch under
+<code>${NEXT_PUBLIC_BASE_PATH}/data/</code> with no client-side decompression. In practice the default lens
+costs 36 KB plus 215 KB; choosing either 54-shock FRB/US lens costs a further 10.7 MB.</p>
+<p>The index carries <code>schema: "gmaps-drivers-index/1"</code>, the build date, <code>horizonQuarters</code> (12, asserted
+equal to <code>DRIVERS_H</code> by the test suite), <code>commonObservables</code>, <code>collinearThreshold</code> (0.95), the
+verbatim <code>shockClasses</code> block, and one record per model. Each model record gives the site-absolute
+<code>file</code> path the drawer fetches and the repository <code>source</code> it came from; <code>sha256</code> and <code>sha256Source</code>,
+which the test suite re-hashes against every shipped file; the usable <code>shocks</code> and the <code>dropped</code> list
+with a reason (<code>zero-response</code> or <code>missing-observable</code>); <code>hasOutput</code>; the <code>collinearPairs</code> with
+<span class="arithmatex">\(\cos\)</span> rounded to six decimals; and, where applicable, an optional display <code>title</code>, <code>sourceNote</code>,
+<code>menuHidden</code>, <code>classMapKey</code>, <code>clusters</code> and <code>defaultNamed</code>. The full field list is in
+<a href="../DATA_SCHEMA/">Data Schemas</a>; the loader's types are at <code>app/src/lib/data/loader.ts:96–160</code>.</p>
+<h2 id="limits-of-the-claim">Limits of the claim<a class="headerlink" href="#limits-of-the-claim" title="Permanent link">&para;</a></h2>
+<p>The feature is experimental, and it is badged as such in the interface. Its claim is
+model-conditional: the decomposition answers what mix of model <span class="arithmatex">\(M\)</span>'s structural shocks would have
+produced the displayed path. It does not say what caused the scenario, and it is not model-free shock
+labelling. An earlier attempt at a model-free validation failed its pre-committed gate; those numbers
+are unlicensed, are not part of this feature, and appear nowhere in the tool or its documentation.</p>
+<p>What is validated is same-model recovery. Every number in <code>simple_decomp_results.txt</code> and
+<code>class_recovery_results.txt</code> comes from generating a path with a model's own known shock sequence and
+recovering it under that same model, so it measures the estimator, not the model, and not the world.
+A different lens gives a different answer, and the lenses are not equally validated.
+<code>bench_simple_decomp.m</code> ran exactly eight models — US_SW07, US_CMR14, EA_SW03, EA_SWW14, CA_LS07,
+HK_FP13, BRA_SAMBA08 and UK_SM11 — and never ran any FRB/US lens. The drawer's bottom caveat is
+therefore per-model: it cites the bench only for those eight, and for the others states that what
+backs the shipped default naming is a build-time recovery check rather than a bench row. That
+build-time scan exists for the two clustered FRB/US lenses. US_FRB08 has neither a bench row nor a
+build-time scan, and no document should assert one for it.</p>
+<p>Aggregation into classes is the narrowest claim on the page, and it is licensed at one configuration
+only: US_SW07, all seven observables watched, all seven class-map shocks named. Un-naming a single
+shock revokes it (Remark 3). CMR14's families are that model's own class map used as an organising
+grouping and not a licensed class split (Remark 4), and the FRB/US clusters are an empirical grouping
+of response directions whose members are chained rather than mutually parallel (Remark 5). Of those
+clusters, only the shipped default naming carries a recovery check, and that check is a build-time
+scan rather than a bench: 123 of 1,771 possible triples pass for US_FRB22 and 122 of 1,330 for the
+VAR-expectations variant. Any other naming is exploratory. A full-rank <span class="arithmatex">\(\Theta\)</span> is not evidence to the
+contrary, because conditioning is what decides whether a naming is usable and rank does not imply it.</p>
+<p>Four smaller limits are worth carrying into any write-up. Where a pair of shocks is flagged
+collinear, the split within that pair is not identified and the pair must be read as one object
+(Remark 2). In the exact-fit regime the residual is zero by construction and is no evidence that the
+named shocks explain the path (Remark 1). The shares strip below the chart is a norm share and not a
+variance decomposition, so it cannot show two contributions offsetting each other (Remark 8). And the
+seven-observable mode exists only on the US bloc; every other bloc runs at three observables, where
+no configuration in the menu licenses a class view.</p>
+<p>Finally, three numbers quoted in source comments do not reproduce under independent measurement and
+are deliberately absent from this page: a pair of SW07 column norms, an error range for a CMR14
+collinear pair, and a failure magnitude for the FRB22 top-three-by-size triple. In each case the
+qualitative point holds and is stated above; the specific figure is not repeated.</p>
+<h2 id="regeneration">Regeneration<a class="headerlink" href="#regeneration" title="Permanent link">&para;</a></h2>
+<p><strong>Example 4 (Rebuilding the shipped index and re-running the validation benches).</strong> <em>We regenerate
+the index whenever the class maps, the census responses or the model menu change. The builder reads
+<code>pipeline/census_irfs/MANIFEST.json</code>, each census model's <code>Taylor.json</code>, the class maps, and the four
+<code>irfs</code>-tree response files; it writes the index and copies each census file into the public tree,
+refusing to ship any file whose sha256 does not match the manifest. We then re-run the two MATLAB
+benches, which print to stdout rather than writing files, so the committed transcripts under
+<code>docs/paper/</code> are captured by redirection. Finally we run the licence tests, of which there are 26
+across the three Drivers test files. The commands are as follows:</em></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. Rebuild the shipped index and the census copies (runs from anywhere in the repo).</span>
+node<span class="w"> </span>app/scripts/build_drivers_index.mjs
+
+<span class="c1"># 2. Re-run the two validation benches and capture their transcripts.</span>
+matlab<span class="w"> </span>-batch<span class="w"> </span><span class="s2">&quot;run(&#39;pipeline/bench_simple_decomp.m&#39;)&quot;</span><span class="w">  </span>&gt;<span class="w"> </span>docs/paper/simple_decomp_results.txt
+matlab<span class="w"> </span>-batch<span class="w"> </span><span class="s2">&quot;run(&#39;pipeline/bench_class_recovery.m&#39;)&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>docs/paper/class_recovery_results.txt
+
+<span class="c1"># 3. Re-run the licence tests (26 across drivers-decomp{,-v2,-v3}.test.ts).</span>
+<span class="nb">cd</span><span class="w"> </span>app<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span><span class="nb">test</span>
+</code></pre></div>
+<p>Two prerequisites are worth stating before anyone runs step 1 or step 2. The builder needs
+<code>pipeline/census_irfs/</code>, the 97-model census response tree, which is not present on the deployment
+branch; without it the script fails at its first read. <code>bench_simple_decomp.m</code> reads the shipped
+US_SW07 and US_CMR14 files plus the six census models' <code>Taylor.json</code>, and <code>bench_class_recovery.m</code>
+reads the class maps, those same two shipped files and <code>US_FRB22_mcap/Taylor.json</code>, so both benches
+run only in a checkout that carries the census tree. The public <code>census/*.json</code> copies are
+byte-identical to their sources by the sha gate, but both scripts hard-code the <code>pipeline/census_irfs</code>
+paths, so pointing them at the public copies is a code edit rather than a command-line option.</p>
+<h2 id="placement-in-one-line">Placement in one line<a class="headerlink" href="#placement-in-one-line" title="Permanent link">&para;</a></h2>
+<p>A model-conditional reading of a scenario path: the tool solves for the sequence of a chosen MMB
+model's own structural shocks that reproduces the displayed path over twelve quarters, draws the
+contributions in the panel's units with an explicit residual, and gates every interpretive step —
+the naming budget, the collinearity flag, the class-view licence — on what the same-model recovery
+benches actually validated. It is the structural-interpretation counterpart to the accounting
+satellites: where the <a href="../fiscal-block-methodology/">fiscal</a> and
+<a href="../external-block-methodology/">external</a> blocks derive stocks from the BVAR path by identity, this
+one reads that path through a model's lens, and it claims no more than the lens.</p>
+<h2 id="key-references">Key references<a class="headerlink" href="#key-references" title="Permanent link">&para;</a></h2>
+<p>Smets &amp; Wouters, <em>Shocks and Frictions in US Business Cycles</em> (2007, the licensed lens and its class
+map) · Christiano, Motto &amp; Rostagno, <em>Risk Shocks</em> (2014, the financial-block lens) · Wieland et al.,
+<em>A New Comparative Approach to Macroeconomic Modeling and Policy Analysis</em> (the Macroeconomic Model
+Base, source of every response file here) · Brayton, Laubach &amp; Reifschneider, <em>The FRB/US Model</em>
+(the two 54-shock census lenses) · Coenen et al., <em>New Area-Wide Model II</em> (the filter-the-path
+exercise this decomposition implements) · Christiano, Eichenbaum &amp; Evans, <em>Nominal Rigidities and the
+Dynamic Effects of a Shock to Monetary Policy</em> (the historical-decomposition reading of stacked
+impulse responses) · in-repo: <code>pipeline/bench_simple_decomp.m</code> and <code>pipeline/bench_class_recovery.m</code>,
+with transcripts in <code>docs/paper/simple_decomp_results.txt</code> and
+<code>docs/paper/class_recovery_results.txt</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025–2026 Matyas Farkas — GPL-3.0-only
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

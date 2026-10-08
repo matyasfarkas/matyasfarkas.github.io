@@ -1,13 +1,13 @@
 % =====================================================================================
-% §2 METHODOLOGY — the full econometric treatment (classical GVAR and MFFM in parallel).
+% §2 METHODOLOGY — the full econometric treatment (classical GVAR and GMAPS in parallel).
 % Every constant here is verified against the code: cgl_bvarV5.m (hyperpriors, MH bounds),
 % export_bvar_gvar24_loop.m (MAXIT/TOL/draws/WN columns/star construction), the shipped
 % coupling artifact (dim, rho). Do not edit numbers by hand.
 % =====================================================================================
 
 Two models organize this section, and they are meant to be read against each other. The
-classical GVAR comes first, in the form the literature developed it, because the MFFM keeps
-its skeleton and the comparison is sharpest with both on the page. The MFFM follows: what a
+classical GVAR comes first, in the form the literature developed it, because the GMAPS keeps
+its skeleton and the comparison is sharpest with both on the page. The GMAPS follows: what a
 bloc is, how its foreign variables are built, how the system is estimated and then solved.
 The section closes with the question any design must answer --- what this way of working
 buys, and what it costs --- and with the US bloc, which runs through everything as the
@@ -86,7 +86,7 @@ systems this large. Estimation in practice is supported by a mature toolchain
 \citep{SmithGalesi2014}.
 
 Figure~\ref{fig:pesaran} draws the pipeline: separate country estimations, stars from
-observed data, one stack, one inversion. That is the machine the MFFM descends from.
+observed data, one stack, one inversion. That is the machine the GMAPS descends from.
 Everything that follows keeps its two central ideas --- sparse trade-weighted linkage and a
 stacked linear solution --- and changes how the blocs are specified, estimated, and solved.
 
@@ -96,14 +96,14 @@ stacked linear solution --- and changes how the blocs are specified, estimated, 
 \caption{The classical GVAR pipeline. Country models are estimated one at a time on their own
 samples, linked by weakly exogenous trade-weighted stars built from observed data, then
 stacked through the link matrices and inverted once to give the world reduced form
-\eqref{eq:stack}. The two red tags mark the assumptions the MFFM replaces: weak exogeneity
+\eqref{eq:stack}. The two red tags mark the assumptions the GMAPS replaces: weak exogeneity
 and the common balanced estimation window.}
 \label{fig:pesaran}
 \end{figure}
 
-\subsection{The MFFM country model}\label{sec:gbvar}
+\subsection{The GMAPS country model}\label{sec:gbvar}
 
-The MFFM strips the classical bloc down to a closed VAR and moves the difficulty elsewhere
+The GMAPS strips the classical bloc down to a closed VAR and moves the difficulty elsewhere
 --- out of the specification and into the estimation. Each of the $N=\NBlocs{}$ coupled
 blocs is a closed, constant-coefficient VAR($p$),
 \begin{equation}\label{eq:mffmbloc}
@@ -125,20 +125,21 @@ equity index), and $x^{*}_{it}=(\mathrm{ROWDEM}_{it},\mathrm{ROWINF}_{it},\mathr
 the three foreign variables. Variables tagged as logarithmic enter as $100\ln$ levels, so
 the displayed quarter-on-quarter annualized growth is $4\Delta$; rates and GDP ratios enter
 untransformed. In the US bloc the four global prices are ordinary domestic columns --- the
-United States is their source; every other bloc carries the same four series and receives
-their paths from the US solution.
+United States originates them; every other bloc carries the same four series, held equal to the US path
+by the joint solve --- in which the US, carrying foreign aggregates of its own, itself responds to the
+rest of the world, so the commons are endogenous, not passively received.
 
 The exogenous side is deliberately leaner than the Bayesian GVAR it is closest to.
 \citet{CrespoFeldkircherHuber2016} give each country a near-full foreign mirror,
 $x^{*}_{it}=(y^{*},\allowbreak\Delta p^{*},\allowbreak eq^{*},\allowbreak i_s^{*},\allowbreak i_l^{*},\allowbreak tc^{*})'$ --- trade-weighted counterparts of
 six of their seven domestic variables, all but the real exchange rate --- together with the oil
-price as a global control determined inside the US model. The MFFM keeps only the three stars for
+price as a global control determined inside the US model. The GMAPS keeps only the three stars for
 partner demand, inflation and the short rate, and carries the financial linkage instead in the
 \NGlobals{} \emph{global} prices $g_t$: oil and three US-originated series (the ten-year yield, the
 Baa corporate yield and an equity index) that enter every bloc directly rather than as
 trade-weighted aggregates. That is the substantive difference between the two spillover mechanisms.
 Where \citeauthor{CrespoFeldkircherHuber2016} transmit foreign equity, long rates and credit through
-the weight matrix, the MFFM transmits US financial conditions as common prices, so a repricing at
+the weight matrix, the GMAPS transmits US financial conditions as common prices, so a repricing at
 the source reaches every bloc's own equations at once --- the mechanism behind the ``US credit event
 as world credit event'' reading of Section~\ref{sec:example}. The leaner star block trades the
 country-pair richness of a full foreign mirror for a sparser, more identifiable linkage and that
@@ -187,7 +188,7 @@ $\mathrm{INF}$ and $\mathrm{FIN}$ while it remains in $\mathrm{DEM}$.}
 
 One modeling choice remains, and it is the deepest difference between the two designs: the
 long run. The classical GVAR disciplines it with cointegrating restrictions; we discipline
-it with shrinkage. The MFFM works in levels under a Minnesota-type prior
+it with shrinkage. The GMAPS works in levels under a Minnesota-type prior
 centered on univariate random walks, the Bayesian tradition for possibly integrated data
 that avoids pre-testing for ranks \citep{DoanLittermanSims1984,Litterman1986,simszha1998}.
 This shrinkage-in-levels route to the GVAR is itself established:
@@ -195,7 +196,7 @@ This shrinkage-in-levels route to the GVAR is itself established:
 Bayesian shrinkage on the country-model coefficients, and showed that hierarchical
 Minnesota-type and stochastic-search priors forecast an international macro-financial panel
 more accurately than a random walk with drift, an unshrunk global model, or isolated country
-VARs. The MFFM shares that estimation philosophy --- exogenous trade-weight links, a
+VARs. The GMAPS shares that estimation philosophy --- exogenous trade-weight links, a
 VARX$^{*}$ per bloc, shrinkage in place of rank tests --- and differs in what the estimated
 system is then put to: an interactive conditional solve (Section~\ref{sec:solve}), a joint EM
 completion of the pandemic-holed panel, an endogenous anchor economy, and the fiscal and
@@ -300,7 +301,7 @@ that is the whole story.
 
 Coupled, one more requirement appears: bloc $i$'s foreign variables must equal the
 trade-weighted average of what its partners actually do, and the partners' outcomes depend
-on their own foreign variables in turn. Because the smoother's conditional mean is $\emph{affine}$
+on their own foreign variables in turn. Because the smoother's conditional mean is \emph{affine}
 in the imposed values, this consistency requirement is a linear fixed point. Stack into $x$
 the deviations from baseline of every bloc's three star paths over the $H=\HorizonQ$-quarter
 horizon, augmented by the four global-price paths that the US bloc originates, so that
@@ -332,7 +333,7 @@ precomputed rather than iterated live.}
 
 The comparison with Section~\ref{sec:classical} now takes one sentence per object
 (Table~\ref{tab:gvar-vs}, Figure~\ref{fig:gbvar}). The classical GVAR stacks the blocs
-\emph{contemporaneously} and inverts $G$ once to obtain the world reduced form; the MFFM
+\emph{contemporaneously} and inverts $G$ once to obtain the world reduced form; the GMAPS
 stacks the blocs \emph{across the forecast} and inverts $I-M$ once to obtain the world
 scenario operator, which is the object a scenario tool needs. Weak exogeneity is replaced
 twice over, by the estimation-time fixed point in the star data and the solve-time pinning
@@ -349,7 +350,7 @@ system.
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.92\textwidth]{figs/tikz/fig_gbvar.pdf}
-\caption{The MFFM pipeline. The left box is the estimation loop of
+\caption{The GMAPS pipeline. The left box is the estimation loop of
 Section~\ref{sec:estimation}: complete the ragged panels with the simulation smoother,
 re-estimate under the hierarchical prior, rebuild the stars from the completed panels, and
 iterate to a fixed point. The United States sits inside the loop as an ordinary coupled
@@ -390,14 +391,14 @@ paths; the United States sits inside the system, so the world feeds back; and be
 estimations the tool is updated by data operations --- append a quarter, re-anchor the
 forecast --- with the model untouched.
 
-The costs deserve equal daylight. The long-run discipline of cointegrating restrictions is
+The costs deserve equal prominence. The long-run discipline of cointegrating restrictions is
 gone, replaced by priors and by user-set long-run anchors; the model will not discover a
 theory-consistent equilibrium on its own. Weak exogeneity is not tested but replaced by
 construction, so cross-country consistency is imposed rather than examined. The coupled
 multiplier stands on $\rho(M)=\RhoM$, close to one, which makes the global amplification
 the solve produces powerful and places weight on the star equations that generate it;
-Appendix~B confronts the resulting responses with the impulse responses of a classical GVAR
-estimated on the same data. And the reduced-form layer identifies nothing by itself:
+Appendix~\ref{app:cred} confronts the resulting responses with the impulse responses of a
+classical GVAR estimated on the same data. And the reduced-form layer identifies nothing by itself:
 without the structural overlay of Section~\ref{sec:counterfactual}, a scenario is a
 most-likely world, not a statement about cause and effect. The tool is built so that each
 of these costs is visible where it bites --- anchors are set by the user, provenance is
@@ -405,12 +406,12 @@ flagged on every chart, and the structural layer is drawn as its own line.
 
 \begin{table}[t]
 \centering
-\caption{The classical GVAR and the MFFM, side by side.}
+\caption{The classical GVAR and the GMAPS, side by side.}
 \label{tab:gvar-vs}
 \small
 \begin{tabular}{p{0.16\textwidth}p{0.38\textwidth}p{0.38\textwidth}}
 \toprule
- & \textbf{Classical GVAR} & \textbf{MFFM} \\
+ & \textbf{Classical GVAR} & \textbf{GMAPS} \\
 \midrule
 Country model &
 VARX$^{*}$/VECMX$^{*}$ \eqref{eq:varx}: contemporaneous foreign terms $\Lambda_{i0}$,
@@ -457,10 +458,10 @@ seasonally adjusted at source), and an estimation sample from \USSampleStart{} t
 Federal Reserve Bank of New York by \citet{CrumpEusepiGiannoneQianSbordone2025}: real
 activity and its expenditure components, the labor market, prices, a term structure of
 interest rates, corporate bond yields, equity prices and their volatility, housing, and
-sentiment; their paper documents each series in detail. To this core the MFFM adds what its
+sentiment; their paper documents each series in detail. To this core the GMAPS adds what its
 global role requires: the four fiscal drivers, the four global prices (which for the United
 States are simply domestic columns), and the three foreign variables. The full roster
-appears in Appendix~C.
+appears in Appendix~\ref{app:repro}.
 
 Partitioning $B_{i\ell}$ and $\Sigma_i$ conformably with \eqref{eq:partition} makes the
 transmission channels explicit, and each does something different. The blocks

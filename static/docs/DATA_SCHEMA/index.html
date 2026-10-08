@@ -7,6 +7,10 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
+        <meta name="author" content="Matyas Farkas">
+      
+      
+        <link rel="canonical" href="https://matyasfarkas.github.io/docs/DATA_SCHEMA/">
       
       
         <link rel="prev" href="../MODULES/">
@@ -23,7 +27,7 @@
     
     
       
-        <title>Data Schemas - Monetary-Financial-Fiscal Macromodel — Documentation</title>
+        <title>Data Schemas - Global Macroeconomic Analysis Projections and Scenarios — Documentation</title>
       
     
     
@@ -90,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Monetary-Financial-Fiscal Macromodel — Documentation" class="md-header__button md-logo" aria-label="Monetary-Financial-Fiscal Macromodel — Documentation" data-md-component="logo">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-header__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Monetary-Financial-Fiscal Macromodel — Documentation
+            Global Macroeconomic Analysis Projections and Scenarios — Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -214,13 +218,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Monetary-Financial-Fiscal Macromodel — Documentation" class="md-nav__button md-logo" aria-label="Monetary-Financial-Fiscal Macromodel — Documentation" data-md-component="logo">
+    <a href=".." title="Global Macroeconomic Analysis Projections and Scenarios — Documentation" class="md-nav__button md-logo" aria-label="Global Macroeconomic Analysis Projections and Scenarios — Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Monetary-Financial-Fiscal Macromodel — Documentation
+    Global Macroeconomic Analysis Projections and Scenarios — Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -338,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MFFM_User_Manual.pdf" class="md-nav__link">
+      <a href="../GMAPS_User_Manual.pdf" class="md-nav__link">
         
   
   
@@ -366,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../MFFM_US_bloc_model.pdf" class="md-nav__link">
+      <a href="../GMAPS_US_bloc_model.pdf" class="md-nav__link">
         
   
   
@@ -514,6 +518,34 @@
     
   
     External Block Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drivers-decomposition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drivers Decomposition Methodology
   
 
     
@@ -718,6 +750,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1. Where the files live">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-manifestjson-the-data-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 manifest.json — the data pack
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -759,6 +808,17 @@
     <span class="md-ellipsis">
       
         2.3 Variable ids, blocks, isFinancial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-exchange-rates-one-direction-everywhere-rise-appreciation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Exchange rates — one direction everywhere (rise = appreciation)
       
     </span>
   </a>
@@ -832,10 +892,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-companion_drawsjson-flat-posterior-draws" class="md-nav__link">
+  <a href="#5-companion_drawsjsongz-flat-posterior-draws" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. companion_draws.json — flat posterior draws
+        5. companion_draws.json.gz — flat posterior draws
       
     </span>
   </a>
@@ -862,6 +922,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="7. historical.json / historical_levels.json — recent actuals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-estimation_maskjson-cells-the-estimator-drew-as-missing-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 estimation_mask.json — cells the estimator drew as missing data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -876,13 +953,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-fiscal_metajson-fiscal-block-parameters-6-blocs-only" class="md-nav__link">
+  <a href="#9-fiscal_metajson-fiscal-block-parameters-41-economies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. fiscal_meta.json — fiscal-block parameters (6 blocs only)
+        9. fiscal_meta.json — fiscal-block parameters (41 economies)
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="9. fiscal_meta.json — fiscal-block parameters (41 economies)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-external_metajson-external-accounts-satellite-47-economies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 external_meta.json — external-accounts satellite (47 economies)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -920,22 +1014,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#13-out-of-sample-evaluation-contracts-the-em-bayesian-gvar-eval-harness" class="md-nav__link">
+  <a href="#13-the-drivers-payload-apppublicdatadsgecensus-experimental" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13. Out-of-sample evaluation contracts (the em-bayesian-gvar-eval harness)
+        13. The Drivers payload — app/public/data/dsge/census/ (experimental)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="13. Out-of-sample evaluation contracts (the em-bayesian-gvar-eval harness)">
+    <nav class="md-nav" aria-label="13. The Drivers payload — app/public/data/dsge/census/ (experimental)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#131-weights_asof_starty_endyjson-rolling-as-of-trade-weights-cache" class="md-nav__link">
+  <a href="#131-where-the-files-live-and-what-is-fetched-when" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13.1 weights_asof_&lt;startY&gt;_&lt;endY&gt;.json — rolling as-of trade weights cache
+        13.1 Where the files live, and what is fetched when
       
     </span>
   </a>
@@ -943,10 +1037,38 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#132-forecastsmodeloriginjson-per-origin-predictive-draw-clouds" class="md-nav__link">
+  <a href="#132-indexjson-the-model-menu" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13.2 forecasts/&lt;model&gt;/&lt;origin&gt;.json — per-origin predictive draw clouds
+        13.2 index.json — the model menu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.2 index.json — the model menu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1321-the-per-model-record-driversmodelmeta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2.1 The per-model record (DriversModelMeta)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-indexshockclasses-the-embedded-shock-class-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 index.shockClasses — the embedded shock-class map
       
     </span>
   </a>
@@ -954,10 +1076,104 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#133-realizationsjson-the-truth-panel-for-scoring" class="md-nav__link">
+  <a href="#134-clusters-and-defaultnamed-the-frbus-lenses" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13.3 realizations.json — the truth panel for scoring
+        13.4 clusters and defaultNamed — the FRB/US lenses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#135-modeljson-the-per-model-irf-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.5 &lt;MODEL&gt;.json — the per-model IRF file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#136-provenance-where-each-file-actually-comes-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.6 Provenance — where each file actually comes from
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#137-regenerating-and-validating-the-payload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.7 Regenerating and validating the payload
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#138-what-this-payload-does-not-establish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.8 What this payload does not establish
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-out-of-sample-evaluation-contracts-the-em-bayesian-gvar-eval-harness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Out-of-sample evaluation contracts (the em-bayesian-gvar-eval harness)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Out-of-sample evaluation contracts (the em-bayesian-gvar-eval harness)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-weights_asof_starty_endyjson-rolling-as-of-trade-weights-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 weights_asof_&lt;startY&gt;_&lt;endY&gt;.json — rolling as-of trade weights cache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-forecastsmodeloriginjson-per-origin-predictive-draw-clouds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 forecasts/&lt;model&gt;/&lt;origin&gt;.json — per-origin predictive draw clouds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-realizationsjson-the-truth-panel-for-scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 realizations.json — the truth panel for scoring
       
     </span>
   </a>
@@ -1124,6 +1340,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../UPDATE_MANUAL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Manual: data, model and app updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../MAINTAINER_OPERATIONS/" class="md-nav__link">
         
   
@@ -1215,7 +1459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../paper/mffm_platform_paper.pdf" class="md-nav__link">
+      <a href="../paper/gmaps_platform_paper.pdf" class="md-nav__link">
         
   
   
@@ -1297,6 +1541,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1. Where the files live">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-manifestjson-the-data-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 manifest.json — the data pack
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1338,6 +1599,17 @@
     <span class="md-ellipsis">
       
         2.3 Variable ids, blocks, isFinancial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-exchange-rates-one-direction-everywhere-rise-appreciation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Exchange rates — one direction everywhere (rise = appreciation)
       
     </span>
   </a>
@@ -1411,10 +1683,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-companion_drawsjson-flat-posterior-draws" class="md-nav__link">
+  <a href="#5-companion_drawsjsongz-flat-posterior-draws" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. companion_draws.json — flat posterior draws
+        5. companion_draws.json.gz — flat posterior draws
       
     </span>
   </a>
@@ -1441,6 +1713,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="7. historical.json / historical_levels.json — recent actuals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-estimation_maskjson-cells-the-estimator-drew-as-missing-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 estimation_mask.json — cells the estimator drew as missing data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1455,13 +1744,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-fiscal_metajson-fiscal-block-parameters-6-blocs-only" class="md-nav__link">
+  <a href="#9-fiscal_metajson-fiscal-block-parameters-41-economies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. fiscal_meta.json — fiscal-block parameters (6 blocs only)
+        9. fiscal_meta.json — fiscal-block parameters (41 economies)
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="9. fiscal_meta.json — fiscal-block parameters (41 economies)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-external_metajson-external-accounts-satellite-47-economies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 external_meta.json — external-accounts satellite (47 economies)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1499,22 +1805,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#13-out-of-sample-evaluation-contracts-the-em-bayesian-gvar-eval-harness" class="md-nav__link">
+  <a href="#13-the-drivers-payload-apppublicdatadsgecensus-experimental" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13. Out-of-sample evaluation contracts (the em-bayesian-gvar-eval harness)
+        13. The Drivers payload — app/public/data/dsge/census/ (experimental)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="13. Out-of-sample evaluation contracts (the em-bayesian-gvar-eval harness)">
+    <nav class="md-nav" aria-label="13. The Drivers payload — app/public/data/dsge/census/ (experimental)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#131-weights_asof_starty_endyjson-rolling-as-of-trade-weights-cache" class="md-nav__link">
+  <a href="#131-where-the-files-live-and-what-is-fetched-when" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13.1 weights_asof_&lt;startY&gt;_&lt;endY&gt;.json — rolling as-of trade weights cache
+        13.1 Where the files live, and what is fetched when
       
     </span>
   </a>
@@ -1522,10 +1828,38 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#132-forecastsmodeloriginjson-per-origin-predictive-draw-clouds" class="md-nav__link">
+  <a href="#132-indexjson-the-model-menu" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13.2 forecasts/&lt;model&gt;/&lt;origin&gt;.json — per-origin predictive draw clouds
+        13.2 index.json — the model menu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.2 index.json — the model menu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1321-the-per-model-record-driversmodelmeta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2.1 The per-model record (DriversModelMeta)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-indexshockclasses-the-embedded-shock-class-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 index.shockClasses — the embedded shock-class map
       
     </span>
   </a>
@@ -1533,10 +1867,104 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#133-realizationsjson-the-truth-panel-for-scoring" class="md-nav__link">
+  <a href="#134-clusters-and-defaultnamed-the-frbus-lenses" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13.3 realizations.json — the truth panel for scoring
+        13.4 clusters and defaultNamed — the FRB/US lenses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#135-modeljson-the-per-model-irf-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.5 &lt;MODEL&gt;.json — the per-model IRF file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#136-provenance-where-each-file-actually-comes-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.6 Provenance — where each file actually comes from
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#137-regenerating-and-validating-the-payload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.7 Regenerating and validating the payload
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#138-what-this-payload-does-not-establish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.8 What this payload does not establish
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-out-of-sample-evaluation-contracts-the-em-bayesian-gvar-eval-harness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Out-of-sample evaluation contracts (the em-bayesian-gvar-eval harness)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Out-of-sample evaluation contracts (the em-bayesian-gvar-eval harness)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-weights_asof_starty_endyjson-rolling-as-of-trade-weights-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 weights_asof_&lt;startY&gt;_&lt;endY&gt;.json — rolling as-of trade weights cache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-forecastsmodeloriginjson-per-origin-predictive-draw-clouds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 forecasts/&lt;model&gt;/&lt;origin&gt;.json — per-origin predictive draw clouds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-realizationsjson-the-truth-panel-for-scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 realizations.json — the truth panel for scoring
       
     </span>
   </a>
@@ -1628,49 +2056,152 @@
 
 <h1 id="data-contracts-json-schemas">Data Contracts &amp; JSON Schemas<a class="headerlink" href="#data-contracts-json-schemas" title="Permanent link">&para;</a></h1>
 <p>This page is the <strong>reference for every JSON contract the app reads</strong> from
-<code>app/public/data/bvar/</code>. It is the authority for <em>what each file contains, the
-exact field names, the array shapes, and the conventions</em> (variable ids, block
-tags, transformations, the 6-significant-figure compaction). It complements —
-and does <strong>not</strong> duplicate — the prose in the companion docs:</p>
+<code>app/public/data/bvar/</code> — and, since the experimental Drivers panel shipped, from
+<code>app/public/data/dsge/census/</code> as well (§13). It is the authority for <em>what each
+file contains, the exact field names, the array shapes, and the conventions</em>
+(variable ids, block tags, transformations, the 6-significant-figure compaction).
+It complements — and does <strong>not</strong> duplicate — the prose in the companion docs:</p>
 <blockquote>
 <ul>
 <li><a href="../ARCHITECTURE_FOR_AI/"><code>ARCHITECTURE_FOR_AI.md</code></a> — how the compute engine <em>uses</em> these files (§4–§10).</li>
 <li><a href="https://github.com/matyasfarkas/BVARScenarioTool/blob/main/README.md"><code>README.md</code></a> / <a href="../USER_GUIDE/"><code>USER_GUIDE.md</code></a> — overview &amp; UI.</li>
 <li><a href="../fiscal-block-methodology/"><code>fiscal-block-methodology.md</code></a> — the math behind <code>fiscal_meta.json</code>.</li>
+<li><a href="../drivers-decomposition/"><code>drivers-decomposition.md</code></a> — the math and the licence behind the Drivers payload (§13).</li>
 <li><a href="../ADDING_A_COUNTRY/"><code>ADDING_A_COUNTRY.md</code></a> / <a href="../REESTIMATING_MODELS/"><code>REESTIMATING_MODELS.md</code></a> — how the files are <em>produced</em>.</li>
 </ul>
 </blockquote>
 <p>If a fact here disagrees with the code, <strong>the code wins</strong> — these contracts are
 verified against the live files (<code>app/public/data/bvar/US</code>, <code>…/EA</code>, <code>…/DE</code>,
-<code>…/CN</code>, <code>…/gvar</code>) but the data is re-ported on every re-estimation.</p>
+<code>…/CN</code>, <code>…/gvar</code>) but the data is re-ported on every re-estimation. Values quoted
+below are from data pack <strong><code>2026Q2-reest-20261008b</code></strong> (Oct 2026 genuine-data
+re-estimation, panel ending 2026Q2) unless labelled as history.</p>
+<p><strong>Since 4.0.0 every file on this page belongs to a data pack</strong> (§1.1): the app reads
+it only through the pack's <code>manifest.json</code>, which lists each file with its SHA-256
+and size. The data and the estimated model are therefore separate from the tool —
+a new pack updates them without a new app version.</p>
 <hr />
 <h2 id="1-where-the-files-live">1. Where the files live<a class="headerlink" href="#1-where-the-files-live" title="Permanent link">&para;</a></h2>
 <p>Each economy is one directory <code>app/public/data/bvar/&lt;CC&gt;/</code> keyed by ISO-2-ish
 country code (<code>US</code>, <code>EA</code>, <code>JP</code>, …; <code>EA</code> = euro-area aggregate). The cross-country
 GVAR coupling lives in <code>app/public/data/bvar/gvar/</code>.</p>
-<div class="highlight"><pre><span></span><code>app/public/data/bvar/
-  US/   EA/   JP/  …                 one directory per economy (~50)
-    spec.json                        variable manifest (ids, blocks, transforms)
-    companion_mean.json              posterior-mean VAR (betahat, sigmahat)
-    companion_draws.json             flat posterior draws (lazy-loaded, large)
-    baseline.json                    baseline fan in DISPLAY/GROWTH space
-    baseline_levels.json             baseline fan in LEVEL space
-    historical.json                  last ~40q in DISPLAY/GROWTH space
-    historical_levels.json           last ~40q in LEVEL space
-    transformations.json             per-variable &#39;log&#39;|&#39;lin&#39; list
-    fiscal_meta.json                 ONLY the 6 fiscal blocs (US/EA/JP/UK/CA/CN)
-  gvar/
-    weights_24bloc.json              33-bloc trade-weight matrix + topology source
-    coupling_default.json.gz         gzipped precomputed (I−M)⁻¹ coupling artifact
+<div class="highlight"><pre><span></span><code>app/public/data/
+  manifest.json                      THE PACK: every file&#39;s path + sha256 + bytes, dating per economy (§1.1)
+  coverage_manifest.json             per-variable sources, coverage, flags, model-implied quarters
+  nowcast_provenance.json            which history cells the coupled nowcast supplied (model-implied)
+  default_anchors.json, cookbook/, dsge/, vintages/, weo_forecasts.json, …   (also in the pack)
+  bvar/
+    US/   EA/   JP/  …               one directory per economy (52: 35 coupled GVAR blocs + 17 euro members)
+      spec.json                      variable manifest (ids, blocks, transforms)
+      companion_mean.json            posterior-mean VAR (betahat, sigmahat)
+      companion_draws.json.gz        flat posterior draws, gzipped (lazy-loaded, large); the plain
+                                     .json is a local by-product, not in git and not in the pack
+      baseline.json                  baseline fan in DISPLAY/GROWTH space
+      baseline_levels.json           baseline fan in LEVEL space
+      historical.json                last 40q in DISPLAY/GROWTH space
+      historical_levels.json         last 40q in LEVEL space + firstQuarter (the calendar, §7)
+      transformations.json           per-variable &#39;log&#39;|&#39;lin&#39; list
+      estimation_mask.json           history cells the estimator drew as missing data (§7.1)
+      fiscal_meta.json               the 41 economies with a fiscal block (§9)
+      external_meta.json             the 47 economies with the external-accounts satellite (§9.1)
+    gvar/
+      weights_24bloc.json            35-bloc trade-weight matrix + topology source (§10)
+      coupling_default.json.gz       gzipped precomputed (I−M)⁻¹ coupling artifact (§11)
 </code></pre></div>
-<p><strong>Loader (<code>app/src/lib/data/loader.ts</code>).</strong> <code>loadBVARData(country)</code> fetches
-<code>spec/companion_mean/baseline/historical</code> eagerly, then <em>optionally</em>
-<code>baseline_levels/historical_levels/fiscal_meta</code> (a 404 → <code>null</code>, which is normal
-for standalone economies that ship no <code>fiscal_meta.json</code>). <code>companion_draws.json</code>
-is loaded <strong>lazily</strong> by <code>loadCompanionDraws(country)</code> only when Compute is clicked
-(it is the largest file — tens of MB) and its flat arrays are converted <strong>once</strong>
-to <code>Float64Array</code> for fast indexing and zero-copy structured-clone into the band
-worker.</p>
+<p><strong>Loader (<code>app/src/lib/data/loader.ts</code>).</strong> Every read goes through the pack:
+<code>loadJSON(path)</code> is <code>dataManifest.fetchJSON(path)</code>, which looks the file up in
+<code>manifest.json</code>, fetches it, and checks its byte length and SHA-256 before parsing
+(a mismatch is an error, and the file is never used; note that the callers currently only log that error —
+see <code>UPDATE_MANUAL.md</code> §10, Known limits). <code>loadBVARData(country)</code>
+fetches <code>spec/companion_mean/baseline/historical</code> eagerly, then <em>optionally</em>
+<code>baseline_levels/historical_levels/fiscal_meta/external_meta</code> (a missing file →
+<code>null</code>, normal for economies without a fiscal block or external satellite).
+<code>companion_draws.json.gz</code> is loaded <strong>lazily</strong> by <code>loadCompanionDraws(country)</code> only
+when Compute is clicked (it is the largest file — tens of MB): the compressed bytes
+are hash-checked, gunzipped with the browser's <code>DecompressionStream</code>, and the flat
+arrays converted <strong>once</strong> to <code>Float64Array</code> for fast indexing and zero-copy
+structured-clone into the band worker.</p>
+<h3 id="11-manifestjson-the-data-pack">1.1 <code>manifest.json</code> — the data pack<a class="headerlink" href="#11-manifestjson-the-data-pack" title="Permanent link">&para;</a></h3>
+<p>Written by <code>app/scripts/pack-build.mjs</code>, checked by <code>app/scripts/pack-verify.mjs</code>
+(every web build runs <code>pack-verify --full</code> in <code>prebuild</code>), read at runtime by
+<code>app/src/lib/data/dataManifest.ts</code>. The manifest itself is the root of trust: it is
+fetched without caching and not hash-checked (a detached signature is a planned
+upgrade; today the format only leaves room for it).</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>schemaVersion</code></td>
+<td>string <code>"major.minor"</code></td>
+<td>contract version (<code>"2.0"</code>). The tool refuses a different major, or a minor below the one it needs</td>
+</tr>
+<tr>
+<td><code>minToolVersion</code></td>
+<td>string</td>
+<td>oldest app version that may read this pack (<code>"4.0.0"</code>); an older app shows a full-screen block</td>
+</tr>
+<tr>
+<td><code>packId</code></td>
+<td>string</td>
+<td>the pack's name, e.g. <code>"2026Q2-reest-20261008b"</code>. <strong>Packs are immutable</strong>: a changed pack gets a new id</td>
+</tr>
+<tr>
+<td><code>previousPackId</code></td>
+<td>string | null</td>
+<td>the pack it was cut from, if any</td>
+</tr>
+<tr>
+<td><code>generatedAt</code>, <code>generatedBy</code></td>
+<td>string</td>
+<td>build time and builder</td>
+</tr>
+<tr>
+<td><code>panel.lastHistQuarter</code></td>
+<td><code>"YYYYQn"</code></td>
+<td>the common last historical quarter of the coupled panel (<code>"2026Q2"</code>)</td>
+</tr>
+<tr>
+<td><code>blocs.&lt;CC&gt;</code></td>
+<td>object</td>
+<td>per economy: <code>lastHistQuarter</code>, <code>qoyNext</code> (seasonal phase of the first forecast quarter, <code>null</code> if no dummies), <code>qoyNextEstimation</code>, <code>seasonalRows</code>, <code>shiftQuarters</code> (quarters added after estimation; <code>0</code> in this pack), <code>estimationEnd</code></td>
+</tr>
+<tr>
+<td><code>gvar.weights</code></td>
+<td><code>{path, sha256, bytes}</code></td>
+<td>the trade-weights file the coupled solve uses</td>
+</tr>
+<tr>
+<td><code>gvar.coupling</code></td>
+<td><code>{path, sha256, bytes, inputs:{weightsSha256, companionSig}}</code></td>
+<td>the coupling artifact and the weights it was built from (<code>pack-verify</code> requires <code>inputs.weightsSha256</code> = <code>gvar.weights.sha256</code>; the app ignores a mismatched coupling)</td>
+</tr>
+<tr>
+<td><code>files.&lt;logical&gt;</code></td>
+<td><code>{path, sha256, bytes, inherit?}</code></td>
+<td>every file of the pack (1,997 in this pack). For <code>.gz</code> files the hash is of the compressed bytes. <code>inherit: true</code> appears only in an <strong>update pack</strong>: the file is taken from the app's built-in pack, and only if that copy has the same hash and size</td>
+</tr>
+<tr>
+<td><code>delta</code></td>
+<td>object, optional</td>
+<td>update packs only: the built-in pack they were cut against (<code>basePackId</code>) and how many files they ship / reuse</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where the bytes come from.</strong> On the web, from <code>&lt;base path&gt;/data/</code>. In the desktop
+app, from the pack built into the app — unless the user's data folder
+(<code>&lt;appDataDir&gt;/gmaps-data</code>, opened by <em>Settings → Data pack → Open data folder</em>)
+contains a <code>manifest.json</code>, in which case that folder is used, with the same
+checks. Rollback = delete that <code>manifest.json</code>. Full user and maintainer guide:
+<a href="../UPDATE_MANUAL/"><code>UPDATE_MANUAL.md</code></a>.</p>
+<p><strong>Dating.</strong> When the manifest loads, <code>dates.setPanelDates(manifest)</code> sets each
+economy's last historical quarter from <code>blocs.&lt;CC&gt;.lastHistQuarter</code> (§7) and checks
+each seasonal economy's <code>qoyNext</code> against the tool's own recomputation — a mismatch
+stops the load. There is no compiled date in the tool.</p>
 <hr />
 <h2 id="2-cross-cutting-conventions">2. Cross-cutting conventions<a class="headerlink" href="#2-cross-cutting-conventions" title="Permanent link">&para;</a></h2>
 <h3 id="21-the-data-space-log-lin">2.1 The data space (<code>log</code> / <code>lin</code>)<a class="headerlink" href="#21-the-data-space-log-lin" title="Permanent link">&para;</a></h3>
@@ -1708,28 +2239,33 @@ worker.</p>
 <code>/100</code> between the two spaces diverges forecasts silently. The canary test
 <code>scenario-scale-convention.test.ts</code> pins it.</p>
 <h3 id="22-the-6-significant-figure-compaction">2.2 The 6-significant-figure compaction<a class="headerlink" href="#22-the-6-significant-figure-compaction" title="Permanent link">&para;</a></h3>
-<p>The <strong>eight ported per-bloc files</strong> are <strong>rounded to 6 significant figures</strong> and
-serialised as <strong>compact JSON</strong> (<code>separators=(",",":")</code>, no whitespace) by
+<p><strong>Precision depends on how a bloc's files reach the app.</strong> In the deployed pack the
+<strong>35 coupled GVAR blocs are copied raw from the estimator's export, at full double
+precision</strong> (<code>docs/reest-2026/runs/port_to_app.sh</code> step 1; e.g. US <code>betahat[0][0] =
+3.6855229634904627</code>). The <strong>17 euro members</strong> go through
+<code>pipeline/port_gvar_exports.py</code>, and <em>those</em> eight per-bloc files are <strong>rounded to 6
+significant figures</strong> and serialised as <strong>compact JSON</strong> (<code>separators=(",",":")</code>, no whitespace) by
 <code>pipeline/port_gvar_exports.py</code> (<code>sig6</code> → <code>float(f"{x:.6g}")</code>, recursing through
 lists/dicts via <code>compact</code>). The compacted set is exactly the <code>FILES</code> list in that
 script: <code>spec.json</code>, <code>companion_mean.json</code>, <code>companion_draws.json</code>,
 <code>historical.json</code>, <code>historical_levels.json</code>, <code>baseline.json</code>,
 <code>baseline_levels.json</code>, <code>transformations.json</code>. Integers, <code>None</code>, strings,
 booleans, and <code>±inf</code>/<code>NaN</code> pass through (<code>0</code>/<code>±inf</code>/<code>NaN</code> map to <code>0</code>/themselves).
-So in those files expect values like <code>8.04724</code>, <code>1009.29</code>, <code>-1.45722</code> — never
-full double precision.</p>
+So in a member's files expect values like <code>4.16884</code>, <code>-5.50528</code> (AT) — never full
+double precision. Do not assume either precision when validating; read the file.</p>
 <p><code>coupling_default.json.gz</code> is <strong>also</strong> 6-sigfig: its builder
 (<code>app/scripts/precompute_gvar_coupling.mjs</code>) rounds <code>M</code>/<code>invImM</code>/<code>rhoSpectral</code>
 with <code>round6 = x =&gt; Number(x.toPrecision(6))</code> before gzip.</p>
 <blockquote>
-<p><strong>Two files are NOT 6-sigfig</strong> — they are written full precision by their own
+<p><strong>Two more files are NOT 6-sigfig</strong> — they are written full precision by their own
 builders and are <em>not</em> in <code>port_gvar_exports.py</code>'s <code>FILES</code>:</p>
 <ul>
-<li><strong><code>fiscal_meta.json</code></strong> — emitted by <code>pipeline/build_fiscal_&lt;cc&gt;_4var.py</code> with
-  <code>json.dump(meta, indent=2)</code>; <code>d0</code> is full double precision (e.g.
-  <code>87.84509550831034</code>), <code>sfaDefault</code> is <code>round(sfa_mean, 4)</code> (4 decimals).</li>
-<li><strong><code>weights_24bloc.json</code></strong> — only the <code>US</code> receiver row is 6-sigfig; the other
-  32 rows carry full double precision (e.g. <code>0.15734894312225214</code>).</li>
+<li><strong><code>fiscal_meta.json</code></strong> — built with the panel by <code>pipeline/sources/build_panel.py</code>
+  (<code>derived.fiscal4</code>; <code>pipeline/country_rawdata/fiscal_meta_&lt;CC&gt;.json</code>, members in
+  <code>pipeline/euro_redesign_staging/&lt;CC&gt;/</code>), then <code>d0</code> is rolled to the panel end by
+  <code>app/scripts/roll_d0_forward.mjs</code>; <code>d0</code> is full double precision, <code>sfaDefault</code> has
+  3 decimals.</li>
+<li><strong><code>weights_24bloc.json</code></strong> — all 35 receiver rows carry full double precision.</li>
 </ul>
 <p>Do not assume 6-sigfig when validating these two files.</p>
 </blockquote>
@@ -1739,12 +2275,10 @@ builders and are <em>not</em> in <code>port_gvar_exports.py</code>'s <code>FILES
 <ul>
 <li><code>GLB_*</code> — a <strong>global common</strong> (the 4 US-determined commons, ids
   <code>GLB_OIL</code>/<code>GLB_USLR</code>/<code>GLB_USBAA</code>/<code>GLB_USEQ</code>). These ids are shared across the
-  <strong>GVAR blocs</strong> (US, EA, JP, …). The euro <strong>FSAP standalones</strong> carry the <em>same
-  four series</em> in their <code>block:'global'</code> columns but under their US-exogenous ids
-  <code>WTI_US</code>/<code>FCM10_US</code>/<code>FBAA_US</code>/<code>EQ_US</code> (not <code>GLB_*</code>) — resolve by <code>block</code>, not by id.</li>
-<li><code>ROW{DEM,INF,FIN}_&lt;CC&gt;</code> — a bloc's 3 <strong>trade-weighted stars</strong>.</li>
+  <strong>35 GVAR blocs</strong> (US, EA, JP, …). The 17 euro members carry no <code>global</code> columns.</li>
+<li><code>ROW{DEM,INF,FIN}_&lt;CC&gt;</code> — a GVAR bloc's 3 <strong>trade-weighted stars</strong>.</li>
+<li><code>ROWEA_{GDP,HICP}_&lt;CC&gt;</code> — a euro member's 2 <strong>rest-of-euro-area</strong> aggregates (<code>block:'row'</code>).</li>
 <li><code>_&lt;CC&gt;</code> on a domestic var (<code>GDP_EA</code>, <code>RATE_DE</code>) — the country's own series.</li>
-<li><code>_US</code> on an exogenous regressor in a euro <strong>FSAP standalone</strong> (<code>GDPH_US</code>, <code>FCM10_US</code>).</li>
 </ul>
 <p>Each variable also carries a <strong><code>block</code></strong> tag that drives the GVAR/fiscal topology
 (read at runtime by <code>configureGVARTopology</code> / <code>deriveBlocIdx</code> in
@@ -1766,33 +2300,31 @@ builders and are <em>not</em> in <code>port_gvar_exports.py</code>'s <code>FILES
 <tr>
 <td><code>fiscal</code></td>
 <td>the 4 fiscal drivers <code>{FREV_GDP, FPEXP_GDP, EFFI, SFA}</code></td>
-<td>the 6 fiscal blocs (US/EA/JP/UK/CA/CN)</td>
+<td>the 41 economies with a fiscal block (24 GVAR blocs + all 17 euro members)</td>
 </tr>
 <tr>
 <td><code>row</code></td>
-<td>the 3 trade-weighted stars <code>ROW{DEM,INF,FIN}_&lt;CC&gt;</code></td>
-<td>GVAR-coupled blocs (incl. endogenous US)</td>
+<td>GVAR: the 3 trade-weighted stars <code>ROW{DEM,INF,FIN}_&lt;CC&gt;</code>; euro member: the 2 rest-of-euro-area aggregates <code>ROWEA_{GDP,HICP}_&lt;CC&gt;</code></td>
+<td>all 35 GVAR blocs (incl. endogenous US) and all 17 members</td>
 </tr>
 <tr>
 <td><code>global</code></td>
 <td>the 4 US-determined commons (oil, US 10y, US Baa, US equity)</td>
-<td>GVAR blocs (as <code>GLB_*</code>) <strong>and</strong> euro FSAP standalones (as <code>WTI_US</code>/<code>FCM10_US</code>/<code>FBAA_US</code>/<code>EQ_US</code>)</td>
+<td>the 35 GVAR blocs (as <code>GLB_*</code>)</td>
 </tr>
 <tr>
 <td><code>external</code></td>
-<td>EA-shared exogenous regressors (EA policy rate, EA corp spread, member rate)</td>
-<td>euro FSAP standalones only</td>
-</tr>
-<tr>
-<td><code>us</code></td>
-<td>US-linked exogenous regressors (<code>GDPH_US</code>, <code>JGDP_US</code>, <code>FCM2_US</code>, …)</td>
-<td>euro FSAP standalones only</td>
+<td>euro-area-shared regressors (e.g. for AT: <code>POLRATE_AT</code>, <code>EACORP</code>, <code>RATE_AT</code>, <code>YIELD10_DE</code>)</td>
+<td>the 17 euro members</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>A bloc is <strong>GVAR-active</strong> iff its <code>spec.json</code> carries <code>block:'row'</code> variables
-<strong>and</strong> it has a row in <code>weights_24bloc.json</code>. The <strong>US is endogenous</strong> iff its
+<p>History: until the euro-member redesign the members were "FSAP standalones" with
+<code>global</code> columns under US ids (<code>WTI_US</code>, …) and a <code>us</code> block. No shipped spec uses
+those any more.</p>
+<p>A bloc is <strong>GVAR-active</strong> iff its <code>spec.json</code> carries the 3 <code>block:'row'</code> stars
+<strong>and</strong> it has a row in <code>weights_24bloc.json</code> (euro members have neither). The <strong>US is endogenous</strong> iff its
 spec carries the 3 <code>ROW*_US</code> stars <em>and</em> the weights file has a <code>US</code> row — this
 sets the module flag <code>US_ENDOGENOUS</code>. See <code>ARCHITECTURE_FOR_AI.md</code> §5/§5a.</p>
 </blockquote>
@@ -1800,6 +2332,15 @@ sets the module flag <code>US_ENDOGENOUS</code>. See <code>ARCHITECTURE_FOR_AI.m
 house prices, leverage, oil). It drives display units and the COVID treatment
 (financials are kept <em>observed</em> through 2020Q2–Q4 while macro vars are masked).</p>
 <hr />
+<h3 id="24-exchange-rates-one-direction-everywhere-rise-appreciation">2.4 Exchange rates — one direction everywhere (rise = appreciation)<a class="headerlink" href="#24-exchange-rates-one-direction-everywhere-rise-appreciation" title="Permanent link">&para;</a></h3>
+<p>Every exchange-rate variable in the published data — <code>NEER_&lt;CC&gt;</code> in each economy, the US <code>FXTWM</code>, and China's
+real index <code>REER_CN</code> — is an <strong>effective exchange-rate index of the domestic currency</strong>: a <strong>rise is an
+appreciation</strong>, a <strong>fall is a depreciation</strong>, in every economy. Sources: BIS broad nominal index (<code>WS_EER</code>), IMF
+(<code>EER</code>; AU, CL, CR, NZ) and Eurostat (<code>ert_eff_ic_q</code>, 42 partners; the euro-area members) — all quote the index
+this way; the direction was verified on the data (see <code>pipeline/sources/registry/README.md</code>, <em>Conventions</em>).
+Until the 2026 re-estimation, <code>NEER_CA</code> and <code>NEER_EA</code> were in fact bilateral rates against the US dollar (domestic
+currency per dollar: a rise was a depreciation); data packs from the 2026 re-estimation on use the harmonised
+direction for every economy. In <code>log</code> space a 1-unit move is a 1% appreciation (positive) or depreciation (negative).</p>
 <h2 id="3-specjson-the-variable-manifest">3. <code>spec.json</code> — the variable manifest<a class="headerlink" href="#3-specjson-the-variable-manifest" title="Permanent link">&para;</a></h2>
 <p>The authoritative list of variables in fixed column order. The engine reads <code>n</code>
 and the per-variable metadata; it is <strong>index-agnostic</strong> otherwise (resolves
@@ -1854,7 +2395,7 @@ fiscal/GVAR columns by id, not position).</p>
 <td><code>variables[i].prior</code></td>
 <td><code>"RW"</code>|<code>"WN"</code></td>
 <td></td>
-<td>prior-mean family on the <strong>own first lag</strong> (§3.1): <code>"RW"</code> = random walk (own-lag prior mean <strong>1</strong>, the default); <code>"WN"</code> = stationary white-noise (own-lag prior mean <strong>0</strong> → mean-reverting). Only the three fiscal GDP-ratios (<code>FREV_GDP</code>,<code>FPEXP_GDP</code>,<code>SFA</code>) carry <code>"WN"</code>; everything else is <code>"RW"</code></td>
+<td>prior-mean family on the <strong>own first lag</strong> (§3.1): <code>"RW"</code> = random walk (own-lag prior mean <strong>1</strong>, the default); <code>"WN"</code> = stationary white-noise (own-lag prior mean <strong>0</strong> → mean-reverting). In the deployed growth-rate model <code>"WN"</code> marks real GDP, the headline price and the GDP deflator (estimated as growth rates) and the three fiscal GDP-ratios (<code>FREV_GDP</code>,<code>FPEXP_GDP</code>,<code>SFA</code>); everything else is <code>"RW"</code></td>
 </tr>
 <tr>
 <td><code>variables[i].block</code></td>
@@ -1876,19 +2417,19 @@ fiscal/GVAR columns by id, not position).</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Example (US, <code>n=41</code>, abridged — first/fiscal/global/star columns — a non-contiguous selection; the shown entries are NOT columns 0…11):</strong></p>
+<p><strong>Example (US, <code>n=40</code>, abridged — first/price/fiscal/global/star columns — a non-contiguous selection; the shown entries are NOT columns 0…11):</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;n&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">41</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;n&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;seasonalRows&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;variables&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;GDPH&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Real Gross Domestic Product&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;domestic&quot;</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;LR&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Civilian Unemployment Rate: 16 yr +&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;domestic&quot;</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;POLRATE&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Effective Federal Funds Rate (policy rate)&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;domestic&quot;</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;GLB_USLR&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;10-Year Treasury Note Yield&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;global&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;GDPH&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Real Gross Domestic Product&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;WN&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;domestic&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;JGDP&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Gross Domestic Product: Chain Price Index&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;WN&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;domestic&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;GLB_USLR&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;US 10Y Treasury yield (%)&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;global&quot;</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;FREV_GDP&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Federal Receipts (% of GDP)&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;WN&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;fiscal&quot;</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;FPEXP_GDP&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Federal Primary Expenditure (% of GDP)&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;WN&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;fiscal&quot;</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;EFFI&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Federal Effective Interest Rate (% p.a.)&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;fiscal&quot;</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;SFA&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Stock-Flow Adjustment (% of GDP)&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;WN&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;fiscal&quot;</span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;GLB_OIL&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;WTI crude oil ($/bbl)&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;global&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;GLB_OIL&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;WTI crude oil, WTISPLC q-avg ($/bbl)&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;global&quot;</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;ROWDEM_US&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;US RoW Demand&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;row&quot;</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;ROWINF_US&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;US RoW Inflation&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;row&quot;</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;ROWFIN_US&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;US RoW Fin&quot;</span><span class="p">,</span><span class="nt">&quot;transformation&quot;</span><span class="p">:</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="nt">&quot;isFinancial&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&quot;prior&quot;</span><span class="p">:</span><span class="s2">&quot;RW&quot;</span><span class="p">,</span><span class="nt">&quot;block&quot;</span><span class="p">:</span><span class="s2">&quot;row&quot;</span><span class="p">}</span>
@@ -1896,11 +2437,12 @@ fiscal/GVAR columns by id, not position).</p>
 <span class="p">}</span>
 </code></pre></div>
 <p>The US carries the 4 globals as its <strong>own endogenous</strong> vars (cols where <code>block:'global'</code>)
-plus its 3 <code>ROW*_US</code> stars (cols 38–40, <code>block:'row'</code>) — this is what makes the US
-endogenous. A RoW bloc (EA, <code>n=24</code>) instead carries the globals as <em>weakly-exogenous</em>
-commons that the solver pins to the US-determined path. A euro <strong>FSAP standalone</strong>
-(DE, <code>n=23</code>) carries no <code>row</code> block — its foreign side is <code>external</code>/<code>us</code>/<code>global</code>
-exogenous regressors.</p>
+plus its 3 <code>ROW*_US</code> stars (cols 37–39, <code>block:'row'</code>) — this is what makes the US
+endogenous. A RoW bloc (EA, <code>n=26</code>) also carries the globals as its own columns; the
+coupled solve ties every bloc's copy to the single US-determined path. A euro member
+(DE, <code>n=23</code>) carries no globals and no trade-weighted stars: its foreign side is the
+<code>external</code> euro-area columns (<code>POLRATE_DE</code>, <code>EACORP</code>, <code>RATE_DE</code>) and the two
+rest-of-euro-area aggregates (<code>ROWEA_GDP_DE</code>, <code>ROWEA_HICP_DE</code>, <code>block:'row'</code>).</p>
 <h3 id="31-the-prior-field-rw-default-vs-wn-stationary-fiscal-ratios">3.1 The <code>prior</code> field — <code>"RW"</code> (default) vs <code>"WN"</code> (stationary fiscal ratios)<a class="headerlink" href="#31-the-prior-field-rw-default-vs-wn-stationary-fiscal-ratios" title="Permanent link">&para;</a></h3>
 <p><code>variables[i].prior</code> selects the <strong>prior mean on each variable's own first lag</strong> in
 the GLP/Minnesota prior. It takes exactly two values:</p>
@@ -1918,17 +2460,23 @@ the GLP/Minnesota prior. It takes exactly two values:</p>
 <td><code>"RW"</code></td>
 <td><strong>1</strong> (random walk — the historical default)</td>
 <td>the series can <strong>drift</strong> at the long end (a unit-root prior centre)</td>
-<td>every variable except the three fiscal GDP-ratios</td>
+<td>every other variable</td>
 </tr>
 <tr>
 <td><code>"WN"</code></td>
 <td><strong>0</strong> (white noise — stationary)</td>
 <td>the series <strong>mean-reverts to its in-sample mean</strong></td>
-<td>only <code>FREV_GDP</code>, <code>FPEXP_GDP</code>, <code>SFA</code> (in all 6 fiscal blocs)</td>
+<td><code>FREV_GDP</code>, <code>FPEXP_GDP</code>, <code>SFA</code> (all 41 fiscal economies); and, in the deployed growth-rate model (<code>BVAR_DIFF_GP=1</code>), real GDP, the headline price (CPI/HICP; JGDP for the US) and <code>DEFL_&lt;CC&gt;</code> — these are estimated as quarterly growth rates, so it is their <strong>growth</strong> that mean-reverts</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
+<p><strong>Growth-rate (<code>DIFF_GP</code>) columns.</strong> Under <code>BVAR_DIFF_GP=1</code> (both deployed estimators,
+Oct 2026) the estimator first-differences real GDP and the price series to <code>4·Δ(100·log)</code>
+and leaves every other column in levels. It exports the equivalent <strong>level</strong> VAR (one
+more lag — hence <code>lags = 4</code> in the shipped files), so <code>transformation</code> stays <code>"log"</code> and
+the app's level-space engine is unchanged. The <code>"WN"</code> tag on those columns refers to the
+differenced series.</p>
 <p><strong>Why this exists.</strong> Under a pure <code>"RW"</code> prior the fiscal GDP-ratios (revenue,
 primary expenditure, stock-flow adjustment) inherited a unit-root centre and
 <strong>drifted</strong> over the 20-quarter projection — e.g. US federal receipts stuck at
@@ -1937,8 +2485,8 @@ to <code>"WN"</code> centres the own-lag prior at 0 so the ratios <strong>mean-r
 sample means at the long horizon, which is the economically correct stationary
 behaviour for a bounded share-of-GDP. <strong><code>EFFI</code> (the effective interest rate) stays
 <code>"RW"</code></strong> — it is a slow-moving level, not a bounded ratio. This change is committed
-(<code>6f0161a</code>/<code>22250be</code>/<code>e38673a</code>) and is a <strong>no-op (byte-identical export)</strong> for the
-44 non-fiscal blocs, which carry no <code>"WN"</code> variable.</p>
+(<code>6f0161a</code>/<code>22250be</code>/<code>e38673a</code>); at the time it was a <strong>no-op (byte-identical export)</strong>
+for the blocs without a fiscal block.</p>
 </blockquote>
 <p><strong>The mechanism (verified end-to-end in the estimator).</strong></p>
 <ol>
@@ -1946,7 +2494,9 @@ behaviour for a bounded share-of-GDP. <strong><code>EFFI</code> (the effective i
    <code>spec.json</code> and build the index vector of stationary columns:</li>
 <li><code>pipeline/export_bvar_gvar24_loop.m</code> (<code>statCols=find(Spec.Prior(keep)=="WN")'</code>, on the
      <strong>kept domestic block</strong>; stars are appended <em>after</em> and are always <code>"RW"</code>).</li>
-<li><code>pipeline/export_bvar_euro_fsap.m</code> (<code>statCols = find(Prior=="WN")'</code>).
+<li><code>pipeline/export_bvar_euro_redesign.m</code> (the 17 euro members; <code>statCols = find(Prior=="WN")'</code>,
+     plus the differenced GDP/price/deflator columns under <code>BVAR_DIFF_GP</code>). The older
+     <code>export_bvar_euro_fsap.m</code> uses the same rule.
    Both resolve via a robust <code>priorsfrom(...)</code> helper (handles MATLAB's <code>jsondecode</code>
    dropping a <code>prior</code> field that is present on only some variables; absent → all-<code>"RW"</code>).</li>
 <li><strong><code>pos</code> → <code>cgl_bvarV5</code>.</strong> <code>statCols</code> is threaded as the <strong>3rd positional argument</strong>
@@ -1959,13 +2509,13 @@ behaviour for a bounded share-of-GDP. <strong><code>EFFI</code> (the effective i
 <span class="n">b</span><span class="p">(</span><span class="mi">2</span><span class="p">:</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,:)=</span><span class="nb">diag</span><span class="p">(</span><span class="n">diagb</span><span class="p">);</span><span class="w">  </span><span class="c">% default columns keep prior mean 1 (random walk)</span>
 </code></pre></div>
    So a <code>"WN"</code> column gets own-lag prior mean <strong>0</strong> (stationary); every other column
-   keeps <strong>1</strong> (the random-walk centre). For the 44 non-fiscal blocs <code>pos=[]</code>, so
+   keeps <strong>1</strong> (the random-walk centre). A bloc with no <code>"WN"</code> column has <code>pos=[]</code>, so
    <code>diagb=ones(...)</code> unchanged → identical to the historical default.</li>
 <li><strong>Round-trip.</strong> On export each estimator re-stamps the per-variable <code>prior</code> back
    into <code>spec.json</code> from <code>statCols</code> (<code>if any(statCols==i), v.prior='WN'; else v.prior='RW'</code>),
    so the shipped spec always reflects the prior actually used.</li>
 </ol>
-<p><strong>Deployed <code>prior</code> assignment (verified in the live specs — all 6 fiscal blocs identical):</strong></p>
+<p><strong>Deployed <code>prior</code> assignment for the fiscal block (verified in the live specs — identical in all 41 fiscal economies):</strong></p>
 <table>
 <thead>
 <tr>
@@ -2019,14 +2569,14 @@ both the picture <em>and</em> the estimate.</p>
 <ul>
 <li><strong><code>GLB_USEQ</code> (US equity) and <code>GLB_OIL</code> (oil) are <code>isFinancial:true</code> everywhere.</strong>
   Both are market-priced and continued trading through 2020 — keeping them observed
-  (not imputed) through the COVID window is the correct treatment, and it matches
-  their euro-FSAP aliases <code>EQ_US</code>/<code>WTI_US</code>, which are <em>also</em> <code>isFinancial:true</code>. (The
-  earlier <code>GLB_OIL:isFinancial=false</code> was incoherent and has been corrected.)</li>
+  (not imputed) through the COVID window is the correct treatment. (The earlier
+  <code>GLB_OIL:isFinancial=false</code> was incoherent and has been corrected.)</li>
 <li><strong>Canada's <code>IP_CA</code> is a log-LEVEL.</strong> It is now <code>transformation:"log"</code>,
-  <code>isFinancial:false</code>, <code>block:"domestic"</code> — rebuilt by chaining the discontinued FRED
-  level index forward with growth to 2025Q4 so it reads as a proper <code>100·log(level)</code>
-  series (its q/q annualised growth is the <code>4·Δ</code> display form), not a level-vs-growth
-  mismatch.</li>
+  <code>isFinancial:false</code>, <code>block:"domestic"</code> — a proper <code>100·log(level)</code> series (its q/q
+  annualised growth is the <code>4·Δ</code> display form), not a level-vs-growth mismatch. Since
+  the Oct 2026 rebuild it is the OECD monthly production index (<code>DF_INDSERV</code>, quarterly
+  average), per <code>pipeline/sources/registry/CA.json</code>; earlier it was the discontinued FRED
+  level index chained forward with growth.</li>
 </ul>
 <p>All 1048 variables across the deployed blocs were audited for transformation · prior ·
 <code>isFinancial</code> coherence; a per-economy variable table now lives in the user manual.</p>
@@ -2062,10 +2612,11 @@ near-Nyquist companion root. Two top-level fields record this on the shipped blo
 </tbody>
 </table>
 <p><strong>Which blocs carry <code>seasonalRows=3</code></strong> (set by <code>pipeline/export_bvar_gvar24_loop.m</code> <code>GVAR_DUMMY_BLOCS</code> +
-<code>pipeline/export_bvar_euro_redesign.m</code> <code>EURO_DUMMY_MEMBERS</code>): the 16 coupled blocs
-<code>{CL, CN, CO, CR, EA, ID, IL, IN, IS, JP, KR, MX, NO, TR, UK, ZA}</code> and the 6 euro members
-<code>{ES, IT, GR, PT, SI, BE}</code>. Every other bloc ships <code>seasonalRows=0</code> (or omits it) and its files are
-<strong>byte-identical to the pre-seasonal layout</strong>.</p>
+<code>pipeline/export_bvar_euro_redesign.m</code> <code>EURO_DUMMY_MEMBERS</code>; the Oct 2026 runs are in
+<code>docs/reest-2026/runs/</code>): in pack <code>2026Q2-reest-20261008b</code>, 34 economies — the 17 coupled blocs
+<code>{CL, CN, CO, CR, EA, HK, ID, IN, IS, JP, KR, MX, NO, PE, TR, UK, ZA}</code> and <strong>all 17 euro members</strong>.
+The manifest lists them (<code>blocs.&lt;CC&gt;.seasonalRows</code>). Every other bloc ships <code>seasonalRows=0</code> (or omits it)
+and uses the layout without dummy rows.</p>
 <p><strong>Effect on the <code>betahat</code> row layout (§4).</strong> A seasonal bloc's <code>betahat</code> has <code>k = 1 + seasonalRows + n·lags</code>
 rows: <strong>row 0 = constant, rows <code>1..3</code> = the <code>γ_Q2/γ_Q3/γ_Q4</code> quarterly-dummy coefficients (Q1 base),
 rows <code>4..k−1</code> = the <code>lags</code> blocks of <code>n</code> lag coefficients</strong>. The dummy rows are inserted <strong>between</strong> the
@@ -2073,11 +2624,14 @@ constant and the lags — a consumer that assumes lag coefficients start at row 
 columns, which is why <code>seasonalRows</code> is shipped alongside <code>betahat</code>. For a legacy bloc (<code>seasonalRows=0</code>)
 the layout is the historical <code>k = 1 + n·lags</code> with lags at row 1.</p>
 <blockquote>
-<p><strong>The app RECOMPUTES <code>qoyNext</code>; it does NOT trust the shipped one.</strong> The production data shift moves the
-app's display origin <strong>+1 quarter</strong> past the estimation grid, so the shipped <code>spec.json.qoyNext</code> is one
-quarter behind what the forecast needs. The runtime always derives the phase from its own date grid via
-<code>dates.qoyNextOf(country)</code> (quarter after <code>lastHistOf</code>, wrapped <code>1..4</code>) and feeds it to
-<code>BVARParams.qoyNext</code>. See <code>ARCHITECTURE_FOR_AI.md</code> §5·EM.s and <code>MODULES.md</code> (<code>kalman.ts</code>).</p>
+<p><strong>The app RECOMPUTES <code>qoyNext</code>; it does NOT trust the one in <code>spec.json</code>.</strong> A within-year data shift moves
+the app's display origin past the estimation grid (by <code>shiftQuarters</code> in the manifest), so after a shift
+<code>spec.json.qoyNext</code> is behind what the forecast needs. The runtime always derives the phase from its own
+date grid via <code>dates.qoyNextOf(country)</code> (quarter after <code>lastHistOf</code>, wrapped <code>1..4</code>; <code>lastHistOf</code> comes
+from the pack manifest) and feeds it to <code>BVARParams.qoyNext</code>. When the manifest loads, <code>setPanelDates</code>
+also compares that value with the manifest's declared <code>blocs.&lt;CC&gt;.qoyNext</code> and stops the load on a
+mismatch. In pack <code>2026Q2-reest-20261008b</code> no quarter was shifted (<code>shiftQuarters = 0</code>), so all three
+agree. See <code>ARCHITECTURE_FOR_AI.md</code> §5·EM.s and <code>MODULES.md</code> (<code>kalman.ts</code>).</p>
 </blockquote>
 <hr />
 <h2 id="4-companion_meanjson-posterior-mean-var">4. <code>companion_mean.json</code> — posterior-mean VAR<a class="headerlink" href="#4-companion_meanjson-posterior-mean-var" title="Permanent link">&para;</a></h2>
@@ -2127,25 +2681,27 @@ construction. Do not transpose.</p>
 </tbody>
 </table>
 <p><code>k = 1 + seasonalRows + n·lags</code>. For a <code>seasonalRows=0</code> bloc this is the historical <code>n·lags + 1</code>
-(US, non-seasonal: <code>41·3 + 1 = 124</code>); a <code>seasonalRows=3</code> bloc adds the three dummy rows (e.g. EA, which
-is in the seasonal set: <code>1 + 3 + 24·3 = 76</code>). Always compute <code>k</code> from the file's own <code>seasonalRows</code>
+(US, non-seasonal, in the deployed pack: <code>40·4 + 1 = 161</code>); a <code>seasonalRows=3</code> bloc adds the three dummy
+rows (e.g. EA, which is in the seasonal set: <code>1 + 3 + 26·4 = 108</code>). Always compute <code>k</code> from the file's own <code>seasonalRows</code>
 (absent ⇒ <code>0</code>), never assume <code>n·lags + 1</code>.</p>
-<p><strong>Example (US shapes &amp; first values):</strong></p>
+<p><strong>Example (US shapes &amp; first values, pack <code>2026Q2-reest-20261008b</code>):</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;betahat&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">[</span><span class="mf">6.12187</span><span class="p">,</span><span class="w"> </span><span class="mf">-0.742157</span><span class="p">,</span><span class="w"> </span><span class="mf">-2.92772</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 41 cols&quot;</span><span class="p">],</span><span class="w">     </span><span class="c1">// row 0 = intercept</span>
-<span class="w">    </span><span class="p">[</span><span class="mf">0.760955</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0994946</span><span class="p">,</span><span class="w"> </span><span class="mf">-0.260185</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 41 cols&quot;</span><span class="p">],</span><span class="w">  </span><span class="c1">// row 1 = lag-1 of var 0, etc.</span>
-<span class="w">    </span><span class="s2">&quot;… 124 rows total (1 + 41·3) …&quot;</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">3.6855229634904627</span><span class="p">,</span><span class="w"> </span><span class="mf">0.20334889999965236</span><span class="p">,</span><span class="w"> </span><span class="mf">-7.2726999385650455</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 40 cols&quot;</span><span class="p">],</span><span class="w">  </span><span class="c1">// row 0 = intercept</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;… lag-1 coefficients …&quot;</span><span class="p">],</span><span class="w">                                                   </span><span class="c1">// row 1 = lag-1 of var 0, etc.</span>
+<span class="w">    </span><span class="s2">&quot;… 161 rows total (1 + 40·4) …&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;sigmahat&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;… 41×41 …&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;n&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">41</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;lags&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">  </span><span class="nt">&quot;sigmahat&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;… 40×40 …&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;n&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;lags&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="5-companion_drawsjson-flat-posterior-draws">5. <code>companion_draws.json</code> — flat posterior draws<a class="headerlink" href="#5-companion_drawsjson-flat-posterior-draws" title="Permanent link">&para;</a></h2>
+<h2 id="5-companion_drawsjsongz-flat-posterior-draws">5. <code>companion_draws.json.gz</code> — flat posterior draws<a class="headerlink" href="#5-companion_drawsjsongz-flat-posterior-draws" title="Permanent link">&para;</a></h2>
 <p>The full posterior sample, stored as <strong>flat row-major arrays</strong> (boxed <code>number[]</code>
-in JSON; converted to <code>Float64Array</code> on load). Lazy-loaded; the US file is ~34 MB.</p>
+in JSON; converted to <code>Float64Array</code> on load), shipped <strong>gzipped</strong> — the pack lists
+only the <code>.gz</code>, and its hash is of the compressed bytes. Lazy-loaded; the US <code>.gz</code>
+is about 29 MB.</p>
 <table>
 <thead>
 <tr>
@@ -2204,15 +2760,15 @@ in JSON; converted to <code>Float64Array</code> on load). Lazy-loaded; the US fi
 <div class="highlight"><pre><span></span><code>beta[ draw*k*n  + j*k + i ]     // draw, equation column j, coef row i
 sigma[ draw*n*n + j*n + i ]     // draw, (i,j) of the n×n covariance
 </code></pre></div>
-<p><strong>Example (US):</strong></p>
+<p><strong>Example (US, decompressed):</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;n_draws&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;n&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">41</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;lags&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;beta_shape&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">124</span><span class="p">,</span><span class="w"> </span><span class="mi">41</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;beta&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">8.04724</span><span class="p">,</span><span class="w"> </span><span class="mf">0.751567</span><span class="p">,</span><span class="w"> </span><span class="mf">0.174671</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 2 542 000 doubles …&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;sigma_shape&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">41</span><span class="p">,</span><span class="w"> </span><span class="mi">41</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;sigma&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.104776</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0609497</span><span class="p">,</span><span class="w"> </span><span class="mf">0.143155</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 840 500 doubles …&quot;</span><span class="p">]</span>
+<span class="w">  </span><span class="nt">&quot;n&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;lags&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;beta_shape&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">161</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;beta&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">2.1346969787685293</span><span class="p">,</span><span class="w"> </span><span class="mf">0.6328602990834148</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1826483603167455</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 3 220 000 doubles …&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;sigma_shape&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;sigma&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;… 800 000 doubles …&quot;</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2250,7 +2806,7 @@ horizon <code>H</code> (currently 20 quarters). Two files, identical shape, diff
 <td><code>q50</code></td>
 <td>number[][]</td>
 <td><code>[H][n]</code></td>
-<td><strong>optional</strong> median; present in <code>baseline_levels.json</code> only, and only for the 16 euro <strong>FSAP standalones</strong> (AT, BE, DE, EE, ES, FI, FR, GR, IE, IT, LT, LU, NL, PT, SI, SK). No <code>baseline.json</code> (display-space) carries <code>q50</code>, and the GVAR blocs (US/EA/JP/…) carry it in neither file — read defensively</td>
+<td><strong>optional</strong> median; present in <code>baseline_levels.json</code> only, and only for the 17 euro members (AT, BE, DE, EE, ES, FI, FR, GR, IE, IT, LT, LU, LV, NL, PT, SI, SK). No <code>baseline.json</code> (display-space) carries <code>q50</code>, and the GVAR blocs (US/EA/JP/…) carry it in neither file — read defensively</td>
 </tr>
 <tr>
 <td><code>horizon</code></td>
@@ -2260,9 +2816,9 @@ horizon <code>H</code> (currently 20 quarters). Two files, identical shape, diff
 </tr>
 </tbody>
 </table>
-<p><strong>Example (US, <code>H=20</code>, <code>n=41</code>):</strong></p>
+<p><strong>Example (US, <code>H=20</code>, <code>n=40</code>):</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;mean&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="mf">1.91073</span><span class="p">,</span><span class="w"> </span><span class="mf">1.87189</span><span class="p">,</span><span class="w"> </span><span class="mf">-1.45722</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 41 cols&quot;</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;… 20 rows&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;mean&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="mf">1.70336</span><span class="p">,</span><span class="w"> </span><span class="mf">2.96332</span><span class="p">,</span><span class="w"> </span><span class="mf">-21.5881</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 40 cols&quot;</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;… 20 rows&quot;</span><span class="w"> </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;q16&quot;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;…&quot;</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;…&quot;</span><span class="w"> </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;q84&quot;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;…&quot;</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;…&quot;</span><span class="w"> </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;q05&quot;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;…&quot;</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;…&quot;</span><span class="w"> </span><span class="p">],</span>
@@ -2271,10 +2827,11 @@ horizon <code>H</code> (currently 20 quarters). Two files, identical shape, diff
 <span class="p">}</span>
 </code></pre></div>
 <p><code>baseline_levels.json</code> has the same keys but in level space — e.g.
-<code>mean[0] = [1009.29, 972.576, 680.448, …]</code> (100·log levels for <code>log</code> vars).</p>
+<code>mean[0] = [1010.69, 973.587, 673.278, …]</code> (100·log levels for <code>log</code> vars; values rounded here).</p>
 <hr />
 <h2 id="7-historicaljson-historical_levelsjson-recent-actuals">7. <code>historical.json</code> / <code>historical_levels.json</code> — recent actuals<a class="headerlink" href="#7-historicaljson-historical_levelsjson-recent-actuals" title="Permanent link">&para;</a></h2>
-<p>The last ~40 quarters of realised data, used to anchor the charts. Two files,
+<p>The last 40 quarters of data (in pack <code>2026Q2-reest-20261008b</code>: 2016Q3–2026Q2 for
+every economy), used to anchor the charts. Two files,
 same shape, different space (display/growth vs level).</p>
 <table>
 <thead>
@@ -2287,6 +2844,12 @@ same shape, different space (display/growth vs level).</p>
 </thead>
 <tbody>
 <tr>
+<td><code>firstQuarter</code></td>
+<td>string <code>"YYYYQn"</code></td>
+<td>scalar</td>
+<td><strong><code>historical_levels.json</code> only</strong> — the calendar quarter of row 0. The last row's quarter is always derived: <code>firstQuarter + rows − 1</code>. It is the ONLY dating source (4.0): there is no separate "last quarter" label to keep in sync.</td>
+</tr>
+<tr>
 <td><code>data</code></td>
 <td>number[][]</td>
 <td><code>[n_periods][n]</code></td>
@@ -2296,23 +2859,72 @@ same shape, different space (display/growth vs level).</p>
 <td><code>n_periods</code></td>
 <td>int</td>
 <td>scalar</td>
-<td>number of historical quarters (currently 40)</td>
+<td>number of historical quarters (40 after a model export, +1 per within-year shift)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Example (US):</strong></p>
+<p><code>firstQuarter</code> is written once, when the history is created: by <code>app/scripts/stamp_calendar.mjs</code> after a model
+export (<code>npm run data:model-update</code> — it derives the quarter from the estimation panel and refuses a bloc it
+cannot place). Every pipeline writer (refresh-quarter, nowcast_complete, member_extend) keeps it, so an appended
+row is dated automatically. <code>pack-verify</code> cross-checks the dating against the estimation panels (the calendar
+canary). Why: in Sep 2026 two re-exports reset the 35 GVAR histories to 40 rows ending 2025Q4 while the separate
+date label stayed at 2026Q1 — every chart was one quarter late and nothing failed. See <code>docs/UPDATE_MANUAL.md</code>.</p>
+<p><strong>Example (US, <code>historical.json</code>; the <code>firstQuarter</code> key is in <code>historical_levels.json</code>):</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">[</span><span class="mf">2.31139</span><span class="p">,</span><span class="w"> </span><span class="mf">3.00848</span><span class="p">,</span><span class="w"> </span><span class="mf">14.3557</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 41 cols&quot;</span><span class="p">],</span><span class="w">   </span><span class="c1">// oldest quarter</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">2.82754</span><span class="p">,</span><span class="w"> </span><span class="mf">2.77285</span><span class="p">,</span><span class="w"> </span><span class="mf">3.67354</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 40 cols&quot;</span><span class="p">],</span><span class="w">    </span><span class="c1">// oldest quarter (2016Q3)</span>
 <span class="w">    </span><span class="s2">&quot;… 40 rows …&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">[</span><span class="mf">0.481089</span><span class="p">,</span><span class="w"> </span><span class="mf">1.9089</span><span class="p">,</span><span class="w"> </span><span class="mf">-4.6351</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 41 cols&quot;</span><span class="p">]</span><span class="w">     </span><span class="c1">// newest quarter</span>
+<span class="w">    </span><span class="p">[</span><span class="mf">2.19592</span><span class="p">,</span><span class="w"> </span><span class="mf">3.69877</span><span class="p">,</span><span class="w"> </span><span class="mf">-0.416967</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 40 cols&quot;</span><span class="p">]</span><span class="w">   </span><span class="c1">// newest quarter (2026Q2)</span>
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;n_periods&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><code>historical.json</code> growth is already the <code>4·Δ(100·log level)</code> form for <code>log</code> vars
 (no further differencing in the chart). <code>historical_levels.json</code> is the matching
-level path.</p>
+level path. A cell with no value in the file (unpublished, or a COVID-withheld macro quarter) is <code>null</code>,
+never 0. The last rows of a
+series that ends early are filled by the coupled nowcast and flagged in
+<code>nowcast_provenance.json</code> / <code>coverage_manifest.json</code> (<code>imputedThrough</code>,
+<code>imputedQuarters</code>), which is what draws them amber in the charts.</p>
+<h3 id="71-estimation_maskjson-cells-the-estimator-drew-as-missing-data">7.1 <code>estimation_mask.json</code> — cells the estimator drew as missing data<a class="headerlink" href="#71-estimation_maskjson-cells-the-estimator-drew-as-missing-data" title="Permanent link">&para;</a></h3>
+<p>Written by the estimators under <code>GVAR_NOFILL=1</code> (<code>export_bvar_gvar24_loop.m</code> <code>estmask</code>,
+<code>export_bvar_euro_redesign.m</code>) and shipped for every economy since the Oct 2026
+re-estimation. It lists, per domestic variable, the panel cells the sampler did <strong>not</strong>
+see as data — so they are model estimates wherever they appear. The browser does not
+read it today (the amber marks come from <code>coverage_manifest.json</code>); it is provenance,
+and <code>app/scripts/apply_member_completion.mjs</code> reads the members' <code>completedLast8</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bloc</code>, <code>firstQuarter</code>, <code>lastQuarter</code></td>
+<td>the estimation panel's span (<code>"YYYY-Qn"</code>; longer than the 40-row history)</td>
+</tr>
+<tr>
+<td><code>missing.&lt;id&gt;.{leading,interior,trailing}</code></td>
+<td>unpublished cells, by position in the series</td>
+</tr>
+<tr>
+<td><code>covidWithheld.&lt;id&gt;</code></td>
+<td>published macro cells withheld from estimation (2020Q2–Q4)</td>
+</tr>
+<tr>
+<td><code>completedLast8.&lt;id&gt;</code></td>
+<td>euro members only: <code>[quarter, value]</code> pairs — the model's completion of the missing cells in the last 8 quarters, in level space</td>
+</tr>
+<tr>
+<td><code>note</code></td>
+<td>members only: a one-line description</td>
+</tr>
+</tbody>
+</table>
+<p>Example (US): <code>"missing": {"UI": {"leading": [], "interior": ["2025-Q4"], "trailing": []}, …}</code> — the BLS
+skipped October 2025, so 2025Q4 unemployment is a genuine gap the model drew.</p>
 <hr />
 <h2 id="8-transformationsjson-per-variable-space">8. <code>transformations.json</code> — per-variable space<a class="headerlink" href="#8-transformationsjson-per-variable-space" title="Permanent link">&para;</a></h2>
 <p>A redundant, fast lookup of each variable's data space, aligned to <code>spec.variables</code>
@@ -2339,11 +2951,12 @@ column order. (The same information is in <code>spec.variables[i].transformation
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;transformations&quot;</span><span class="p">:[</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;log&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span><span class="s2">&quot;lin&quot;</span><span class="p">]}</span>
 </code></pre></div>
 <hr />
-<h2 id="9-fiscal_metajson-fiscal-block-parameters-6-blocs-only">9. <code>fiscal_meta.json</code> — fiscal-block parameters (6 blocs only)<a class="headerlink" href="#9-fiscal_metajson-fiscal-block-parameters-6-blocs-only" title="Permanent link">&para;</a></h2>
-<p>Shipped <strong>only</strong> by the 6 fiscal economies (US, EA, JP, UK, CA, CN); a 404 for any
-other economy is expected and yields <code>null</code>. It supplies the debt recursion's
-initial stock, default SFA, and the <strong>column indices</strong> the recursion reads from
-the level path (<code>computeFiscalBlock</code> in <code>fiscalAccounting.ts</code>). See
+<h2 id="9-fiscal_metajson-fiscal-block-parameters-41-economies">9. <code>fiscal_meta.json</code> — fiscal-block parameters (41 economies)<a class="headerlink" href="#9-fiscal_metajson-fiscal-block-parameters-41-economies" title="Permanent link">&para;</a></h2>
+<p>Shipped by the <strong>41 economies with a fiscal block</strong> (24 GVAR blocs + all 17 euro
+members; the list is <code>blocs</code> with a <code>fiscal_meta.json</code> entry in the pack manifest);
+for any other economy the file is absent and the loader yields <code>null</code>. It supplies the
+debt recursion's initial stock, default SFA, and the <strong>column indices</strong> the recursion
+reads from the level path (<code>computeFiscalBlock</code> in <code>fiscalAccounting.ts</code>). See
 <a href="../fiscal-block-methodology/"><code>fiscal-block-methodology.md</code></a> and
 <code>ARCHITECTURE_FOR_AI.md</code> §7 for the math.</p>
 <table>
@@ -2358,12 +2971,27 @@ the level path (<code>computeFiscalBlock</code> in <code>fiscalAccounting.ts</co
 <tr>
 <td><code>d0</code></td>
 <td>number</td>
-<td>initial debt-to-GDP ratio (%) at the projection seam</td>
+<td>initial debt-to-GDP ratio (%) at the projection seam (the last history quarter)</td>
+</tr>
+<tr>
+<td><code>d0_quarter</code></td>
+<td><code>"YYYY-Qn"</code></td>
+<td>the quarter <code>d0</code> refers to (<code>"2026-Q2"</code> in the deployed pack)</td>
+</tr>
+<tr>
+<td><code>d0_observed</code>, <code>d0_observed_quarter</code></td>
+<td>number, <code>"YYYY-Qn"</code></td>
+<td><strong>38 economies:</strong> the last <em>published</em> debt ratio and its quarter, kept when <code>d0</code> was rolled forward</td>
+</tr>
+<tr>
+<td><code>d0_note</code></td>
+<td>string</td>
+<td>how <code>d0</code> was rolled forward (same 38 economies)</td>
 </tr>
 <tr>
 <td><code>sfaDefault</code></td>
 <td>number</td>
-<td>default stock-flow adjustment (% of GDP) — the historical mean of the estimated SFA</td>
+<td>default stock-flow adjustment (% of GDP) used by the app's debt projection — the historical mean of the SFA, excluding the COVID quarters</td>
 </tr>
 <tr>
 <td><code>idx</code></td>
@@ -2378,7 +3006,7 @@ the level path (<code>computeFiscalBlock</code> in <code>fiscalAccounting.ts</co
 <tr>
 <td><code>idx.deflator</code></td>
 <td>int</td>
-<td>GDP-deflator column</td>
+<td>price column for nominal growth: the genuine GDP deflator <code>DEFL_&lt;CC&gt;</code> wherever the economy has one (38 of 41; decision D4, Oct 2026); otherwise <code>JGDP</code> (US), <code>CPI_CN</code>, <code>CPI_NZ</code></td>
 </tr>
 <tr>
 <td><code>idx.revenue</code></td>
@@ -2402,105 +3030,151 @@ the level path (<code>computeFiscalBlock</code> in <code>fiscalAccounting.ts</co
 </tr>
 </tbody>
 </table>
+<p><strong>Where <code>d0</code> comes from.</strong> The panel build (<code>pipeline/sources/build_panel.py</code>,
+<code>derived.fiscal4</code>) records the debt ratio at the last quarter with published debt.
+<code>app/scripts/roll_d0_forward.mjs</code> then rolls it to the panel's last quarter with the
+app's own budget identity on the completed history, keeping the published value in
+<code>d0_observed*</code>. Where a flow it uses is model-implied (nowcast), the rolled <code>d0</code> is a
+model estimate. Example (AT): <code>d0_observed = 82.66</code> at 2026-Q1, <code>d0 = 83.18</code> at
+2026-Q2.</p>
 <blockquote>
 <p>The legacy <code>idx.debtService</code> key was <strong>removed</strong>; <code>idx.sfa</code> (the estimated SFA
 column) replaced it. With <code>idx.sfa</code> set and <code>idx.debtService</code> unset,
 <code>computeFiscalBlock</code> takes the effective-rate interest form and reads the
 per-quarter SFA from <code>idx.sfa</code>. Do <strong>not</strong> re-introduce <code>debtService</code>.</p>
 </blockquote>
-<p><strong>Deployed values (read from the live files; NEVER hardcode indices — they are
-positional and DRIFT, see the gotcha below). <code>d0</code> is shown rounded for readability —
-the file stores it full precision; <code>sfaDefault</code> is <code>round(.,4)</code>:</strong></p>
+<p><strong>Values for the six largest fiscal economies</strong> (pack <code>2026Q2-reest-20261008b</code>; read
+from the live files; NEVER hardcode indices — they are positional and DRIFT, see the
+gotcha below. <code>d0</code> is rounded here — the file stores it full precision):</p>
 <table>
 <thead>
 <tr>
 <th>Bloc</th>
 <th><code>n</code></th>
-<th><code>d0</code> (file)</th>
+<th><code>d0</code></th>
 <th><code>sfaDefault</code></th>
 <th><code>idx {gdp,deflator,revenue,primaryExp,effRate,sfa}</code></th>
+<th>deflator id</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>US</td>
-<td>41</td>
-<td>122.56815</td>
-<td>1.7518</td>
-<td><code>{0, 7, 33, 34, 35, 36}</code></td>
+<td>40</td>
+<td>124.18</td>
+<td>1.753</td>
+<td><code>{0, 7, 32, 33, 34, 35}</code></td>
+<td><code>JGDP</code></td>
 </tr>
 <tr>
 <td>EA</td>
-<td>24</td>
-<td>87.84509550831034</td>
-<td>0.325</td>
-<td><code>{0, 6, 17, 18, 19, 20}</code></td>
+<td>26</td>
+<td>88.96</td>
+<td>0.187</td>
+<td><code>{0, 7, 18, 19, 20, 21}</code></td>
+<td><code>DEFL_EA</code></td>
 </tr>
 <tr>
 <td>JP</td>
-<td>23</td>
-<td>192.86944931521631</td>
-<td>2.233</td>
-<td><code>{0, 7, 16, 17, 18, 19}</code></td>
+<td>27</td>
+<td>190.26</td>
+<td>−0.94</td>
+<td><code>{0, 8, 17, 18, 19, 20}</code></td>
+<td><code>DEFL_JP</code></td>
 </tr>
 <tr>
 <td>UK</td>
-<td>25</td>
-<td>96.24124260944826</td>
-<td>3.1487</td>
-<td><code>{0, 8, 18, 19, 20, 21}</code></td>
+<td>28</td>
+<td>102.58</td>
+<td>0.234</td>
+<td><code>{0, 9, 19, 20, 21, 22}</code></td>
+<td><code>DEFL_UK</code></td>
 </tr>
 <tr>
 <td>CA</td>
-<td>25</td>
-<td>100.1611274546207</td>
-<td>3.191</td>
-<td><code>{0, 8, 18, 19, 20, 21}</code></td>
+<td>28</td>
+<td>111.00</td>
+<td>3.106</td>
+<td><code>{0, 9, 19, 20, 21, 22}</code></td>
+<td><code>DEFL_CA</code></td>
 </tr>
 <tr>
 <td>CN</td>
-<td>20</td>
-<td>94.33130080334892</td>
-<td>4.017</td>
+<td>22</td>
+<td>101.39</td>
+<td>3.247</td>
 <td><code>{0, 1, 13, 14, 15, 16}</code></td>
+<td><code>CPI_CN</code></td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>🔴 <strong>STALE-POSITIONAL-INDEX gotcha — the porter does NOT regenerate <code>fiscal_meta.json</code>.</strong>
-These six <code>idx</code> values are <strong>positional</strong> offsets into the level path, but
-<code>pipeline/port_gvar_exports.py</code> ports <code>fiscal_meta.json</code> verbatim. So <strong>any</strong> change to a
-bloc's variable ORDER or COUNT (e.g. the 33-bloc GVAR-EM refit, which inserted variables
-ahead of the fiscal block in every spec <strong>except US</strong>) silently re-points the indices at the
-wrong columns. Concretely: the pre-refit <code>EA {0,6,14,15,16,17}</code> pointed <code>effRate</code> at the
-equity index (~537), and <code>d·(1+effRate/400)</code> exploded the EA debt path. <strong>A porter (or anyone
-re-ordering variables) MUST run <code>node pipeline/fix_fiscal_meta_indices.mjs</code></strong> after porting —
-it re-resolves all six indices BY VARIABLE ID (<code>FREV_GDP</code>/<code>FPEXP_GDP</code>/<code>EFFI</code>/<code>SFA</code>, <code>gdp</code>=0,
-<code>deflator</code>=first <code>HICP|CPI|JGDP|PGDP|DEFL</code>) from the deployed <code>spec.json</code> and rewrites the
-file (preserving <code>d0</code>/<code>sfaDefault</code>; idempotent). The <code>fiscal-meta-indices.test.ts</code> canary
-blocks a deploy whose indices are stale (asserts every bloc's derived debt path stays bounded).</p>
+<p>🔴 <strong>STALE-POSITIONAL-INDEX gotcha.</strong> These <code>idx</code> values are <strong>positional</strong> offsets into
+the level path, so <strong>any</strong> change to a bloc's variable ORDER or COUNT silently re-points
+them at the wrong columns. History: the 33-bloc refit once sent EA's <code>effRate</code> onto the
+equity index (~537) and <code>d·(1+effRate/400)</code> exploded the EA debt path. Two safeguards now:
+(1) <code>pipeline/port_gvar_exports.py</code> regenerates <code>fiscal_meta.json</code> (and <code>external_meta.json</code>,
+§9.1) <strong>by variable id</strong> after every port; (2) blocs copied raw (the 35 GVAR blocs in the
+Oct 2026 chain) need <code>node pipeline/fix_fiscal_meta_indices.mjs</code>, which re-resolves all six
+indices by id (<code>FREV_GDP</code>/<code>FPEXP_GDP</code>/<code>EFFI</code>/<code>SFA</code>, <code>gdp</code>=0, <code>deflator</code>=<code>DEFL_&lt;CC&gt;</code> else the
+first <code>HICP|CPI|JGDP|PGDP</code>) and keeps every other field; idempotent. The tests
+<code>fiscal-meta-indices.test.ts</code> (debt paths bounded) and <code>data/meta-column-indices.test.ts</code>
+(every index points at the right variable family) block stale indices.</p>
 </blockquote>
 <p><strong>Example (US):</strong></p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;d0&quot;</span><span class="p">:</span><span class="mf">122.56815</span><span class="p">,</span><span class="nt">&quot;sfaDefault&quot;</span><span class="p">:</span><span class="mf">1.7518</span><span class="p">,</span><span class="nt">&quot;idx&quot;</span><span class="p">:{</span><span class="nt">&quot;gdp&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="nt">&quot;deflator&quot;</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="nt">&quot;revenue&quot;</span><span class="p">:</span><span class="mi">33</span><span class="p">,</span><span class="nt">&quot;primaryExp&quot;</span><span class="p">:</span><span class="mi">34</span><span class="p">,</span><span class="nt">&quot;effRate&quot;</span><span class="p">:</span><span class="mi">35</span><span class="p">,</span><span class="nt">&quot;sfa&quot;</span><span class="p">:</span><span class="mi">36</span><span class="p">}}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;d0&quot;</span><span class="p">:</span><span class="mf">124.18119030476353</span><span class="p">,</span><span class="nt">&quot;d0_quarter&quot;</span><span class="p">:</span><span class="s2">&quot;2026-Q2&quot;</span><span class="p">,</span><span class="nt">&quot;sfaDefault&quot;</span><span class="p">:</span><span class="mf">1.753</span><span class="p">,</span><span class="nt">&quot;idx&quot;</span><span class="p">:{</span><span class="nt">&quot;gdp&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="nt">&quot;deflator&quot;</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="nt">&quot;revenue&quot;</span><span class="p">:</span><span class="mi">32</span><span class="p">,</span><span class="nt">&quot;primaryExp&quot;</span><span class="p">:</span><span class="mi">33</span><span class="p">,</span><span class="nt">&quot;effRate&quot;</span><span class="p">:</span><span class="mi">34</span><span class="p">,</span><span class="nt">&quot;sfa&quot;</span><span class="p">:</span><span class="mi">35</span><span class="p">}}</span>
 </code></pre></div>
 <blockquote>
-<p>CN's <code>deflator</code> index is <code>1</code> (not <code>7</code>). Since the <strong>2026-06 surgical CN-only re-estimate</strong>,
-<code>idx.gdp</code> (<code>GDP_CN</code>) is <strong>real</strong> (<code>spec.json</code> var 0 = "CN Real GDP …",
-<code>fiscal_meta.json idx.gdpIsNominal = false</code>), and CN has been removed from <code>NOMINAL_GDP_BLOCS</code>,
-so the GVAR DEM contribution now reads <code>gdp</code> directly. The fiscal recursion
-<code>gQ = Δ(idx.gdp) + Δ(idx.deflator)</code> is now the correct real-GDP + deflator nominal growth,
-matching US/EA/JP/UK/CA — the prior nominal-<code>GDP_CN</code> double-count is <strong>resolved</strong>. The fix was
-CN-only; the other 32 blocs are byte-identical. The fiscal-block column
-counts above (<code>n</code>) reflect the live specs; treat them as data, not constants.</p>
+<p>CN's <code>idx.gdp</code> (<code>GDP_CN</code>) is <strong>real</strong> GDP (since the 2026-06 CN-only re-estimate), so the
+fiscal recursion <code>gQ = Δ(idx.gdp) + Δ(idx.deflator)</code> is real growth plus price growth, as
+for the other economies. CN's price column is CPI (no quarterly GDP deflator is used for
+CN). The column counts above (<code>n</code>) reflect the live specs; treat them as data, not constants.</p>
 </blockquote>
+<h3 id="91-external_metajson-external-accounts-satellite-47-economies">9.1 <code>external_meta.json</code> — external-accounts satellite (47 economies)<a class="headerlink" href="#91-external_metajson-external-accounts-satellite-47-economies" title="Permanent link">&para;</a></h3>
+<p>Read by <code>externalAccounting.ts</code> (net foreign assets, current account). Like
+<code>fiscal_meta.json</code> it stores <strong>positional</strong> column indices, so since the Oct 2026
+re-estimation it also stores the variable <strong>ids</strong> they must point at:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>idx</code></td>
+<td><code>{exports, imports, gdp, deflator, fx}</code> column indices (+ non-index keys such as <code>gdpIsNominal</code>)</td>
+</tr>
+<tr>
+<td><code>idxIds</code></td>
+<td>the variable id each index must resolve to, e.g. US <code>{exports:"XH", imports:"MH", gdp:"GDPH", deflator:"JGDP", fx:"FXTWM"}</code></td>
+</tr>
+<tr>
+<td><code>nfa0</code>, <code>iNFA</code>, <code>fxShare</code>, <code>caAnchor</code>, …</td>
+<td>satellite parameters and provenance (<code>fxShare</code> = 0 everywhere today: the FX valuation channel is off)</td>
+</tr>
+</tbody>
+</table>
+<p><code>port_gvar_exports.py</code> re-resolves <code>idx</code> from <code>idxIds</code> on every port (and stops if an id is
+missing); <code>pipeline/fix_external_meta_indices.mjs</code> does the same for blocs copied raw. Why:
+the Oct 2026 data inserted <code>DEFL_&lt;CC&gt;</code> ahead of the exchange rate in 35 blocs and their <code>fx</code>
+index pointed at house prices, unemployment or a bond yield until it was fixed by id (no
+numerical effect, because <code>fxShare</code> = 0; <code>docs/reest-2026/REVIEW.md</code> §6).</p>
 <hr />
 <h2 id="10-weights_24blocjson-gvar-trade-weight-matrix-topology-source">10. <code>weights_24bloc.json</code> — GVAR trade-weight matrix &amp; topology source<a class="headerlink" href="#10-weights_24blocjson-gvar-trade-weight-matrix-topology-source" title="Permanent link">&para;</a></h2>
 <p>The single source of GVAR topology: the bloc list and the <strong>row-normalised
 bilateral trade-weight matrix</strong> that builds each bloc's trade-weighted stars and
-the cross-country coupling. <strong>The filename is stale</strong> — it holds <strong>33 blocs</strong>, not
-24 (US first, with a <code>US</code> row that activates the endogenous-US coupling). Imported
-directly by <code>gvarSolve.ts</code> (<code>import weights24 from '…/weights_24bloc.json'</code>) and
-consumed by <code>configureGVARTopology</code>.</p>
+the cross-country coupling. <strong>The filename is stale</strong> — it holds <strong>35 blocs</strong>, not
+24 (US first, with a <code>US</code> row that activates the endogenous-US coupling). Its content
+is identical to <code>weights_full_38.json</code>, the file the Oct 2026 estimation read.</p>
+<p><strong>How the tool gets it.</strong> At runtime <code>gvarLoader.loadGVARModels</code> fetches it <strong>from the
+data pack</strong> (hash-checked; the manifest names it in <code>gvar.weights</code>) and passes it to
+<code>configureGVARTopology</code>, so a re-weighting of existing blocs takes effect without a new
+app version. <code>gvarSolve.ts</code> <em>also</em> imports a build-time copy, which is used only (a) to
+configure a default topology at module load and in tests, (b) as the fallback if the
+fetch fails, and (c) for the compiled list of candidate blocs (<code>GVAR_BLOC_CANDIDATES</code>) —
+so a pack can update the blocs the app was built with but cannot add a new one.</p>
 <table>
 <thead>
 <tr>
@@ -2515,19 +3189,7 @@ consumed by <code>configureGVARTopology</code>.</p>
 <td><code>source</code></td>
 <td>string</td>
 <td></td>
-<td>provenance (IMF IMTS bilateral trade, SDMX 2.1)</td>
-</tr>
-<tr>
-<td><code>indicators</code></td>
-<td>string[]</td>
-<td><code>[2]</code></td>
-<td>trade indicators used (<code>XG_FOB_USD</code>, <code>MG_CIF_USD</code>)</td>
-</tr>
-<tr>
-<td><code>euro_area_code</code></td>
-<td>string</td>
-<td></td>
-<td>aggregation code for the EA bloc (<code>"G163"</code>)</td>
+<td>provenance (IMF IMTS bilateral X+M, 2021–2023 average, from <code>weights_timevarying.json</code>)</td>
 </tr>
 <tr>
 <td><code>window</code></td>
@@ -2538,50 +3200,39 @@ consumed by <code>configureGVARTopology</code>.</p>
 <tr>
 <td><code>blocs</code></td>
 <td>string[]</td>
-<td><code>[33]</code></td>
+<td><code>[35]</code></td>
 <td>the candidate bloc list, <strong>US first</strong> (= <code>GVAR_BLOC_CANDIDATES</code>)</td>
-</tr>
-<tr>
-<td><code>bloc_codes</code></td>
-<td>object</td>
-<td>50 keys</td>
-<td>code → metadata map (display)</td>
-</tr>
-<tr>
-<td><code>note</code></td>
-<td>string</td>
-<td></td>
-<td>human note (records that US is now endogenous)</td>
 </tr>
 <tr>
 <td><code>weights</code></td>
 <td>object</td>
-<td>33 keys</td>
+<td>35 keys</td>
 <td><strong>the matrix</strong>: <code>weights[receiver][partner] = w</code>, zero diagonal, each receiver row sums to 1 over its partners</td>
 </tr>
 </tbody>
 </table>
-<p>The <code>weights</code> matrix is keyed by <strong>receiver bloc</strong> (33 rows, including a <code>US</code> row);
+<p>(Earlier versions of the file also carried <code>indicators</code>, <code>euro_area_code</code>, <code>bloc_codes</code>
+and <code>note</code>; the deployed one has only the four fields above.)</p>
+<p>The <code>weights</code> matrix is keyed by <strong>receiver bloc</strong> (35 rows, including a <code>US</code> row);
 each row maps partner code → weight and is <strong>row-normalised</strong> (zero diagonal, sums
 to 1). At config time <code>configureGVARTopology</code> renormalises each row over the blocs
 that are actually deployed/active.</p>
 <p><strong>Example (abridged):</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;IMF IMTS … SDMX 2.1, flow IMF.STA:IMTS(1.0.0)&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;indicators&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;XG_FOB_USD&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;MG_CIF_USD&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;euro_area_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;G163&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;IMF IMTS bilateral X+M, 2021-2023 average, 38-bloc set (…). Row-normalized, zero diagonal, &lt;0.05% dropped. From weights_timevarying.json.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;window&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-2023 average&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;blocs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;US&quot;</span><span class="p">,</span><span class="s2">&quot;EA&quot;</span><span class="p">,</span><span class="s2">&quot;JP&quot;</span><span class="p">,</span><span class="s2">&quot;UK&quot;</span><span class="p">,</span><span class="s2">&quot;CA&quot;</span><span class="p">,</span><span class="s2">&quot;CN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 33 total&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;blocs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;US&quot;</span><span class="p">,</span><span class="s2">&quot;EA&quot;</span><span class="p">,</span><span class="s2">&quot;JP&quot;</span><span class="p">,</span><span class="s2">&quot;UK&quot;</span><span class="p">,</span><span class="s2">&quot;CA&quot;</span><span class="p">,</span><span class="s2">&quot;CN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 35 total&quot;</span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;weights&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;US&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;EA&quot;</span><span class="p">:</span><span class="mf">0.176351</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;JP&quot;</span><span class="p">:</span><span class="mf">0.049779</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;UK&quot;</span><span class="p">:</span><span class="mf">0.029843</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;CA&quot;</span><span class="p">:</span><span class="mf">0.168175</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;CN&quot;</span><span class="p">:</span><span class="mf">0.144603</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;…&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;…&quot;</span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;EA&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;US&quot;</span><span class="p">:</span><span class="mf">0.157349</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;JP&quot;</span><span class="p">:</span><span class="mf">0.026295</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;UK&quot;</span><span class="p">:</span><span class="mf">0.096466</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;CA&quot;</span><span class="p">:</span><span class="mf">0.014182</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;CN&quot;</span><span class="p">:</span><span class="mf">0.143814</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;…&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;…&quot;</span><span class="p">}</span>
+<span class="w">    </span><span class="nt">&quot;US&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;EA&quot;</span><span class="p">:</span><span class="mf">0.172788</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;MX&quot;</span><span class="p">:</span><span class="mf">0.165043</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;CA&quot;</span><span class="p">:</span><span class="mf">0.164823</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;CN&quot;</span><span class="p">:</span><span class="mf">0.142355</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;JP&quot;</span><span class="p">:</span><span class="mf">0.048899</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;…&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;…&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;EA&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;US&quot;</span><span class="p">:</span><span class="mf">0.157679</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;CN&quot;</span><span class="p">:</span><span class="mf">0.144444</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;UK&quot;</span><span class="p">:</span><span class="mf">0.096806</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;PL&quot;</span><span class="p">:</span><span class="mf">0.085059</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;CH&quot;</span><span class="p">:</span><span class="mf">0.066849</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;…&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;…&quot;</span><span class="p">}</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <blockquote>
 <p>Other weight files in <code>gvar/</code> (<code>weights_full.json</code>, <code>weights_49.json</code>,
-<code>weights.json</code>, <code>.bak*</code>) are scratch/alternate-panel artifacts; the <strong>live</strong>
-topology source is <code>weights_24bloc.json</code> (the only one imported by <code>gvarSolve.ts</code>).</p>
+<code>weights.json</code>, <code>weights_full_38.json</code>, <code>weights_timevarying.json</code>, <code>.bak*</code>) are
+estimation inputs or alternate-panel artifacts; the <strong>live</strong> topology source is
+<code>weights_24bloc.json</code> (the one named in the manifest's <code>gvar.weights</code>).</p>
 </blockquote>
 <hr />
 <h2 id="11-coupling_defaultjsongz-precomputed-gvar-coupling">11. <code>coupling_default.json.gz</code> — precomputed GVAR coupling<a class="headerlink" href="#11-coupling_defaultjsongz-precomputed-gvar-coupling" title="Permanent link">&para;</a></h2>
@@ -2589,9 +3240,12 @@ topology source is <code>weights_24bloc.json</code> (the only one imported by <c
 and its BLAS-computed inverse <code>(I − M)⁻¹</code> for the <strong>empty/baseline pin structure</strong>.
 Building/inverting <code>M</code> at this scale is many minutes in-browser (the in-JS
 <code>O(dim³)</code> inverse at <code>dim≈2060</code> is ~46 min), so shipping this artifact is
-<strong>mandatory</strong> for interactivity, not optional. Decompressed in-browser via the
-native <code>DecompressionStream</code> (<code>gvarLoader.ts</code>); a plain <code>.json</code> fallback is tried
-for environments without it.</p>
+<strong>mandatory</strong> for interactivity, not optional. Read from the pack through
+<code>fetchGzJSON</code> (hash of the compressed bytes checked, then decompressed with the
+browser's <code>DecompressionStream</code>; there is no plain <code>.json</code> fallback). The manifest
+records which weights it was built from (<code>gvar.coupling.inputs.weightsSha256</code>); if
+that differs from the served weights' hash, <code>gvarLoader</code> drops the artifact and the
+solver recomputes rather than use a stale inverse.</p>
 <table>
 <thead>
 <tr>
@@ -2618,13 +3272,13 @@ for environments without it.</p>
 <td><code>dim</code></td>
 <td>int</td>
 <td>scalar</td>
-<td>augmented-state dimension (currently <strong>2060</strong> under endogenous US)</td>
+<td>augmented-state dimension (currently <strong>2180</strong>: 35 coupled blocs, endogenous US)</td>
 </tr>
 <tr>
 <td><code>rhoSpectral</code></td>
 <td>number</td>
 <td>scalar</td>
-<td>spectral radius ρ(M) (the live <code>coupling_default.json.gz</code> reads <strong>0.924041</strong> &lt; 1; it moves slightly with each refit — what matters is <code>&lt; 1</code>)</td>
+<td>spectral radius ρ(M) (the live <code>coupling_default.json.gz</code> reads <strong>0.971875</strong> &lt; 1; it moves with each refit — what matters is <code>&lt; 1</code>)</td>
 </tr>
 <tr>
 <td><code>M</code></td>
@@ -2650,12 +3304,12 @@ gvarSignature(raw)</code> <strong>and</strong> the request's pin-structure signa
 <code>art.pinStructure</code>; otherwise the solver rebuilds.</p>
 <p><strong>Header example (values are real; matrices abridged):</strong></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;modelSig&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;US:41_3_20_6.121870e+0_-8.370660e-2_8.919980e-2|EA:24_3_20_2.551660e+0_-1.208040e-1_1.509770e-1|…&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;modelSig&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;US:40_4_20_3.685523e+0_0.000000e+0_7.607104e-2|EA:26_4_20_1.703399e+0_0.000000e+0_1.271297e-1|…&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pinStructure&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;dim&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2060</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;rhoSpectral&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.924041</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;M&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;… 2060 cols …&quot;</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;… 2060 rows …&quot;</span><span class="w"> </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;invImM&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;… 2060 cols …&quot;</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;… 2060 rows …&quot;</span><span class="w"> </span><span class="p">]</span>
+<span class="w">  </span><span class="nt">&quot;dim&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2180</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;rhoSpectral&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.971875</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;M&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;… 2180 cols …&quot;</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;… 2180 rows …&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;invImM&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;… 2180 cols …&quot;</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;… 2180 rows …&quot;</span><span class="w"> </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><strong>Regenerate</strong> (mandatory after any data change) from <code>app/</code>:</p>
@@ -2668,12 +3322,12 @@ deploy on drift).</p>
 <blockquote>
 <p><strong>Spectral radius by panel size</strong> (context, not a contract): 6-bloc pilot
 ρ≈0.59; 24-bloc frozen-anchor ρ≈0.72–0.73 (<code>dim</code> 1380 = 23·3·20); 33-bloc
-pre-endogenous frozen (<code>dim</code>≈1920 = 32·3·20) similar; <strong>33-bloc endogenous-US</strong>
-ρ=<strong>0.945494</strong> (<code>dim</code>=2060, the deployed <code>coupling_default.json.gz</code>; the field read 0.935044
-before 2026-07-17, an under-converged power-iteration estimate — corrected by eigendecomposition). The exact
-value moves slightly with each refit (earlier artifacts read ~0.89, 0.924, 0.935);
-what is load-bearing is that it stays comfortably <code>&lt; 1</code>. The frozen-anchor figures no
-longer describe the live artifact.</p>
+endogenous-US ρ≈0.92–0.95 (<code>dim</code> 2060; artifacts of Jun–Sep 2026); the Sep 2026
+35-bloc model ρ=0.957724; <strong>the deployed Oct 2026 genuine-data re-estimation
+ρ=0.971875</strong> (<code>dim</code> 2180). The value moves with each refit; what is load-bearing is
+that it stays <code>&lt; 1</code> (<code>precompute_gvar_coupling.mjs</code> prints it; the maintainer checks it before
+shipping — the script does not stop on its own). Only the last figure
+describes the live artifact.</p>
 </blockquote>
 <hr />
 <h2 id="12-validating-a-freshly-ported-bloc">12. Validating a freshly ported bloc<a class="headerlink" href="#12-validating-a-freshly-ported-bloc" title="Permanent link">&para;</a></h2>
@@ -2692,18 +3346,850 @@ longer describe the live artifact.</p>
 <li><code>transformations.transformations</code> has length <code>n</code> and matches
    <code>spec.variables[i].transformation</code>.</li>
 <li>A fiscal bloc additionally ships <code>fiscal_meta.json</code> with all six <code>idx</code> keys in range <code>[0, n)</code>
-   <strong>AND each <code>idx</code> resolving to the correct variable id</strong> (<code>idx.revenue</code> → <code>FREV_GDP</code>, etc.). After any
-   re-port, <strong>run <code>node pipeline/fix_fiscal_meta_indices.mjs</code></strong> — the porter does not regen these
-   positional indices (the STALE-POSITIONAL-INDEX gotcha, §9).</li>
+   <strong>AND each <code>idx</code> resolving to the correct variable id</strong> (<code>idx.revenue</code> → <code>FREV_GDP</code>, etc.); likewise
+   <code>external_meta.json</code> (<code>idx</code> = <code>idxIds</code>). For blocs copied raw (not through <code>port_gvar_exports.py</code>),
+   <strong>run <code>node pipeline/fix_fiscal_meta_indices.mjs</code> and <code>node pipeline/fix_external_meta_indices.mjs</code></strong>
+   (the STALE-POSITIONAL-INDEX gotcha, §9).</li>
 <li>After porting, <strong>regenerate <code>coupling_default.json.gz</code></strong> (§11) so <code>modelSig</code> matches.</li>
+<li>Re-stamp and verify the pack: <code>node scripts/pack-build.mjs --pack-id &lt;new id&gt;</code> then
+   <code>npx vite-node scripts/pack-verify.mjs --full</code> (the pack is immutable — a changed pack gets a new id).</li>
 </ol>
 <p>Then run the green gate (<code>npx tsc --noEmit &amp;&amp; npm test &amp;&amp; npm run test:heavy</code>) — the canary tests
 (<code>gvar-coupling-artifact</code>, <code>gvar-convergence</code>, <code>gvar-derived-topology</code>,
 <code>scenario-scale-convention</code>, <code>fiscalAccounting</code>) encode the contracts above.</p>
 <hr />
-<h2 id="13-out-of-sample-evaluation-contracts-the-em-bayesian-gvar-eval-harness">13. Out-of-sample evaluation contracts (the <code>em-bayesian-gvar-eval</code> harness)<a class="headerlink" href="#13-out-of-sample-evaluation-contracts-the-em-bayesian-gvar-eval-harness" title="Permanent link">&para;</a></h2>
+<h2 id="13-the-drivers-payload-apppublicdatadsgecensus-experimental">13. The Drivers payload — <code>app/public/data/dsge/census/</code> (experimental)<a class="headerlink" href="#13-the-drivers-payload-apppublicdatadsgecensus-experimental" title="Permanent link">&para;</a></h2>
+<p>The Drivers drawer answers one question about a path the app is already showing:
+<em>which sequence of a chosen DSGE model's own structural shocks would have produced
+it?</em> It reads that model's impulse responses out of the files documented here,
+solves for the shock sequence over the first <strong>twelve</strong> forecast quarters, and draws
+the contributions as a stacked chart in the main panel's units, with an explicit
+residual for the part the named shocks cannot reproduce. The models come from the
+Macroeconomic Model Base (MMB), the public archive of estimated and calibrated
+macro models.</p>
+<p>Two things about the claim, stated here rather than at the end. The feature is
+<strong>experimental</strong>, and its reading is <strong>model-conditional</strong>: it reports the mix of
+model <em>M</em>'s shocks that reproduces the path, not what caused the path, and it is not
+model-free shock labelling. Its validation is <strong>same-model recovery</strong> — generate a
+path from a model's own known shock sequence, decompose it under that same model,
+and check the contribution paths come back — which speaks to the estimator, not to
+the model and not to the world. The two benches that establish it,
+<code>pipeline/bench_simple_decomp.m</code> and <code>pipeline/bench_class_recovery.m</code>, travel with
+the code, and their transcripts are <code>docs/paper/simple_decomp_results.txt</code> and
+<code>docs/paper/class_recovery_results.txt</code>.</p>
+<p>This section is the <strong>data contract only</strong>. The engine that consumes these files is
+<code>app/src/lib/compute/driversDecomp.ts</code> and the drawer is
+<code>app/src/components/controls/DriversDrawer.tsx</code>; the mathematics of the
+deconvolution, the naming budget and the display-unit mapping are in
+<a href="../drivers-decomposition/"><code>drivers-decomposition.md</code></a>.</p>
+<h3 id="131-where-the-files-live-and-what-is-fetched-when">13.1 Where the files live, and what is fetched when<a class="headerlink" href="#131-where-the-files-live-and-what-is-fetched-when" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>app/public/data/dsge/
+  census/                            the Drivers payload (this section)
+    index.json                       model menu + shock metadata + embedded class map
+    &lt;MODEL&gt;.json                     one copied MMB census IRF file per census model (8)
+  irfs/&lt;MODEL&gt;/SW.json               pre-existing IRF tree; Drivers INDEXES four of these
+  catalog.json  rules.json  variable_mapping.json      the policy-counterfactual panel
+</code></pre></div>
+<p>Only <code>census/</code> is new. The <code>irfs/</code> tree predates the feature and serves the policy
+counterfactual; Drivers points four menu entries at files already there rather than
+copying them, so those four cost nothing extra on the wire.</p>
+<table>
+<thead>
+<tr>
+<th>Shipped file</th>
+<th style="text-align: right;">Bytes</th>
+<th>Served as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>census/index.json</code></td>
+<td style="text-align: right;">36,484</td>
+<td><code>/data/dsge/census/index.json</code></td>
+</tr>
+<tr>
+<td><code>census/CA_LS07.json</code></td>
+<td style="text-align: right;">46,581</td>
+<td><code>/data/dsge/census/CA_LS07.json</code></td>
+</tr>
+<tr>
+<td><code>census/BRA_SAMBA08.json</code></td>
+<td style="text-align: right;">122,946</td>
+<td>…</td>
+</tr>
+<tr>
+<td><code>census/EA_SW03.json</code></td>
+<td style="text-align: right;">199,918</td>
+<td>…</td>
+</tr>
+<tr>
+<td><code>census/EA_SWW14.json</code></td>
+<td style="text-align: right;">216,839</td>
+<td>…</td>
+</tr>
+<tr>
+<td><code>census/HK_FP13.json</code></td>
+<td style="text-align: right;">218,428</td>
+<td>…</td>
+</tr>
+<tr>
+<td><code>census/UK_SM11.json</code></td>
+<td style="text-align: right;">231,288</td>
+<td>…</td>
+</tr>
+<tr>
+<td><code>census/US_FRB22_var.json</code></td>
+<td style="text-align: right;">10,573,203</td>
+<td>…</td>
+</tr>
+<tr>
+<td><code>census/US_FRB22.json</code></td>
+<td style="text-align: right;">10,751,660</td>
+<td>…</td>
+</tr>
+<tr>
+<td><code>irfs/US_SW07/SW.json</code></td>
+<td style="text-align: right;">215,298</td>
+<td>indexed in place, not copied</td>
+</tr>
+<tr>
+<td><code>irfs/US_CMR14/SW.json</code></td>
+<td style="text-align: right;">1,792,588</td>
+<td>indexed in place, not copied</td>
+</tr>
+<tr>
+<td><code>irfs/US_FRB08/SW.json</code></td>
+<td style="text-align: right;">352,059</td>
+<td>indexed in place, not copied</td>
+</tr>
+<tr>
+<td><code>irfs/US_FRB22_mcap/SW.json</code></td>
+<td style="text-align: right;">406,763</td>
+<td>indexed in place, not copied</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>census/</code> directory is 22.4 MB, of which 21.3 MB is the two 54-shock FRB/US
+files. Nothing here is fetched by <code>loadBVARData</code> and nothing is fetched at page
+load. <code>loadDriversIndex()</code> (<code>loader.ts</code>) fetches <code>index.json</code> <strong>on the first opening
+of the drawer</strong>, once per session; the drawer holds it in component state and does
+not retry a failure. <code>loadDriversModelIRFs(file)</code> then fetches <strong>one model's IRF
+file when that model is selected</strong>, cached per model for the session in the drawer's
+<code>irfByModel</code>, with a per-model error record and a Retry button — which matters
+precisely for the two ten-megabyte FRB/US lenses. Both go through the plain
+<code>loadJSON</code> fetch under <code>${NEXT_PUBLIC_BASE_PATH}/data/</code>; unlike
+<code>coupling_default.json.gz</code> (§11) nothing here is shipped gzipped and nothing is
+decompressed client-side, so any wire compression is the host's doing.</p>
+<p>In practice the default lens costs 36 KB + 215 KB. Choosing a FRB/US census lens
+costs a further 10.6 MB for the VAR-expectations variant, 10.8 MB for the other.</p>
 <blockquote>
-<p><strong>Scope note.</strong> The JSON contracts in §§1–12 are read by the <strong>deployed app</strong>.
+<p><strong>Remark 1 (The Drivers files are not 6-significant-figure).</strong> The compaction
+described in §2.2 applies to the eight ported per-bloc BVAR files and to
+<code>coupling_default.json.gz</code>. It does <strong>not</strong> apply here: every response value in the
+IRF files is written at <strong>full double precision</strong> (e.g. <code>-0.16580525975153695</code>),
+because these files come from the MMB/Dynare export path and are copied verbatim,
+never passing through <code>pipeline/port_gvar_exports.py</code>. The one rounded number in
+the payload is <code>index.json</code>'s <code>collinearPairs[].cos</code>, which the builder writes as
+<code>Number(cos.toFixed(6))</code>. Do not validate these files against a 6-sigfig
+expectation.</p>
+</blockquote>
+<h3 id="132-indexjson-the-model-menu">13.2 <code>index.json</code> — the model menu<a class="headerlink" href="#132-indexjson-the-model-menu" title="Permanent link">&para;</a></h3>
+<p>One file, <code>schema: "gmaps-drivers-index/1"</code>, holding everything the drawer needs
+before it fetches any responses: which models are on the menu, which of their shocks
+are usable, which shock pairs are collinear, how the FRB/US shocks cluster, and the
+shock-class map.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Shape</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>schema</code></td>
+<td>string</td>
+<td></td>
+<td><code>"gmaps-drivers-index/1"</code></td>
+</tr>
+<tr>
+<td><code>generated</code></td>
+<td>string</td>
+<td></td>
+<td>build date, <code>YYYY-MM-DD</code> (the shipped file reads <code>"2026-08-04"</code>). Present in the file, <strong>absent from the <code>DriversIndex</code> TS interface</strong> — informational only</td>
+</tr>
+<tr>
+<td><code>horizonQuarters</code></td>
+<td>int</td>
+<td>scalar</td>
+<td>decomposition horizon, <code>12</code>. Asserted equal to the engine's <code>DRIVERS_H</code> by a licence test — the index and the solver must agree on <em>H</em></td>
+</tr>
+<tr>
+<td><code>commonObservables</code></td>
+<td>string[]</td>
+<td><code>[3]</code></td>
+<td><code>["output","inflationq","interest"]</code>, the three MMB common-block observables every menu model must expose</td>
+</tr>
+<tr>
+<td><code>collinearThreshold</code></td>
+<td>number</td>
+<td>scalar</td>
+<td><code>0.95</code> — the |cos| above which a shock pair is flagged</td>
+</tr>
+<tr>
+<td><code>note</code></td>
+<td>string</td>
+<td></td>
+<td>prose provenance note. Also present in the file but <strong>not</strong> in the TS interface</td>
+</tr>
+<tr>
+<td><code>shockClasses</code></td>
+<td>object</td>
+<td></td>
+<td><code>pipeline/_shockbench/class_maps.json</code> copied verbatim (§13.3)</td>
+</tr>
+<tr>
+<td><code>models</code></td>
+<td>object</td>
+<td>12 keys</td>
+<td>the menu, keyed by index name (§13.2.1)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1321-the-per-model-record-driversmodelmeta">13.2.1 The per-model record (<code>DriversModelMeta</code>)<a class="headerlink" href="#1321-the-per-model-record-driversmodelmeta" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>file</code></td>
+<td>string</td>
+<td>site-absolute path the drawer fetches, e.g. <code>/data/dsge/census/UK_SM11.json</code>. The loader strips the leading <code>/data/</code> and fetches under the app's base path</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>string</td>
+<td>repository path the bytes came from — <code>pipeline/census_irfs/&lt;dir&gt;/Taylor.json</code> for a census model, <code>app/public/data/dsge/irfs/&lt;M&gt;/SW.json</code> for an indexed-in-place one</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td><strong>optional</strong> menu display name; only the FRB/US entries carry one. Absent ⇒ show the index key</td>
+</tr>
+<tr>
+<td><code>sourceNote</code></td>
+<td>string</td>
+<td><strong>optional</strong> provenance label, <code>"MMB rule file"</code> or <code>"MMB census run"</code> (§13.6)</td>
+</tr>
+<tr>
+<td><code>sha256</code></td>
+<td>string</td>
+<td>content hash of the shipped file</td>
+</tr>
+<tr>
+<td><code>sha256Source</code></td>
+<td>string</td>
+<td>where that hash came from: <code>pipeline/census_irfs/MANIFEST.json</code> for the eight census entries, <code>sha256(app/public/data/dsge/irfs/&lt;M&gt;/SW.json)</code> for the four indexed-in-place ones</td>
+</tr>
+<tr>
+<td><code>shocks</code></td>
+<td>string[]</td>
+<td>the <strong>usable</strong> shocks, in the model's own file order. A shock is usable iff it carries all three common observables and its stacked three-observable, twelve-quarter response path has norm ≥ 1e-9</td>
+</tr>
+<tr>
+<td><code>dropped</code></td>
+<td>object[]</td>
+<td><code>{shock, reason}</code> for everything excluded. The builder emits two reasons, <code>"zero-response"</code> and <code>"missing-observable"</code>; only the first occurs in the shipped index, on SW07's <code>em</code> and CMR14's <code>e_term</code>. Every other model drops nothing</td>
+</tr>
+<tr>
+<td><code>hasOutput</code></td>
+<td>bool</td>
+<td>whether the model exposes an <code>output</code> observable. <code>false</code> disables the menu entry, since <code>output</code> anchors the whole conversion. All twelve shipped entries are <code>true</code></td>
+</tr>
+<tr>
+<td><code>collinearPairs</code></td>
+<td>object[]</td>
+<td><code>{a, b, cos}</code> for every pair with |cos| &gt; 0.95, <code>cos</code> rounded to six decimals</td>
+</tr>
+<tr>
+<td><code>menuHidden</code></td>
+<td>bool</td>
+<td><strong>optional</strong>, <code>true</code> on <code>US_FRB22_mcap</code> alone — the entry stays in the index because the licence fixtures reference it, but the drawer menu filters it out (§13.6)</td>
+</tr>
+<tr>
+<td><code>classMapKey</code></td>
+<td>string</td>
+<td><strong>optional</strong>: the <code>shockClasses.models</code> record to use when it differs from the index key. All three FRB22 entries point at <code>US_FRB22_mcap</code></td>
+</tr>
+<tr>
+<td><code>clusters</code></td>
+<td>object[]</td>
+<td><strong>optional</strong>, FRB/US census models only: <code>{id, label, members}</code> (§13.4)</td>
+</tr>
+<tr>
+<td><code>defaultNamed</code></td>
+<td>string[]</td>
+<td><strong>optional</strong>, clustered models only: the build-time-validated default cluster naming (§13.4)</td>
+</tr>
+</tbody>
+</table>
+<p>The menu as shipped, with the file facts alongside the index metadata:</p>
+<table>
+<thead>
+<tr>
+<th>Index key</th>
+<th style="text-align: right;">Usable shocks</th>
+<th>Dropped</th>
+<th style="text-align: right;">Observables in the file</th>
+<th style="text-align: right;">Collinear pairs</th>
+<th style="text-align: right;">Clusters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>US_SW07</code></td>
+<td style="text-align: right;">7</td>
+<td><code>em</code></td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><code>US_CMR14</code></td>
+<td style="text-align: right;">9</td>
+<td><code>e_term</code></td>
+<td style="text-align: right;">395</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><code>US_FRB08</code></td>
+<td style="text-align: right;">2</td>
+<td>—</td>
+<td style="text-align: right;">398</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><code>US_FRB22</code></td>
+<td style="text-align: right;">54</td>
+<td>—</td>
+<td style="text-align: right;">454</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td><code>US_FRB22_var</code></td>
+<td style="text-align: right;">54</td>
+<td>—</td>
+<td style="text-align: right;">449</td>
+<td style="text-align: right;">117</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td><code>US_FRB22_mcap</code></td>
+<td style="text-align: right;">2</td>
+<td>—</td>
+<td style="text-align: right;">454</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">— (menu-hidden)</td>
+</tr>
+<tr>
+<td><code>EA_SW03</code></td>
+<td style="text-align: right;">6</td>
+<td>—</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><code>EA_SWW14</code></td>
+<td style="text-align: right;">6</td>
+<td>—</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><code>CA_LS07</code></td>
+<td style="text-align: right;">3</td>
+<td>—</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><code>HK_FP13</code></td>
+<td style="text-align: right;">5</td>
+<td>—</td>
+<td style="text-align: right;">99</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><code>BRA_SAMBA08</code></td>
+<td style="text-align: right;">4</td>
+<td>—</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><code>UK_SM11</code></td>
+<td style="text-align: right;">3</td>
+<td>—</td>
+<td style="text-align: right;">169</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table>
+<p>The flagged pairs are few enough to list. <code>US_CMR14</code> flags <code>e_sigma</code>–<code>e_gamma</code>
+(0.997711), <code>e_gamma</code>–<code>e_zetai</code> (0.982712) and <code>e_sigma</code>–<code>e_zetai</code> (0.975082);
+<code>EA_SW03</code> flags <code>fiscal_</code>–<code>inv_</code> (0.963437); <code>CA_LS07</code> flags <code>markup_</code>–<code>flex_</code>
+(0.974943); <code>HK_FP13</code> flags <code>interest_</code>–<code>flex_</code> (1.0, an exact duplicate) and
+<code>markup_</code>–<code>demand_</code> (0.959529). Where a pair is flagged, the split of a
+contribution <em>within</em> that pair is not identified and the two members should be read
+jointly; the drawer's one-click "Use all" therefore keeps only one member of each
+flagged group, and warns if the user names both by hand.</p>
+<p><strong>Example 1 (<code>index.json</code> — the header, one small entry in full, the rest abridged).</strong>
+<em>We show the shipped file down to the level a consumer needs: the header fields, the
+class-map block, one complete census entry (<code>UK_SM11</code>, three shocks, no clusters),
+and the shape of a clustered FRB/US entry. Values are real; the ellipses stand for
+omitted siblings.</em></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gmaps-drivers-index/1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;generated&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-08-04&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;horizonQuarters&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;commonObservables&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;output&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;inflationq&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;interest&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;collinearThreshold&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.95</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Model-conditional decomposition metadata (experimental Drivers feature). …&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;shockClasses&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gmaps-shock-classes/1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Single source of truth for the universal shock-class layer … Amend here, not in the app.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;censusGeneric&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;interest_&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Monetary&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;fiscal_&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Demand&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;…&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;…&quot;</span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;models&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;US_SW07&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;Monetary&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;interest_&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;Demand&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;eb&quot;</span><span class="p">,</span><span class="s2">&quot;fiscal_&quot;</span><span class="p">,</span><span class="s2">&quot;eqs&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;Supply&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ea&quot;</span><span class="p">,</span><span class="s2">&quot;epinf&quot;</span><span class="p">,</span><span class="s2">&quot;ew&quot;</span><span class="p">]},</span>
+<span class="w">      </span><span class="nt">&quot;US_CMR14&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;…&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;…&quot;</span><span class="p">]},</span>
+<span class="w">      </span><span class="nt">&quot;US_FRB22_mcap&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;…&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;…&quot;</span><span class="p">]}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;aliases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;US_FRB22_var&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;US_FRB22_mcap&quot;</span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;models&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;UK_SM11&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;file&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/data/dsge/census/UK_SM11.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pipeline/census_irfs/UK_SM11/Taylor.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sha256&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;b2419d58f8731547a3c8ed5f4405f0e55cf1dbf6ab34f05bc6793d5a792e46d7&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sha256Source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pipeline/census_irfs/MANIFEST.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;shocks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;interest_&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;fiscal_&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;tech_&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;dropped&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">      </span><span class="nt">&quot;hasOutput&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;collinearPairs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;US_SW07&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;file&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/data/dsge/irfs/US_SW07/SW.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;app/public/data/dsge/irfs/US_SW07/SW.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sha256Source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sha256(app/public/data/dsge/irfs/US_SW07/SW.json)&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;shocks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;interest_&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;fiscal_&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;ea&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;eb&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;eqs&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;epinf&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;ew&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;dropped&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nt">&quot;shock&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;em&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;zero-response&quot;</span><span class="p">}],</span>
+<span class="w">      </span><span class="nt">&quot;hasOutput&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;collinearPairs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">      </span><span class="nt">&quot;…&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;…&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;US_FRB22&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;file&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/data/dsge/census/US_FRB22.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pipeline/census_irfs/US_FRB22_mcap/Taylor.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FRB/US linearised (2022, MMB) — 54-shock census&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sourceNote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MMB census run&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;classMapKey&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;US_FRB22_mcap&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;shocks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;interest_&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;fiscal_&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;ebfi_l_aerr&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;… 54 total&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;collinearPairs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nt">&quot;a&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fiscal_&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;b&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ech_l_aerr&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;cos&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.984597</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;… 109 total&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;clusters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hqlfpr&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hqlfpr cluster (17 shocks)&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;members&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;…&quot;</span><span class="p">]},</span><span class="w"> </span><span class="s2">&quot;… 23 total&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;defaultNamed&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;hqlfpr&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;interest_&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;pcer_l&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;…&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;…&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;…&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="133-indexshockclasses-the-embedded-shock-class-map">13.3 <code>index.shockClasses</code> — the embedded shock-class map<a class="headerlink" href="#133-indexshockclasses-the-embedded-shock-class-map" title="Permanent link">&para;</a></h3>
+<p><code>pipeline/_shockbench/class_maps.json</code> is the <strong>single source of truth</strong> for which
+of a model's shocks belong to which economic class. It is not fetched at runtime —
+the app never reads <code>pipeline/</code> — so <code>build_drivers_index.mjs</code> copies it <strong>verbatim</strong>
+into <code>index.shockClasses</code> at build time. The two are asserted equal by a licence
+test, which is the only thing standing between an amendment to <code>class_maps.json</code> and
+a shipped app that keeps aggregating the old membership in silence. Its own note is
+blunt about where to edit: <em>"Amend here, not in the app."</em></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>schema</code></td>
+<td>string</td>
+<td><code>"gmaps-shock-classes/1"</code></td>
+</tr>
+<tr>
+<td><code>note</code></td>
+<td>string</td>
+<td>how the assignments were made, per model family</td>
+</tr>
+<tr>
+<td><code>censusGeneric</code></td>
+<td>object</td>
+<td>injected-shock-name → class dictionary (<code>interest_</code>→Monetary; <code>fiscal_</code>/<code>demand_</code>/<code>pref_</code>/<code>inv_</code>→Demand; <code>markup_</code>/<code>tech_</code>/<code>wage_</code>/<code>flex_</code>→Supply). <strong>Typed in <code>loader.ts</code> but read by nothing in <code>app/src</code> — inert in the shipped app</strong></td>
+</tr>
+<tr>
+<td><code>models</code></td>
+<td>object</td>
+<td>3 keys: class → member shock names, per model</td>
+</tr>
+<tr>
+<td><code>aliases</code></td>
+<td>object</td>
+<td>index key → class-map record key, <code>{"US_FRB22_var": "US_FRB22_mcap"}</code>. The drawer resolves <code>meta.classMapKey ?? aliases[model] ?? model</code></td>
+</tr>
+</tbody>
+</table>
+<p>Only three models have a class map. Every other menu entry falls through to a null
+map, and its grouped view is simply one series per named shock.</p>
+<table>
+<thead>
+<tr>
+<th>Class-map record</th>
+<th style="text-align: right;">Monetary</th>
+<th style="text-align: right;">Demand</th>
+<th style="text-align: right;">Supply</th>
+<th style="text-align: right;">Financial</th>
+<th style="text-align: right;">Other</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>US_SW07</code></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>US_CMR14</code></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><code>US_FRB22_mcap</code></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">54</td>
+</tr>
+</tbody>
+</table>
+<p>SW07's map is <code>Monetary: interest_</code>; <code>Demand: eb, fiscal_, eqs</code>; <code>Supply: ea, epinf,
+ew</code>. CMR14 adds a Financial class holding <code>e_sigma</code> and <code>e_gamma</code>. The FRB/US
+assignments are <strong>rule-based on the equation each <code>_aerr</code> residual attaches to</strong> —
+spending-block equations to Demand, price/wage/productivity/labour equations to
+Supply, premia/asset-price/FX equations to Financial, accounting and trend
+identities to Other — not on a judgement about the economics of each shock.</p>
+<blockquote>
+<p><strong>Remark 2 (The class view is licensed on three coordinates, not one).</strong> A class
+map existing in this file does <strong>not</strong> mean the app will aggregate by it.
+<code>classViewLicensed(model, observableKeys, namedShocks)</code> returns true only when the
+model is <code>US_SW07</code>, the watched observables contain all seven of
+<code>{output, inflationq, interest, dc, dinve, dw, labobs}</code>, <strong>and</strong> the named shocks
+contain all seven of <code>{interest_, eb, fiscal_, eqs, ea, epinf, ew}</code>. That is the
+one cell of <code>bench_class_recovery.m</code> that passes both of its pre-stated criteria
+under the shipped solver, and the bench held all three coordinates fixed: it ran
+that observable set with <em>K</em> = 7, every usable column of SW07's class map.
+Un-naming a single class member revokes the licence, because the missing shock's
+energy is redistributed over the classes that remain — which is exactly what the
+bench's off-class-leakage criterion measures. The third argument is <strong>required</strong>,
+not optional, so a caller who forgets it gets a compile error rather than a
+silently re-opened hole. Everywhere else the Classes toggle is greyed with its
+reason shown.</p>
+<p><strong>Remark 3 (CMR14's "families" are not a licensed class split).</strong> The drawer shows
+CMR14's own class map as an organising grouping of its shocks, labelled
+"Monetary family", "Demand family" and so on, and discloses the number the bench
+refused it on: <code>bench_class_recovery.m</code> recovers those class totals in 78% of test
+instances against its 90% bar. Present them as a grouping, never as classes. The
+point applies more sharply to <code>censusGeneric</code>, which has no consumer in the app at
+all.</p>
+</blockquote>
+<h3 id="134-clusters-and-defaultnamed-the-frbus-lenses">13.4 <code>clusters</code> and <code>defaultNamed</code> — the FRB/US lenses<a class="headerlink" href="#134-clusters-and-defaultnamed-the-frbus-lenses" title="Permanent link">&para;</a></h3>
+<p>The two 54-shock FRB/US entries carry two extra fields, because their individual
+<code>_aerr</code> equation-residual shocks are not separable in the three common observables:
+109 of the 1,431 shock pairs exceed |cos| = 0.95 for <code>US_FRB22</code>, 117 for the
+VAR-expectations variant. Rather than offer a naming the response space cannot
+support, the builder groups the shocks by the structure that space actually has.</p>
+<p>A <strong>cluster</strong> is a connected component of the |cos| &gt; 0.95 collinearity graph,
+computed by union-find over the same <code>collinearPairs</code> list the index ships, and
+labelled by its <strong>largest</strong> member — largest stacked three-observable, twelve-quarter
+response norm, with the label taken as the mnemonic minus its <code>_aerr</code> suffix.
+Clusters are ordered by size descending, then id ascending, and a singleton is
+labelled by its member's mnemonic rather than as a cluster.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>clusters[i].id</code></td>
+<td>string</td>
+<td>equation name of the largest member, e.g. <code>"hqlfpr"</code>, <code>"eco_l"</code></td>
+</tr>
+<tr>
+<td><code>clusters[i].label</code></td>
+<td>string</td>
+<td><code>"&lt;id&gt; cluster (&lt;n&gt; shocks)"</code>, or the bare member mnemonic for a singleton</td>
+</tr>
+<tr>
+<td><code>clusters[i].members</code></td>
+<td>string[]</td>
+<td>the component's shock names</td>
+</tr>
+<tr>
+<td><code>defaultNamed</code></td>
+<td>string[]</td>
+<td>cluster ids the drawer names by default</td>
+</tr>
+</tbody>
+</table>
+<p><code>US_FRB22</code> has 23 clusters over its 54 shocks: <code>hqlfpr</code> (17 members — the
+financial/housing blob, which contains <code>fiscal_</code>, so the fiscal shock is not
+separately nameable in cluster mode), <code>eco_l</code> (10, the spending block), <code>lww_l</code> (4,
+wages/labour force/ECI), <code>fpxrr_l</code>, <code>pegfr_l</code> and <code>pxr_l</code> (2 each), and 17
+singletons including <code>interest_</code>. <code>US_FRB22_var</code> has 21 clusters: <code>hqlfpr</code> (18),
+<code>eco_l</code> (10), <code>lww_l</code> (4), <code>trci</code> (3), <code>fpxrr_l</code> and <code>pxr_l</code> (2 each), and 15
+singletons. The shipped partitions are cross-checked against the shipped pair list,
+as a set of sets, by a licence test.</p>
+<p>Naming a cluster names <strong>one</strong> column: the app builds the members' first principal
+component from their unit-normalised stacked response paths and decomposes on that.
+So the naming budget counts clusters, not members.</p>
+<p><code>defaultNamed</code> records the naming the builder validated. <code>pickDefaultNamed</code> scans
+every possible triple of clusters through the shipped solver over 20 deterministic
+sparse-truth seeds against a 1e-6 same-model-recovery criterion, and picks among the
+passers by maximising member coverage, then preferring a triple containing the
+<code>interest_</code> cluster, then taking the first in cluster order. For <code>US_FRB22</code> that is
+<code>[hqlfpr, interest_, pcer_l]</code>, covering 19 of 54 shocks, with a worst measured
+recovery error of 2.53e-9. For <code>US_FRB22_var</code> it is <code>[eco_l, interest_, ki_l]</code>,
+covering 12 of 54, at 1.32e-7 — passing, but only an order of magnitude inside the
+criterion.</p>
+<blockquote>
+<p><strong>Remark 4 (Cluster members are chained, not mutually parallel).</strong> Collinearity is
+not transitive, so two members of one component can sit well below 0.95 against
+each other: they are linked through a chain of collinear neighbours, not pairwise
+near-parallel. The composite column is therefore a genuine first principal
+component of the member set, not a stand-in for an already-parallel bundle. Never
+describe a cluster as a set of mutually parallel shocks; the drawer does not, in
+any of the three places it explains them.</p>
+<p><strong>Remark 5 (A full-rank Θ does not mean a naming is usable).</strong> Only 123 of the
+1,771 possible cluster triples for <code>US_FRB22</code>, and 122 of the 1,330 for
+<code>US_FRB22_var</code>, pass the 1e-6 recovery criterion. Most of the rest are badly
+conditioned while still passing the rank test — the obvious triple of the three
+largest clusters is among the failures — which is why <code>defaultNamed</code> exists and
+why the drawer warns as soon as the user departs from it. Any other naming is
+exploratory, and nothing in this payload licenses it.</p>
+</blockquote>
+<h3 id="135-modeljson-the-per-model-irf-file">13.5 <code>&lt;MODEL&gt;.json</code> — the per-model IRF file<a class="headerlink" href="#135-modeljson-the-per-model-irf-file" title="Permanent link">&para;</a></h3>
+<p>Every menu model, whether copied into <code>census/</code> or indexed in place under <code>irfs/</code>,
+has the same shape: a two-level object, shock name → observable name → response
+array.</p>
+<div class="highlight"><pre><span></span><code>irf[shock][observable][h + 1]  =  R_{shock,observable}(h),   h = 0 … 19
+</code></pre></div>
+<p>where <code>irf</code> is the parsed file, <code>shock</code> one of the top-level keys, <code>observable</code> a
+model observable name, and <code>h</code> the response horizon in quarters. Every array is
+length <strong>21</strong>. <strong>Index 0 is the pre-impact zero</strong>, so horizon <em>h</em> lives at index
+<em>h</em>+1 — this mirrors the benches' MATLAB <code>s.obs(2:H+1)</code> exactly, and an off-by-one
+here silently shifts every contribution by a quarter. The engine uses indices 1…12
+(<em>h</em> = 0…11); the remaining eight are shipped but unused by Drivers.</p>
+<p>Every shock in a file carries the <strong>same</strong> observable key set, verified across all
+twelve shipped files, so the observable count is a property of the model rather than
+of the shock. Every file exposes the three common observables <code>output</code>,
+<code>inflationq</code> and <code>interest</code>; the rest are the model's own variables and observation
+equations, from 38 keys for <code>CA_LS07</code> up to 454 for the FRB/US linearisations.
+Values are full double precision (Remark 1) and serialised with compact separators.</p>
+<p>The top-level key set is the model's <strong>full</strong> shock list, which is a superset of the
+index's <code>shocks</code> array: <code>US_SW07/SW.json</code> has eight keys and the index lists seven,
+the difference being the zero-response <code>em</code> recorded in <code>dropped</code>. A consumer should
+iterate <code>index.models[M].shocks</code>, not <code>Object.keys(irf)</code>.</p>
+<p><strong>Example 2 (Reading one response out of a shipped file).</strong> <em>We read SW07's output
+response to its monetary-policy shock over the first five quarters, the way the
+engine does. <code>interest_</code> is the MMB-injected monetary shock, <code>output</code> the common
+percent log-level column, and the leading <code>0</code> is the pre-impact entry we skip.</em></p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-<span class="w"> </span><span class="s">&lt;&lt;&#39;PY&#39;</span>
+<span class="s">import json</span>
+<span class="s">irf = json.load(open(&#39;app/public/data/dsge/irfs/US_SW07/SW.json&#39;))</span>
+<span class="s">print(irf[&#39;interest_&#39;][&#39;output&#39;][1:6])</span>
+<span class="s"># [-0.16580525975153695, -0.24963376942455795, -0.28143044022347269,</span>
+<span class="s">#  -0.28161868356000974, -0.26371718338798245]</span>
+<span class="s">PY</span>
+</code></pre></div>
+<p><em>A contractionary policy shock lowers output on impact and the trough arrives around
+the fourth quarter — the shape one expects, which is the cheapest sanity check that
+the file, the indexing convention and the sign convention are all as documented.</em></p>
+<p><strong>Example 3 (Checking a shipped file against its index entry).</strong> <em>Two claims the
+index makes about each file can be checked without running the app: the content hash
+and the usable-shock list. We verify both for every menu entry. The loop resolves
+<code>meta.file</code> under <code>app/public/data/</code> by stripping the leading <code>/data/</code>, exactly as
+the loader does at runtime.</em></p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-<span class="w"> </span><span class="s">&lt;&lt;&#39;PY&#39;</span>
+<span class="s">import json, hashlib</span>
+<span class="s">idx = json.load(open(&#39;app/public/data/dsge/census/index.json&#39;))</span>
+<span class="s">for name, meta in idx[&#39;models&#39;].items():</span>
+<span class="s">    path = &#39;app/public/data&#39; + meta[&#39;file&#39;].replace(&#39;/data&#39;, &#39;&#39;, 1)</span>
+<span class="s">    got  = hashlib.sha256(open(path, &#39;rb&#39;).read()).hexdigest()</span>
+<span class="s">    irf  = json.load(open(path))</span>
+<span class="s">    assert got == meta[&#39;sha256&#39;], name</span>
+<span class="s">    assert set(meta[&#39;shocks&#39;]) &lt;= set(irf), name</span>
+<span class="s">    print(f&quot;{name:14s} ok  {len(meta[&#39;shocks&#39;])}/{len(irf)} shocks usable&quot;)</span>
+<span class="s">PY</span>
+</code></pre></div>
+<p><em>All twelve entries pass on the shipped tree, printing <code>7/8</code> for SW07 and <code>9/10</code> for
+CMR14 — the dropped zero-response columns — and <code>n/n</code> for everything else. The hash
+half of this check also runs inside the licence suite, so a file swapped without
+rebuilding the index turns the suite red.</em></p>
+<h3 id="136-provenance-where-each-file-actually-comes-from">13.6 Provenance — where each file actually comes from<a class="headerlink" href="#136-provenance-where-each-file-actually-comes-from" title="Permanent link">&para;</a></h3>
+<p>Three distinct production paths feed this payload, and they are worth keeping apart
+because they differ in what a "shock" is.</p>
+<p><strong>The injected MMB census (six models).</strong> <code>EA_SW03</code>, <code>EA_SWW14</code>, <code>CA_LS07</code>,
+<code>HK_FP13</code>, <code>BRA_SAMBA08</code> and <code>UK_SM11</code> are census runs of MMB models under the
+Taylor rule, carrying the MMB's <strong>injected generic shocks</strong> — <code>interest_</code>, <code>fiscal_</code>,
+<code>markup_</code>, <code>demand_</code>, <code>wage_</code>, <code>inv_</code>, <code>flex_</code>, <code>pref_</code>, <code>tech_</code>, of which each model
+supports the subset its equations admit (three to six). These are common shock
+<em>slots</em> imposed on heterogeneous models so that the same names mean the same thing
+across the menu; they are not the models' own estimated structural shocks. Their
+<code>sourceNote</code> is absent and their <code>source</code> is
+<code>pipeline/census_irfs/&lt;MODEL&gt;/Taylor.json</code>.</p>
+<p><strong>The FRB/US export with native residual shocks (two models).</strong> <code>US_FRB22</code> and
+<code>US_FRB22_var</code> are census runs of the same FRB/US linearisation — the second under
+VAR expectations rather than model-consistent ones — exposing <strong>54 shocks: the two
+injected ones plus the model's own 52 <code>_aerr</code> equation residuals</strong>. These are native
+to FRB/US, one per stochastic equation, which is what makes the clustering of §13.4
+necessary and the class layer rule-based. Their <code>sourceNote</code> is <code>"MMB census run"</code>,
+and both are sourced from <code>pipeline/census_irfs/</code> — note that <code>US_FRB22</code>'s source
+directory is <code>US_FRB22_mcap</code>, since it is the same linearisation as the two-shock
+entry below, run differently.</p>
+<p><strong>MMB rule files, indexed in place (four models).</strong> <code>US_SW07</code>, <code>US_CMR14</code>,
+<code>US_FRB08</code> and <code>US_FRB22_mcap</code> are read from the <code>irfs/</code> tree the app already ships,
+written by <code>pipeline/compute_irfs_mmb.m</code>, which drives the MMB CLI internals under
+MATLAB and Dynare 6 and requests IRFs by shock name. <code>US_FRB08</code> and <code>US_FRB22_mcap</code>
+were produced with that script's default <code>options.shocks = char('interest_',
+'fiscal_')</code> and therefore carry only those two, which is why <code>US_FRB22_mcap</code> is
+<code>menuHidden</code>: the 54-shock census entry supersedes it in the menu, but the index
+keeps it because the licence fixtures reference it. <code>US_SW07</code> and <code>US_CMR14</code> were <strong>regenerated by this feature with their
+full native shock sets</strong> — SW07's seven usable plus the zero-response <code>em</code>, CMR14's
+nine plus <code>e_term</code> — and the commit records that the <code>interest_</code> and <code>fiscal_</code>
+columns the policy-counterfactual panel reads are unchanged to ~5e-11, re-export
+rounding only.</p>
+<p>The hash discipline follows the split. For the eight census files the builder takes
+<code>sha256</code> from <code>pipeline/census_irfs/MANIFEST.json</code> and <strong>refuses to ship a file whose
+bytes do not match the manifest</strong>; for the four rule-file entries it hashes the
+shipped file itself and records that in <code>sha256Source</code>. Either way the index states
+where its own hash came from.</p>
+<blockquote>
+<p><strong>Remark 6 (<code>pipeline/census_irfs/</code> is not on the deployed branch).</strong> The census
+tree, the 97-model IRF census that produced it, and the research memo on the failed
+model-free identification gate all live on <code>explore/shock-benchmark</code> under research
+hold. What ships is the copied output, the two validation benches, their
+transcripts and <code>class_maps.json</code>. In practical terms:
+<code>node app/scripts/build_drivers_index.mjs</code> <strong>cannot be run from the deploy branch</strong>
+— it fails on its first read of <code>MANIFEST.json</code> — and six of the eight rows of
+<code>bench_simple_decomp.m</code>, plus the FRB/US row of <code>bench_class_recovery.m</code>, need
+files that are not here either. The shipped <code>census/&lt;M&gt;.json</code> copies are
+byte-identical to their census sources by the hash gate, so the benches could be
+pointed at them, but both scripts hard-code the <code>pipeline/census_irfs</code> paths; that
+is a source edit, not a command-line option.</p>
+</blockquote>
+<h3 id="137-regenerating-and-validating-the-payload">13.7 Regenerating and validating the payload<a class="headerlink" href="#137-regenerating-and-validating-the-payload" title="Permanent link">&para;</a></h3>
+<p>The index and the census copies are built by one script, run from anywhere:</p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>app/scripts/build_drivers_index.mjs
+</code></pre></div>
+<p>It reads <code>pipeline/census_irfs/MANIFEST.json</code> and each census model's
+<code>&lt;srcDir&gt;/Taylor.json</code>, <code>pipeline/_shockbench/class_maps.json</code>, and the four
+<code>app/public/data/dsge/irfs/&lt;M&gt;/SW.json</code> files; it writes
+<code>app/public/data/dsge/census/index.json</code> and copies each census <code>Taylor.json</code> to
+<code>app/public/data/dsge/census/&lt;name&gt;.json</code>. Everything in <code>index.json</code> — usable
+shocks, dropped shocks, collinear pairs, clusters, <code>defaultNamed</code> — is recomputed
+from the response files on each run, so amending <code>class_maps.json</code> or replacing an
+IRF file means rebuilding the index.</p>
+<p>The two validation benches print to stdout and write no files; the committed
+transcripts under <code>docs/paper/</code> are captured output, so regenerating them means
+redirecting:</p>
+<div class="highlight"><pre><span></span><code>matlab<span class="w"> </span>-batch<span class="w"> </span><span class="s2">&quot;run(&#39;pipeline/bench_simple_decomp.m&#39;)&quot;</span><span class="w">   </span>&gt;<span class="w"> </span>docs/paper/simple_decomp_results.txt
+matlab<span class="w"> </span>-batch<span class="w"> </span><span class="s2">&quot;run(&#39;pipeline/bench_class_recovery.m&#39;)&quot;</span><span class="w">  </span>&gt;<span class="w"> </span>docs/paper/class_recovery_results.txt
+</code></pre></div>
+<p><strong>Example 4 (What a consumer should check after touching this payload).</strong> <em>The index
+is built by hand and sits in neither <code>npm test</code> nor the deploy workflow, so its own
+build-time checks are not standing gates. The standing gates are in the licence
+suite, and they are what a reviewer should run.</em></p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>app<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span><span class="nb">test</span><span class="w">          </span><span class="c1"># 26 licence tests across drivers-decomp{,-v2,-v3}.test.ts</span>
+</code></pre></div>
+<p><em>Four of those assertions are provenance rather than mathematics, and they are the
+ones that catch a stale payload: <code>index.shockClasses</code> must equal
+<code>pipeline/_shockbench/class_maps.json</code> exactly; every shipped file must hash to the
+<code>sha256</code> its index entry records; <code>index.horizonQuarters</code> must equal the engine's
+<code>DRIVERS_H</code>; and the shipped cluster partition must reproduce the connected
+components of the shipped pair list. A payload rebuilt without re-running them, or
+amended in the app instead of at the source, will pass <code>tsc</code> and fail here.</em></p>
+<p>Beyond the suite, three properties are worth confirming by hand on a new or replaced
+file, since they are assumptions the engine makes rather than things it checks:
+every shock carries the three common observables; every response array is length 21
+with a zero at index 0; and the observable key set is identical across the shocks of
+one file.</p>
+<h3 id="138-what-this-payload-does-not-establish">13.8 What this payload does not establish<a class="headerlink" href="#138-what-this-payload-does-not-establish" title="Permanent link">&para;</a></h3>
+<p>Stated plainly, because the contract is easy to over-read. The files describe
+responses and metadata; they license nothing on their own.</p>
+<ul>
+<li>The claim is <strong>model-conditional</strong>. A different lens gives a different answer, and
+  the lenses are not equally validated: <code>bench_simple_decomp.m</code> ran eight models —
+  <code>US_SW07</code>, <code>US_CMR14</code>, <code>EA_SW03</code>, <code>EA_SWW14</code>, <code>CA_LS07</code>, <code>HK_FP13</code>,
+  <code>BRA_SAMBA08</code>, <code>UK_SM11</code> — and never ran any FRB/US lens. The FRB/US entries are
+  backed only by the build-time recovery scan behind <code>defaultNamed</code>, which exists
+  for the two clustered models and <strong>not</strong> for <code>US_FRB08</code>.</li>
+<li>The validation is <strong>same-model recovery</strong>. It measures the estimator, not the
+  model and not the world.</li>
+<li>The class view is licensed at <strong>one</strong> configuration, on three coordinates
+  (Remark 2). A class map in <code>shockClasses</code> is membership data, not a licence.</li>
+<li>The clusters are <strong>empirical</strong>, not economic (Remark 4), and only the shipped
+  default naming carries a recovery check (Remark 5).</li>
+<li>Where a shock pair is flagged collinear, the split <strong>within</strong> the pair is not
+  identified.</li>
+<li>The seven-observable mode that the class licence requires is available on the
+  <strong>US bloc only</strong> — it needs the BVAR spec columns <code>CH</code>, <code>FNH</code>, <code>LXBC</code>, <code>JGDP</code> and
+  <code>LANAGRA</code>, and of the 52 shipped specs (§3) only <code>US</code> carries all five. Everywhere
+  else the drawer runs at three observables, where no menu configuration licenses a
+  class view.</li>
+</ul>
+<hr />
+<h2 id="14-out-of-sample-evaluation-contracts-the-em-bayesian-gvar-eval-harness">14. Out-of-sample evaluation contracts (the <code>em-bayesian-gvar-eval</code> harness)<a class="headerlink" href="#14-out-of-sample-evaluation-contracts-the-em-bayesian-gvar-eval-harness" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Scope note.</strong> The JSON contracts in §§1–13 are read by the <strong>deployed app</strong>.
 The three contracts below are read/written by the <strong>separate empirical-evaluation
 repository</strong> <code>em-bayesian-gvar-eval</code> (out-of-sample forecast horse-race +
 endogenous-US spillover analysis). They live in
@@ -2711,7 +4197,7 @@ endogenous-US spillover analysis). They live in
 full design is <code>em-bayesian-gvar-eval/docs/EMPIRICAL_PROTOCOL.md</code> (§§0–2). Results
 are <strong>preliminary/forthcoming</strong>; the contracts here are stable.</p>
 </blockquote>
-<h3 id="131-weights_asof_starty_endyjson-rolling-as-of-trade-weights-cache">13.1 <code>weights_asof_&lt;startY&gt;_&lt;endY&gt;.json</code> — rolling as-of trade weights cache<a class="headerlink" href="#131-weights_asof_starty_endyjson-rolling-as-of-trade-weights-cache" title="Permanent link">&para;</a></h3>
+<h3 id="141-weights_asof_starty_endyjson-rolling-as-of-trade-weights-cache">14.1 <code>weights_asof_&lt;startY&gt;_&lt;endY&gt;.json</code> — rolling as-of trade weights cache<a class="headerlink" href="#141-weights_asof_starty_endyjson-rolling-as-of-trade-weights-cache" title="Permanent link">&para;</a></h3>
 <p>The horse-race is a recursive expanding-window scheme over origins <code>t0 = 2010Q1 …
 2024Q4</code> (2020 COVID origins dropped). A hard look-ahead invariant (<code>EMPIRICAL_PROTOCOL.md</code>
 §0 invariant #2, decision D11) forbids using the shipped <strong>2021–2023</strong>
@@ -2819,7 +4305,7 @@ under a 6-bloc <code>blocs</code> list, because US is partner-only at this windo
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<h3 id="132-forecastsmodeloriginjson-per-origin-predictive-draw-clouds">13.2 <code>forecasts/&lt;model&gt;/&lt;origin&gt;.json</code> — per-origin predictive draw clouds<a class="headerlink" href="#132-forecastsmodeloriginjson-per-origin-predictive-draw-clouds" title="Permanent link">&para;</a></h3>
+<h3 id="142-forecastsmodeloriginjson-per-origin-predictive-draw-clouds">14.2 <code>forecasts/&lt;model&gt;/&lt;origin&gt;.json</code> — per-origin predictive draw clouds<a class="headerlink" href="#142-forecastsmodeloriginjson-per-origin-predictive-draw-clouds" title="Permanent link">&para;</a></h3>
 <p>For each <code>(model, origin)</code> the driver (<code>matlab/oos_driver.m</code> →
 <code>matlab/harvest_forecasts.m</code>) writes one file holding the <strong>full predictive draw
 cloud</strong> (not just the mean) for the headline targets, sliced from the estimator's
@@ -2914,7 +4400,7 @@ native <code>Dforecast(H, n, nDraws−nBurn)</code>. Models are one directory ea
 <tr>
 <td><code>weightsWindow</code></td>
 <td>string</td>
-<td>the as-of weights window used (copied from §13.1's <code>window</code>)</td>
+<td>the as-of weights window used (copied from §14.1's <code>window</code>)</td>
 </tr>
 <tr>
 <td><code>seed</code></td>
@@ -2976,12 +4462,12 @@ shapes shown for one target):</strong></p>
 </code></pre></div>
 <blockquote>
 <p>The scoring harness (<code>eval/score.py</code>, <code>eval/tables.py</code>) ingests these clouds plus
-<code>realizations.json</code> (§13.3) and emits RMSE/MAE, <strong>CRPS</strong> (primary density score),
+<code>realizations.json</code> (§14.3) and emits RMSE/MAE, <strong>CRPS</strong> (primary density score),
 parametric log-score, PIT/coverage, and the Giacomini–White / Clark–West /
 Diebold–Mariano differentials (with Romano–Wolf + Model Confidence Set for
 multiplicity), per <code>EMPIRICAL_PROTOCOL.md</code> §1.7.</p>
 </blockquote>
-<h3 id="133-realizationsjson-the-truth-panel-for-scoring">13.3 <code>realizations.json</code> — the truth panel for scoring<a class="headerlink" href="#133-realizationsjson-the-truth-panel-for-scoring" title="Permanent link">&para;</a></h3>
+<h3 id="143-realizationsjson-the-truth-panel-for-scoring">14.3 <code>realizations.json</code> — the truth panel for scoring<a class="headerlink" href="#143-realizationsjson-the-truth-panel-for-scoring" title="Permanent link">&para;</a></h3>
 <p>The realized target values read from the <strong>full (untruncated) 2025Q4 vintage</strong>,
 written by <code>matlab/build_realizations.m</code> and indexed by <code>[bloc][target][date]</code> →
 <strong>scalar</strong> (the realized value in the <em>same scored space</em> as the forecasts: <code>4·Δ</code>
@@ -3140,6 +4626,10 @@ different solve paths:
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025–2026 Matyas Farkas — GPL-3.0-only
+    </div>
   
   
     Made with
