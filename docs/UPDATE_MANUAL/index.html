@@ -872,15 +872,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-installing-gmaps-400" class="md-nav__link">
+  <a href="#2-installing-gmaps-410" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Installing GMAPS 4.0.0
+        2. Installing GMAPS 4.1.0
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Installing GMAPS 4.0.0">
+    <nav class="md-nav" aria-label="2. Installing GMAPS 4.1.0">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1412,15 +1412,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-installing-gmaps-400" class="md-nav__link">
+  <a href="#2-installing-gmaps-410" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Installing GMAPS 4.0.0
+        2. Installing GMAPS 4.1.0
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Installing GMAPS 4.0.0">
+    <nav class="md-nav" aria-label="2. Installing GMAPS 4.1.0">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1770,14 +1770,14 @@
 <p><strong>How to keep GMAPS current: data updates, model updates, and new app versions.</strong>
 For two readers: <strong>users</strong> of the desktop app (sections 1–3) and the <strong>maintainer</strong> who produces updates
 (sections 4–9). Section 10 is a reference.</p>
-<p><em>Applies to GMAPS 4.0.0 and later. Last revised 2026-10-08. The websites run data pack <code>2026Q2-reest-20261008b</code>
-(data through 2026Q2, the genuine-data model update of October 2026); the 4.0.0 desktop installer carries
-<code>2026Q1-20261006</code> (section 7.4).</em></p>
+<p><em>Applies to GMAPS 4.0.0 and later. Last revised 2026-10-09. Current release: app <strong>4.1.0</strong> with data pack
+<code>2026Q2-reest-20261008b</code> (data through 2026Q2, the genuine-data model update of October 2026), on the websites
+and in the desktop app.</em></p>
 <hr />
 <h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
 <ol>
 <li><a href="#1-what-changed-in-40-in-one-page">What changed in 4.0, in one page</a></li>
-<li><a href="#2-installing-gmaps-400">Installing GMAPS 4.0.0</a></li>
+<li><a href="#2-installing-gmaps-410">Installing GMAPS 4.1.0</a></li>
 <li><a href="#3-updating-the-data-on-your-computer-users">Updating the data on your computer (users)</a></li>
 <li><a href="#4-the-ideas-behind-updates-maintainer">The ideas behind updates (maintainer)</a></li>
 <li><a href="#5-monthly-is-an-update-due">Monthly: is an update due?</a></li>
@@ -1821,18 +1821,21 @@ after a data shift, never after a model update.</p>
   It runs on every build and refuses to ship a mis-dated pack.</li>
 </ul>
 <hr />
-<h2 id="2-installing-gmaps-400">2. Installing GMAPS 4.0.0<a class="headerlink" href="#2-installing-gmaps-400" title="Permanent link">&para;</a></h2>
+<h2 id="2-installing-gmaps-410">2. Installing GMAPS 4.1.0<a class="headerlink" href="#2-installing-gmaps-410" title="Permanent link">&para;</a></h2>
 <h3 id="windows-x64">Windows (x64)<a class="headerlink" href="#windows-x64" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Get <code>GMAPS_4.0.0_x64-setup.exe</code> (536 MB; or the no-install <code>GMAPS_4.0.0_x64-portable.exe</code>, 530 MB) from the
-   release page, and compare its SHA-256 with <code>SHA256SUMS.txt</code> (PowerShell: <code>Get-FileHash .\GMAPS_4.0.0_x64-setup.exe</code>).
-   The data built into 4.0.0 run to <strong>2026Q1</strong> (data pack <code>2026Q1-20261006</code>). The websites already show the
-   October 2026 model update (data to 2026Q2); see section 7.4 for how it reaches the desktop app.</li>
-<li>Double-click it. Windows SmartScreen may warn that the app is unrecognised (it is not code-signed).
-   Click <strong>More info → Run anyway</strong>.</li>
-<li>GMAPS needs Microsoft Edge WebView2, which is part of Windows 10/11. On an older or stripped-down
-   machine without it, install the "Evergreen WebView2 Runtime" from Microsoft.</li>
+<li>Get <code>GMAPS_4.1.0_x64-setup.exe</code> (571 MB; or the no-install <code>GMAPS_4.1.0_x64-portable.exe</code>, 564 MB) from the
+   release page (<code>desktop-v4.1.0</code> on GitHub), and compare its SHA-256 with <code>SHA256SUMS.txt</code>
+   (PowerShell: <code>Get-FileHash .\GMAPS_4.1.0_x64-setup.exe</code>):</li>
+<li>setup: <code>588bf2970d9bda85d908b0de68ffb3148b069c938ebda597d9a637c87cbc806f</code></li>
+<li>portable: <code>a3909aeb683749640e9d7406e0a7b3706da7a03a09ab60accaf3fb97a547cce2</code></li>
 </ol>
+<p>The data built into 4.1.0 run to <strong>2026Q2</strong> (data pack <code>2026Q2-reest-20261008b</code>). The earlier 4.0.0 installer
+   carried <code>2026Q1-20261006</code>.
+2. Double-click it. Windows SmartScreen may warn that the app is unrecognised (it is not code-signed).
+   Click <strong>More info → Run anyway</strong>.
+3. GMAPS needs Microsoft Edge WebView2, which is part of Windows 10/11. On an older or stripped-down
+   machine without it, install the "Evergreen WebView2 Runtime" from Microsoft.</p>
 <p><strong>Windows on a Mac (Parallels/UTM on Apple silicon).</strong> That Windows is the ARM edition. It runs the x64 app
 through Windows' built-in x64 emulation. That works, but it is slower than a native build. A native
 ARM64 Windows build can be made on request.</p>
@@ -2201,7 +2204,7 @@ version.</p>
 an index level, and interior model-estimated quarters get amber marks. The 4.0.0 app accepts the pack
 (<code>minToolVersion</code> is 4.0.0), but it would show those two things the old way. A new app version (section 8) is
 the clean route. If you send an update pack instead, tell users about that difference.</p>
-<p>Status on 2026-10-08: neither has been done. Desktop users have <code>2026Q1-20261006</code>.</p>
+<p>Status: done for the October 2026 pack — app 4.1.0 (released 2026-10-09) carries it and the two display changes.</p>
 <hr />
 <h2 id="8-releasing-a-new-app-version">8. Releasing a new app version<a class="headerlink" href="#8-releasing-a-new-app-version" title="Permanent link">&para;</a></h2>
 <ol>

@@ -2448,7 +2448,7 @@ Compute). Quick=50 draws, Full=200.</p>
   derived-fiscal charts (the 41 fiscal economies) get a matching parallel-shift band (per-draw
   unconditional <code>computeFiscalBlock</code>, shifted by mean scenario−baseline PB/debt via <code>fiscalMeanRef</code>).</li>
 <li><strong>EXPERIMENTAL (per-draw iterative GVAR density, opt-in).</strong> Gated behind the store flag
-  <code>experimentalFeatures</code> (lower-left <code>ExperimentalToggle</code>). Re-solves the <strong>conditional</strong>
+  <code>experimentalFeatures</code> (the <strong>Experimental features</strong> switch in the lower-left <strong>Settings</strong> drawer, <code>SettingsPanel.tsx</code>). Re-solves the <strong>conditional</strong>
   cross-country system per draw (<code>runGvarBandSolve</code>). This is the conditional cloud — it pinches at
   pins (and collapses when lightly conditioned) and is slower. The request builder iterates the
   <strong>active</strong> GVAR bloc set (not a hardcoded subset), so every bloc's own-pins are carried;
