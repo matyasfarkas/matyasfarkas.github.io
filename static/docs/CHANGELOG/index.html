@@ -992,6 +992,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unreleased-on-the-websites-since-2026-10-11-next-desktop-release-counterfactual-uses-quarterly-inflation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [Unreleased] - on the websites since 2026-10-11 (next desktop release) — COUNTERFACTUAL USES QUARTERLY INFLATION
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-pack-2026q2-reest-20261011-2026-10-11-world-read-out-weighted-over-the-models-own-35-economies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [Data pack 2026Q2-reest-20261011] - 2026-10-11 — WORLD READ-OUT WEIGHTED OVER THE MODEL'S OWN 35 ECONOMIES
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#410-2026-10-08-desktop-release-with-the-2026q2-data-damaged-files-shown-on-screen" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1659,6 +1681,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unreleased-on-the-websites-since-2026-10-11-next-desktop-release-counterfactual-uses-quarterly-inflation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [Unreleased] - on the websites since 2026-10-11 (next desktop release) — COUNTERFACTUAL USES QUARTERLY INFLATION
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-pack-2026q2-reest-20261011-2026-10-11-world-read-out-weighted-over-the-models-own-35-economies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [Data pack 2026Q2-reest-20261011] - 2026-10-11 — WORLD READ-OUT WEIGHTED OVER THE MODEL'S OWN 35 ECONOMIES
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#410-2026-10-08-desktop-release-with-the-2026q2-data-damaged-files-shown-on-screen" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2312,6 +2356,45 @@
 <p><em>The detailed changelog. The repository root <code>CHANGELOG.md</code> carries the same releases as short release
 notes. Since 4.0.0, a model or data update ships as a data pack and is listed by its pack id; app versions are
 listed by version number.</em></p>
+<h2 id="unreleased-on-the-websites-since-2026-10-11-next-desktop-release-counterfactual-uses-quarterly-inflation">[Unreleased] - on the websites since 2026-10-11 (next desktop release) — COUNTERFACTUAL USES QUARTERLY INFLATION<a class="headerlink" href="#unreleased-on-the-websites-since-2026-10-11-next-desktop-release-counterfactual-uses-quarterly-inflation" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Policy counterfactual: the DSGE inflation response is now the quarterly one.</strong> The tool read the MMB series
+  <code>inflation</code>, which MMB defines as year-on-year inflation; in the shipped responses it is the 4-quarter average of
+  <code>inflationq</code>, the annualized quarter-on-quarter rate the Inflation panel shows. So the counterfactual showed about
+  a quarter of the first-quarter effect and a later peak. It now reads <code>inflationq</code> (monetary and fiscal
+  counterfactual, the chart's fallback path, and the optimal-policy solve). Example, US_SW07 with its own rule,
+  rate +1 pp for four quarters: first-quarter inflation effect −0.18 pp (was −0.045); price level after 12 quarters
+  −0.95% (was −0.87%).</li>
+<li><strong>Soft imported forecasts:</strong> the coupled solve keeps its budget of 12 sweeps (on the shipped pack within 0.04 pp
+  of the converged answer for GDP, inflation and policy rates). The code comment that said 60 is corrected.</li>
+<li>Evidence for the inflation change: MMB User Guide 2.3 p.21 ("<code>inflation</code> denotes the year-on-year inflation rate
+  … <code>inflationq</code> denotes the annualized quarter-to-quarter inflation rate"); <code>US_SW07.mod</code> lines 141-142
+  (<code>inflation = pinf4; inflationq = 4*pinf</code>); in 1,836 of the 1,960 shipped shock responses <code>inflation</code> equals the
+  4-quarter average of <code>inflationq</code> to 10⁻⁶. In the other 124 (US_FRB22_<em>, NK_PSV16, US_PV15, NK_FNL23, US_ACEL</em>
+  OW08/Taylor, EAUS_NAWM08) the two are defined differently; the counterfactual no longer depends on <code>inflation</code>.</li>
+<li>Measurements for the sweep budget (35 blocs, tol 10⁻⁴, reference converged to 10⁻⁷): 12 sweeps leave at most
+  0.039 / 0.026 / 0.015 pp on GDP, inflation and policy rates (US trust 0.7 / China / US trust 0.3), about 1.7% of
+  the scenario effect; full convergence takes 21–24 sweeps at about 3 s each.</li>
+<li>Tests: <code>counterfactual-inflationq</code> (new); <code>counterfactual-recovers-scenario</code> now uses the right US columns (its
+  hard-coded indices had gone stale: the "price" column was JC and the "rate" the 2-year yield).</li>
+</ul>
+<h2 id="data-pack-2026q2-reest-20261011-2026-10-11-world-read-out-weighted-over-the-models-own-35-economies">[Data pack 2026Q2-reest-20261011] - 2026-10-11 — WORLD READ-OUT WEIGHTED OVER THE MODEL'S OWN 35 ECONOMIES<a class="headerlink" href="#data-pack-2026q2-reest-20261011-2026-10-11-world-read-out-weighted-over-the-models-own-35-economies" title="Permanent link">&para;</a></h2>
+<p><strong>Only the world GDP weights change.</strong> Data and model are those of <code>2026Q2-reest-20261008b</code>.</p>
+<ul>
+<li>The GDP weights behind the World read-out (and the global scenario levers) still followed the earlier roster:
+  they included Russia, Argentina and Israel, which the 2026 re-estimation dropped, and left out Hong Kong SAR,
+  Singapore, Romania, Peru and the Philippines. So the read-out averaged 30 of the 35 coupled economies. Now
+  every coupled economy is weighted. Same source as before: IMF WEO April 2026, nominal GDP in US dollars,
+  2024; the euro area is the sum of its 20 members.</li>
+<li>Effect on the world baseline over the 12 quarters shown: GDP growth moves by at most 0.04 pp, inflation by at
+  most 0.05 pp. Weight covered by the read-out: 96.7% (30 economies, renormalised) → 100% (35).</li>
+<li>The five economies added, with their new weights: Singapore 0.57%, the Philippines 0.46%, Hong Kong SAR 0.41%,
+  Romania 0.38%, Peru 0.30%. The three removed (never used, since they are not in the model): Russia, Argentina,
+  Israel. The 2024 values of the other economies are unchanged (the July file is reproduced to 4·10⁻⁶).</li>
+<li>The weights are now built by a script, <code>pipeline/build_world_gdp_weights.py</code>. It takes the list of economies
+  from the shipped trade weights, so the two cannot drift apart again, and it stops if a value is missing.</li>
+<li>Desktop 4.1.0: the change fits in an update pack of one file (<code>2026Q2-reest-20261011_for_4.1.0.zip</code>, 0.1 MB).</li>
+</ul>
 <h2 id="410-2026-10-08-desktop-release-with-the-2026q2-data-damaged-files-shown-on-screen">[4.1.0] - 2026-10-08 — DESKTOP RELEASE WITH THE 2026Q2 DATA; DAMAGED FILES SHOWN ON SCREEN<a class="headerlink" href="#410-2026-10-08-desktop-release-with-the-2026q2-data-damaged-files-shown-on-screen" title="Permanent link">&para;</a></h2>
 <p><strong>The desktop app catches up with the websites.</strong> It ships the October 2026 re-estimation (data pack
 <code>2026Q2-reest-20261008b</code>, data through 2026Q2; see the entry below). A data file that fails its check is now

@@ -1736,7 +1736,8 @@ SHA-256 and size and dates every economy. The tool reads every data file through
 data is compiled in except the list of economies the UI knows. A new pack (a quarterly data shift or a
 re-estimated model) therefore needs no new app version: the web build serves whatever pack it was
 built with, and the desktop app reads an update pack dropped into its data folder. See §2a. The live
-pack is <code>2026Q2-reest-20261008b</code> (Oct 2026 genuine-data re-estimation, data to 2026Q2).</p>
+pack is <code>2026Q2-reest-20261011</code> = the Oct 2026 genuine-data re-estimation <code>2026Q2-reest-20261008b</code> (data to
+2026Q2) with <code>world_gdp_weights.json</code> rebuilt over the 35 coupled blocs (<code>pipeline/build_world_gdp_weights.py</code>).</p>
 <p>The economic content is a <strong>three-layer methodology</strong>:</p>
 <ol>
 <li><strong>Conditioning</strong> — impose user paths on any BVAR variable; solve the conditional forecast with a
@@ -2441,10 +2442,16 @@ canary asserts every deployed bloc's derived debt path stays bounded, and
 Compute). Quick=50 draws, Full=200.</p>
 <ul>
 <li><strong>DEFAULT (model-specific density, fast, on by default).</strong> For every posterior draw, take the
-  <strong>unconditional</strong> forecast (<code>bvarForecastDraw</code>, full forecast width) and <strong>parallel-shift</strong> it by
+  DK simulation-smoother draw conditioned on the <strong>global variables only</strong> (<code>dkSimulationDraw</code> with
+  <code>bandCondGlobals</code>; nothing for the US, where they are endogenous) and <strong>parallel-shift</strong> it by
   the <em>same</em> mean scenario delta sourced from <code>gvarBandRef.current.effective.forecasts</code> (the
-  GVAR-propagated path for any active GVAR bloc, else the single-country conditional). The band keeps full width
-  (does <strong>not</strong> collapse when one point is pinned) and centres on the displayed line. The
+  GVAR-propagated path for any active GVAR bloc, else the single-country conditional). At render time a
+  conditioned variable's band is closed onto the line at its pinned quarters (scenario-band render in
+  <code>ChartGrid.tsx</code>); every other cell keeps the full predictive width and centres on the displayed line.</li>
+<li><strong>CONDITIONAL (when the coupled path drives the line).</strong> If the GVAR solution drives the display
+  (<code>gvarDrivesBand</code>: Scenario spillovers on, or a full solve viewed on an un-pinned receiver) and no
+  fiscal target is set, each draw is instead conditioned on globals + foreign stars + the user's own pins
+  (<code>useConditional</code>, <code>bandCondScenario</code>), so other quarters and variables carry conditional spread too. The
   derived-fiscal charts (the 41 fiscal economies) get a matching parallel-shift band (per-draw
   unconditional <code>computeFiscalBlock</code>, shifted by mean scenario−baseline PB/debt via <code>fiscalMeanRef</code>).</li>
 <li><strong>EXPERIMENTAL (per-draw iterative GVAR density, opt-in).</strong> Gated behind the store flag
@@ -2459,7 +2466,8 @@ Compute). Quick=50 draws, Full=200.</p>
 <p><strong>Why two modes:</strong> the per-draw conditional re-solve over-determines the conditional mean when only
 a point or two is pinned, so it compresses too much; the default parallel-shift preserves the
 model's own forecast width while still centring on the scenario. The default is the right answer for
-almost everyone; the experimental mode is there for users who want the pinching behaviour.</p>
+almost everyone; the experimental mode is there for users who want the per-draw coupled cloud. (In
+every mode the pinned cells themselves show zero width — checked headless on the 4.1.0 build, 2026-10-11.)</p>
 <h3 id="8a-long-run-anchor-driftsetterts">8a. Long-run anchor — <code>driftSetter.ts</code><a class="headerlink" href="#8a-long-run-anchor-driftsetterts" title="Permanent link">&para;</a></h3>
 <p>A user can pin a <strong>long-run target</strong> for a variable. The anchor is a <strong>deterministic per-horizon
 display translation</strong>, not a re-estimation or a reweighting: <code>computeDriftDeltaFull</code> builds a
