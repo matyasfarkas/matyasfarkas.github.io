@@ -1152,30 +1152,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#barnichon-mestersts" class="md-nav__link">
+  <a href="#optimalpolicyts-since-2026-10-11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        barnichon-mesters.ts
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="barnichon-mesters.ts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#key-exports_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key exports
+        optimalPolicy.ts (since 2026-10-11)
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#barnichon-mestersts-superseded" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        barnichon-mesters.ts (superseded)
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1203,7 +1197,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-exports_5" class="md-nav__link">
+  <a href="#key-exports_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         Key exports
@@ -1253,7 +1247,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-exports_6" class="md-nav__link">
+  <a href="#key-exports_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         Key exports
@@ -2389,30 +2383,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#barnichon-mestersts" class="md-nav__link">
+  <a href="#optimalpolicyts-since-2026-10-11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        barnichon-mesters.ts
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="barnichon-mesters.ts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#key-exports_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key exports
+        optimalPolicy.ts (since 2026-10-11)
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#barnichon-mestersts-superseded" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        barnichon-mesters.ts (superseded)
+      
+    </span>
+  </a>
   
 </li>
       
@@ -2440,7 +2428,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-exports_5" class="md-nav__link">
+  <a href="#key-exports_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         Key exports
@@ -2490,7 +2478,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-exports_6" class="md-nav__link">
+  <a href="#key-exports_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         Key exports
@@ -2969,9 +2957,14 @@ annualized growth rate is <code>4·Δ(level)</code> for a <code>log</code> varia
 <td>(dormant — no current importer)</td>
 </tr>
 <tr>
+<td><code>optimalPolicy.ts</code></td>
+<td>Optimal policy given the scenario (B&amp;M 2023 sufficient statistics; loss on scenario inflation + gap vs linear trend; optional rate smoothing)</td>
+<td><code>useConditionalForecast.ts</code></td>
+</tr>
+<tr>
 <td><code>barnichon-mesters.ts</code></td>
-<td>Optimal-policy QP (quadratic program; B&amp;M 2023 sufficient statistics)</td>
-<td><code>ControlPanel.tsx</code></td>
+<td>Superseded constant-target helper (tests only)</td>
+<td>—</td>
 </tr>
 <tr>
 <td><code>driftSetter.ts</code></td>
@@ -3932,12 +3925,40 @@ self-contained API kept for the rule-based path.</p>
 </tbody>
 </table>
 <hr />
-<h2 id="barnichon-mestersts"><code>barnichon-mesters.ts</code><a class="headerlink" href="#barnichon-mestersts" title="Permanent link">&para;</a></h2>
-<p><strong>Responsibility.</strong> Optimal monetary policy via the Barnichon &amp; Mesters (2023 AER) sufficient-
-statistics approach: given DSGE IRFs to a policy shock, find the shock sequence minimizing the
-central bank's loss, as a regularized least-squares QP <code>min (H·ε − b)ᵀ W (H·ε − b)</code>,
-<code>ε* = (HᵀWH)⁻¹ HᵀWb</code>.</p>
-<h3 id="key-exports_4">Key exports<a class="headerlink" href="#key-exports_4" title="Permanent link">&para;</a></h3>
+<h2 id="optimalpolicyts-since-2026-10-11"><code>optimalPolicy.ts</code> (since 2026-10-11)<a class="headerlink" href="#optimalpolicyts-since-2026-10-11" title="Permanent link">&para;</a></h2>
+<p><strong>Responsibility.</strong> Optimal monetary policy GIVEN THE SCENARIO, Barnichon &amp; Mesters (2023 AER) sufficient
+statistics. Loss over the display horizon: <code>λπ(π^s+Hπε−π*)² + λy(x^s+Hxε−y*)² + λΔi(Δi)²</code>, with π^s the
+scenario's displayed inflation (% q/q ann.), x^s its output gap vs a linear trend fitted on the shipped
+history of 100·log real GDP, i the counterfactual policy rate; Hπ/Hx/Hi = Toeplitz of the MMB <code>inflationq</code> /
+<code>outputgap</code> / <code>interest</code> responses from impact. λΔi (rate smoothing) is NOT in B&amp;M (slider, default 0).
+Stacked least squares, ridge 1e-12 × mean diagonal.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Input → output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>solveOptimalPolicy(o: OptimalPolicyInputs)</code></td>
+<td>scenario inflation / gap / rate paths, last observed rate, targets, weights, H → <code>{ shocks, rateAdj, rate, impliedInflation, impliedGap, loss }</code></td>
+</tr>
+<tr>
+<td><code>linearTrend(y)</code></td>
+<td>OLS of y on [1, t] over finite cells → <code>{ a, b, nObs }</code></td>
+</tr>
+</tbody>
+</table>
+<p>Called from <code>computeConditionalForecast</code> (<code>useConditionalForecast.ts</code>) when <code>policyMode === 'optimal'</code> and the
+counterfactual is on: it builds the displayed scenario paths (incl. the long-run drift), solves, and uses the
+path as the rate adjustment (every quarter of the horizon constrained; irf-consistent forced; no BVAR
+fallback). The result is returned as <code>optimalPolicy</code> (<code>OptimalPolicyReport</code>); <code>ChartGrid</code> writes the path back
+to the scenario (equality-guarded) and publishes the read-out (<code>store.optimalPolicyInfo</code>) for <code>ControlPanel</code>.
+Tests: <code>optimal-policy.test.ts</code>.</p>
+<h2 id="barnichon-mestersts-superseded"><code>barnichon-mesters.ts</code> (superseded)<a class="headerlink" href="#barnichon-mestersts-superseded" title="Permanent link">&para;</a></h2>
+<p>The original helper (constant targets, no scenario; y/y <code>inflation</code> until 2026-10-11). <strong>Not used by the app
+since 2026-10-11</strong>; kept only for <code>barnichon-mesters.test.ts</code>.</p>
 <table>
 <thead>
 <tr>
@@ -3948,16 +3969,14 @@ central bank's loss, as a regularized least-squares QP <code>min (H·ε − b)�
 <tbody>
 <tr>
 <td><code>optimizePolicy(irfs: DSGEIRFs, targetInflation, targetOutput, lambdaPi, lambdaY)</code></td>
-<td><code>irfs = { inflation, outputgap, interest }</code> (number[] IRFs); targets are <code>Float64Array(H)</code> deviations. → <code>BMOptimizationResult</code> (<code>optimalShocks</code>, <code>policyPath</code>, <code>impliedInflation</code>, <code>impliedOutput</code>, <code>loss</code>). Builds Toeplitz convolution matrices via <code>matrix.toeplitzLower</code>; normal equations regularized with <strong>Tikhonov <code>α = 1e-6</code></strong> on the diagonal.</td>
+<td>constant-target QP, Tikhonov <code>α = 1e-6</code>.</td>
 </tr>
 <tr>
-<td><code>computeCounterfactualDeltas(irfs: Record&lt;string, number[]&gt;, rateDeviation: Float64Array)</code></td>
-<td>back out the shock sequence from a desired rate deviation (forward substitution on the lower-triangular interest IRF), then convolve every IRF → <code>Record&lt;string, Float64Array&gt;</code> of per-variable deltas. Reads <code>irfs['interest']</code> or <code>irfs['interest_']</code>; <strong>throws</strong> if neither is present or if the impact effect <code>|interestIRF[0]| &lt; 1e-6</code>.</td>
+<td><code>computeCounterfactualDeltas(irfs, rateDeviation)</code></td>
+<td>back out the shock sequence from a rate deviation and convolve every IRF.</td>
 </tr>
 </tbody>
 </table>
-<p><code>optimizePolicy</code> is called from <code>components/controls/ControlPanel.tsx</code>. <code>computeCounterfactualDeltas</code>
-is currently only exercised by <code>barnichon-mesters.test.ts</code>.</p>
 <hr />
 <h2 id="driftsetterts"><code>driftSetter.ts</code><a class="headerlink" href="#driftsetterts" title="Permanent link">&para;</a></h2>
 <p><strong>Responsibility.</strong> The live user-facing long-run-target ("Prior for the Long Run"-style) anchor.
@@ -3976,7 +3995,7 @@ production entry <code>computeDriftDeltaFull</code> solves multiple set targets 
 (<code>AnchorShape</code>, default <strong><code>transition</code></strong> — phased in along the variable's own estimated convergence
 profile so there is no origin jump; both shapes share the same exact terminal). The GVAR cross-bloc
 spillover of a local anchor lives in <code>gvarDriftSpillover.ts</code>.</p>
-<h3 id="key-exports_5">Key exports<a class="headerlink" href="#key-exports_5" title="Permanent link">&para;</a></h3>
+<h3 id="key-exports_4">Key exports<a class="headerlink" href="#key-exports_4" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -4131,7 +4150,7 @@ contribution equally where the raw min-norm would split it 4:1.</p>
 <p>Contributions are always formed through the <strong>raw, unweighted</strong> <code>Θ</code> and the un-normalised <code>ε</code>, because
 <code>Θ·ε ≡ ΘN·ε̂N</code> exactly. Row weights therefore never touch the reported contributions; they change only
 which solution the underdetermined solve selects.</p>
-<h3 id="key-exports_6">Key exports<a class="headerlink" href="#key-exports_6" title="Permanent link">&para;</a></h3>
+<h3 id="key-exports_5">Key exports<a class="headerlink" href="#key-exports_5" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
