@@ -992,10 +992,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#unreleased-web-2026-10-08-data-files-that-fail-a-check-are-shown-on-screen" class="md-nav__link">
+  <a href="#410-2026-10-08-desktop-release-with-the-2026q2-data-damaged-files-shown-on-screen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        [Unreleased — web] - 2026-10-08 — DATA FILES THAT FAIL A CHECK ARE SHOWN ON SCREEN
+        [4.1.0] - 2026-10-08 — DESKTOP RELEASE WITH THE 2026Q2 DATA; DAMAGED FILES SHOWN ON SCREEN
       
     </span>
   </a>
@@ -1659,10 +1659,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#unreleased-web-2026-10-08-data-files-that-fail-a-check-are-shown-on-screen" class="md-nav__link">
+  <a href="#410-2026-10-08-desktop-release-with-the-2026q2-data-damaged-files-shown-on-screen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        [Unreleased — web] - 2026-10-08 — DATA FILES THAT FAIL A CHECK ARE SHOWN ON SCREEN
+        [4.1.0] - 2026-10-08 — DESKTOP RELEASE WITH THE 2026Q2 DATA; DAMAGED FILES SHOWN ON SCREEN
       
     </span>
   </a>
@@ -2312,22 +2312,34 @@
 <p><em>The detailed changelog. The repository root <code>CHANGELOG.md</code> carries the same releases as short release
 notes. Since 4.0.0, a model or data update ships as a data pack and is listed by its pack id; app versions are
 listed by version number.</em></p>
-<h2 id="unreleased-web-2026-10-08-data-files-that-fail-a-check-are-shown-on-screen">[Unreleased — web] - 2026-10-08 — DATA FILES THAT FAIL A CHECK ARE SHOWN ON SCREEN<a class="headerlink" href="#unreleased-web-2026-10-08-data-files-that-fail-a-check-are-shown-on-screen" title="Permanent link">&para;</a></h2>
-<p><strong>A damaged or missing data file is now named on screen, and nothing that depends on it is shown.</strong>
-Until now, a file that failed its size or SHA-256 check after start-up was refused, but the message went only
-to the browser console:
-- the global model quietly left that economy out of the coupled solve;
-- a failing trade-weights file was replaced by the build-time copy;
-- a country that failed to load kept showing the previous country's charts under the new name.</p>
-<p>Now:
-- a red banner at the bottom of the screen names each file that failed;
-- a country that fails to load shows an error panel instead of charts;
-- the global model refuses to load from a partial set of economies, or from fallback weights, and says so.</p>
-<p>A file the data pack does not list is still treated as "not shipped" (for example an economy without a fiscal
-block); only a listed file that fails is an error. Web builds verify every file before publishing, so this
-concerns files damaged in transit or on a desktop disk. Tests: <code>dataManifest-errors</code>, <code>gvarLoader-strict</code>,
-<code>loadBVARData-country</code>; checked in a browser with a deliberately damaged file. Web only so far; not in a
-desktop installer.</p>
+<h2 id="410-2026-10-08-desktop-release-with-the-2026q2-data-damaged-files-shown-on-screen">[4.1.0] - 2026-10-08 — DESKTOP RELEASE WITH THE 2026Q2 DATA; DAMAGED FILES SHOWN ON SCREEN<a class="headerlink" href="#410-2026-10-08-desktop-release-with-the-2026q2-data-damaged-files-shown-on-screen" title="Permanent link">&para;</a></h2>
+<p><strong>The desktop app catches up with the websites.</strong> It ships the October 2026 re-estimation (data pack
+<code>2026Q2-reest-20261008b</code>, data through 2026Q2; see the entry below). A data file that fails its check is now
+named on screen.</p>
+<ul>
+<li><strong>Built-in data:</strong> pack <code>2026Q2-reest-20261008b</code>. The 4.0.0 installer shipped <code>2026Q1-20261006</code>.</li>
+<li><strong>Data files that fail a check are shown on screen.</strong> Until now, a file that failed its size or SHA-256 check
+  after start-up was refused, but the message went only to the browser console:</li>
+<li>the global model quietly left that economy out of the coupled solve;</li>
+<li>a failing trade-weights file was replaced by the build-time copy;</li>
+<li>a country that failed to load kept showing the previous country's charts.</li>
+</ul>
+<p>Now a red banner names each file that failed, and a country that fails shows an error panel instead of
+  charts. The global model refuses to load from a partial set of economies, or from fallback weights, and says
+  so. A file the data pack does not list is still treated as "not shipped" (for example an economy without a
+  fiscal block); only a listed file that fails is an error.
+- <strong>About shows the data pack</strong> (pack id and "data through") next to the tool version, since data and model
+  now change without a new app version.
+- <strong>Display changes the new data need:</strong>
+  - every effective exchange rate is shown as an index level;
+  - model-estimated quarters inside the history (for example US CPI in 2025Q4) get amber marks, not only the
+    nowcast tail.
+- <strong>Downloads:</strong> Windows x64 installer and portable exe, on the release page of both repositories (unsigned:
+  SmartScreen → More info → Run anyway). macOS: build from source (<code>docs/UPDATE_MANUAL.md</code> §2).
+- <strong>Updates:</strong> the built-in pack is recorded (<code>pipeline/released_packs/4.1.0.manifest.json</code>), so future data
+  shifts cut an update pack for 4.1.0 as well as for 4.0.0.</p>
+<p>Tests: <code>dataManifest-errors</code>, <code>gvarLoader-strict</code>, <code>loadBVARData-country</code>; checked in a browser with a
+deliberately damaged file.</p>
 <h2 id="data-pack-2026q2-reest-20261008b-2026-10-08-genuine-data-re-estimation-data-to-2026q2-web-app-400">[Data pack 2026Q2-reest-20261008b] - 2026-10-08 — GENUINE-DATA RE-ESTIMATION, DATA TO 2026Q2 (web; app 4.0.0)<a class="headerlink" href="#data-pack-2026q2-reest-20261008b-2026-10-08-genuine-data-re-estimation-data-to-2026q2-web-app-400" title="Permanent link">&para;</a></h2>
 <p><strong>Every economy rebuilt from published data, the whole model re-estimated with no filled values, data through
 2026Q2.</strong> This is the first model update delivered as a data pack under 4.0's separation of data and model from
@@ -2375,7 +2387,7 @@ the app. Review record: <code>docs/reest-2026/REVIEW.md</code> (old-vs-new table
   - Ireland and Luxembourg GDP are negative in year 1.
   - Euro-area inflation is 3.3% in year 1 and 4.5% in year 2.
   - BR, MY and CR have loose priors (short samples).
-- <strong>App code that went out with this pack</strong> (web only; not in the 4.0.0 desktop installer):
+- <strong>App code that went out with this pack</strong> (on the web at once; on the desktop with 4.1.0):
   - every effective exchange rate is shown as an index level;
   - interior model-estimated history quarters get amber marks, not only the nowcast tail.
 - <strong>gmapsmodel.com is live again.</strong> A build-skip rule added on 5 Aug 2026 had cancelled every Netlify build since
@@ -2386,9 +2398,8 @@ the app. Review record: <code>docs/reest-2026/REVIEW.md</code> (old-vs-new table
   - <code>pack-verify --full</code>: 4,221 checks pass.
   - Test suite: 10 data-dependent failures, each updated or re-specified (<code>REVIEW.md</code> §8).
   - Headless browser on both live sites: all 52 economies load, dated "Data to 2026 Q2", with no page errors.</p>
-<p>Open: the 4.0.0 desktop installer still carries data pack <code>2026Q1-20261006</code>. No update pack has been cut for it.
-This pack also expects the two display changes above. Bringing desktop users to this release therefore needs a new
-installer (or an update pack plus a note that those two displays differ). Next data round: <code>PLAN.md</code> §10.</p>
+<p>Desktop: the 4.0.0 installer carried data pack <code>2026Q1-20261006</code>; this pack reaches desktop users with app
+<strong>4.1.0</strong> (entry above), which also has the two display changes it needs. Next data round: <code>PLAN.md</code> §10.</p>
 <h2 id="400-2026-10-05-data-and-model-separated-from-the-app-imf-circulation">[4.0.0] - 2026-10-05 — DATA AND MODEL SEPARATED FROM THE APP (IMF circulation)<a class="headerlink" href="#400-2026-10-05-data-and-model-separated-from-the-app-imf-circulation" title="Permanent link">&para;</a></h2>
 <p><strong>Data and model updates no longer need a new app version, and the dates now come from the data.</strong></p>
 <ul>
