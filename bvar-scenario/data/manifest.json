@@ -1,9 +1,9 @@
 {
  "schemaVersion": "2.0",
  "minToolVersion": "4.0.0",
- "packId": "2026Q2-reest-20261008b",
- "previousPackId": null,
- "generatedAt": "2026-10-08T17:47:39.260Z",
+ "packId": "2026Q2-reest-20261011",
+ "previousPackId": "2026Q2-reest-20261008b",
+ "generatedAt": "2026-10-11T09:28:47.922Z",
  "generatedBy": "pack-build.mjs v0",
  "panel": {
   "lastHistQuarter": "2026Q2"
@@ -3275,8 +3275,8 @@
   },
   "bvar/gvar/world_gdp_weights.json": {
    "path": "bvar/gvar/world_gdp_weights.json",
-   "sha256": "e501fd0ecd0caf4a8b1db0eb3b1ad90dc89a8b5e284c1b084312abbe36f0119d",
-   "bytes": 1383
+   "sha256": "c5ef68b85869d0fe1f08c7245f98e7d540742a55e155983fc463a3dfcb48198d",
+   "bytes": 2510
   },
   "cookbook/cookbook.json": {
    "path": "cookbook/cookbook.json",
