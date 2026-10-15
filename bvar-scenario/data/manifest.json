@@ -1,9 +1,9 @@
 {
  "schemaVersion": "2.0",
  "minToolVersion": "4.0.0",
- "packId": "2026Q2-reest-20261011",
- "previousPackId": "2026Q2-reest-20261008b",
- "generatedAt": "2026-10-11T09:28:47.922Z",
+ "packId": "2026Q2-reest-20261015b",
+ "previousPackId": "2026Q2-reest-20261015",
+ "generatedAt": "2026-10-15T20:01:12.316Z",
  "generatedBy": "pack-build.mjs v0",
  "panel": {
   "lastHistQuarter": "2026Q2"
@@ -3475,13 +3475,13 @@
   },
   "dsge/irfs/CL_MS07/CMR.json": {
    "path": "dsge/irfs/CL_MS07/CMR.json",
-   "sha256": "7bfdee9b0023ceaf3566729c2b5be007de80066f39b47a0093650b993ee55b1c",
-   "bytes": 100049
+   "sha256": "e5f096e5fa9fd7308a49b9fe4c5b61199f628029a02829fce7327bf8246b6ab6",
+   "bytes": 132930
   },
   "dsge/irfs/CL_MS07/Coenen.json": {
    "path": "dsge/irfs/CL_MS07/Coenen.json",
-   "sha256": "72b3ad0b5b54256e45ad15c58125fef2d451b431fd598901c590155721584e8c",
-   "bytes": 100363
+   "sha256": "3fa7856fc8d395c4d758063af9a0007779bef33a2a29bafeb13a946cda6c1c2f",
+   "bytes": 138627
   },
   "dsge/irfs/CL_MS07/GR.json": {
    "path": "dsge/irfs/CL_MS07/GR.json",
@@ -3500,8 +3500,8 @@
   },
   "dsge/irfs/CL_MS07/OW13.json": {
    "path": "dsge/irfs/CL_MS07/OW13.json",
-   "sha256": "398ed8143f0db169cf65cb4dd731bc8ef5383b4d92cf4c3a106d7289ab975487",
-   "bytes": 102250
+   "sha256": "fa0157b13d11fa18d4cd05ebb03ad205528c6a7cb8f952e5b3bdcb9d5d41b266",
+   "bytes": 133818
   },
   "dsge/irfs/CL_MS07/SW.json": {
    "path": "dsge/irfs/CL_MS07/SW.json",
@@ -3595,8 +3595,8 @@
   },
   "dsge/irfs/EACZ_GEM03/Taylor.json": {
    "path": "dsge/irfs/EACZ_GEM03/Taylor.json",
-   "sha256": "c2819d4b2e290f7ff82280a19e44f8e4eb4fc7844f478e53f1be2d7292579a33",
-   "bytes": 181482
+   "sha256": "a8546eba37b180b7c8bf8cdcc4ef11bd3df07b38db6c1854726f6bebcc2e368c",
+   "bytes": 245526
   },
   "dsge/irfs/EAES_RA09/CEE.json": {
    "path": "dsge/irfs/EAES_RA09/CEE.json",
@@ -3715,8 +3715,8 @@
   },
   "dsge/irfs/EA_AWM05/GR.json": {
    "path": "dsge/irfs/EA_AWM05/GR.json",
-   "sha256": "f8f4858a45f376cae77977694e2c0fe01b75de43167555b93825aecc7fc83612",
-   "bytes": 145579
+   "sha256": "568a315ddea3b606faa3aa49dbac9fb626b889197a3bbec89fc15ec0e265dff0",
+   "bytes": 199178
   },
   "dsge/irfs/EA_AWM05/LWW.json": {
    "path": "dsge/irfs/EA_AWM05/LWW.json",
@@ -3845,13 +3845,13 @@
   },
   "dsge/irfs/EA_CKL09/OW08.json": {
    "path": "dsge/irfs/EA_CKL09/OW08.json",
-   "sha256": "b9ffb10ca2d83615d4a76595def1af042dab16e654fbf850833e98dc45a63e42",
-   "bytes": 47638
+   "sha256": "f6c3f91bde4e693b5a338b01079b91a2aa7ef648d34b6a190823d51e571b2e53",
+   "bytes": 63742
   },
   "dsge/irfs/EA_CKL09/OW13.json": {
    "path": "dsge/irfs/EA_CKL09/OW13.json",
-   "sha256": "e5c0db55477b26108b94c72d0baa1daed1d4dfd1fd516897d5c36faa0b69ffa3",
-   "bytes": 48562
+   "sha256": "3447edaf57b3539e6e7052d69f05ad3cd2d2775efb2892356defc50a52b7e5b4",
+   "bytes": 63325
   },
   "dsge/irfs/EA_CKL09/SW.json": {
    "path": "dsge/irfs/EA_CKL09/SW.json",
@@ -4415,8 +4415,8 @@
   },
   "dsge/irfs/EA_VI16bgg/CMR.json": {
    "path": "dsge/irfs/EA_VI16bgg/CMR.json",
-   "sha256": "6dae9f7f6450f21879ac4a214104bc3c04dad76770a1bf3203ed18f226753c9e",
-   "bytes": 42493
+   "sha256": "187af96cf5d338e2599e069d8087fa571c6f990afca120ec94829186256758e2",
+   "bytes": 56257
   },
   "dsge/irfs/EA_VI16bgg/Coenen.json": {
    "path": "dsge/irfs/EA_VI16bgg/Coenen.json",
@@ -4430,8 +4430,8 @@
   },
   "dsge/irfs/EA_VI16bgg/LWW.json": {
    "path": "dsge/irfs/EA_VI16bgg/LWW.json",
-   "sha256": "a2e72a22f440b7f196c646d02c176f638189afe6d9f208cb575d7ea243288488",
-   "bytes": 42799
+   "sha256": "1932977188cd8e5fdee3ae557e458eb428994acd5d5c8a349f8783ec983cd8f0",
+   "bytes": 56824
   },
   "dsge/irfs/EA_VI16bgg/OW08.json": {
    "path": "dsge/irfs/EA_VI16bgg/OW08.json",
@@ -4975,8 +4975,8 @@
   },
   "dsge/irfs/NK_BGEU10/Coenen.json": {
    "path": "dsge/irfs/NK_BGEU10/Coenen.json",
-   "sha256": "7e82959e83d82f6ff7f51223ed5c094b2e1edb751d652fe7c0ecddaa87d8cbb1",
-   "bytes": 17908
+   "sha256": "e23b94db4ff46697a160abf8916ba2dd5d50ef93096b9652505de26d7771b8ba",
+   "bytes": 21766
   },
   "dsge/irfs/NK_BGEU10/GR.json": {
    "path": "dsge/irfs/NK_BGEU10/GR.json",
@@ -4995,8 +4995,8 @@
   },
   "dsge/irfs/NK_BGEU10/OW13.json": {
    "path": "dsge/irfs/NK_BGEU10/OW13.json",
-   "sha256": "e4c0c402abf279f7477aaa75c37f31151b9e9d43b926bfd45772244cbc13386b",
-   "bytes": 18372
+   "sha256": "d9f05978c30ef1b61ce7fb8849d272f649aa47f697466f6462dbd9abe3d1b423",
+   "bytes": 21596
   },
   "dsge/irfs/NK_BGEU10/SW.json": {
    "path": "dsge/irfs/NK_BGEU10/SW.json",
@@ -5080,8 +5080,8 @@
   },
   "dsge/irfs/NK_BGUS10/OW13.json": {
    "path": "dsge/irfs/NK_BGUS10/OW13.json",
-   "sha256": "863794cb0278926b7a725f373f7a4491a73878a83843b68f48626e2f5b04eb7b",
-   "bytes": 20773
+   "sha256": "f7fa9b5acf5708a2d2e8edbf2b319b2473dbf6953672066390eb804d9685c8d8",
+   "bytes": 21643
   },
   "dsge/irfs/NK_BGUS10/SW.json": {
    "path": "dsge/irfs/NK_BGUS10/SW.json",
@@ -5695,8 +5695,8 @@
   },
   "dsge/irfs/NK_GLSV07/SW.json": {
    "path": "dsge/irfs/NK_GLSV07/SW.json",
-   "sha256": "f9ebebb509a554ef5bfb0bfd45091b698573beed64ae3ee225c5c5ad5e94fb89",
-   "bytes": 29295
+   "sha256": "73faef89a9630daa28c68a3ee1fdc9f0e18a3337010da2a56484bb59d1474e71",
+   "bytes": 38831
   },
   "dsge/irfs/NK_GLSV07/Taylor.json": {
    "path": "dsge/irfs/NK_GLSV07/Taylor.json",
@@ -6385,8 +6385,8 @@
   },
   "dsge/irfs/NK_MI14/GR.json": {
    "path": "dsge/irfs/NK_MI14/GR.json",
-   "sha256": "cb067ce617f1f2227a49b3b639edbd8e5951efd51beaf3c97cf0e53571f7ec26",
-   "bytes": 35204
+   "sha256": "077b77159687e6d67644f6025de7a1d873f80aafa0ace1993032d73d2fab81a2",
+   "bytes": 47029
   },
   "dsge/irfs/NK_MI14/LWW.json": {
    "path": "dsge/irfs/NK_MI14/LWW.json",
@@ -6435,8 +6435,8 @@
   },
   "dsge/irfs/NK_MPT10/CEE.json": {
    "path": "dsge/irfs/NK_MPT10/CEE.json",
-   "sha256": "3638e3430e6cf7bf7ab67d9488e765a83180262297f6b51972e1ea4f8f30e096",
-   "bytes": 59457
+   "sha256": "779944d903987f3b1592c2aba3f02e67945e7a30a9278d258e50ee5c240a8cf5",
+   "bytes": 80751
   },
   "dsge/irfs/NK_MPT10/CMR.json": {
    "path": "dsge/irfs/NK_MPT10/CMR.json",
@@ -6470,8 +6470,8 @@
   },
   "dsge/irfs/NK_MPT10/Taylor.json": {
    "path": "dsge/irfs/NK_MPT10/Taylor.json",
-   "sha256": "3638e3430e6cf7bf7ab67d9488e765a83180262297f6b51972e1ea4f8f30e096",
-   "bytes": 59457
+   "sha256": "e7f2278826ab45a6ab17258c52334ec1e5e5516feab3050242fb894ed063254d",
+   "bytes": 74811
   },
   "dsge/irfs/NK_NS14/CEE.json": {
    "path": "dsge/irfs/NK_NS14/CEE.json",
@@ -6790,8 +6790,8 @@
   },
   "dsge/irfs/UK_SM11/GR.json": {
    "path": "dsge/irfs/UK_SM11/GR.json",
-   "sha256": "0618793c000485a8d748856383b36b46ea3dbc87808aeba91465a9b4de105a0c",
-   "bytes": 112880
+   "sha256": "781f123370e6f0bae710bf2e01e01a7c999cd112be6e1b279b1354f99a1198ef",
+   "bytes": 152033
   },
   "dsge/irfs/UK_SM11/LWW.json": {
    "path": "dsge/irfs/UK_SM11/LWW.json",
@@ -6815,8 +6815,8 @@
   },
   "dsge/irfs/UK_SM11/Taylor.json": {
    "path": "dsge/irfs/UK_SM11/Taylor.json",
-   "sha256": "b99af3262e89da95da06c458d02101b43bdb44de8a105323619f81cf4305c685",
-   "bytes": 112295
+   "sha256": "5fca044ec819feb507449fee655d8d28376826e5af6325f0ec884ea3ba6e9648",
+   "bytes": 153354
   },
   "dsge/irfs/US_ACELm/CEE.json": {
    "path": "dsge/irfs/US_ACELm/CEE.json",
@@ -7200,8 +7200,8 @@
   },
   "dsge/irfs/US_CCTW10/Coenen.json": {
    "path": "dsge/irfs/US_CCTW10/Coenen.json",
-   "sha256": "99ae480dc8ece8ab12965043fcb46ff7e491f5aeb923c5f2030df4db0450787b",
-   "bytes": 54269
+   "sha256": "9aee4248b7fa02e94672ad70282375b96082080d8f314dfdbfcc2ddbcca68b2a",
+   "bytes": 74473
   },
   "dsge/irfs/US_CCTW10/GR.json": {
    "path": "dsge/irfs/US_CCTW10/GR.json",
@@ -9675,8 +9675,8 @@
   },
   "dsge/irfs/US_YR13/Coenen.json": {
    "path": "dsge/irfs/US_YR13/Coenen.json",
-   "sha256": "b33004e787f0a61659e1ec62cfda980f8bd75246553dc41b95cd52734d122570",
-   "bytes": 24690
+   "sha256": "4b9242a6b9a0e2c36d15a863ee29f59c33f99f450280ce4b77676a419910acd9",
+   "bytes": 33955
   },
   "dsge/irfs/US_YR13/GR.json": {
    "path": "dsge/irfs/US_YR13/GR.json",
@@ -9707,6 +9707,51 @@
    "path": "dsge/irfs/US_YR13/Taylor.json",
    "sha256": "5a12a0435e1b9cfd3875f5ea2ef79eb7c566faf6708fefbc2c4233f4f840640c",
    "bytes": 25160
+  },
+  "dsge/opp/CEE.json": {
+   "path": "dsge/opp/CEE.json",
+   "sha256": "bbdbde4302c37acf3e579bfa3ec9a8790585335f81ff5783b54a372fd1b6473b",
+   "bytes": 115314
+  },
+  "dsge/opp/CMR.json": {
+   "path": "dsge/opp/CMR.json",
+   "sha256": "71c2bf586bb665dcc020701f00a02df5dfee7520cee8b9abde791bbb7d6c064c",
+   "bytes": 115515
+  },
+  "dsge/opp/Coenen.json": {
+   "path": "dsge/opp/Coenen.json",
+   "sha256": "2f34bace95082962e0c4edc447a152fedb702875b1bfb9369f70e59e2374638d",
+   "bytes": 117053
+  },
+  "dsge/opp/GR.json": {
+   "path": "dsge/opp/GR.json",
+   "sha256": "60e61fe76f635ebac3b63a40c150c21eae0f22e1beebfdc836bfdc172fa7ae46",
+   "bytes": 127599
+  },
+  "dsge/opp/LWW.json": {
+   "path": "dsge/opp/LWW.json",
+   "sha256": "1f47e4a24471ebae1e836989a9e582ba36f690a5e2a371372057179ad968e51a",
+   "bytes": 116681
+  },
+  "dsge/opp/OW08.json": {
+   "path": "dsge/opp/OW08.json",
+   "sha256": "803986d7ceddf32291e737ada5c7640bd16dfc43e33da8fe9d5ee60e1eeb4b8c",
+   "bytes": 79744
+  },
+  "dsge/opp/OW13.json": {
+   "path": "dsge/opp/OW13.json",
+   "sha256": "fd2884f49f784a33074115691628f54034d2a2e3ec7e7e336831778a8305bb1c",
+   "bytes": 120133
+  },
+  "dsge/opp/SW.json": {
+   "path": "dsge/opp/SW.json",
+   "sha256": "93b395b2276693675ddfcafa598a14c96341bd0372559335cfc57329fdbfe161",
+   "bytes": 110347
+  },
+  "dsge/opp/Taylor.json": {
+   "path": "dsge/opp/Taylor.json",
+   "sha256": "62f1581f27ffce4982681fbc4adbc0ccdfdc99a97398f63b1fce8dc394ba62e8",
+   "bytes": 131117
   },
   "dsge/rules.json": {
    "path": "dsge/rules.json",
