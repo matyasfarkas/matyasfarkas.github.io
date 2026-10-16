@@ -1736,8 +1736,10 @@ SHA-256 and size and dates every economy. The tool reads every data file through
 data is compiled in except the list of economies the UI knows. A new pack (a quarterly data shift or a
 re-estimated model) therefore needs no new app version: the web build serves whatever pack it was
 built with, and the desktop app reads an update pack dropped into its data folder. See §2a. The live
-pack is <code>2026Q2-reest-20261011</code> = the Oct 2026 genuine-data re-estimation <code>2026Q2-reest-20261008b</code> (data to
-2026Q2) with <code>world_gdp_weights.json</code> rebuilt over the 35 coupled blocs (<code>pipeline/build_world_gdp_weights.py</code>).</p>
+pack is <code>2026Q2-reest-20261015b</code> = the Oct 2026 genuine-data re-estimation <code>2026Q2-reest-20261008b</code> (data to
+2026Q2) with <code>world_gdp_weights.json</code> rebuilt over the 35 coupled blocs (<code>pipeline/build_world_gdp_weights.py</code>,
+pack 20261011), plus the nine <code>dsge/opp/</code> optimal-move tables and 20 replaced DSGE response files (15 Oct; the
+intermediate id 20261015 was never published).</p>
 <p>The economic content is a <strong>three-layer methodology</strong>:</p>
 <ol>
 <li><strong>Conditioning</strong> — impose user paths on any BVAR variable; solve the conditional forecast with a
@@ -1803,6 +1805,7 @@ and the members are separate.</p>
     __tests__/               Vitest suites (see §11)
   scripts/                   Data-pipeline + pack tools run by hand (only `prebuild` runs some, §12)
     build_drivers_index.mjs  Emits public/data/dsge/census/{index.json,&lt;M&gt;.json} (§8c, §12b)
+    build_opp_table.mjs      Emits public/data/dsge/opp/&lt;rule&gt;.json — the optimal move&#39;s range across models (DATA_SCHEMA §15)
     precompute_gvar_coupling.mjs  Emits the GVAR coupling artifact (§12a)
     pack-build.mjs / pack-verify.mjs / pack-delta.mjs / pack-record-release.mjs
                              Stamp, verify, cut update packs from, and record the data pack (§2a)

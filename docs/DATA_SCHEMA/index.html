@@ -1246,6 +1246,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#15-the-optimal-move-response-tables-apppublicdatadsgeopprulejson-since-2026-10-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. The optimal-move response tables — app/public/data/dsge/opp/&lt;rule&gt;.json (since 2026-10-15)
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2034,6 +2045,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-the-optimal-move-response-tables-apppublicdatadsgeopprulejson-since-2026-10-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. The optimal-move response tables — app/public/data/dsge/opp/&lt;rule&gt;.json (since 2026-10-15)
+      
+    </span>
+  </a>
   
 </li>
       
@@ -4594,6 +4616,71 @@ different solve paths:
   but not cacheable, so it runs only on the full solve (Compute / Solve full GVAR), not the live preview.</p>
 <p>No external forecast ⇒ <code>condVarByCountry</code> undefined ⇒ the untouched closed-form/direct path (byte-identical;
 <code>gvar-coupling-artifact</code> / <code>gvar-closed-form-*</code> tests). Propagation + no-op locked by <code>gvar-external-spillover.test.ts</code>.</p>
+<h2 id="15-the-optimal-move-response-tables-apppublicdatadsgeopprulejson-since-2026-10-15">15. The optimal-move response tables — <code>app/public/data/dsge/opp/&lt;rule&gt;.json</code> (since 2026-10-15)<a class="headerlink" href="#15-the-optimal-move-response-tables-apppublicdatadsgeopprulejson-since-2026-10-15" title="Permanent link">&para;</a></h2>
+<p>One file per policy rule (<code>CEE, CMR, Coenen, GR, LWW, OW08, OW13, SW, Taylor</code>; ~80–130 KB each), read by the
+optimal-policy feature's "Range across models" (<code>lib/compute/optimalPolicy.ts</code>, <code>oneMoveRange</code>). Built from the
+shipped response files by <code>app/scripts/build_opp_table.mjs</code>; deterministic (sorted keys, 7 significant digits,
+no timestamps), so an unchanged input leaves the pack's hashes unchanged. <strong>Rebuild after any change to
+<code>dsge/irfs/</code></strong>, then re-stamp the pack (<code>UPDATE_MANUAL.md</code>, the pack step).</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;rule&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SW&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;horizon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;responses to a rise of 1 pp in the policy rate on impact (one surprise today, this rule afterwards); r = interest, p = inflationq (% q/q annualised), x = outputgap (%), quarters 1..20 from impact&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;app/public/data/dsge/irfs/&lt;model&gt;/&lt;rule&gt;.json (interest_ shock), divided by the impact rate response; gates: docs/reest-2026/bm_trial/rules9/rules_check.json (B&amp;M trial 2026-10-13; 69 estimated US models only)&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;admissible&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;screen empty AND gate != fail AND not ruleIndependent&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;models&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;US_SW07&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Estimated US model&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;gate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pass&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;screen&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">      </span><span class="nt">&quot;ruleIndependent&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;r&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.6075275</span><span class="p">,</span><span class="w"> </span><span class="mf">0.3468458</span><span class="p">,</span><span class="w"> </span><span class="err">...</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;p&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">-0.1816994</span><span class="p">,</span><span class="w"> </span><span class="mf">-0.2203377</span><span class="p">,</span><span class="w"> </span><span class="err">...</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">-0.2113267</span><span class="p">,</span><span class="w"> </span><span class="mf">-0.3181701</span><span class="p">,</span><span class="w"> </span><span class="err">...</span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;US_CET15&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Estimated US model&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;gate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fail&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;gateNote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;model file overrides rule coefficient(s) #[1] (max diff 0.06): does not follow the SW rule&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;screen&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="nt">&quot;ruleIndependent&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;r&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;p&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">]</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;FI_AINO16&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Estimated other-country model&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;gate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;unchecked&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;screen&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="nt">&quot;ruleIndependent&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;r&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;p&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>r</code>, <code>p</code>, <code>x</code></td>
+<td>the model's <code>interest</code>, <code>inflationq</code>, <code>outputgap</code> responses to the <code>interest_</code> shock, from impact, 20 quarters, each divided by the impact value of <code>interest</code> (so <code>r[0] = 1</code>). Absent when the rate does not move on impact or a series is missing (then <code>screen</code> says why).</td>
+</tr>
+<tr>
+<td><code>screen</code></td>
+<td>the economic screen of the 2026-10-13 B&amp;M trial, computed here from the shipped file: empty = pass; else the reasons ("a surprise does not raise the policy rate on impact", "a surprise tightening raises inflation on average over 2 years", "… raises the output gap …", "no … in the response file").</td>
+</tr>
+<tr>
+<td><code>gate</code></td>
+<td><code>pass</code> / <code>fail</code> / <code>unchecked</code> — the trial's numerical gates (determinacy; the rule's coefficients are the ones the model used; perfect-foresight vs first-order agreement; shipped file = independent run), from <code>docs/reest-2026/bm_trial/rules9/rules_check.json</code>. Only the 69 estimated US models were checked; every other model is <code>unchecked</code> and taken as shipped. <code>gateNote</code> carries the reason for a <code>fail</code>.</td>
+</tr>
+<tr>
+<td><code>ruleIndependent</code></td>
+<td>true when every rule file of the model is identical to 1e-9 (the chosen rule is not in force; FI_AINO16).</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>the MMB catalog category (<code>dsge/catalog.json</code>), for the "chosen model's category" set.</td>
+</tr>
+</tbody>
+</table>
+<p>Admissible for the range = <code>screen</code> empty AND <code>gate != fail</code> AND <code>!ruleIndependent</code>. Counts on the 2026-10-15
+build (pack <code>2026Q2-reest-20261015b</code>, after the 20 wrong rule files of 2026-10-14 were replaced,
+<code>docs/reest-2026/irf_dupfix/</code>): SW 130 admissible of 153 files (62 estimated US models, exactly the trial's set);
+CEE 136/144; CMR 139/149; Coenen 129/138; GR 145/152; LWW 133/151; OW08 68/89; OW13 143/149; Taylor 119/148.
+Before the replacement (pack 20261015, never published) three counts differed: SW 131 (NK_GLSV07's file held the
+Taylor response, which passed the screen; its true SW response does not raise the rate on impact), Coenen 127
+(US_CCTW10 and US_YR13 failed the trial's gate because the gate compared them with the wrong files; recomputed
+2026-10-15), LWW 132 (EA_VI16bgg's file held the OW08 response, which failed the inflation screen).</p>
 
 
 

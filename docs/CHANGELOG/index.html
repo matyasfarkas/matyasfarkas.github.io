@@ -992,6 +992,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unreleased-on-the-websites-since-2026-10-15-next-desktop-release-optimal-policy-one-move-today-range-across-models-20-wrong-dsge-response-files-replaced-data-pack-2026q2-reest-20261015b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [Unreleased] - on the websites since 2026-10-15 (next desktop release) — OPTIMAL POLICY: ONE MOVE TODAY, RANGE ACROSS MODELS; 20 WRONG DSGE RESPONSE FILES REPLACED; data pack 2026Q2-reest-20261015b
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#unreleased-on-the-websites-since-2026-10-11-next-desktop-release-counterfactual-uses-quarterly-inflation-optimal-policy-from-the-scenario" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1681,6 +1692,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unreleased-on-the-websites-since-2026-10-15-next-desktop-release-optimal-policy-one-move-today-range-across-models-20-wrong-dsge-response-files-replaced-data-pack-2026q2-reest-20261015b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [Unreleased] - on the websites since 2026-10-15 (next desktop release) — OPTIMAL POLICY: ONE MOVE TODAY, RANGE ACROSS MODELS; 20 WRONG DSGE RESPONSE FILES REPLACED; data pack 2026Q2-reest-20261015b
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#unreleased-on-the-websites-since-2026-10-11-next-desktop-release-counterfactual-uses-quarterly-inflation-optimal-policy-from-the-scenario" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2356,6 +2378,85 @@
 <p><em>The detailed changelog. The repository root <code>CHANGELOG.md</code> carries the same releases as short release
 notes. Since 4.0.0, a model or data update ships as a data pack and is listed by its pack id; app versions are
 listed by version number.</em></p>
+<h2 id="unreleased-on-the-websites-since-2026-10-15-next-desktop-release-optimal-policy-one-move-today-range-across-models-20-wrong-dsge-response-files-replaced-data-pack-2026q2-reest-20261015b">[Unreleased] - on the websites since 2026-10-15 (next desktop release) — OPTIMAL POLICY: ONE MOVE TODAY, RANGE ACROSS MODELS; 20 WRONG DSGE RESPONSE FILES REPLACED; data pack 2026Q2-reest-20261015b<a class="headerlink" href="#unreleased-on-the-websites-since-2026-10-15-next-desktop-release-optimal-policy-one-move-today-range-across-models-20-wrong-dsge-response-files-replaced-data-pack-2026q2-reest-20261015b" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Optimal policy (B&amp;M) now sizes one move in the policy rate today, with the chosen rule afterwards.</strong> This is the
+  concept of the San Francisco Fed's Policy Calibration Tool (Barnichon &amp; Singh, FRBSF Economic Letter 2026-17): a
+  forecast under the expected policy, one set of effects of a rate change, a weight between the objectives, and the
+  move that best serves them — here with the chosen DSGE's responses in place of one empirical estimate, for every
+  bloc. The loss is a parabola in the move, so the answer is a ratio of two sums, well posed in every model. US_SW07
+  under its own rule on the 2026-10-13 trial scenarios: −0.66 pp (baseline), −1.33 (inflation +2 pp), +3.10 (boom),
+  −4.43 (bust), the MATLAB trial's numbers to 1e-3. The counterfactual pins the current quarter only; the rest of the
+  drawn path is the rule's propagation of that surprise.</li>
+<li><strong>Range across models</strong> (option): every admissible model of the Macro Model Data Base under the rule gets its own
+    move on the same scenario. The read-out shows the median, the 10–90% range and the share of models in which the
+    chosen model's move lowers the loss; the Policy Rate chart shades the 10–90% band of the models' paths with the
+    median dotted. Set: all admissible models (130 under SW) or the chosen model's category (62 estimated US models
+    under SW, exactly the trial's set; every per-model answer reproduced within 1e-4; inflation +2: median −4.08,
+    10–90% −11.49 to +1.55, SW07's move lowers the loss in 71% of them). A model is admissible when a surprise
+    tightening raises the rate on impact and lowers inflation and the output gap on average over two years, its rule
+    is in force (FI_AINO16's policy is exogenous) and no numerical gate failed in the trial's cross-check of the 69
+    estimated US models (US_CET15 hard-codes its own smoothing, US_CCF12 has a unit root); the other models are taken
+    as shipped and the read-out says how many.</li>
+<li><strong>New data: <code>dsge/opp/&lt;rule&gt;.json</code></strong>, one compact table per rule (~120 KB; <code>app/scripts/build_opp_table.mjs</code>):
+    each model's <code>interest</code> / <code>inflationq</code> / <code>outputgap</code> responses per 1 pp impact rise, 20 quarters, plus its
+    screen, gate and rule-in-force verdicts (gates from <code>docs/reest-2026/bm_trial/rules9/rules_check.json</code>).
+    Deterministic output; rebuild after any change to <code>dsge/irfs/</code>, then re-stamp the pack.</li>
+<li><strong>The output gap is measured against the target set in the interface,</strong> like inflation: GDP against a path
+    growing at <strong>Potential growth</strong> (% a year; default the bloc's enabled long-run GDP target, else the growth of
+    the shipped history — the read-out says which) from the last data point, plus <strong>Output gap today</strong> (default 0).
+    The OLS trend over the shipped 40 quarters (COVID inside; it put the US inflation scenario's gap at −5.6% and
+    decided cut-vs-hike on its own) is gone, and so is the <strong>Gap target</strong> slider (saved sessions keep the field). When
+    the bloc's enabled long-run inflation target differs from π<em> (PL 2.5, MX 3, AU 2.5, …), the read-out offers it
+    with one click; π</em> itself still defaults to 2.</li>
+<li><strong>Taylor, OW08 and OW13 are greyed out in optimal mode</strong> and refused by the solver: under Taylor and OW08 the
+    rate has no inertia, so a surprise is gone the next quarter and the computed move is implausibly large; OW13 is
+    a difference rule, so a surprise moves the rate level permanently. Entering optimal mode on one of them switches
+    to SW where the model has it. They stay available for the rule-based counterfactual.</li>
+<li><strong>The default rule for new scenarios is SW</strong> (US_SW07's own rule). The 2026-10-11 design remains as <strong>Full path
+    (illustrative)</strong>: it sets the rate in every quarter and is badly conditioned (condition number ~1,300 at 20
+    quarters on US_SW07); read it as an illustration.</li>
+<li>Tests: <code>optimal-policy.test.ts</code> (26). Code: <code>lib/compute/optimalPolicy.ts</code>, <code>useConditionalForecast.ts</code>,
+    <code>ChartGrid.tsx</code>, <code>ControlPanel.tsx</code>, <code>ModelSelector.tsx</code>, <code>loader.ts</code>, <code>store/useStore.ts</code>.</li>
+<li><strong>20 wrong DSGE response files replaced</strong> (<code>dsge/irfs/&lt;model&gt;/&lt;rule&gt;.json</code>, 14 models; found 2026-10-14, applied
+  2026-10-15; account, scripts and the SHA-256 list of the replaced originals in <code>docs/reest-2026/irf_dupfix/</code>;
+  PLAN.md §10c item 18). Each held the correct response of <em>another</em> rule of the same model (to 1e-10): CL_MS07
+  OW13/Coenen/CMR, EACZ_GEM03 Taylor, EA_AWM05 GR, EA_CKL09 OW08/OW13, EA_VI16bgg LWW/CMR, NK_BGEU10 OW13/Coenen,
+  NK_BGUS10 OW13, NK_GLSV07 SW, NK_MI14 GR, NK_MPT10 Taylor/CEE, UK_SM11 Taylor/GR, US_CCTW10 Coenen, US_YR13 Coenen.
+  All 121 files of the 14 models were regenerated with the app's own generator (<code>pipeline/compute_irfs_mmb.m</code>, scratch
+  copy <code>irf_dupfix/gen_faithful.m</code>: output and work folders in scratch, the MMB folder read-only, a gate after each
+  run) and gated before any result was looked at (G1 a solution found; G2 every nonzero coefficient of the rule is a
+  parameter of the model and Dynare used the rule's value within 1e-9; G3 the monetary response agrees with a separate
+  <code>bm_news.m</code> run within 1e-4 relative over interest, inflationq, outputgap and output; G4 the same shocks, variables
+  and lengths as the shipped file). Result: 100 correct (match to 2.6e-10, the rounding of 10-digit files), 20 wrong
+  (all gates passed; differences 0.08 to 1.72 relative to the file's largest value), 1 flagged and kept (US_YR13 under
+  CMR: the model has no output-growth parameters, so the MMB applies CMR without that term; the shipped file is what
+  the MMB produces). Cross-check by a different method: perfect foresight (<code>bm_news.m</code>, 1000 periods) agrees with the
+  regenerated files to 1e-9 or better except UK_SM11 (a level offset of at most 4e-5, a property of that solve), and
+  the Drivers feature's separately built <code>census/UK_SM11.json</code> equals the regenerated UK_SM11 Taylor file exactly.
+  The rule-based and optimal-policy counterfactuals read these files; the Drivers decomposition reads its own census
+  files, which are unaffected. Genuine duplicates remain by construction: FI_AINO16 (its model file: "Monetary Policy
+  is exogenous here", all 9 rules identical) and the fiscal shock of NK_BGEU10 and NK_BGUS10 (it moves only its own
+  label variable). The other 141 models were not regenerated (the 69 estimated US models were checked in the B&amp;M
+  trial, monetary shock only; 72 models are unchecked). The cause was not reproduced (a clean run of the generator
+  gives the right file for all 121); every wrong file is another rule's response for the same model and both
+  generators share one fixed work folder unless a worker tag is set, which fits two runs at the same time; no
+  duplicate guard exists in the IRF build yet.</li>
+<li><strong>Data pack 2026Q2-reest-20261015b</strong> (the websites ran 2026Q2-reest-20261011; 2026Q2-reest-20261015 was stamped
+    locally for the optimal-policy tables and never published): the 20 replaced response files, the nine <code>dsge/opp/</code>
+    tables rebuilt from them, and the manifest; no other data file changed (<code>pack-verify --full</code> 4239 checks ok). The
+    app verifies every file's SHA-256 against the manifest, so the files could not be swapped in place.</li>
+<li><strong>Effect on the optimal-move tables</strong> (vs the 20261015 build): the 20 replaced entries are renumbered; admissibility
+    changes in three places. Under SW NK_GLSV07 drops out (its true SW response does not raise the rate on impact;
+    131 → 130 admissible). Under LWW EA_VI16bgg comes in (132 → 133; the wrong file, OW08's response, failed the
+    inflation screen). Under Coenen US_CCTW10 and US_YR13 come in (127 → 129): the trial's gate <code>rules_check.m</code>
+    compares its surprise column with the shipped file, so its 2026-10-13 verdict ("differ, relative 0.85 / 0.82") was
+    against the wrong files; the gate was recomputed in MATLAB on the fixed tree (no Dynare run needed, it reads the
+    stored news outputs; <code>rules9/log_rules_check_20261015.txt</code>) and only those two verdicts changed (Coenen 52 → 54
+    admissible of 69; every other line identical); <code>rules9/rules_check.json</code> re-exported (2 entries changed). The
+    62-model estimated-US set under SW and every other category set are unchanged; <code>optimal-policy.test.ts</code> 26/26 on
+    the new tables; <code>build_opp_table.mjs --check</code> clean.</li>
+</ul>
 <h2 id="unreleased-on-the-websites-since-2026-10-11-next-desktop-release-counterfactual-uses-quarterly-inflation-optimal-policy-from-the-scenario">[Unreleased] - on the websites since 2026-10-11 (next desktop release) — COUNTERFACTUAL USES QUARTERLY INFLATION; OPTIMAL POLICY FROM THE SCENARIO<a class="headerlink" href="#unreleased-on-the-websites-since-2026-10-11-next-desktop-release-counterfactual-uses-quarterly-inflation-optimal-policy-from-the-scenario" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Policy counterfactual: the DSGE inflation response is now the quarterly one.</strong> The tool read the MMB series
