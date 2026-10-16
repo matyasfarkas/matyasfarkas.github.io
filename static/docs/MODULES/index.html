@@ -1152,10 +1152,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#optimalpolicyts-since-2026-10-11" class="md-nav__link">
+  <a href="#optimalpolicyts-since-2026-10-11-one-move-range-2026-10-15" class="md-nav__link">
     <span class="md-ellipsis">
       
-        optimalPolicy.ts (since 2026-10-11)
+        optimalPolicy.ts (since 2026-10-11; one move + range 2026-10-15)
       
     </span>
   </a>
@@ -2383,10 +2383,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#optimalpolicyts-since-2026-10-11" class="md-nav__link">
+  <a href="#optimalpolicyts-since-2026-10-11-one-move-range-2026-10-15" class="md-nav__link">
     <span class="md-ellipsis">
       
-        optimalPolicy.ts (since 2026-10-11)
+        optimalPolicy.ts (since 2026-10-11; one move + range 2026-10-15)
       
     </span>
   </a>
@@ -2958,8 +2958,8 @@ annualized growth rate is <code>4·Δ(level)</code> for a <code>log</code> varia
 </tr>
 <tr>
 <td><code>optimalPolicy.ts</code></td>
-<td>Optimal policy given the scenario (B&amp;M 2023 sufficient statistics; loss on scenario inflation + gap vs linear trend; optional rate smoothing)</td>
-<td><code>useConditionalForecast.ts</code></td>
+<td>Optimal policy given the scenario (B&amp;M 2023 sufficient statistics): ONE MOVE TODAY (default, closed form) + the range across the MMB models (<code>dsge/opp/&lt;rule&gt;.json</code>); gap vs the target-growth path; the 2026-10-11 full path kept as illustrative; optional rate smoothing</td>
+<td><code>useConditionalForecast.ts</code>, <code>ChartGrid.tsx</code>, <code>ControlPanel.tsx</code>, <code>ModelSelector.tsx</code>, <code>loader.ts</code></td>
 </tr>
 <tr>
 <td><code>barnichon-mesters.ts</code></td>
@@ -3925,13 +3925,21 @@ self-contained API kept for the rule-based path.</p>
 </tbody>
 </table>
 <hr />
-<h2 id="optimalpolicyts-since-2026-10-11"><code>optimalPolicy.ts</code> (since 2026-10-11)<a class="headerlink" href="#optimalpolicyts-since-2026-10-11" title="Permanent link">&para;</a></h2>
+<h2 id="optimalpolicyts-since-2026-10-11-one-move-range-2026-10-15"><code>optimalPolicy.ts</code> (since 2026-10-11; one move + range 2026-10-15)<a class="headerlink" href="#optimalpolicyts-since-2026-10-11-one-move-range-2026-10-15" title="Permanent link">&para;</a></h2>
 <p><strong>Responsibility.</strong> Optimal monetary policy GIVEN THE SCENARIO, Barnichon &amp; Mesters (2023 AER) sufficient
-statistics. Loss over the display horizon: <code>λπ(π^s+Hπε−π*)² + λy(x^s+Hxε−y*)² + λΔi(Δi)²</code>, with π^s the
-scenario's displayed inflation (% q/q ann.), x^s its output gap vs a linear trend fitted on the shipped
-history of 100·log real GDP, i the counterfactual policy rate; Hπ/Hx/Hi = Toeplitz of the MMB <code>inflationq</code> /
-<code>outputgap</code> / <code>interest</code> responses from impact. λΔi (rate smoothing) is NOT in B&amp;M (slider, default 0).
-Stacked least squares, ridge 1e-12 × mean diagonal.</p>
+statistics. Loss over the display horizon: <code>λπ(π^s+Δπ−π*)² + λy(x^s+Δx)² + λΔi(Δi)²</code>, with π^s the scenario's
+displayed inflation (% q/q ann.), x^s its output gap against the TARGET-GROWTH PATH from the last data point
+(<code>targetGrowthGap</code>: (y^s_h − y_T) − g<em>/4·(h+1) + x_0; g</em> = potential growth from the interface, default the bloc's
+enabled long-run GDP target, else the shipped history's growth; x_0 = output gap today, default 0), i the
+counterfactual policy rate; Δ from the MMB <code>inflationq</code> / <code>outputgap</code> / <code>interest</code> responses from impact. λΔi (rate
+smoothing) is NOT in B&amp;M (slider, default 0).</p>
+<p>Two policy objects: <strong>ONE MOVE TODAY</strong> (default; the SF Fed Policy Calibration Tool concept) — one surprise of size δ
+(pp on impact), the rule afterwards; L(δ) is a parabola so δ<em> = −num/den (<code>solveOneMove</code>); and the </em><em>FULL PATH</em><em>
+(2026-10-11; <code>solveOptimalPolicy</code>, stacked least squares, ridge 1e-12 × mean diagonal) kept as "illustrative"
+(badly conditioned). </em><em>The range across models</em>* (<code>oneMoveRange</code>): every admissible model of <code>dsge/opp/&lt;rule&gt;.json</code>
+(built by <code>scripts/build_opp_table.mjs</code>: responses per 1 pp impact rise + screen / gate / rule-in-force verdicts)
+gets its own δ on the same scenario → median, 10–90 %, per-quarter path band, share of models helped by the chosen
+δ. <code>NO_ONE_MOVE_RULES</code> (Taylor, OW08, OW13) are refused in optimal mode; <code>pickOptimalRule</code> picks SW instead.</p>
 <table>
 <thead>
 <tr>
@@ -3941,21 +3949,40 @@ Stacked least squares, ridge 1e-12 × mean diagonal.</p>
 </thead>
 <tbody>
 <tr>
+<td><code>solveOneMove(o: OptimalPolicyInputs)</code></td>
+<td>scenario inflation / gap / rate paths, last rate, targets, weights, H → <code>{ delta, rateAdj, rate, impliedInflation, impliedGap, loss }</code></td>
+</tr>
+<tr>
+<td><code>oneMoveRange(o, entries, delta, chosenModel)</code></td>
+<td>the table's entries → <code>{ models, n, nUnchecked, deltas, q10, q50, q90, shareHelped, pathQ10/50/90, chosenIncluded }</code></td>
+</tr>
+<tr>
+<td><code>targetGrowthGap(levels, lastLevel, growthPA, gapToday)</code></td>
+<td>100·log GDP path → gap, %</td>
+</tr>
+<tr>
+<td><code>perPointResponses(irfs, H)</code>, <code>oppAdmissible(e)</code>, <code>percentile(v, p)</code>, <code>pickOptimalRule(rules, current)</code></td>
+<td>helpers</td>
+</tr>
+<tr>
 <td><code>solveOptimalPolicy(o: OptimalPolicyInputs)</code></td>
-<td>scenario inflation / gap / rate paths, last observed rate, targets, weights, H → <code>{ shocks, rateAdj, rate, impliedInflation, impliedGap, loss }</code></td>
+<td>full path (illustrative) → <code>{ shocks, rateAdj, rate, impliedInflation, impliedGap, loss }</code></td>
 </tr>
 <tr>
 <td><code>linearTrend(y)</code></td>
-<td>OLS of y on [1, t] over finite cells → <code>{ a, b, nObs }</code></td>
+<td>OLS of y on [1, t] over finite cells → <code>{ a, b, nObs }</code> (the fallback growth rate)</td>
 </tr>
 </tbody>
 </table>
 <p>Called from <code>computeConditionalForecast</code> (<code>useConditionalForecast.ts</code>) when <code>policyMode === 'optimal'</code> and the
 counterfactual is on: it builds the displayed scenario paths (incl. the long-run drift), solves, and uses the
-path as the rate adjustment (every quarter of the horizon constrained; irf-consistent forced; no BVAR
-fallback). The result is returned as <code>optimalPolicy</code> (<code>OptimalPolicyReport</code>); <code>ChartGrid</code> writes the path back
-to the scenario (equality-guarded) and publishes the read-out (<code>store.optimalPolicyInfo</code>) for <code>ControlPanel</code>.
-Tests: <code>optimal-policy.test.ts</code>.</p>
+path as the rate adjustment — one move: quarter 0 constrained and the rest left to the rule's propagation; full
+path: every quarter constrained; irf-consistent forced; no BVAR fallback. The result is returned as <code>optimalPolicy</code>
+(<code>OptimalPolicyReport</code>: mode, delta, potential growth + source, gap today, rule, loss, <code>robust</code>); <code>ChartGrid</code> writes
+the path back to the scenario (equality-guarded), loads <code>dsge/opp/&lt;rule&gt;.json</code> when the range is on (<code>loadOppTable</code>)
+and draws the band on the Policy Rate panel; <code>ControlPanel</code> shows the read-out. Tests: <code>optimal-policy.test.ts</code>
+(26 tests: closed form = minimiser; the B&amp;M trial's US_SW07 answers and its 62-model set / per-model answers under SW
+reproduced from the table; integration on the real US model).</p>
 <h2 id="barnichon-mestersts-superseded"><code>barnichon-mesters.ts</code> (superseded)<a class="headerlink" href="#barnichon-mestersts-superseded" title="Permanent link">&para;</a></h2>
 <p>The original helper (constant targets, no scenario; y/y <code>inflation</code> until 2026-10-11). <strong>Not used by the app
 since 2026-10-11</strong>; kept only for <code>barnichon-mesters.test.ts</code>.</p>
