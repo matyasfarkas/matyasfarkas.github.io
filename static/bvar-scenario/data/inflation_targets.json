@@ -1,0 +1,580 @@
+{
+  "asOf": "2026-10-16",
+  "note": "Official inflation target per bloc, read from each monetary authority's own page on the date in asOf: target (the midpoint when only a range is stated; null = no numerical target), band [low, high], the price measure targeted, the institution, the source page, the official wording quoted, notes. The optimal move uses target as the default π* (lib/compute/optimalPolicy.ts resolvePiStar); null falls back to the tool's default of 2. Euro-area members carry the ECB entry. Keep in step with the authorities: HU moves to 2.5 on 2028-01-01; CA renews its agreement by end-2026; PL could not be read from nbp.pl on 2026-10-16.",
+  "blocs": {
+    "US": {
+      "target": 2,
+      "band": null,
+      "measure": "PCE price index, annual change",
+      "institution": "Federal Reserve (FOMC)",
+      "source": "https://www.federalreserve.gov/monetarypolicy/files/FOMC_LongerRunGoals.pdf",
+      "wording": "The Committee reaffirms its judgment that inflation at the rate of 2 percent, as measured by the annual change in the price index for personal consumption expenditures, is most consistent over the longer run with the Federal Reserve's statutory maximum employment and price stability mandates.",
+      "note": "Statement on Longer-Run Goals, adopted 24 January 2012, revised 22 August 2025, reaffirmed effective 27 January 2026. The US model's price variable is the GDP deflator (JGDP), not the PCE index.",
+      "asOf": "2026-10-16"
+    },
+    "EA": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "UK": {
+      "target": 2,
+      "band": null,
+      "measure": "CPI, 12-month increase",
+      "institution": "Bank of England (target set by HM Treasury's remit)",
+      "source": "https://www.gov.uk/government/publications/monetary-policy-remit-budget-2025/letter-from-chancellor-of-the-exchequer-to-govenor-of-the-bank-of-england",
+      "wording": "I hereby re-confirm the inflation target as 2 per cent as measured by the 12-month increase in the Consumer Prices Index (CPI).",
+      "note": "Remit letter of 26 November 2025, unchanged from 14 November 2024. A deviation of more than 1 pp triggers an open letter; it is not a target band.",
+      "asOf": "2026-10-16"
+    },
+    "JP": {
+      "target": 2,
+      "band": null,
+      "measure": "CPI, year-on-year change",
+      "institution": "Bank of Japan",
+      "source": "https://www.boj.or.jp/en/mopo/outline/index.htm",
+      "wording": "The Bank set the \"price stability target\" at 2 percent in terms of the year-on-year rate of change in the consumer price index (CPI) in January 2013.",
+      "asOf": "2026-10-16"
+    },
+    "CA": {
+      "target": 2,
+      "band": [
+        1,
+        3
+      ],
+      "measure": "total CPI, year-over-year",
+      "institution": "Bank of Canada (agreement with the Government of Canada)",
+      "source": "https://www.bankofcanada.ca/rates/indicators/key-variables/inflation-control-target/",
+      "wording": "The Bank of Canada aims to keep total CPI inflation at the 2 per cent midpoint of a target range of 1 to 3 per cent.",
+      "note": "Agreement renewed in December 2021 for the five years to the end of 2026; the 2026 renewal was not yet published on 16 October 2026.",
+      "asOf": "2026-10-16"
+    },
+    "CN": {
+      "target": 2,
+      "band": null,
+      "measure": "CPI, annual increase (the government's annual target)",
+      "institution": "State Council, Government Work Report to the National People's Congress (the People's Bank of China implements)",
+      "source": "https://english.www.gov.cn/news/202603/13/content_WS69b4b144c6d00ca5f9a09dfd.html",
+      "wording": "CPI increase of around 2 percent.",
+      "note": "Main targets for 2026, report delivered by Premier Li Qiang and approved on 12 March 2026; the 2025 target was also around 2 percent (gov.cn, 5 March 2025). An annual government goal, not a central-bank target.",
+      "asOf": "2026-10-16"
+    },
+    "AU": {
+      "target": 2.5,
+      "band": [
+        2,
+        3
+      ],
+      "measure": "CPI, annual",
+      "institution": "Reserve Bank of Australia (Statement on the Conduct of Monetary Policy, Treasurer and Monetary Policy Board)",
+      "source": "https://www.rba.gov.au/monetary-policy/framework/stmt-conduct-mp-9-2025-07-10.html",
+      "wording": "They agree that an appropriate goal is consumer price inflation between 2 and 3 per cent. The Monetary Policy Board sets monetary policy such that inflation is expected to return to the midpoint of the target.",
+      "note": "Statement of 10 July 2025 (the target wording is unchanged from 8 December 2023). 2.5 is the midpoint of the 2-3 range; no official page prints it.",
+      "asOf": "2026-10-16"
+    },
+    "AT": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Austria is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "BE": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Belgium is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "CL": {
+      "target": 3,
+      "band": [
+        2,
+        4
+      ],
+      "measure": "CPI (INE), annual, over a two-year horizon",
+      "institution": "Banco Central de Chile",
+      "source": "https://www.bcentral.cl/en/areas/monetary-policy",
+      "wording": "This entails the commitment to use the appropriate instruments to ensure that annual CPI inflation remains most of the time around 3%.",
+      "note": "The ±1 pp tolerance range is stated on the Bank's Información Principal page.",
+      "asOf": "2026-10-16"
+    },
+    "CO": {
+      "target": 3,
+      "band": [
+        2,
+        4
+      ],
+      "measure": "CPI, annual change",
+      "institution": "Banco de la República",
+      "source": "https://www.banrep.gov.co/en/board-directors-banco-republica-holding-inflation-target-3",
+      "wording": "The Board of Directors is keeping the inflation target (annual change in the CPI) at 3% within a range between 2% and 4%.",
+      "note": "Statement of 27 November 2020; later Board communiqués refer to the target without restating the number.",
+      "asOf": "2026-10-16"
+    },
+    "CR": {
+      "target": 3,
+      "band": [
+        2,
+        4
+      ],
+      "measure": "CPI (IPC), annual, over a 24-month horizon",
+      "institution": "Banco Central de Costa Rica",
+      "source": "https://www.bccr.fi.cr/cr/es/politica-monetaria.html",
+      "wording": "En enero de 2018, el BCCR adoptó oficialmente el esquema de meta de inflación para la conducción de su política monetaria y anunció su compromiso para que esta alcance un valor de 3% ± 1 punto porcentual en el mediano plazo. (In January 2018 the BCCR adopted inflation targeting and committed to inflation of 3% ± 1 percentage point in the medium term.)",
+      "note": "The Board keeps 3% ± 1 pp (Monetary Policy Report, April 2026) while a review of the framework's components, begun in 2025, is open.",
+      "asOf": "2026-10-16"
+    },
+    "CZ": {
+      "target": 2,
+      "band": [
+        1,
+        3
+      ],
+      "measure": "CPI, year-on-year",
+      "institution": "Czech National Bank",
+      "source": "https://www.cnb.cz/en/monetary-policy/inflation-target/",
+      "wording": "Since 2010, the CNB's inflation target has been 2% year-on-year growth in the consumer price index. A tolerance band of one percentage point in either direction around the target reflects the natural volatility of inflation.",
+      "asOf": "2026-10-16"
+    },
+    "DK": {
+      "target": null,
+      "band": null,
+      "measure": "none (fixed exchange rate against the euro)",
+      "institution": "Danmarks Nationalbank",
+      "source": "https://www.nationalbanken.dk/en/frequently-asked-questions/questions-regarding-fixed-exchange-rate-policy",
+      "wording": "the sole purpose of Denmark's monetary policy is to keep the krone stable against the euro.",
+      "note": "ERM II central rate 746.038 kroner per 100 euro, band +/- 2.25 per cent. No Danish inflation target; the tool uses its default of 2, which equals the ECB's target the peg imports.",
+      "asOf": "2026-10-16"
+    },
+    "EE": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Estonia is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "FI": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Finland is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "FR": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "France is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "DE": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Germany is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "GR": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Greece is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "HU": {
+      "target": 3,
+      "band": [
+        2,
+        4
+      ],
+      "measure": "CPI (Hungarian Central Statistical Office), annual",
+      "institution": "Magyar Nemzeti Bank",
+      "source": "https://www.mnb.hu/en/monetary-policy/the-monetary-council/press-releases/2026/press-release-by-the-monetary-council-on-the-review-of-the-inflation-target",
+      "wording": "Following the review of the inflation target, the Monetary Council decided to set the Bank's medium-term inflation target at a 2.5 percent rise in the consumer price index as published by the Hungarian Central Statistical Office. The Council retains the symmetric, ±1 percentage point tolerance band around the inflation target. The 2.5 percent inflation target will come into effect over the monetary policy horizon, on 1 January 2028.",
+      "note": "3 percent ±1 pp is in force until 31 December 2027 (framework page: 3 per cent since 2015 with the ±1 pp band); 2.5 percent ±1 pp from 1 January 2028 (decision of 22 September 2026). Change the entry to 2.5 in 2028.",
+      "asOf": "2026-10-16"
+    },
+    "IS": {
+      "target": 2.5,
+      "band": null,
+      "measure": "CPI, 12-month change",
+      "institution": "Central Bank of Iceland",
+      "source": "https://cb.is/library/monetary-policy/monetary-policy-committee/Declaration%20inflation.pdf",
+      "wording": "The Central Bank will aim at an annual inflation rate of about 2½ per cent.",
+      "note": "Declaration of 27 March 2001 (amended 11 November 2005). A deviation of more than 1½ percentage points triggers a report; it is not a target band.",
+      "asOf": "2026-10-16"
+    },
+    "IE": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Ireland is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "IT": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Italy is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "KR": {
+      "target": 2,
+      "band": null,
+      "measure": "CPI, year-on-year change",
+      "institution": "Bank of Korea",
+      "source": "https://www.bok.or.kr/eng/main/contents.do?menuNo=400015",
+      "wording": "The inflation target for 2019 onwards has been set at 2 percent, as measured by the year-on-year change in the Consumer Price Index (CPI).",
+      "asOf": "2026-10-16"
+    },
+    "LV": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Latvia is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "LT": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Lithuania is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "LU": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Luxembourg is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "MX": {
+      "target": 3,
+      "band": [
+        2,
+        4
+      ],
+      "measure": "INPC (national consumer price index), annual",
+      "institution": "Banco de México",
+      "source": "https://www.banxico.org.mx/publicaciones-y-prensa/programas-de-politica-monetaria/%7BD9BD5C0A-5472-EDCB-04BD-BAF7F1357CA9%7D.pdf",
+      "wording": "Asimismo, en 2003 definió como meta permanente de inflación una variación anual de 3% del Índice Nacional de Precios al Consumidor (INPC). (In 2003 it defined as the permanent inflation target an annual change of 3% in the INPC.)",
+      "note": "Programa Monetario 2026. The ±1 pp around the target is a variability interval, which Banxico states is not a margin of indifference or tolerance. Banxico's web pages refused automated reading; the official PDF is cited.",
+      "asOf": "2026-10-16"
+    },
+    "NL": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Netherlands is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "NZ": {
+      "target": 2,
+      "band": [
+        1,
+        3
+      ],
+      "measure": "All Groups CPI, annual",
+      "institution": "Reserve Bank of New Zealand (Remit issued by the Minister of Finance)",
+      "source": "https://www.treasury.govt.nz/sites/default/files/2024-02/rb-dual-cab-23-sub-0469.pdf",
+      "wording": "the Reserve Bank's target of achieving and maintaining annual inflation between 1 and 3 percent over the medium term, as measured by the All Groups Consumers Price Index (CPI), which is published by Stats NZ.",
+      "note": "Remit of 12 December 2023 (in force 20 December 2023; NZ Gazette 2023-go5845), with a focus on the 2 percent mid-point. The RBNZ site refused automated access on 16 October 2026; the Government's own documents were used.",
+      "asOf": "2026-10-16"
+    },
+    "NO": {
+      "target": 2,
+      "band": null,
+      "measure": "CPI, annual",
+      "institution": "Norges Bank",
+      "source": "https://www.norges-bank.no/en/topics/Monetary-policy/Mandate-monetary-policy/",
+      "wording": "The Monetary Policy Regulation states that the operational target shall be annual consumer price inflation of close to 2 percent over time.",
+      "asOf": "2026-10-16"
+    },
+    "PL": {
+      "target": 2.5,
+      "band": [
+        1.5,
+        3.5
+      ],
+      "measure": "CPI, annual",
+      "institution": "Narodowy Bank Polski",
+      "source": "https://static.nbp.pl/dokumenty/polityka-pieniezna/strategia-polityki-pienieznej/zalozenia_pp_2023.pdf",
+      "wording": "NBP będzie nadal wykorzystywał strategię średniookresowego celu inflacyjnego na poziomie 2,5% z symetrycznym przedziałem odchyleń o szerokości ±1 punktu procentowego. (NBP will continue to use the strategy of a medium-term inflation target of 2.5% with a symmetric band of deviations of ±1 percentage point.)",
+      "note": "Official source: the Monetary Policy Guidelines for 2023 (adopted 2022). The current nbp.pl pages and newer PDFs refused automated reading on 16 October 2026, so the present wording is not verified from today's page; no change of the 2.5% target is known. Please confirm against nbp.pl.",
+      "asOf": "2026-10-16"
+    },
+    "PT": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Portugal is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "SK": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Slovakia is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "SI": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Slovenia is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "ES": {
+      "target": 2,
+      "band": null,
+      "measure": "HICP, annual change (symmetric target over the medium term)",
+      "institution": "European Central Bank (euro-area member; the ECB sets the target for the euro area as a whole)",
+      "source": "https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html",
+      "wording": "The Governing Council considers that price stability is best maintained by aiming for 2% inflation over the medium term. The Governing Council's commitment to this target is symmetric.",
+      "note": "Spain is a euro-area member: no national inflation target; the ECB target applies. Confirmed unchanged by the 2025 strategy assessment (press release 30 June 2025).",
+      "asOf": "2026-10-16"
+    },
+    "SE": {
+      "target": 2,
+      "band": [
+        1,
+        3
+      ],
+      "measure": "CPIF (CPI with a fixed interest rate), annual change",
+      "institution": "Sveriges Riksbank",
+      "source": "https://www.riksbank.se/en-gb/monetary-policy/the-inflation-target/",
+      "wording": "The target is specified as an annual rate of increase of 2 per cent for the CPIF.",
+      "note": "The Riksbank's variation band of 1-3 per cent is for outcomes and, in its words, not a target interval. The model's price variable is the HICP.",
+      "asOf": "2026-10-16"
+    },
+    "CH": {
+      "target": null,
+      "band": null,
+      "measure": "CPI, annual",
+      "institution": "Swiss National Bank",
+      "source": "https://www.snb.ch/en/the-snb/mandates-goals/monetary-policy/strategy",
+      "wording": "The SNB equates price stability with a rise in the Swiss consumer price index (CPI) of less than 2% per annum. Deflation, i.e. a sustained decrease in the price level, also breaches the objective of price stability.",
+      "note": "A definition of price stability, not a point target; the tool uses its default of 2.",
+      "asOf": "2026-10-16"
+    },
+    "TR": {
+      "target": 5,
+      "band": [
+        3,
+        7
+      ],
+      "measure": "CPI, year-end 12-month change",
+      "institution": "Central Bank of the Republic of Türkiye (target set jointly with the Government)",
+      "source": "https://tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Core+Functions/Monetary+Policy/PRICE+STABILITY+AND+INFLATION/Inflation+Targets",
+      "wording": "In this regard, under the inflation targeting regime, the inflation target, set jointly with the Government, has been maintained at 5%. The uncertainty band, which is a component of the CBRT's accountability principle, has also been maintained at 2 percentage points in both directions around the inflation target, as in the previous years.",
+      "note": "Monetary Policy for 2026 (28 December 2025): 5% for 2026, 2027 and 2028 with a ±2 pp uncertainty band. The CBRT also publishes year-end interim targets on the way to 5% (24%, 15% and 9% for 2026-2028, Inflation Report 2026-II, 14 May 2026); the medium-term target is used here.",
+      "asOf": "2026-10-16"
+    },
+    "IN": {
+      "target": 4,
+      "band": [
+        2,
+        6
+      ],
+      "measure": "CPI, annual",
+      "institution": "Reserve Bank of India (target notified by the Government of India under section 45ZA of the RBI Act)",
+      "source": "https://www.rbi.org.in/Scripts/FS_Overview.aspx?fn=2752",
+      "wording": "In its second review, on March 25, 2026, the Central Government retained the inflation target and the tolerance band for the next 5-year period – April 1, 2026 to March 31, 2031.",
+      "note": "4 per cent with an upper tolerance limit of 6 per cent and a lower tolerance limit of 2 per cent, unchanged since 5 August 2016.",
+      "asOf": "2026-10-16"
+    },
+    "BR": {
+      "target": 3,
+      "band": [
+        1.5,
+        4.5
+      ],
+      "measure": "IPCA, 12-month change on a rolling basis (continuous target)",
+      "institution": "Banco Central do Brasil (target set by the National Monetary Council)",
+      "source": "https://www.bcb.gov.br/en/monetarypolicy/Inflationtargeting",
+      "wording": "The CMN has set the inflation target at 3.00% starting in January 2025, with a tolerance interval of ± 1.50 percentage points.",
+      "note": "Continuous framework since January 2025 (Decree 12,079 and CMN Resolution 5,141 of 26 June 2024); the number is unchanged.",
+      "asOf": "2026-10-16"
+    },
+    "ID": {
+      "target": 2.5,
+      "band": [
+        1.5,
+        3.5
+      ],
+      "measure": "CPI inflation, year on year",
+      "institution": "Bank Indonesia (target set by the Minister of Finance, regulation PMK 31/2024)",
+      "source": "https://www.bi.go.id/en/fungsi-utama/moneter/inflasi/default.aspx",
+      "wording": "Based on PMK No. 31 of 2024, dated 16th May 2024, concerning the Inflation Target for 2025, 2026 and 2027, the Government set the inflation target for 2025-2027 at 2.5%, 2.5% and 2.5% respectively within a ±1% corridor.",
+      "asOf": "2026-10-16"
+    },
+    "TW": {
+      "target": null,
+      "band": null,
+      "measure": "none stated (M2 is the intermediate target)",
+      "institution": "Central Bank of the Republic of China (Taiwan)",
+      "source": "https://www.law.cbc.gov.tw/ELaw/RelateLawShowAll?LawID=LA03A001028&LawIDRelate=LA01001004",
+      "wording": "The primary objectives of the Bank's operations shall be: 1. To promote financial stability; 2. To guide sound banking operations; 3. To maintain the stability of the internal and external value of the currency; 4. To foster economic development within the scope of the above objectives.",
+      "note": "Central Bank Act, article 2. No numerical inflation target; 2 percent appears in the Bank's releases only as a threshold. The tool uses its default of 2.",
+      "asOf": "2026-10-16"
+    },
+    "SA": {
+      "target": null,
+      "band": null,
+      "measure": "none (riyal pegged to the US dollar at 3.75)",
+      "institution": "Saudi Central Bank (SAMA)",
+      "source": "https://www.sama.gov.sa/en-US/MediaCenter/News/Pages/news-557.aspx",
+      "wording": "SAMA remains committed to maintaining the exchange rate at the official rate of 3.75 riyals to the dollar as an anchor of monetary and financial stability.",
+      "note": "Statement of 2020; no inflation target on any SAMA page. SAMA's site could not be fetched with certificate validation on 16 October 2026 (the server's chain), so this entry rests on content retrieved without it. The tool uses its default of 2.",
+      "asOf": "2026-10-16"
+    },
+    "ZA": {
+      "target": 3,
+      "band": [
+        2,
+        4
+      ],
+      "measure": "headline CPI (Statistics South Africa), annual",
+      "institution": "South African Reserve Bank (target set by the Minister of Finance in agreement with the Governor)",
+      "source": "https://www.resbank.co.za/en/home/what-we-do/monetary-policy",
+      "wording": "South Africa's inflation target is 3%, with a tolerance band of plus or minus 1 percentage point.",
+      "note": "Announced by the Minister of Finance on 12 November 2025, replacing the 3-6% range of the previous 25 years immediately, to be implemented over the next two years; the SARB had aimed for 3% within the old range since 31 July 2025.",
+      "asOf": "2026-10-16"
+    },
+    "TH": {
+      "target": 2,
+      "band": [
+        1,
+        3
+      ],
+      "measure": "headline inflation (CPI), annual",
+      "institution": "Bank of Thailand (target agreed by the Monetary Policy Committee and the Minister of Finance, approved by the Cabinet)",
+      "source": "https://www.bot.or.th/en/our-roles/monetary-policy/monetary-policy-target.html",
+      "wording": "The Minister of Finance and the MPC mutually agreed to set the monetary policy target range for headline inflation over the medium-term horizon at 1.0 – 3.0 percent.",
+      "note": "Target for 2026 announced 5 January 2026 (Cabinet approval 30 December 2025): the 1-3 percent medium-term range is unchanged; for 2026 the stated aim is a gradual return of headline inflation to the medium-term target and the prevention of deflation. 2 is the midpoint; no official page prints it.",
+      "asOf": "2026-10-16"
+    },
+    "MY": {
+      "target": null,
+      "band": null,
+      "measure": "none stated",
+      "institution": "Bank Negara Malaysia",
+      "source": "https://www.bnm.gov.my/monetary-policy",
+      "wording": "Bank Negara Malaysia seeks to implement a monetary policy that maintains a low and predictable pace of increase in the general level of prices of goods and services, taking into consideration economic developments and the outlook.",
+      "note": "No numerical target on the framework page (framework of April 2004); the tool uses its default of 2.",
+      "asOf": "2026-10-16"
+    },
+    "HK": {
+      "target": null,
+      "band": null,
+      "measure": "none (Linked Exchange Rate System, HK$7.75-7.85 per US dollar)",
+      "institution": "Hong Kong Monetary Authority (objective set by the Financial Secretary)",
+      "source": "https://www.hkma.gov.hk/eng/key-functions/money/",
+      "wording": "Hong Kong's monetary policy objective is to maintain a stable exchange value of the Hong Kong dollar.",
+      "note": "Currency board since 17 October 1983; no inflation target. The tool uses its default of 2.",
+      "asOf": "2026-10-16"
+    },
+    "SG": {
+      "target": null,
+      "band": null,
+      "measure": "none (MAS Core Inflation is monitored; exchange-rate-based policy)",
+      "institution": "Monetary Authority of Singapore",
+      "source": "https://www.mas.gov.sg/monetary-policy/Singapores-Monetary-Policy-Framework/faqs/section-1",
+      "wording": "MAS does not have an explicit inflation target. Nevertheless, MAS has concluded that, on average, a core inflation rate of just under 2%, which is close to its historical mean, is consistent with overall price stability in the economy.",
+      "note": "The tool uses its default of 2, close to the stated reference for core inflation.",
+      "asOf": "2026-10-16"
+    },
+    "RO": {
+      "target": 2.5,
+      "band": [
+        1.5,
+        3.5
+      ],
+      "measure": "CPI, annual",
+      "institution": "National Bank of Romania",
+      "source": "https://www.bnr.ro/en/2512-inflation-targets",
+      "wording": "Starting December 2013, the NBR's inflation target has been a multiannual flat target set at 2.5 percent ±1 percentage point.",
+      "asOf": "2026-10-16"
+    },
+    "PE": {
+      "target": 2,
+      "band": [
+        1,
+        3
+      ],
+      "measure": "CPI of Metropolitan Lima (INEI), 12-month change",
+      "institution": "Banco Central de Reserva del Perú",
+      "source": "https://www.bcrp.gob.pe/en/monetary-policy.html",
+      "wording": "The BCRP follows a policy of Explicit Inflation Targets. The inflation target (a range between 1 and 3 percent) seeks to anchor inflation expectations at a level similar to that of developed economies and establish a permanent commitment to currency stability.",
+      "note": "A target range since March 2014, no point target; 2 is the midpoint.",
+      "asOf": "2026-10-16"
+    },
+    "PH": {
+      "target": 3,
+      "band": [
+        2,
+        4
+      ],
+      "measure": "headline CPI, average annual change",
+      "institution": "Bangko Sentral ng Pilipinas (target set by the Development Budget Coordination Committee)",
+      "source": "https://www.bsp.gov.ph/Price%20Stability/MonetaryPolicyReport/FullReport-Aug2026.pdf",
+      "wording": "The annual inflation target is 3.0 percent, with a tolerance range of ± 1.0 percentage point (ppt) around the target, for 2026–2028.",
+      "note": "Monetary Policy Report of August 2026 (Monetary Board, 27 August 2026). The BSP's inflation-targeting web pages were unavailable on 16 October 2026; the report is the cited source.",
+      "asOf": "2026-10-16"
+    }
+  }
+}
