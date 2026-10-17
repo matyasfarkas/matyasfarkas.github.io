@@ -1257,6 +1257,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#16-inflation_targetsjson-the-official-inflation-target-per-bloc-since-2026-10-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. inflation_targets.json — the official inflation target per bloc (since 2026-10-16)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-the-dsge-response-files-apppublicdatadsgeirfsmodelrulejson-and-the-duplicate-guard-since-2026-10-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. The DSGE response files — app/public/data/dsge/irfs/&lt;model&gt;/&lt;rule&gt;.json — and the duplicate guard (since 2026-10-16)
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2059,6 +2081,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#16-inflation_targetsjson-the-official-inflation-target-per-bloc-since-2026-10-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. inflation_targets.json — the official inflation target per bloc (since 2026-10-16)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-the-dsge-response-files-apppublicdatadsgeirfsmodelrulejson-and-the-duplicate-guard-since-2026-10-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. The DSGE response files — app/public/data/dsge/irfs/&lt;model&gt;/&lt;rule&gt;.json — and the duplicate guard (since 2026-10-16)
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2111,6 +2155,7 @@ GVAR coupling lives in <code>app/public/data/bvar/gvar/</code>.</p>
   coverage_manifest.json             per-variable sources, coverage, flags, model-implied quarters
   nowcast_provenance.json            which history cells the coupled nowcast supplied (model-implied)
   default_anchors.json, cookbook/, dsge/, vintages/, weo_forecasts.json, …   (also in the pack)
+  inflation_targets.json             official inflation target per bloc — the default π* of the optimal move (§16)
   bvar/
     US/   EA/   JP/  …               one directory per economy (52: 35 coupled GVAR blocs + 17 euro members)
       spec.json                      variable manifest (ids, blocks, transforms)
@@ -2145,7 +2190,8 @@ arrays converted <strong>once</strong> to <code>Float64Array</code> for fast ind
 structured-clone into the band worker.</p>
 <h3 id="11-manifestjson-the-data-pack">1.1 <code>manifest.json</code> — the data pack<a class="headerlink" href="#11-manifestjson-the-data-pack" title="Permanent link">&para;</a></h3>
 <p>Written by <code>app/scripts/pack-build.mjs</code>, checked by <code>app/scripts/pack-verify.mjs</code>
-(every web build runs <code>pack-verify --full</code> in <code>prebuild</code>), read at runtime by
+(every web build runs <code>pack-verify --full</code> in <code>prebuild</code>; its checks: dating, integrity, weights↔coupling,
+tool version, completeness, calendar, and since 2026-10-16 the DSGE duplicate guard of §17), read at runtime by
 <code>app/src/lib/data/dataManifest.ts</code>. The manifest itself is the root of trust: it is
 fetched without caching and not hash-checked (a detached signature is a planned
 upgrade; today the format only leaves room for it).</p>
@@ -4680,7 +4726,99 @@ CEE 136/144; CMR 139/149; Coenen 129/138; GR 145/152; LWW 133/151; OW08 68/89; O
 Before the replacement (pack 20261015, never published) three counts differed: SW 131 (NK_GLSV07's file held the
 Taylor response, which passed the screen; its true SW response does not raise the rate on impact), Coenen 127
 (US_CCTW10 and US_YR13 failed the trial's gate because the gate compared them with the wrong files; recomputed
-2026-10-15), LWW 132 (EA_VI16bgg's file held the OW08 response, which failed the inflation screen).</p>
+2026-10-15), LWW 132 (EA_VI16bgg's file held the OW08 response, which failed the inflation screen). The 2026-10-16
+sweep of the other 141 models (<code>docs/reest-2026/irf_sweep/</code>, pack <code>2026Q2-reest-20261016b</code>) replaced one more file,
+NK_KM16 under CEE (it held the GR response); its entry in the CEE table changed numerically and the counts above
+are unchanged.</p>
+<h2 id="16-inflation_targetsjson-the-official-inflation-target-per-bloc-since-2026-10-16">16. <code>inflation_targets.json</code> — the official inflation target per bloc (since 2026-10-16)<a class="headerlink" href="#16-inflation_targetsjson-the-official-inflation-target-per-bloc-since-2026-10-16" title="Permanent link">&para;</a></h2>
+<p>The default π<em> of the optimal move (<code>lib/compute/optimalPolicy.ts</code> <code>resolvePiStar</code>: the slider's value when set,
+else this file's target for the active bloc, else 2) — user decision 2026-10-16, "use the default π</em> that aligns
+with the current official target". Loaded once (<code>lib/data/inflationTargets.ts</code>, <code>fetchJSONIfInPack</code>); a pack
+without the file leaves every bloc on 2 and the caption under the slider says so.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;asOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-10-16&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;blocs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;US&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;target&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;band&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;measure&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PCE price index, annual change&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;institution&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Federal Reserve (FOMC)&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.federalreserve.gov/monetarypolicy/files/FOMC_LongerRunGoals.pdf&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;wording&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Committee reaffirms its judgment that inflation at the rate of 2 percent, ...&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;asOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-10-16&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;IN&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;target&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;band&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">],</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;HK&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;target&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;band&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;measure&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none (Linked Exchange Rate System, ...)&quot;</span><span class="p">,</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="err">...</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td>the official numerical target, % a year — the midpoint when only a range is stated (AU 2–3 → 2.5, NZ 1–3 → 2, TH 1–3 → 2, PE 1–3 → 2); <code>null</code> = no numerical target (DK, HK and SA peg their currency; SG and MY state no number; TW's law names price stability without a number; CH defines price stability as CPI below 2%) — the app then uses 2 and says so.</td>
+</tr>
+<tr>
+<td><code>band</code></td>
+<td><code>[low, high]</code>, the interval the authority publishes around its target under whatever name — tolerance band (CZ, HU, PL, RO, BR, CL, CO, CR, ID, PH, ZA, IN), target range (CA, NZ, TH, PE, AU), variability interval (MX, which says it is not a tolerance margin), uncertainty band (TR, the open-letter trigger), variation band (SE, "not a target interval"); the authority's own qualification is in <code>note</code>. <code>null</code> when the authority publishes no interval (the Fed, ECB, BoJ, Norges Bank, BoK, China) or only a deviation threshold it does not present as an interval around the target (the UK's 1 pp open-letter trigger, Iceland's 1½ pp reporting threshold).</td>
+</tr>
+<tr>
+<td><code>measure</code></td>
+<td>the price measure the authority targets (PCE for the US, HICP for the euro area, CPIF for Sweden, headline CPI elsewhere). The models' price variables differ from these (the US bloc's is the GDP deflator <code>JGDP</code>; the HICP for European blocs); π* is applied to the model's inflation series as a number.</td>
+</tr>
+<tr>
+<td><code>institution</code>, <code>source</code>, <code>wording</code>, <code>note</code>, <code>asOf</code></td>
+<td>who sets the target, the official page it was read from, the official sentence quoted, caveats, and the date it was read.</td>
+</tr>
+</tbody>
+</table>
+<p>Every entry was read from the authority's own site on the <code>asOf</code> date (the compilation: three fetch runs on
+2026-10-16; where a site refused automated reading the entry names the official document used instead — MX and PH
+from official PDFs, NZ from the Government's Remit documents, PL only from the 2022 Monetary Policy Guidelines, so
+flagged in its <code>note</code>). Values on 2026-10-16: 2 for the US, the euro area and its 17 members, the UK, JP, CA, NZ,
+NO, SE, CZ, KR, CN (the government's annual goal, "around 2 percent") and TH, PE (range midpoints); 2.5 for AU, IS,
+PL, ID, RO; 3 for CL, CO, CR, HU (2.5 from 1 January 2028), MX, BR, ZA (3 ±1 since 12 November 2025, replacing
+3–6%), PH; 4 for IN; 5 for TR (the medium-term target set with the government; the year-end interim targets are
+24/15/9% for 2026–28); none for DK, CH, TW, SA, MY, HK, SG. This file is <strong>not</strong> <code>default_anchors.json</code> (the
+long-run anchor preset listed in §1: a forecast device kept only where a model has a terminal gap, with consensus
+values; <code>docs/anchor-review-2026-07.md</code>): the two agree on every inflation anchor except SA (anchor 2, no official
+target), and <code>inflation-targets.test.ts</code> keeps it so.</p>
+<h2 id="17-the-dsge-response-files-apppublicdatadsgeirfsmodelrulejson-and-the-duplicate-guard-since-2026-10-16">17. The DSGE response files — <code>app/public/data/dsge/irfs/&lt;model&gt;/&lt;rule&gt;.json</code> — and the duplicate guard (since 2026-10-16)<a class="headerlink" href="#17-the-dsge-response-files-apppublicdatadsgeirfsmodelrulejson-and-the-duplicate-guard-since-2026-10-16" title="Permanent link">&para;</a></h2>
+<p>One file per model and policy rule (155 models, 1,273 files), written by <code>pipeline/compute_irfs_mmb.m</code> (MATLAB +
+Dynare 6, the MMB CLI internals): <code>{interest_: {var: [0, h1..h20]}, fiscal_: {...}}</code>, the responses to the MMB
+monetary and fiscal shocks, element 0 the pre-shock zero. The rule-based and optimal-policy counterfactuals read
+them; the optimal-move tables of §15 are built from them.</p>
+<p><strong>The duplicate guard.</strong> On 2026-10-14, 20 of these files in 14 models were found to hold <em>another</em> rule's
+response of the same model (replaced 2026-10-15; <code>docs/reest-2026/irf_dupfix/</code>). A copied file is well formed,
+so nothing caught it. Since 2026-10-16 three things do:</p>
+<table>
+<thead>
+<tr>
+<th>Where</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>app/scripts/pack-verify.mjs</code> section [7] (runs in every web build's <code>prebuild</code>, <code>--full</code>)</td>
+<td>fails the pack when two rule files of one model have the same <code>interest_</code> response (every shared variable within 1e-8, at least one non-zero value), unless the model is on the allow-list of <code>app/scripts/lib/irfDuplicates.mjs</code> with a reason read from its model file — today <code>FI_AINO16</code> only ("Monetary Policy is exogenous here, so no monetary policy rule"). An allow-listed model whose files are <em>not</em> identical also fails (a stale entry). Only the monetary shock is compared: the fiscal shock of NK_BGEU10 and NK_BGUS10 is genuinely identical under every rule (it moves only its own label variable) and a copied file is identical on both shocks anyway.</td>
+</tr>
+<tr>
+<td><code>src/__tests__/data/irf-duplicates.test.ts</code> (default <code>npm test</code> set)</td>
+<td>the same scan on hermetic fixtures and on the shipped tree.</td>
+</tr>
+<tr>
+<td><code>pipeline/compute_irfs_mmb.m</code></td>
+<td>a run without <code>worker_tag</code> now gets a unique one (date-time + process id), so two runs can never share a work folder — sharing one is the likely cause; after every file it writes, the generator compares the new <code>interest_</code> response with the model's other rule files on disk, prints <code>[DUPLICATE]</code> and ends with an error. <code>pipeline/batch_irfs.sh</code> (the legacy Octave path) has neither and says so in its header.</td>
+</tr>
+</tbody>
+</table>
+<p>What the guard does <strong>not</strong> catch: a wrong file whose partner is also wrong (NK_BGEU10's <code>OW13.json</code> held the
+Coenen response while <code>Coenen.json</code> held CMR's, so no two files were identical). Only a regeneration against an
+independent run finds that class (<code>irf_dupfix/REPORT.md</code>, method; the 2026-10-16 sweep of the other 141 models,
+<code>docs/reest-2026/irf_sweep/</code>).</p>
 
 
 
