@@ -1,9 +1,9 @@
 {
  "schemaVersion": "2.0",
  "minToolVersion": "4.0.0",
- "packId": "2026Q2-reest-20261015b",
- "previousPackId": "2026Q2-reest-20261015",
- "generatedAt": "2026-10-15T20:01:12.316Z",
+ "packId": "2026Q2-reest-20261016b",
+ "previousPackId": "2026Q2-reest-20261016",
+ "generatedAt": "2026-10-16T10:38:00.923Z",
  "generatedBy": "pack-build.mjs v0",
  "panel": {
   "lastHistQuarter": "2026Q2"
@@ -6165,8 +6165,8 @@
   },
   "dsge/irfs/NK_KM16/CEE.json": {
    "path": "dsge/irfs/NK_KM16/CEE.json",
-   "sha256": "cb9a0aa95fc61870c75cdcc53c3cfc96ee42f89c2a97d6cac9d6742204162038",
-   "bytes": 56158
+   "sha256": "d79beab00c544970ec10c819fd49c0cf11cbd541e44daf017005ed49b4f5fbb7",
+   "bytes": 74225
   },
   "dsge/irfs/NK_KM16/CMR.json": {
    "path": "dsge/irfs/NK_KM16/CMR.json",
@@ -9710,8 +9710,8 @@
   },
   "dsge/opp/CEE.json": {
    "path": "dsge/opp/CEE.json",
-   "sha256": "bbdbde4302c37acf3e579bfa3ec9a8790585335f81ff5783b54a372fd1b6473b",
-   "bytes": 115314
+   "sha256": "ca34a2c0d3e6018371e9b72bacc71144651b8c93e3937a96dcb07410a35117a6",
+   "bytes": 115245
   },
   "dsge/opp/CMR.json": {
    "path": "dsge/opp/CMR.json",
@@ -9772,6 +9772,11 @@
    "path": "example_scenario_us_iran_war.xlsx",
    "sha256": "686d7a840c42fb81d71f9b44add046d732f31f64217acc8debb5e443370158ec",
    "bytes": 33990
+  },
+  "inflation_targets.json": {
+   "path": "inflation_targets.json",
+   "sha256": "b79ae61cc6f4bc80aeb66760f267a9dfa8c471a1e8f0821486453b8bc2d37bc0",
+   "bytes": 37435
   },
   "meta/countries.json": {
    "path": "meta/countries.json",
