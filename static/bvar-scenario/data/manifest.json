@@ -1,9 +1,9 @@
 {
  "schemaVersion": "2.0",
  "minToolVersion": "4.0.0",
- "packId": "2026Q2-reest-20261016b",
- "previousPackId": "2026Q2-reest-20261016",
- "generatedAt": "2026-10-16T10:38:00.923Z",
+ "packId": "2026Q2-reest-20261103",
+ "previousPackId": "2026Q2-reest-20261016b",
+ "generatedAt": "2026-11-04T01:31:26.284Z",
  "generatedBy": "pack-build.mjs v0",
  "panel": {
   "lastHistQuarter": "2026Q2"
@@ -500,13 +500,13 @@
   },
   "bvar/AU/baseline.json": {
    "path": "bvar/AU/baseline.json",
-   "sha256": "d7086fcecedf75dce87eb21c7ce8b914b89c5d35205e933c7c0199101be85ff8",
-   "bytes": 48724
+   "sha256": "1a034ebf2a36e94a94e17e24e22d48c6a4dcd0a7dd19edff5617b8845409e45e",
+   "bytes": 48565
   },
   "bvar/AU/baseline_levels.json": {
    "path": "bvar/AU/baseline_levels.json",
-   "sha256": "cc2a0cb91538400368518dcf839f85be2a6f04dd095e9d93cb5642d1f6d41b3a",
-   "bytes": 48241
+   "sha256": "74107f56f96ca3878aaba5a07589a7ac7339156e1bd92f0f9f219b7e9be9af6a",
+   "bytes": 48082
   },
   "bvar/AU/companion_draws.json.gz": {
    "path": "bvar/AU/companion_draws.json.gz",
@@ -610,13 +610,13 @@
   },
   "bvar/BR/baseline.json": {
    "path": "bvar/BR/baseline.json",
-   "sha256": "3c36482c588cc687b5f8bd57626bebdc8b64cb3ee46613cc44d34f4354bea514",
-   "bytes": 47160
+   "sha256": "97adaf0912f9b21be3b5d4b86b7a13e70c93300fa613c2e6687bee4133255d0d",
+   "bytes": 46993
   },
   "bvar/BR/baseline_levels.json": {
    "path": "bvar/BR/baseline_levels.json",
-   "sha256": "7c104cd02dbdcc3f2bf6b12a49c328d2ec8e127f642d30f9e0a1414b09632dfd",
-   "bytes": 46559
+   "sha256": "63ef578f69efd96c2359186d323e2baf8e0f94de390d8fc7d41c9d4b93d06383",
+   "bytes": 46386
   },
   "bvar/BR/companion_draws.json.gz": {
    "path": "bvar/BR/companion_draws.json.gz",
@@ -665,13 +665,13 @@
   },
   "bvar/CA/baseline.json": {
    "path": "bvar/CA/baseline.json",
-   "sha256": "e2205268b98f47f034e95d0636d0d2d22ea0a6ee64347fadf8c23d9f35ff2c98",
-   "bytes": 52387
+   "sha256": "8996fa0b90fecc205e9600136ee0234dca4886083c71e9167aab09c177111a37",
+   "bytes": 52223
   },
   "bvar/CA/baseline_levels.json": {
    "path": "bvar/CA/baseline_levels.json",
-   "sha256": "caec2ddb05530db28986dc4ce815cbaf38e309b88f2a1f6d1eee86179c53d054",
-   "bytes": 51789
+   "sha256": "dbe523db1a93f0779da507a5403898be3c0e65a2aa34752abea7b3f77dd28852",
+   "bytes": 51671
   },
   "bvar/CA/companion_draws.json.gz": {
    "path": "bvar/CA/companion_draws.json.gz",
@@ -720,13 +720,13 @@
   },
   "bvar/CH/baseline.json": {
    "path": "bvar/CH/baseline.json",
-   "sha256": "d61707c9b9089b1106fad7a06a6652366f018e0c6f4745dd2cd21c1810a24f72",
-   "bytes": 37725
+   "sha256": "d9eb4b649b87cbdea06c56090fe85aeb6c9e29e557a178f7e114c2759b6c95db",
+   "bytes": 37786
   },
   "bvar/CH/baseline_levels.json": {
    "path": "bvar/CH/baseline_levels.json",
-   "sha256": "30a22ecd47ef01a8f71b2b29c437df7d6cc130fba13a01b44b75075c4f6ea231",
-   "bytes": 37135
+   "sha256": "aa92452475d9b38d99309d2e33a5928ea7979ace6ed27f3b88da167aa635e475",
+   "bytes": 37136
   },
   "bvar/CH/companion_draws.json.gz": {
    "path": "bvar/CH/companion_draws.json.gz",
@@ -770,13 +770,13 @@
   },
   "bvar/CL/baseline.json": {
    "path": "bvar/CL/baseline.json",
-   "sha256": "dac6ea0cdf06b79d7b30305c447a0694869bbb4328645877a98079f227e29a3d",
-   "bytes": 48821
+   "sha256": "60b9f34e946d65bed570e21adc16487ec1602738e2e2787950ef4e20cc830e41",
+   "bytes": 48675
   },
   "bvar/CL/baseline_levels.json": {
    "path": "bvar/CL/baseline_levels.json",
-   "sha256": "cfcfc6a9e8cf5b5499f46468b2990b9ee4bc010dc9d538c9e6962eb6a89376c3",
-   "bytes": 48267
+   "sha256": "3eac37021d2306dbc0e0aa17322dce2861eca1c9315dcbfd67a1b510a1fb87cb",
+   "bytes": 48159
   },
   "bvar/CL/companion_draws.json.gz": {
    "path": "bvar/CL/companion_draws.json.gz",
@@ -825,13 +825,13 @@
   },
   "bvar/CN/baseline.json": {
    "path": "bvar/CN/baseline.json",
-   "sha256": "31b85d328b7d4d201b1f62ccda168296c0469330b4c68f408647e084301072b0",
-   "bytes": 41491
+   "sha256": "fc0ab631db2816f6a02d3854501eca0aac998a403d8880a27bacd85546cb2c36",
+   "bytes": 41386
   },
   "bvar/CN/baseline_levels.json": {
    "path": "bvar/CN/baseline_levels.json",
-   "sha256": "0f5c2259e30102251d2a35b3ff36e2ffea4c7ce2c223aadfcbf038b782912bb0",
-   "bytes": 40911
+   "sha256": "6e65d5f7bf2efc1873f426e37e8a26ac4c61267cec78e737973cbb331aba195e",
+   "bytes": 40780
   },
   "bvar/CN/companion_draws.json.gz": {
    "path": "bvar/CN/companion_draws.json.gz",
@@ -880,13 +880,13 @@
   },
   "bvar/CO/baseline.json": {
    "path": "bvar/CO/baseline.json",
-   "sha256": "e2fff2325c2484d0f8a27c6b4afd52b696628a0595ab91efb069831926a9a519",
-   "bytes": 50864
+   "sha256": "a224d954f58938528d8132e7b020d4b06405d66db4942b2f0aebbbccd0733402",
+   "bytes": 50592
   },
   "bvar/CO/baseline_levels.json": {
    "path": "bvar/CO/baseline_levels.json",
-   "sha256": "6dfe31bf6e66475d0022e138ee83cd2876477a0132dfc711024fea3489835484",
-   "bytes": 50359
+   "sha256": "fe4977340a765f255d62601b80ee144f980e4333b1bbd0a91fc3749b4a9ffe1a",
+   "bytes": 50080
   },
   "bvar/CO/companion_draws.json.gz": {
    "path": "bvar/CO/companion_draws.json.gz",
@@ -935,13 +935,13 @@
   },
   "bvar/CR/baseline.json": {
    "path": "bvar/CR/baseline.json",
-   "sha256": "d552b4050046ae6e33d2644293d11f8374c9dacb6a5709f76ff4a29fee3c25ee",
-   "bytes": 39471
+   "sha256": "63ba214e7ecb7ee1e4a7c8aa056c4e7ab355abadb2e6757754e30dda153f0636",
+   "bytes": 39265
   },
   "bvar/CR/baseline_levels.json": {
    "path": "bvar/CR/baseline_levels.json",
-   "sha256": "bd63db09f6530a60542d0c02d421c2ea3581cbe0b9b5523e3d48c69811a90741",
-   "bytes": 39147
+   "sha256": "6d3352a33cafdc6d84a6b128ec5a064ad4fa44a66fc8eb050ddf7344edd16579",
+   "bytes": 38912
   },
   "bvar/CR/companion_draws.json.gz": {
    "path": "bvar/CR/companion_draws.json.gz",
@@ -985,13 +985,13 @@
   },
   "bvar/CZ/baseline.json": {
    "path": "bvar/CZ/baseline.json",
-   "sha256": "50d076ce24993a06537415e10dc8ed3fd9ab73ef77d5f1801f325e244d5b5582",
-   "bytes": 48613
+   "sha256": "687eed467b9118e47d7ca8be39138223ebb632c55c3450c5556af0d5b9128205",
+   "bytes": 48455
   },
   "bvar/CZ/baseline_levels.json": {
    "path": "bvar/CZ/baseline_levels.json",
-   "sha256": "1f7794f9f60cc6a73b6ea5fb2e2413b75b86b4b9bfc533da1170fa467c8d7dd1",
-   "bytes": 47903
+   "sha256": "c77b4e0f8c3ac97e7568ab8392333b85732d11aa9da272eecd2e74a5dc0207aa",
+   "bytes": 47811
   },
   "bvar/CZ/companion_draws.json.gz": {
    "path": "bvar/CZ/companion_draws.json.gz",
@@ -1095,13 +1095,13 @@
   },
   "bvar/DK/baseline.json": {
    "path": "bvar/DK/baseline.json",
-   "sha256": "1926067e73c020c4ba58229fb1b6cdbced1fef8c13cd0bc9b99c025e7adff8bd",
-   "bytes": 50806
+   "sha256": "60ae99c0852a1ade604c177cb102d6b62a0670cf05af7671f17d10fa02bc7033",
+   "bytes": 50551
   },
   "bvar/DK/baseline_levels.json": {
    "path": "bvar/DK/baseline_levels.json",
-   "sha256": "007c16f6ac130934f6ec367e54d6768893f51bcb731b4ebe10a2cb952ba46c86",
-   "bytes": 50110
+   "sha256": "aed02a9f9961ae3bf01c3dd27f41978a1d27286e3430b1ec34ff24d24ec3d0fc",
+   "bytes": 49840
   },
   "bvar/DK/companion_draws.json.gz": {
    "path": "bvar/DK/companion_draws.json.gz",
@@ -1150,13 +1150,13 @@
   },
   "bvar/EA/baseline.json": {
    "path": "bvar/EA/baseline.json",
-   "sha256": "7b1bc88be92d994f6c381aa3c19389b17364e3a288a312fe8618a2aca9d3dada",
-   "bytes": 48774
+   "sha256": "98522d077897f331365287de5a92ea044f085c98b2985d2a2607eab020f82a2f",
+   "bytes": 48644
   },
   "bvar/EA/baseline_levels.json": {
    "path": "bvar/EA/baseline_levels.json",
-   "sha256": "554a5cfa00f9e99d7b19b0f76a0164672aee4425719c9f77231319c996d20413",
-   "bytes": 48282
+   "sha256": "36677184f1677ef4fa59a6a810d0e8e4daf5e3eab08def5de4124e953fb7fa60",
+   "bytes": 48149
   },
   "bvar/EA/companion_draws.json.gz": {
    "path": "bvar/EA/companion_draws.json.gz",
@@ -1480,13 +1480,13 @@
   },
   "bvar/HK/baseline.json": {
    "path": "bvar/HK/baseline.json",
-   "sha256": "71da797947da54579943c0f9a741df679f49ce887bd9dc23b33fbffba069c865",
-   "bytes": 32085
+   "sha256": "0b6ab73033ae794527aff12c4dfff93247f0bca2b2e57a637e77f27ca049f9c9",
+   "bytes": 32134
   },
   "bvar/HK/baseline_levels.json": {
    "path": "bvar/HK/baseline_levels.json",
-   "sha256": "1f89e4b40538444a1811ecc8a114df7543eb2e26088be8512a9f905d7055a8e0",
-   "bytes": 31549
+   "sha256": "7ac22bb0124654f717c87e2303a54fed35d408cfab01dc2be63e579b48b6f6dd",
+   "bytes": 31602
   },
   "bvar/HK/companion_draws.json.gz": {
    "path": "bvar/HK/companion_draws.json.gz",
@@ -1530,13 +1530,13 @@
   },
   "bvar/HU/baseline.json": {
    "path": "bvar/HU/baseline.json",
-   "sha256": "bf4fa48994881a5d9abb688f4fd6e0b25e1b80ee2b5c36820c62341fd426252a",
-   "bytes": 48811
+   "sha256": "b6e0f7bfe8f751ead7cb6216fd3514bafda48554a10f09b157cd6a25dcd6cf21",
+   "bytes": 48639
   },
   "bvar/HU/baseline_levels.json": {
    "path": "bvar/HU/baseline_levels.json",
-   "sha256": "6d429374634748a09828d88154bf65b9e8b52964c0a7e1dfb7949025b5af1742",
-   "bytes": 47883
+   "sha256": "09a355d07a3deee731b537b77b3ea1764ce6060b2bf5fe27e934cb81781e4d0a",
+   "bytes": 47748
   },
   "bvar/HU/companion_draws.json.gz": {
    "path": "bvar/HU/companion_draws.json.gz",
@@ -1585,13 +1585,13 @@
   },
   "bvar/ID/baseline.json": {
    "path": "bvar/ID/baseline.json",
-   "sha256": "4aec5da35c4dd2059d809cdef10bca9577898134fd1ff7947c13c20511d91ec3",
-   "bytes": 46664
+   "sha256": "63d61ba6b9e7e80954ac57a61af6e0b6b04a0899f004e1a9e596a761c305bbd6",
+   "bytes": 46629
   },
   "bvar/ID/baseline_levels.json": {
    "path": "bvar/ID/baseline_levels.json",
-   "sha256": "ba0369b823fa0bd8f10359c5aa9f2b0457a749fccd0ec707290f082e96a50e94",
-   "bytes": 46218
+   "sha256": "68117a0c41cfb4bd185d63f52227d1d6ab2ebb987dd3ad2879bb69d1e147c577",
+   "bytes": 46243
   },
   "bvar/ID/companion_draws.json.gz": {
    "path": "bvar/ID/companion_draws.json.gz",
@@ -1695,13 +1695,13 @@
   },
   "bvar/IN/baseline.json": {
    "path": "bvar/IN/baseline.json",
-   "sha256": "8d918ce48ab1e69b2d3bd47f0707d0d577325dc1348f71195f8184812f2fd6ba",
-   "bytes": 37510
+   "sha256": "aa44cd2a1432609e8f61ddfac8487dde3b468aa546867f49568225ffcfb13f02",
+   "bytes": 37434
   },
   "bvar/IN/baseline_levels.json": {
    "path": "bvar/IN/baseline_levels.json",
-   "sha256": "83d2cf946bfa4f957ddc4edcb92ae8ff23c9a05524e000ff596dc2bcaf3a06a5",
-   "bytes": 37144
+   "sha256": "cd649ad98f10bcb0dde5533e1e0ede62b676ddad2becb6a7eaad159831989b8a",
+   "bytes": 37140
   },
   "bvar/IN/companion_draws.json.gz": {
    "path": "bvar/IN/companion_draws.json.gz",
@@ -1745,13 +1745,13 @@
   },
   "bvar/IS/baseline.json": {
    "path": "bvar/IS/baseline.json",
-   "sha256": "5b5e8423eeacc3c8a4137005bdac5d87e23e349b31fa3ab183774cf70cc25132",
-   "bytes": 39459
+   "sha256": "69baf1efb639f92d02325f52ab05d0ce42ca10800e8c3384f7dbaf7320a00281",
+   "bytes": 39387
   },
   "bvar/IS/baseline_levels.json": {
    "path": "bvar/IS/baseline_levels.json",
-   "sha256": "d4f3258bb4e46ec54da068a361105f94004d6a9e49f043bfd4909d0d0c02abfe",
-   "bytes": 39070
+   "sha256": "ff96a0df2550cc88cdb91942dd786f0fe78dff7ce9c3b498813bd88c153e43fd",
+   "bytes": 38965
   },
   "bvar/IS/companion_draws.json.gz": {
    "path": "bvar/IS/companion_draws.json.gz",
@@ -1850,13 +1850,13 @@
   },
   "bvar/JP/baseline.json": {
    "path": "bvar/JP/baseline.json",
-   "sha256": "e8da9bce7621fe96e9851afd3addd8ce99a88b28e8bbfa6423daa101d0f836ed",
-   "bytes": 50814
+   "sha256": "e126b632711cc16f51ae6a7b2556e7b11f6131f3207c9e79481641d83cc71355",
+   "bytes": 50840
   },
   "bvar/JP/baseline_levels.json": {
    "path": "bvar/JP/baseline_levels.json",
-   "sha256": "3b775a8d8c61b0081ba7a5f901a97952c4f528f7bb1a82587eb643f29bf9b375",
-   "bytes": 50324
+   "sha256": "1f0a1da85377cc41a787bd68974d99f1e2161f72618eb97743a1a8bfbec8a7d0",
+   "bytes": 50351
   },
   "bvar/JP/companion_draws.json.gz": {
    "path": "bvar/JP/companion_draws.json.gz",
@@ -1900,13 +1900,13 @@
   },
   "bvar/KR/baseline.json": {
    "path": "bvar/KR/baseline.json",
-   "sha256": "817a52a88cc183d13779d6969c13b4c86c91fcba03de24502cffb9ee9bf73222",
-   "bytes": 50821
+   "sha256": "c117b3b17f2040af1664e9ae949f6873487a902f326d36dd02a5ad9c5c4c67b9",
+   "bytes": 50587
   },
   "bvar/KR/baseline_levels.json": {
    "path": "bvar/KR/baseline_levels.json",
-   "sha256": "05f58e11ca0093173a4dd77b6db4a27caacecf97d965dd771c3c6f270b74ef97",
-   "bytes": 50387
+   "sha256": "a269ff14c58fe30d28cfb61015bbf1fce306e2661ef3edc762d7dc50de18e9e5",
+   "bytes": 50207
   },
   "bvar/KR/companion_draws.json.gz": {
    "path": "bvar/KR/companion_draws.json.gz",
@@ -2115,13 +2115,13 @@
   },
   "bvar/MX/baseline.json": {
    "path": "bvar/MX/baseline.json",
-   "sha256": "86af62df8a8bead02b748bcade7e2105d03542ce4928aa00229036bf147e426c",
-   "bytes": 50465
+   "sha256": "c92d1bbd53c6e3b53e3b564c98b5914067781d7163568d0a92a54d15e1849f25",
+   "bytes": 50293
   },
   "bvar/MX/baseline_levels.json": {
    "path": "bvar/MX/baseline_levels.json",
-   "sha256": "a8f737d36c7c26d62e2049816c3761aa60a59dde107d2fe9259fc53f6a417a5e",
-   "bytes": 49861
+   "sha256": "fba421bf0d67570f24ed80ebf8d8f2ea5c0a8d0f54dde42945ffb261250ec7bf",
+   "bytes": 49780
   },
   "bvar/MX/companion_draws.json.gz": {
    "path": "bvar/MX/companion_draws.json.gz",
@@ -2170,13 +2170,13 @@
   },
   "bvar/MY/baseline.json": {
    "path": "bvar/MY/baseline.json",
-   "sha256": "1cb1db8936ad4e46524f57e704d02ec62e9bc8c1093dc7053da7ed928289467d",
-   "bytes": 39604
+   "sha256": "3d724d10bee9978b9327b81198b0cabf1290745eaf45738a276790e97885dcab",
+   "bytes": 39367
   },
   "bvar/MY/baseline_levels.json": {
    "path": "bvar/MY/baseline_levels.json",
-   "sha256": "87b940cea8ef5a1f685a984f883f43253b4e096df1e8216512bb8920b2069670",
-   "bytes": 39117
+   "sha256": "d3a489ee6706a9a8efd5f1682beac5653b823cdb2d9922046893fbb4f9de1659",
+   "bytes": 38902
   },
   "bvar/MY/companion_draws.json.gz": {
    "path": "bvar/MY/companion_draws.json.gz",
@@ -2275,13 +2275,13 @@
   },
   "bvar/NO/baseline.json": {
    "path": "bvar/NO/baseline.json",
-   "sha256": "dae35247b9ea56ecce2287ce80b6eccc958656ebfd800108edbc13e6c1d93068",
-   "bytes": 46783
+   "sha256": "a826e11d4b2aa59411faea5944b713d985cbecc5f4b293344482dc234d020c08",
+   "bytes": 46689
   },
   "bvar/NO/baseline_levels.json": {
    "path": "bvar/NO/baseline_levels.json",
-   "sha256": "3834c1312443dc48e3a44570fce431979b356e1919346e468b5ba8cf0c0d532d",
-   "bytes": 46199
+   "sha256": "a84c82ef10220efbb21372a6d545ff0f26da93571e15a1589c0425f33f0cfccc",
+   "bytes": 46158
   },
   "bvar/NO/companion_draws.json.gz": {
    "path": "bvar/NO/companion_draws.json.gz",
@@ -2330,13 +2330,13 @@
   },
   "bvar/NZ/baseline.json": {
    "path": "bvar/NZ/baseline.json",
-   "sha256": "16c4f74c908baef358e1faa1484d7f98e6abe7b696da45e61506bec89e923383",
-   "bytes": 47015
+   "sha256": "690cffe2942b472f812e05d2172e126b44c56b9ad7d6e0f3997cdebae7360caf",
+   "bytes": 46843
   },
   "bvar/NZ/baseline_levels.json": {
    "path": "bvar/NZ/baseline_levels.json",
-   "sha256": "b5a039af942d7a5f35c31e0472daab3dd917427c9e3eda55d4cc514a47fad408",
-   "bytes": 46275
+   "sha256": "d10ff678d624cf00163b8305af106a9eb638c57bc14a4c799f8bff5beda2505b",
+   "bytes": 46162
   },
   "bvar/NZ/companion_draws.json.gz": {
    "path": "bvar/NZ/companion_draws.json.gz",
@@ -2385,13 +2385,13 @@
   },
   "bvar/PE/baseline.json": {
    "path": "bvar/PE/baseline.json",
-   "sha256": "6be87bdda3283c18bcc19da01ece657a6a97014f0a3fb75dc05cf49a93f442f0",
-   "bytes": 37483
+   "sha256": "9e596ec3630210788cba8283b83fe80dd0828ec496b4549c0c510399ffcab110",
+   "bytes": 37497
   },
   "bvar/PE/baseline_levels.json": {
    "path": "bvar/PE/baseline_levels.json",
-   "sha256": "14d28dee1e4308f56a9abb074b8b8d50c10a81dcaf6c671e867b6aca9ef4055b",
-   "bytes": 37153
+   "sha256": "31ffc7cd9c3428d850cd40122ca5e9793ef76d84f9afaa44203f18d4bf97ee3c",
+   "bytes": 37159
   },
   "bvar/PE/companion_draws.json.gz": {
    "path": "bvar/PE/companion_draws.json.gz",
@@ -2435,13 +2435,13 @@
   },
   "bvar/PH/baseline.json": {
    "path": "bvar/PH/baseline.json",
-   "sha256": "9d7d5d7ebe7eabd8e231465c94e9b1d360c8fe02feb3e5827d4cf64508b24b41",
-   "bytes": 32072
+   "sha256": "5ff345785f9c60772015d85e415689ce6ac2e7a2d50a314812da8d53da573a8f",
+   "bytes": 31973
   },
   "bvar/PH/baseline_levels.json": {
    "path": "bvar/PH/baseline_levels.json",
-   "sha256": "b860c189414b4d4a77e98e1d5876db5ea6496b03f4c94769ad3d6a221918bace",
-   "bytes": 31653
+   "sha256": "b6b35e4d3284d47501cb96c990a1c0de59c0a2a8d34394f30d19361a7b87b98c",
+   "bytes": 31621
   },
   "bvar/PH/companion_draws.json.gz": {
    "path": "bvar/PH/companion_draws.json.gz",
@@ -2485,13 +2485,13 @@
   },
   "bvar/PL/baseline.json": {
    "path": "bvar/PL/baseline.json",
-   "sha256": "113c761d0c044400db1d0fa7e0993750dec8eeca24da8b75e38413231e6a8f69",
-   "bytes": 48606
+   "sha256": "4fe363a1823b63e7d727363d00f39fcc8dada97e0dc5b62403571f4519254b9f",
+   "bytes": 48481
   },
   "bvar/PL/baseline_levels.json": {
    "path": "bvar/PL/baseline_levels.json",
-   "sha256": "d6f4f600b34c98d1c710ae6a5240d1d24b2d2181d9f96b72aaf400761e277f7c",
-   "bytes": 48081
+   "sha256": "e3d7ba6be4d94975deb53ec0925ad88a21a2f271ca6a0ec1a1099fc83501d501",
+   "bytes": 47979
   },
   "bvar/PL/companion_draws.json.gz": {
    "path": "bvar/PL/companion_draws.json.gz",
@@ -2595,13 +2595,13 @@
   },
   "bvar/RO/baseline.json": {
    "path": "bvar/RO/baseline.json",
-   "sha256": "807c4e64b93b29056870490d213cbb7c2be3994054a7608d5cababf4657e645c",
-   "bytes": 33996
+   "sha256": "97d53f3ce61914fe850884304795cde251c3a09fc8643834dae8b803de940525",
+   "bytes": 33906
   },
   "bvar/RO/baseline_levels.json": {
    "path": "bvar/RO/baseline_levels.json",
-   "sha256": "6605a764a34acda41177aad5989677e95d266c4a52a0190858a2d6e8930cc7a0",
-   "bytes": 33424
+   "sha256": "a1e7c07f315d81e8012b9f3df7cb132864227741d5bfdec5e02531bf51caf83d",
+   "bytes": 33378
   },
   "bvar/RO/companion_draws.json.gz": {
    "path": "bvar/RO/companion_draws.json.gz",
@@ -2645,13 +2645,13 @@
   },
   "bvar/SA/baseline.json": {
    "path": "bvar/SA/baseline.json",
-   "sha256": "6252d39b85089ce32c0a5a3adbb5bdc6834acb5027e4897c5e5499b5bb2eb4b5",
-   "bytes": 33944
+   "sha256": "318cd1de6dc072353b4c6144a18d2bcc185869d09786a9c0738dc57d4a20e740",
+   "bytes": 33921
   },
   "bvar/SA/baseline_levels.json": {
    "path": "bvar/SA/baseline_levels.json",
-   "sha256": "00190b759933951317ceeda2a1920ffd4b926d37f96bf9be5b40f9d801933b1c",
-   "bytes": 33546
+   "sha256": "a8c93ca2f954aaabf1fe80f5524610c8e3ed3a44b13eddd6517f654d6512b67e",
+   "bytes": 33473
   },
   "bvar/SA/companion_draws.json.gz": {
    "path": "bvar/SA/companion_draws.json.gz",
@@ -2695,13 +2695,13 @@
   },
   "bvar/SE/baseline.json": {
    "path": "bvar/SE/baseline.json",
-   "sha256": "5fead35295995ae2b650ecd8b5fa8d4ab7152673d61bde30176e1fe7b0692be3",
-   "bytes": 50794
+   "sha256": "a07d616f9266eb5446e701734c83d351060ef2ea8f87ee14ade6390e4074179e",
+   "bytes": 50608
   },
   "bvar/SE/baseline_levels.json": {
    "path": "bvar/SE/baseline_levels.json",
-   "sha256": "d0e1b7c3d121cdf1077a38cfa52bc03501850c7dd3ae673250ce407bc4c4bd5f",
-   "bytes": 50249
+   "sha256": "2549bd8b91796b75465c9261a385c7f86bc40766b0b87eed2e243334b182d4ca",
+   "bytes": 50073
   },
   "bvar/SE/companion_draws.json.gz": {
    "path": "bvar/SE/companion_draws.json.gz",
@@ -2750,13 +2750,13 @@
   },
   "bvar/SG/baseline.json": {
    "path": "bvar/SG/baseline.json",
-   "sha256": "0880d2a88036d23312448d6a4302e51df9425b8ec79b11fbce6e92ce52c8c88c",
-   "bytes": 28310
+   "sha256": "4b32ccfe3aac742ba305905fd3d6fdf22f979381373272e16b69e115fed5afb9",
+   "bytes": 28318
   },
   "bvar/SG/baseline_levels.json": {
    "path": "bvar/SG/baseline_levels.json",
-   "sha256": "166385ebd32581170b8de70103a468c7c0f509d2d869897b8afc43f0f0f7e293",
-   "bytes": 27789
+   "sha256": "ec19e4c77d4f1e581a9f49e4313c1f8b844f780b2f2c8625274ed782dd0232fc",
+   "bytes": 27760
   },
   "bvar/SG/companion_draws.json.gz": {
    "path": "bvar/SG/companion_draws.json.gz",
@@ -2910,13 +2910,13 @@
   },
   "bvar/TH/baseline.json": {
    "path": "bvar/TH/baseline.json",
-   "sha256": "8ac25d9c8e3dad4ffcccdde459ef7341c9a9c295d37e25ebc794ee7b28c917cd",
-   "bytes": 51064
+   "sha256": "75e483649e729a3e4a95b4924d9f21d35a33d84649fc13eb6714500c24fa42fc",
+   "bytes": 51028
   },
   "bvar/TH/baseline_levels.json": {
    "path": "bvar/TH/baseline_levels.json",
-   "sha256": "ffb6ea2d98de6bf1a00208aa7ad07f832142d65102a013db6c65db6848d1334c",
-   "bytes": 50433
+   "sha256": "24fd2e51ace03b8e11419451aef3c4e222af6b176593b66672180f77238882d9",
+   "bytes": 50449
   },
   "bvar/TH/companion_draws.json.gz": {
    "path": "bvar/TH/companion_draws.json.gz",
@@ -2965,13 +2965,13 @@
   },
   "bvar/TR/baseline.json": {
    "path": "bvar/TR/baseline.json",
-   "sha256": "44922d1f7a51ee885cda36005f6325bdf0ca6939e4bb39d95c56627f60d68978",
-   "bytes": 46843
+   "sha256": "137fc8c9bca940abbf77b3921915c7dbb1f86b5ec4112a87dd56f9724790566b",
+   "bytes": 46915
   },
   "bvar/TR/baseline_levels.json": {
    "path": "bvar/TR/baseline_levels.json",
-   "sha256": "f30115d4466d1e17a2513daf388441a093e9baa67ae6da047a5927bca865169b",
-   "bytes": 46198
+   "sha256": "e0bdac0db3a581e6a729ad3d8047bb4cf70bdf8f78d743ad89ab45492e91867b",
+   "bytes": 46270
   },
   "bvar/TR/companion_draws.json.gz": {
    "path": "bvar/TR/companion_draws.json.gz",
@@ -3015,13 +3015,13 @@
   },
   "bvar/TW/baseline.json": {
    "path": "bvar/TW/baseline.json",
-   "sha256": "6689e2f27c98b8d6eda7f5387575288a025a45e019cebc11687e6927074de458",
-   "bytes": 39630
+   "sha256": "02f1ae518d3d75ccd527bdbd094849ed6cda4e0349c8a86b1b65c85cb874e932",
+   "bytes": 39611
   },
   "bvar/TW/baseline_levels.json": {
    "path": "bvar/TW/baseline_levels.json",
-   "sha256": "7bd80ce8c0c07d39d6ed6e8e2298967426716e5f78cabac2b536dff088565b48",
-   "bytes": 39290
+   "sha256": "d7d002cc51e594ceb943d6f4ca199f5d4c9fe55093520cd7c91e852104d66913",
+   "bytes": 39246
   },
   "bvar/TW/companion_draws.json.gz": {
    "path": "bvar/TW/companion_draws.json.gz",
@@ -3060,13 +3060,13 @@
   },
   "bvar/UK/baseline.json": {
    "path": "bvar/UK/baseline.json",
-   "sha256": "ffa95d66a3f48064486cc992ea00796ff651b934a2865547e1606ae245369fb1",
-   "bytes": 52395
+   "sha256": "b621c3119b653b4c46da4f3f519cb38929ed467aec849d1d5575f04496a6ae39",
+   "bytes": 52222
   },
   "bvar/UK/baseline_levels.json": {
    "path": "bvar/UK/baseline_levels.json",
-   "sha256": "3ad8d3ab4c054b772721267eb6490ae5a08ff4da9ff3e2ee880853810e08b1ce",
-   "bytes": 51825
+   "sha256": "4668eff5c2f592da2d5699ec683d7ed943226f7dfe0deb9bb9ad380568c1c529",
+   "bytes": 51676
   },
   "bvar/UK/companion_draws.json.gz": {
    "path": "bvar/UK/companion_draws.json.gz",
@@ -3175,13 +3175,13 @@
   },
   "bvar/ZA/baseline.json": {
    "path": "bvar/ZA/baseline.json",
-   "sha256": "0d66d2802d3174232444cb6e194de08c536430680bc2a2ffd72830e81395d105",
-   "bytes": 48847
+   "sha256": "2d9d6eea323dcb7c0c3dac8747cfb4720c390a560da81b1e8df7460a9bac97ac",
+   "bytes": 48685
   },
   "bvar/ZA/baseline_levels.json": {
    "path": "bvar/ZA/baseline_levels.json",
-   "sha256": "cf457a314f472082b2dde2be5b2444673aed81122edcd257def1a768550b671a",
-   "bytes": 48272
+   "sha256": "a1423b4b7b0d5d76b480baf759701fa6685b18f031d150db8549f2e5d546e7ca",
+   "bytes": 48094
   },
   "bvar/ZA/companion_draws.json.gz": {
    "path": "bvar/ZA/companion_draws.json.gz",
