@@ -1,0 +1,8 @@
+{
+  "mode": "levels",
+  "commonsFixed": true,
+  "core": ["US", "EA", "CN", "JP", "UK", "IN", "CA", "KR", "MX", "BR"],
+  "hOne": "nsa-basis-first-quarter",
+  "note": "The shipped baseline of every coupled bloc is one consistent world: each bloc's foreign aggregates (stars) equal the trade-weighted aggregate of its partners' baselines, solved as a fixed point (gvarSolve.ts solveConsistentBaseline). While the baseline is made consistent the four global commons stay on the US national baseline in every bloc (commonsFixed; they still respond in scenarios). The ten core economies keep all partners at their static weights, but the contribution of a non-core partner is held at that partner's national baseline (no feedback from small economies into the core, no renormalisation). First forecast quarter: the growth links are compared on the unadjusted basis (hOne). Decided by the author on 7-8 November 2026; analysis in docs/consistent-baseline/.",
+  "decided": "2026-11-08"
+}
